@@ -13,7 +13,7 @@ using System.Collections.Generic;
 	public GameObject strokes;
 	public GameObject UndoManager;
 		public Color _drawColor ;
-
+	public Transform meshparent;
     [SerializeField]
     private float _smoothingDelay = 0.01f;
 
@@ -79,6 +79,7 @@ using System.Collections.Generic;
 			if (device.GetTouchDown (SteamVR_Controller.ButtonMask.Trigger) && BrushManager.canpaint == true) {
 			strokes = drawState.BeginNewLine() as GameObject;
 			UndoManager.GetComponent<UndoManager>().strokes.Add(strokes);
+			strokes.transform.SetParent (meshparent);
         }
 
 			if (device.GetTouchUp (SteamVR_Controller.ButtonMask.Trigger) && BrushManager.canpaint == true){
@@ -127,6 +128,7 @@ using System.Collections.Generic;
         _smoothedPosition.reset = true;
 
         _mesh = new Mesh();
+			Debug.Log(_mesh.isReadable);
         _mesh.name = "Line Mesh";
         _mesh.MarkDynamic();
 

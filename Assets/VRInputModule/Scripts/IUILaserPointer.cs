@@ -88,17 +88,22 @@ namespace Wacki {
             pointer.transform.localPosition = new Vector3(0.0f, 0.0f, distance * 0.5f);
 
             if(bHit) {
-
-				//truns of the ability to paint
-				BrushManager.canpaint = false;
-				pointer.SetActive (true);
-                hitPoint.SetActive(true);
-                hitPoint.transform.localPosition = new Vector3(0.0f, 0.0f, distance);
+				if (ToolManager.canteleport == false) {
+					//truns of the ability to paint
+					BrushManager.canpaint = false;
+				}
+					pointer.SetActive (true);
+					hitPoint.SetActive (true);
+					hitPoint.transform.localPosition = new Vector3 (0.0f, 0.0f, distance);
+				
             }
             else {
-				BrushManager.canpaint = true;
-                hitPoint.SetActive(false);
-				pointer.SetActive (false);
+				if (ToolManager.canteleport == false) {
+					BrushManager.canpaint = true;
+				}
+					hitPoint.SetActive (false);
+					pointer.SetActive (false);
+				
             }
 
             // reset the previous distance limit

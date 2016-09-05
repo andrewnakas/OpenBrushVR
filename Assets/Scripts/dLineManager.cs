@@ -8,7 +8,7 @@ public class dLineManager : MonoBehaviour {
 	private int numClicks = 0;
 	public Material matter;
 	public GameObject UndoManager;
-
+	public Transform meshparent;
 	void Awake()
 	{
 		trackedObj = GetComponent<SteamVR_TrackedObject>();
@@ -42,6 +42,7 @@ SteamVR_Controller.Device device = SteamVR_Controller.Input((int)trackedObj.inde
 			//	currLine.setVertexCount(numClicks +1);
 			UndoManager.GetComponent<UndoManager>().strokes.Add(currLine.gameObject);
 			numClicks = 0;
+			currLine.transform.SetParent (meshparent);
 			currLine = null;
 
 

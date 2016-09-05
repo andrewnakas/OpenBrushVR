@@ -7,8 +7,8 @@ Executable https://drive.google.com/file/d/0B9N6_duPonOkU1hGNkpaQ29CSFE/view?usp
  I've been putting together an basic version of Tilt Brush and have been excited at what I've developed so far.
 
 
-Check the source here.
-https://github.com/andrewnakas/OpenBrushVR 
+Check a video here.
+https://www.youtube.com/watch?v=bMpBnJkgIkg
 
 Link to project executable.
 https://drive.google.com/file/d/0B9N6_duPonOkZUhyc1g0SzRyS1E/view?usp=sharing

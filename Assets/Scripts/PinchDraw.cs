@@ -7,12 +7,14 @@ using System.Collections.Generic;
     [Tooltip("Each pinch detector can draw one line at a time.")]
  
 //    private PinchDetector[] _pinchDetectors;
-
+	public bool firstpointtime;
     [SerializeField]
     private Material _material;
 	public GameObject strokes;
 	public GameObject UndoManager;
+	public GameObject sphere;
 		public Color _drawColor ;
+
 	public Transform meshparent;
     [SerializeField]
     private float _smoothingDelay = 0.01f;
@@ -77,22 +79,64 @@ using System.Collections.Generic;
         var drawState = _drawStates[0];
 
 			if (device.GetTouchDown (SteamVR_Controller.ButtonMask.Trigger) && BrushManager.canpaint == true) {
-			strokes = drawState.BeginNewLine() as GameObject;
-			UndoManager.GetComponent<UndoManager>().strokes.Add(strokes);
-			strokes.transform.SetParent (meshparent);
+		
+			if (BrushManager.freeformbool == false) {
+				strokes = drawState.BeginNewLine () as GameObject;
+				UndoManager.GetComponent<UndoManager> ().strokes.Add (strokes);
+				strokes.transform.SetParent (meshparent);
+
+			} else {
+
+				if (firstpointtime == true) {
+
+
+					drawState.UpdateLine(sphere.transform.position);
+			
+					drawState.UpdateLine(sphere.transform.position);
+					drawState.UpdateLine(sphere.transform.position);
+
+				}
+
+
+				if (firstpointtime == false) {
+					strokes = drawState.BeginNewLine () as GameObject;
+					UndoManager.GetComponent<UndoManager> ().strokes.Add (strokes);
+					strokes.transform.SetParent (meshparent);
+					drawState.UpdateLine(sphere.transform.position);
+					firstpointtime = true;
+
+				
+				}
+
+
+			}
         }
 
 			if (device.GetTouchUp (SteamVR_Controller.ButtonMask.Trigger) && BrushManager.canpaint == true){
-          drawState.FinishLine();
+			if (BrushManager.freeformbool == false) {
+				drawState.FinishLine ();
+
+			}
         }
 
 			if (device.GetTouch (SteamVR_Controller.ButtonMask.Trigger) && BrushManager.canpaint == true) {
-				drawState.UpdateLine(con.transform.position);
+
+
+			if (BrushManager.freeformbool == false) {
+			drawState.UpdateLine(sphere.transform.position);
+			} 
         }
       
     }
+	public void pointerbreaker(){
+		var drawState = _drawStates[0];
+		drawState.FinishLine ();
+		firstpointtime = false;
 
-    private class DrawState {
+
+	}
+
+	public class DrawState {
       private List<Vector3> _vertices = new List<Vector3>();
       private List<int> _tris = new List<int>();
       private List<Vector2> _uvs = new List<Vector2>();

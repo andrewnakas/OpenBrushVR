@@ -7,15 +7,21 @@ public class BrushManager : MonoBehaviour {
 	public  Text btex;
 	// painted bool that switches between the two brushes
 	//will change to case sw when added a third brush
-	public bool brushswitchbool;
+	public static bool brushswitchbool;
 	public GameObject con;
 
+
 	public GameObject cursor;
+
+
+	public Text LineText;
+	public static bool freeformbool;
+	public GameObject lineBreak;
 	public static float cursorsize;
 	// Use this for initialization
 	void Start () {
 		
-
+		//need to make this a singlton 
 		cursorsize =  0.1f;
 
 
@@ -54,6 +60,47 @@ public class BrushManager : MonoBehaviour {
 			btex.text = "Brush: Flat";
 
 		}
+
+
+	}
+
+	public void LineChoice(){
+
+		freeformbool = !freeformbool;
+
+		if (freeformbool == true) {
+
+			LineText.text = "Line Type: Point Build";
+			lineBreak.SetActive (true);
+			if (con.GetComponent<PinchDraw> ().firstpointtime == true) {
+				
+
+				con.GetComponent<PinchDraw> ().pointerbreaker ();
+
+			}
+
+
+
+		} else {
+			LineText.text = "Line Type: Freeform";
+			lineBreak.SetActive (false);
+			if (con.GetComponent<dLineManager> ().firstPointtime == true) {
+
+				con.GetComponent<dLineManager> ().pointbreaker ();
+
+
+
+			}
+		}
+
+
+
+	}
+
+	public void linebreaker(){
+
+
+
 
 
 	}

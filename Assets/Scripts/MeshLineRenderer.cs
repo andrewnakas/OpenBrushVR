@@ -26,6 +26,8 @@ public class MeshLineRenderer : MonoBehaviour {
 		ml = GetComponent<MeshFilter>().mesh;
 		GetComponent<MeshRenderer>().material = lmat;
 		//this.AddComponent<MeshRenderer>().material = lmat;
+	
+		lineSize = BrushManager.cursorsize;
 	}
 
 	public void setWidth(float width) {
@@ -33,9 +35,14 @@ public class MeshLineRenderer : MonoBehaviour {
 	}
 
 	public void AddPoint(Vector3 point) {
+	//	lineSize = BrushManager.cursorsize;
+
 		if(s != Vector3.zero) {
+
+
 			AddLine(ml, MakeQuad(s, point, lineSize, firstQuad));
 			firstQuad = false;
+			//s = point;
 		}
 
 		s = point;

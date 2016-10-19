@@ -95,6 +95,8 @@ SteamVR_Controller.Device device = SteamVR_Controller.Input((int)trackedObj.inde
 		}else if (device.GetTouchUp (SteamVR_Controller.ButtonMask.Trigger)){
 			if (BrushManager.freeformbool == false) {
 				//	currLine.setVertexCount(numClicks +1);
+
+
 				UndoManager.GetComponent<UndoManager> ().strokes.Add (currLine.gameObject);
 				numClicks = 0;
 				currLine.transform.SetParent (meshparent);

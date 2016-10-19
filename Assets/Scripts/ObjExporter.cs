@@ -20,10 +20,10 @@ public class ObjExporter : MonoBehaviour {
 	public void Mesherexporter(){
 		//m_tangoApplication.Set3DReconstructionEnabled(m_isEnabled);
 		//m_tango.OnTangoServiceDisconnected();
-	//	ITangoLifecycle.
+		//	ITangoLifecycle.
 		DoExport (false);
 		//SceneManager.LoadScene("ExperimentalMeshBuilderWithColor");
-	//	status.SetActive(true);
+		//	status.SetActive(true);
 	}
 
 
@@ -33,7 +33,7 @@ public class ObjExporter : MonoBehaviour {
 	public void Start()
 	{
 
-	//	ObjExporter.texs = status.GetComponent<Text> ();
+		//	ObjExporter.texs = status.GetComponent<Text> ();
 		StartIndex = 0;
 	}
 	public static void End()
@@ -57,7 +57,7 @@ public class ObjExporter : MonoBehaviour {
 		Material[] mats = mf.GetComponent<Renderer> ().sharedMaterials;
 
 		StringBuilder sb = new StringBuilder ();
-			
+
 		Vector3[] normals = m.normals; 
 
 		m.normals = normals;
@@ -65,7 +65,7 @@ public class ObjExporter : MonoBehaviour {
 		m.triangles = m.triangles.Reverse ().ToArray (); //
 
 		ker = m.vertices.Length;
-	//ker = m.vertices.Length;
+		//ker = m.vertices.Length;
 		for (int i = 0; i < m.vertices.Length; i++) {
 
 			numVertices++;
@@ -73,9 +73,9 @@ public class ObjExporter : MonoBehaviour {
 			oker = i;
 
 			//textstatus.txer.text = 
-	//	texs.text = i.ToString () + "/" + m.vertices.ToString ();
+			//	texs.text = i.ToString () + "/" + m.vertices.ToString ();
 			if (PlayerPrefs.GetInt ("textures") != 1) {
-	//			sb.Append (string.Format (" {0} {1} {2} \n", m.colors [i].r, m.colors [i].g, m.colors [i].b));
+				sb.Append (string.Format (" {0} {1} {2} \n", m.colors [i].r, m.colors [i].g, m.colors [i].b));
 			} else {
 
 				sb.Append ("\n");
@@ -103,8 +103,8 @@ public class ObjExporter : MonoBehaviour {
 
 		for (int material=0; material < m.subMeshCount; material ++) {
 			sb.Append ("\n");
-		//	sb.Append ("usemtl ").Append (mats [material].name).Append ("\n");
-//			sb.Append ("usemap ").Append (mats [material].name).Append ("\n");
+			sb.Append ("usemtl ").Append (mats [material].name).Append ("\n");
+			sb.Append ("usemap ").Append (mats [material].name).Append ("\n");
 
 			int[] triangles = m.GetTriangles (material);
 			for (int i=0; i<triangles.Length; i+=3) {
@@ -130,10 +130,9 @@ public class ObjExporter : MonoBehaviour {
 	public void DoExport(bool makeSubmeshes)
 	{
 
-//tangostuff.SetActive (false);
-
+		//tangostuff.SetActive (false);
+		PlayerPrefs.SetInt("exportnum",PlayerPrefs.GetInt("exportnum")+1);
 		string meshName = gameObject.name;
-		PlayerPrefs.SetInt ("exportnum", PlayerPrefs.GetInt ("exportnum") + 1);
 		string fileName = Application.persistentDataPath+"/"+gameObject.name+ PlayerPrefs.GetInt("exportnum").ToString() +".obj"; // you can also use: "/storage/sdcard1/" +gameObject.name+".obj"
 
 		Start();
@@ -157,7 +156,7 @@ public class ObjExporter : MonoBehaviour {
 		}
 
 		meshString.Append(processTransform(t, makeSubmeshes));
-	
+
 		WriteToFile(meshString.ToString(),fileName);
 
 		t.position = originalPosition;
@@ -166,7 +165,7 @@ public class ObjExporter : MonoBehaviour {
 		Debug.Log("Exported Mesh: " + fileName);
 	}
 
-	 string processTransform(Transform t, bool makeSubmeshes)
+	string processTransform(Transform t, bool makeSubmeshes)
 	{
 		StringBuilder meshString = new StringBuilder();
 
@@ -195,13 +194,13 @@ public class ObjExporter : MonoBehaviour {
 		return meshString.ToString();
 	}
 
-	 static void WriteToFile(string s, string filename)
+	static void WriteToFile(string s, string filename)
 	{
 		using (StreamWriter sw = new StreamWriter(filename)) 
 		{
 			sw.Write(s);
 		}
 
-		//SceneManager.LoadScene ("ExperimentalMeshBuilderWithColor");
+	//	SceneManager.LoadScene ("ExperimentalMeshBuilderWithColor");
 	}
 }

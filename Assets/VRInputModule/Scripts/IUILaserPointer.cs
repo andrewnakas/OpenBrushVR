@@ -88,9 +88,12 @@ namespace Wacki {
             pointer.transform.localPosition = new Vector3(0.0f, 0.0f, distance * 0.5f);
 
             if(bHit) {
-				if (ToolManager.canteleport == false) {
+				if (ToolManager.canteleport == false ) {
 					//truns of the ability to paint
 					BrushManager.canpaint = false;
+				
+				} else {
+					ToolManager.canteleport = false;
 				}
 					pointer.SetActive (true);
 					hitPoint.SetActive (true);
@@ -98,9 +101,18 @@ namespace Wacki {
 				
             }
             else {
-				if (ToolManager.canteleport == false) {
-					BrushManager.canpaint = true;
-				}
+				if (ToolManager.canteleport == false ) {
+					if ( ToolManager.couldteleport == true) {
+						ToolManager.canteleport = true;
+
+					} else {
+						
+
+
+						BrushManager.canpaint = true;
+					}
+					}
+
 					hitPoint.SetActive (false);
 					pointer.SetActive (false);
 				

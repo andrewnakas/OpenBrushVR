@@ -9,7 +9,7 @@ using System.Collections.Generic;
 //    private PinchDetector[] _pinchDetectors;
 	public bool firstpointtime;
     [SerializeField]
-    private Material _material;
+	public Material _material;
 	public GameObject strokes;
 	public GameObject UndoManager;
 	public GameObject sphere;
@@ -17,18 +17,18 @@ using System.Collections.Generic;
 
 	public Transform meshparent;
     [SerializeField]
-    private float _smoothingDelay = 0.01f;
+	public float _smoothingDelay = 0.01f;
 
     [SerializeField]
-    private float _drawRadius = 0.2f;
+	public float _drawRadius = 0.2f;
 
     [SerializeField]
-    private int _drawResolution = 8;
+	public int _drawResolution = 8;
 
     [SerializeField]
-    private float _minSegmentLength = 0.005f;
+	public float _minSegmentLength = 0.005f;
 
-    private DrawState[] _drawStates;
+	public DrawState[] _drawStates;
 		public SteamVR_TrackedObject trackedObj;
 		public GameObject con;
     public Color DrawColor {
@@ -88,7 +88,7 @@ using System.Collections.Generic;
 			} else {
 
 				if (firstpointtime == true) {
-
+					//strange you need 3 line events to get the line to go up the cursor
 
 					drawState.UpdateLine(sphere.transform.position);
 			
@@ -137,22 +137,22 @@ using System.Collections.Generic;
 	}
 
 	public class DrawState {
-      private List<Vector3> _vertices = new List<Vector3>();
-      private List<int> _tris = new List<int>();
-      private List<Vector2> _uvs = new List<Vector2>();
-      private List<Color> _colors = new List<Color>();
+      public List<Vector3> _vertices = new List<Vector3>();
+		public List<int> _tris = new List<int>();
+		public List<Vector2> _uvs = new List<Vector2>();
+		public List<Color> _colors = new List<Color>();
 
-      private PinchDraw _parent;
+		public PinchDraw _parent;
 
-      private int _rings = 0;
+		public int _rings = 0;
 
-      private Vector3 _prevRing0 = Vector3.zero;
-      private Vector3 _prevRing1 = Vector3.zero;
+		public Vector3 _prevRing0 = Vector3.zero;
+		public Vector3 _prevRing1 = Vector3.zero;
 
-      private Vector3 _prevNormal0 = Vector3.zero;
+		public Vector3 _prevNormal0 = Vector3.zero;
 
-      private Mesh _mesh;
-      private SmoothedVector3 _smoothedPosition;
+		public Mesh _mesh;
+		public SmoothedVector3 _smoothedPosition;
 
       public DrawState(PinchDraw parent) {
         _parent = parent;
@@ -174,8 +174,9 @@ using System.Collections.Generic;
         _mesh = new Mesh();
 			Debug.Log(_mesh.isReadable);
         _mesh.name = "Line Mesh";
-        _mesh.MarkDynamic();
-
+		
+			//strange even when the mesh is readable it false to work
+			Debug.Log (_mesh.isReadable);
         GameObject lineObj = new GameObject("Line Object");
         lineObj.transform.position = Vector3.zero;
         lineObj.transform.rotation = Quaternion.identity;
@@ -204,11 +205,13 @@ using System.Collections.Generic;
     
 				if (_mesh != null) {
 					_mesh.Optimize ();
-					_mesh.UploadMeshData (true);
+
+					//this does not
+				//	_mesh.UploadMeshData (true);
 				}
       }
 
-      private void updateMesh() {
+		public void updateMesh() {
 
 				if (_mesh != null) {
 					_mesh.SetVertices (_vertices);
@@ -220,7 +223,7 @@ using System.Collections.Generic;
 				}
       }
 
-      private void addRing(Vector3 ringPosition) {
+		public void addRing(Vector3 ringPosition) {
         _rings++;
 
         if (_rings == 1) {
@@ -283,7 +286,7 @@ using System.Collections.Generic;
         _prevNormal0 = ringNormal;
       }
 
-      private void addVertexRing() {
+		public void addVertexRing() {
         for (int i = 0; i < _parent._drawResolution; i++) {
           _vertices.Add(Vector3.zero);  //Dummy vertex, is updated later
           _uvs.Add(new Vector2(i / (_parent._drawResolution - 1.0f), 0));
@@ -292,7 +295,7 @@ using System.Collections.Generic;
       }
 
       //Connects the most recently added vertex ring to the one before it
-      private void addTriSegment() {
+		public void addTriSegment() {
         for (int i = 0; i < _parent._drawResolution; i++) {
           int i0 = _vertices.Count - 1 - i;
           int i1 = _vertices.Count - 1 - ((i + 1) % _parent._drawResolution);
@@ -307,7 +310,7 @@ using System.Collections.Generic;
         }
       }
 
-      private void updateRingVerts(int offset, Vector3 ringPosition, Vector3 direction, Vector3 normal, float radiusScale) {
+		public void updateRingVerts(int offset, Vector3 ringPosition, Vector3 direction, Vector3 normal, float radiusScale) {
         direction = direction.normalized;
         normal = normal.normalized;
 

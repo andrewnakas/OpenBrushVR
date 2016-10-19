@@ -1,8 +1,10 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 public class BrushManager : MonoBehaviour {
 	public static bool canpaint;
+	public static bool couldpaint;
 	public SteamVR_TrackedObject controller;
 	public  Text btex;
 	// painted bool that switches between the two brushes

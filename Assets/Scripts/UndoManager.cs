@@ -5,9 +5,11 @@ public class UndoManager : MonoBehaviour {
 	public List<GameObject> strokes;
 	public List<GameObject> redostrokes;
 	public GameObject redoButton;
+
+	public Transform meshexporter;
 	// Use this for initialization
 	void Start () {
-	
+		//need to make this a singlton 
 	}
 	
 	// Update is called once per frame
@@ -28,7 +30,9 @@ public class UndoManager : MonoBehaviour {
 
 
 			//destroy objec.
+			strokes [strokes.Count - 1].transform.SetParent(null);
 			strokes [strokes.Count - 1].SetActive (false);
+
 			redostrokes.Add (strokes [strokes.Count - 1]);
 			strokes.Remove (	strokes [strokes.Count - 1]);
 		}
@@ -39,10 +43,11 @@ public class UndoManager : MonoBehaviour {
 
 	
 
-
+	
 			//destroy objec.
 			redostrokes [redostrokes.Count - 1].SetActive (true);
-			strokes.Add (redostrokes [redostrokes.Count - 1]);
+		strokes [strokes.Count - 1].transform.SetParent(meshexporter);
+		strokes.Add (redostrokes [redostrokes.Count - 1]);
 			redostrokes.Remove (	redostrokes [redostrokes.Count - 1]);
 		}
 

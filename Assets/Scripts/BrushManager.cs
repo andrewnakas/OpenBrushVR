@@ -20,15 +20,20 @@ public class BrushManager : MonoBehaviour {
 	public static bool freeformbool;
 	public GameObject lineBreak;
 	public static float cursorsize;
+	public Image cylandarbrush; 
+	public Image flatbrush;
+
+	public ToolManager tooler; 
 	// Use this for initialization
 	void Start () {
 		
 		//need to make this a singlton 
 		cursorsize =  0.1f;
 
-
-
-
+		CylindarBrushtoggle ();
+	
+		flatbrushtoggle ();
+		CylindarBrushtoggle ();
 		cursor.transform.localScale = new Vector3 (cursorsize, cursorsize, cursorsize);
 	}
 	
@@ -48,6 +53,8 @@ public class BrushManager : MonoBehaviour {
 		}
 
 	}
+
+	/*
 	public void BrushSwitch(){
 
 		brushswitchbool = !brushswitchbool;
@@ -65,6 +72,40 @@ public class BrushManager : MonoBehaviour {
 
 
 	}
+	*/
+
+
+	public void CylindarBrushtoggle(){
+		brushswitchbool = false;
+		con.GetComponent<dLineManager> ().enabled = false;
+		con.GetComponent<PinchDraw> ().enabled = true;
+		cylandarbrush.color = Color.gray;
+		flatbrush.color = Color.white;
+		canpaint = true;
+		tooler.teleportoff();
+	}
+
+	public  void flatbrushtoggle(){
+		brushswitchbool = true;
+		cylandarbrush.color =Color.white; 
+		flatbrush.color = Color.gray;
+		con.GetComponent<dLineManager> ().enabled =true;
+		con.GetComponent<PinchDraw> ().enabled =false;
+		canpaint = true;
+
+		tooler.teleportoff();
+	}
+
+
+	public void deselectAllbrushes(){
+		flatbrush.color = Color.white;
+		cylandarbrush.color =Color.white; 
+		con.GetComponent<PinchDraw> ().enabled =false;
+		con.GetComponent<dLineManager> ().enabled = false;
+	}
+
+
+
 
 	public void LineChoice(){
 

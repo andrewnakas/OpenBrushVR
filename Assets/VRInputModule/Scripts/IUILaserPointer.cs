@@ -70,7 +70,7 @@ namespace Wacki {
         {
             Ray ray = new Ray(transform.position, transform.forward);
             RaycastHit hitInfo;
-            bool bHit = Physics.Raycast(ray, out hitInfo);
+			bool bHit = Physics.Raycast(ray, out hitInfo,Mathf.Infinity,0);
 
             float distance = 100.0f;
 
@@ -87,12 +87,20 @@ namespace Wacki {
             pointer.transform.localScale = new Vector3(laserThickness, laserThickness, distance);
             pointer.transform.localPosition = new Vector3(0.0f, 0.0f, distance * 0.5f);
 
-            if(bHit) {
-				if (ToolManager.canteleport == false ) {
+			if(bHit  ) {
+
+				if (BrushManager.canRetexture == true) {
+
+
+					BrushManager.canRetexture = false;
+				}
+				if (	BrushManager.canpaint == true ) {
 					//truns of the ability to paint
 					BrushManager.canpaint = false;
 				
-				} else {
+				}
+
+				if (ToolManager.canteleport ==true ) {
 					ToolManager.canteleport = false;
 				}
 					pointer.SetActive (true);
@@ -101,17 +109,24 @@ namespace Wacki {
 				
             }
             else {
-				if (ToolManager.canteleport == false ) {
-					if ( ToolManager.couldteleport == true) {
+
+					if (ToolManager.couldteleport == true) {
 						ToolManager.canteleport = true;
 
-					} else {
-						
+					}
+
+
+					if (BrushManager.couldRetexture == true) {
+						BrushManager.canRetexture = true;
+
+					}
+
+				if (ToolManager.couldteleport ==false &&  BrushManager.couldRetexture == false){
 
 
 						BrushManager.canpaint = true;
 					}
-					}
+
 
 					hitPoint.SetActive (false);
 					pointer.SetActive (false);

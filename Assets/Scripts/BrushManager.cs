@@ -11,7 +11,8 @@ public class BrushManager : MonoBehaviour {
 	//will change to case sw when added a third brush
 	public static bool brushswitchbool;
 	public GameObject con;
-
+	public static bool canRetexture;
+	public static bool couldRetexture;
 
 	public GameObject cursor;
 
@@ -22,7 +23,7 @@ public class BrushManager : MonoBehaviour {
 	public static float cursorsize;
 	public Image cylandarbrush; 
 	public Image flatbrush;
-
+	public Image retextureIMG;
 	public ToolManager tooler; 
 	// Use this for initialization
 	void Start () {
@@ -140,10 +141,51 @@ public class BrushManager : MonoBehaviour {
 
 	}
 
+	public void retexture(){
+
+
+		canRetexture = !canRetexture;
+		couldRetexture = !couldRetexture;
+
+		if (canRetexture == true) {
+		
+			retextureIMG.color = Color.grey;
+			canpaint = false;
+			cursor.SetActive (false); 
+			tooler.laser.SetActive (true);
+
+		} else {
+			
+
+			cursor.SetActive (true); 
+			tooler.laser.SetActive (false);
+			retextureIMG.color = Color.white;
+
+			if (ToolManager.couldteleport == true) {
+				tooler.telporton ();
+
+			} else {
+				
+				canpaint = true; 
+				if (brushswitchbool == false) {
+					CylindarBrushtoggle ();
+
+				} else {
+
+					flatbrushtoggle ();
+				}
+			} 
+		
+
+		}
+
+
+	}
+
 	public void linebreaker(){
 
 
-
+	
 
 
 	}

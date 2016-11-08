@@ -114,8 +114,9 @@ using System.Collections.Generic;
 
 			if (device.GetTouchUp (SteamVR_Controller.ButtonMask.Trigger) && BrushManager.canpaint == true){
 			if (BrushManager.freeformbool == false) {
-				drawState.FinishLine ();
-
+				Mesh tempmesh;
+				 tempmesh = drawState.FinishLine () as Mesh;
+				strokes.GetComponent<MeshCollider> ().sharedMesh = tempmesh ;
 			}
         }
 
@@ -130,7 +131,9 @@ using System.Collections.Generic;
     }
 	public void pointerbreaker(){
 		var drawState = _drawStates[0];
-		drawState.FinishLine ();
+		Mesh tempmesh;
+		tempmesh = drawState.FinishLine () as Mesh;
+		strokes.GetComponent<MeshCollider> ().sharedMesh = tempmesh ;
 		firstpointtime = false;
 
 
@@ -172,18 +175,24 @@ using System.Collections.Generic;
         _smoothedPosition.reset = true;
 
         _mesh = new Mesh();
-			Debug.Log(_mesh.isReadable);
+//			Debug.Log(_mesh.isReadable);
         _mesh.name = "Line Mesh";
 		
 			//strange even when the mesh is readable it false to work
-			Debug.Log (_mesh.isReadable);
+//			Debug.Log (_mesh.isReadable);
         GameObject lineObj = new GameObject("Line Object");
         lineObj.transform.position = Vector3.zero;
         lineObj.transform.rotation = Quaternion.identity;
         lineObj.transform.localScale = Vector3.one;
         lineObj.AddComponent<MeshFilter>().mesh = _mesh;
         lineObj.AddComponent<MeshRenderer>().sharedMaterial = _parent._material;
+			lineObj.AddComponent<MeshCollider>();
+		//in
+			lineObj.GetComponent<MeshCollider> ().sharedMesh = null;
+			lineObj.GetComponent<MeshCollider>().sharedMesh = _mesh;
+
 		
+//			lineObj.GetComponent<MeshCollider> ().isTrigger = true;
         return lineObj;
       }
 
@@ -201,14 +210,22 @@ using System.Collections.Generic;
         }
       }
 
-      public void FinishLine() {
+      public Mesh FinishLine() {
     
 				if (_mesh != null) {
-					_mesh.Optimize ();
+				
+			
+				_mesh.RecalculateBounds ();
+				_mesh.Optimize ();
+
+
 
 					//this does not
 				//	_mesh.UploadMeshData (true);
-				}
+			
+		
+			}
+			return _mesh;
       }
 
 		public void updateMesh() {

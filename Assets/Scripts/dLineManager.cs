@@ -30,6 +30,7 @@ SteamVR_Controller.Device device = SteamVR_Controller.Input((int)trackedObj.inde
 				GameObject go = new GameObject ();
 				go.AddComponent<MeshFilter> ();
 				go.AddComponent<MeshRenderer> ();
+				go.AddComponent < MeshCollider> ().sharedMesh =go.GetComponent<MeshFilter> ().mesh	 ;
 				currLine = go.AddComponent<MeshLineRenderer> ();
 
 				currLine.setWidth (BrushManager.cursorsize);

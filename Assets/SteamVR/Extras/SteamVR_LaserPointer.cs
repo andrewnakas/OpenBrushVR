@@ -31,7 +31,7 @@ public class SteamVR_LaserPointer : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-        holder = new GameObject();
+       
         holder.transform.parent = this.transform;
         holder.transform.localPosition = Vector3.zero;
 

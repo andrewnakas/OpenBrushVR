@@ -13,6 +13,7 @@ public class UndoManager : MonoBehaviour {
 
 
 	public GameObject redoButton;
+	public GameObject redotButton;
 		public Transform meshexporter;
 
 
@@ -59,6 +60,8 @@ public class UndoManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+
 		if (redostrokes.Count >= 1) {
 
 			redoButton.SetActive (true);
@@ -66,6 +69,17 @@ public class UndoManager : MonoBehaviour {
 		} else {
 
 			redoButton.SetActive (false);
+
+		}
+
+
+		if (redoTrans.Count >= 1) {
+
+			redotButton.SetActive (true);
+
+		} else {
+
+			redotButton.SetActive (false);
 
 		}
 	}
@@ -110,15 +124,43 @@ public class UndoManager : MonoBehaviour {
 			//destroy objec.
 
 			if (prevTrans [prevTrans.Count - 1].SelectedG != null) {
+
 				tempG = prevTrans [prevTrans.Count - 1].SelectedG;
+				redoTrans.Add (new RedoTrans (tempG.transform.position, tempG.transform.rotation, tempG.transform.localScale, tempG));
+
 				tempG.transform.position = prevTrans [prevTrans.Count - 1].Prevpos;
 
 				tempG.transform.rotation = prevTrans [prevTrans.Count - 1].Prevrot;
 				tempG.transform.localScale = prevTrans [prevTrans.Count - 1].Prevscale;
-				redoTrans.Add (new RedoTrans (prevTrans [prevTrans.Count - 1].Prevpos, prevTrans [prevTrans.Count - 1].Prevrot, prevTrans [prevTrans.Count - 1].Prevscale, prevTrans [prevTrans.Count - 1].SelectedG));
+
 			}
 			//redostrokes.Add (strokes [strokes.Count - 1]);
 			prevTrans.Remove (		prevTrans [	prevTrans.Count - 1]);
+		}
+
+	}
+
+
+	public void TransRedoer(){
+
+		if (redoTrans.Count >= 1) {
+
+
+			//destroy objec.
+
+			if (redoTrans [redoTrans.Count - 1].RSelectedG != null) {
+			
+
+				tempG = redoTrans [redoTrans.Count - 1].RSelectedG;
+				prevTrans.Add (new PrevTrans (tempG.transform.position, tempG.transform.rotation, tempG.transform.localScale, tempG));
+				tempG.transform.position = redoTrans [redoTrans.Count - 1].Redopos;
+
+				tempG.transform.rotation = redoTrans [redoTrans.Count - 1].Redorot;
+				tempG.transform.localScale = redoTrans [redoTrans.Count - 1].Redoscale;
+				//prevTrans.Add (new PrevTrans (redoTrans [redoTrans.Count - 1].Redopos, redoTrans [redoTrans.Count - 1].Redorot, redoTrans [redoTrans.Count - 1].Redoscale, redoTrans [redoTrans.Count - 1].RSelectedG));
+			}
+			//redostrokes.Add (strokes [strokes.Count - 1]);
+			redoTrans.Remove (		redoTrans [	redoTrans.Count - 1]);
 		}
 
 	}

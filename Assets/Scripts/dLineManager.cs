@@ -99,6 +99,7 @@ SteamVR_Controller.Device device = SteamVR_Controller.Input((int)trackedObj.inde
 
 
 				UndoManager.GetComponent<UndoManager> ().strokes.Add (currLine.gameObject);
+				UndoManager.GetComponent<UndoManager> ().globalUndo.Add (0);
 				numClicks = 0;
 				currLine.transform.SetParent (meshparent);
 				currLine = null;

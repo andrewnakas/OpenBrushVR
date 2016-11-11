@@ -83,6 +83,7 @@ using System.Collections.Generic;
 			if (BrushManager.freeformbool == false) {
 				strokes = drawState.BeginNewLine () as GameObject;
 				UndoManager.GetComponent<UndoManager> ().strokes.Add (strokes);
+				UndoManager.GetComponent<UndoManager> ().globalUndo.Add (0);
 				strokes.transform.SetParent (meshparent);
 
 			} else {

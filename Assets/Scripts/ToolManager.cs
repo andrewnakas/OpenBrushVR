@@ -13,6 +13,7 @@ public class ToolManager : MonoBehaviour {
 	public Text retexturetxt;
 	public SteamVR_TrackedObject trackedObj;
 	public static GameObject curSelGameObject;
+	public  GameObject lastSelGameObject;
 	public UndoManager Undoer;
 	public GameObject eportmesh;
 	// Use this for initialization
@@ -29,18 +30,33 @@ public class ToolManager : MonoBehaviour {
 		SteamVR_Controller.Device device = SteamVR_Controller.Input((int)trackedObj.index);
 		if (curSelGameObject != null && device.GetTouch (SteamVR_Controller.ButtonMask.Grip)) {
 			if (curSelGameObject.transform.parent == (eportmesh.transform)) {
-				
+				lastSelGameObject = curSelGameObject;
 				Undoer.prevTrans.Add (new UndoManager.PrevTrans (curSelGameObject.transform.position, curSelGameObject.transform.rotation, curSelGameObject.transform.localScale, curSelGameObject)); 
+			
+				Undoer.globalUndo.Add (1);
 				curSelGameObject.transform.SetParent (cursor.transform);
 			}
 
 			curSelGameObject.transform.SetParent (cursor.transform);
 
-		} else {
+		} else if (  device.GetTouchUp (SteamVR_Controller.ButtonMask.Grip)){
+			if (curSelGameObject != null) {
+				curSelGameObject.transform.SetParent (eportmesh.transform);
+			}
+		}
 
-			curSelGameObject.transform.SetParent (eportmesh.transform);
+	}
+
+	public void delLastSelected(){
+
+		if (lastSelGameObject != null) {
+			Undoer.del.Add (lastSelGameObject);
+			Undoer.globalUndo.Add (2);
+			lastSelGameObject.SetActive (false);
+
 
 		}
+
 
 	}
 	public void teleportoff(){

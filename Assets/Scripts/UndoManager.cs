@@ -10,7 +10,11 @@ public class UndoManager : MonoBehaviour {
 	public List<GameObject> redostrokes;
 
 
+	public List<GameObject> del;
+	public List<GameObject> redodel;
 
+	public List<int> globalUndo;
+	public List<int> globalRedo;
 
 	public GameObject redoButton;
 	public GameObject redotButton;
@@ -62,7 +66,7 @@ public class UndoManager : MonoBehaviour {
 	void Update () {
 
 
-		if (redostrokes.Count >= 1) {
+		if (globalRedo.Count >= 1) {
 
 			redoButton.SetActive (true);
 
@@ -73,16 +77,87 @@ public class UndoManager : MonoBehaviour {
 		}
 
 
-		if (redoTrans.Count >= 1) {
+	
+	}
 
-			redotButton.SetActive (true);
 
-		} else {
+	public void globalUndoer(){
+		if (globalUndo [globalUndo.Count - 1] == 0 ) {
 
-			redotButton.SetActive (false);
+
+
+			Undoer ();
+
+		globalAdd (0);
+
+		} 
+
+
+		if ( globalUndo [globalUndo.Count - 1] == 1    ) {
+
+			TransUndoer ();
+			globalAdd (1);
+	
+		
+
+		}
+
+		if (globalUndo [globalUndo.Count - 1] == 2) {
+
+
+			DelUndoer ();
+			globalAdd (2);
 
 		}
 	}
+	public void globalRedoer(){
+		if (globalRedo [globalRedo.Count - 1] == 0 ) {
+
+
+			Redoer ();
+	globeRedo (0);
+		} if ( globalRedo [globalRedo.Count - 1] == 1    ) {
+
+
+
+			TransRedoer ();
+
+	globeRedo(1);
+		}
+
+		if ( globalRedo [globalRedo.Count - 1] == 2    ) {
+
+
+
+			DelRedoer ();
+
+			globeRedo(2);
+		}
+	}
+
+
+
+	//coroutines  to manage the undo lists
+	 public void globalAdd(int ok){
+
+		globalRedo.Add (ok);
+		globalUndo.RemoveAt (globalUndo.Count - 1);
+	
+	}
+
+
+	public 	void globeRedo(int ok){
+
+		globalUndo.Add (ok);
+		globalRedo.RemoveAt (globalRedo.Count - 1);
+	
+	}
+
+
+
+
+
+
 	public void Undoer(){
 
 		if (strokes.Count >= 1) {
@@ -111,6 +186,36 @@ public class UndoManager : MonoBehaviour {
 
 			redostrokes.Remove (	redostrokes [redostrokes.Count - 1]);
 		}
+
+
+	public void DelUndoer(){
+//		Debug.Log ("Fireromnh");
+		if (del.Count >= 1) {
+
+
+			//destroy objec.
+			del [del.Count - 1].transform.SetParent(meshexporter);
+			del [del.Count - 1].SetActive (true);
+
+			redodel.Add (del [del.Count - 1]);
+			del.Remove (	del [del.Count - 1]);
+		}
+
+	}
+
+	public void DelRedoer(){
+
+
+
+
+		//destroy objec.
+		redodel[redodel.Count - 1].SetActive (false);
+
+		del.Add (redodel [redodel.Count - 1]);
+		redodel [redodel.Count - 1].transform.SetParent(null);
+
+		redodel.Remove (	redodel [redodel.Count - 1]);
+	}
 
 
 	//transform undood still need to add redo in and add it to the global undo system

@@ -89,7 +89,7 @@ public class UndoManager : MonoBehaviour {
 			Undoer ();
 
 		globalAdd (0);
-
+			return;
 		} 
 
 
@@ -98,7 +98,7 @@ public class UndoManager : MonoBehaviour {
 			TransUndoer ();
 			globalAdd (1);
 	
-		
+			return;
 
 		}
 
@@ -107,7 +107,7 @@ public class UndoManager : MonoBehaviour {
 
 			DelUndoer ();
 			globalAdd (2);
-
+			return;
 		}
 	}
 	public void globalRedoer(){
@@ -116,6 +116,8 @@ public class UndoManager : MonoBehaviour {
 
 			Redoer ();
 	globeRedo (0);
+
+			return;
 		} if ( globalRedo [globalRedo.Count - 1] == 1    ) {
 
 
@@ -123,6 +125,8 @@ public class UndoManager : MonoBehaviour {
 			TransRedoer ();
 
 	globeRedo(1);
+
+			return;
 		}
 
 		if ( globalRedo [globalRedo.Count - 1] == 2    ) {
@@ -132,6 +136,7 @@ public class UndoManager : MonoBehaviour {
 			DelRedoer ();
 
 			globeRedo(2);
+			return;
 		}
 	}
 

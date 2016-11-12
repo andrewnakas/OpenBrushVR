@@ -102,6 +102,7 @@ using System.Collections.Generic;
 				if (firstpointtime == false) {
 					strokes = drawState.BeginNewLine () as GameObject;
 					UndoManager.GetComponent<UndoManager> ().strokes.Add (strokes);
+					UndoManager.GetComponent<UndoManager> ().globalUndo.Add (0);
 					strokes.transform.SetParent (meshparent);
 					drawState.UpdateLine(sphere.transform.position);
 					firstpointtime = true;

@@ -1,6 +1,6 @@
 # OpenBrushVR
 VR Painting in 3d space
-Executable https://drive.google.com/file/d/0B9N6_duPonOkbkZXb0tBeFgzcEE/view?usp=sharing
+Executable https://drive.google.com/file/d/0B9N6_duPonOkZUhyc1g0SzRyS1E/view?usp=sharing
 
 ![VRPainting](http://i.imgur.com/K8TDGh7.gif)
 

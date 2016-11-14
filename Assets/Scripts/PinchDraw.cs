@@ -29,8 +29,19 @@ using System.Collections.Generic;
 	public float _minSegmentLength = 0.005f;
 
 	public DrawState[] _drawStates;
-		public SteamVR_TrackedObject trackedObj;
-		public GameObject con;
+
+
+	#if UNITY_STANDALONE_WIN 
+
+	public SteamVR_TrackedObject trackedObj;
+	public GameObject con;
+	#elif UNITY_ANDROID 
+
+	public bool tangoIspainting;
+
+
+	#endif
+
     public Color DrawColor {
       get {
 				return   DrawColor;
@@ -60,9 +71,9 @@ using System.Collections.Generic;
     }
 
     void Start() {
-			
+		#if UNITY_STANDALONE_WIN 
 				SteamVR_Controller.Device device = SteamVR_Controller.Input((int)trackedObj.index);
-			
+			#endif
 
       _drawStates = new DrawState[1];
       for (int i = 0; i < 1; i++) {
@@ -71,13 +82,25 @@ using System.Collections.Generic;
     }
 
     void Update() {
+		#if UNITY_ANDROID 
+		if (BrushManager.TangoPainting == false) {
+
+
+			tangoIspainting = false;
+
+		}
+		#endif
 		_drawRadius = BrushManager.cursorsize * .5f;
+
+		#if UNITY_STANDALONE_WIN 
 			SteamVR_Controller.Device device = SteamVR_Controller.Input((int)trackedObj.index);
+
+		#endif
 	//		if (device.GetTouchDown (SteamVR_Controller.ButtonMask.Trigger) && canpaint == true) {
      
      //   var detector = _pinchDetectors[i];
         var drawState = _drawStates[0];
-
+		#if UNITY_STANDALONE_WIN 
 			if (device.GetTouchDown (SteamVR_Controller.ButtonMask.Trigger) && BrushManager.canpaint == true) {
 		
 			if (BrushManager.freeformbool == false) {
@@ -113,7 +136,16 @@ using System.Collections.Generic;
 
 			}
         }
+		#elif UNITY_ANDROID 
 
+		if (BrushManager.TangoPainting ==true && BrushManager.canpaint == true) {
+
+
+		}
+
+
+		#endif
+		#if UNITY_STANDALONE_WIN 
 			if (device.GetTouchUp (SteamVR_Controller.ButtonMask.Trigger) && BrushManager.canpaint == true){
 			if (BrushManager.freeformbool == false) {
 				Mesh tempmesh;
@@ -122,6 +154,15 @@ using System.Collections.Generic;
 			}
         }
 
+		#elif UNITY_ANDROID 
+
+		if (BrushManager.TangoPainting== false && BrushManager.canpaint == true &&tangoIspainting == true){
+
+		}
+
+
+		#endif
+		#if UNITY_STANDALONE_WIN 
 			if (device.GetTouch (SteamVR_Controller.ButtonMask.Trigger) && BrushManager.canpaint == true) {
 
 
@@ -129,8 +170,78 @@ using System.Collections.Generic;
 			drawState.UpdateLine(sphere.transform.position);
 			} 
         }
+
+		#elif UNITY_ANDROID 
+		Debug.Log( BrushManager.canpaint);
+		if (BrushManager.TangoPainting==true && BrushManager.canpaint == true) {
+
+
+			if (BrushManager.freeformbool == false) {
+
+				_drawStates[0].UpdateLine(sphere.transform.position);
+			} 
+		}
+
+
+		#endif
       
     }
+
+	#if UNITY_ANDROID 
+
+	public void paintStart(){
+		if (this.enabled == true) {
+			Debug.Log ("Paintingislit");
+			var drawState = _drawStates [0];
+			if (BrushManager.freeformbool == false) {
+				strokes = _drawStates [0].BeginNewLine () as GameObject;
+				UndoManager.GetComponent<UndoManager> ().strokes.Add (strokes);
+				UndoManager.GetComponent<UndoManager> ().globalUndo.Add (0);
+				strokes.transform.SetParent (meshparent);
+				tangoIspainting = true;
+			} else {
+
+				if (firstpointtime == true) {
+					//strange you need 3 line events to get the line to go up the cursor
+
+					_drawStates [0].UpdateLine (sphere.transform.position);
+
+					_drawStates [0].UpdateLine (sphere.transform.position);
+					_drawStates [0].UpdateLine (sphere.transform.position);
+
+				}
+
+
+				if (firstpointtime == false) {
+					strokes = _drawStates [0].BeginNewLine () as GameObject;
+					UndoManager.GetComponent<UndoManager> ().strokes.Add (strokes);
+					UndoManager.GetComponent<UndoManager> ().globalUndo.Add (0);
+					strokes.transform.SetParent (meshparent);
+					_drawStates [0].UpdateLine (sphere.transform.position);
+					firstpointtime = true;
+
+					tangoIspainting = true;
+				}
+
+
+			}
+
+		}
+
+	}
+	public void paintEnd(){
+		if (this.enabled == true) {
+			if (BrushManager.freeformbool == false) {
+				Mesh tempmesh;
+				tempmesh = _drawStates [0].FinishLine () as Mesh;
+				strokes.GetComponent<MeshCollider> ().sharedMesh = tempmesh;
+			}
+
+		}
+	}
+
+
+	#endif
 	public void pointerbreaker(){
 		var drawState = _drawStates[0];
 		Mesh tempmesh;

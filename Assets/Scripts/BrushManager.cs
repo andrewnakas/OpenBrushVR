@@ -5,7 +5,22 @@ using UnityEngine.UI;
 public class BrushManager : MonoBehaviour {
 	public static bool canpaint;
 	public static bool couldpaint;
+
+	#if UNITY_STANDALONE_WIN 
+
+
 	public SteamVR_TrackedObject controller;
+
+
+	#elif UNITY_ANDROID 
+
+
+
+	public static bool TangoPainting;
+	public static bool TangoPaintingStart;
+	public Slider cursorSizer;
+	#endif
+
 	public  Text btex;
 	// painted bool that switches between the two brushes
 	//will change to case sw when added a third brush
@@ -27,7 +42,12 @@ public class BrushManager : MonoBehaviour {
 	public ToolManager tooler; 
 	// Use this for initialization
 	void Start () {
-		
+	#if UNITY_ANDROID 
+
+
+
+		canpaint = true;
+		#endif
 		//need to make this a singlton 
 		cursorsize =  0.1f;
 
@@ -40,6 +60,11 @@ public class BrushManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		#if UNITY_STANDALONE_WIN 
+
+
+	
+
 	
 
 		SteamVR_Controller.Device device = SteamVR_Controller.Input((int)controller.index);
@@ -53,8 +78,23 @@ public class BrushManager : MonoBehaviour {
 			cursor.transform.localScale = new Vector3 (cursorsize, cursorsize, cursorsize);
 		}
 
+
+		#endif
 	}
 
+		#if UNITY_ANDROID 
+
+	public void sliderValue(){
+		cursorsize = cursorSizer.value;
+
+
+
+
+		cursor.transform.localScale = new Vector3 (cursorsize, cursorsize, cursorsize);
+	}
+		#endif
+
+	
 	/*
 	public void BrushSwitch(){
 
@@ -189,5 +229,26 @@ public class BrushManager : MonoBehaviour {
 
 
 	}
+
+
+	#if UNITY_ANDROID 
+
+
+
+	public void PaintingStart(){
+		TangoPaintingStart = true; 
+		TangoPainting = true;
+		Debug.Log ("PaintingStartt");
+	} 
+
+	public void PaintingEnd(){
+
+
+
+		TangoPainting = false;
+		Debug.Log ("End");
+	}
+
+	#endif
 
 }

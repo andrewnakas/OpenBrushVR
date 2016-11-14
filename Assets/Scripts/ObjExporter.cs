@@ -134,11 +134,11 @@ public class ObjExporter : MonoBehaviour {
 		PlayerPrefs.SetInt("exportnum",PlayerPrefs.GetInt("exportnum")+1);
 		string meshName = gameObject.name;
 	
-		#if UNITY_EDITOR
+		#if UNITY_EDITOR ||UNITY_ANDROID 
 
 
 	string fileName = Application.persistentDataPath+"/"+gameObject.name+ PlayerPrefs.GetInt("exportnum").ToString() +".obj"; // you can also use: "/storage/sdcard1/" +gameObject.name+".obj"
-		#else 
+		#elif UNITY_STANDALONE_WIN 
 		//string fileName = Application.persistentDataPath+"/"+gameObject.name+ PlayerPrefs.GetInt("exportnum").ToString() +".obj"; // you can also use: "/storage/sdcard1/" +gameObject.name+".obj"
 		string fileName = Application.dataPath+"/"+gameObject.name+ PlayerPrefs.GetInt("exportnum").ToString() +".obj"; // you can also use: "/storage/sdcard1/" +gameObject.
 		#endif

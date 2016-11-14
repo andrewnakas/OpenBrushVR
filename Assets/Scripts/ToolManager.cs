@@ -11,7 +11,18 @@ public class ToolManager : MonoBehaviour {
 	public BrushManager brusher;
 	public GameObject cursor;
 	public Text retexturetxt;
+
+
+	#if UNITY_STANDALONE_WIN 
+
+
 	public SteamVR_TrackedObject trackedObj;
+
+
+	#elif UNITY_ANDROID 
+	public bool isGripped;
+	#endif
+
 	public static GameObject curSelGameObject;
 	public  GameObject lastSelGameObject;
 	public UndoManager Undoer;
@@ -26,7 +37,7 @@ public class ToolManager : MonoBehaviour {
 	}// Update is called once per frame
 	void Update () {
 	//hacky will change
-
+		#if UNITY_STANDALONE_WIN 
 		SteamVR_Controller.Device device = SteamVR_Controller.Input((int)trackedObj.index);
 		if (curSelGameObject != null && device.GetTouch (SteamVR_Controller.ButtonMask.Grip)) {
 			if (curSelGameObject.transform.parent == (eportmesh.transform)) {
@@ -44,6 +55,23 @@ public class ToolManager : MonoBehaviour {
 				curSelGameObject.transform.SetParent (eportmesh.transform);
 			}
 		}
+
+		#elif UNITY_ANDROID 
+		if (curSelGameObject != null && isGripped == true) {
+		
+			Debug.Log ("LEtsGo");
+			if (curSelGameObject.transform.parent == (eportmesh.transform)) {
+				lastSelGameObject = curSelGameObject;
+				Undoer.prevTrans.Add (new UndoManager.PrevTrans (curSelGameObject.transform.position, curSelGameObject.transform.rotation, curSelGameObject.transform.localScale, curSelGameObject)); 
+
+				Undoer.globalUndo.Add (1);
+				curSelGameObject.transform.SetParent (cursor.transform);
+			}
+
+			curSelGameObject.transform.SetParent (cursor.transform);
+
+		} 
+		#endif
 
 	}
 
@@ -122,4 +150,26 @@ public class ToolManager : MonoBehaviour {
 			BrushManager.canpaint = true;
 		}
 	}
+
+
+	#if UNITY_ANDROID 
+
+		
+	public void GripStart(){
+
+		isGripped = true;
+
+
+	}
+	public void GripEnd(){
+
+		isGripped = false;
+		if (curSelGameObject != null) {
+			curSelGameObject.transform.SetParent (eportmesh.transform);
+		}
+
+	}
+
+	#endif
+
 }

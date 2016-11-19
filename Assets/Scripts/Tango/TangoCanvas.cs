@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 public class TangoCanvas : MonoBehaviour {
 	public GameObject ColorM;
 	public GameObject ToolC;
@@ -21,6 +21,21 @@ public class TangoCanvas : MonoBehaviour {
 	
 	
 	
+	}
+	public void motionLevelLoad(){
+
+
+		SceneManager.LoadScene ("OpenBrush_Tango");
+
+
+
+
+	}
+
+	public void openbrushload(){
+		SceneManager.LoadScene ("OpenBrush_Tango_Augmented_Reality");
+
+
 	}
 	public IEnumerator colorStart(){
 		//turn on color selection at artart

@@ -445,7 +445,7 @@ public class AreaLearningInGameController : MonoBehaviour, ITangoPose, ITangoEve
         }
 
         bool saveConfirmed = m_guiTextInputResult;
-#else
+#elif UNITY_ANDROID
         if (TouchScreenKeyboard.visible || m_saveThread != null)
         {
             yield break;
@@ -458,7 +458,9 @@ public class AreaLearningInGameController : MonoBehaviour, ITangoPose, ITangoEve
         }
 
         bool saveConfirmed = kb.done;
-#endif
+
+		#endif
+		#if (UNITY_EDITOR || UNITY_ANDROID) 
         if (saveConfirmed)
         {
             // Disable interaction before saving.
@@ -471,13 +473,18 @@ public class AreaLearningInGameController : MonoBehaviour, ITangoPose, ITangoEve
                     // Start saving process in another thread.
                     m_curAreaDescription = AreaDescription.SaveCurrent();
                     AreaDescription.Metadata metadata = m_curAreaDescription.GetMetadata();
+		#endif
+
 #if UNITY_EDITOR
                     metadata.m_name = m_guiTextInputContents;
-#else
+						#elif UNITY_Android
                     metadata.m_name = kb.text;
 #endif
+
+						#if (UNITY_EDITOR || UNITY_ANDROID) 
                     m_curAreaDescription.SaveMetadata(metadata);
                 });
+						
                 m_saveThread.Start();
             }
             else
@@ -487,7 +494,12 @@ public class AreaLearningInGameController : MonoBehaviour, ITangoPose, ITangoEve
                 Application.LoadLevel(Application.loadedLevel);
                 #pragma warning restore 618
             }
+					
         }
+						#endif
+		#if (UNITY_STANDALONE_WIN)
+		yield return null;
+		#endif
     }
 
     /// <summary>

@@ -133,12 +133,17 @@ public class ToolManager : MonoBehaviour {
 
 			Debug.Log (couldteleport);
 		} else {
-			if (BrushManager.brushswitchbool == false) {
+			if (BrushManager.brushswitchint == 0) {
 				brusher.CylindarBrushtoggle ();
 
-			} else {
+			} else if (BrushManager.brushswitchint == 1) {
 				
-		brusher.flatbrushtoggle ();
+				brusher.flatbrushtoggle ();
+
+			} else if (BrushManager.brushswitchint == 2) {
+
+				brusher.squarebrushtoggle ();
+
 
 			}
 			cursor.SetActive (true);

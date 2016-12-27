@@ -458,14 +458,15 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
     /// </summary>
     /// <returns>Coroutine IEnumerator.</returns>
     private IEnumerator _DoImportAreaDescription()
-    {
+	{#if UNITY_ANDROID 
         if (TouchScreenKeyboard.visible)
         {
             yield break;
         }
         
         TouchScreenKeyboard kb = TouchScreenKeyboard.Open("/sdcard/", TouchScreenKeyboardType.Default, false);
-        while (!kb.done && !kb.wasCanceled)
+	
+		while (!kb.done && !kb.wasCanceled)
         {
             yield return null;
         }
@@ -474,6 +475,12 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
         {
             AreaDescription.ImportFromFile(kb.text);
         }
+		#else 
+		yield return null;
+
+		#endif
+
+
     }
 
     /// <summary>
@@ -485,13 +492,15 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
     /// <param name="areaDescription">Area Description to export.</param>
     private IEnumerator _DoExportAreaDescription(AreaDescription areaDescription)
     {
+		#if UNITY_ANDROID 
         if (TouchScreenKeyboard.visible)
         {
             yield break;
         }
-
+		#endif
         TouchScreenKeyboard kb = TouchScreenKeyboard.Open("/sdcard/", TouchScreenKeyboardType.Default, false);
-        while (!kb.done && !kb.wasCanceled)
+
+		while (!kb.done && !kb.wasCanceled)
         {
             yield return null;
         }
@@ -569,7 +578,7 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
         {
             yield return null;
         }
-#else
+#elif UNITY_ANDROID 
         if (TouchScreenKeyboard.visible || m_saveThread != null)
         {
             yield break;
@@ -582,7 +591,11 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
         }
 #endif
 
-        // Save the text in a background thread.
+		#if ( UNITY_STANDALONE_WIN)
+
+		yield return null;
+		#endif
+		// Save the text in a background thread.
         m_savingTextParent.gameObject.SetActive(true);
         m_saveThread = new Thread(delegate()
         {
@@ -591,7 +604,7 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
             AreaDescription.Metadata metadata = areaDescription.GetMetadata();
 #if UNITY_EDITOR
             metadata.m_name = m_guiTextInputContents;
-#else
+#elif UNITY_ANDROID
             metadata.m_name = kb.text;
 #endif
             areaDescription.SaveMetadata(metadata);

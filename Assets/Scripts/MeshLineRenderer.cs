@@ -11,13 +11,13 @@ class Point {
 [RequireComponent(typeof(MeshRenderer))]
 [RequireComponent(typeof(MeshFilter))]
 public class MeshLineRenderer : MonoBehaviour {
-
+	public Vector3 lastV;
 	public Material lmat;
 
 	private Mesh ml;
 
 	private Vector3 s;
-
+	private Vector3 sl;
 	public float lineSize = 0.04f;
 
 	private bool firstQuad = true;
@@ -34,21 +34,22 @@ public class MeshLineRenderer : MonoBehaviour {
 		lineSize =width;
 	}
 
-	public void AddPoint(Vector3 point) {
+	public void AddPoint(Vector3 point, Vector3 point1) {
 	//	lineSize = BrushManager.cursorsize;
 
 		if(s != Vector3.zero) {
 
 
-			AddLine(ml, MakeQuad(s, point, lineSize, firstQuad));
+			AddLine(ml, MakeQuad(s,sl, point,point1, lineSize, firstQuad));
 			firstQuad = false;
 			//s = point;
 		}
 
 		s = point;
+		sl = point1;
 	}
 
-	Vector3[] MakeQuad(Vector3 s, Vector3 e, float w, bool all) {
+	Vector3[] MakeQuad(Vector3 s,Vector3 hs,Vector3 er, Vector3 e, float w, bool all) {
 		w = w / 2;
 
 		Vector3[] q;
@@ -58,10 +59,19 @@ public class MeshLineRenderer : MonoBehaviour {
 			q = new Vector3[2];
 		}
 
-		Vector3 n = Vector3.Cross(s, e);
-		Vector3 l = Vector3.Cross(n, e - s);
-		l.Normalize();
+	//	Vector3 n = Vector3.Cross(s, e);
+	//	Vector3 l = Vector3.Cross(n, s -e);
+	//	if (l != Vector3.zero) {
+	//		lastV = l;
+	//	}
+	///	else {
+	//		l =lastV;
+	//	}
 
+	//	l.Normalize();
+
+
+		/*
 		if(all) {
 			q[0] = transform.InverseTransformPoint(s + l * w);
 			q[1] = transform.InverseTransformPoint(s + l * -w);
@@ -72,6 +82,22 @@ public class MeshLineRenderer : MonoBehaviour {
 			q[1] = transform.InverseTransformPoint(s + l * -w);
 		}
 		return q;
+*/
+
+		//this method switch the brush strokes to adheare to the local position of the controller allowing for a much larger
+
+		if(all) {
+			q[0] = s;
+			q[1] =hs;
+			q[2] =er;
+			q[3] = e;
+		} else {
+			q[0] =s;
+			q[1] = hs;
+		}
+		return q;
+
+
 	}
 
 	void AddLine(Mesh m, Vector3[] quad) {

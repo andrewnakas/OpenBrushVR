@@ -243,9 +243,11 @@ using System.Collections.Generic;
 
 	#endif
 	public void pointerbreaker(){
+		
 		var drawState = _drawStates[0];
 		Mesh tempmesh;
 		tempmesh = drawState.FinishLine () as Mesh;
+		if (strokes != null)
 		strokes.GetComponent<MeshCollider> ().sharedMesh = tempmesh ;
 		firstpointtime = false;
 
@@ -304,6 +306,9 @@ using System.Collections.Generic;
 			lineObj.GetComponent<MeshCollider> ().sharedMesh = null;
 			lineObj.GetComponent<MeshCollider>().sharedMesh = _mesh;
 
+			//adding save esh
+			lineObj.AddComponent <SaveInjector>();
+
 		
 //			lineObj.GetComponent<MeshCollider> ().isTrigger = true;
         return lineObj;
@@ -329,7 +334,7 @@ using System.Collections.Generic;
 				
 			
 				_mesh.RecalculateBounds ();
-				_mesh.Optimize ();
+				;
 
 
 

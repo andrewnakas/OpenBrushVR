@@ -33,7 +33,7 @@ public class CanvasRot : MonoBehaviour {
 		currentXAxis = device.GetAxis (Valve.VR.EVRButtonId.k_EButton_Axis0) [0]+1;
 	
 
-		currentXAxis = Input.GetTouch(0).deltaPosition.magnitude;
+//		currentXAxis = Input.GetTouch(0).deltaPosition.magnitude;
 	
 	//	Debug.Log (currentXAxis -lateXAxis);
 		if (currentXAxis - lateXAxis > 0.2f) {

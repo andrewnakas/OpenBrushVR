@@ -277,7 +277,7 @@ public class TangoPointCloud : MonoBehaviour, ITangoPointCloud
 
             m_overallZ = m_overallZ / m_pointsCount;
             m_depthTimestamp = pointCloud.m_timestamp;
-
+		
             if (m_updatePointsMesh)
             {
                 // Need to update indicies too!
@@ -286,10 +286,11 @@ public class TangoPointCloud : MonoBehaviour, ITangoPointCloud
                 {
                     indices[i] = i;
                 }
-
+				PerDepthFrameCallBack.Instance.CallBack(m_points, m_pointsCount);
                 m_mesh.Clear();
                 m_mesh.vertices = m_points;
                 m_mesh.SetIndices(indices, MeshTopology.Points, 0);
+			
             }
 
             // The color should be pose relative, we need to store enough info to go back to pose values.
@@ -343,7 +344,35 @@ public class TangoPointCloud : MonoBehaviour, ITangoPointCloud
         
         return bestIndex;
     }
+	public float FindClosestPointGameObject(Transform cursor,  int maxDist)
+	{
+		float bestIndex = -1;
+		float bestDistSqr = 0;
 
+		for (int it = 0; it < m_pointsCount; ++it)
+		{
+		//	Vector3 screenPos3 = Vector3 (m_points[it]);
+			//Vector2 screenPos = new Vector2(screenPos3.x, screenPos3.y);
+
+		//float distSqr = Vector2.SqrMagnitude(screenPos - pos);
+			float distSqr = Vector3.Distance(cursor.position, m_points[it]);
+		
+			/*
+			if (distSqr > maxDist * maxDist)
+			{
+				continue;
+			}
+*/
+			if (bestIndex == -1 || distSqr < bestDistSqr)
+			{
+				bestIndex = distSqr;
+				bestDistSqr = distSqr;
+			}
+
+		}
+
+		return bestIndex;
+	}
     /// <summary>
     /// Given a screen coordinate, finds a plane that most closely fits the
     /// depth values in that area.

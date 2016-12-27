@@ -24,7 +24,7 @@ public class BrushManager : MonoBehaviour {
 	public  Text btex;
 	// painted bool that switches between the two brushes
 	//will change to case sw when added a third brush
-	public static bool brushswitchbool;
+	public static int brushswitchint;
 	public GameObject con;
 	public static bool canRetexture;
 	public static bool couldRetexture;
@@ -36,6 +36,7 @@ public class BrushManager : MonoBehaviour {
 	public static bool freeformbool;
 	public GameObject lineBreak;
 	public static float cursorsize;
+	public Image squarebrush; 
 	public Image cylandarbrush; 
 	public Image flatbrush;
 	public Image retextureIMG;
@@ -43,13 +44,13 @@ public class BrushManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	#if UNITY_ANDROID 
-
-
+		cursorsize=.05f;
+		sliderValue();
 
 		canpaint = true;
 		#endif
 		//need to make this a singlton 
-		cursorsize =  0.1f;
+		cursorsize =  0.05f;
 
 		CylindarBrushtoggle ();
 	
@@ -117,19 +118,32 @@ public class BrushManager : MonoBehaviour {
 
 
 	public void CylindarBrushtoggle(){
-		brushswitchbool = false;
+	
+		if (freeformbool == true) {
+			con.GetComponent<PinchDraw> ().pointerbreaker ();
+			con.GetComponent<dLineManager> ().pointbreaker ();
+		}
+		brushswitchint = 0;
 		con.GetComponent<dLineManager> ().enabled = false;
 		con.GetComponent<PinchDraw> ().enabled = true;
 		cylandarbrush.color = Color.gray;
 		flatbrush.color = Color.white;
+		squarebrush.color = Color.white;
 		canpaint = true;
 		tooler.teleportoff();
 	}
 
 	public  void flatbrushtoggle(){
-		brushswitchbool = true;
+	
+	
+		brushswitchint = 1;
+		if (freeformbool == true) {
+			con.GetComponent<PinchDraw> ().pointerbreaker ();
+			con.GetComponent<dLineManager> ().pointbreaker ();
+		}
 		cylandarbrush.color =Color.white; 
 		flatbrush.color = Color.gray;
+		squarebrush.color = Color.white;
 		con.GetComponent<dLineManager> ().enabled =true;
 		con.GetComponent<PinchDraw> ().enabled =false;
 		canpaint = true;
@@ -137,10 +151,27 @@ public class BrushManager : MonoBehaviour {
 		tooler.teleportoff();
 	}
 
+	public  void squarebrushtoggle(){
+	
+	
+		brushswitchint = 2;
+		cylandarbrush.color =Color.white; 
+		squarebrush.color = Color.gray;
+		flatbrush.color = Color.white;
+		con.GetComponent<dLineManager> ().enabled =true;
+		con.GetComponent<PinchDraw> ().enabled =false;
+
+		con.GetComponent<PinchDraw> ().pointerbreaker ();
+		con.GetComponent<dLineManager> ().pointbreaker ();
+		canpaint = true;
+
+		tooler.teleportoff();
+	}
 
 	public void deselectAllbrushes(){
 		flatbrush.color = Color.white;
 		cylandarbrush.color =Color.white; 
+		squarebrush.color = Color.white;
 		con.GetComponent<PinchDraw> ().enabled =false;
 		con.GetComponent<dLineManager> ().enabled = false;
 	}
@@ -160,7 +191,7 @@ public class BrushManager : MonoBehaviour {
 				
 
 				con.GetComponent<PinchDraw> ().pointerbreaker ();
-
+			
 			}
 
 
@@ -207,10 +238,10 @@ public class BrushManager : MonoBehaviour {
 			} else {
 				
 				canpaint = true; 
-				if (brushswitchbool == false) {
+				if (brushswitchint ==0) {
 					CylindarBrushtoggle ();
 
-				} else {
+				} else if  (brushswitchint ==0) {
 
 					flatbrushtoggle ();
 				}

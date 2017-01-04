@@ -660,8 +660,8 @@ PlayerSettings:
     Unity_Ads: 0
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
-  cloudProjectId: 2ac97cdd-88c9-42db-a91c-df97fea41b2a
-  projectName: OpenBrushVR (2)
+  cloudProjectId: c241b074-eb79-4a19-a54a-066240bc7ae4
+  projectName: OpenBrushVR (1)
   organizationId: nakas
   cloudEnabled: 0
   enableNewInputSystem: 0

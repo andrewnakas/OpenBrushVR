@@ -22,7 +22,7 @@ using UnityEngine;
 
 /// <summary>
 /// Tango video overlay interface where the handler will be invoked from multiple threads.
-///
+/// 
 /// Use this if you want to get the image callbacks as soon as they are available.  The handler will be invoked as
 /// soon as the event happens, even if that is in another thread.  You must make sure your handler is thread-safe.
 /// </summary>
@@ -30,12 +30,11 @@ public interface ITangoVideoOverlayMultithreaded
 {
     /// <summary>
     /// This will be called when a new frame is available from the camera.
-    ///
+    /// 
     /// The first scan-line of the color image is reserved for metadata instead of image pixels.
     /// </summary>
     /// <param name="cameraId">Camera identifier.</param>
-    /// <param name="image">Image buffer.</param>
-    /// <param name="cameraMetadata">Camera metadata.</param>
-    void OnTangoImageMultithreadedAvailable(Tango.TangoEnums.TangoCameraId cameraId,
-                                            Tango.TangoImage image, Tango.TangoCameraMetadata cameraMetadata);
+    /// <param name="imageBuffer">Image buffer.</param>
+    void OnTangoImageMultithreadedAvailable(Tango.TangoEnums.TangoCameraId cameraId, 
+                                            Tango.TangoImageBuffer imageBuffer);
 }

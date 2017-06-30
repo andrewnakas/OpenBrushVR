@@ -18,7 +18,6 @@
 // </copyright>
 //-----------------------------------------------------------------------
 using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using System.Xml;
@@ -617,16 +616,11 @@ public class MeshOcclusionUIController : MonoBehaviour, ITangoLifecycle, ITangoP
                 m_savedUUID = m_curAreaDescription.m_uuid;    
                 metadata.m_name = metadata.m_dateTime.ToLongTimeString();
                 m_curAreaDescription.SaveMetadata(metadata);
+
+                // Save the tango dynamic mesh to file.
+                StartCoroutine(_DoSaveTangoDynamicMesh());
             });
             m_saveThread.Start();
-
-            while (m_saveThread.IsAlive)
-            {
-                yield return null;
-            }
-            
-            // Save the tango dynamic mesh to file.
-            StartCoroutine(_DoSaveTangoDynamicMesh());
         }
         else
         {
@@ -648,22 +642,60 @@ public class MeshOcclusionUIController : MonoBehaviour, ITangoLifecycle, ITangoP
         m_savingText.gameObject.SetActive(true);
         m_savingText.text = "Extracting Whole Mesh...";
 
-        // Each list is filled out with values from extracting the whole mesh.
-        List<Vector3> vertices = new List<Vector3>();
-        List<int> triangles = new List<int>();
+        Tango3DReconstruction.Status status = Tango3DReconstruction.Status.INVALID;
+        bool needsToGrow = false;
+        float growthFactor = 1.5f;
 
-        Tango3DReconstruction.Status status = m_tangoApplication.Tango3DRExtractWholeMesh(vertices, null, null, triangles);
-        if (status != Tango3DReconstruction.Status.SUCCESS)
+        // Each list is filled out with values from extracting the whole mesh.
+        Vector3[] vertices = new Vector3[100];
+        int[] triangles = new int[99];
+
+        while (status != Tango3DReconstruction.Status.SUCCESS)
         {
-            Debug.Log("Tango3DRExtractWholeMesh failed, status code = " + status);
-            yield break;
+            yield return null;
+
+            // Last frame the mesh needed more space.  Give it more room now.
+            if (needsToGrow)
+            {
+                int newVertexSize = (int)(vertices.Length * growthFactor);
+                int newTriangleSize = (int)(triangles.Length * growthFactor);
+                newTriangleSize -= newTriangleSize % 3;
+                
+                vertices = new Vector3[newVertexSize];
+                triangles = new int[newTriangleSize];
+                needsToGrow = false;
+            }
+
+            int numVertices;
+            int numTriangles;
+
+            status = m_tangoApplication.Tango3DRExtractWholeMesh(vertices, null, null, triangles, out numVertices, out numTriangles);
+
+            if (status != Tango3DReconstruction.Status.INSUFFICIENT_SPACE
+                && status != Tango3DReconstruction.Status.SUCCESS)
+            {
+                Debug.Log("Tango3DRExtractWholeMesh failed, status code = " + status);
+                break;
+            }
+            else if (status == Tango3DReconstruction.Status.INSUFFICIENT_SPACE)
+            {
+                // After exceeding allocated space for vertices and triangles, continue extraction next frame.
+                Debug.Log(string.Format("Tango3DRExtractWholeMesh ran out of space with room for {0} vertexes, {1} indexes.", vertices.Length, triangles.Length));
+                needsToGrow = true;
+            }
+
+            // Make any leftover triangles degenerate.
+            for (int triangleIt = numTriangles * 3; triangleIt < triangles.Length; ++triangleIt)
+            {
+                triangles[triangleIt] = 0;
+            }
         }
 
         Debug.Log("Tango3DRExtractWholeMesh finished");
 
         Mesh extractedMesh = new Mesh();
-        extractedMesh.vertices = vertices.ToArray();
-        extractedMesh.triangles = triangles.ToArray();
+        extractedMesh.vertices = vertices;
+        extractedMesh.triangles = triangles;
 
         // Save the generated unity mesh.
         m_savingText.text = "Saving Area Description Mesh...";

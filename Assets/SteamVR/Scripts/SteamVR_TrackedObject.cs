@@ -31,13 +31,10 @@ public class SteamVR_TrackedObject : MonoBehaviour
 	}
 
 	public EIndex index;
+	public Transform origin; // if not set, relative to parent
+    public bool isValid = false;
 
-	[Tooltip("If not set, relative to parent")]
-	public Transform origin;
-
-    public bool isValid { get; private set; }
-
-	private void OnNewPoses(TrackedDevicePose_t[] poses)
+	private void OnNewPoses(params object[] args)
 	{
 		if (index == EIndex.None)
 			return;
@@ -45,6 +42,7 @@ public class SteamVR_TrackedObject : MonoBehaviour
 		var i = (int)index;
 
         isValid = false;
+		var poses = (Valve.VR.TrackedDevicePose_t[])args[0];
 		if (poses.Length <= i)
 			return;
 
@@ -60,21 +58,18 @@ public class SteamVR_TrackedObject : MonoBehaviour
 
 		if (origin != null)
 		{
-			transform.position = origin.transform.TransformPoint(pose.pos);
-			transform.rotation = origin.rotation * pose.rot;
+			pose = new SteamVR_Utils.RigidTransform(origin) * pose;
+			pose.pos.x *= origin.localScale.x;
+			pose.pos.y *= origin.localScale.y;
+			pose.pos.z *= origin.localScale.z;
+			transform.position = pose.pos;
+			transform.rotation = pose.rot;
 		}
 		else
 		{
 			transform.localPosition = pose.pos;
 			transform.localRotation = pose.rot;
 		}
-	}
-
-	SteamVR_Events.Action newPosesAction;
-
-	SteamVR_TrackedObject()
-	{
-		newPosesAction = SteamVR_Events.NewPosesAction(OnNewPoses);
 	}
 
 	void OnEnable()
@@ -86,12 +81,12 @@ public class SteamVR_TrackedObject : MonoBehaviour
 			return;
 		}
 
-		newPosesAction.enabled = true;
+		SteamVR_Utils.Event.Listen("new_poses", OnNewPoses);
 	}
 
 	void OnDisable()
 	{
-		newPosesAction.enabled = false;
+		SteamVR_Utils.Event.Remove("new_poses", OnNewPoses);
 		isValid = false;
 	}
 

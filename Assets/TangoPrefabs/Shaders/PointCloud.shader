@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Tango/PointCloud" {
+﻿Shader "Tango/PointCloud" {
 Properties{
         point_size("Point Size", Float) = 5.0
 }
@@ -30,7 +28,7 @@ Properties{
         v2f vert (appdata v)
         {
            v2f o;
-           o.vertex = UnityObjectToClipPos(v.vertex);
+           o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
            o.size = point_size;
            
            // Color should be based on pose relative info

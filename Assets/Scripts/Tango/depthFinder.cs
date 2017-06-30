@@ -5,9 +5,7 @@ using UnityEngine.UI;
 public class depthFinder : MonoBehaviour {
 	public GameObject sphere;
 	public Camera cam;
-#if UNITY_ANDROID
-    public TangoPointCloud pc;
-#endif
+	public TangoPointCloud pc;
 	public Text nearestPoint;
 	public float pcReturn;
 	public bool depthOff;
@@ -57,7 +55,7 @@ public class depthFinder : MonoBehaviour {
 		if (depthOff == false) {
 
 			//nearestPoint.gameObject.SetActive (true);
-		//	findcenterPoint ();
+			findcenterPoint ();
 
 		} else {
 
@@ -65,7 +63,7 @@ public class depthFinder : MonoBehaviour {
 		
 		}
 	}
-/*
+
 	public void findcenterPoint(){
 
 
@@ -85,6 +83,5 @@ public class depthFinder : MonoBehaviour {
 			currentMat.color = new Vector4 (1, 1, 1, .5f);
 		}
 }
-*/
 
 }

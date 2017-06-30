@@ -18,8 +18,6 @@ public class SteamVR_Camera : MonoBehaviour
 	public Transform offset { get { return _head; } } // legacy
 	public Transform origin { get { return _head.parent; } }
 
-	public new Camera camera { get; private set; }
-
 	[SerializeField]
 	private Transform _ears;
 	public Transform ears { get { return _ears; } }
@@ -98,11 +96,7 @@ public class SteamVR_Camera : MonoBehaviour
 
 	#region Functionality to ensure SteamVR_Camera component is always the last component on an object
 
-	void Awake()
-	{
-		camera = GetComponent<Camera>(); // cached to avoid runtime lookup
-		ForceLast();
-    }
+	void Awake() { ForceLast(); }
 
 	static Hashtable values;
 
@@ -186,6 +180,16 @@ public class SteamVR_Camera : MonoBehaviour
 			head.rotation = transform.rotation;
 			head.localScale = Vector3.one;
 			head.tag = tag;
+
+			var camera = head.GetComponent<Camera>();
+			camera.clearFlags = CameraClearFlags.Nothing;
+			camera.cullingMask = 0;
+			camera.eventMask = 0;
+			camera.orthographic = true;
+			camera.orthographicSize = 1;
+			camera.nearClipPlane = 0;
+			camera.farClipPlane = 1;
+			camera.useOcclusionCulling = false;
 		}
 
 		if (transform.parent != head)

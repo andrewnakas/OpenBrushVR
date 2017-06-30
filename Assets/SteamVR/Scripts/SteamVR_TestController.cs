@@ -12,12 +12,15 @@ public class SteamVR_TestController : MonoBehaviour
 {
 	List<int> controllerIndices = new List<int>();
 
-	private void OnDeviceConnected(int index, bool connected)
+	private void OnDeviceConnected(params object[] args)
 	{
+		var index = (int)args[0];
+
 		var system = OpenVR.System;
 		if (system == null || system.GetTrackedDeviceClass((uint)index) != ETrackedDeviceClass.Controller)
 			return;
 
+		var connected = (bool)args[1];
 		if (connected)
 		{
 			Debug.Log(string.Format("Controller {0} connected.", index));
@@ -34,12 +37,12 @@ public class SteamVR_TestController : MonoBehaviour
 
 	void OnEnable()
 	{
-		SteamVR_Events.DeviceConnected.Listen(OnDeviceConnected);
+		SteamVR_Utils.Event.Listen("device_connected", OnDeviceConnected);
 	}
 
 	void OnDisable()
 	{
-		SteamVR_Events.DeviceConnected.Remove(OnDeviceConnected);
+		SteamVR_Utils.Event.Remove("device_connected", OnDeviceConnected);
 	}
 
 	void PrintControllerStatus(int index)

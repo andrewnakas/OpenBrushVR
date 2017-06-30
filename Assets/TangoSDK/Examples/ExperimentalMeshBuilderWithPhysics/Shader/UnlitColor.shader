@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-/*
+﻿/*
  * Copyright 2014 Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +29,7 @@ Shader "Custom/UnlitColor" {
             uniform float4 _Color;
 
             float4 vert(float4 v:POSITION) : SV_POSITION {
-                return UnityObjectToClipPos (v);
+                return mul (UNITY_MATRIX_MVP, v);
             }
 
             fixed4 frag() : COLOR {

@@ -1,5 +1,3 @@
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
 Shader "ColorPicker/ColorHue" {
 	SubShader {
 	    Pass {	
@@ -21,7 +19,7 @@ Shader "ColorPicker/ColorHue" {
 			
 			pos_output vert(appdata v) {
 			    pos_output o;
-			    o.pos = UnityObjectToClipPos(v.vertex);
+			    o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
 			    o.uv = float4(v.texcoord.xy, 0, 0);
 			    return o;
 			}

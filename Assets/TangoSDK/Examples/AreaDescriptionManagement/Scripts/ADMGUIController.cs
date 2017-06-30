@@ -20,10 +20,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
-
 using Tango;
-
-
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -56,7 +53,7 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
     /// UI to enable when m_ListParent has no children.
     /// </summary>
     public RectTransform m_listEmptyText;
-
+    
     /// <summary>
     /// UI parent of the selected Area Description's details.
     /// </summary>
@@ -109,7 +106,7 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
 
     /// <summary>
     /// The reference of the TangoDeltaPoseController object.
-    ///
+    /// 
     /// TangoDeltaPoseController listens to pose updates and applies the correct pose to itself and its built-in camera.
     /// </summary>
     public TangoDeltaPoseController m_deltaPoseController;
@@ -128,7 +125,7 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
     /// TangoApplication for this scene.
     /// </summary>
     private TangoApplication m_tangoApplication;
-
+    
     /// <summary>
     /// Currently selected Area Description.
     /// </summary>
@@ -150,13 +147,13 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
     /// If true, text input for naming new saved Area Description is displayed.
     /// </summary>
     private bool m_displayGuiTextInput;
-
+    
     /// <summary>
     /// Handles GUI text input in Editor where there is no device keyboard.
     /// Contains text data for naming new saved Area Descriptions.
     /// </summary>
     private string m_guiTextInputContents;
-
+    
     /// <summary>
     /// Handles GUI text input in Editor where there is no device keyboard.
     /// Indicates whether last text input was ended with confirmation or cancellation.
@@ -172,9 +169,9 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
         if (m_saveThread != null && m_saveThread.ThreadState != ThreadState.Running)
         {
             // After saving an Area Description, we reload the scene to restart the game.
-#pragma warning disable 618
+            #pragma warning disable 618
             Application.LoadLevel(Application.loadedLevel);
-#pragma warning restore 618
+            #pragma warning restore 618
         }
 
         // Pressing the back button should popup the management window if you are not in the management screen,
@@ -190,9 +187,9 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
             }
             else
             {
-#pragma warning disable 618
+                #pragma warning disable 618
                 Application.LoadLevel(Application.loadedLevel);
-#pragma warning restore 618
+                #pragma warning restore 618
             }
         }
     }
@@ -202,12 +199,6 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
     /// </summary>
     public void Start()
     {
-#if UNITY_EDITOR
-        // We must initialize this on the main Unity thread, since the value
-        // is sometimes used within a separate saving thread.
-        AreaDescription.GenerateEmulatedSavePath();
-#endif
-
         m_tangoApplication = FindObjectOfType<TangoApplication>();
 
         if (m_tangoApplication != null)
@@ -235,16 +226,16 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
         {
             // When application is backgrounded, we reload the level because the Tango Service is disconected. All
             // learned area and placed marker should be discarded as they are not saved.
-#pragma warning disable 618
+            #pragma warning disable 618
             Application.LoadLevel(Application.loadedLevel);
-#pragma warning restore 618
+            #pragma warning restore 618
         }
     }
 
 #if UNITY_EDITOR
     /// <summary>
     /// Unity OnGUI.
-    ///
+    /// 
     /// Handles text input when there is no device keyboard in the editor.
     /// </summary>
     public void OnGUI()
@@ -255,21 +246,21 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
                                         Screen.height - 200,
                                         Screen.width - 200,
                                         100);
-
+            
             Rect okButtonRect = textBoxRect;
             okButtonRect.y += 100;
             okButtonRect.width /= 2;
-
+            
             Rect cancelButtonRect = okButtonRect;
             cancelButtonRect.x = textBoxRect.center.x;
-
+            
             GUI.SetNextControlName("TextField");
             GUIStyle customTextFieldStyle = new GUIStyle(GUI.skin.textField);
             customTextFieldStyle.alignment = TextAnchor.MiddleCenter;
-            m_guiTextInputContents =
+            m_guiTextInputContents = 
                 GUI.TextField(textBoxRect, m_guiTextInputContents, customTextFieldStyle);
             GUI.FocusControl("TextField");
-
+            
             if (GUI.Button(okButtonRect, "OK")
                 || (Event.current.type == EventType.keyDown && Event.current.character == '\n'))
             {
@@ -284,7 +275,7 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
         }
     }
 #endif
-
+    
     /// <summary>
     /// This is called when the permission granting process is finished.
     /// </summary>
@@ -361,7 +352,7 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
                 button.m_toggle.onValueChanged.AddListener((value) => _OnAreaDescriptionToggleChanged(lambdaParam, value));
                 button.transform.SetParent(m_listParent, false);
             }
-
+            
             m_listEmptyText.gameObject.SetActive(false);
         }
         else
@@ -462,45 +453,54 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
 
     /// <summary>
     /// Actually do the Area Description import.
-    ///
+    /// 
     /// This runs over multiple frames, so a Unity coroutine is used.
     /// </summary>
     /// <returns>Coroutine IEnumerator.</returns>
     private IEnumerator _DoImportAreaDescription()
-    {
+	{#if UNITY_ANDROID 
         if (TouchScreenKeyboard.visible)
         {
             yield break;
         }
-
+        
         TouchScreenKeyboard kb = TouchScreenKeyboard.Open("/sdcard/", TouchScreenKeyboardType.Default, false);
-        while (!kb.done && !kb.wasCanceled)
+	
+		while (!kb.done && !kb.wasCanceled)
         {
             yield return null;
         }
-
+        
         if (kb.done)
         {
             AreaDescription.ImportFromFile(kb.text);
         }
+		#else 
+		yield return null;
+
+		#endif
+
+
     }
 
     /// <summary>
     /// Actually do the Area description export.
-    ///
+    /// 
     /// This runs over multiple frames, so a Unity coroutine is used.
     /// </summary>
     /// <returns>Coroutine IEnumerator.</returns>
     /// <param name="areaDescription">Area Description to export.</param>
     private IEnumerator _DoExportAreaDescription(AreaDescription areaDescription)
     {
+		#if UNITY_ANDROID 
         if (TouchScreenKeyboard.visible)
         {
             yield break;
         }
-
+		#endif
         TouchScreenKeyboard kb = TouchScreenKeyboard.Open("/sdcard/", TouchScreenKeyboardType.Default, false);
-        while (!kb.done && !kb.wasCanceled)
+
+		while (!kb.done && !kb.wasCanceled)
         {
             yield return null;
         }
@@ -571,14 +571,14 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
         {
             yield break;
         }
-
+        
         m_displayGuiTextInput = true;
         m_guiTextInputContents = "Unnamed";
         while (m_displayGuiTextInput)
         {
             yield return null;
         }
-#else
+#elif UNITY_ANDROID 
         if (TouchScreenKeyboard.visible || m_saveThread != null)
         {
             yield break;
@@ -591,7 +591,11 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
         }
 #endif
 
-        // Save the text in a background thread.
+		#if ( UNITY_STANDALONE_WIN)
+
+		yield return null;
+		#endif
+		// Save the text in a background thread.
         m_savingTextParent.gameObject.SetActive(true);
         m_saveThread = new Thread(delegate()
         {
@@ -600,12 +604,11 @@ public class ADMGUIController : MonoBehaviour, ITangoLifecycle, ITangoEvent
             AreaDescription.Metadata metadata = areaDescription.GetMetadata();
 #if UNITY_EDITOR
             metadata.m_name = m_guiTextInputContents;
-#else
+#elif UNITY_ANDROID
             metadata.m_name = kb.text;
 #endif
             areaDescription.SaveMetadata(metadata);
         });
-
         m_saveThread.Start();
     }
 }

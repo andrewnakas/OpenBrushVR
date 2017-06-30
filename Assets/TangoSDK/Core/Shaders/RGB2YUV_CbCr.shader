@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Hidden/Tango/RGB2YUV_CbCr"
+﻿Shader "Hidden/Tango/RGB2YUV_CbCr"
 {
     Properties
     {
@@ -35,7 +33,7 @@ Shader "Hidden/Tango/RGB2YUV_CbCr"
             v2f vert (appdata v)
             {
                 v2f o;
-                o.vertex = UnityObjectToClipPos(v.vertex);
+                o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
                 o.uv = v.uv;
                 o.uv.y = 1 - o.uv.y;
                 return o;

@@ -17,9 +17,6 @@
 //
 // </copyright>
 //-----------------------------------------------------------------------
-[module: System.Diagnostics.CodeAnalysis.SuppressMessage("StyleCop.CSharp.DocumentationRules",
-    "SA1649:FileHeaderFileNameDocumentationMustMatchTypeName",
-    Justification = "Files can start with an interface.")]
 
 namespace Tango
 {
@@ -45,25 +42,12 @@ namespace Tango
     /// </summary>
     /// <param name="tangoDepth">TangoUnityDepth object for the available depth frame.</param>
     internal delegate void OnTangoDepthAvailableEventHandler(TangoUnityDepth tangoDepth);
-
+    
     /// <summary>
     /// DEPRECATED: Delegate for Tango depth event that can be called on any thread.
     /// </summary>
     /// <param name="tangoDepth"><c>TangoXYZij</c> object for the available depth frame.</param>
     internal delegate void OnTangoDepthMulithreadedAvailableEventHandler(TangoXYZij tangoDepth);
-
-    /// <summary>
-    /// The interface of instance wrapper for the static DepthListener class.
-    /// </summary>
-    internal interface IDepthListenerWrapper
-    {
-        /// <summary>
-        /// Set an upper limit on the number of points in the point cloud.
-        /// Hopefully a temporary workaround 'till this is implemented as an option C-side.
-        /// </summary>
-        /// <param name="maxDepthPoints">Max points.</param>
-        void SetPointCloudLimit(int maxDepthPoints);
-    }
 
     /// <summary>
     /// Marshals Tango depth data between the C callbacks in one thread and
@@ -141,7 +125,7 @@ namespace Tango
 
         /// <summary>
         /// Register to get Tango depth callbacks.
-        ///
+        /// 
         /// NOTE: Tango depth callbacks happen on a different thread than the main
         /// Unity thread.
         /// </summary>
@@ -264,7 +248,7 @@ namespace Tango
                 m_onTangoDepthMultithreadedAvailable += handler;
             }
         }
-
+        
         /// <summary>
         /// Unregisters a multithread handler for the Tango depth event.
         /// </summary>
@@ -392,7 +376,7 @@ namespace Tango
 
         /// <summary>
         /// Reduces depth points down to below a fixed number of points.
-        ///
+        /// 
         /// TODO: Do this sort of thing in C code before before passing to Unity instead.
         /// </summary>
         /// <param name="pointCloud">Tango depth data to reduce.</param>
@@ -405,7 +389,7 @@ namespace Tango
                 // dirty way to avoid any possibile edge-case accumulated FP error
                 // in the sketchy code below.
                 float keepFraction = (maxNumPoints - 1) / (float)pointCloud.m_numPoints;
-
+                
                 int keptPoints = 0;
                 float keepCounter = 0;
                 for (int i = 0; i < pointCloud.m_numPoints; i++)
@@ -418,7 +402,7 @@ namespace Tango
                         keptPoints++;
                     }
                 }
-
+                
                 pointCloud.m_numPoints = keptPoints;
             }
         }
@@ -460,7 +444,7 @@ namespace Tango
             data.timestamp = depth.m_timestamp;
             return data;
         }
-
+        
         /// <summary>
         /// It's backwards, but fill an emulated TangoPointCloudIntPtr instance from an emulated TangoPointCloudData
         /// instance. It is the responsibility of the caller to GC pin/free the pointCloudData's m_points.
@@ -478,21 +462,5 @@ namespace Tango
             return raw;
         }
 #endif
-    }
-
-    /// <summary>
-    /// Instance wrapper for the static DepthListener class.
-    /// </summary>
-    internal class DepthListenerWrapper : IDepthListenerWrapper
-    {
-        /// <summary>
-        /// Set an upper limit on the number of points in the point cloud.
-        /// Hopefully a temporary workaround 'till this is implemented as an option C-side.
-        /// </summary>
-        /// <param name="maxDepthPoints">Max points.</param>
-        public void SetPointCloudLimit(int maxDepthPoints)
-        {
-            DepthListener.SetPointCloudLimit(maxDepthPoints);
-        }
     }
 }

@@ -12,29 +12,26 @@ using System.Text.RegularExpressions;
 [InitializeOnLoad]
 public class SteamVR_Update : EditorWindow
 {
-	const string currentVersion = "1.2.2";
+	const string currentVersion = "1.1.1";
 	const string versionUrl = "http://media.steampowered.com/apps/steamvr/unitypluginversion.txt";
 	const string notesUrl = "http://media.steampowered.com/apps/steamvr/unityplugin-v{0}.txt";
 	const string pluginUrl = "http://u3d.as/content/valve-corporation/steam-vr-plugin";
 	const string doNotShowKey = "SteamVR.DoNotShow.v{0}";
 
-	static bool gotVersion = false;
 	static WWW wwwVersion, wwwNotes;
 	static string version, notes;
 	static SteamVR_Update window;
 
 	static SteamVR_Update()
 	{
+		wwwVersion = new WWW(versionUrl);
 		EditorApplication.update += Update;
 	}
 
 	static void Update()
 	{
-		if (!gotVersion)
+		if (wwwVersion != null)
 		{
-			if (wwwVersion == null)
-				wwwVersion = new WWW(versionUrl);
-
 			if (!wwwVersion.isDone)
 				return;
 
@@ -42,7 +39,6 @@ public class SteamVR_Update : EditorWindow
 				version = wwwVersion.text;
 
 			wwwVersion = null;
-			gotVersion = true;
 
 			if (ShouldDisplay())
 			{

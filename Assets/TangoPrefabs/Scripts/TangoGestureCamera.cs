@@ -93,7 +93,7 @@ public class TangoGestureCamera : MonoBehaviour
                 startThirdPersonRotationX = 45.0f;
                 startThirdPersonRotationY = -45.0f;
                 startThirdPersonCameraCircleR = 0.0f;
-                curThirdPersonCameraCircleR = 7.0f;
+                curThirdPersonCameraCircleR = 2.0f;
                 curThirdPersonRotationX = startThirdPersonRotationX + (Mathf.PI * (0.0f / Screen.width));
                 curThirdPersonRotationY = startThirdPersonRotationY + (Mathf.PI * (0.0f / Screen.height));
                 
@@ -244,6 +244,21 @@ public class TangoGestureCamera : MonoBehaviour
     /// <summary>
     /// Draw buttons to swap current behavior. 
     /// </summary>
+	/// 
+	/// 
+
+	public void firstpersonCameraAngles(){
+
+
+		EnableCamera(CameraType.FIRST_PERSON);
+
+	}
+	public void thirdpersonCameraAngles(){
+
+
+		EnableCamera(CameraType.THIRD_PERSON);
+
+	}
     private void OnGUI()
     {
         if (!m_enableCameraModeUI)

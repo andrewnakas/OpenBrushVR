@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Tango/PointCloud (Occlusion)" {
+﻿Shader "Tango/PointCloud (Occlusion)" {
     SubShader {
         Tags { "Queue" = "Background-1" }
         Pass {
@@ -26,7 +24,7 @@ Shader "Tango/PointCloud (Occlusion)" {
             v2f vert (appdata v)
             {
                 v2f o;
-                o.vertex = UnityObjectToClipPos(v.vertex);
+                o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
                 o.size = 30;
                 return o;
             }

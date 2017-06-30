@@ -16,7 +16,7 @@ public class BrushDetector : MonoBehaviour {
 	public void OnCollisionEnter(Collision col){
 		if (ToolManager.curSelGameObject == null) {
 			ToolManager.curSelGameObject = col.gameObject;
-		//	Debug.Log ("hittinh");
+			Debug.Log ("hittinh");
 
 		}
 

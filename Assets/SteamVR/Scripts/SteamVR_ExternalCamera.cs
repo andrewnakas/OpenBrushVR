@@ -10,7 +10,6 @@ using Valve.VR;
 
 public class SteamVR_ExternalCamera : MonoBehaviour
 {
-	[System.Serializable]
 	public struct Config
 	{
 		public float x, y, z;
@@ -21,7 +20,6 @@ public class SteamVR_ExternalCamera : MonoBehaviour
 		public float frameSkip;
 		public float nearOffset, farOffset;
 		public float hmdOffset;
-		public float r, g, b, a; // chroma key override
 		public bool disableStandardAssets;
 	}
 
@@ -63,7 +61,6 @@ public class SteamVR_ExternalCamera : MonoBehaviour
 							readCamMatrix = true;
 						}
 					}
-#if !UNITY_METRO
 					else if (key == "disableStandardAssets")
 					{
 						var field = c.GetType().GetField(key);
@@ -76,7 +73,6 @@ public class SteamVR_ExternalCamera : MonoBehaviour
 						if (field != null)
 							field.SetValue(c, float.Parse(split[1]));
 					}
-#endif
 				}
 			}
 			config = (Config)c; //unbox
@@ -95,30 +91,8 @@ public class SteamVR_ExternalCamera : MonoBehaviour
 			}
 		}
 		catch { }
-
-		// Clear target so AttachToCamera gets called to pick up any changes.
-		target = null;
-#if !UNITY_METRO
-		// Listen for changes.
-		if (watcher == null)
-		{
-			var fi = new System.IO.FileInfo(configPath);
-			watcher = new System.IO.FileSystemWatcher(fi.DirectoryName, fi.Name);
-			watcher.NotifyFilter = System.IO.NotifyFilters.LastWrite;
-			watcher.Changed += new System.IO.FileSystemEventHandler(OnChanged);
-			watcher.EnableRaisingEvents = true;
-		}
 	}
 
-	void OnChanged(object source, System.IO.FileSystemEventArgs e)
-	{
-		ReadConfig();
-	}
-
-	System.IO.FileSystemWatcher watcher;
-#else
-	}
-#endif
 	Camera cam;
 	Transform target;
 	GameObject clipQuad;
@@ -145,10 +119,8 @@ public class SteamVR_ExternalCamera : MonoBehaviour
 		go.name = "camera";
 
 		DestroyImmediate(go.GetComponent<SteamVR_Camera>());
-		DestroyImmediate(go.GetComponent<SteamVR_Fade>());
 
 		cam = go.GetComponent<Camera>();
-		cam.stereoTargetEye = StereoTargetEyeMask.None;
 		cam.fieldOfView = config.fov;
 		cam.useOcclusionCulling = false;
 		cam.enabled = false; // manually rendered
@@ -209,9 +181,8 @@ public class SteamVR_ExternalCamera : MonoBehaviour
 
 		if (cam.targetTexture == null || cam.targetTexture.width != w || cam.targetTexture.height != h)
 		{
-			var tex = new RenderTexture(w, h, 24, RenderTextureFormat.ARGB32);
-			tex.antiAliasing = QualitySettings.antiAliasing == 0 ? 1 : QualitySettings.antiAliasing;
-			cam.targetTexture = tex;
+			cam.targetTexture = new RenderTexture(w, h, 24, RenderTextureFormat.ARGB32);
+			cam.targetTexture.antiAliasing = QualitySettings.antiAliasing == 0 ? 1 : QualitySettings.antiAliasing;
 		}
 
 		cam.nearClipPlane = config.near;
@@ -222,8 +193,6 @@ public class SteamVR_ExternalCamera : MonoBehaviour
 
 		cam.clearFlags = CameraClearFlags.Color;
 		cam.backgroundColor = Color.clear;
-
-		clipMaterial.color = new Color(config.r, config.g, config.b, config.a);
 
 		float dist = Mathf.Clamp(GetTargetDistance() + config.nearOffset, config.near, config.far);
 		var clipParent = clipQuad.transform.parent;
@@ -247,23 +216,7 @@ public class SteamVR_ExternalCamera : MonoBehaviour
 		}
 
 		clipQuad.SetActive(true);
-
 		cam.Render();
-
-		Graphics.DrawTexture(new Rect(0, 0, w, h), cam.targetTexture, colorMat);
-
-		// Re-render scene with post-processing fx disabled (if necessary) since they override alpha.
-		var pp = cam.gameObject.GetComponent("PostProcessingBehaviour") as MonoBehaviour;
-		if ((pp != null) && pp.enabled)
-		{
-			pp.enabled = false;
-			cam.Render();
-			pp.enabled = true;
-		}
-
-		Graphics.DrawTexture(new Rect(w, 0, w, h), cam.targetTexture, alphaMat);
-
-		// Restore settings.
 		clipQuad.SetActive(false);
 
 		if (behaviours != null)
@@ -279,6 +232,9 @@ public class SteamVR_ExternalCamera : MonoBehaviour
 
 		cam.clearFlags = clearFlags;
 		cam.backgroundColor = backgroundColor;
+
+		Graphics.DrawTexture(new Rect(0, 0, w, h), cam.targetTexture, colorMat);
+		Graphics.DrawTexture(new Rect(w, 0, w, h), cam.targetTexture, alphaMat);
 	}
 
 	public void RenderFar()

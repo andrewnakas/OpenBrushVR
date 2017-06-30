@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEditor;
 using System.Text;
 using System.Collections.Generic;
+using Valve.VR;
 
 [CustomEditor(typeof(SteamVR_RenderModel)), CanEditMultipleObjects]
 public class SteamVR_RenderModelEditor : Editor
@@ -84,7 +85,7 @@ public class SteamVR_RenderModelEditor : Editor
 		//EditorGUILayout.PropertyField(modelOverride);
 
 		GUILayout.BeginHorizontal();
-		GUILayout.Label(new GUIContent("Model Override", SteamVR_RenderModel.modelOverrideWarning));
+		GUILayout.Label("Model Override");
 		var selected = EditorGUILayout.Popup(renderModelIndex, renderModelNames);
 		if (selected != renderModelIndex)
 		{

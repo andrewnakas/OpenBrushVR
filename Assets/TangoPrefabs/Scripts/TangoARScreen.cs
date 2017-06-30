@@ -31,7 +31,7 @@ using UnityEngine.Rendering;
 /// shader. No computation is in this class, it only passes the data to the
 /// shader.
 /// </summary>
-[RequireComponent(typeof(Camera)), DisallowMultipleComponent]
+[RequireComponent(typeof(Camera))]
 public class TangoARScreen : MonoBehaviour, ITangoLifecycle, ITangoCameraTexture
 {   
     /// <summary>
@@ -54,11 +54,6 @@ public class TangoARScreen : MonoBehaviour, ITangoLifecycle, ITangoCameraTexture
     /// </summary>
     [System.NonSerialized]
     public double m_screenUpdateTime;
-
-    /// <summary>
-    /// The tango application script in the scene.
-    /// </summary>
-    private TangoApplication m_tangoApplication;
 
     /// <summary>
     /// Script that manages the postprocess distortion of the camera image.
@@ -86,12 +81,6 @@ public class TangoARScreen : MonoBehaviour, ITangoLifecycle, ITangoCameraTexture
     private float m_vOffset;
 
     /// <summary>
-    /// Gets a value indicating whether the AR screen is rendering.
-    /// </summary>
-    /// <value>Whether the AR screen is rendering.</value>
-    public bool IsRendering { get; private set; }
-
-    /// <summary>
     /// Converts a normalized Unity viewport position into its corresponding normalized position on the color camera
     /// image.
     /// </summary>
@@ -105,6 +94,7 @@ public class TangoARScreen : MonoBehaviour, ITangoLifecycle, ITangoCameraTexture
 
     /// <summary>
     /// Converts a color camera position into its corresponding normalized Unity viewport position.
+    /// image.
     /// </summary>
     /// <returns>Normalized position for the color camera.</returns>
     /// <param name="pos">Normalized position for the 3D viewport.</param>
@@ -121,19 +111,23 @@ public class TangoARScreen : MonoBehaviour, ITangoLifecycle, ITangoCameraTexture
     public void Start()
     {
         m_camera = GetComponent<Camera>();
-        m_tangoApplication = FindObjectOfType<TangoApplication>();
-        m_arCameraPostProcess = gameObject.GetComponent<ARCameraPostProcess>();
 
-        if (m_tangoApplication != null)
+        TangoApplication tangoApplication = FindObjectOfType<TangoApplication>();
+        tangoApplication.OnDisplayChanged += _OnDisplayChanged;
+        m_arCameraPostProcess = gameObject.GetComponent<ARCameraPostProcess>();
+        if (tangoApplication != null)
         {
-            m_tangoApplication.OnDisplayChanged += _OnDisplayChanged;
-            m_tangoApplication.Register(this);
+            tangoApplication.Register(this);
 
             // If already connected to a service, then do initialization now.
-            if (m_tangoApplication.IsServiceConnected)
+            if (tangoApplication.IsServiceConnected)
             {
                 OnTangoServiceConnected();
             }
+
+            CommandBuffer buf = VideoOverlayProvider.CreateARScreenCommandBuffer();
+            m_camera.AddCommandBuffer(CameraEvent.BeforeForwardOpaque, buf);
+            m_camera.AddCommandBuffer(CameraEvent.BeforeGBuffer, buf);
         }
 
         if (m_enableOcclusion) 
@@ -178,18 +172,8 @@ public class TangoARScreen : MonoBehaviour, ITangoLifecycle, ITangoCameraTexture
     /// </summary>
     public void OnTangoServiceConnected()
     {
-        // Disable 
-        if (!m_tangoApplication.EnableVideoOverlay)
-        {
-            IsRendering = false;
-            return;
-        }
-
-        CommandBuffer buf = VideoOverlayProvider.CreateARScreenCommandBuffer();
-        m_camera.AddCommandBuffer(CameraEvent.BeforeForwardOpaque, buf);
-        m_camera.AddCommandBuffer(CameraEvent.BeforeGBuffer, buf);
-        _SetRenderAndCamera(AndroidHelper.GetDisplayRotation(), AndroidHelper.GetColorCameraRotation());
-        IsRendering = true;
+        _SetRenderAndCamera(AndroidHelper.GetDisplayRotation(),
+                            AndroidHelper.GetColorCameraRotation());
     }
 
     /// <summary>
@@ -207,12 +191,12 @@ public class TangoARScreen : MonoBehaviour, ITangoLifecycle, ITangoCameraTexture
     /// <param name="cameraId">Camera identifier.</param>
     public void OnTangoCameraTextureAvailable(TangoEnums.TangoCameraId cameraId)
     {
-        if (IsRendering && cameraId == TangoEnums.TangoCameraId.TANGO_CAMERA_COLOR)
+        if (cameraId == TangoEnums.TangoCameraId.TANGO_CAMERA_COLOR)
         {
             m_screenUpdateTime = VideoOverlayProvider.UpdateARScreen(TangoEnums.TangoCameraId.TANGO_CAMERA_COLOR);
         }
     }
-
+    
     /// @endcond
     /// <summary>
     /// Rotate color camera render material's UV based on the color camera orientation and current activity orientation.
@@ -245,6 +229,7 @@ public class TangoARScreen : MonoBehaviour, ITangoLifecycle, ITangoCameraTexture
     private static void _MaterialUpdateForIntrinsics(
         float uOffset, float vOffset, OrientationManager.Rotation colorCameraRDisplay)
     {
+        TangoApplication tangoApplication = GameObject.FindObjectOfType<TangoApplication>();
         Vector2[] uvs = new Vector2[4];
         uvs[0] = new Vector2(0 + uOffset, 0 + vOffset);
         uvs[1] = new Vector2(0 + uOffset, 1 - vOffset);
@@ -314,22 +299,6 @@ public class TangoARScreen : MonoBehaviour, ITangoLifecycle, ITangoCameraTexture
     }
 
     /// <summary>
-    /// Called when device orientation is changed.
-    /// </summary>
-    /// <param name="displayRotation">Orientation of current activity. Index enum is same as Android screen
-    /// rotation standard.</param>
-    /// <param name="colorCameraRotation">Orientation of current color camera sensor. Index enum is same as Android
-    /// camera rotation standard.</param>
-    private void _OnDisplayChanged(OrientationManager.Rotation displayRotation, 
-        OrientationManager.Rotation colorCameraRotation)
-    {
-        if (IsRendering)
-        {
-            _SetRenderAndCamera(displayRotation, colorCameraRotation);
-        }
-    }
-
-    /// <summary>
     /// Update AR screen rendering and attached Camera's projection matrix.
     /// </summary>
     /// <param name="displayRotation">Activity (screen) rotation.</param>
@@ -337,23 +306,21 @@ public class TangoARScreen : MonoBehaviour, ITangoLifecycle, ITangoCameraTexture
     private void _SetRenderAndCamera(OrientationManager.Rotation displayRotation,
                                      OrientationManager.Rotation colorCameraRotation)
     {
+        float cameraRatio = (float)Screen.width / (float)Screen.height;
         float cameraWidth = (float)Screen.width;
         float cameraHeight = (float)Screen.height;
-        
-        #pragma warning disable 0219
+        bool needToFlipCameraRatio = false;
+
         // Here we are computing if current display orientation is landscape or portrait.
-        // AndroidHelper.GetAndroidDefaultOrientation() returns 1 if device default orientation is in portrait,
+        // AndroidHelper.GetAndroidDefaultOrientation() returns 1 if deivce default orientation is in portrait,
         // returns 2 if device default orientation is landscape. Adding device default orientation with
-        // how much the display is rotated from default orientation will get us the result of current display
+        // how much the display is rotation from default orientation will get us the result of current display
         // orientation. (landscape vs. portrait)
         bool isLandscape = (AndroidHelper.GetDefaultOrientation() + (int)displayRotation) % 2 == 0;
-        bool needToFlipCameraRatio = false;
-        float cameraRatio = (float)Screen.width / (float)Screen.height;
-        #pragma warning restore 0219
-        
+
 #if !UNITY_EDITOR
-        // In most cases, we don't need to flip the camera width and height. However, in some cases Unity camera
-        // only updates a couple of frames after the display changed callback from Android; thus, we need to flip the width
+        // In most of the time, we don't need to flip the camera width and height. However, in some cases Unity camera
+        // only updates couple of frames after the display changed callback from Android, thus we need to flip the width
         // and height in this case.
         //
         // This does not happen in the editor, because the emulated device does not ever rotate.
@@ -370,8 +337,8 @@ public class TangoARScreen : MonoBehaviour, ITangoLifecycle, ITangoCameraTexture
 
         TangoCameraIntrinsics alignedIntrinsics = new TangoCameraIntrinsics();
         TangoCameraIntrinsics intrinsics = new TangoCameraIntrinsics();
-        VideoOverlayProvider.GetDeviceOrientationAlignedIntrinsics(TangoEnums.TangoCameraId.TANGO_CAMERA_COLOR,
-                                                                   alignedIntrinsics);
+        VideoOverlayProvider.GetDeviceOientationAlignedIntrinsics(TangoEnums.TangoCameraId.TANGO_CAMERA_COLOR,
+                                                                  alignedIntrinsics);
         VideoOverlayProvider.GetIntrinsics(TangoEnums.TangoCameraId.TANGO_CAMERA_COLOR,
                                            intrinsics);
 
@@ -409,5 +376,18 @@ public class TangoARScreen : MonoBehaviour, ITangoLifecycle, ITangoCameraTexture
         {
             Debug.LogError("AR Camera intrinsic is not valid.");
         }
+    }
+
+    /// <summary>
+    /// Called when device orientation is changed.
+    /// </summary>
+    /// <param name="displayRotation">Orientation of current activity. Index enum is same same as Android screen
+    /// rotation standard.</param>
+    /// <param name="colorCameraRotation">Orientation of current color camera sensor. Index enum is same as Android
+    /// camera rotation standard.</param>
+    private void _OnDisplayChanged(OrientationManager.Rotation displayRotation,
+                                   OrientationManager.Rotation colorCameraRotation)
+    {
+        _SetRenderAndCamera(displayRotation, colorCameraRotation);
     }
 }

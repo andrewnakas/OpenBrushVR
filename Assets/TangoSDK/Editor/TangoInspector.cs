@@ -103,77 +103,55 @@ public class TangoInspector : Editor
     /// <param name="tangoApplication">Tango application.</param>
     private void _DrawAreaDescriptionOptions(TangoApplication tangoApplication)
     {
-        string[] options = new string[]
+        tangoApplication.m_enableAreaDescriptions = EditorGUILayout.Toggle(
+            "Enable Area Descriptions", tangoApplication.m_enableAreaDescriptions);
+
+        if (tangoApplication.m_enableAreaDescriptions)
         {
-            "Motion Tracking",
-            "Motion Tracking (with Drift Correction)",
-            "Local Area Description (Load Existing)",
-            "Local Area Description (Learning)",
-            "Cloud Area Description"
-        };
-        int selectedOption = 0;
-        if (tangoApplication.m_enableDriftCorrection)
-        {
-            selectedOption = 1;
-        }
-        else if (tangoApplication.m_enableAreaDescriptions)
-        {
-            if (tangoApplication.m_areaDescriptionLearningMode)
+            ++EditorGUI.indentLevel;
+
+            string[] options = new string[]
             {
-                selectedOption = 3;
+                "Drift Correction",
+                "Learning",
+                "Load Existing",
+            };
+            int selectedOption;
+            if (tangoApplication.m_enableDriftCorrection)
+            {
+                selectedOption = 0;
             }
-            else if (tangoApplication.m_enableCloudADF)
+            else if (tangoApplication.m_areaDescriptionLearningMode)
             {
-                selectedOption = 4;
+                selectedOption = 1;
             }
             else
             {
                 selectedOption = 2;
             }
-        }
 
-        switch (EditorGUILayout.Popup("Pose Mode", selectedOption, options))
-        {
-        case 1: // motion tracking with drift correction
-            tangoApplication.m_enableDriftCorrection = true;
-            tangoApplication.m_enableAreaDescriptions = false;
-            tangoApplication.m_areaDescriptionLearningMode = false;
-            tangoApplication.m_enableCloudADF = false;
-            break;
-        case 2: // area learning, load existing local
-            tangoApplication.m_enableDriftCorrection = false;
-            tangoApplication.m_enableAreaDescriptions = true;
-            tangoApplication.m_areaDescriptionLearningMode = false;
-            tangoApplication.m_enableCloudADF = false;
-            break;
-        case 3: // area learning, local learning mode
-            tangoApplication.m_enableDriftCorrection = false;
-            tangoApplication.m_enableAreaDescriptions = true;
-            tangoApplication.m_areaDescriptionLearningMode = true;
-            tangoApplication.m_enableCloudADF = false;
-            break;
-        case 4: // area learning, cloud mode
-            tangoApplication.m_enableDriftCorrection = false;
-            tangoApplication.m_enableAreaDescriptions = true;
-            tangoApplication.m_areaDescriptionLearningMode = false;
-            tangoApplication.m_enableCloudADF = true;
-            break;
-        default: // case 0, motion tracking
-            tangoApplication.m_enableDriftCorrection = false;
-            tangoApplication.m_enableAreaDescriptions = false;
-            tangoApplication.m_areaDescriptionLearningMode = false;
-            tangoApplication.m_enableCloudADF = false;
-            break;
-        }
+            switch (EditorGUILayout.Popup("Mode", selectedOption, options))
+            {
+            case 0:
+                tangoApplication.m_enableDriftCorrection = true;
+                tangoApplication.m_areaDescriptionLearningMode = false;
+                break;
+            case 1:
+                tangoApplication.m_enableDriftCorrection = false;
+                tangoApplication.m_areaDescriptionLearningMode = true;
+                break;
+            default:
+                tangoApplication.m_enableDriftCorrection = false;
+                tangoApplication.m_areaDescriptionLearningMode = false;
+                break;
+            }
 
-        if (m_tangoApplication.m_enableDriftCorrection)
-        {
-            EditorGUILayout.HelpBox("Drift correction mode is experimental.", MessageType.Warning);
-        }
+            if (m_tangoApplication.m_enableDriftCorrection)
+            {
+                EditorGUILayout.HelpBox("Drift correction mode is experimental.", MessageType.Warning);
+            }
 
-        if (m_tangoApplication.m_enableCloudADF)
-        {
-            EditorGUILayout.HelpBox("Cloud Area Descriptions is experimental.", MessageType.Warning);
+            --EditorGUI.indentLevel;
         }
 
         EditorGUILayout.Space();
@@ -325,18 +303,17 @@ public class TangoInspector : Editor
             }
 
             EditorGUI.indentLevel++;
-            tangoApplication.ReconstructionMeshResolution = EditorGUILayout.FloatField(
-                "Resolution (meters)", tangoApplication.ReconstructionMeshResolution);
-            tangoApplication.ReconstructionMeshResolution = Mathf.Max(tangoApplication.ReconstructionMeshResolution, 0.001f);
+            tangoApplication.m_3drResolutionMeters = EditorGUILayout.FloatField(
+                "Resolution (meters)", tangoApplication.m_3drResolutionMeters);
+            tangoApplication.m_3drResolutionMeters = Mathf.Max(tangoApplication.m_3drResolutionMeters, 0.001f);
             tangoApplication.m_3drGenerateColor = EditorGUILayout.Toggle(
                 "Generate Color", tangoApplication.m_3drGenerateColor);
 
             if (tangoApplication.m_3drGenerateColor
                 && (!tangoApplication.m_enableVideoOverlay || !tangoApplication.m_videoOverlayUseByteBufferMethod))
             {
-                EditorGUILayout.HelpBox("To use 3D reconstruction with color, you must enable Video Overlay and"
-                                        + " set it to \"Raw Bytes\", \"Texture and Raw Bytes\", or "
-                                        + " \"YUV Texture and Raw Bytes\".", MessageType.Warning);
+                EditorGUILayout.HelpBox("Video Overlay must be enabled and set to \"Raw Bytes\" or \"Both\""
+                                        + " in order to use 3D Reconstruction with color.", MessageType.Warning);
             }
 
             tangoApplication.m_3drGenerateNormal = EditorGUILayout.Toggle(
@@ -366,7 +343,7 @@ public class TangoInspector : Editor
             {
                 EditorGUILayout.HelpBox("Area Descriptions are enabled, but \"Use Area Description Pose\" is disabled "
                                         + "for 3D Reconstruction.\n\nIf left as-is, 3D Reconstruction will use the Start of "
-                                        + "Service pose, even if an area description is loaded and/or area learning is enabled.",
+                                        + "Service pose, even if an area description is loaded and/or area learning is enabled.", 
                                         MessageType.Warning);
             }
 
@@ -393,8 +370,6 @@ public class TangoInspector : Editor
                 new GUIContent("Point Cloud Max Points", 
                            "Set an upper limit on the number of points in the point cloud. If value is 0, no limit is imposed."),
                 m_tangoApplication.m_initialPointCloudMaxPoints);
-
-            tangoApplication.m_keepScreenAwake = EditorGUILayout.Toggle("Keep Screen Awake", tangoApplication.m_keepScreenAwake);
 
             tangoApplication.m_adjustScreenResolution = EditorGUILayout.Toggle(
                 new GUIContent("Reduce Resolution", 

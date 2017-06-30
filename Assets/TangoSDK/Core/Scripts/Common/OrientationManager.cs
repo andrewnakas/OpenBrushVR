@@ -46,7 +46,7 @@ namespace Tango
         /// <returns> Returns the current orientation of the screen. </returns>
         public static ScreenOrientation GetScreenOrientation()
         {
-#if (UNITY_EDITOR || UNITY_STANDALONE_OSX|| UNITY_STANDALONE_WINDOWS)
+			#if (UNITY_EDITOR || UNITY_STANDALONE_OSX || UNITY_STANDALONE_WIN)
             if (Screen.width > Screen.height)
             {
                 return ScreenOrientation.LandscapeLeft;
@@ -58,7 +58,7 @@ namespace Tango
 #elif (UNITY_IPHONE || UNITY_ANDROID)
             return Screen.orientation; 
 #else 
-            return ScreenOrientation.LandscapeLeft;
+#error not supported platform
 #endif
         }
 

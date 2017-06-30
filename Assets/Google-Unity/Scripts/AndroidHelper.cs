@@ -26,58 +26,6 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-[module: System.Diagnostics.CodeAnalysis.SuppressMessage("StyleCop.CSharp.DocumentationRules",
-    "SA1649:FileHeaderFileNameDocumentationMustMatchTypeName",
-    Justification = "Files can start with an interface that has a different name.")]
-
-/// <summary>
-/// Instance wrapper interface for static functionality of AndroidHelper.
-/// </summary>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("StyleCop.CSharp.DocumentationRules",
-    "SA1600:ElementsMustBeDocumented", Justification = "Interface for testing; methods documented on implementation.")]
-internal interface IAndroidHelperWrapper
-{
-    bool CheckPermission(string permissionType);
-
-    bool ApplicationHasTangoPermissions(string permissionType);
-
-    void StartTangoPermissionsActivity(string permissionType);
-
-    void RequestPermission(string permissionType, int requestCode);
-
-    bool BindTangoService();
-
-    Tango.OrientationManager.Rotation GetDisplayRotation();
-
-    Tango.OrientationManager.Rotation GetColorCameraRotation();
-
-    int TangoSetBinder(AndroidJavaObject binder);
-
-    void RegisterPauseEvent(OnPauseEventHandler handler);
-
-    void RegisterResumeEvent(OnResumeEventHandler handler);
-
-    void RegisterOnActivityResultEvent(OnActivityResultEventHandler handler);
-
-    void RegisterOnDisplayChangedEvent(global::OnDisplayChangedEventHandler handler);
-
-    void RegisterOnTangoServiceConnected(AndroidHelper.OnTangoServiceConnected handler);
-
-    void RegisterOnTangoServiceDisconnected(AndroidHelper.OnTangoServiceDisconnected handler);
-
-    void RegisterOnRequestPermissionsResultEvent(OnRequestPermissionsResultHandler handler);
-
-    void UnregisterPauseEvent(OnPauseEventHandler handler);
-
-    void UnregisterResumeEvent(OnResumeEventHandler handler);
-
-    void UnregisterOnActivityResultEvent(OnActivityResultEventHandler handler);
-
-    void UnregisterOnDisplayChangedEvent(global::OnDisplayChangedEventHandler handler);
-
-    bool IsRunningOnAndroid();
-}
-
 /// <summary>
 /// Helper functions for common android functionality.
 /// </summary>
@@ -96,38 +44,6 @@ public partial class AndroidHelper : MonoBehaviour
     {
         SHORT = 0x00000000,
         LONG = 0x00000001
-    }
-
-    /// <summary>
-    /// Registers for the Android start event.
-    /// </summary>
-    /// <param name="onStart">On start.</param>
-   public static void RegisterStartEvent(OnStartEventHandler onStart)
-    {
-        #if ANDROID_DEVICE
-        if (m_callbacks == null)
-        {
-            _RegisterCallbacks();
-        }
-
-        m_callbacks.RegisterOnStart(onStart);
-        #endif
-    }
-
-    /// <summary>
-    /// Registers for the Android stop event.
-    /// </summary>
-    /// <param name="onStop">On stop.</param>
-    public static void RegisterStopEvent(OnStopEventHandler onStop)
-    {
-        #if ANDROID_DEVICE
-        if (m_callbacks == null)
-        {
-            _RegisterCallbacks();
-        }
-
-        m_callbacks.RegisterOnStop(onStop);
-        #endif
     }
 
     /// <summary>
@@ -189,57 +105,8 @@ public partial class AndroidHelper : MonoBehaviour
         {
             _RegisterCallbacks();
         }
-
+        
         m_callbacks.RegisterOnDisplayChanged(onChanged);
-        #endif
-    }
-
-    /// <summary>
-    /// Registers for the Android on request permissions result event.
-    /// </summary>
-    /// <param name="onRequestPermissionsResult">On request permissions result.</param>
-    public static void RegisterOnRequestPermissionsResultEvent(
-        OnRequestPermissionsResultHandler onRequestPermissionsResult)
-    {
-        #if ANDROID_DEVICE
-        if (m_callbacks == null)
-        {
-            _RegisterCallbacks();
-        }
-
-        m_callbacks.RegisterOnActivityResult(onRequestPermissionsResult);
-        #endif
-    }
-
-    /// <summary>
-    /// Unregisters for the Android start event.
-    /// </summary>
-    /// <param name="onStart">On start.</param>
-    public static void UnregisterStartEvent(OnStartEventHandler onStart)
-    {
-        #if ANDROID_DEVICE
-        if (m_callbacks == null)
-        {
-            return;
-        }
-
-        m_callbacks.UnregisterOnStart(onStart);
-        #endif
-    }
-
-    /// <summary>
-    /// Unregisters for the Android stop event.
-    /// </summary>
-    /// <param name="onStop">On stop.</param>
-    public static void UnregisterStopEvent(OnStopEventHandler onStop)
-    {
-        #if ANDROID_DEVICE
-        if (m_callbacks == null)
-        {
-            return;
-        }
-
-        m_callbacks.UnregisterOnStop(onStop);
         #endif
     }
 
@@ -254,7 +121,7 @@ public partial class AndroidHelper : MonoBehaviour
         {
             return;
         }
-
+        
         m_callbacks.UnregisterOnPause(onPause);
         #endif
     }
@@ -270,7 +137,7 @@ public partial class AndroidHelper : MonoBehaviour
         {
             return;
         }
-
+        
         m_callbacks.UnregisterOnResume(onResume);
         #endif
     }
@@ -286,7 +153,7 @@ public partial class AndroidHelper : MonoBehaviour
         {
             return;
         }
-
+        
         m_callbacks.UnregisterOnActivityResult(onActivityResult);
         #endif
     }
@@ -302,24 +169,8 @@ public partial class AndroidHelper : MonoBehaviour
         {
             return;
         }
-
+        
         m_callbacks.UnregisterOnDisplayChanged(onChanged);
-        #endif
-    }
-
-    /// <summary>
-    /// Unregisters for the Android on request permissions result event.
-    /// </summary>
-    /// <param name="onRequestPermissionsResult">On request permissions result.</param>
-    public static void UnregisterOnActivityResultEvent(OnRequestPermissionsResultHandler onRequestPermissionsResult)
-    {
-        #if ANDROID_DEVICE
-        if (m_callbacks == null)
-        {
-            return;
-        }
-
-        m_callbacks.UnregisterOnRequestPermissionsResult(onRequestPermissionsResult);
         #endif
     }
 
@@ -540,7 +391,7 @@ public partial class AndroidHelper : MonoBehaviour
     public static void ShowAndroidToastMessage(string message, bool callFinish)
     {
         ShowAndroidToastMessage(message);
-
+        
         if (callFinish)
         {
             AndroidFinish();
@@ -605,121 +456,6 @@ public partial class AndroidHelper : MonoBehaviour
     }
 
     /// <summary>
-    /// Check if an Android permission is granted.
-    /// </summary>
-    /// <returns><c>true</c>, if permission is granted, <c>false</c> otherwise.</returns>
-    /// <param name="permission">Android permission to check.</param>
-    public static bool CheckPermission(string permission)
-    {
-        AndroidJavaObject unityActivity = GetUnityActivity();
-
-        if (unityActivity != null)
-        {
-            try
-            {
-                return unityActivity.Call<bool>("checkAndroidPermission", permission);
-            }
-            catch (AndroidJavaException e)
-            {
-                Debug.Log("AndroidJavaException : " + e.Message);
-            }
-        }
-
-        return false;
-    }
-
-    /// <summary>
-    /// Request an Android permission.
-    ///
-    /// The result of the request is reported to a delegate registered via
-    /// RegisterOnRequestPermissionsResultEvent.
-    /// </summary>
-    /// <param name="permission">Permission to request.</param>
-    /// <param name="requestCode">
-    /// Request code passed to RegisterOnRequestPermissionsResultEvent.
-    /// </param>
-    public static void RequestPermission(string permission, int requestCode)
-    {
-        RequestPermissions(new string[] { permission }, requestCode);
-    }
-
-    /// <summary>
-    /// Request multiple Android permissions.
-    ///
-    /// The result of the request is reported to a delegate registered via
-    /// RegisterOnRequestPermissionsResultEvent.
-    /// </summary>
-    /// <param name="permissions">Permissions to request.</param>
-    /// <param name="requestCode">
-    /// Request code passed to RegisterOnRequestPermissionsResultEvent.
-    /// </param>
-    public static void RequestPermissions(string[] permissions, int requestCode)
-    {
-        AndroidJavaObject unityActivity = GetUnityActivity();
-
-        if (unityActivity != null)
-        {
-            try
-            {
-                unityActivity.Call("requestAndroidPermissions", permissions, requestCode);
-            }
-            catch (AndroidJavaException e)
-            {
-                Debug.Log("AndroidJavaException : " + e.Message);
-            }
-        }
-    }
-
-    /// <summary>
-    /// Check if the App should show rationale for requesting a permission.
-    ///
-    /// Corresponds to ActivityCompat.shouldShowRequestPermissionRationale.
-    /// </summary>
-    /// <returns><c>true</c>, if the app should show rationale, <c>false</c> otherwise.</returns>
-    /// <param name="permission">Permission to show rationale for.</param>
-    public static bool ShouldShouldRequestPermissionRationale(string permission)
-    {
-        AndroidJavaObject unityActivity = GetUnityActivity();
-
-        if (unityActivity != null)
-        {
-            try
-            {
-                return unityActivity.Call<bool>("shouldShowRequestAndroidPermissionRationale", permission);
-            }
-            catch (AndroidJavaException e)
-            {
-                Debug.Log("AndroidJavaException : " + e.Message);
-            }
-        }
-
-        return false;
-    }
-
-    /// <summary>
-    /// Launch this application's detailed settings.
-    ///
-    /// This is useful to provide the user a way to turn settings back on if they have denied a
-    /// critical permission and asked to not be notified again.
-    /// </summary>
-    public static void LaunchApplicationDetailsSettings()
-    {
-        AndroidJavaObject unityActivity = GetUnityActivity();
-
-        if (unityActivity != null)
-        {
-            try
-            {
-                unityActivity.Call("launchApplicationDetailsSettings");
-            }
-            catch (AndroidJavaException e)
-            {
-                Debug.Log("AndroidJavaException : " + e.Message);
-            }
-        }
-    }
-
-    /// <summary>
     /// Shows the android toast message.
     /// </summary>
     /// <param name="message">Message string to show in the toast.</param>
@@ -727,7 +463,7 @@ public partial class AndroidHelper : MonoBehaviour
     private static void _ShowAndroidToastMessage(string message, ToastLength length)
     {
         AndroidJavaObject unityActivity = GetUnityActivity();
-
+        
         if (unityActivity != null)
         {
             try
@@ -753,7 +489,7 @@ public partial class AndroidHelper : MonoBehaviour
     {
         #if ANDROID_DEVICE
         m_callbacks = new AndroidLifecycleCallbacks();
-
+        
         m_unityActivity = GetUnityActivity();
         if (m_unityActivity != null)
         {
@@ -761,123 +497,5 @@ public partial class AndroidHelper : MonoBehaviour
             m_unityActivity.Call("attachLifecycleListener", m_callbacks);
         }
         #endif
-    }
-}
-
-/// <summary>
-/// Instance wrapper for static functionality of AndroidHelper.
-/// </summary>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("StyleCop.CSharp.DocumentationRules",
-    "SA1600:ElementsMustBeDocumented", Justification = "Interface for testing; methods documented on implementation.")]
-internal class AndroidHelperWrapper : IAndroidHelperWrapper
-{
-    private static AndroidHelperWrapper m_instance;
-
-    public static AndroidHelperWrapper Instance
-    {
-        get
-        {
-            return m_instance != null ? m_instance : m_instance = new AndroidHelperWrapper();
-        }
-    }
-
-    public bool CheckPermission(string permission)
-    {
-        return AndroidHelper.CheckPermission(permission);
-    }
-
-    public bool ApplicationHasTangoPermissions(string permissionType)
-    {
-        return AndroidHelper.ApplicationHasTangoPermissions(permissionType);
-    }
-
-    public void StartTangoPermissionsActivity(string permissionType)
-    {
-        AndroidHelper.StartTangoPermissionsActivity(permissionType);
-    }
-
-    public void RequestPermission(string permissionType, int requestCode)
-    {
-        AndroidHelper.RequestPermission(permissionType, requestCode);
-    }
-
-    public bool BindTangoService()
-    {
-        return AndroidHelper.BindTangoService();
-    }
-
-    public Tango.OrientationManager.Rotation GetDisplayRotation()
-    {
-        return AndroidHelper.GetDisplayRotation();
-    }
-
-    public Tango.OrientationManager.Rotation GetColorCameraRotation()
-    {
-        return AndroidHelper.GetColorCameraRotation();
-    }
-
-    public int TangoSetBinder(AndroidJavaObject binder)
-    {
-        return AndroidHelper.TangoSetBinder(binder);
-    }
-
-    public void RegisterPauseEvent(OnPauseEventHandler handler)
-    {
-        AndroidHelper.RegisterPauseEvent(handler);
-    }
-
-    public void RegisterResumeEvent(OnResumeEventHandler handler)
-    {
-        AndroidHelper.RegisterResumeEvent(handler);
-    }
-
-    public void RegisterOnActivityResultEvent(OnActivityResultEventHandler handler)
-    {
-        AndroidHelper.RegisterOnActivityResultEvent(handler);
-    }
-
-    public void RegisterOnDisplayChangedEvent(global::OnDisplayChangedEventHandler handler)
-    {
-        AndroidHelper.RegisterOnDisplayChangedEvent(handler);
-    }
-
-    public void RegisterOnTangoServiceConnected(AndroidHelper.OnTangoServiceConnected handler)
-    {
-        AndroidHelper.RegisterOnTangoServiceConnected(handler);
-    }
-
-    public void RegisterOnTangoServiceDisconnected(AndroidHelper.OnTangoServiceDisconnected handler)
-    {
-        AndroidHelper.RegisterOnTangoServiceDisconnected(handler);
-    }
-
-    public void RegisterOnRequestPermissionsResultEvent(OnRequestPermissionsResultHandler handler)
-    {
-        AndroidHelper.RegisterOnRequestPermissionsResultEvent(handler);
-    }
-
-    public void UnregisterPauseEvent(OnPauseEventHandler handler)
-    {
-        AndroidHelper.UnregisterPauseEvent(handler);
-    }
-
-    public void UnregisterResumeEvent(OnResumeEventHandler handler)
-    {
-        AndroidHelper.UnregisterResumeEvent(handler);
-    }
-
-    public void UnregisterOnActivityResultEvent(OnActivityResultEventHandler handler)
-    {
-        AndroidHelper.UnregisterOnActivityResultEvent(handler);
-    }
-
-    public void UnregisterOnDisplayChangedEvent(global::OnDisplayChangedEventHandler handler)
-    {
-        AndroidHelper.UnregisterOnDisplayChangedEvent(handler);
-    }
-
-    public bool IsRunningOnAndroid()
-    {
-        return Application.platform == RuntimePlatform.Android;
     }
 }

@@ -36,9 +36,9 @@ public class ToolManager : MonoBehaviour {
 		laser.SetActive (false);
 	}// Update is called once per frame
 	void Update () {
-        //hacky will change
-#if UNITY_STANDALONE_WIN 
-        SteamVR_Controller.Device device = SteamVR_Controller.Input((int)trackedObj.index);
+	//hacky will change
+		#if UNITY_STANDALONE_WIN 
+		SteamVR_Controller.Device device = SteamVR_Controller.Input((int)trackedObj.index);
 		if (curSelGameObject != null && device.GetTouch (SteamVR_Controller.ButtonMask.Grip)) {
 			if (curSelGameObject.transform.parent == (eportmesh.transform)) {
 				lastSelGameObject = curSelGameObject;

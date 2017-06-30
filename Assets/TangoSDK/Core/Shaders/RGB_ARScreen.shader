@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Hidden/Tango/RGB_ARScreen"
+﻿Shader "Hidden/Tango/RGB_ARScreen"
 {
     Properties
     {
@@ -44,7 +42,7 @@ Shader "Hidden/Tango/RGB_ARScreen"
             v2f vert (appdata v)
             {
                 v2f o;
-                o.vertex = UnityObjectToClipPos(v.vertex);
+                o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
                 if (v.uv.x < 0.5 && v.uv.y < 0.5)
                 {
                     o.uv = _UVBottomLeft;

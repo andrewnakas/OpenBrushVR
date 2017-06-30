@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Custom/SteamVR_BlitFlip" {
+﻿Shader "Custom/SteamVR_BlitFlip" {
 	Properties { _MainTex ("Base (RGB)", 2D) = "white" {} }
 
 	CGINCLUDE
@@ -16,7 +14,7 @@ Shader "Custom/SteamVR_BlitFlip" {
 
 	v2f vert(appdata_base v) {
 		v2f o;
-		o.pos = UnityObjectToClipPos(v.vertex);
+		o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
 		o.tex.x = v.texcoord.x;
 		o.tex.y = 1 - v.texcoord.y;
 		return o;

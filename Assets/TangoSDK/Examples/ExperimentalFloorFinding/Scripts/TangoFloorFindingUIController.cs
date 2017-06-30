@@ -87,7 +87,7 @@ public class TangoFloorFindingUIController : MonoBehaviour
         }
 
         // If the point cloud floor has found a new floor, place the marker at the found y position.
-        if (m_pointCloudFloor.m_floorFound && m_pointCloud.m_floorFound)
+        if (m_pointCloudFloor.m_floorFound )
         {
             m_findingFloor = false;
 
@@ -135,7 +135,7 @@ public class TangoFloorFindingUIController : MonoBehaviour
                 m_findingFloor = true;
                 m_marker.SetActive(false);
                 m_tangoApplication.SetDepthCameraRate(TangoEnums.TangoDepthCameraRate.MAXIMUM);
-                m_pointCloud.FindFloor();
+              
             }
         }
         else

@@ -78,7 +78,9 @@ public class TangoPointCloudFloor : MonoBehaviour
     public void Update()
     {
         // If the point cloud has found the floor, adjust the position accordingly.
-        if (m_pointCloud.m_floorFound)
+       
+		/*
+		if (m_pointCloud.m_floorFound)
         {
             m_floorFound = true;
             if (transform.position.y != m_pointCloud.m_floorPlaneY)
@@ -102,6 +104,7 @@ public class TangoPointCloudFloor : MonoBehaviour
             m_floorFound = false;
             m_depthTriggered = false;
         }
+	*/
     }
 
     /// @endcond

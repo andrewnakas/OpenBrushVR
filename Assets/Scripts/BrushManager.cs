@@ -269,7 +269,7 @@ public class BrushManager : MonoBehaviour {
 	public void PaintingStart(){
 		TangoPaintingStart = true; 
 		TangoPainting = true;
-	//	Debug.Log ("PaintingStartt");
+		Debug.Log ("PaintingStartt");
 	} 
 
 	public void PaintingEnd(){
@@ -277,7 +277,7 @@ public class BrushManager : MonoBehaviour {
 
 
 		TangoPainting = false;
-	//	Debug.Log ("End");
+		Debug.Log ("End");
 	}
 
 	#endif

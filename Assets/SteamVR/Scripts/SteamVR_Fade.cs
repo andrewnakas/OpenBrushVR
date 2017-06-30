@@ -32,7 +32,7 @@ public class SteamVR_Fade : MonoBehaviour
 
 	static public void Start(Color newColor, float duration, bool fadeOverlay = false)
 	{
-		SteamVR_Events.Fade.Send(newColor, duration, fadeOverlay);
+		SteamVR_Utils.Event.Send("fade", newColor, duration, fadeOverlay);
 	}
 
 	static public void View(Color newColor, float duration)
@@ -53,8 +53,13 @@ public class SteamVR_Fade : MonoBehaviour
 	}
 #endif
 
-	public void OnStartFade(Color newColor, float duration, bool fadeOverlay)
+	public void OnStartFade(params object[] args)
 	{
+		var newColor = (Color)args[0];
+		var duration = (float)args[1];
+
+		fadeOverlay = (args.Length > 2) && (bool)args[2];
+
 		if (duration > 0.0f)
 		{
 			targetColor = newColor;
@@ -77,13 +82,13 @@ public class SteamVR_Fade : MonoBehaviour
 			fadeMaterialColorID = Shader.PropertyToID("fadeColor");
 		}
 
-		SteamVR_Events.Fade.Listen(OnStartFade);
-		SteamVR_Events.FadeReady.Send();
+		SteamVR_Utils.Event.Listen("fade", OnStartFade);
+		SteamVR_Utils.Event.Send("fade_ready");
 	}
 
 	void OnDisable()
 	{
-		SteamVR_Events.Fade.Remove(OnStartFade);
+		SteamVR_Utils.Event.Remove("fade", OnStartFade);
 	}
 
 	void OnPostRender()

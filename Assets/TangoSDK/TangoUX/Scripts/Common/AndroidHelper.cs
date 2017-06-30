@@ -28,12 +28,7 @@ public partial class AndroidHelper
     #pragma warning disable 414
     private static AndroidJavaObject m_tangoUxHelper = null;
     #pragma warning restore 414
-    private static System.IntPtr m_tangoUxHelper_class;
-    private static System.IntPtr m_tangoUxHelper_obj;
-    private static System.IntPtr m_tangoUxHelper_processPoseDataStatus;
-    [System.ThreadStatic] private static jvalue[] val;
-    [System.ThreadStatic] private static int jniAttached; 
-    
+
     /// <summary>
     /// Gets the Java tango helper object.
     /// </summary>
@@ -44,8 +39,6 @@ public partial class AndroidHelper
         if(m_tangoUxHelper == null)
         {
             m_tangoUxHelper = new AndroidJavaObject("com.projecttango.unityuxhelper.TangoUnityUxHelper", GetUnityActivity());
-            m_tangoUxHelper_class = m_tangoUxHelper.GetRawClass();
-            m_tangoUxHelper_obj = m_tangoUxHelper.GetRawObject();
         }
         return m_tangoUxHelper;
         #else
@@ -78,27 +71,7 @@ public partial class AndroidHelper
         AndroidJavaObject tangoUxObject = GetTangoUxHelperObject();
         if (tangoUxObject != null)
         {
-            // Replaced with the call to JNI to reduce memory allocations
-            // tangoUxObject.Call("processPoseDataStatus", poseStatus);
-            if (jniAttached != 1)
-            {
-               if (AndroidJNI.AttachCurrentThread() == 0)
-               {
-                 jniAttached = 1;
-               }
-            }
-            
-            if (jniAttached == 1)
-            {
-                if (val == null)
-                {
-                    val = new jvalue[1];
-                }      
-                
-                m_tangoUxHelper_processPoseDataStatus = AndroidJNI.GetMethodID(m_tangoUxHelper_class, "processPoseDataStatus", "(I)V");
-                val[0].i = poseStatus;
-                AndroidJNI.CallVoidMethod(m_tangoUxHelper_obj, m_tangoUxHelper_processPoseDataStatus, val);
-            }
+            tangoUxObject.Call("processPoseDataStatus", poseStatus);
         }
     }
 

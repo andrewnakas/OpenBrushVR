@@ -172,7 +172,7 @@ using System.Collections.Generic;
         }
 
 		#elif UNITY_ANDROID 
-		Debug.Log( BrushManager.canpaint);
+	//	Debug.Log( BrushManager.canpaint);
 		if (BrushManager.TangoPainting==true && BrushManager.canpaint == true) {
 
 
@@ -191,7 +191,7 @@ using System.Collections.Generic;
 
 	public void paintStart(){
 		if (this.enabled == true) {
-			Debug.Log ("Paintingislit");
+		//	Debug.Log ("Paintingislit");
 			var drawState = _drawStates [0];
 			if (BrushManager.freeformbool == false) {
 				strokes = _drawStates [0].BeginNewLine () as GameObject;

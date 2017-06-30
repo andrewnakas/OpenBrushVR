@@ -49,8 +49,8 @@ public class TangoPointCloudInspector : Editor
             // Need motion tracking to transform points to world space.
             TangoPrefabInspectorHelper.CheckMotionTrackingPermissions(m_tangoApplication);
 
-  //          TangoPrefabInspectorHelper.CheckAreaDescriptionPermissions(m_tangoApplication,
-//                                                                        inspectedObject.m_useAreaDescriptionPose);
+            TangoPrefabInspectorHelper.CheckAreaDescriptionPermissions(m_tangoApplication,
+                                                                        inspectedObject.m_useAreaDescriptionPose);
         }
     }
 }

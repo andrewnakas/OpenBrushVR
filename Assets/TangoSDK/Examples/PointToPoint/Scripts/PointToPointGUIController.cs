@@ -20,6 +20,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+
+
 using Tango;
 using UnityEngine;
 
@@ -122,7 +124,7 @@ public class PointToPointGUIController : MonoBehaviour, ITangoDepth
     /// </summary>
     public void OnGUI()
     {
-        if (m_tangoApplication.HasRequestedPermissions())
+        if (m_tangoApplication.HasRequiredPermissions)
         {
             GUI.color = Color.black;
             GUI.Label(new Rect(UI_LABEL_START_X,
@@ -135,7 +137,7 @@ public class PointToPointGUIController : MonoBehaviour, ITangoDepth
 
     /// <summary>
     /// This is called each time new depth data is available.
-    /// 
+    ///
     /// On the Tango tablet, the depth callback occurs at 5 Hz.
     /// </summary>
     /// <param name="tangoDepth">Tango depth.</param>

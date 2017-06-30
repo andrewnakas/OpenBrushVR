@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // <copyright file="TangoUx.cs" company="Google">
 //
 // Copyright 2016 Google Inc. All Rights Reserved.
@@ -38,6 +38,7 @@ namespace Tango
         public TangoUxEnums.UxHoldPostureType m_holdPosture = TangoUxEnums.UxHoldPostureType.NONE;
 
         private TangoApplication m_tangoApplication;
+        private bool m_isTangoUxStarted = false;
 
         /// <summary>
         /// Start this instance.
@@ -48,6 +49,14 @@ namespace Tango
             m_tangoApplication.Register(this);
             AndroidHelper.InitTangoUx();
             SetHoldPosture(m_holdPosture);
+        }
+
+        /// <summary>
+        /// Disperse any events related to TangoUX functionality.
+        /// </summary>
+        public void Update()
+        {
+            UxExceptionEventListener.SendIfAvailable();
         }
 
         /// <summary>
@@ -73,7 +82,14 @@ namespace Tango
                 
                 if (tangoUX != null)
                 {
-                    UxExceptionEventListener.GetInstance.RegisterOnUxExceptionEventHandler(tangoUX.OnUxExceptionEventHandler);
+                    UxExceptionEventListener.RegisterOnUxExceptionEventHandler(tangoUX.OnUxExceptionEventHandler);
+                }
+
+                ITangoUXMultithreaded tangoUXMultithreaded = tangoObject as ITangoUXMultithreaded;
+                
+                if (tangoUXMultithreaded != null)
+                {
+                    UxExceptionEventListener.RegisterOnOnUxExceptionEventMultithreadedAvailable(tangoUXMultithreaded.OnUxExceptionEventMultithreadedAvailableEventHandler);
                 }
             }
         }
@@ -90,47 +106,76 @@ namespace Tango
                 
                 if (tangoUX != null)
                 {
-                    UxExceptionEventListener.GetInstance.UnregisterOnUxExceptionEventHandler(tangoUX.OnUxExceptionEventHandler);
+                    UxExceptionEventListener.UnregisterOnUxExceptionEventHandler(tangoUX.OnUxExceptionEventHandler);
+                }
+
+                ITangoUXMultithreaded tangoUXMultithreaded = tangoObject as ITangoUXMultithreaded;
+                
+                if (tangoUXMultithreaded != null)
+                {
+                    UxExceptionEventListener.UnregisterOnUxExceptionEventMultithreadedAvailable(tangoUXMultithreaded.OnUxExceptionEventMultithreadedAvailableEventHandler);
                 }
             }
         }
 
         /// <summary>
-        /// This is called when the permission granting process is finished.
+        /// Callback to handle Android permissions being granted.
         /// </summary>
-        /// <param name="permissionsGranted"><c>true</c> if permissions were granted, otherwise <c>false</c>.</param>
-        public void OnTangoPermissions(bool permissionsGranted)
+        /// <param name="permissionsGranted">If set to <c>true</c>, then permissions were granted; otherwise <c>false</c>.</param>
+        public void OnAndroidPermissions(bool permissionsGranted)
         {
             if (m_enableUXLibrary && permissionsGranted)
             {
-                StartCoroutine(_StartExceptionsListener());
+                _StartExceptionsListener();
+
+                if (m_tangoApplication.m_autoConnectToService)
+                {
+                    if (!m_isTangoUxStarted)
+                    {
+                        AndroidHelper.StartTangoUX(m_tangoApplication.m_enableMotionTracking && m_showConnectionScreen);
+                        m_isTangoUxStarted = true;
+                    }
+                }
             }
         }
 
         /// <summary>
-        /// This is called when successfully connected to the Tango service.
+        /// Callback to handle all tango permissions being granted.
+        /// </summary>
+        /// <param name="permissionsGranted">If set to <c>true</c>, then permissions were granted; otherwise <c>false</c>.</param>
+        public void OnTangoPermissions(bool permissionsGranted)
+        {
+        }
+
+        /// <summary>
+        /// This is called when successfully connected to the Tango Service.
         /// </summary>
         public void OnTangoServiceConnected()
         {
             if (m_enableUXLibrary)
             {
-                AndroidHelper.StartTangoUX(m_tangoApplication.m_enableMotionTracking && m_showConnectionScreen);
+                if (!m_isTangoUxStarted)
+                {
+                    AndroidHelper.StartTangoUX(m_tangoApplication.m_enableMotionTracking && m_showConnectionScreen);
+                    m_isTangoUxStarted = true;
+                }
             }
         }
 
         /// <summary>
-        /// This is called when disconnected from the Tango service.
+        /// This is called when disconnected from the Tango Service.
         /// </summary>
         public void OnTangoServiceDisconnected()
         {
             if (m_enableUXLibrary)
             {
                 AndroidHelper.StopTangoUX();
+                m_isTangoUxStarted = false;
             }
         }
 
         /// <summary>
-        /// Raises the tango pose available event.
+        /// Raises the Tango pose available event.
         /// </summary>
         /// <param name="poseData">Pose data.</param>
         public void OnTangoPoseAvailable(Tango.TangoPoseData poseData)
@@ -142,7 +187,7 @@ namespace Tango
         }
 
         /// <summary>
-        /// Raises the tango event available event handler event.
+        /// Raises the Tango event available event handler event.
         /// </summary>
         /// <param name="tangoEvent">Tango event.</param>
         public void OnTangoEventMultithreadedAvailableEventHandler(Tango.TangoEvent tangoEvent)
@@ -157,7 +202,7 @@ namespace Tango
         }
 
         /// <summary>
-        /// Raises the tango depth available event.
+        /// Raises the Tango depth available event.
         /// </summary>
         /// <param name="tangoDepth">Tango depth.</param>
         public void OnTangoDepthMultithreadedAvailable(Tango.TangoXYZij tangoDepth)
@@ -178,7 +223,7 @@ namespace Tango
         }
 
         /// <summary>
-        /// Display Tango Service out of date notification.
+        /// Display Tango Service out-of-date notification.
         /// </summary>
         public void ShowTangoOutOfDate()
         {
@@ -188,12 +233,20 @@ namespace Tango
         /// <summary>
         /// Start exceptions listener.
         /// </summary>
-        /// <returns>The start exceptions listener.</returns>
-        private IEnumerator _StartExceptionsListener()
+        private void _StartExceptionsListener()
         {
+#if  UNITY_5_0 || UNITY_5_1 || UNITY_5_2
+#else
+            // The UX library exception feature will cause a crash on Tango Development Tablet with apk built from
+            // Unity 5.3 and above version. We disabled this feature temporarily.
+            if (SystemInfo.deviceModel.Equals("Google Project Tango Tablet Development Kit"))
+            {
+                Debug.Log("Force disabling Tango UX library exception drawing.");
+                m_drawDefaultUXExceptions = false;
+            }
+#endif
             AndroidHelper.ShowStandardTangoExceptionsUI(m_drawDefaultUXExceptions);
             AndroidHelper.SetUxExceptionEventListener();
-            yield return 0;
         }
     }
 }

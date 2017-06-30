@@ -140,11 +140,13 @@ public class SteamVR_Render : MonoBehaviour
 		}
 	}
 
+	private WaitForEndOfFrame waitForEndOfFrame = new WaitForEndOfFrame();
+
 	private IEnumerator RenderLoop()
 	{
-		while (true)
+		while (Application.isPlaying)
 		{
-			yield return new WaitForEndOfFrame();
+			yield return waitForEndOfFrame;
 
 			if (pauseRendering)
 				continue;
@@ -187,9 +189,8 @@ public class SteamVR_Render : MonoBehaviour
 
 	float sceneResolutionScale = 1.0f, timeScale = 1.0f;
 
-    private void OnInputFocus(params object[] args)
-    {
-        bool hasFocus = (bool)args[0];
+	private void OnInputFocus(bool hasFocus)
+	{
 		if (hasFocus)
 		{
 			if (pauseGameWhenDashboardIsVisible)
@@ -212,7 +213,7 @@ public class SteamVR_Render : MonoBehaviour
 		}
 	}
 
-	void OnQuit(params object[] args)
+	void OnQuit(VREvent_t vrEvent)
 	{
 #if UNITY_EDITOR
 		foreach (System.Reflection.Assembly a in System.AppDomain.CurrentDomain.GetAssemblies())
@@ -229,73 +230,81 @@ public class SteamVR_Render : MonoBehaviour
 #endif
 	}
 
-    private string GetScreenshotFilename(uint screenshotHandle, EVRScreenshotPropertyFilenames screenshotPropertyFilename)
-    {
-        var error = EVRScreenshotError.None;
-        var capacity = OpenVR.Screenshots.GetScreenshotPropertyFilename(screenshotHandle, screenshotPropertyFilename, null, 0, ref error);
-        if (error != EVRScreenshotError.None && error != EVRScreenshotError.BufferTooSmall )
-            return null;
-        if (capacity > 1)
-        {
-            var result = new System.Text.StringBuilder((int)capacity);
-            OpenVR.Screenshots.GetScreenshotPropertyFilename(screenshotHandle, screenshotPropertyFilename, result, capacity, ref error);
-            if (error != EVRScreenshotError.None)
-                return null;
-            return result.ToString();
-        }
-        return null;
-    }
-
-    private void OnRequestScreenshot(params object[] args)
-    {
-        var vrEvent = (VREvent_t)args[0];
-        var screenshotHandle = vrEvent.data.screenshot.handle;
-        var screenshotType = (EVRScreenshotType)vrEvent.data.screenshot.type;
-
-        if ( screenshotType == EVRScreenshotType.StereoPanorama )
-        {
-            string previewFilename = GetScreenshotFilename(screenshotHandle, EVRScreenshotPropertyFilenames.Preview);
-            string VRFilename = GetScreenshotFilename(screenshotHandle, EVRScreenshotPropertyFilenames.VR);
-
-            if (previewFilename == null || VRFilename == null)
-                return;
-
-            // Do the stereo panorama screenshot
-            // Figure out where the view is
-            GameObject screenshotPosition = new GameObject("screenshotPosition");
-            screenshotPosition.transform.position = SteamVR_Render.Top().transform.position;
-            screenshotPosition.transform.rotation = SteamVR_Render.Top().transform.rotation;
-            screenshotPosition.transform.localScale = SteamVR_Render.Top().transform.lossyScale;
-            SteamVR_Utils.TakeStereoScreenshot(screenshotHandle, screenshotPosition, 32, 0.064f, ref previewFilename, ref VRFilename);
-
-            // and submit it
-            OpenVR.Screenshots.SubmitScreenshot(screenshotHandle, screenshotType, previewFilename, VRFilename);
-        }
-    }
-
-    void OnEnable()
+	private string GetScreenshotFilename(uint screenshotHandle, EVRScreenshotPropertyFilenames screenshotPropertyFilename)
 	{
-        StartCoroutine("RenderLoop");
-		SteamVR_Utils.Event.Listen("input_focus", OnInputFocus);
-		SteamVR_Utils.Event.Listen("Quit", OnQuit);
-        SteamVR_Utils.Event.Listen("RequestScreenshot", OnRequestScreenshot);
+		var error = EVRScreenshotError.None;
+		var capacity = OpenVR.Screenshots.GetScreenshotPropertyFilename(screenshotHandle, screenshotPropertyFilename, null, 0, ref error);
+		if (error != EVRScreenshotError.None && error != EVRScreenshotError.BufferTooSmall)
+			return null;
+		if (capacity > 1)
+		{
+			var result = new System.Text.StringBuilder((int)capacity);
+			OpenVR.Screenshots.GetScreenshotPropertyFilename(screenshotHandle, screenshotPropertyFilename, result, capacity, ref error);
+			if (error != EVRScreenshotError.None)
+				return null;
+			return result.ToString();
+		}
+		return null;
+	}
 
-        var vr = SteamVR.instance;
-        if (vr == null)
-        {
-            enabled = false;
-            return;
-        }
-        var types = new EVRScreenshotType[] { EVRScreenshotType.StereoPanorama };
-        OpenVR.Screenshots.HookScreenshot(types);
+	private void OnRequestScreenshot(VREvent_t vrEvent)
+	{
+		var screenshotHandle = vrEvent.data.screenshot.handle;
+		var screenshotType = (EVRScreenshotType)vrEvent.data.screenshot.type;
+
+		if (screenshotType == EVRScreenshotType.StereoPanorama)
+		{
+			string previewFilename = GetScreenshotFilename(screenshotHandle, EVRScreenshotPropertyFilenames.Preview);
+			string VRFilename = GetScreenshotFilename(screenshotHandle, EVRScreenshotPropertyFilenames.VR);
+
+			if (previewFilename == null || VRFilename == null)
+				return;
+
+			// Do the stereo panorama screenshot
+			// Figure out where the view is
+			GameObject screenshotPosition = new GameObject("screenshotPosition");
+			screenshotPosition.transform.position = SteamVR_Render.Top().transform.position;
+			screenshotPosition.transform.rotation = SteamVR_Render.Top().transform.rotation;
+			screenshotPosition.transform.localScale = SteamVR_Render.Top().transform.lossyScale;
+			SteamVR_Utils.TakeStereoScreenshot(screenshotHandle, screenshotPosition, 32, 0.064f, ref previewFilename, ref VRFilename);
+
+			// and submit it
+			OpenVR.Screenshots.SubmitScreenshot(screenshotHandle, screenshotType, previewFilename, VRFilename);
+		}
+	}
+
+	void OnEnable()
+	{
+		StartCoroutine(RenderLoop());
+		SteamVR_Events.InputFocus.Listen(OnInputFocus);
+		SteamVR_Events.System(EVREventType.VREvent_Quit).Listen(OnQuit);
+		SteamVR_Events.System(EVREventType.VREvent_RequestScreenshot).Listen(OnRequestScreenshot);
+#if UNITY_2017_1_OR_NEWER
+		Application.onBeforeRender += OnBeforeRender;
+#else
+		Camera.onPreCull += OnCameraPreCull;
+#endif
+		var vr = SteamVR.instance;
+		if (vr == null)
+		{
+			enabled = false;
+			return;
+		}
+		var types = new EVRScreenshotType[] { EVRScreenshotType.StereoPanorama };
+		OpenVR.Screenshots.HookScreenshot(types);
 	}
 
 	void OnDisable()
 	{
 		StopAllCoroutines();
-        SteamVR_Utils.Event.Remove("RequestScreenshot", OnRequestScreenshot);
-        SteamVR_Utils.Event.Remove("input_focus", OnInputFocus);
-		SteamVR_Utils.Event.Remove("Quit", OnQuit);
+		SteamVR_Events.InputFocus.Remove(OnInputFocus);
+		SteamVR_Events.System(EVREventType.VREvent_Quit).Remove(OnQuit);
+		SteamVR_Events.System(EVREventType.VREvent_RequestScreenshot).Remove(OnRequestScreenshot);
+#if UNITY_2017_1_OR_NEWER
+		Application.onBeforeRender -= OnBeforeRender;
+#else
+		Camera.onPreCull -= OnCameraPreCull;
+#endif
 	}
 
 	void Awake()
@@ -312,17 +321,34 @@ public class SteamVR_Render : MonoBehaviour
 		}
 	}
 
-	private SteamVR_UpdatePoses poseUpdater;
+	public void UpdatePoses()
+	{
+		var compositor = OpenVR.Compositor;
+		if (compositor != null)
+		{
+			compositor.GetLastPoses(poses, gamePoses);
+			SteamVR_Events.NewPoses.Send(poses);
+			SteamVR_Events.NewPosesApplied.Send();
+		}
+	}
+
+#if UNITY_2017_1_OR_NEWER
+	void OnBeforeRender() { UpdatePoses(); }
+#else
+	void OnCameraPreCull(Camera cam)
+	{
+		// Only update poses on the first camera per frame.
+		if (Time.frameCount != lastFrameCount)
+		{
+			lastFrameCount = Time.frameCount;
+			UpdatePoses();
+		}
+	}
+	static int lastFrameCount = -1;
+#endif
 
 	void Update()
 	{
-		if (poseUpdater == null)
-		{
-			var go = new GameObject("poseUpdater");
-			go.transform.parent = transform;
-			poseUpdater = go.AddComponent<SteamVR_UpdatePoses>();
-		}
-
 		// Force controller update in case no one else called this frame to ensure prevState gets updated.
 		SteamVR_Controller.Update();
 
@@ -342,25 +368,23 @@ public class SteamVR_Render : MonoBehaviour
 					case EVREventType.VREvent_InputFocusCaptured: // another app has taken focus (likely dashboard)
 						if (vrEvent.data.process.oldPid == 0)
 						{
-							SteamVR_Utils.Event.Send("input_focus", false);
+							SteamVR_Events.InputFocus.Send(false);
 						}
 						break;
 					case EVREventType.VREvent_InputFocusReleased: // that app has released input focus
 						if (vrEvent.data.process.pid == 0)
 						{
-							SteamVR_Utils.Event.Send("input_focus", true);
+							SteamVR_Events.InputFocus.Send(true);
 						}
 						break;
 					case EVREventType.VREvent_ShowRenderModels:
-						SteamVR_Utils.Event.Send("hide_render_models", false);
+						SteamVR_Events.HideRenderModels.Send(false);
 						break;
 					case EVREventType.VREvent_HideRenderModels:
-						SteamVR_Utils.Event.Send("hide_render_models", true);
+						SteamVR_Events.HideRenderModels.Send(true);
 						break;
 					default:
-						var name = System.Enum.GetName(typeof(EVREventType), vrEvent.eventType);
-						if (name != null)
-							SteamVR_Utils.Event.Send(name.Substring(8) /*strip VREvent_*/, vrEvent);
+						SteamVR_Events.System((EVREventType)vrEvent.eventType).Send(vrEvent);
 						break;
 				}
 			}

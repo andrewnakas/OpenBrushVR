@@ -21,8 +21,11 @@ using System;
 using System.Collections;
 using Tango;
 using UnityEngine;
-using UnityEngine.UI;
+
 /// <summary>
+/// DEPRECATED -- This pose controller is deprecated.  Please use TangoPoseController
+/// instead.
+///
 /// An advanced movement controller which updates the position and rotation of a
 /// GameObject's transform by applying deltas based on the poses returned from
 /// Tango. This allows you to control movement using movement deltas; for
@@ -58,15 +61,15 @@ public class TangoDeltaPoseController : MonoBehaviour, ITangoPose
 
     /// <summary>
     /// The absolute target position for this controller. This is based on the
-    /// most recent pose received from the Tango service, and adjusted for any
+    /// most recent pose received from the Tango Service, and adjusted for any
     /// offsets from calling <c>SetPose</c> or using the clutch feature.
     /// </summary>
     [HideInInspector]
     public Vector3 m_tangoPosition;
-    
+
     /// <summary>
     /// The absolute target rotation for this controller. This is based on the
-    /// most recent pose received from the Tango service, and adjusted for any
+    /// most recent pose received from the Tango Service, and adjusted for any
     /// offsets from calling <c>SetPose()</c> or using the clutch feature.
     /// </summary>
     [HideInInspector]
@@ -87,7 +90,12 @@ public class TangoDeltaPoseController : MonoBehaviour, ITangoPose
     /// If set, the initial pose uses the Area Description base frame.
     /// </summary>
     public bool m_useAreaDescriptionPose;
-	public Slider motionSlider;
+
+    /// <summary>
+    /// The Tango application instance.
+    /// </summary>
+    private TangoApplication m_tangoApplication;
+
     /// <summary>
     /// The previous target position for this controller. Used to calculate
     /// movement deltas.
@@ -112,20 +120,20 @@ public class TangoDeltaPoseController : MonoBehaviour, ITangoPose
 
     /// <summary>
     /// Matrix that transforms from the Unity Camera to the Unity World.
-    /// 
+    ///
     /// Needed to calculate offsets.
     /// </summary>
     private Matrix4x4 m_uwTuc;
 
     /// <summary>
-    /// Matrix that transforms the Unity World taking into account offsets from calls
+    /// Matrix that transforms the Unity World, taking into account offsets from calls
     /// to <c>SetPose</c>.
     /// </summary>
     private Matrix4x4 m_uwOffsetTuw;
 
     /// <summary>
     /// Gets or sets a value indicating whether the clutch is active.
-    /// 
+    ///
     /// If the clutch is active, the controller ignores device movement and yaw,
     /// but follows pitch and roll to keep the ground plane level.
     /// </summary>
@@ -149,12 +157,12 @@ public class TangoDeltaPoseController : MonoBehaviour, ITangoPose
     }
 
     /// <summary>
-    /// Gets the TRS matrix for the offset between the pose returned by the 
-    /// Tango service and the desired pose in the Unity world. If the only 
+    /// Gets the TRS matrix for the offset between the pose returned by the
+    /// Tango Service and the desired pose in the Unity world. If the only
     /// source of movement are position and rotation updates from the Tango
     /// service, there is no offset and this returns an identity matrix. If
     /// other movement is applied (i.e. from activating the clutch or calling
-    /// <c>SetPose</c>), this returns a matrix which can be multiplied to a 
+    /// <c>SetPose</c>), this returns a matrix which can be multiplied to a
     /// transform to apply the offset.
     /// </summary>
     /// <value>The Unity world offset.</value>
@@ -190,10 +198,10 @@ public class TangoDeltaPoseController : MonoBehaviour, ITangoPose
     {
         m_characterController = GetComponent<CharacterController>();
 
-        TangoApplication tangoApplication = FindObjectOfType<TangoApplication>();
-        if (tangoApplication != null)
+        m_tangoApplication = FindObjectOfType<TangoApplication>();
+        if (m_tangoApplication != null)
         {
-            tangoApplication.Register(this);
+            m_tangoApplication.Register(this);
         }
         else
         {
@@ -233,7 +241,7 @@ public class TangoDeltaPoseController : MonoBehaviour, ITangoPose
             ClutchActive = buttonState;
         }
     }
-    
+
     /// <summary>
     /// Unity callback when application is paused.
     /// </summary>
@@ -252,25 +260,35 @@ public class TangoDeltaPoseController : MonoBehaviour, ITangoPose
     /// <param name="pose">The new Tango pose.</param>
     public void OnTangoPoseAvailable(TangoPoseData pose)
     {
-        // Get out of here if the pose is null
+        // Get out of here if the pose is null.
         if (pose == null)
         {
-            Debug.Log("TangoPoseDate is null.");
+            Debug.LogError("TangoPoseData is null.");
             return;
         }
 
-        // Only interested in pose updates relative to the start of service pose.
-        if (!m_useAreaDescriptionPose)
+        if (m_useAreaDescriptionPose)
         {
-            if (pose.framePair.baseFrame == TangoEnums.TangoCoordinateFrameType.TANGO_COORDINATE_FRAME_START_OF_SERVICE
-                && pose.framePair.targetFrame == TangoEnums.TangoCoordinateFrameType.TANGO_COORDINATE_FRAME_DEVICE)
+            if (m_tangoApplication.m_enableCloudADF)
             {
-                _UpdateTransformationFromPose(pose);
+                if (pose.framePair.baseFrame == TangoEnums.TangoCoordinateFrameType.TANGO_COORDINATE_FRAME_GLOBAL_WGS84
+                    && pose.framePair.targetFrame == TangoEnums.TangoCoordinateFrameType.TANGO_COORDINATE_FRAME_DEVICE)
+                {
+                    _UpdateTransformationFromPose(pose);
+                }
+            }
+            else
+            {
+                if (pose.framePair.baseFrame == TangoEnums.TangoCoordinateFrameType.TANGO_COORDINATE_FRAME_AREA_DESCRIPTION
+                && pose.framePair.targetFrame == TangoEnums.TangoCoordinateFrameType.TANGO_COORDINATE_FRAME_DEVICE)
+                {
+                    _UpdateTransformationFromPose(pose);
+                }
             }
         }
         else
         {
-            if (pose.framePair.baseFrame == TangoEnums.TangoCoordinateFrameType.TANGO_COORDINATE_FRAME_AREA_DESCRIPTION
+            if (pose.framePair.baseFrame == TangoEnums.TangoCoordinateFrameType.TANGO_COORDINATE_FRAME_START_OF_SERVICE
                 && pose.framePair.targetFrame == TangoEnums.TangoCoordinateFrameType.TANGO_COORDINATE_FRAME_DEVICE)
             {
                 _UpdateTransformationFromPose(pose);
@@ -312,24 +330,31 @@ public class TangoDeltaPoseController : MonoBehaviour, ITangoPose
     /// <param name="pose">Received Tango pose data.</param>
     private void _UpdateTransformationFromPose(TangoPoseData pose)
     {
-        // Remember the previous position, so you can do delta motion
+        // Remember the previous position so you can do delta motion.
         m_prevTangoPosition = m_tangoPosition;
         m_prevTangoRotation = m_tangoRotation;
 
         // The callback pose is for device with respect to start of service pose.
         if (pose.status_code == TangoEnums.TangoPoseStatusType.TANGO_POSE_VALID)
         {
-            Vector3 position;
-            Quaternion rotation;
-            TangoSupport.TangoPoseToWorldTransform(pose, out position, out rotation);
+            DMatrix4x4 globalTLocal;
+            bool success = m_tangoApplication.GetGlobalTLocal(out globalTLocal);
+            if (!success)
+            {
+                Debug.LogError("Unable to obtain GlobalTLocal from Tango application.");
+                return;
+            }
 
-            m_uwTuc = Matrix4x4.TRS(position, rotation, Vector3.one);
+            DMatrix4x4 startOfServiceTDevice = globalTLocal.Inverse * DMatrix4x4.TR(pose.translation, pose.orientation);
+
+            m_uwTuc = TangoSupport.UNITY_WORLD_T_START_SERVICE * startOfServiceTDevice.ToMatrix4x4()
+                * TangoSupport.DEVICE_T_UNITY_CAMERA * TangoSupport.m_devicePoseRotation;
             Matrix4x4 uwOffsetTuc = m_uwOffsetTuw * m_uwTuc;
 
             m_tangoPosition = uwOffsetTuc.GetColumn(3);
             m_tangoRotation = Quaternion.LookRotation(uwOffsetTuc.GetColumn(2), uwOffsetTuc.GetColumn(1));
 
-            // Other pose data -- Pose count gets reset if pose status just became valid.
+            // Other pose data: pose count gets reset if pose status just became valid.
             if (pose.status_code != m_poseStatus)
             {
                 m_poseCount = 0;
@@ -337,7 +362,7 @@ public class TangoDeltaPoseController : MonoBehaviour, ITangoPose
 
             m_poseCount++;
 
-            // Other pose data -- Pose delta time.
+            // Other pose data: pose delta time.
             m_poseDeltaTime = (float)pose.timestamp - m_poseTimestamp;
             m_poseTimestamp = (float)pose.timestamp;
         }
@@ -356,7 +381,7 @@ public class TangoDeltaPoseController : MonoBehaviour, ITangoPose
         }
 
         // Calculate final position and rotation deltas and apply them.
-		Vector3 deltaPosition = (m_tangoPosition - m_prevTangoPosition ) *motionSlider.value;
+        Vector3 deltaPosition = m_tangoPosition - m_prevTangoPosition;
         Quaternion deltaRotation = m_tangoRotation * Quaternion.Inverse(m_prevTangoRotation);
 
         if (m_characterMotion && m_characterController != null)
@@ -366,7 +391,7 @@ public class TangoDeltaPoseController : MonoBehaviour, ITangoPose
         }
         else
         {
-			transform.position = transform.position +( deltaPosition );
+            transform.position = transform.position + deltaPosition;
             transform.rotation = deltaRotation * transform.rotation;
         }
     }

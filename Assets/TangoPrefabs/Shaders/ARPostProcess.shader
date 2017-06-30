@@ -1,4 +1,6 @@
-﻿Shader "Tango/ARPostProcess" {
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Tango/ARPostProcess" {
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
@@ -40,7 +42,7 @@
             {
                 v2f o;
                 o.uv = v.uv;
-                o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
+                o.vertex = UnityObjectToClipPos(v.vertex);
                 return o;
             }
 

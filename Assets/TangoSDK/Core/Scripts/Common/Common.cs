@@ -44,19 +44,19 @@ namespace Tango
         internal const string TANGO_UNITY_DLL = "tango_unity_lib";
 
         /// <summary>
-        /// Motion Tracking permission intent string.
-        /// </summary>
-        internal const string TANGO_MOTION_TRACKING_PERMISSIONS = "MOTION_TRACKING_PERMISSION";
-
-        /// <summary>
         /// ADF Load/Save permission intent string.
         /// </summary>
         internal const string TANGO_ADF_LOAD_SAVE_PERMISSIONS = "ADF_LOAD_SAVE_PERMISSION";
 
         /// <summary>
-        /// Code used to identify the result came from the Motion Tracking permission request.
+        /// The Android camera permission string.
         /// </summary>
-        internal const int TANGO_MOTION_TRACKING_PERMISSIONS_REQUEST_CODE = 42;
+        internal const string ANDROID_CAMERA_PERMISSION = "android.permission.CAMERA";
+
+        /// <summary>
+        /// The android permission for accessing fine location.
+        /// </summary>
+        internal const string ANDROID_ACCESS_FINE_LOCATION_PERMISSION = "android.permission.ACCESS_FINE_LOCATION";
 
         /// <summary>
         /// Code used to identify the result came from the ADF Load/Save permission request.
@@ -74,6 +74,11 @@ namespace Tango
         internal const int TANGO_ADF_EXPORT_REQUEST_CODE = 45;
 
         /// <summary>
+        /// Code used to identify the result came from requesting Android permissions.
+        /// </summary>
+        internal const int ANDROID_PERMISSION_REQUEST_CODE = 46;
+
+        /// <summary>
         /// Max number of vertices the Point Cloud supports.
         /// </summary>
         internal const int MAX_NUM_POINTS = 65534;
@@ -82,6 +87,11 @@ namespace Tango
         /// The length of an area description ID string.
         /// </summary>
         internal const int UUID_LENGTH = 37;
+
+        /// <summary>
+        /// Number of seconds per nanoseconds.
+        /// </summary>
+        internal const double SECS_PER_NANOSECS = 1E-9;
 
         /// <summary>
         /// Return values from Android activities.

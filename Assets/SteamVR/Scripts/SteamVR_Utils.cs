@@ -477,11 +477,12 @@ public static class SteamVR_Utils
 		camera.aspect = oldAspect;
 		camera.stereoTargetEye = StereoTargetEyeMask.None;
 
-		// Render sections of a sphere using a rectilinear projection
-		// and resample using a sphereical projection into a single panorama
-		// texture per eye.  We break into sections in order to keep the eye
-		// separation similar around the sphere.  Rendering alternates between
-		// top and bottom sections, sweeping horizontally around the sphere,
+        // Render sections of a sphere using a rectilinear projection
+        // and resample using a sphereical projection into a single panorama
+        // texture per eye.  We break into sections in order to keep the eye
+        // separation similar around the sphere.  Rendering alternates between
+        // top and bottom sections, sweeping 
+      //  ly around the sphere,
 		// alternating left and right eyes.
 		for (int v = 0; v < vTotal; v++)
 		{

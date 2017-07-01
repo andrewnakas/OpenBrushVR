@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/ARKIT_IOS.unity
+  isLoaded: 1
+  isActive: 1

@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 Shader "ColorPicker/ColorSaturationBrightness" {
 	Properties {
 	    _Color ("Main Color", Color) = (0.75,0.15,0.56,1)
@@ -24,7 +26,7 @@ Shader "ColorPicker/ColorSaturationBrightness" {
 			
 			pos_output vert(appdata v) {
 			    pos_output o;
-			    o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+			    o.pos = UnityObjectToClipPos(v.vertex);
 			    o.uv = float4(v.texcoord.xy, 0, 0);
 			    return o;
 			}

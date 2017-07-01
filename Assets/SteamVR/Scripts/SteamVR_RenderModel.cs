@@ -699,7 +699,7 @@ public class SteamVR_RenderModel : MonoBehaviour
 				child.localPosition = componentTransform.pos;
 				child.localRotation = componentTransform.rot;
 
-				var attach = child.FindChild(k_localTransformName);
+				var attach = child.Find(k_localTransformName);
 				if (attach != null)
 				{
 					var attachTransform = new SteamVR_Utils.RigidTransform(componentState.mTrackingToComponentLocal);

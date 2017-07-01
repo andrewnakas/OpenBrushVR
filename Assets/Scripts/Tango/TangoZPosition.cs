@@ -6,7 +6,8 @@ public class TangoZPosition : MonoBehaviour {
 	public Slider controllerPosition;
 	// Use this for initialization
 	void Start () {
-	
+		controller.transform.localPosition = new Vector3 (0, 0,controllerPosition.value);
+
 	}
 	
 	// Update is called once per frame

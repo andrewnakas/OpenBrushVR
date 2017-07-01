@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBrushVR.Plugins", "OpenBrushVR.Plugins.csproj", "{7D0F17B2-5FA8-32DC-2139-D3A577921567}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBrushVR", "OpenBrushVR.csproj", "{D1B123DC-D35B-E975-C54E-E12776BA76F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBrushVR.Editor.Plugins", "OpenBrushVR.Editor.Plugins.csproj", "{64E288AC-D074-45D8-A950-8023C8786A64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBrushVR.Editor", "OpenBrushVR.Editor.csproj", "{6BEBCF06-57B1-EEB0-7812-3CD7C3B9F9D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D0F17B2-5FA8-32DC-2139-D3A577921567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D0F17B2-5FA8-32DC-2139-D3A577921567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D0F17B2-5FA8-32DC-2139-D3A577921567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D0F17B2-5FA8-32DC-2139-D3A577921567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1B123DC-D35B-E975-C54E-E12776BA76F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1B123DC-D35B-E975-C54E-E12776BA76F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1B123DC-D35B-E975-C54E-E12776BA76F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1B123DC-D35B-E975-C54E-E12776BA76F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E288AC-D074-45D8-A950-8023C8786A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E288AC-D074-45D8-A950-8023C8786A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E288AC-D074-45D8-A950-8023C8786A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E288AC-D074-45D8-A950-8023C8786A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BEBCF06-57B1-EEB0-7812-3CD7C3B9F9D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BEBCF06-57B1-EEB0-7812-3CD7C3B9F9D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BEBCF06-57B1-EEB0-7812-3CD7C3B9F9D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BEBCF06-57B1-EEB0-7812-3CD7C3B9F9D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

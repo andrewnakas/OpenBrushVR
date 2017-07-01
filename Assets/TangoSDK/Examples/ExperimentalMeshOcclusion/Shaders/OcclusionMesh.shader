@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 //-----------------------------------------------------------------------
 // <copyright file="DepthAsColor.shader" company="Google">
 //
@@ -37,7 +39,7 @@ Shader "Custom/OcclusionMesh"
             v2f vert(appdata_base v)
             {
                 v2f o;
-                o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+                o.pos = UnityObjectToClipPos(v.vertex);
                 o.projPos = ComputeScreenPos(o.pos);
 
                 return o;

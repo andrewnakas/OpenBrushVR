@@ -1,0 +1,12489 @@
+﻿#include "il2cpp-config.h"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+#include <cstring>
+#include <string.h>
+#include <stdio.h>
+#include <cmath>
+#include <limits>
+#include <assert.h>
+
+#include "class-internals.h"
+#include "codegen/il2cpp-codegen.h"
+#include "mscorlib_System_Array3829468939.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_U3CModuleU3E3783534214.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_U3CPrivateImplementa1486305137.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_U3CPrivateImplementat762068664.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_AR3DOFCameraManager2152865733.h"
+#include "mscorlib_System_Void1841601450.h"
+#include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_AR318899795.h"
+#include "UnityEngine_UnityEngine_Object1021602117.h"
+#include "mscorlib_System_Int322071877448.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U1130867170.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U2379988631.h"
+#include "mscorlib_System_Boolean3825574718.h"
+#include "UnityEngine_UnityEngine_Camera189460977.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U2351297253.h"
+#include "UnityEngine_UnityEngine_GameObject1756533147.h"
+#include "UnityEngine_UnityEngine_Component3819376471.h"
+#include "UnityEngine_UnityEngine_Material193706927.h"
+#include "UnityEngine_UnityEngine_Matrix4x42933234003.h"
+#include "UnityEngine_UnityEngine_Vector32243707580.h"
+#include "UnityEngine_UnityEngine_Quaternion4030073918.h"
+#include "UnityEngine_UnityEngine_Transform3275118058.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_DontDestroyOnLoad3235789354.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_PointCloudParticleExa986756623.h"
+#include "mscorlib_System_Single2076509932.h"
+#include "mscorlib_System_Object2689449295.h"
+#include "mscorlib_System_IntPtr2504060609.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_Un496507918.h"
+#include "UnityEngine_UnityEngine_ParticleSystem3394631041.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U4198559457.h"
+#include "UnityEngine_UnityEngine_ParticleSystem_Particle250075699.h"
+#include "UnityEngine_UnityEngine_Color2020392075.h"
+#include "UnityEngine_UnityEngine_Color32874517518.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityARCameraManager2138856896.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A1821734930.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_Un612575857.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityARCameraNearFar519802600.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A1161832412.h"
+#include "mscorlib_System_String2029220233.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A4158705974.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A2887756272.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A1001293426.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A3275513025.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A3616749745.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A3477821059.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A1439520888.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A2379298071.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A2305225887.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A3436811567.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A3555590363.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A3911821096.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A3764914833.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_ART55960597.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A2048880995.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_A4227173799.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_i2580192745.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U2901866349.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U1086564192.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U2646854145.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U3886071158.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_Un142665927.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_g4220005149.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera1209076693.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera1593300101.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen1674347019.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_V2923064992.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_Un100931615.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U3368998101.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_Un146867607.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera2179363831.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen2644634157.h"
+#include "UnityEngine_UnityEngine_Touch407273883.h"
+#include "UnityEngine_UnityEngine_TouchPhase2458120420.h"
+#include "UnityEngine_UnityEngine_Vector22243707579.h"
+#include "mscorlib_System_RuntimeFieldHandle2331729674.h"
+#include "mscorlib_System_Double4078015681.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U4129824344.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U1698990409.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U3123075684.h"
+#include "UnityEngine_UnityEngine_Rect3681755626.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U4039665643.h"
+#include "UnityEngine_UnityEngine_Vector42243707581.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U3296518558.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U1622117597.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U3705772742.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U3189755211.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_Un872580813.h"
+#include "mscorlib_System_Delegate3022476291.h"
+#include "mscorlib_System_UInt322149682021.h"
+#include "mscorlib_System_AsyncCallback163412349.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U3608388148.h"
+#include "UnityEngine_UnityEngine_MeshFilter3026937449.h"
+#include "UnityEngine_UnityEngine_Rendering_RenderTargetIdent772440638.h"
+#include "UnityEngine_UnityEngine_Rendering_BuiltinRenderText195473098.h"
+#include "UnityEngine_UnityEngine_Texture2243626319.h"
+#include "UnityEngine_UnityEngine_Rendering_CameraEvent2007842675.h"
+#include "UnityEngine_UnityEngine_Rendering_CommandBuffer1204166949.h"
+#include "UnityEngine_UnityEngine_Resolution3693662728.h"
+#include "UnityEngine_UnityEngine_TextureFormat1386130234.h"
+#include "UnityEngine_UnityEngine_FilterMode10814199.h"
+#include "UnityEngine_UnityEngine_TextureWrapMode3683976566.h"
+#include "UnityEngine_UnityEngine_ScreenOrientation4019489636.h"
+#include "UnityEngine_UnityEngine_Texture2D3542995729.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_UnityPointCloudExamp3196264220.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen1125654279.h"
+#include "mscorlib_System_Int64909078037.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_AppOverride1098481522.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_CameraVideoS968213647.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_ChaperoneCali49870780.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_Compositor_C450065686.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_Compositor_2839634313.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_Compositor_2947234819.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_COpenVRCont2015130898.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_CVRApplicat1900926488.h"
+#include "mscorlib_System_RuntimeTypeHandle2330101084.h"
+#include "mscorlib_System_Type1303803226.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat2340401530.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRApplicati862086677.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicati767630098.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat1836596693.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat2595723848.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat2482336573.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat2366899296.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicati114599352.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicati851978817.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat1486019733.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat1201572535.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat3582840745.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat2074441983.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat1775622238.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat1419106538.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat3031121943.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRApplicat1959780520.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat2585650982.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat3564886007.h"
+#include "mscorlib_System_UInt642909196914.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat3532011289.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat1014802842.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicati253949742.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat2776386992.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat1319680284.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat1223733271.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat1260006687.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat3777004763.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat4154880362.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRApplicat3895609521.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicati623155336.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat1375004597.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat1807962071.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat1816118422.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRApplicat1067354359.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_CVRChaperone441701222.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon1398180532.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon2974007097.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon2872887692.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_HmdQuad_t2172573705.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon2644523155.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon2817167257.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_HmdColor_t1780554589.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperone792692487.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon3705523218.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon1424518499.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperone936994906.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_CVRChaperon1611144107.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperoneS32382285.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EChaperoneCon30305944.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperone206435796.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon3249028635.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon1540358174.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperone478315365.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon1852222363.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon1921386472.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_HmdMatrix34_664273062.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperone459969004.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon2605213384.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon2887667762.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon3486256295.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon1261944056.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon1528237404.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon2889659875.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon1524066641.h"
+#include "mscorlib_System_Byte3683104436.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon2916654968.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperone229051089.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon2516501904.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon2316140367.h"
+#include "mscorlib_System_Text_StringBuilder1221177846.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperone945638768.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRChaperon3167195336.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_CVRComposito197946050.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit4206274356.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_ETrackingUn1464400093.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit3662949163.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRCompositor10051991.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRComposit3948578210.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_TrackedDevi1668551120.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit4192584901.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit2717021868.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit3158332482.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVREye3088716538.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_Texture_t3277130850.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_VRTextureBo1897807375.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRSubmitFl2736259668.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposito938257482.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRCompositor32198265.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit4129629097.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit1729400753.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit2433513766.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit1488691712.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit4129572280.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit1389933364.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit2590693784.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposito745528287.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit2294069769.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit2760466547.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit2273085604.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposito988890383.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit1910270748.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit1990293024.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposito808393456.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit1161105516.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposito396471547.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposito410903031.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit3462826167.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit1834060663.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRCompositor78695371.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit3057442189.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit3440691638.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit2322134645.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit3071699813.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit3443550108.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit2180462479.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposito320290112.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_CVRExtended1925229748.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRExtended2045258050.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRExtended2171929041.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRExtendedD693377854.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRExtended2084284319.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_CVRNotificat523754935.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRNotifica3935579733.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRNotifica1058814108.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRNotificat408717238.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRNotifica1858720717.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_Notificatio1973232283.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRNotifica1905156422.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRNotifica3701790586.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_CVROverlay3377499315.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay3446109889.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVROverlayE3464864153.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1862706542.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_4211228331.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1020329117.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_4225758140.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__362587296.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1341267772.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__221395366.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__836541042.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3535846231.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1970553664.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1470043428.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_VROverlayFl2344570851.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1900166033.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3676293589.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2804573176.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2379424348.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2092887413.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2185592753.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__460846625.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1835744573.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3099711365.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__376620481.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3047220066.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2815542566.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1475163830.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_4193138162.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EColorSpace2848861630.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1399555963.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2119049239.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1179269927.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3680071147.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_VROverlayTr3148689642.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1493074241.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2100297354.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2557918150.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__579082695.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__893699371.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1749665136.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3256239660.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__733914692.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2737366627.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1564696099.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_HmdVector2_2255225135.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2483359939.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_VREvent_t3405266389.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__131678587.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_VROverlayIn3830649193.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3217580654.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3575042602.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2826364086.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2624726138.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_VROverlayIn3201480230.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_VROverlayIn2886517940.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1141587151.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2899449918.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_4101716668.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__300021750.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2763810618.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EOverlayDir2759670492.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1117963895.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2016645278.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2238656700.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2610332521.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3268606321.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__598184189.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EGraphicsAP1794133197.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__897552288.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2842744417.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1288689867.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__637199691.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2020287181.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3144660141.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1462353074.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__876496206.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_4127025320.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__812432855.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3095606223.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3006565844.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__G91815223.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3483797360.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__443079689.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_HmdRect2_t1656020282.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3695826360.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_CVRRenderMo2019937239.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMo3420796425.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRRenderMode21703732.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMo3622270247.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMo2139843464.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMo1786536393.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMo4051202214.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMo2681806282.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMo3518850916.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMo2385986941.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMo4149685257.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMo3364784497.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMod763371255.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMo3462998887.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMo1474657094.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMo2860930600.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_VRControlle2504874220.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_RenderModel1298199406.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_RenderModel2032012879.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMod742926735.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMo1969881317.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMo3954674309.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMo4216085620.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRRenderMod298277168.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_CVRResource2875708384.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRResource1092978558.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRResource4289483331.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRResources915790394.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_CVRScreensh3241040508.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRScreensh1006836234.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRScreensh1400268927.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRScreensho611740195.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRScreensh1956857133.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRScreensh2804207343.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRScreensh3028991757.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRScreenshot29427162.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRScreensh1122176780.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRScreensh2161609358.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRScreensh3387995749.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRScreensh3156929320.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_CVRSettings3592067458.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSettings254931744.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRSettings4124928198.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSettings_293614055.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSettings2978470277.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSettings1034551410.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSettings1033875974.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSettings3538756002.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSettings3538080526.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSettings3725422668.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSettings3724747224.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSettings1816180801.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSettings1793856309.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSettings1493649321.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSettings1836506429.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_CVRSystem1953699154.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem3365196000.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__4195542627.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_HmdMatrix44_664273159.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__2621141914.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__3426995441.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_DistortionC2253454723.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__3576284924.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__3057184772.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__1215702688.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__4234979703.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__1897151767.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__2551312917.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__3986281708.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__1432625068.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__3471614486.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__G102610835.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__1986385273.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_ETrackedDev2121051631.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__3492202929.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EDeviceActiv886867856.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__G212130385.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__1439808290.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_ETrackedCont361251409.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__3232960147.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__1728202579.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__1455580370.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__I459208129.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_ETrackedDev3226377054.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_ETrackedPro3340022390.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__2236257287.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__1406950913.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__2396289227.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__G537540785.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__3426445457.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__Ge87797800.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__1193025139.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__3908295690.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__2759121141.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVREventType6846875.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__1950138544.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_HiddenAreaM3319190843.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__1813422502.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__3891090487.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__4079915850.h"
+#include "mscorlib_System_Char3454481338.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__T158863722.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRButtonId66145412.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__G195009473.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRControll1358176136.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__3568402941.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__2994096092.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__R580725753.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__Is84136089.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__4049208724.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRFirmware2321703066.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__P673402879.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__1109677234.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRSystem__Ac90686541.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_CVRTrackedC2050215972.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRTrackedC2005230018.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRTrackedC3529690400.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRTrackedC1661571561.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRTrackedC2352646991.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRTrackedC2003723073.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRTrackedC1973698407.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRTrackedC1277836306.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRTrackedC2867851566.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRTrackedC1559262216.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRTrackedC1473645041.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRTrackedCa580267038.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRTrackedC2646805685.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRTrackedC1327133227.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRTrackedC1897576655.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRTrackedC3809094800.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EChaperoneI3488691528.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_ECollisionB1031782391.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EGamepadTex1154374256.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EGamepadText418780318.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_ETrackingRe3328467893.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRApplicat1952981913.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRComponen2716992123.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRControll2483464006.h"
+
+// AR3DOFCameraManager
+struct AR3DOFCameraManager_t2152865733;
+// UnityEngine.MonoBehaviour
+struct MonoBehaviour_t1158329972;
+// UnityEngine.XR.iOS.UnityARSessionNativeInterface
+struct UnityARSessionNativeInterface_t1130867170;
+// UnityEngine.Object
+struct Object_t1021602117;
+// UnityEngine.Camera
+struct Camera_t189460977;
+// UnityEngine.Component
+struct Component_t3819376471;
+// UnityEngine.GameObject
+struct GameObject_t1756533147;
+// UnityEngine.XR.iOS.UnityARVideo
+struct UnityARVideo_t2351297253;
+// System.Object
+struct Il2CppObject;
+// UnityEngine.Transform
+struct Transform_t3275118058;
+// DontDestroyOnLoad
+struct DontDestroyOnLoad_t3235789354;
+// PointCloudParticleExample
+struct PointCloudParticleExample_t986756623;
+// UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARFrameUpdate
+struct ARFrameUpdate_t496507918;
+// UnityEngine.ParticleSystem
+struct ParticleSystem_t3394631041;
+// UnityEngine.ParticleSystem/Particle[]
+struct ParticleU5BU5D_t574222242;
+// UnityARCameraManager
+struct UnityARCameraManager_t2138856896;
+// UnityARCameraNearFar
+struct UnityARCameraNearFar_t519802600;
+// UnityEngine.XR.iOS.ARPlaneAnchorGameObject
+struct ARPlaneAnchorGameObject_t2305225887;
+// UnityEngine.XR.iOS.UnityARAnchorManager
+struct UnityARAnchorManager_t1086564192;
+// System.Collections.Generic.Dictionary`2<System.String,UnityEngine.XR.iOS.ARPlaneAnchorGameObject>
+struct Dictionary_2_t4220005149;
+// System.Collections.Generic.Dictionary`2<System.Object,System.Object>
+struct Dictionary_2_t2281509423;
+// UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorAdded
+struct ARAnchorAdded_t2646854145;
+// UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorUpdated
+struct ARAnchorUpdated_t3886071158;
+// UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorRemoved
+struct ARAnchorRemoved_t142665927;
+// System.String
+struct String_t;
+// System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARPlaneAnchorGameObject>
+struct List_1_t1674347019;
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_t2058570427;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,UnityEngine.XR.iOS.ARPlaneAnchorGameObject>
+struct ValueCollection_t2923064992;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.Object,System.Object>
+struct ValueCollection_t984569266;
+// System.Collections.Generic.IEnumerable`1<UnityEngine.XR.iOS.ARPlaneAnchorGameObject>
+struct IEnumerable_1_t2597352932;
+// System.Collections.Generic.IEnumerable`1<System.Object>
+struct IEnumerable_1_t2981576340;
+// UnityEngine.XR.iOS.UnityARGeneratePlane
+struct UnityARGeneratePlane_t3368998101;
+// UnityEngine.XR.iOS.UnityARHitTestExample
+struct UnityARHitTestExample_t146867607;
+// System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARHitTestResult>
+struct List_1_t2644634157;
+// System.Array
+struct Il2CppArray;
+// UnityEngine.XR.iOS.UnityARKitControl
+struct UnityARKitControl_t1698990409;
+// UnityEngine.XR.iOS.UnityARMatrixOps
+struct UnityARMatrixOps_t4039665643;
+// UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARFrameUpdate
+struct internal_ARFrameUpdate_t3296518558;
+// UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorAdded
+struct internal_ARAnchorAdded_t1622117597;
+// UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorUpdated
+struct internal_ARAnchorUpdated_t3705772742;
+// UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorRemoved
+struct internal_ARAnchorRemoved_t3189755211;
+// UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARSessionFailed
+struct ARSessionFailed_t872580813;
+// System.Delegate
+struct Delegate_t3022476291;
+// UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration
+struct ARKitWorldTackingSessionConfiguration_t1821734930;
+// UnityEngine.XR.iOS.ARKitSessionConfiguration
+struct ARKitSessionConfiguration_t318899795;
+// UnityEngine.XR.iOS.UnityARHitTestResult
+struct UnityARHitTestResult_t4129824344;
+// System.Single[]
+struct SingleU5BU5D_t577127397;
+// UnityEngine.XR.iOS.ARPlaneAnchor
+struct ARPlaneAnchor_t1439520888;
+// System.IAsyncResult
+struct IAsyncResult_t1999651008;
+// System.AsyncCallback
+struct AsyncCallback_t163412349;
+// UnityEngine.XR.iOS.UnityARUtility
+struct UnityARUtility_t3608388148;
+// UnityEngine.MeshFilter
+struct MeshFilter_t3026937449;
+// UnityEngine.Rendering.CommandBuffer
+struct CommandBuffer_t1204166949;
+// UnityEngine.Texture
+struct Texture_t2243626319;
+// UnityEngine.Material
+struct Material_t193706927;
+// UnityEngine.Texture2D
+struct Texture2D_t3542995729;
+// UnityPointCloudExample
+struct UnityPointCloudExample_t3196264220;
+// System.Collections.Generic.List`1<UnityEngine.GameObject>
+struct List_1_t1125654279;
+// Valve.VR.CVRApplications
+struct CVRApplications_t1900926488;
+// System.Type
+struct Type_t;
+// Valve.VR.IVRApplications/_AddApplicationManifest
+struct _AddApplicationManifest_t767630098;
+// Valve.VR.IVRApplications/_RemoveApplicationManifest
+struct _RemoveApplicationManifest_t1836596693;
+// Valve.VR.IVRApplications/_IsApplicationInstalled
+struct _IsApplicationInstalled_t2595723848;
+// Valve.VR.IVRApplications/_GetApplicationCount
+struct _GetApplicationCount_t2482336573;
+// Valve.VR.IVRApplications/_GetApplicationKeyByIndex
+struct _GetApplicationKeyByIndex_t2366899296;
+// Valve.VR.IVRApplications/_GetApplicationKeyByProcessId
+struct _GetApplicationKeyByProcessId_t114599352;
+// Valve.VR.IVRApplications/_LaunchApplication
+struct _LaunchApplication_t851978817;
+// Valve.VR.AppOverrideKeys_t[]
+struct AppOverrideKeys_tU5BU5D_t3538561671;
+// Valve.VR.IVRApplications/_LaunchTemplateApplication
+struct _LaunchTemplateApplication_t1486019733;
+// Valve.VR.IVRApplications/_LaunchApplicationFromMimeType
+struct _LaunchApplicationFromMimeType_t1201572535;
+// Valve.VR.IVRApplications/_LaunchDashboardOverlay
+struct _LaunchDashboardOverlay_t3582840745;
+// Valve.VR.IVRApplications/_CancelApplicationLaunch
+struct _CancelApplicationLaunch_t2074441983;
+// Valve.VR.IVRApplications/_IdentifyApplication
+struct _IdentifyApplication_t1775622238;
+// Valve.VR.IVRApplications/_GetApplicationProcessId
+struct _GetApplicationProcessId_t1419106538;
+// Valve.VR.IVRApplications/_GetApplicationsErrorNameFromEnum
+struct _GetApplicationsErrorNameFromEnum_t3031121943;
+// Valve.VR.IVRApplications/_GetApplicationPropertyString
+struct _GetApplicationPropertyString_t2585650982;
+// Valve.VR.IVRApplications/_GetApplicationPropertyBool
+struct _GetApplicationPropertyBool_t3564886007;
+// Valve.VR.IVRApplications/_GetApplicationPropertyUint64
+struct _GetApplicationPropertyUint64_t3532011289;
+// Valve.VR.IVRApplications/_SetApplicationAutoLaunch
+struct _SetApplicationAutoLaunch_t1014802842;
+// Valve.VR.IVRApplications/_GetApplicationAutoLaunch
+struct _GetApplicationAutoLaunch_t253949742;
+// Valve.VR.IVRApplications/_SetDefaultApplicationForMimeType
+struct _SetDefaultApplicationForMimeType_t2776386992;
+// Valve.VR.IVRApplications/_GetDefaultApplicationForMimeType
+struct _GetDefaultApplicationForMimeType_t1319680284;
+// Valve.VR.IVRApplications/_GetApplicationSupportedMimeTypes
+struct _GetApplicationSupportedMimeTypes_t1223733271;
+// Valve.VR.IVRApplications/_GetApplicationsThatSupportMimeType
+struct _GetApplicationsThatSupportMimeType_t1260006687;
+// Valve.VR.IVRApplications/_GetApplicationLaunchArguments
+struct _GetApplicationLaunchArguments_t3777004763;
+// Valve.VR.IVRApplications/_GetStartingApplication
+struct _GetStartingApplication_t4154880362;
+// Valve.VR.IVRApplications/_GetTransitionState
+struct _GetTransitionState_t623155336;
+// Valve.VR.IVRApplications/_PerformApplicationPrelaunchCheck
+struct _PerformApplicationPrelaunchCheck_t1375004597;
+// Valve.VR.IVRApplications/_GetApplicationsTransitionStateNameFromEnum
+struct _GetApplicationsTransitionStateNameFromEnum_t1807962071;
+// Valve.VR.IVRApplications/_IsQuitUserPromptRequested
+struct _IsQuitUserPromptRequested_t1816118422;
+// Valve.VR.IVRApplications/_LaunchInternalProcess
+struct _LaunchInternalProcess_t1067354359;
+// Valve.VR.CVRChaperone
+struct CVRChaperone_t441701222;
+// Valve.VR.IVRChaperone/_GetCalibrationState
+struct _GetCalibrationState_t2974007097;
+// Valve.VR.IVRChaperone/_GetPlayAreaSize
+struct _GetPlayAreaSize_t2872887692;
+// Valve.VR.IVRChaperone/_GetPlayAreaRect
+struct _GetPlayAreaRect_t2644523155;
+// Valve.VR.IVRChaperone/_ReloadInfo
+struct _ReloadInfo_t2817167257;
+// Valve.VR.IVRChaperone/_SetSceneColor
+struct _SetSceneColor_t792692487;
+// Valve.VR.IVRChaperone/_GetBoundsColor
+struct _GetBoundsColor_t3705523218;
+// Valve.VR.IVRChaperone/_AreBoundsVisible
+struct _AreBoundsVisible_t1424518499;
+// Valve.VR.IVRChaperone/_ForceBoundsVisible
+struct _ForceBoundsVisible_t936994906;
+// Valve.VR.CVRChaperoneSetup
+struct CVRChaperoneSetup_t1611144107;
+// Valve.VR.IVRChaperoneSetup/_CommitWorkingCopy
+struct _CommitWorkingCopy_t206435796;
+// Valve.VR.IVRChaperoneSetup/_RevertWorkingCopy
+struct _RevertWorkingCopy_t3249028635;
+// Valve.VR.IVRChaperoneSetup/_GetWorkingPlayAreaSize
+struct _GetWorkingPlayAreaSize_t1540358174;
+// Valve.VR.IVRChaperoneSetup/_GetWorkingPlayAreaRect
+struct _GetWorkingPlayAreaRect_t478315365;
+// Valve.VR.HmdQuad_t[]
+struct HmdQuad_tU5BU5D_t16941492;
+// Valve.VR.IVRChaperoneSetup/_GetWorkingCollisionBoundsInfo
+struct _GetWorkingCollisionBoundsInfo_t1852222363;
+// Valve.VR.IVRChaperoneSetup/_GetLiveCollisionBoundsInfo
+struct _GetLiveCollisionBoundsInfo_t1921386472;
+// Valve.VR.IVRChaperoneSetup/_GetWorkingSeatedZeroPoseToRawTrackingPose
+struct _GetWorkingSeatedZeroPoseToRawTrackingPose_t459969004;
+// Valve.VR.IVRChaperoneSetup/_GetWorkingStandingZeroPoseToRawTrackingPose
+struct _GetWorkingStandingZeroPoseToRawTrackingPose_t2605213384;
+// Valve.VR.IVRChaperoneSetup/_SetWorkingPlayAreaSize
+struct _SetWorkingPlayAreaSize_t2887667762;
+// Valve.VR.IVRChaperoneSetup/_SetWorkingCollisionBoundsInfo
+struct _SetWorkingCollisionBoundsInfo_t3486256295;
+// Valve.VR.IVRChaperoneSetup/_SetWorkingSeatedZeroPoseToRawTrackingPose
+struct _SetWorkingSeatedZeroPoseToRawTrackingPose_t1261944056;
+// Valve.VR.IVRChaperoneSetup/_SetWorkingStandingZeroPoseToRawTrackingPose
+struct _SetWorkingStandingZeroPoseToRawTrackingPose_t1528237404;
+// Valve.VR.IVRChaperoneSetup/_ReloadFromDisk
+struct _ReloadFromDisk_t2889659875;
+// Valve.VR.IVRChaperoneSetup/_GetLiveSeatedZeroPoseToRawTrackingPose
+struct _GetLiveSeatedZeroPoseToRawTrackingPose_t1524066641;
+// System.Byte[]
+struct ByteU5BU5D_t3397334013;
+// Valve.VR.IVRChaperoneSetup/_SetWorkingCollisionBoundsTagsInfo
+struct _SetWorkingCollisionBoundsTagsInfo_t2916654968;
+// Valve.VR.IVRChaperoneSetup/_GetLiveCollisionBoundsTagsInfo
+struct _GetLiveCollisionBoundsTagsInfo_t229051089;
+// Valve.VR.IVRChaperoneSetup/_SetWorkingPhysicalBoundsInfo
+struct _SetWorkingPhysicalBoundsInfo_t2516501904;
+// Valve.VR.IVRChaperoneSetup/_GetLivePhysicalBoundsInfo
+struct _GetLivePhysicalBoundsInfo_t2316140367;
+// System.Text.StringBuilder
+struct StringBuilder_t1221177846;
+// Valve.VR.IVRChaperoneSetup/_ExportLiveToBuffer
+struct _ExportLiveToBuffer_t945638768;
+// Valve.VR.IVRChaperoneSetup/_ImportFromBufferToWorking
+struct _ImportFromBufferToWorking_t3167195336;
+// Valve.VR.CVRCompositor
+struct CVRCompositor_t197946050;
+// Valve.VR.IVRCompositor/_SetTrackingSpace
+struct _SetTrackingSpace_t3662949163;
+// Valve.VR.IVRCompositor/_GetTrackingSpace
+struct _GetTrackingSpace_t10051991;
+// Valve.VR.TrackedDevicePose_t[]
+struct TrackedDevicePose_tU5BU5D_t2897272049;
+// Valve.VR.IVRCompositor/_WaitGetPoses
+struct _WaitGetPoses_t4192584901;
+// Valve.VR.IVRCompositor/_GetLastPoses
+struct _GetLastPoses_t2717021868;
+// Valve.VR.IVRCompositor/_GetLastPoseForTrackedDeviceIndex
+struct _GetLastPoseForTrackedDeviceIndex_t3158332482;
+// Valve.VR.IVRCompositor/_Submit
+struct _Submit_t938257482;
+// Valve.VR.IVRCompositor/_ClearLastSubmittedFrame
+struct _ClearLastSubmittedFrame_t32198265;
+// Valve.VR.IVRCompositor/_PostPresentHandoff
+struct _PostPresentHandoff_t4129629097;
+// Valve.VR.IVRCompositor/_GetFrameTiming
+struct _GetFrameTiming_t1729400753;
+// Valve.VR.IVRCompositor/_GetFrameTimeRemaining
+struct _GetFrameTimeRemaining_t2433513766;
+// Valve.VR.IVRCompositor/_GetCumulativeStats
+struct _GetCumulativeStats_t1488691712;
+// Valve.VR.IVRCompositor/_FadeToColor
+struct _FadeToColor_t4129572280;
+// Valve.VR.IVRCompositor/_FadeGrid
+struct _FadeGrid_t1389933364;
+// Valve.VR.Texture_t[]
+struct Texture_tU5BU5D_t3142294487;
+// Valve.VR.IVRCompositor/_SetSkyboxOverride
+struct _SetSkyboxOverride_t2590693784;
+// Valve.VR.IVRCompositor/_ClearSkyboxOverride
+struct _ClearSkyboxOverride_t745528287;
+// Valve.VR.IVRCompositor/_CompositorBringToFront
+struct _CompositorBringToFront_t2294069769;
+// Valve.VR.IVRCompositor/_CompositorGoToBack
+struct _CompositorGoToBack_t2760466547;
+// Valve.VR.IVRCompositor/_CompositorQuit
+struct _CompositorQuit_t2273085604;
+// Valve.VR.IVRCompositor/_IsFullscreen
+struct _IsFullscreen_t988890383;
+// Valve.VR.IVRCompositor/_GetCurrentSceneFocusProcess
+struct _GetCurrentSceneFocusProcess_t1910270748;
+// Valve.VR.IVRCompositor/_GetLastFrameRenderer
+struct _GetLastFrameRenderer_t1990293024;
+// Valve.VR.IVRCompositor/_CanRenderScene
+struct _CanRenderScene_t808393456;
+// Valve.VR.IVRCompositor/_ShowMirrorWindow
+struct _ShowMirrorWindow_t1161105516;
+// Valve.VR.IVRCompositor/_HideMirrorWindow
+struct _HideMirrorWindow_t396471547;
+// Valve.VR.IVRCompositor/_IsMirrorWindowVisible
+struct _IsMirrorWindowVisible_t410903031;
+// Valve.VR.IVRCompositor/_CompositorDumpImages
+struct _CompositorDumpImages_t3462826167;
+// Valve.VR.IVRCompositor/_ShouldAppRenderWithLowResources
+struct _ShouldAppRenderWithLowResources_t1834060663;
+// Valve.VR.IVRCompositor/_ForceInterleavedReprojectionOn
+struct _ForceInterleavedReprojectionOn_t78695371;
+// Valve.VR.IVRCompositor/_ForceReconnectProcess
+struct _ForceReconnectProcess_t3057442189;
+// Valve.VR.IVRCompositor/_SuspendRendering
+struct _SuspendRendering_t3440691638;
+// Valve.VR.IVRCompositor/_GetMirrorTextureD3D11
+struct _GetMirrorTextureD3D11_t2322134645;
+// Valve.VR.IVRCompositor/_GetMirrorTextureGL
+struct _GetMirrorTextureGL_t3071699813;
+// Valve.VR.IVRCompositor/_ReleaseSharedGLTexture
+struct _ReleaseSharedGLTexture_t3443550108;
+// Valve.VR.IVRCompositor/_LockGLSharedTextureForAccess
+struct _LockGLSharedTextureForAccess_t2180462479;
+// Valve.VR.IVRCompositor/_UnlockGLSharedTextureForAccess
+struct _UnlockGLSharedTextureForAccess_t320290112;
+// Valve.VR.CVRExtendedDisplay
+struct CVRExtendedDisplay_t1925229748;
+// Valve.VR.IVRExtendedDisplay/_GetWindowBounds
+struct _GetWindowBounds_t2171929041;
+// Valve.VR.IVRExtendedDisplay/_GetEyeOutputViewport
+struct _GetEyeOutputViewport_t693377854;
+// Valve.VR.IVRExtendedDisplay/_GetDXGIOutputInfo
+struct _GetDXGIOutputInfo_t2084284319;
+// Valve.VR.CVRNotifications
+struct CVRNotifications_t523754935;
+// Valve.VR.IVRNotifications/_CreateNotification
+struct _CreateNotification_t1905156422;
+// Valve.VR.IVRNotifications/_RemoveNotification
+struct _RemoveNotification_t3701790586;
+// Valve.VR.CVROverlay
+struct CVROverlay_t3377499315;
+// Valve.VR.IVROverlay/_FindOverlay
+struct _FindOverlay_t1862706542;
+// Valve.VR.IVROverlay/_CreateOverlay
+struct _CreateOverlay_t4211228331;
+// Valve.VR.IVROverlay/_DestroyOverlay
+struct _DestroyOverlay_t1020329117;
+// Valve.VR.IVROverlay/_SetHighQualityOverlay
+struct _SetHighQualityOverlay_t4225758140;
+// Valve.VR.IVROverlay/_GetHighQualityOverlay
+struct _GetHighQualityOverlay_t362587296;
+// Valve.VR.IVROverlay/_GetOverlayKey
+struct _GetOverlayKey_t1341267772;
+// Valve.VR.IVROverlay/_GetOverlayName
+struct _GetOverlayName_t221395366;
+// Valve.VR.IVROverlay/_GetOverlayImageData
+struct _GetOverlayImageData_t836541042;
+// Valve.VR.IVROverlay/_GetOverlayErrorNameFromEnum
+struct _GetOverlayErrorNameFromEnum_t3535846231;
+// Valve.VR.IVROverlay/_SetOverlayRenderingPid
+struct _SetOverlayRenderingPid_t1970553664;
+// Valve.VR.IVROverlay/_GetOverlayRenderingPid
+struct _GetOverlayRenderingPid_t1470043428;
+// Valve.VR.IVROverlay/_SetOverlayFlag
+struct _SetOverlayFlag_t1900166033;
+// Valve.VR.IVROverlay/_GetOverlayFlag
+struct _GetOverlayFlag_t3676293589;
+// Valve.VR.IVROverlay/_SetOverlayColor
+struct _SetOverlayColor_t2804573176;
+// Valve.VR.IVROverlay/_GetOverlayColor
+struct _GetOverlayColor_t2379424348;
+// Valve.VR.IVROverlay/_SetOverlayAlpha
+struct _SetOverlayAlpha_t2092887413;
+// Valve.VR.IVROverlay/_GetOverlayAlpha
+struct _GetOverlayAlpha_t2185592753;
+// Valve.VR.IVROverlay/_SetOverlayTexelAspect
+struct _SetOverlayTexelAspect_t460846625;
+// Valve.VR.IVROverlay/_GetOverlayTexelAspect
+struct _GetOverlayTexelAspect_t1835744573;
+// Valve.VR.IVROverlay/_SetOverlaySortOrder
+struct _SetOverlaySortOrder_t3099711365;
+// Valve.VR.IVROverlay/_GetOverlaySortOrder
+struct _GetOverlaySortOrder_t376620481;
+// Valve.VR.IVROverlay/_SetOverlayWidthInMeters
+struct _SetOverlayWidthInMeters_t3047220066;
+// Valve.VR.IVROverlay/_GetOverlayWidthInMeters
+struct _GetOverlayWidthInMeters_t2815542566;
+// Valve.VR.IVROverlay/_SetOverlayAutoCurveDistanceRangeInMeters
+struct _SetOverlayAutoCurveDistanceRangeInMeters_t1475163830;
+// Valve.VR.IVROverlay/_GetOverlayAutoCurveDistanceRangeInMeters
+struct _GetOverlayAutoCurveDistanceRangeInMeters_t4193138162;
+// Valve.VR.IVROverlay/_SetOverlayTextureColorSpace
+struct _SetOverlayTextureColorSpace_t1399555963;
+// Valve.VR.IVROverlay/_GetOverlayTextureColorSpace
+struct _GetOverlayTextureColorSpace_t2119049239;
+// Valve.VR.IVROverlay/_SetOverlayTextureBounds
+struct _SetOverlayTextureBounds_t1179269927;
+// Valve.VR.IVROverlay/_GetOverlayTextureBounds
+struct _GetOverlayTextureBounds_t3680071147;
+// Valve.VR.IVROverlay/_GetOverlayTransformType
+struct _GetOverlayTransformType_t1493074241;
+// Valve.VR.IVROverlay/_SetOverlayTransformAbsolute
+struct _SetOverlayTransformAbsolute_t2100297354;
+// Valve.VR.IVROverlay/_GetOverlayTransformAbsolute
+struct _GetOverlayTransformAbsolute_t2557918150;
+// Valve.VR.IVROverlay/_SetOverlayTransformTrackedDeviceRelative
+struct _SetOverlayTransformTrackedDeviceRelative_t579082695;
+// Valve.VR.IVROverlay/_GetOverlayTransformTrackedDeviceRelative
+struct _GetOverlayTransformTrackedDeviceRelative_t893699371;
+// Valve.VR.IVROverlay/_SetOverlayTransformTrackedDeviceComponent
+struct _SetOverlayTransformTrackedDeviceComponent_t1749665136;
+// Valve.VR.IVROverlay/_GetOverlayTransformTrackedDeviceComponent
+struct _GetOverlayTransformTrackedDeviceComponent_t3256239660;
+// Valve.VR.IVROverlay/_ShowOverlay
+struct _ShowOverlay_t733914692;
+// Valve.VR.IVROverlay/_HideOverlay
+struct _HideOverlay_t2737366627;
+// Valve.VR.IVROverlay/_IsOverlayVisible
+struct _IsOverlayVisible_t1564696099;
+// Valve.VR.IVROverlay/_GetTransformForOverlayCoordinates
+struct _GetTransformForOverlayCoordinates_t2483359939;
+// Valve.VR.IVROverlay/_PollNextOverlayEvent
+struct _PollNextOverlayEvent_t131678587;
+// Valve.VR.IVROverlay/_GetOverlayInputMethod
+struct _GetOverlayInputMethod_t3217580654;
+// Valve.VR.IVROverlay/_SetOverlayInputMethod
+struct _SetOverlayInputMethod_t3575042602;
+// Valve.VR.IVROverlay/_GetOverlayMouseScale
+struct _GetOverlayMouseScale_t2826364086;
+// Valve.VR.IVROverlay/_SetOverlayMouseScale
+struct _SetOverlayMouseScale_t2624726138;
+// Valve.VR.IVROverlay/_ComputeOverlayIntersection
+struct _ComputeOverlayIntersection_t1141587151;
+// Valve.VR.IVROverlay/_HandleControllerOverlayInteractionAsMouse
+struct _HandleControllerOverlayInteractionAsMouse_t2899449918;
+// Valve.VR.IVROverlay/_IsHoverTargetOverlay
+struct _IsHoverTargetOverlay_t4101716668;
+// Valve.VR.IVROverlay/_GetGamepadFocusOverlay
+struct _GetGamepadFocusOverlay_t300021750;
+// Valve.VR.IVROverlay/_SetGamepadFocusOverlay
+struct _SetGamepadFocusOverlay_t2763810618;
+// Valve.VR.IVROverlay/_SetOverlayNeighbor
+struct _SetOverlayNeighbor_t1117963895;
+// Valve.VR.IVROverlay/_MoveGamepadFocusToNeighbor
+struct _MoveGamepadFocusToNeighbor_t2016645278;
+// Valve.VR.IVROverlay/_SetOverlayTexture
+struct _SetOverlayTexture_t2238656700;
+// Valve.VR.IVROverlay/_ClearOverlayTexture
+struct _ClearOverlayTexture_t2610332521;
+// Valve.VR.IVROverlay/_SetOverlayRaw
+struct _SetOverlayRaw_t3268606321;
+// Valve.VR.IVROverlay/_SetOverlayFromFile
+struct _SetOverlayFromFile_t598184189;
+// Valve.VR.IVROverlay/_GetOverlayTexture
+struct _GetOverlayTexture_t897552288;
+// Valve.VR.IVROverlay/_ReleaseNativeOverlayHandle
+struct _ReleaseNativeOverlayHandle_t2842744417;
+// Valve.VR.IVROverlay/_GetOverlayTextureSize
+struct _GetOverlayTextureSize_t1288689867;
+// Valve.VR.IVROverlay/_CreateDashboardOverlay
+struct _CreateDashboardOverlay_t637199691;
+// Valve.VR.IVROverlay/_IsDashboardVisible
+struct _IsDashboardVisible_t2020287181;
+// Valve.VR.IVROverlay/_IsActiveDashboardOverlay
+struct _IsActiveDashboardOverlay_t3144660141;
+// Valve.VR.IVROverlay/_SetDashboardOverlaySceneProcess
+struct _SetDashboardOverlaySceneProcess_t1462353074;
+// Valve.VR.IVROverlay/_GetDashboardOverlaySceneProcess
+struct _GetDashboardOverlaySceneProcess_t876496206;
+// Valve.VR.IVROverlay/_ShowDashboard
+struct _ShowDashboard_t4127025320;
+// Valve.VR.IVROverlay/_GetPrimaryDashboardDevice
+struct _GetPrimaryDashboardDevice_t812432855;
+// Valve.VR.IVROverlay/_ShowKeyboard
+struct _ShowKeyboard_t3095606223;
+// Valve.VR.IVROverlay/_ShowKeyboardForOverlay
+struct _ShowKeyboardForOverlay_t3006565844;
+// Valve.VR.IVROverlay/_GetKeyboardText
+struct _GetKeyboardText_t91815223;
+// Valve.VR.IVROverlay/_HideKeyboard
+struct _HideKeyboard_t3483797360;
+// Valve.VR.IVROverlay/_SetKeyboardTransformAbsolute
+struct _SetKeyboardTransformAbsolute_t443079689;
+// Valve.VR.IVROverlay/_SetKeyboardPositionForOverlay
+struct _SetKeyboardPositionForOverlay_t3695826360;
+// Valve.VR.CVRRenderModels
+struct CVRRenderModels_t2019937239;
+// Valve.VR.IVRRenderModels/_LoadRenderModel_Async
+struct _LoadRenderModel_Async_t3622270247;
+// Valve.VR.IVRRenderModels/_FreeRenderModel
+struct _FreeRenderModel_t2139843464;
+// Valve.VR.IVRRenderModels/_LoadTexture_Async
+struct _LoadTexture_Async_t1786536393;
+// Valve.VR.IVRRenderModels/_FreeTexture
+struct _FreeTexture_t4051202214;
+// Valve.VR.IVRRenderModels/_LoadTextureD3D11_Async
+struct _LoadTextureD3D11_Async_t2681806282;
+// Valve.VR.IVRRenderModels/_LoadIntoTextureD3D11_Async
+struct _LoadIntoTextureD3D11_Async_t3518850916;
+// Valve.VR.IVRRenderModels/_FreeTextureD3D11
+struct _FreeTextureD3D11_t2385986941;
+// Valve.VR.IVRRenderModels/_GetRenderModelName
+struct _GetRenderModelName_t4149685257;
+// Valve.VR.IVRRenderModels/_GetRenderModelCount
+struct _GetRenderModelCount_t3364784497;
+// Valve.VR.IVRRenderModels/_GetComponentCount
+struct _GetComponentCount_t763371255;
+// Valve.VR.IVRRenderModels/_GetComponentName
+struct _GetComponentName_t3462998887;
+// Valve.VR.IVRRenderModels/_GetComponentButtonMask
+struct _GetComponentButtonMask_t1474657094;
+// Valve.VR.IVRRenderModels/_GetComponentRenderModelName
+struct _GetComponentRenderModelName_t2860930600;
+// Valve.VR.IVRRenderModels/_GetComponentState
+struct _GetComponentState_t742926735;
+// Valve.VR.IVRRenderModels/_RenderModelHasComponent
+struct _RenderModelHasComponent_t1969881317;
+// Valve.VR.IVRRenderModels/_GetRenderModelThumbnailURL
+struct _GetRenderModelThumbnailURL_t3954674309;
+// Valve.VR.IVRRenderModels/_GetRenderModelOriginalPath
+struct _GetRenderModelOriginalPath_t4216085620;
+// Valve.VR.IVRRenderModels/_GetRenderModelErrorNameFromEnum
+struct _GetRenderModelErrorNameFromEnum_t298277168;
+// Valve.VR.CVRResources
+struct CVRResources_t2875708384;
+// Valve.VR.IVRResources/_LoadSharedResource
+struct _LoadSharedResource_t4289483331;
+// Valve.VR.IVRResources/_GetResourceFullPath
+struct _GetResourceFullPath_t915790394;
+// Valve.VR.CVRScreenshots
+struct CVRScreenshots_t3241040508;
+// Valve.VR.IVRScreenshots/_RequestScreenshot
+struct _RequestScreenshot_t1956857133;
+// Valve.VR.EVRScreenshotType[]
+struct EVRScreenshotTypeU5BU5D_t2594501106;
+// Valve.VR.IVRScreenshots/_HookScreenshot
+struct _HookScreenshot_t2804207343;
+// Valve.VR.IVRScreenshots/_GetScreenshotPropertyType
+struct _GetScreenshotPropertyType_t3028991757;
+// Valve.VR.IVRScreenshots/_GetScreenshotPropertyFilename
+struct _GetScreenshotPropertyFilename_t1122176780;
+// Valve.VR.IVRScreenshots/_UpdateScreenshotProgress
+struct _UpdateScreenshotProgress_t2161609358;
+// Valve.VR.IVRScreenshots/_TakeStereoScreenshot
+struct _TakeStereoScreenshot_t3387995749;
+// Valve.VR.IVRScreenshots/_SubmitScreenshot
+struct _SubmitScreenshot_t3156929320;
+// Valve.VR.CVRSettings
+struct CVRSettings_t3592067458;
+// Valve.VR.IVRSettings/_GetSettingsErrorNameFromEnum
+struct _GetSettingsErrorNameFromEnum_t293614055;
+// Valve.VR.IVRSettings/_Sync
+struct _Sync_t2978470277;
+// Valve.VR.IVRSettings/_GetBool
+struct _GetBool_t1034551410;
+// Valve.VR.IVRSettings/_SetBool
+struct _SetBool_t1033875974;
+// Valve.VR.IVRSettings/_GetInt32
+struct _GetInt32_t3538756002;
+// Valve.VR.IVRSettings/_SetInt32
+struct _SetInt32_t3538080526;
+// Valve.VR.IVRSettings/_GetFloat
+struct _GetFloat_t3725422668;
+// Valve.VR.IVRSettings/_SetFloat
+struct _SetFloat_t3724747224;
+// Valve.VR.IVRSettings/_GetString
+struct _GetString_t1816180801;
+// Valve.VR.IVRSettings/_SetString
+struct _SetString_t1793856309;
+// Valve.VR.IVRSettings/_RemoveSection
+struct _RemoveSection_t1493649321;
+// Valve.VR.IVRSettings/_RemoveKeyInSection
+struct _RemoveKeyInSection_t1836506429;
+// Valve.VR.CVRSystem
+struct CVRSystem_t1953699154;
+// Valve.VR.IVRSystem/_GetRecommendedRenderTargetSize
+struct _GetRecommendedRenderTargetSize_t4195542627;
+// Valve.VR.IVRSystem/_GetProjectionMatrix
+struct _GetProjectionMatrix_t2621141914;
+// Valve.VR.IVRSystem/_GetProjectionRaw
+struct _GetProjectionRaw_t3426995441;
+// Valve.VR.IVRSystem/_ComputeDistortion
+struct _ComputeDistortion_t3576284924;
+// Valve.VR.IVRSystem/_GetEyeToHeadTransform
+struct _GetEyeToHeadTransform_t3057184772;
+// Valve.VR.IVRSystem/_GetTimeSinceLastVsync
+struct _GetTimeSinceLastVsync_t1215702688;
+// Valve.VR.IVRSystem/_GetD3D9AdapterIndex
+struct _GetD3D9AdapterIndex_t4234979703;
+// Valve.VR.IVRSystem/_GetDXGIOutputInfo
+struct _GetDXGIOutputInfo_t1897151767;
+// Valve.VR.IVRSystem/_IsDisplayOnDesktop
+struct _IsDisplayOnDesktop_t2551312917;
+// Valve.VR.IVRSystem/_SetDisplayVisibility
+struct _SetDisplayVisibility_t3986281708;
+// Valve.VR.IVRSystem/_GetDeviceToAbsoluteTrackingPose
+struct _GetDeviceToAbsoluteTrackingPose_t1432625068;
+// Valve.VR.IVRSystem/_ResetSeatedZeroPose
+struct _ResetSeatedZeroPose_t3471614486;
+// Valve.VR.IVRSystem/_GetSeatedZeroPoseToStandingAbsoluteTrackingPose
+struct _GetSeatedZeroPoseToStandingAbsoluteTrackingPose_t102610835;
+// Valve.VR.IVRSystem/_GetRawZeroPoseToStandingAbsoluteTrackingPose
+struct _GetRawZeroPoseToStandingAbsoluteTrackingPose_t1986385273;
+// System.UInt32[]
+struct UInt32U5BU5D_t59386216;
+// Valve.VR.IVRSystem/_GetSortedTrackedDeviceIndicesOfClass
+struct _GetSortedTrackedDeviceIndicesOfClass_t3492202929;
+// Valve.VR.IVRSystem/_GetTrackedDeviceActivityLevel
+struct _GetTrackedDeviceActivityLevel_t212130385;
+// Valve.VR.IVRSystem/_ApplyTransform
+struct _ApplyTransform_t1439808290;
+// Valve.VR.IVRSystem/_GetTrackedDeviceIndexForControllerRole
+struct _GetTrackedDeviceIndexForControllerRole_t3232960147;
+// Valve.VR.IVRSystem/_GetControllerRoleForTrackedDeviceIndex
+struct _GetControllerRoleForTrackedDeviceIndex_t1728202579;
+// Valve.VR.IVRSystem/_GetTrackedDeviceClass
+struct _GetTrackedDeviceClass_t1455580370;
+// Valve.VR.IVRSystem/_IsTrackedDeviceConnected
+struct _IsTrackedDeviceConnected_t459208129;
+// Valve.VR.IVRSystem/_GetBoolTrackedDeviceProperty
+struct _GetBoolTrackedDeviceProperty_t2236257287;
+// Valve.VR.IVRSystem/_GetFloatTrackedDeviceProperty
+struct _GetFloatTrackedDeviceProperty_t1406950913;
+// Valve.VR.IVRSystem/_GetInt32TrackedDeviceProperty
+struct _GetInt32TrackedDeviceProperty_t2396289227;
+// Valve.VR.IVRSystem/_GetUint64TrackedDeviceProperty
+struct _GetUint64TrackedDeviceProperty_t537540785;
+// Valve.VR.IVRSystem/_GetMatrix34TrackedDeviceProperty
+struct _GetMatrix34TrackedDeviceProperty_t3426445457;
+// Valve.VR.IVRSystem/_GetStringTrackedDeviceProperty
+struct _GetStringTrackedDeviceProperty_t87797800;
+// Valve.VR.IVRSystem/_GetPropErrorNameFromEnum
+struct _GetPropErrorNameFromEnum_t1193025139;
+// Valve.VR.IVRSystem/_PollNextEvent
+struct _PollNextEvent_t3908295690;
+// Valve.VR.IVRSystem/_PollNextEventWithPose
+struct _PollNextEventWithPose_t2759121141;
+// Valve.VR.IVRSystem/_GetEventTypeNameFromEnum
+struct _GetEventTypeNameFromEnum_t1950138544;
+// Valve.VR.IVRSystem/_GetHiddenAreaMesh
+struct _GetHiddenAreaMesh_t1813422502;
+// Valve.VR.IVRSystem/_GetControllerState
+struct _GetControllerState_t3891090487;
+// Valve.VR.IVRSystem/_GetControllerStateWithPose
+struct _GetControllerStateWithPose_t4079915850;
+// Valve.VR.IVRSystem/_TriggerHapticPulse
+struct _TriggerHapticPulse_t158863722;
+// Valve.VR.IVRSystem/_GetButtonIdNameFromEnum
+struct _GetButtonIdNameFromEnum_t195009473;
+// Valve.VR.IVRSystem/_GetControllerAxisTypeNameFromEnum
+struct _GetControllerAxisTypeNameFromEnum_t3568402941;
+// Valve.VR.IVRSystem/_CaptureInputFocus
+struct _CaptureInputFocus_t2994096092;
+// Valve.VR.IVRSystem/_ReleaseInputFocus
+struct _ReleaseInputFocus_t580725753;
+// Valve.VR.IVRSystem/_IsInputFocusCapturedByAnotherProcess
+struct _IsInputFocusCapturedByAnotherProcess_t84136089;
+// Valve.VR.IVRSystem/_DriverDebugRequest
+struct _DriverDebugRequest_t4049208724;
+// Valve.VR.IVRSystem/_PerformFirmwareUpdate
+struct _PerformFirmwareUpdate_t673402879;
+// Valve.VR.IVRSystem/_AcknowledgeQuit_Exiting
+struct _AcknowledgeQuit_Exiting_t1109677234;
+// Valve.VR.IVRSystem/_AcknowledgeQuit_UserPrompt
+struct _AcknowledgeQuit_UserPrompt_t90686541;
+// Valve.VR.CVRTrackedCamera
+struct CVRTrackedCamera_t2050215972;
+// Valve.VR.IVRTrackedCamera/_GetCameraErrorNameFromEnum
+struct _GetCameraErrorNameFromEnum_t1661571561;
+// Valve.VR.IVRTrackedCamera/_HasCamera
+struct _HasCamera_t2352646991;
+// Valve.VR.IVRTrackedCamera/_GetCameraFrameSize
+struct _GetCameraFrameSize_t1973698407;
+// Valve.VR.IVRTrackedCamera/_GetCameraIntrinisics
+struct _GetCameraIntrinisics_t1277836306;
+// Valve.VR.IVRTrackedCamera/_GetCameraProjection
+struct _GetCameraProjection_t2867851566;
+// Valve.VR.IVRTrackedCamera/_AcquireVideoStreamingService
+struct _AcquireVideoStreamingService_t1559262216;
+// Valve.VR.IVRTrackedCamera/_ReleaseVideoStreamingService
+struct _ReleaseVideoStreamingService_t1473645041;
+// Valve.VR.IVRTrackedCamera/_GetVideoStreamFrameBuffer
+struct _GetVideoStreamFrameBuffer_t580267038;
+// Valve.VR.IVRTrackedCamera/_GetVideoStreamTextureSize
+struct _GetVideoStreamTextureSize_t2646805685;
+// Valve.VR.IVRTrackedCamera/_GetVideoStreamTextureD3D11
+struct _GetVideoStreamTextureD3D11_t1327133227;
+// Valve.VR.IVRTrackedCamera/_GetVideoStreamTextureGL
+struct _GetVideoStreamTextureGL_t1897576655;
+// Valve.VR.IVRTrackedCamera/_ReleaseVideoStreamTextureGL
+struct _ReleaseVideoStreamTextureGL_t3809094800;
+extern Il2CppClass* UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var;
+extern Il2CppClass* ARKitSessionConfiguration_t318899795_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const uint32_t AR3DOFCameraManager_Start_m3126774506_MetadataUsageId;
+extern const MethodInfo* GameObject_GetComponent_TisUnityARVideo_t2351297253_m2230129522_MethodInfo_var;
+extern const uint32_t AR3DOFCameraManager_SetCamera_m946604403_MetadataUsageId;
+extern const MethodInfo* GameObject_AddComponent_TisUnityARVideo_t2351297253_m1329128087_MethodInfo_var;
+extern const uint32_t AR3DOFCameraManager_SetupNewCamera_m439842942_MetadataUsageId;
+extern const uint32_t AR3DOFCameraManager_Update_m2410279539_MetadataUsageId;
+extern const uint32_t DontDestroyOnLoad_Start_m34112045_MetadataUsageId;
+extern Il2CppClass* ARFrameUpdate_t496507918_il2cpp_TypeInfo_var;
+extern const MethodInfo* PointCloudParticleExample_ARFrameUpdated_m2750070680_MethodInfo_var;
+extern const MethodInfo* Object_Instantiate_TisParticleSystem_t3394631041_m4293040502_MethodInfo_var;
+extern const uint32_t PointCloudParticleExample_Start_m1963896970_MetadataUsageId;
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern Il2CppClass* ParticleU5BU5D_t574222242_il2cpp_TypeInfo_var;
+extern const uint32_t PointCloudParticleExample_Update_m2434219493_MetadataUsageId;
+extern Il2CppClass* ARKitWorldTackingSessionConfiguration_t1821734930_il2cpp_TypeInfo_var;
+extern const uint32_t UnityARCameraManager_Start_m1258756459_MetadataUsageId;
+extern const uint32_t UnityARCameraManager_SetCamera_m4250956606_MetadataUsageId;
+extern const uint32_t UnityARCameraManager_SetupNewCamera_m2358778511_MetadataUsageId;
+extern const uint32_t UnityARCameraManager_Update_m4265169368_MetadataUsageId;
+extern const MethodInfo* Component_GetComponent_TisCamera_t189460977_m3276577584_MethodInfo_var;
+extern const uint32_t UnityARCameraNearFar_Start_m3303427069_MetadataUsageId;
+extern const uint32_t UnityARCameraNearFar_UpdateCameraClipPlanes_m887086422_MetadataUsageId;
+extern Il2CppClass* Dictionary_2_t4220005149_il2cpp_TypeInfo_var;
+extern Il2CppClass* ARAnchorAdded_t2646854145_il2cpp_TypeInfo_var;
+extern Il2CppClass* ARAnchorUpdated_t3886071158_il2cpp_TypeInfo_var;
+extern Il2CppClass* ARAnchorRemoved_t142665927_il2cpp_TypeInfo_var;
+extern const MethodInfo* Dictionary_2__ctor_m1722416527_MethodInfo_var;
+extern const MethodInfo* UnityARAnchorManager_AddAnchor_m2816330223_MethodInfo_var;
+extern const MethodInfo* UnityARAnchorManager_UpdateAnchor_m4142154447_MethodInfo_var;
+extern const MethodInfo* UnityARAnchorManager_RemoveAnchor_m2109073956_MethodInfo_var;
+extern const uint32_t UnityARAnchorManager__ctor_m1861900703_MetadataUsageId;
+extern Il2CppClass* UnityARUtility_t3608388148_il2cpp_TypeInfo_var;
+extern Il2CppClass* ARPlaneAnchorGameObject_t2305225887_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisDontDestroyOnLoad_t3235789354_m4215585572_MethodInfo_var;
+extern const MethodInfo* Dictionary_2_Add_m2748008583_MethodInfo_var;
+extern const uint32_t UnityARAnchorManager_AddAnchor_m2816330223_MetadataUsageId;
+extern const MethodInfo* Dictionary_2_ContainsKey_m9048208_MethodInfo_var;
+extern const MethodInfo* Dictionary_2_get_Item_m4111408485_MethodInfo_var;
+extern const MethodInfo* Dictionary_2_Remove_m2895225056_MethodInfo_var;
+extern const uint32_t UnityARAnchorManager_RemoveAnchor_m2109073956_MetadataUsageId;
+extern const MethodInfo* Dictionary_2_set_Item_m3140527944_MethodInfo_var;
+extern const uint32_t UnityARAnchorManager_UpdateAnchor_m4142154447_MetadataUsageId;
+extern const MethodInfo* List_1_GetEnumerator_m4260200565_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m1081001953_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m3579574253_MethodInfo_var;
+extern const MethodInfo* Enumerator_Dispose_m113660709_MethodInfo_var;
+extern const MethodInfo* Dictionary_2_Clear_m797095524_MethodInfo_var;
+extern const uint32_t UnityARAnchorManager_Destroy_m1751028949_MetadataUsageId;
+extern const MethodInfo* Dictionary_2_get_Values_m586969881_MethodInfo_var;
+extern const MethodInfo* Enumerable_ToList_TisARPlaneAnchorGameObject_t2305225887_m3769884394_MethodInfo_var;
+extern const uint32_t UnityARAnchorManager_GetCurrentPlaneAnchors_m642073964_MetadataUsageId;
+extern Il2CppClass* UnityARAnchorManager_t1086564192_il2cpp_TypeInfo_var;
+extern const uint32_t UnityARGeneratePlane_Start_m2009009798_MetadataUsageId;
+extern const MethodInfo* List_1_get_Count_m1714425968_MethodInfo_var;
+extern const uint32_t UnityARGeneratePlane_OnGUI_m3343046494_MetadataUsageId;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppClass* Single_t2076509932_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern const MethodInfo* List_1_get_Count_m1598304542_MethodInfo_var;
+extern const MethodInfo* List_1_GetEnumerator_m2885046859_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m2775711191_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m3661301011_MethodInfo_var;
+extern const MethodInfo* Enumerator_Dispose_m3109677227_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1415053652;
+extern Il2CppCodeGenString* _stringLiteral1537444060;
+extern const uint32_t UnityARHitTestExample_HitTestWithResultType_m996939112_MetadataUsageId;
+extern Il2CppClass* Input_t1785128008_il2cpp_TypeInfo_var;
+extern Il2CppClass* ARPoint_t3436811567_il2cpp_TypeInfo_var;
+extern Il2CppClass* ARHitTestResultTypeU5BU5D_t1303085420_il2cpp_TypeInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305142____U24fieldU2D8E7629AD5AF686202B8CB7C014505C432FFE31E6_0_FieldInfo_var;
+extern const uint32_t UnityARHitTestExample_Update_m1266118659_MetadataUsageId;
+extern Il2CppClass* UnityARSessionRunOptionU5BU5D_t3114965901_il2cpp_TypeInfo_var;
+extern Il2CppClass* UnityARAlignmentU5BU5D_t218994990_il2cpp_TypeInfo_var;
+extern Il2CppClass* UnityARPlaneDetectionU5BU5D_t191549612_il2cpp_TypeInfo_var;
+extern const uint32_t UnityARKitControl__ctor_m1699713484_MetadataUsageId;
+extern Il2CppClass* GUI_t4082743951_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3833953726;
+extern Il2CppCodeGenString* _stringLiteral2858758002;
+extern Il2CppCodeGenString* _stringLiteral2341529191;
+extern Il2CppCodeGenString* _stringLiteral1743625051;
+extern Il2CppCodeGenString* _stringLiteral1174079095;
+extern Il2CppCodeGenString* _stringLiteral2724865136;
+extern Il2CppCodeGenString* _stringLiteral1414246128;
+extern Il2CppCodeGenString* _stringLiteral1301536196;
+extern Il2CppCodeGenString* _stringLiteral3675648761;
+extern Il2CppCodeGenString* _stringLiteral3025722940;
+extern Il2CppCodeGenString* _stringLiteral3575497429;
+extern Il2CppCodeGenString* _stringLiteral4059134932;
+extern Il2CppCodeGenString* _stringLiteral2529991261;
+extern Il2CppCodeGenString* _stringLiteral855845486;
+extern Il2CppCodeGenString* _stringLiteral1635882288;
+extern Il2CppCodeGenString* _stringLiteral3168505747;
+extern const uint32_t UnityARKitControl_OnGUI_m4075060656_MetadataUsageId;
+extern Il2CppClass* Quaternion_t4030073918_il2cpp_TypeInfo_var;
+extern const uint32_t UnityARMatrixOps_QuaternionFromMatrix_m1686577287_MetadataUsageId;
+extern Il2CppClass* internal_ARFrameUpdate_t3296518558_il2cpp_TypeInfo_var;
+extern Il2CppClass* internal_ARAnchorAdded_t1622117597_il2cpp_TypeInfo_var;
+extern Il2CppClass* internal_ARAnchorUpdated_t3705772742_il2cpp_TypeInfo_var;
+extern Il2CppClass* internal_ARAnchorRemoved_t3189755211_il2cpp_TypeInfo_var;
+extern Il2CppClass* ARSessionFailed_t872580813_il2cpp_TypeInfo_var;
+extern const MethodInfo* UnityARSessionNativeInterface__frame_update_m127370_MethodInfo_var;
+extern const MethodInfo* UnityARSessionNativeInterface__anchor_added_m3584567327_MethodInfo_var;
+extern const MethodInfo* UnityARSessionNativeInterface__anchor_updated_m1970308864_MethodInfo_var;
+extern const MethodInfo* UnityARSessionNativeInterface__anchor_removed_m4240378233_MethodInfo_var;
+extern const MethodInfo* UnityARSessionNativeInterface__ar_session_failed_m2515310284_MethodInfo_var;
+extern const uint32_t UnityARSessionNativeInterface__ctor_m2294513111_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_add_ARFrameUpdatedEvent_m2850773202_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_remove_ARFrameUpdatedEvent_m415315455_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_add_ARAnchorAddedEvent_m658032036_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_remove_ARAnchorAddedEvent_m1622386471_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_add_ARAnchorUpdatedEvent_m1485763364_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_remove_ARAnchorUpdatedEvent_m2137207143_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_add_ARAnchorRemovedEvent_m2970646020_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_remove_ARAnchorRemovedEvent_m1176445575_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_add_ARSessionFailedEvent_m1972153860_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_remove_ARSessionFailedEvent_m2378491719_MetadataUsageId;
+struct ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_pinvoke;
+struct ARKitWorldTackingSessionConfiguration_t1821734930;;
+struct ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_pinvoke;;
+struct ARKitSessionConfiguration_t318899795_marshaled_pinvoke;
+struct ARKitSessionConfiguration_t318899795;;
+struct ARKitSessionConfiguration_t318899795_marshaled_pinvoke;;
+struct UnityARHitTestResult_t4129824344_marshaled_pinvoke;
+struct UnityARHitTestResult_t4129824344;;
+struct UnityARHitTestResult_t4129824344_marshaled_pinvoke;;
+extern const uint32_t UnityARSessionNativeInterface_GetARSessionNativeInterface_m3174488657_MetadataUsageId;
+extern Il2CppClass* Matrix4x4_t2933234003_il2cpp_TypeInfo_var;
+extern const uint32_t UnityARSessionNativeInterface_GetCameraPose_m3046824030_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_GetCameraProjection_m3168017698_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_SetCameraClipPlanes_m149558303_MetadataUsageId;
+extern Il2CppClass* UnityARCamera_t4198559457_il2cpp_TypeInfo_var;
+extern const uint32_t UnityARSessionNativeInterface__frame_update_m127370_MetadataUsageId;
+extern Il2CppClass* IntPtr_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* SingleU5BU5D_t577127397_il2cpp_TypeInfo_var;
+extern Il2CppClass* Marshal_t785896760_il2cpp_TypeInfo_var;
+extern Il2CppClass* Vector3U5BU5D_t1172311765_il2cpp_TypeInfo_var;
+extern const uint32_t UnityARSessionNativeInterface_UpdatePointCloudData_m2452168060_MetadataUsageId;
+extern Il2CppClass* ARPlaneAnchor_t1439520888_il2cpp_TypeInfo_var;
+extern const uint32_t UnityARSessionNativeInterface_GetPlaneAnchorFromAnchorData_m3105060455_MetadataUsageId;
+extern Il2CppClass* ARHitTestResult_t3275513025_il2cpp_TypeInfo_var;
+extern const uint32_t UnityARSessionNativeInterface_GetHitTestResultFromResultData_m1356947160_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface__anchor_added_m3584567327_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface__anchor_updated_m1970308864_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface__anchor_removed_m4240378233_MetadataUsageId;
+extern Il2CppCodeGenString* _stringLiteral2733749110;
+extern const uint32_t UnityARSessionNativeInterface__ar_session_failed_m2515310284_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_RunWithConfigAndOptions_m375276821_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_RunWithConfig_m3195925270_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_RunWithConfigAndOptions_m4179857830_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_RunWithConfig_m2478060541_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_Pause_m2220930613_MetadataUsageId;
+extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
+extern Il2CppClass* List_1_t2644634157_il2cpp_TypeInfo_var;
+extern const MethodInfo* List_1__ctor_m3856316316_MethodInfo_var;
+extern const MethodInfo* List_1_Add_m1918634088_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3977806437;
+extern const uint32_t UnityARSessionNativeInterface_HitTest_m388588674_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_GetARVideoTextureHandles_m2905358883_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_GetARAmbientIntensity_m3261179343_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_GetARTrackingQuality_m2957489224_MetadataUsageId;
+extern const uint32_t UnityARSessionNativeInterface_GetARYUVTexCoordScale_m1823875812_MetadataUsageId;
+struct ARPlaneAnchor_t1439520888_marshaled_pinvoke;
+struct ARPlaneAnchor_t1439520888;;
+struct ARPlaneAnchor_t1439520888_marshaled_pinvoke;;
+extern const uint32_t ARAnchorAdded_BeginInvoke_m1705105833_MetadataUsageId;
+extern const uint32_t ARAnchorRemoved_BeginInvoke_m810761227_MetadataUsageId;
+extern const uint32_t ARAnchorUpdated_BeginInvoke_m2718860606_MetadataUsageId;
+extern const uint32_t ARFrameUpdate_BeginInvoke_m4062970305_MetadataUsageId;
+extern Il2CppClass* UnityARAnchorData_t2901866349_il2cpp_TypeInfo_var;
+extern const uint32_t internal_ARAnchorAdded_BeginInvoke_m105627114_MetadataUsageId;
+extern const uint32_t internal_ARAnchorRemoved_BeginInvoke_m3654189460_MetadataUsageId;
+extern const uint32_t internal_ARAnchorUpdated_BeginInvoke_m879269121_MetadataUsageId;
+extern Il2CppClass* internal_UnityARCamera_t2580192745_il2cpp_TypeInfo_var;
+extern const uint32_t internal_ARFrameUpdate_BeginInvoke_m2703452769_MetadataUsageId;
+extern const uint32_t UnityARUtility_InitializePlanePrefab_m2887188869_MetadataUsageId;
+extern Il2CppClass* GameObject_t1756533147_il2cpp_TypeInfo_var;
+extern const MethodInfo* Object_Instantiate_TisGameObject_t1756533147_m3664764861_MethodInfo_var;
+extern const uint32_t UnityARUtility_CreatePlaneInScene_m836370693_MetadataUsageId;
+extern const MethodInfo* GameObject_GetComponentInChildren_TisMeshFilter_t3026937449_m1346841033_MethodInfo_var;
+extern const uint32_t UnityARUtility_UpdatePlaneWithAnchorTransform_m639257622_MetadataUsageId;
+extern const uint32_t UnityARVideo_Start_m474328190_MetadataUsageId;
+extern Il2CppClass* CommandBuffer_t1204166949_il2cpp_TypeInfo_var;
+extern const uint32_t UnityARVideo_InitializeCommandBuffer_m2800566831_MetadataUsageId;
+extern const uint32_t UnityARVideo_OnDestroy_m4088618451_MetadataUsageId;
+extern Il2CppCodeGenString* _stringLiteral1152424733;
+extern Il2CppCodeGenString* _stringLiteral2391281062;
+extern Il2CppCodeGenString* _stringLiteral2946740916;
+extern Il2CppCodeGenString* _stringLiteral1387439463;
+extern Il2CppCodeGenString* _stringLiteral2454363760;
+extern const uint32_t UnityARVideo_OnPreRender_m3078128848_MetadataUsageId;
+extern Il2CppClass* List_1_t1125654279_il2cpp_TypeInfo_var;
+extern const MethodInfo* UnityPointCloudExample_ARFrameUpdated_m3631038593_MethodInfo_var;
+extern const MethodInfo* List_1__ctor_m704351054_MethodInfo_var;
+extern const MethodInfo* List_1_Add_m3441471442_MethodInfo_var;
+extern const uint32_t UnityPointCloudExample_Start_m3369543775_MetadataUsageId;
+extern const MethodInfo* List_1_get_Item_m939767277_MethodInfo_var;
+extern const uint32_t UnityPointCloudExample_Update_m1416789468_MetadataUsageId;
+extern const Il2CppType* IVRApplications_t2340401530_0_0_0_var;
+extern Il2CppClass* Type_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* IVRApplications_t2340401530_il2cpp_TypeInfo_var;
+extern const uint32_t CVRApplications__ctor_m1774603165_MetadataUsageId;
+extern const uint32_t CVRApplications_GetApplicationsErrorNameFromEnum_m3719283618_MetadataUsageId;
+extern const uint32_t CVRApplications_GetApplicationsTransitionStateNameFromEnum_m1983201314_MetadataUsageId;
+extern const Il2CppType* IVRChaperone_t1398180532_0_0_0_var;
+extern Il2CppClass* IVRChaperone_t1398180532_il2cpp_TypeInfo_var;
+extern const uint32_t CVRChaperone__ctor_m3741866013_MetadataUsageId;
+extern const Il2CppType* IVRChaperoneSetup_t32382285_0_0_0_var;
+extern Il2CppClass* IVRChaperoneSetup_t32382285_il2cpp_TypeInfo_var;
+extern const uint32_t CVRChaperoneSetup__ctor_m2077442986_MetadataUsageId;
+extern Il2CppClass* HmdQuad_tU5BU5D_t16941492_il2cpp_TypeInfo_var;
+extern const uint32_t CVRChaperoneSetup_GetWorkingCollisionBoundsInfo_m2764007537_MetadataUsageId;
+extern const uint32_t CVRChaperoneSetup_GetLiveCollisionBoundsInfo_m1609126366_MetadataUsageId;
+extern Il2CppClass* ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var;
+extern const uint32_t CVRChaperoneSetup_GetLiveCollisionBoundsTagsInfo_m3983711033_MetadataUsageId;
+extern const uint32_t CVRChaperoneSetup_GetLivePhysicalBoundsInfo_m3889880429_MetadataUsageId;
+extern const Il2CppType* IVRCompositor_t4206274356_0_0_0_var;
+extern Il2CppClass* IVRCompositor_t4206274356_il2cpp_TypeInfo_var;
+extern const uint32_t CVRCompositor__ctor_m1752469357_MetadataUsageId;
+extern const Il2CppType* IVRExtendedDisplay_t2045258050_0_0_0_var;
+extern Il2CppClass* IVRExtendedDisplay_t2045258050_il2cpp_TypeInfo_var;
+extern const uint32_t CVRExtendedDisplay__ctor_m1913531285_MetadataUsageId;
+extern const Il2CppType* IVRNotifications_t3935579733_0_0_0_var;
+extern Il2CppClass* IVRNotifications_t3935579733_il2cpp_TypeInfo_var;
+extern const uint32_t CVRNotifications__ctor_m4233505504_MetadataUsageId;
+extern const Il2CppType* IVROverlay_t3446109889_0_0_0_var;
+extern Il2CppClass* IVROverlay_t3446109889_il2cpp_TypeInfo_var;
+extern const uint32_t CVROverlay__ctor_m3113828660_MetadataUsageId;
+extern const uint32_t CVROverlay_GetOverlayErrorNameFromEnum_m3770237022_MetadataUsageId;
+extern const Il2CppType* IVRRenderModels_t3420796425_0_0_0_var;
+extern Il2CppClass* IVRRenderModels_t3420796425_il2cpp_TypeInfo_var;
+extern const uint32_t CVRRenderModels__ctor_m1096384136_MetadataUsageId;
+extern const uint32_t CVRRenderModels_GetRenderModelErrorNameFromEnum_m546332738_MetadataUsageId;
+extern const Il2CppType* IVRResources_t1092978558_0_0_0_var;
+extern Il2CppClass* IVRResources_t1092978558_il2cpp_TypeInfo_var;
+extern const uint32_t CVRResources__ctor_m4121947409_MetadataUsageId;
+extern const Il2CppType* IVRScreenshots_t1006836234_0_0_0_var;
+extern Il2CppClass* IVRScreenshots_t1006836234_il2cpp_TypeInfo_var;
+extern const uint32_t CVRScreenshots__ctor_m3359672019_MetadataUsageId;
+extern const Il2CppType* IVRSettings_t254931744_0_0_0_var;
+extern Il2CppClass* IVRSettings_t254931744_il2cpp_TypeInfo_var;
+extern const uint32_t CVRSettings__ctor_m1895556761_MetadataUsageId;
+extern const uint32_t CVRSettings_GetSettingsErrorNameFromEnum_m1438150551_MetadataUsageId;
+extern const Il2CppType* IVRSystem_t3365196000_0_0_0_var;
+extern Il2CppClass* IVRSystem_t3365196000_il2cpp_TypeInfo_var;
+extern const uint32_t CVRSystem__ctor_m4120486769_MetadataUsageId;
+extern const uint32_t CVRSystem_GetPropErrorNameFromEnum_m610771491_MetadataUsageId;
+extern const uint32_t CVRSystem_GetEventTypeNameFromEnum_m2885419343_MetadataUsageId;
+extern const uint32_t CVRSystem_GetButtonIdNameFromEnum_m3649813943_MetadataUsageId;
+extern const uint32_t CVRSystem_GetControllerAxisTypeNameFromEnum_m956801871_MetadataUsageId;
+extern const Il2CppType* IVRTrackedCamera_t2005230018_0_0_0_var;
+extern Il2CppClass* IVRTrackedCamera_t2005230018_il2cpp_TypeInfo_var;
+extern const uint32_t CVRTrackedCamera__ctor_m2799805971_MetadataUsageId;
+extern const uint32_t CVRTrackedCamera_GetCameraErrorNameFromEnum_m1339151371_MetadataUsageId;
+
+// UnityEngine.Vector3[]
+struct Vector3U5BU5D_t1172311765  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Vector3_t2243707580  m_Items[1];
+
+public:
+	inline Vector3_t2243707580  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Vector3_t2243707580 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Vector3_t2243707580  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Vector3_t2243707580  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Vector3_t2243707580 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Vector3_t2243707580  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// UnityEngine.ParticleSystem/Particle[]
+struct ParticleU5BU5D_t574222242  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Particle_t250075699  m_Items[1];
+
+public:
+	inline Particle_t250075699  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Particle_t250075699 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Particle_t250075699  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Particle_t250075699  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Particle_t250075699 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Particle_t250075699  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// UnityEngine.XR.iOS.ARHitTestResultType[]
+struct ARHitTestResultTypeU5BU5D_t1303085420  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) int64_t m_Items[1];
+
+public:
+	inline int64_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline int64_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, int64_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline int64_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline int64_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, int64_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+// UnityEngine.XR.iOS.UnityARSessionRunOption[]
+struct UnityARSessionRunOptionU5BU5D_t3114965901  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) int32_t m_Items[1];
+
+public:
+	inline int32_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, int32_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline int32_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, int32_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+// UnityEngine.XR.iOS.UnityARAlignment[]
+struct UnityARAlignmentU5BU5D_t218994990  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) int32_t m_Items[1];
+
+public:
+	inline int32_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, int32_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline int32_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, int32_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+// UnityEngine.XR.iOS.UnityARPlaneDetection[]
+struct UnityARPlaneDetectionU5BU5D_t191549612  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) int32_t m_Items[1];
+
+public:
+	inline int32_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, int32_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline int32_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, int32_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Single[]
+struct SingleU5BU5D_t577127397  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) float m_Items[1];
+
+public:
+	inline float GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline float* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, float value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline float GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline float* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, float value)
+	{
+		m_Items[index] = value;
+	}
+};
+// Valve.VR.AppOverrideKeys_t[]
+struct AppOverrideKeys_tU5BU5D_t3538561671  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) AppOverrideKeys_t_t1098481522  m_Items[1];
+
+public:
+	inline AppOverrideKeys_t_t1098481522  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline AppOverrideKeys_t_t1098481522 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, AppOverrideKeys_t_t1098481522  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline AppOverrideKeys_t_t1098481522  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline AppOverrideKeys_t_t1098481522 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, AppOverrideKeys_t_t1098481522  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// Valve.VR.HmdQuad_t[]
+struct HmdQuad_tU5BU5D_t16941492  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) HmdQuad_t_t2172573705  m_Items[1];
+
+public:
+	inline HmdQuad_t_t2172573705  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline HmdQuad_t_t2172573705 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, HmdQuad_t_t2172573705  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline HmdQuad_t_t2172573705  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline HmdQuad_t_t2172573705 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, HmdQuad_t_t2172573705  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Byte[]
+struct ByteU5BU5D_t3397334013  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) uint8_t m_Items[1];
+
+public:
+	inline uint8_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, uint8_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline uint8_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, uint8_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+// Valve.VR.TrackedDevicePose_t[]
+struct TrackedDevicePose_tU5BU5D_t2897272049  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) TrackedDevicePose_t_t1668551120  m_Items[1];
+
+public:
+	inline TrackedDevicePose_t_t1668551120  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline TrackedDevicePose_t_t1668551120 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, TrackedDevicePose_t_t1668551120  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline TrackedDevicePose_t_t1668551120  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline TrackedDevicePose_t_t1668551120 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, TrackedDevicePose_t_t1668551120  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// Valve.VR.Texture_t[]
+struct Texture_tU5BU5D_t3142294487  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Texture_t_t3277130850  m_Items[1];
+
+public:
+	inline Texture_t_t3277130850  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Texture_t_t3277130850 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Texture_t_t3277130850  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Texture_t_t3277130850  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Texture_t_t3277130850 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Texture_t_t3277130850  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// Valve.VR.EVRScreenshotType[]
+struct EVRScreenshotTypeU5BU5D_t2594501106  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) int32_t m_Items[1];
+
+public:
+	inline int32_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, int32_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline int32_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, int32_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.UInt32[]
+struct UInt32U5BU5D_t59386216  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) uint32_t m_Items[1];
+
+public:
+	inline uint32_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline uint32_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, uint32_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline uint32_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline uint32_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, uint32_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+
+extern "C" void ARKitWorldTackingSessionConfiguration_t1821734930_marshal_pinvoke(const ARKitWorldTackingSessionConfiguration_t1821734930& unmarshaled, ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_pinvoke& marshaled);
+extern "C" void ARKitWorldTackingSessionConfiguration_t1821734930_marshal_pinvoke_back(const ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_pinvoke& marshaled, ARKitWorldTackingSessionConfiguration_t1821734930& unmarshaled);
+extern "C" void ARKitWorldTackingSessionConfiguration_t1821734930_marshal_pinvoke_cleanup(ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_pinvoke& marshaled);
+extern "C" void ARKitSessionConfiguration_t318899795_marshal_pinvoke(const ARKitSessionConfiguration_t318899795& unmarshaled, ARKitSessionConfiguration_t318899795_marshaled_pinvoke& marshaled);
+extern "C" void ARKitSessionConfiguration_t318899795_marshal_pinvoke_back(const ARKitSessionConfiguration_t318899795_marshaled_pinvoke& marshaled, ARKitSessionConfiguration_t318899795& unmarshaled);
+extern "C" void ARKitSessionConfiguration_t318899795_marshal_pinvoke_cleanup(ARKitSessionConfiguration_t318899795_marshaled_pinvoke& marshaled);
+extern "C" void UnityARHitTestResult_t4129824344_marshal_pinvoke(const UnityARHitTestResult_t4129824344& unmarshaled, UnityARHitTestResult_t4129824344_marshaled_pinvoke& marshaled);
+extern "C" void UnityARHitTestResult_t4129824344_marshal_pinvoke_back(const UnityARHitTestResult_t4129824344_marshaled_pinvoke& marshaled, UnityARHitTestResult_t4129824344& unmarshaled);
+extern "C" void UnityARHitTestResult_t4129824344_marshal_pinvoke_cleanup(UnityARHitTestResult_t4129824344_marshaled_pinvoke& marshaled);
+extern "C" void ARPlaneAnchor_t1439520888_marshal_pinvoke(const ARPlaneAnchor_t1439520888& unmarshaled, ARPlaneAnchor_t1439520888_marshaled_pinvoke& marshaled);
+extern "C" void ARPlaneAnchor_t1439520888_marshal_pinvoke_back(const ARPlaneAnchor_t1439520888_marshaled_pinvoke& marshaled, ARPlaneAnchor_t1439520888& unmarshaled);
+extern "C" void ARPlaneAnchor_t1439520888_marshal_pinvoke_cleanup(ARPlaneAnchor_t1439520888_marshaled_pinvoke& marshaled);
+
+// !!0 UnityEngine.GameObject::GetComponent<System.Object>()
+extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2812611596_gshared (GameObject_t1756533147 * __this, const MethodInfo* method);
+// !!0 UnityEngine.GameObject::AddComponent<System.Object>()
+extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m3813873105_gshared (GameObject_t1756533147 * __this, const MethodInfo* method);
+// !!0 UnityEngine.Object::Instantiate<System.Object>(!!0)
+extern "C"  Il2CppObject * Object_Instantiate_TisIl2CppObject_m447919519_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, const MethodInfo* method);
+// !!0 UnityEngine.Component::GetComponent<System.Object>()
+extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m4109961936_gshared (Component_t3819376471 * __this, const MethodInfo* method);
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::.ctor()
+extern "C"  void Dictionary_2__ctor_m584589095_gshared (Dictionary_2_t2281509423 * __this, const MethodInfo* method);
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Add(!0,!1)
+extern "C"  void Dictionary_2_Add_m4209421183_gshared (Dictionary_2_t2281509423 * __this, Il2CppObject * p0, Il2CppObject * p1, const MethodInfo* method);
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::ContainsKey(!0)
+extern "C"  bool Dictionary_2_ContainsKey_m3321918434_gshared (Dictionary_2_t2281509423 * __this, Il2CppObject * p0, const MethodInfo* method);
+// !1 System.Collections.Generic.Dictionary`2<System.Object,System.Object>::get_Item(!0)
+extern "C"  Il2CppObject * Dictionary_2_get_Item_m4062719145_gshared (Dictionary_2_t2281509423 * __this, Il2CppObject * p0, const MethodInfo* method);
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Remove(!0)
+extern "C"  bool Dictionary_2_Remove_m112127646_gshared (Dictionary_2_t2281509423 * __this, Il2CppObject * p0, const MethodInfo* method);
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::set_Item(!0,!1)
+extern "C"  void Dictionary_2_set_Item_m1004257024_gshared (Dictionary_2_t2281509423 * __this, Il2CppObject * p0, Il2CppObject * p1, const MethodInfo* method);
+// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<System.Object>::GetEnumerator()
+extern "C"  Enumerator_t1593300101  List_1_GetEnumerator_m2837081829_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
+// !0 System.Collections.Generic.List`1/Enumerator<System.Object>::get_Current()
+extern "C"  Il2CppObject * Enumerator_get_Current_m2577424081_gshared (Enumerator_t1593300101 * __this, const MethodInfo* method);
+// System.Boolean System.Collections.Generic.List`1/Enumerator<System.Object>::MoveNext()
+extern "C"  bool Enumerator_MoveNext_m44995089_gshared (Enumerator_t1593300101 * __this, const MethodInfo* method);
+// System.Void System.Collections.Generic.List`1/Enumerator<System.Object>::Dispose()
+extern "C"  void Enumerator_Dispose_m3736175406_gshared (Enumerator_t1593300101 * __this, const MethodInfo* method);
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Clear()
+extern "C"  void Dictionary_2_Clear_m2325793156_gshared (Dictionary_2_t2281509423 * __this, const MethodInfo* method);
+// System.Collections.Generic.Dictionary`2/ValueCollection<!0,!1> System.Collections.Generic.Dictionary`2<System.Object,System.Object>::get_Values()
+extern "C"  ValueCollection_t984569266 * Dictionary_2_get_Values_m2233445381_gshared (Dictionary_2_t2281509423 * __this, const MethodInfo* method);
+// System.Collections.Generic.List`1<!!0> System.Linq.Enumerable::ToList<System.Object>(System.Collections.Generic.IEnumerable`1<!!0>)
+extern "C"  List_1_t2058570427 * Enumerable_ToList_TisIl2CppObject_m3492391627_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject* p0, const MethodInfo* method);
+// System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
+extern "C"  int32_t List_1_get_Count_m2375293942_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
+// System.Int32 System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARHitTestResult>::get_Count()
+extern "C"  int32_t List_1_get_Count_m1598304542_gshared (List_1_t2644634157 * __this, const MethodInfo* method);
+// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARHitTestResult>::GetEnumerator()
+extern "C"  Enumerator_t2179363831  List_1_GetEnumerator_m2885046859_gshared (List_1_t2644634157 * __this, const MethodInfo* method);
+// !0 System.Collections.Generic.List`1/Enumerator<UnityEngine.XR.iOS.ARHitTestResult>::get_Current()
+extern "C"  ARHitTestResult_t3275513025  Enumerator_get_Current_m2775711191_gshared (Enumerator_t2179363831 * __this, const MethodInfo* method);
+// System.Boolean System.Collections.Generic.List`1/Enumerator<UnityEngine.XR.iOS.ARHitTestResult>::MoveNext()
+extern "C"  bool Enumerator_MoveNext_m3661301011_gshared (Enumerator_t2179363831 * __this, const MethodInfo* method);
+// System.Void System.Collections.Generic.List`1/Enumerator<UnityEngine.XR.iOS.ARHitTestResult>::Dispose()
+extern "C"  void Enumerator_Dispose_m3109677227_gshared (Enumerator_t2179363831 * __this, const MethodInfo* method);
+// System.Void System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARHitTestResult>::.ctor()
+extern "C"  void List_1__ctor_m3856316316_gshared (List_1_t2644634157 * __this, const MethodInfo* method);
+// System.Void System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARHitTestResult>::Add(!0)
+extern "C"  void List_1_Add_m1918634088_gshared (List_1_t2644634157 * __this, ARHitTestResult_t3275513025  p0, const MethodInfo* method);
+// !!0 UnityEngine.GameObject::GetComponentInChildren<System.Object>()
+extern "C"  Il2CppObject * GameObject_GetComponentInChildren_TisIl2CppObject_m327292296_gshared (GameObject_t1756533147 * __this, const MethodInfo* method);
+// System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
+extern "C"  void List_1__ctor_m310736118_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
+// System.Void System.Collections.Generic.List`1<System.Object>::Add(!0)
+extern "C"  void List_1_Add_m4157722533_gshared (List_1_t2058570427 * __this, Il2CppObject * p0, const MethodInfo* method);
+// !0 System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
+extern "C"  Il2CppObject * List_1_get_Item_m2062981835_gshared (List_1_t2058570427 * __this, int32_t p0, const MethodInfo* method);
+
+// System.Void UnityEngine.MonoBehaviour::.ctor()
+extern "C"  void MonoBehaviour__ctor_m2464341955 (MonoBehaviour_t1158329972 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Application::set_targetFrameRate(System.Int32)
+extern "C"  void Application_set_targetFrameRate_m2941880625 (Il2CppObject * __this /* static, unused */, int32_t p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.XR.iOS.UnityARSessionNativeInterface UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetARSessionNativeInterface()
+extern "C"  UnityARSessionNativeInterface_t1130867170 * UnityARSessionNativeInterface_GetARSessionNativeInterface_m3174488657 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::RunWithConfig(UnityEngine.XR.iOS.ARKitSessionConfiguration)
+extern "C"  void UnityARSessionNativeInterface_RunWithConfig_m2478060541 (UnityARSessionNativeInterface_t1130867170 * __this, ARKitSessionConfiguration_t318899795  ___config0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
+extern "C"  bool Object_op_Equality_m3764089466 (Il2CppObject * __this /* static, unused */, Object_t1021602117 * p0, Object_t1021602117 * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Camera UnityEngine.Camera::get_main()
+extern "C"  Camera_t189460977 * Camera_get_main_m475173995 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
+extern "C"  bool Object_op_Inequality_m2402264703 (Il2CppObject * __this /* static, unused */, Object_t1021602117 * p0, Object_t1021602117 * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GameObject UnityEngine.Component::get_gameObject()
+extern "C"  GameObject_t1756533147 * Component_get_gameObject_m3105766835 (Component_t3819376471 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.XR.iOS.UnityARVideo>()
+#define GameObject_GetComponent_TisUnityARVideo_t2351297253_m2230129522(__this, method) ((  UnityARVideo_t2351297253 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2812611596_gshared)(__this, method)
+// System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
+extern "C"  void Object_Destroy_m4145850038 (Il2CppObject * __this /* static, unused */, Object_t1021602117 * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void AR3DOFCameraManager::SetupNewCamera(UnityEngine.Camera)
+extern "C"  void AR3DOFCameraManager_SetupNewCamera_m439842942 (AR3DOFCameraManager_t2152865733 * __this, Camera_t189460977 * ___newCamera0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.XR.iOS.UnityARVideo>()
+#define GameObject_AddComponent_TisUnityARVideo_t2351297253_m1329128087(__this, method) ((  UnityARVideo_t2351297253 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m3813873105_gshared)(__this, method)
+// UnityEngine.Matrix4x4 UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetCameraPose()
+extern "C"  Matrix4x4_t2933234003  UnityARSessionNativeInterface_GetCameraPose_m3046824030 (UnityARSessionNativeInterface_t1130867170 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Transform UnityEngine.Component::get_transform()
+extern "C"  Transform_t3275118058 * Component_get_transform_m2697483695 (Component_t3819376471 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.XR.iOS.UnityARMatrixOps::GetPosition(UnityEngine.Matrix4x4)
+extern "C"  Vector3_t2243707580  UnityARMatrixOps_GetPosition_m1153858439 (Il2CppObject * __this /* static, unused */, Matrix4x4_t2933234003  ___matrix0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::set_localPosition(UnityEngine.Vector3)
+extern "C"  void Transform_set_localPosition_m1026930133 (Transform_t3275118058 * __this, Vector3_t2243707580  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Quaternion UnityEngine.XR.iOS.UnityARMatrixOps::GetRotation(UnityEngine.Matrix4x4)
+extern "C"  Quaternion_t4030073918  UnityARMatrixOps_GetRotation_m1002641986 (Il2CppObject * __this /* static, unused */, Matrix4x4_t2933234003  ___matrix0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::set_localRotation(UnityEngine.Quaternion)
+extern "C"  void Transform_set_localRotation_m2055111962 (Transform_t3275118058 * __this, Quaternion_t4030073918  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Matrix4x4 UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetCameraProjection()
+extern "C"  Matrix4x4_t2933234003  UnityARSessionNativeInterface_GetCameraProjection_m3168017698 (UnityARSessionNativeInterface_t1130867170 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Camera::set_projectionMatrix(UnityEngine.Matrix4x4)
+extern "C"  void Camera_set_projectionMatrix_m2059836755 (Camera_t189460977 * __this, Matrix4x4_t2933234003  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Object::DontDestroyOnLoad(UnityEngine.Object)
+extern "C"  void Object_DontDestroyOnLoad_m2330762974 (Il2CppObject * __this /* static, unused */, Object_t1021602117 * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARFrameUpdate::.ctor(System.Object,System.IntPtr)
+extern "C"  void ARFrameUpdate__ctor_m1399217559 (ARFrameUpdate_t496507918 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::add_ARFrameUpdatedEvent(UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARFrameUpdate)
+extern "C"  void UnityARSessionNativeInterface_add_ARFrameUpdatedEvent_m2850773202 (Il2CppObject * __this /* static, unused */, ARFrameUpdate_t496507918 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.Object::Instantiate<UnityEngine.ParticleSystem>(!!0)
+#define Object_Instantiate_TisParticleSystem_t3394631041_m4293040502(__this /* static, unused */, p0, method) ((  ParticleSystem_t3394631041 * (*) (Il2CppObject * /* static, unused */, ParticleSystem_t3394631041 *, const MethodInfo*))Object_Instantiate_TisIl2CppObject_m447919519_gshared)(__this /* static, unused */, p0, method)
+// System.Int32 UnityEngine.Mathf::Min(System.Int32,System.Int32)
+extern "C"  int32_t Mathf_Min_m2906823867 (Il2CppObject * __this /* static, unused */, int32_t p0, int32_t p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.ParticleSystem/Particle::set_position(UnityEngine.Vector3)
+extern "C"  void Particle_set_position_m3680513126 (Particle_t250075699 * __this, Vector3_t2243707580  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Color::.ctor(System.Single,System.Single,System.Single)
+extern "C"  void Color__ctor_m3811852957 (Color_t2020392075 * __this, float p0, float p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color32 UnityEngine.Color32::op_Implicit(UnityEngine.Color)
+extern "C"  Color32_t874517518  Color32_op_Implicit_m624191464 (Il2CppObject * __this /* static, unused */, Color_t2020392075  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.ParticleSystem/Particle::set_startColor(UnityEngine.Color32)
+extern "C"  void Particle_set_startColor_m3936512348 (Particle_t250075699 * __this, Color32_t874517518  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.ParticleSystem/Particle::set_startSize(System.Single)
+extern "C"  void Particle_set_startSize_m2457836830 (Particle_t250075699 * __this, float p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.ParticleSystem::SetParticles(UnityEngine.ParticleSystem/Particle[],System.Int32)
+extern "C"  void ParticleSystem_SetParticles_m3035584975 (ParticleSystem_t3394631041 * __this, ParticleU5BU5D_t574222242* p0, int32_t p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::RunWithConfig(UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration)
+extern "C"  void UnityARSessionNativeInterface_RunWithConfig_m3195925270 (UnityARSessionNativeInterface_t1130867170 * __this, ARKitWorldTackingSessionConfiguration_t1821734930  ___config0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityARCameraManager::SetupNewCamera(UnityEngine.Camera)
+extern "C"  void UnityARCameraManager_SetupNewCamera_m2358778511 (UnityARCameraManager_t2138856896 * __this, Camera_t189460977 * ___newCamera0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.Component::GetComponent<UnityEngine.Camera>()
+#define Component_GetComponent_TisCamera_t189460977_m3276577584(__this, method) ((  Camera_t189460977 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
+// System.Void UnityARCameraNearFar::UpdateCameraClipPlanes()
+extern "C"  void UnityARCameraNearFar_UpdateCameraClipPlanes_m887086422 (UnityARCameraNearFar_t519802600 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Camera::get_nearClipPlane()
+extern "C"  float Camera_get_nearClipPlane_m3536967407 (Camera_t189460977 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Camera::get_farClipPlane()
+extern "C"  float Camera_get_farClipPlane_m3137713566 (Camera_t189460977 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::SetCameraClipPlanes(System.Single,System.Single)
+extern "C"  void UnityARSessionNativeInterface_SetCameraClipPlanes_m149558303 (UnityARSessionNativeInterface_t1130867170 * __this, float ___nearZ0, float ___farZ1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.ARKitSessionConfiguration::.ctor(UnityEngine.XR.iOS.UnityARAlignment,System.Boolean,System.Boolean)
+extern "C"  void ARKitSessionConfiguration__ctor_m3221520625 (ARKitSessionConfiguration_t318899795 * __this, int32_t ___alignment0, bool ___getPointCloudData1, bool ___enableLightEstimation2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.XR.iOS.ARKitSessionConfiguration::IsARKitSessionConfigurationSupported()
+extern "C"  bool ARKitSessionConfiguration_IsARKitSessionConfigurationSupported_m3959947945 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.XR.iOS.ARKitSessionConfiguration::get_IsSupported()
+extern "C"  bool ARKitSessionConfiguration_get_IsSupported_m919877731 (ARKitSessionConfiguration_t318899795 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.ARKitSessionConfiguration::set_IsSupported(System.Boolean)
+extern "C"  void ARKitSessionConfiguration_set_IsSupported_m138323976 (ARKitSessionConfiguration_t318899795 * __this, bool ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration::.ctor(UnityEngine.XR.iOS.UnityARAlignment,UnityEngine.XR.iOS.UnityARPlaneDetection,System.Boolean,System.Boolean)
+extern "C"  void ARKitWorldTackingSessionConfiguration__ctor_m4281543687 (ARKitWorldTackingSessionConfiguration_t1821734930 * __this, int32_t ___alignment0, int32_t ___planeDetection1, bool ___getPointCloudData2, bool ___enableLightEstimation3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration::IsARKitWorldTrackingSessionConfigurationSupported()
+extern "C"  bool ARKitWorldTackingSessionConfiguration_IsARKitWorldTrackingSessionConfigurationSupported_m34846127 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration::get_IsSupported()
+extern "C"  bool ARKitWorldTackingSessionConfiguration_get_IsSupported_m3789991538 (ARKitWorldTackingSessionConfiguration_t1821734930 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration::set_IsSupported(System.Boolean)
+extern "C"  void ARKitWorldTackingSessionConfiguration_set_IsSupported_m46319519 (ARKitWorldTackingSessionConfiguration_t1821734930 * __this, bool ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Object::.ctor()
+extern "C"  void Object__ctor_m2551263788 (Il2CppObject * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,UnityEngine.XR.iOS.ARPlaneAnchorGameObject>::.ctor()
+#define Dictionary_2__ctor_m1722416527(__this, method) ((  void (*) (Dictionary_2_t4220005149 *, const MethodInfo*))Dictionary_2__ctor_m584589095_gshared)(__this, method)
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorAdded::.ctor(System.Object,System.IntPtr)
+extern "C"  void ARAnchorAdded__ctor_m3844186700 (ARAnchorAdded_t2646854145 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::add_ARAnchorAddedEvent(UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorAdded)
+extern "C"  void UnityARSessionNativeInterface_add_ARAnchorAddedEvent_m658032036 (Il2CppObject * __this /* static, unused */, ARAnchorAdded_t2646854145 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorUpdated::.ctor(System.Object,System.IntPtr)
+extern "C"  void ARAnchorUpdated__ctor_m1158457407 (ARAnchorUpdated_t3886071158 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::add_ARAnchorUpdatedEvent(UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorUpdated)
+extern "C"  void UnityARSessionNativeInterface_add_ARAnchorUpdatedEvent_m1485763364 (Il2CppObject * __this /* static, unused */, ARAnchorUpdated_t3886071158 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorRemoved::.ctor(System.Object,System.IntPtr)
+extern "C"  void ARAnchorRemoved__ctor_m535635486 (ARAnchorRemoved_t142665927 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::add_ARAnchorRemovedEvent(UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorRemoved)
+extern "C"  void UnityARSessionNativeInterface_add_ARAnchorRemovedEvent_m2970646020 (Il2CppObject * __this /* static, unused */, ARAnchorRemoved_t142665927 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GameObject UnityEngine.XR.iOS.UnityARUtility::CreatePlaneInScene(UnityEngine.XR.iOS.ARPlaneAnchor)
+extern "C"  GameObject_t1756533147 * UnityARUtility_CreatePlaneInScene_m836370693 (Il2CppObject * __this /* static, unused */, ARPlaneAnchor_t1439520888  ___arPlaneAnchor0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.GameObject::AddComponent<DontDestroyOnLoad>()
+#define GameObject_AddComponent_TisDontDestroyOnLoad_t3235789354_m4215585572(__this, method) ((  DontDestroyOnLoad_t3235789354 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m3813873105_gshared)(__this, method)
+// System.Void UnityEngine.XR.iOS.ARPlaneAnchorGameObject::.ctor()
+extern "C"  void ARPlaneAnchorGameObject__ctor_m3751462836 (ARPlaneAnchorGameObject_t2305225887 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,UnityEngine.XR.iOS.ARPlaneAnchorGameObject>::Add(!0,!1)
+#define Dictionary_2_Add_m2748008583(__this, p0, p1, method) ((  void (*) (Dictionary_2_t4220005149 *, String_t*, ARPlaneAnchorGameObject_t2305225887 *, const MethodInfo*))Dictionary_2_Add_m4209421183_gshared)(__this, p0, p1, method)
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,UnityEngine.XR.iOS.ARPlaneAnchorGameObject>::ContainsKey(!0)
+#define Dictionary_2_ContainsKey_m9048208(__this, p0, method) ((  bool (*) (Dictionary_2_t4220005149 *, String_t*, const MethodInfo*))Dictionary_2_ContainsKey_m3321918434_gshared)(__this, p0, method)
+// !1 System.Collections.Generic.Dictionary`2<System.String,UnityEngine.XR.iOS.ARPlaneAnchorGameObject>::get_Item(!0)
+#define Dictionary_2_get_Item_m4111408485(__this, p0, method) ((  ARPlaneAnchorGameObject_t2305225887 * (*) (Dictionary_2_t4220005149 *, String_t*, const MethodInfo*))Dictionary_2_get_Item_m4062719145_gshared)(__this, p0, method)
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,UnityEngine.XR.iOS.ARPlaneAnchorGameObject>::Remove(!0)
+#define Dictionary_2_Remove_m2895225056(__this, p0, method) ((  bool (*) (Dictionary_2_t4220005149 *, String_t*, const MethodInfo*))Dictionary_2_Remove_m112127646_gshared)(__this, p0, method)
+// UnityEngine.GameObject UnityEngine.XR.iOS.UnityARUtility::UpdatePlaneWithAnchorTransform(UnityEngine.GameObject,UnityEngine.XR.iOS.ARPlaneAnchor)
+extern "C"  GameObject_t1756533147 * UnityARUtility_UpdatePlaneWithAnchorTransform_m639257622 (Il2CppObject * __this /* static, unused */, GameObject_t1756533147 * ___plane0, ARPlaneAnchor_t1439520888  ___arPlaneAnchor1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,UnityEngine.XR.iOS.ARPlaneAnchorGameObject>::set_Item(!0,!1)
+#define Dictionary_2_set_Item_m3140527944(__this, p0, p1, method) ((  void (*) (Dictionary_2_t4220005149 *, String_t*, ARPlaneAnchorGameObject_t2305225887 *, const MethodInfo*))Dictionary_2_set_Item_m1004257024_gshared)(__this, p0, p1, method)
+// System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARPlaneAnchorGameObject> UnityEngine.XR.iOS.UnityARAnchorManager::GetCurrentPlaneAnchors()
+extern "C"  List_1_t1674347019 * UnityARAnchorManager_GetCurrentPlaneAnchors_m642073964 (UnityARAnchorManager_t1086564192 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARPlaneAnchorGameObject>::GetEnumerator()
+#define List_1_GetEnumerator_m4260200565(__this, method) ((  Enumerator_t1209076693  (*) (List_1_t1674347019 *, const MethodInfo*))List_1_GetEnumerator_m2837081829_gshared)(__this, method)
+// !0 System.Collections.Generic.List`1/Enumerator<UnityEngine.XR.iOS.ARPlaneAnchorGameObject>::get_Current()
+#define Enumerator_get_Current_m1081001953(__this, method) ((  ARPlaneAnchorGameObject_t2305225887 * (*) (Enumerator_t1209076693 *, const MethodInfo*))Enumerator_get_Current_m2577424081_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.List`1/Enumerator<UnityEngine.XR.iOS.ARPlaneAnchorGameObject>::MoveNext()
+#define Enumerator_MoveNext_m3579574253(__this, method) ((  bool (*) (Enumerator_t1209076693 *, const MethodInfo*))Enumerator_MoveNext_m44995089_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1/Enumerator<UnityEngine.XR.iOS.ARPlaneAnchorGameObject>::Dispose()
+#define Enumerator_Dispose_m113660709(__this, method) ((  void (*) (Enumerator_t1209076693 *, const MethodInfo*))Enumerator_Dispose_m3736175406_gshared)(__this, method)
+// System.Void System.Collections.Generic.Dictionary`2<System.String,UnityEngine.XR.iOS.ARPlaneAnchorGameObject>::Clear()
+#define Dictionary_2_Clear_m797095524(__this, method) ((  void (*) (Dictionary_2_t4220005149 *, const MethodInfo*))Dictionary_2_Clear_m2325793156_gshared)(__this, method)
+// System.Collections.Generic.Dictionary`2/ValueCollection<!0,!1> System.Collections.Generic.Dictionary`2<System.String,UnityEngine.XR.iOS.ARPlaneAnchorGameObject>::get_Values()
+#define Dictionary_2_get_Values_m586969881(__this, method) ((  ValueCollection_t2923064992 * (*) (Dictionary_2_t4220005149 *, const MethodInfo*))Dictionary_2_get_Values_m2233445381_gshared)(__this, method)
+// System.Collections.Generic.List`1<!!0> System.Linq.Enumerable::ToList<UnityEngine.XR.iOS.ARPlaneAnchorGameObject>(System.Collections.Generic.IEnumerable`1<!!0>)
+#define Enumerable_ToList_TisARPlaneAnchorGameObject_t2305225887_m3769884394(__this /* static, unused */, p0, method) ((  List_1_t1674347019 * (*) (Il2CppObject * /* static, unused */, Il2CppObject*, const MethodInfo*))Enumerable_ToList_TisIl2CppObject_m3492391627_gshared)(__this /* static, unused */, p0, method)
+// System.Void UnityEngine.XR.iOS.UnityARAnchorManager::.ctor()
+extern "C"  void UnityARAnchorManager__ctor_m1861900703 (UnityARAnchorManager_t1086564192 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARUtility::InitializePlanePrefab(UnityEngine.GameObject)
+extern "C"  void UnityARUtility_InitializePlanePrefab_m2887188869 (Il2CppObject * __this /* static, unused */, GameObject_t1756533147 * ___go0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARAnchorManager::Destroy()
+extern "C"  void UnityARAnchorManager_Destroy_m1751028949 (UnityARAnchorManager_t1086564192 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARPlaneAnchorGameObject>::get_Count()
+#define List_1_get_Count_m1714425968(__this, method) ((  int32_t (*) (List_1_t1674347019 *, const MethodInfo*))List_1_get_Count_m2375293942_gshared)(__this, method)
+// System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARHitTestResult> UnityEngine.XR.iOS.UnityARSessionNativeInterface::HitTest(UnityEngine.XR.iOS.ARPoint,UnityEngine.XR.iOS.ARHitTestResultType)
+extern "C"  List_1_t2644634157 * UnityARSessionNativeInterface_HitTest_m388588674 (UnityARSessionNativeInterface_t1130867170 * __this, ARPoint_t3436811567  ___point0, int64_t ___types1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARHitTestResult>::get_Count()
+#define List_1_get_Count_m1598304542(__this, method) ((  int32_t (*) (List_1_t2644634157 *, const MethodInfo*))List_1_get_Count_m1598304542_gshared)(__this, method)
+// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARHitTestResult>::GetEnumerator()
+#define List_1_GetEnumerator_m2885046859(__this, method) ((  Enumerator_t2179363831  (*) (List_1_t2644634157 *, const MethodInfo*))List_1_GetEnumerator_m2885046859_gshared)(__this, method)
+// !0 System.Collections.Generic.List`1/Enumerator<UnityEngine.XR.iOS.ARHitTestResult>::get_Current()
+#define Enumerator_get_Current_m2775711191(__this, method) ((  ARHitTestResult_t3275513025  (*) (Enumerator_t2179363831 *, const MethodInfo*))Enumerator_get_Current_m2775711191_gshared)(__this, method)
+// System.Void UnityEngine.Debug::Log(System.Object)
+extern "C"  void Debug_Log_m920475918 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::set_position(UnityEngine.Vector3)
+extern "C"  void Transform_set_position_m2469242620 (Transform_t3275118058 * __this, Vector3_t2243707580  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::set_rotation(UnityEngine.Quaternion)
+extern "C"  void Transform_set_rotation_m3411284563 (Transform_t3275118058 * __this, Quaternion_t4030073918  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Transform::get_position()
+extern "C"  Vector3_t2243707580  Transform_get_position_m1104419803 (Transform_t3275118058 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.String::Format(System.String,System.Object,System.Object,System.Object)
+extern "C"  String_t* String_Format_m4262916296 (Il2CppObject * __this /* static, unused */, String_t* p0, Il2CppObject * p1, Il2CppObject * p2, Il2CppObject * p3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.Generic.List`1/Enumerator<UnityEngine.XR.iOS.ARHitTestResult>::MoveNext()
+#define Enumerator_MoveNext_m3661301011(__this, method) ((  bool (*) (Enumerator_t2179363831 *, const MethodInfo*))Enumerator_MoveNext_m3661301011_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1/Enumerator<UnityEngine.XR.iOS.ARHitTestResult>::Dispose()
+#define Enumerator_Dispose_m3109677227(__this, method) ((  void (*) (Enumerator_t2179363831 *, const MethodInfo*))Enumerator_Dispose_m3109677227_gshared)(__this, method)
+// System.Int32 UnityEngine.Input::get_touchCount()
+extern "C"  int32_t Input_get_touchCount_m2050827666 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Touch UnityEngine.Input::GetTouch(System.Int32)
+extern "C"  Touch_t407273883  Input_GetTouch_m1463942798 (Il2CppObject * __this /* static, unused */, int32_t p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.TouchPhase UnityEngine.Touch::get_phase()
+extern "C"  int32_t Touch_get_phase_m196706494 (Touch_t407273883 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector2 UnityEngine.Touch::get_position()
+extern "C"  Vector2_t2243707579  Touch_get_position_m2079703643 (Touch_t407273883 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Vector2::op_Implicit(UnityEngine.Vector2)
+extern "C"  Vector3_t2243707580  Vector2_op_Implicit_m176791411 (Il2CppObject * __this /* static, unused */, Vector2_t2243707579  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Camera::ScreenToViewportPoint(UnityEngine.Vector3)
+extern "C"  Vector3_t2243707580  Camera_ScreenToViewportPoint_m2666228286 (Camera_t189460977 * __this, Vector3_t2243707580  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Runtime.CompilerServices.RuntimeHelpers::InitializeArray(System.Array,System.RuntimeFieldHandle)
+extern "C"  void RuntimeHelpers_InitializeArray_m3920580167 (Il2CppObject * __this /* static, unused */, Il2CppArray * p0, RuntimeFieldHandle_t2331729674  p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.XR.iOS.UnityARHitTestExample::HitTestWithResultType(UnityEngine.XR.iOS.ARPoint,UnityEngine.XR.iOS.ARHitTestResultType)
+extern "C"  bool UnityARHitTestExample_HitTestWithResultType_m996939112 (UnityARHitTestExample_t146867607 * __this, ARPoint_t3436811567  ___point0, int64_t ___resultTypes1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Rect::.ctor(System.Single,System.Single,System.Single,System.Single)
+extern "C"  void Rect__ctor_m1220545469 (Rect_t3681755626 * __this, float p0, float p1, float p2, float p3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.GUI::Button(UnityEngine.Rect,System.String)
+extern "C"  bool GUI_Button_m3054448581 (Il2CppObject * __this /* static, unused */, Rect_t3681755626  p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::Pause()
+extern "C"  void UnityARSessionNativeInterface_Pause_m2220930613 (UnityARSessionNativeInterface_t1130867170 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::RunWithConfigAndOptions(UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration,UnityEngine.XR.iOS.UnityARSessionRunOption)
+extern "C"  void UnityARSessionNativeInterface_RunWithConfigAndOptions_m375276821 (UnityARSessionNativeInterface_t1130867170 * __this, ARKitWorldTackingSessionConfiguration_t1821734930  ___config0, int32_t ___runOptions1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.String::Concat(System.String,System.String)
+extern "C"  String_t* String_Concat_m2596409543 (Il2CppObject * __this /* static, unused */, String_t* p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector4 UnityEngine.Matrix4x4::GetColumn(System.Int32)
+extern "C"  Vector4_t2243707581  Matrix4x4_GetColumn_m1367096730 (Matrix4x4_t2933234003 * __this, int32_t p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Vector4::op_Implicit(UnityEngine.Vector4)
+extern "C"  Vector3_t2243707580  Vector4_op_Implicit_m1902992875 (Il2CppObject * __this /* static, unused */, Vector4_t2243707581  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Quaternion UnityEngine.XR.iOS.UnityARMatrixOps::QuaternionFromMatrix(UnityEngine.Matrix4x4)
+extern "C"  Quaternion_t4030073918  UnityARMatrixOps_QuaternionFromMatrix_m1686577287 (Il2CppObject * __this /* static, unused */, Matrix4x4_t2933234003  ___m0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Matrix4x4::get_Item(System.Int32,System.Int32)
+extern "C"  float Matrix4x4_get_Item_m312280350 (Matrix4x4_t2933234003 * __this, int32_t p0, int32_t p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::Max(System.Single,System.Single)
+extern "C"  float Mathf_Max_m2564622569 (Il2CppObject * __this /* static, unused */, float p0, float p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::Sign(System.Single)
+extern "C"  float Mathf_Sign_m2039143327 (Il2CppObject * __this /* static, unused */, float p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::_frame_update(UnityEngine.XR.iOS.internal_UnityARCamera)
+extern "C"  void UnityARSessionNativeInterface__frame_update_m127370 (Il2CppObject * __this /* static, unused */, internal_UnityARCamera_t2580192745  ___camera0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::_anchor_added(UnityEngine.XR.iOS.UnityARAnchorData)
+extern "C"  void UnityARSessionNativeInterface__anchor_added_m3584567327 (Il2CppObject * __this /* static, unused */, UnityARAnchorData_t2901866349  ___anchor0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::_anchor_updated(UnityEngine.XR.iOS.UnityARAnchorData)
+extern "C"  void UnityARSessionNativeInterface__anchor_updated_m1970308864 (Il2CppObject * __this /* static, unused */, UnityARAnchorData_t2901866349  ___anchor0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::_anchor_removed(UnityEngine.XR.iOS.UnityARAnchorData)
+extern "C"  void UnityARSessionNativeInterface__anchor_removed_m4240378233 (Il2CppObject * __this /* static, unused */, UnityARAnchorData_t2901866349  ___anchor0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::_ar_session_failed(System.String)
+extern "C"  void UnityARSessionNativeInterface__ar_session_failed_m2515310284 (Il2CppObject * __this /* static, unused */, String_t* ___error0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARFrameUpdate::.ctor(System.Object,System.IntPtr)
+extern "C"  void internal_ARFrameUpdate__ctor_m36448827 (internal_ARFrameUpdate_t3296518558 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorAdded::.ctor(System.Object,System.IntPtr)
+extern "C"  void internal_ARAnchorAdded__ctor_m875644652 (internal_ARAnchorAdded_t1622117597 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorUpdated::.ctor(System.Object,System.IntPtr)
+extern "C"  void internal_ARAnchorUpdated__ctor_m2904213987 (internal_ARAnchorUpdated_t3705772742 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorRemoved::.ctor(System.Object,System.IntPtr)
+extern "C"  void internal_ARAnchorRemoved__ctor_m2856503254 (internal_ARAnchorRemoved_t3189755211 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARSessionFailed::.ctor(System.Object,System.IntPtr)
+extern "C"  void ARSessionFailed__ctor_m3600321544 (ARSessionFailed_t872580813 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.IntPtr UnityEngine.XR.iOS.UnityARSessionNativeInterface::unity_CreateNativeARSession(UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARFrameUpdate,UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorAdded,UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorUpdated,UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorRemoved,UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARSessionFailed)
+extern "C"  IntPtr_t UnityARSessionNativeInterface_unity_CreateNativeARSession_m1019965107 (Il2CppObject * __this /* static, unused */, internal_ARFrameUpdate_t3296518558 * ___frameUpdate0, internal_ARAnchorAdded_t1622117597 * ___anchorAdded1, internal_ARAnchorUpdated_t3705772742 * ___anchorUpdated2, internal_ARAnchorRemoved_t3189755211 * ___anchorRemoved3, ARSessionFailed_t872580813 * ___sessionFailed4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Delegate System.Delegate::Combine(System.Delegate,System.Delegate)
+extern "C"  Delegate_t3022476291 * Delegate_Combine_m3791207084 (Il2CppObject * __this /* static, unused */, Delegate_t3022476291 * p0, Delegate_t3022476291 * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Delegate System.Delegate::Remove(System.Delegate,System.Delegate)
+extern "C"  Delegate_t3022476291 * Delegate_Remove_m2626518725 (Il2CppObject * __this /* static, unused */, Delegate_t3022476291 * p0, Delegate_t3022476291 * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::.ctor()
+extern "C"  void UnityARSessionNativeInterface__ctor_m2294513111 (UnityARSessionNativeInterface_t1130867170 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Matrix4x4::SetColumn(System.Int32,UnityEngine.Vector4)
+extern "C"  void Matrix4x4_SetColumn_m3120649749 (Matrix4x4_t2933234003 * __this, int32_t p0, Vector4_t2243707581  p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::SetCameraNearFar(System.Single,System.Single)
+extern "C"  void UnityARSessionNativeInterface_SetCameraNearFar_m1247563277 (Il2CppObject * __this /* static, unused */, float ___nearZ0, float ___farZ1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::UpdatePointCloudData(UnityEngine.XR.iOS.UnityARCamera&)
+extern "C"  void UnityARSessionNativeInterface_UpdatePointCloudData_m2452168060 (Il2CppObject * __this /* static, unused */, UnityARCamera_t4198559457 * ___camera0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARFrameUpdate::Invoke(UnityEngine.XR.iOS.UnityARCamera)
+extern "C"  void ARFrameUpdate_Invoke_m3133737564 (ARFrameUpdate_t496507918 * __this, UnityARCamera_t4198559457  ___camera0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetARPointCloud(System.IntPtr&,System.UInt32&)
+extern "C"  bool UnityARSessionNativeInterface_GetARPointCloud_m2491076785 (Il2CppObject * __this /* static, unused */, IntPtr_t* ___verts0, uint32_t* ___vertLength1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Runtime.InteropServices.Marshal::Copy(System.IntPtr,System.Single[],System.Int32,System.Int32)
+extern "C"  void Marshal_Copy_m2353359830 (Il2CppObject * __this /* static, unused */, IntPtr_t p0, SingleU5BU5D_t577127397* p1, int32_t p2, int32_t p3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.Runtime.InteropServices.Marshal::PtrToStringAuto(System.IntPtr)
+extern "C"  String_t* Marshal_PtrToStringAuto_m3496615756 (Il2CppObject * __this /* static, unused */, IntPtr_t p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Vector3::.ctor(System.Single,System.Single,System.Single)
+extern "C"  void Vector3__ctor_m2638739322 (Vector3_t2243707580 * __this, float p0, float p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.IntPtr::op_Inequality(System.IntPtr,System.IntPtr)
+extern "C"  bool IntPtr_op_Inequality_m3044532593 (Il2CppObject * __this /* static, unused */, IntPtr_t p0, IntPtr_t p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.XR.iOS.ARPlaneAnchor UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetPlaneAnchorFromAnchorData(UnityEngine.XR.iOS.UnityARAnchorData)
+extern "C"  ARPlaneAnchor_t1439520888  UnityARSessionNativeInterface_GetPlaneAnchorFromAnchorData_m3105060455 (Il2CppObject * __this /* static, unused */, UnityARAnchorData_t2901866349  ___anchor0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorAdded::Invoke(UnityEngine.XR.iOS.ARPlaneAnchor)
+extern "C"  void ARAnchorAdded_Invoke_m3296517664 (ARAnchorAdded_t2646854145 * __this, ARPlaneAnchor_t1439520888  ___anchorData0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorUpdated::Invoke(UnityEngine.XR.iOS.ARPlaneAnchor)
+extern "C"  void ARAnchorUpdated_Invoke_m1018775699 (ARAnchorUpdated_t3886071158 * __this, ARPlaneAnchor_t1439520888  ___anchorData0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorRemoved::Invoke(UnityEngine.XR.iOS.ARPlaneAnchor)
+extern "C"  void ARAnchorRemoved_Invoke_m4120555414 (ARAnchorRemoved_t142665927 * __this, ARPlaneAnchor_t1439520888  ___anchorData0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARSessionFailed::Invoke(System.String)
+extern "C"  void ARSessionFailed_Invoke_m3664045560 (ARSessionFailed_t872580813 * __this, String_t* ___error0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::StartWorldTrackingSessionWithOptions(System.IntPtr,UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration,UnityEngine.XR.iOS.UnityARSessionRunOption)
+extern "C"  void UnityARSessionNativeInterface_StartWorldTrackingSessionWithOptions_m3150342870 (Il2CppObject * __this /* static, unused */, IntPtr_t ___nativeSession0, ARKitWorldTackingSessionConfiguration_t1821734930  ___configuration1, int32_t ___runOptions2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::StartWorldTrackingSession(System.IntPtr,UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration)
+extern "C"  void UnityARSessionNativeInterface_StartWorldTrackingSession_m3140261726 (Il2CppObject * __this /* static, unused */, IntPtr_t ___nativeSession0, ARKitWorldTackingSessionConfiguration_t1821734930  ___configuration1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::StartSessionWithOptions(System.IntPtr,UnityEngine.XR.iOS.ARKitSessionConfiguration,UnityEngine.XR.iOS.UnityARSessionRunOption)
+extern "C"  void UnityARSessionNativeInterface_StartSessionWithOptions_m1815473114 (Il2CppObject * __this /* static, unused */, IntPtr_t ___nativeSession0, ARKitSessionConfiguration_t318899795  ___configuration1, int32_t ___runOptions2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::StartSession(System.IntPtr,UnityEngine.XR.iOS.ARKitSessionConfiguration)
+extern "C"  void UnityARSessionNativeInterface_StartSession_m227007524 (Il2CppObject * __this /* static, unused */, IntPtr_t ___nativeSession0, ARKitSessionConfiguration_t318899795  ___configuration1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::PauseSession(System.IntPtr)
+extern "C"  void UnityARSessionNativeInterface_PauseSession_m2717865525 (Il2CppObject * __this /* static, unused */, IntPtr_t ___nativeSession0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 UnityEngine.XR.iOS.UnityARSessionNativeInterface::HitTest(System.IntPtr,UnityEngine.XR.iOS.ARPoint,UnityEngine.XR.iOS.ARHitTestResultType)
+extern "C"  int32_t UnityARSessionNativeInterface_HitTest_m1115034644 (Il2CppObject * __this /* static, unused */, IntPtr_t ___nativeSession0, ARPoint_t3436811567  ___point1, int64_t ___types2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.String::Format(System.String,System.Object)
+extern "C"  String_t* String_Format_m2024975688 (Il2CppObject * __this /* static, unused */, String_t* p0, Il2CppObject * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARHitTestResult>::.ctor()
+#define List_1__ctor_m3856316316(__this, method) ((  void (*) (List_1_t2644634157 *, const MethodInfo*))List_1__ctor_m3856316316_gshared)(__this, method)
+// UnityEngine.XR.iOS.UnityARHitTestResult UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetLastHitTestResult(System.Int32)
+extern "C"  UnityARHitTestResult_t4129824344  UnityARSessionNativeInterface_GetLastHitTestResult_m1489387413 (Il2CppObject * __this /* static, unused */, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.XR.iOS.ARHitTestResult UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetHitTestResultFromResultData(UnityEngine.XR.iOS.UnityARHitTestResult)
+extern "C"  ARHitTestResult_t3275513025  UnityARSessionNativeInterface_GetHitTestResultFromResultData_m1356947160 (Il2CppObject * __this /* static, unused */, UnityARHitTestResult_t4129824344  ___resultData0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARHitTestResult>::Add(!0)
+#define List_1_Add_m1918634088(__this, p0, method) ((  void (*) (List_1_t2644634157 *, ARHitTestResult_t3275513025 , const MethodInfo*))List_1_Add_m1918634088_gshared)(__this, p0, method)
+// UnityEngine.XR.iOS.ARTextureHandles UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetVideoTextureHandles()
+extern "C"  ARTextureHandles_t3764914833  UnityARSessionNativeInterface_GetVideoTextureHandles_m4073538006 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetAmbientIntensity()
+extern "C"  float UnityARSessionNativeInterface_GetAmbientIntensity_m3132982210 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetTrackingQuality()
+extern "C"  int32_t UnityARSessionNativeInterface_GetTrackingQuality_m3473680033 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetYUVTexCoordScale()
+extern "C"  float UnityARSessionNativeInterface_GetYUVTexCoordScale_m671637809 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorAdded::Invoke(UnityEngine.XR.iOS.UnityARAnchorData)
+extern "C"  void internal_ARAnchorAdded_Invoke_m4273916311 (internal_ARAnchorAdded_t1622117597 * __this, UnityARAnchorData_t2901866349  ___anchorData0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorRemoved::Invoke(UnityEngine.XR.iOS.UnityARAnchorData)
+extern "C"  void internal_ARAnchorRemoved_Invoke_m3299031849 (internal_ARAnchorRemoved_t3189755211 * __this, UnityARAnchorData_t2901866349  ___anchorData0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorUpdated::Invoke(UnityEngine.XR.iOS.UnityARAnchorData)
+extern "C"  void internal_ARAnchorUpdated_Invoke_m609656910 (internal_ARAnchorUpdated_t3705772742 * __this, UnityARAnchorData_t2901866349  ___anchorData0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARFrameUpdate::Invoke(UnityEngine.XR.iOS.internal_UnityARCamera)
+extern "C"  void internal_ARFrameUpdate_Invoke_m3624040046 (internal_ARFrameUpdate_t3296518558 * __this, internal_UnityARCamera_t2580192745  ___camera0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.Object::Instantiate<UnityEngine.GameObject>(!!0)
+#define Object_Instantiate_TisGameObject_t1756533147_m3664764861(__this /* static, unused */, p0, method) ((  GameObject_t1756533147 * (*) (Il2CppObject * /* static, unused */, GameObject_t1756533147 *, const MethodInfo*))Object_Instantiate_TisIl2CppObject_m447919519_gshared)(__this /* static, unused */, p0, method)
+// System.Void UnityEngine.GameObject::.ctor()
+extern "C"  void GameObject__ctor_m498247354 (GameObject_t1756533147 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Object::set_name(System.String)
+extern "C"  void Object_set_name_m4157836998 (Object_t1021602117 * __this, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Transform UnityEngine.GameObject::get_transform()
+extern "C"  Transform_t3275118058 * GameObject_get_transform_m909382139 (GameObject_t1756533147 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.GameObject::GetComponentInChildren<UnityEngine.MeshFilter>()
+#define GameObject_GetComponentInChildren_TisMeshFilter_t3026937449_m1346841033(__this, method) ((  MeshFilter_t3026937449 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponentInChildren_TisIl2CppObject_m327292296_gshared)(__this, method)
+// System.Void UnityEngine.Transform::set_localScale(UnityEngine.Vector3)
+extern "C"  void Transform_set_localScale_m2325460848 (Transform_t3275118058 * __this, Vector3_t2243707580  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Rendering.CommandBuffer::.ctor()
+extern "C"  void CommandBuffer__ctor_m3893953450 (CommandBuffer_t1204166949 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Rendering.RenderTargetIdentifier UnityEngine.Rendering.RenderTargetIdentifier::op_Implicit(UnityEngine.Rendering.BuiltinRenderTextureType)
+extern "C"  RenderTargetIdentifier_t772440638  RenderTargetIdentifier_op_Implicit_m1621446097 (Il2CppObject * __this /* static, unused */, int32_t p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Rendering.CommandBuffer::Blit(UnityEngine.Texture,UnityEngine.Rendering.RenderTargetIdentifier,UnityEngine.Material)
+extern "C"  void CommandBuffer_Blit_m4282817560 (CommandBuffer_t1204166949 * __this, Texture_t2243626319 * p0, RenderTargetIdentifier_t772440638  p1, Material_t193706927 * p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Camera::AddCommandBuffer(UnityEngine.Rendering.CameraEvent,UnityEngine.Rendering.CommandBuffer)
+extern "C"  void Camera_AddCommandBuffer_m2569587168 (Camera_t189460977 * __this, int32_t p0, CommandBuffer_t1204166949 * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Camera::RemoveCommandBuffer(UnityEngine.Rendering.CameraEvent,UnityEngine.Rendering.CommandBuffer)
+extern "C"  void Camera_RemoveCommandBuffer_m2103408695 (Camera_t189460977 * __this, int32_t p0, CommandBuffer_t1204166949 * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.XR.iOS.ARTextureHandles UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetARVideoTextureHandles()
+extern "C"  ARTextureHandles_t3764914833  UnityARSessionNativeInterface_GetARVideoTextureHandles_m2905358883 (UnityARSessionNativeInterface_t1130867170 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.IntPtr::op_Equality(System.IntPtr,System.IntPtr)
+extern "C"  bool IntPtr_op_Equality_m1573482188 (Il2CppObject * __this /* static, unused */, IntPtr_t p0, IntPtr_t p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.UnityARVideo::InitializeCommandBuffer()
+extern "C"  void UnityARVideo_InitializeCommandBuffer_m2800566831 (UnityARVideo_t2351297253 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Resolution UnityEngine.Screen::get_currentResolution()
+extern "C"  Resolution_t3693662728  Screen_get_currentResolution_m2361090437 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 UnityEngine.Resolution::get_width()
+extern "C"  int32_t Resolution_get_width_m1438273472 (Resolution_t3693662728 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 UnityEngine.Resolution::get_height()
+extern "C"  int32_t Resolution_get_height_m882683003 (Resolution_t3693662728 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Texture2D UnityEngine.Texture2D::CreateExternalTexture(System.Int32,System.Int32,UnityEngine.TextureFormat,System.Boolean,System.Boolean,System.IntPtr)
+extern "C"  Texture2D_t3542995729 * Texture2D_CreateExternalTexture_m3402112250 (Il2CppObject * __this /* static, unused */, int32_t p0, int32_t p1, int32_t p2, bool p3, bool p4, IntPtr_t p5, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Texture::set_filterMode(UnityEngine.FilterMode)
+extern "C"  void Texture_set_filterMode_m3838996656 (Texture_t2243626319 * __this, int32_t p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Texture::set_wrapMode(UnityEngine.TextureWrapMode)
+extern "C"  void Texture_set_wrapMode_m333956747 (Texture_t2243626319 * __this, int32_t p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Texture2D::UpdateExternalTexture(System.IntPtr)
+extern "C"  void Texture2D_UpdateExternalTexture_m1701322565 (Texture2D_t3542995729 * __this, IntPtr_t p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Material::SetTexture(System.String,UnityEngine.Texture)
+extern "C"  void Material_SetTexture_m141095205 (Material_t193706927 * __this, String_t* p0, Texture_t2243626319 * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.ScreenOrientation UnityEngine.Screen::get_orientation()
+extern "C"  int32_t Screen_get_orientation_m879255848 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Vector3::get_zero()
+extern "C"  Vector3_t2243707580  Vector3_get_zero_m1527993324 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Quaternion UnityEngine.Quaternion::Euler(System.Single,System.Single,System.Single)
+extern "C"  Quaternion_t4030073918  Quaternion_Euler_m2887458175 (Il2CppObject * __this /* static, unused */, float p0, float p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Vector3::get_one()
+extern "C"  Vector3_t2243707580  Vector3_get_one_m627547232 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Matrix4x4 UnityEngine.Matrix4x4::TRS(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3)
+extern "C"  Matrix4x4_t2933234003  Matrix4x4_TRS_m1913765359 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  p0, Quaternion_t4030073918  p1, Vector3_t2243707580  p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Material::SetMatrix(System.String,UnityEngine.Matrix4x4)
+extern "C"  void Material_SetMatrix_m1387972957 (Material_t193706927 * __this, String_t* p0, Matrix4x4_t2933234003  p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetARYUVTexCoordScale()
+extern "C"  float UnityARSessionNativeInterface_GetARYUVTexCoordScale_m1823875812 (UnityARSessionNativeInterface_t1130867170 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Material::SetFloat(System.String,System.Single)
+extern "C"  void Material_SetFloat_m1926275467 (Material_t193706927 * __this, String_t* p0, float p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Material::SetInt(System.String,System.Int32)
+extern "C"  void Material_SetInt_m522302436 (Material_t193706927 * __this, String_t* p0, int32_t p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Collections.Generic.List`1<UnityEngine.GameObject>::.ctor()
+#define List_1__ctor_m704351054(__this, method) ((  void (*) (List_1_t1125654279 *, const MethodInfo*))List_1__ctor_m310736118_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<UnityEngine.GameObject>::Add(!0)
+#define List_1_Add_m3441471442(__this, p0, method) ((  void (*) (List_1_t1125654279 *, GameObject_t1756533147 *, const MethodInfo*))List_1_Add_m4157722533_gshared)(__this, p0, method)
+// UnityEngine.Vector4 UnityEngine.Vector4::op_Implicit(UnityEngine.Vector3)
+extern "C"  Vector4_t2243707581  Vector4_op_Implicit_m1059320239 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !0 System.Collections.Generic.List`1<UnityEngine.GameObject>::get_Item(System.Int32)
+#define List_1_get_Item_m939767277(__this, p0, method) ((  GameObject_t1756533147 * (*) (List_1_t1125654279 *, int32_t, const MethodInfo*))List_1_get_Item_m2062981835_gshared)(__this, p0, method)
+// System.Int64 System.Math::Min(System.Int64,System.Int64)
+extern "C"  int64_t Math_Min_m301707792 (Il2CppObject * __this /* static, unused */, int64_t p0, int64_t p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
+extern "C"  Type_t * Type_GetTypeFromHandle_m432505302 (Il2CppObject * __this /* static, unused */, RuntimeTypeHandle_t2330101084  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Object System.Runtime.InteropServices.Marshal::PtrToStructure(System.IntPtr,System.Type)
+extern "C"  Il2CppObject * Marshal_PtrToStructure_m673412918 (Il2CppObject * __this /* static, unused */, IntPtr_t p0, Type_t * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRApplicationError Valve.VR.IVRApplications/_AddApplicationManifest::Invoke(System.String,System.Boolean)
+extern "C"  int32_t _AddApplicationManifest_Invoke_m2422742202 (_AddApplicationManifest_t767630098 * __this, String_t* ___pchApplicationManifestFullPath0, bool ___bTemporary1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRApplicationError Valve.VR.IVRApplications/_RemoveApplicationManifest::Invoke(System.String)
+extern "C"  int32_t _RemoveApplicationManifest_Invoke_m153687176 (_RemoveApplicationManifest_t1836596693 * __this, String_t* ___pchApplicationManifestFullPath0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRApplications/_IsApplicationInstalled::Invoke(System.String)
+extern "C"  bool _IsApplicationInstalled_Invoke_m2884939707 (_IsApplicationInstalled_t2595723848 * __this, String_t* ___pchAppKey0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRApplications/_GetApplicationCount::Invoke()
+extern "C"  uint32_t _GetApplicationCount_Invoke_m2394266345 (_GetApplicationCount_t2482336573 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRApplicationError Valve.VR.IVRApplications/_GetApplicationKeyByIndex::Invoke(System.UInt32,System.String,System.UInt32)
+extern "C"  int32_t _GetApplicationKeyByIndex_Invoke_m1187617545 (_GetApplicationKeyByIndex_t2366899296 * __this, uint32_t ___unApplicationIndex0, String_t* ___pchAppKeyBuffer1, uint32_t ___unAppKeyBufferLen2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRApplicationError Valve.VR.IVRApplications/_GetApplicationKeyByProcessId::Invoke(System.UInt32,System.String,System.UInt32)
+extern "C"  int32_t _GetApplicationKeyByProcessId_Invoke_m1865835985 (_GetApplicationKeyByProcessId_t114599352 * __this, uint32_t ___unProcessId0, String_t* ___pchAppKeyBuffer1, uint32_t ___unAppKeyBufferLen2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRApplicationError Valve.VR.IVRApplications/_LaunchApplication::Invoke(System.String)
+extern "C"  int32_t _LaunchApplication_Invoke_m822862864 (_LaunchApplication_t851978817 * __this, String_t* ___pchAppKey0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRApplicationError Valve.VR.IVRApplications/_LaunchTemplateApplication::Invoke(System.String,System.String,Valve.VR.AppOverrideKeys_t[],System.UInt32)
+extern "C"  int32_t _LaunchTemplateApplication_Invoke_m3081139642 (_LaunchTemplateApplication_t1486019733 * __this, String_t* ___pchTemplateAppKey0, String_t* ___pchNewAppKey1, AppOverrideKeys_tU5BU5D_t3538561671* ___pKeys2, uint32_t ___unKeys3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRApplicationError Valve.VR.IVRApplications/_LaunchApplicationFromMimeType::Invoke(System.String,System.String)
+extern "C"  int32_t _LaunchApplicationFromMimeType_Invoke_m2128706100 (_LaunchApplicationFromMimeType_t1201572535 * __this, String_t* ___pchMimeType0, String_t* ___pchArgs1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRApplicationError Valve.VR.IVRApplications/_LaunchDashboardOverlay::Invoke(System.String)
+extern "C"  int32_t _LaunchDashboardOverlay_Invoke_m1028479868 (_LaunchDashboardOverlay_t3582840745 * __this, String_t* ___pchAppKey0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRApplications/_CancelApplicationLaunch::Invoke(System.String)
+extern "C"  bool _CancelApplicationLaunch_Invoke_m523516994 (_CancelApplicationLaunch_t2074441983 * __this, String_t* ___pchAppKey0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRApplicationError Valve.VR.IVRApplications/_IdentifyApplication::Invoke(System.UInt32,System.String)
+extern "C"  int32_t _IdentifyApplication_Invoke_m1616142617 (_IdentifyApplication_t1775622238 * __this, uint32_t ___unProcessId0, String_t* ___pchAppKey1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRApplications/_GetApplicationProcessId::Invoke(System.String)
+extern "C"  uint32_t _GetApplicationProcessId_Invoke_m3590099626 (_GetApplicationProcessId_t1419106538 * __this, String_t* ___pchAppKey0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.IntPtr Valve.VR.IVRApplications/_GetApplicationsErrorNameFromEnum::Invoke(Valve.VR.EVRApplicationError)
+extern "C"  IntPtr_t _GetApplicationsErrorNameFromEnum_Invoke_m4148924174 (_GetApplicationsErrorNameFromEnum_t3031121943 * __this, int32_t ___error0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.Runtime.InteropServices.Marshal::PtrToStringAnsi(System.IntPtr)
+extern "C"  String_t* Marshal_PtrToStringAnsi_m2970070000 (Il2CppObject * __this /* static, unused */, IntPtr_t p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRApplications/_GetApplicationPropertyString::Invoke(System.String,Valve.VR.EVRApplicationProperty,System.String,System.UInt32,Valve.VR.EVRApplicationError&)
+extern "C"  uint32_t _GetApplicationPropertyString_Invoke_m2200586629 (_GetApplicationPropertyString_t2585650982 * __this, String_t* ___pchAppKey0, int32_t ___eProperty1, String_t* ___pchPropertyValueBuffer2, uint32_t ___unPropertyValueBufferLen3, int32_t* ___peError4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRApplications/_GetApplicationPropertyBool::Invoke(System.String,Valve.VR.EVRApplicationProperty,Valve.VR.EVRApplicationError&)
+extern "C"  bool _GetApplicationPropertyBool_Invoke_m3127965027 (_GetApplicationPropertyBool_t3564886007 * __this, String_t* ___pchAppKey0, int32_t ___eProperty1, int32_t* ___peError2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt64 Valve.VR.IVRApplications/_GetApplicationPropertyUint64::Invoke(System.String,Valve.VR.EVRApplicationProperty,Valve.VR.EVRApplicationError&)
+extern "C"  uint64_t _GetApplicationPropertyUint64_Invoke_m3249089845 (_GetApplicationPropertyUint64_t3532011289 * __this, String_t* ___pchAppKey0, int32_t ___eProperty1, int32_t* ___peError2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRApplicationError Valve.VR.IVRApplications/_SetApplicationAutoLaunch::Invoke(System.String,System.Boolean)
+extern "C"  int32_t _SetApplicationAutoLaunch_Invoke_m2763083762 (_SetApplicationAutoLaunch_t1014802842 * __this, String_t* ___pchAppKey0, bool ___bAutoLaunch1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRApplications/_GetApplicationAutoLaunch::Invoke(System.String)
+extern "C"  bool _GetApplicationAutoLaunch_Invoke_m1614090009 (_GetApplicationAutoLaunch_t253949742 * __this, String_t* ___pchAppKey0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRApplicationError Valve.VR.IVRApplications/_SetDefaultApplicationForMimeType::Invoke(System.String,System.String)
+extern "C"  int32_t _SetDefaultApplicationForMimeType_Invoke_m2254813949 (_SetDefaultApplicationForMimeType_t2776386992 * __this, String_t* ___pchAppKey0, String_t* ___pchMimeType1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRApplications/_GetDefaultApplicationForMimeType::Invoke(System.String,System.String,System.UInt32)
+extern "C"  bool _GetDefaultApplicationForMimeType_Invoke_m1677376673 (_GetDefaultApplicationForMimeType_t1319680284 * __this, String_t* ___pchMimeType0, String_t* ___pchAppKeyBuffer1, uint32_t ___unAppKeyBufferLen2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRApplications/_GetApplicationSupportedMimeTypes::Invoke(System.String,System.String,System.UInt32)
+extern "C"  bool _GetApplicationSupportedMimeTypes_Invoke_m2937740032 (_GetApplicationSupportedMimeTypes_t1223733271 * __this, String_t* ___pchAppKey0, String_t* ___pchMimeTypesBuffer1, uint32_t ___unMimeTypesBuffer2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRApplications/_GetApplicationsThatSupportMimeType::Invoke(System.String,System.String,System.UInt32)
+extern "C"  uint32_t _GetApplicationsThatSupportMimeType_Invoke_m2305023951 (_GetApplicationsThatSupportMimeType_t1260006687 * __this, String_t* ___pchMimeType0, String_t* ___pchAppKeysThatSupportBuffer1, uint32_t ___unAppKeysThatSupportBuffer2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRApplications/_GetApplicationLaunchArguments::Invoke(System.UInt32,System.String,System.UInt32)
+extern "C"  uint32_t _GetApplicationLaunchArguments_Invoke_m1934431357 (_GetApplicationLaunchArguments_t3777004763 * __this, uint32_t ___unHandle0, String_t* ___pchArgs1, uint32_t ___unArgs2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRApplicationError Valve.VR.IVRApplications/_GetStartingApplication::Invoke(System.String,System.UInt32)
+extern "C"  int32_t _GetStartingApplication_Invoke_m568069351 (_GetStartingApplication_t4154880362 * __this, String_t* ___pchAppKeyBuffer0, uint32_t ___unAppKeyBufferLen1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRApplicationTransitionState Valve.VR.IVRApplications/_GetTransitionState::Invoke()
+extern "C"  int32_t _GetTransitionState_Invoke_m3148559519 (_GetTransitionState_t623155336 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRApplicationError Valve.VR.IVRApplications/_PerformApplicationPrelaunchCheck::Invoke(System.String)
+extern "C"  int32_t _PerformApplicationPrelaunchCheck_Invoke_m1304885540 (_PerformApplicationPrelaunchCheck_t1375004597 * __this, String_t* ___pchAppKey0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.IntPtr Valve.VR.IVRApplications/_GetApplicationsTransitionStateNameFromEnum::Invoke(Valve.VR.EVRApplicationTransitionState)
+extern "C"  IntPtr_t _GetApplicationsTransitionStateNameFromEnum_Invoke_m2152223118 (_GetApplicationsTransitionStateNameFromEnum_t1807962071 * __this, int32_t ___state0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRApplications/_IsQuitUserPromptRequested::Invoke()
+extern "C"  bool _IsQuitUserPromptRequested_Invoke_m1401672415 (_IsQuitUserPromptRequested_t1816118422 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRApplicationError Valve.VR.IVRApplications/_LaunchInternalProcess::Invoke(System.String,System.String,System.String)
+extern "C"  int32_t _LaunchInternalProcess_Invoke_m1016917496 (_LaunchInternalProcess_t1067354359 * __this, String_t* ___pchBinaryPath0, String_t* ___pchArguments1, String_t* ___pchWorkingDirectory2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.ChaperoneCalibrationState Valve.VR.IVRChaperone/_GetCalibrationState::Invoke()
+extern "C"  int32_t _GetCalibrationState_Invoke_m1518983505 (_GetCalibrationState_t2974007097 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRChaperone/_GetPlayAreaSize::Invoke(System.Single&,System.Single&)
+extern "C"  bool _GetPlayAreaSize_Invoke_m3427245401 (_GetPlayAreaSize_t2872887692 * __this, float* ___pSizeX0, float* ___pSizeZ1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRChaperone/_GetPlayAreaRect::Invoke(Valve.VR.HmdQuad_t&)
+extern "C"  bool _GetPlayAreaRect_Invoke_m2030558589 (_GetPlayAreaRect_t2644523155 * __this, HmdQuad_t_t2172573705 * ___rect0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRChaperone/_ReloadInfo::Invoke()
+extern "C"  void _ReloadInfo_Invoke_m1078069866 (_ReloadInfo_t2817167257 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRChaperone/_SetSceneColor::Invoke(Valve.VR.HmdColor_t)
+extern "C"  void _SetSceneColor_Invoke_m628775247 (_SetSceneColor_t792692487 * __this, HmdColor_t_t1780554589  ___color0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRChaperone/_GetBoundsColor::Invoke(Valve.VR.HmdColor_t&,System.Int32,System.Single,Valve.VR.HmdColor_t&)
+extern "C"  void _GetBoundsColor_Invoke_m2231361291 (_GetBoundsColor_t3705523218 * __this, HmdColor_t_t1780554589 * ___pOutputColorArray0, int32_t ___nNumOutputColors1, float ___flCollisionBoundsFadeDistance2, HmdColor_t_t1780554589 * ___pOutputCameraColor3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRChaperone/_AreBoundsVisible::Invoke()
+extern "C"  bool _AreBoundsVisible_Invoke_m4161594330 (_AreBoundsVisible_t1424518499 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRChaperone/_ForceBoundsVisible::Invoke(System.Boolean)
+extern "C"  void _ForceBoundsVisible_Invoke_m847835362 (_ForceBoundsVisible_t936994906 * __this, bool ___bForce0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRChaperoneSetup/_CommitWorkingCopy::Invoke(Valve.VR.EChaperoneConfigFile)
+extern "C"  bool _CommitWorkingCopy_Invoke_m3534127175 (_CommitWorkingCopy_t206435796 * __this, int32_t ___configFile0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRChaperoneSetup/_RevertWorkingCopy::Invoke()
+extern "C"  void _RevertWorkingCopy_Invoke_m4250629548 (_RevertWorkingCopy_t3249028635 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRChaperoneSetup/_GetWorkingPlayAreaSize::Invoke(System.Single&,System.Single&)
+extern "C"  bool _GetWorkingPlayAreaSize_Invoke_m2933383319 (_GetWorkingPlayAreaSize_t1540358174 * __this, float* ___pSizeX0, float* ___pSizeZ1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRChaperoneSetup/_GetWorkingPlayAreaRect::Invoke(Valve.VR.HmdQuad_t&)
+extern "C"  bool _GetWorkingPlayAreaRect_Invoke_m2746508275 (_GetWorkingPlayAreaRect_t478315365 * __this, HmdQuad_t_t2172573705 * ___rect0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRChaperoneSetup/_GetWorkingCollisionBoundsInfo::Invoke(Valve.VR.HmdQuad_t[],System.UInt32&)
+extern "C"  bool _GetWorkingCollisionBoundsInfo_Invoke_m3552170387 (_GetWorkingCollisionBoundsInfo_t1852222363 * __this, HmdQuad_tU5BU5D_t16941492* ___pQuadsBuffer0, uint32_t* ___punQuadsCount1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRChaperoneSetup/_GetLiveCollisionBoundsInfo::Invoke(Valve.VR.HmdQuad_t[],System.UInt32&)
+extern "C"  bool _GetLiveCollisionBoundsInfo_Invoke_m1510173410 (_GetLiveCollisionBoundsInfo_t1921386472 * __this, HmdQuad_tU5BU5D_t16941492* ___pQuadsBuffer0, uint32_t* ___punQuadsCount1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRChaperoneSetup/_GetWorkingSeatedZeroPoseToRawTrackingPose::Invoke(Valve.VR.HmdMatrix34_t&)
+extern "C"  bool _GetWorkingSeatedZeroPoseToRawTrackingPose_Invoke_m4258469005 (_GetWorkingSeatedZeroPoseToRawTrackingPose_t459969004 * __this, HmdMatrix34_t_t664273062 * ___pmatSeatedZeroPoseToRawTrackingPose0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRChaperoneSetup/_GetWorkingStandingZeroPoseToRawTrackingPose::Invoke(Valve.VR.HmdMatrix34_t&)
+extern "C"  bool _GetWorkingStandingZeroPoseToRawTrackingPose_Invoke_m3396334787 (_GetWorkingStandingZeroPoseToRawTrackingPose_t2605213384 * __this, HmdMatrix34_t_t664273062 * ___pmatStandingZeroPoseToRawTrackingPose0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRChaperoneSetup/_SetWorkingPlayAreaSize::Invoke(System.Single,System.Single)
+extern "C"  void _SetWorkingPlayAreaSize_Invoke_m2852459575 (_SetWorkingPlayAreaSize_t2887667762 * __this, float ___sizeX0, float ___sizeZ1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRChaperoneSetup/_SetWorkingCollisionBoundsInfo::Invoke(Valve.VR.HmdQuad_t[],System.UInt32)
+extern "C"  void _SetWorkingCollisionBoundsInfo_Invoke_m3651496841 (_SetWorkingCollisionBoundsInfo_t3486256295 * __this, HmdQuad_tU5BU5D_t16941492* ___pQuadsBuffer0, uint32_t ___unQuadsCount1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRChaperoneSetup/_SetWorkingSeatedZeroPoseToRawTrackingPose::Invoke(Valve.VR.HmdMatrix34_t&)
+extern "C"  void _SetWorkingSeatedZeroPoseToRawTrackingPose_Invoke_m652443345 (_SetWorkingSeatedZeroPoseToRawTrackingPose_t1261944056 * __this, HmdMatrix34_t_t664273062 * ___pMatSeatedZeroPoseToRawTrackingPose0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRChaperoneSetup/_SetWorkingStandingZeroPoseToRawTrackingPose::Invoke(Valve.VR.HmdMatrix34_t&)
+extern "C"  void _SetWorkingStandingZeroPoseToRawTrackingPose_Invoke_m919192911 (_SetWorkingStandingZeroPoseToRawTrackingPose_t1528237404 * __this, HmdMatrix34_t_t664273062 * ___pMatStandingZeroPoseToRawTrackingPose0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRChaperoneSetup/_ReloadFromDisk::Invoke(Valve.VR.EChaperoneConfigFile)
+extern "C"  void _ReloadFromDisk_Invoke_m3439736384 (_ReloadFromDisk_t2889659875 * __this, int32_t ___configFile0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRChaperoneSetup/_GetLiveSeatedZeroPoseToRawTrackingPose::Invoke(Valve.VR.HmdMatrix34_t&)
+extern "C"  bool _GetLiveSeatedZeroPoseToRawTrackingPose_Invoke_m1169884652 (_GetLiveSeatedZeroPoseToRawTrackingPose_t1524066641 * __this, HmdMatrix34_t_t664273062 * ___pmatSeatedZeroPoseToRawTrackingPose0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRChaperoneSetup/_SetWorkingCollisionBoundsTagsInfo::Invoke(System.Byte[],System.UInt32)
+extern "C"  void _SetWorkingCollisionBoundsTagsInfo_Invoke_m307342636 (_SetWorkingCollisionBoundsTagsInfo_t2916654968 * __this, ByteU5BU5D_t3397334013* ___pTagsBuffer0, uint32_t ___unTagCount1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRChaperoneSetup/_GetLiveCollisionBoundsTagsInfo::Invoke(System.Byte[],System.UInt32&)
+extern "C"  bool _GetLiveCollisionBoundsTagsInfo_Invoke_m3250012919 (_GetLiveCollisionBoundsTagsInfo_t229051089 * __this, ByteU5BU5D_t3397334013* ___pTagsBuffer0, uint32_t* ___punTagCount1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRChaperoneSetup/_SetWorkingPhysicalBoundsInfo::Invoke(Valve.VR.HmdQuad_t[],System.UInt32)
+extern "C"  bool _SetWorkingPhysicalBoundsInfo_Invoke_m2893976514 (_SetWorkingPhysicalBoundsInfo_t2516501904 * __this, HmdQuad_tU5BU5D_t16941492* ___pQuadsBuffer0, uint32_t ___unQuadsCount1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRChaperoneSetup/_GetLivePhysicalBoundsInfo::Invoke(Valve.VR.HmdQuad_t[],System.UInt32&)
+extern "C"  bool _GetLivePhysicalBoundsInfo_Invoke_m1353833955 (_GetLivePhysicalBoundsInfo_t2316140367 * __this, HmdQuad_tU5BU5D_t16941492* ___pQuadsBuffer0, uint32_t* ___punQuadsCount1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRChaperoneSetup/_ExportLiveToBuffer::Invoke(System.Text.StringBuilder,System.UInt32&)
+extern "C"  bool _ExportLiveToBuffer_Invoke_m3346566773 (_ExportLiveToBuffer_t945638768 * __this, StringBuilder_t1221177846 * ___pBuffer0, uint32_t* ___pnBufferLength1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRChaperoneSetup/_ImportFromBufferToWorking::Invoke(System.String,System.UInt32)
+extern "C"  bool _ImportFromBufferToWorking_Invoke_m1497184785 (_ImportFromBufferToWorking_t3167195336 * __this, String_t* ___pBuffer0, uint32_t ___nImportFlags1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_SetTrackingSpace::Invoke(Valve.VR.ETrackingUniverseOrigin)
+extern "C"  void _SetTrackingSpace_Invoke_m3137227179 (_SetTrackingSpace_t3662949163 * __this, int32_t ___eOrigin0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.ETrackingUniverseOrigin Valve.VR.IVRCompositor/_GetTrackingSpace::Invoke()
+extern "C"  int32_t _GetTrackingSpace_Invoke_m1545227602 (_GetTrackingSpace_t10051991 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_WaitGetPoses::Invoke(Valve.VR.TrackedDevicePose_t[],System.UInt32,Valve.VR.TrackedDevicePose_t[],System.UInt32)
+extern "C"  int32_t _WaitGetPoses_Invoke_m2327106977 (_WaitGetPoses_t4192584901 * __this, TrackedDevicePose_tU5BU5D_t2897272049* ___pRenderPoseArray0, uint32_t ___unRenderPoseArrayCount1, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray2, uint32_t ___unGamePoseArrayCount3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_GetLastPoses::Invoke(Valve.VR.TrackedDevicePose_t[],System.UInt32,Valve.VR.TrackedDevicePose_t[],System.UInt32)
+extern "C"  int32_t _GetLastPoses_Invoke_m2385192740 (_GetLastPoses_t2717021868 * __this, TrackedDevicePose_tU5BU5D_t2897272049* ___pRenderPoseArray0, uint32_t ___unRenderPoseArrayCount1, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray2, uint32_t ___unGamePoseArrayCount3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_GetLastPoseForTrackedDeviceIndex::Invoke(System.UInt32,Valve.VR.TrackedDevicePose_t&,Valve.VR.TrackedDevicePose_t&)
+extern "C"  int32_t _GetLastPoseForTrackedDeviceIndex_Invoke_m1418981610 (_GetLastPoseForTrackedDeviceIndex_t3158332482 * __this, uint32_t ___unDeviceIndex0, TrackedDevicePose_t_t1668551120 * ___pOutputPose1, TrackedDevicePose_t_t1668551120 * ___pOutputGamePose2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_Submit::Invoke(Valve.VR.EVREye,Valve.VR.Texture_t&,Valve.VR.VRTextureBounds_t&,Valve.VR.EVRSubmitFlags)
+extern "C"  int32_t _Submit_Invoke_m2753319157 (_Submit_t938257482 * __this, int32_t ___eEye0, Texture_t_t3277130850 * ___pTexture1, VRTextureBounds_t_t1897807375 * ___pBounds2, int32_t ___nSubmitFlags3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_ClearLastSubmittedFrame::Invoke()
+extern "C"  void _ClearLastSubmittedFrame_Invoke_m2034262060 (_ClearLastSubmittedFrame_t32198265 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_PostPresentHandoff::Invoke()
+extern "C"  void _PostPresentHandoff_Invoke_m1462502494 (_PostPresentHandoff_t4129629097 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRCompositor/_GetFrameTiming::Invoke(Valve.VR.Compositor_FrameTiming&,System.UInt32)
+extern "C"  bool _GetFrameTiming_Invoke_m1617804867 (_GetFrameTiming_t1729400753 * __this, Compositor_FrameTiming_t2839634313 * ___pTiming0, uint32_t ___unFramesAgo1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single Valve.VR.IVRCompositor/_GetFrameTimeRemaining::Invoke()
+extern "C"  float _GetFrameTimeRemaining_Invoke_m684205209 (_GetFrameTimeRemaining_t2433513766 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_GetCumulativeStats::Invoke(Valve.VR.Compositor_CumulativeStats&,System.UInt32)
+extern "C"  void _GetCumulativeStats_Invoke_m908221563 (_GetCumulativeStats_t1488691712 * __this, Compositor_CumulativeStats_t450065686 * ___pStats0, uint32_t ___nStatsSizeInBytes1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_FadeToColor::Invoke(System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean)
+extern "C"  void _FadeToColor_Invoke_m1707546963 (_FadeToColor_t4129572280 * __this, float ___fSeconds0, float ___fRed1, float ___fGreen2, float ___fBlue3, float ___fAlpha4, bool ___bBackground5, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_FadeGrid::Invoke(System.Single,System.Boolean)
+extern "C"  void _FadeGrid_Invoke_m1600058929 (_FadeGrid_t1389933364 * __this, float ___fSeconds0, bool ___bFadeIn1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_SetSkyboxOverride::Invoke(Valve.VR.Texture_t[],System.UInt32)
+extern "C"  int32_t _SetSkyboxOverride_Invoke_m972135954 (_SetSkyboxOverride_t2590693784 * __this, Texture_tU5BU5D_t3142294487* ___pTextures0, uint32_t ___unTextureCount1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_ClearSkyboxOverride::Invoke()
+extern "C"  void _ClearSkyboxOverride_Invoke_m2007627024 (_ClearSkyboxOverride_t745528287 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_CompositorBringToFront::Invoke()
+extern "C"  void _CompositorBringToFront_Invoke_m152996310 (_CompositorBringToFront_t2294069769 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_CompositorGoToBack::Invoke()
+extern "C"  void _CompositorGoToBack_Invoke_m3046813586 (_CompositorGoToBack_t2760466547 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_CompositorQuit::Invoke()
+extern "C"  void _CompositorQuit_Invoke_m2878417369 (_CompositorQuit_t2273085604 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRCompositor/_IsFullscreen::Invoke()
+extern "C"  bool _IsFullscreen_Invoke_m2652831224 (_IsFullscreen_t988890383 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRCompositor/_GetCurrentSceneFocusProcess::Invoke()
+extern "C"  uint32_t _GetCurrentSceneFocusProcess_Invoke_m2120928094 (_GetCurrentSceneFocusProcess_t1910270748 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRCompositor/_GetLastFrameRenderer::Invoke()
+extern "C"  uint32_t _GetLastFrameRenderer_Invoke_m2095669348 (_GetLastFrameRenderer_t1990293024 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRCompositor/_CanRenderScene::Invoke()
+extern "C"  bool _CanRenderScene_Invoke_m87773421 (_CanRenderScene_t808393456 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_ShowMirrorWindow::Invoke()
+extern "C"  void _ShowMirrorWindow_Invoke_m2009350019 (_ShowMirrorWindow_t1161105516 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_HideMirrorWindow::Invoke()
+extern "C"  void _HideMirrorWindow_Invoke_m1669625672 (_HideMirrorWindow_t396471547 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRCompositor/_IsMirrorWindowVisible::Invoke()
+extern "C"  bool _IsMirrorWindowVisible_Invoke_m3980407510 (_IsMirrorWindowVisible_t410903031 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_CompositorDumpImages::Invoke()
+extern "C"  void _CompositorDumpImages_Invoke_m1581105358 (_CompositorDumpImages_t3462826167 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRCompositor/_ShouldAppRenderWithLowResources::Invoke()
+extern "C"  bool _ShouldAppRenderWithLowResources_Invoke_m2038857956 (_ShouldAppRenderWithLowResources_t1834060663 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_ForceInterleavedReprojectionOn::Invoke(System.Boolean)
+extern "C"  void _ForceInterleavedReprojectionOn_Invoke_m749806639 (_ForceInterleavedReprojectionOn_t78695371 * __this, bool ___bOverride0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_ForceReconnectProcess::Invoke()
+extern "C"  void _ForceReconnectProcess_Invoke_m3457011270 (_ForceReconnectProcess_t3057442189 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_SuspendRendering::Invoke(System.Boolean)
+extern "C"  void _SuspendRendering_Invoke_m671586310 (_SuspendRendering_t3440691638 * __this, bool ___bSuspend0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_GetMirrorTextureD3D11::Invoke(Valve.VR.EVREye,System.IntPtr,System.IntPtr&)
+extern "C"  int32_t _GetMirrorTextureD3D11_Invoke_m3834115999 (_GetMirrorTextureD3D11_t2322134645 * __this, int32_t ___eEye0, IntPtr_t ___pD3D11DeviceOrResource1, IntPtr_t* ___ppD3D11ShaderResourceView2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_GetMirrorTextureGL::Invoke(Valve.VR.EVREye,System.UInt32&,System.IntPtr)
+extern "C"  int32_t _GetMirrorTextureGL_Invoke_m3525787541 (_GetMirrorTextureGL_t3071699813 * __this, int32_t ___eEye0, uint32_t* ___pglTextureId1, IntPtr_t ___pglSharedTextureHandle2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRCompositor/_ReleaseSharedGLTexture::Invoke(System.UInt32,System.IntPtr)
+extern "C"  bool _ReleaseSharedGLTexture_Invoke_m3769607891 (_ReleaseSharedGLTexture_t3443550108 * __this, uint32_t ___glTextureId0, IntPtr_t ___glSharedTextureHandle1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_LockGLSharedTextureForAccess::Invoke(System.IntPtr)
+extern "C"  void _LockGLSharedTextureForAccess_Invoke_m2614208588 (_LockGLSharedTextureForAccess_t2180462479 * __this, IntPtr_t ___glSharedTextureHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_UnlockGLSharedTextureForAccess::Invoke(System.IntPtr)
+extern "C"  void _UnlockGLSharedTextureForAccess_Invoke_m299833625 (_UnlockGLSharedTextureForAccess_t320290112 * __this, IntPtr_t ___glSharedTextureHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRExtendedDisplay/_GetWindowBounds::Invoke(System.Int32&,System.Int32&,System.UInt32&,System.UInt32&)
+extern "C"  void _GetWindowBounds_Invoke_m804669702 (_GetWindowBounds_t2171929041 * __this, int32_t* ___pnX0, int32_t* ___pnY1, uint32_t* ___pnWidth2, uint32_t* ___pnHeight3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRExtendedDisplay/_GetEyeOutputViewport::Invoke(Valve.VR.EVREye,System.UInt32&,System.UInt32&,System.UInt32&,System.UInt32&)
+extern "C"  void _GetEyeOutputViewport_Invoke_m1552877621 (_GetEyeOutputViewport_t693377854 * __this, int32_t ___eEye0, uint32_t* ___pnX1, uint32_t* ___pnY2, uint32_t* ___pnWidth3, uint32_t* ___pnHeight4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRExtendedDisplay/_GetDXGIOutputInfo::Invoke(System.Int32&,System.Int32&)
+extern "C"  void _GetDXGIOutputInfo_Invoke_m1550215398 (_GetDXGIOutputInfo_t2084284319 * __this, int32_t* ___pnAdapterIndex0, int32_t* ___pnAdapterOutputIndex1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRNotificationError Valve.VR.IVRNotifications/_CreateNotification::Invoke(System.UInt64,System.UInt64,Valve.VR.EVRNotificationType,System.String,Valve.VR.EVRNotificationStyle,Valve.VR.NotificationBitmap_t&,System.UInt32&)
+extern "C"  int32_t _CreateNotification_Invoke_m3478891056 (_CreateNotification_t1905156422 * __this, uint64_t ___ulOverlayHandle0, uint64_t ___ulUserValue1, int32_t ___type2, String_t* ___pchText3, int32_t ___style4, NotificationBitmap_t_t1973232283 * ___pImage5, uint32_t* ___pNotificationId6, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRNotificationError Valve.VR.IVRNotifications/_RemoveNotification::Invoke(System.UInt32)
+extern "C"  int32_t _RemoveNotification_Invoke_m2612105650 (_RemoveNotification_t3701790586 * __this, uint32_t ___notificationId0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_FindOverlay::Invoke(System.String,System.UInt64&)
+extern "C"  int32_t _FindOverlay_Invoke_m1857532504 (_FindOverlay_t1862706542 * __this, String_t* ___pchOverlayKey0, uint64_t* ___pOverlayHandle1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_CreateOverlay::Invoke(System.String,System.String,System.UInt64&)
+extern "C"  int32_t _CreateOverlay_Invoke_m371834953 (_CreateOverlay_t4211228331 * __this, String_t* ___pchOverlayKey0, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pOverlayHandle2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_DestroyOverlay::Invoke(System.UInt64)
+extern "C"  int32_t _DestroyOverlay_Invoke_m898282617 (_DestroyOverlay_t1020329117 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetHighQualityOverlay::Invoke(System.UInt64)
+extern "C"  int32_t _SetHighQualityOverlay_Invoke_m4265083322 (_SetHighQualityOverlay_t4225758140 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt64 Valve.VR.IVROverlay/_GetHighQualityOverlay::Invoke()
+extern "C"  uint64_t _GetHighQualityOverlay_Invoke_m3919269457 (_GetHighQualityOverlay_t362587296 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVROverlay/_GetOverlayKey::Invoke(System.UInt64,System.Text.StringBuilder,System.UInt32,Valve.VR.EVROverlayError&)
+extern "C"  uint32_t _GetOverlayKey_Invoke_m2950777966 (_GetOverlayKey_t1341267772 * __this, uint64_t ___ulOverlayHandle0, StringBuilder_t1221177846 * ___pchValue1, uint32_t ___unBufferSize2, int32_t* ___pError3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVROverlay/_GetOverlayName::Invoke(System.UInt64,System.Text.StringBuilder,System.UInt32,Valve.VR.EVROverlayError&)
+extern "C"  uint32_t _GetOverlayName_Invoke_m1434428818 (_GetOverlayName_t221395366 * __this, uint64_t ___ulOverlayHandle0, StringBuilder_t1221177846 * ___pchValue1, uint32_t ___unBufferSize2, int32_t* ___pError3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayImageData::Invoke(System.UInt64,System.IntPtr,System.UInt32,System.UInt32&,System.UInt32&)
+extern "C"  int32_t _GetOverlayImageData_Invoke_m2105959032 (_GetOverlayImageData_t836541042 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pvBuffer1, uint32_t ___unBufferSize2, uint32_t* ___punWidth3, uint32_t* ___punHeight4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.IntPtr Valve.VR.IVROverlay/_GetOverlayErrorNameFromEnum::Invoke(Valve.VR.EVROverlayError)
+extern "C"  IntPtr_t _GetOverlayErrorNameFromEnum_Invoke_m2290417798 (_GetOverlayErrorNameFromEnum_t3535846231 * __this, int32_t ___error0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayRenderingPid::Invoke(System.UInt64,System.UInt32)
+extern "C"  int32_t _SetOverlayRenderingPid_Invoke_m1551784166 (_SetOverlayRenderingPid_t1970553664 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unPID1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVROverlay/_GetOverlayRenderingPid::Invoke(System.UInt64)
+extern "C"  uint32_t _GetOverlayRenderingPid_Invoke_m4066627961 (_GetOverlayRenderingPid_t1470043428 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayFlag::Invoke(System.UInt64,Valve.VR.VROverlayFlags,System.Boolean)
+extern "C"  int32_t _SetOverlayFlag_Invoke_m2769435287 (_SetOverlayFlag_t1900166033 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eOverlayFlag1, bool ___bEnabled2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayFlag::Invoke(System.UInt64,Valve.VR.VROverlayFlags,System.Boolean&)
+extern "C"  int32_t _GetOverlayFlag_Invoke_m2613417877 (_GetOverlayFlag_t3676293589 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eOverlayFlag1, bool* ___pbEnabled2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayColor::Invoke(System.UInt64,System.Single,System.Single,System.Single)
+extern "C"  int32_t _SetOverlayColor_Invoke_m1549057657 (_SetOverlayColor_t2804573176 * __this, uint64_t ___ulOverlayHandle0, float ___fRed1, float ___fGreen2, float ___fBlue3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayColor::Invoke(System.UInt64,System.Single&,System.Single&,System.Single&)
+extern "C"  int32_t _GetOverlayColor_Invoke_m3788412323 (_GetOverlayColor_t2379424348 * __this, uint64_t ___ulOverlayHandle0, float* ___pfRed1, float* ___pfGreen2, float* ___pfBlue3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayAlpha::Invoke(System.UInt64,System.Single)
+extern "C"  int32_t _SetOverlayAlpha_Invoke_m1349081608 (_SetOverlayAlpha_t2092887413 * __this, uint64_t ___ulOverlayHandle0, float ___fAlpha1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayAlpha::Invoke(System.UInt64,System.Single&)
+extern "C"  int32_t _GetOverlayAlpha_Invoke_m1834655296 (_GetOverlayAlpha_t2185592753 * __this, uint64_t ___ulOverlayHandle0, float* ___pfAlpha1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTexelAspect::Invoke(System.UInt64,System.Single)
+extern "C"  int32_t _SetOverlayTexelAspect_Invoke_m800057472 (_SetOverlayTexelAspect_t460846625 * __this, uint64_t ___ulOverlayHandle0, float ___fTexelAspect1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTexelAspect::Invoke(System.UInt64,System.Single&)
+extern "C"  int32_t _GetOverlayTexelAspect_Invoke_m2693602540 (_GetOverlayTexelAspect_t1835744573 * __this, uint64_t ___ulOverlayHandle0, float* ___pfTexelAspect1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlaySortOrder::Invoke(System.UInt64,System.UInt32)
+extern "C"  int32_t _SetOverlaySortOrder_Invoke_m3384139201 (_SetOverlaySortOrder_t3099711365 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unSortOrder1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlaySortOrder::Invoke(System.UInt64,System.UInt32&)
+extern "C"  int32_t _GetOverlaySortOrder_Invoke_m2634989799 (_GetOverlaySortOrder_t376620481 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punSortOrder1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayWidthInMeters::Invoke(System.UInt64,System.Single)
+extern "C"  int32_t _SetOverlayWidthInMeters_Invoke_m1782438045 (_SetOverlayWidthInMeters_t3047220066 * __this, uint64_t ___ulOverlayHandle0, float ___fWidthInMeters1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayWidthInMeters::Invoke(System.UInt64,System.Single&)
+extern "C"  int32_t _GetOverlayWidthInMeters_Invoke_m2030291983 (_GetOverlayWidthInMeters_t2815542566 * __this, uint64_t ___ulOverlayHandle0, float* ___pfWidthInMeters1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayAutoCurveDistanceRangeInMeters::Invoke(System.UInt64,System.Single,System.Single)
+extern "C"  int32_t _SetOverlayAutoCurveDistanceRangeInMeters_Invoke_m2045797120 (_SetOverlayAutoCurveDistanceRangeInMeters_t1475163830 * __this, uint64_t ___ulOverlayHandle0, float ___fMinDistanceInMeters1, float ___fMaxDistanceInMeters2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayAutoCurveDistanceRangeInMeters::Invoke(System.UInt64,System.Single&,System.Single&)
+extern "C"  int32_t _GetOverlayAutoCurveDistanceRangeInMeters_Invoke_m2285000342 (_GetOverlayAutoCurveDistanceRangeInMeters_t4193138162 * __this, uint64_t ___ulOverlayHandle0, float* ___pfMinDistanceInMeters1, float* ___pfMaxDistanceInMeters2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTextureColorSpace::Invoke(System.UInt64,Valve.VR.EColorSpace)
+extern "C"  int32_t _SetOverlayTextureColorSpace_Invoke_m1296924107 (_SetOverlayTextureColorSpace_t1399555963 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTextureColorSpace1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTextureColorSpace::Invoke(System.UInt64,Valve.VR.EColorSpace&)
+extern "C"  int32_t _GetOverlayTextureColorSpace_Invoke_m2501969805 (_GetOverlayTextureColorSpace_t2119049239 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTextureColorSpace1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTextureBounds::Invoke(System.UInt64,Valve.VR.VRTextureBounds_t&)
+extern "C"  int32_t _SetOverlayTextureBounds_Invoke_m224047540 (_SetOverlayTextureBounds_t1179269927 * __this, uint64_t ___ulOverlayHandle0, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTextureBounds::Invoke(System.UInt64,Valve.VR.VRTextureBounds_t&)
+extern "C"  int32_t _GetOverlayTextureBounds_Invoke_m1165346240 (_GetOverlayTextureBounds_t3680071147 * __this, uint64_t ___ulOverlayHandle0, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTransformType::Invoke(System.UInt64,Valve.VR.VROverlayTransformType&)
+extern "C"  int32_t _GetOverlayTransformType_Invoke_m2129491701 (_GetOverlayTransformType_t1493074241 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTransformType1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTransformAbsolute::Invoke(System.UInt64,Valve.VR.ETrackingUniverseOrigin,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t _SetOverlayTransformAbsolute_Invoke_m1535134225 (_SetOverlayTransformAbsolute_t2100297354 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTrackingOrigin1, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTransformAbsolute::Invoke(System.UInt64,Valve.VR.ETrackingUniverseOrigin&,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t _GetOverlayTransformAbsolute_Invoke_m3953185979 (_GetOverlayTransformAbsolute_t2557918150 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTrackingOrigin1, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTransformTrackedDeviceRelative::Invoke(System.UInt64,System.UInt32,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t _SetOverlayTransformTrackedDeviceRelative_Invoke_m4082931255 (_SetOverlayTransformTrackedDeviceRelative_t579082695 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unTrackedDevice1, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTransformTrackedDeviceRelative::Invoke(System.UInt64,System.UInt32&,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t _GetOverlayTransformTrackedDeviceRelative_Invoke_m3390332185 (_GetOverlayTransformTrackedDeviceRelative_t893699371 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punTrackedDevice1, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTransformTrackedDeviceComponent::Invoke(System.UInt64,System.UInt32,System.String)
+extern "C"  int32_t _SetOverlayTransformTrackedDeviceComponent_Invoke_m1215847030 (_SetOverlayTransformTrackedDeviceComponent_t1749665136 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unDeviceIndex1, String_t* ___pchComponentName2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTransformTrackedDeviceComponent::Invoke(System.UInt64,System.UInt32&,System.String,System.UInt32)
+extern "C"  int32_t _GetOverlayTransformTrackedDeviceComponent_Invoke_m2603987950 (_GetOverlayTransformTrackedDeviceComponent_t3256239660 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punDeviceIndex1, String_t* ___pchComponentName2, uint32_t ___unComponentNameSize3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_ShowOverlay::Invoke(System.UInt64)
+extern "C"  int32_t _ShowOverlay_Invoke_m1766232374 (_ShowOverlay_t733914692 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_HideOverlay::Invoke(System.UInt64)
+extern "C"  int32_t _HideOverlay_Invoke_m1671076155 (_HideOverlay_t2737366627 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVROverlay/_IsOverlayVisible::Invoke(System.UInt64)
+extern "C"  bool _IsOverlayVisible_Invoke_m1960522219 (_IsOverlayVisible_t1564696099 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetTransformForOverlayCoordinates::Invoke(System.UInt64,Valve.VR.ETrackingUniverseOrigin,Valve.VR.HmdVector2_t,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t _GetTransformForOverlayCoordinates_Invoke_m1768155201 (_GetTransformForOverlayCoordinates_t2483359939 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTrackingOrigin1, HmdVector2_t_t2255225135  ___coordinatesInOverlay2, HmdMatrix34_t_t664273062 * ___pmatTransform3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVROverlay/_PollNextOverlayEvent::Invoke(System.UInt64,Valve.VR.VREvent_t&,System.UInt32)
+extern "C"  bool _PollNextOverlayEvent_Invoke_m323202474 (_PollNextOverlayEvent_t131678587 * __this, uint64_t ___ulOverlayHandle0, VREvent_t_t3405266389 * ___pEvent1, uint32_t ___uncbVREvent2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayInputMethod::Invoke(System.UInt64,Valve.VR.VROverlayInputMethod&)
+extern "C"  int32_t _GetOverlayInputMethod_Invoke_m3078952085 (_GetOverlayInputMethod_t3217580654 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peInputMethod1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayInputMethod::Invoke(System.UInt64,Valve.VR.VROverlayInputMethod)
+extern "C"  int32_t _SetOverlayInputMethod_Invoke_m3806261779 (_SetOverlayInputMethod_t3575042602 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eInputMethod1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayMouseScale::Invoke(System.UInt64,Valve.VR.HmdVector2_t&)
+extern "C"  int32_t _GetOverlayMouseScale_Invoke_m1554314519 (_GetOverlayMouseScale_t2826364086 * __this, uint64_t ___ulOverlayHandle0, HmdVector2_t_t2255225135 * ___pvecMouseScale1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayMouseScale::Invoke(System.UInt64,Valve.VR.HmdVector2_t&)
+extern "C"  int32_t _SetOverlayMouseScale_Invoke_m1643569667 (_SetOverlayMouseScale_t2624726138 * __this, uint64_t ___ulOverlayHandle0, HmdVector2_t_t2255225135 * ___pvecMouseScale1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVROverlay/_ComputeOverlayIntersection::Invoke(System.UInt64,Valve.VR.VROverlayIntersectionParams_t&,Valve.VR.VROverlayIntersectionResults_t&)
+extern "C"  bool _ComputeOverlayIntersection_Invoke_m1110770673 (_ComputeOverlayIntersection_t1141587151 * __this, uint64_t ___ulOverlayHandle0, VROverlayIntersectionParams_t_t3201480230 * ___pParams1, VROverlayIntersectionResults_t_t2886517940 * ___pResults2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVROverlay/_HandleControllerOverlayInteractionAsMouse::Invoke(System.UInt64,System.UInt32)
+extern "C"  bool _HandleControllerOverlayInteractionAsMouse_Invoke_m1657897616 (_HandleControllerOverlayInteractionAsMouse_t2899449918 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unControllerDeviceIndex1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVROverlay/_IsHoverTargetOverlay::Invoke(System.UInt64)
+extern "C"  bool _IsHoverTargetOverlay_Invoke_m3152412494 (_IsHoverTargetOverlay_t4101716668 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt64 Valve.VR.IVROverlay/_GetGamepadFocusOverlay::Invoke()
+extern "C"  uint64_t _GetGamepadFocusOverlay_Invoke_m2014588917 (_GetGamepadFocusOverlay_t300021750 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetGamepadFocusOverlay::Invoke(System.UInt64)
+extern "C"  int32_t _SetGamepadFocusOverlay_Invoke_m1830831244 (_SetGamepadFocusOverlay_t2763810618 * __this, uint64_t ___ulNewFocusOverlay0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayNeighbor::Invoke(Valve.VR.EOverlayDirection,System.UInt64,System.UInt64)
+extern "C"  int32_t _SetOverlayNeighbor_Invoke_m1418526992 (_SetOverlayNeighbor_t1117963895 * __this, int32_t ___eDirection0, uint64_t ___ulFrom1, uint64_t ___ulTo2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_MoveGamepadFocusToNeighbor::Invoke(Valve.VR.EOverlayDirection,System.UInt64)
+extern "C"  int32_t _MoveGamepadFocusToNeighbor_Invoke_m973931588 (_MoveGamepadFocusToNeighbor_t2016645278 * __this, int32_t ___eDirection0, uint64_t ___ulFrom1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTexture::Invoke(System.UInt64,Valve.VR.Texture_t&)
+extern "C"  int32_t _SetOverlayTexture_Invoke_m3543005210 (_SetOverlayTexture_t2238656700 * __this, uint64_t ___ulOverlayHandle0, Texture_t_t3277130850 * ___pTexture1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_ClearOverlayTexture::Invoke(System.UInt64)
+extern "C"  int32_t _ClearOverlayTexture_Invoke_m1311382489 (_ClearOverlayTexture_t2610332521 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayRaw::Invoke(System.UInt64,System.IntPtr,System.UInt32,System.UInt32,System.UInt32)
+extern "C"  int32_t _SetOverlayRaw_Invoke_m1372004499 (_SetOverlayRaw_t3268606321 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pvBuffer1, uint32_t ___unWidth2, uint32_t ___unHeight3, uint32_t ___unDepth4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayFromFile::Invoke(System.UInt64,System.String)
+extern "C"  int32_t _SetOverlayFromFile_Invoke_m3103035007 (_SetOverlayFromFile_t598184189 * __this, uint64_t ___ulOverlayHandle0, String_t* ___pchFilePath1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTexture::Invoke(System.UInt64,System.IntPtr&,System.IntPtr,System.UInt32&,System.UInt32&,System.UInt32&,Valve.VR.EGraphicsAPIConvention&,Valve.VR.EColorSpace&)
+extern "C"  int32_t _GetOverlayTexture_Invoke_m316321481 (_GetOverlayTexture_t897552288 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t* ___pNativeTextureHandle1, IntPtr_t ___pNativeTextureRef2, uint32_t* ___pWidth3, uint32_t* ___pHeight4, uint32_t* ___pNativeFormat5, int32_t* ___pAPI6, int32_t* ___pColorSpace7, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_ReleaseNativeOverlayHandle::Invoke(System.UInt64,System.IntPtr)
+extern "C"  int32_t _ReleaseNativeOverlayHandle_Invoke_m377416379 (_ReleaseNativeOverlayHandle_t2842744417 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pNativeTextureHandle1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTextureSize::Invoke(System.UInt64,System.UInt32&,System.UInt32&)
+extern "C"  int32_t _GetOverlayTextureSize_Invoke_m3617082459 (_GetOverlayTextureSize_t1288689867 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___pWidth1, uint32_t* ___pHeight2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_CreateDashboardOverlay::Invoke(System.String,System.String,System.UInt64&,System.UInt64&)
+extern "C"  int32_t _CreateDashboardOverlay_Invoke_m1458939786 (_CreateDashboardOverlay_t637199691 * __this, String_t* ___pchOverlayKey0, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pMainHandle2, uint64_t* ___pThumbnailHandle3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVROverlay/_IsDashboardVisible::Invoke()
+extern "C"  bool _IsDashboardVisible_Invoke_m2954394420 (_IsDashboardVisible_t2020287181 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVROverlay/_IsActiveDashboardOverlay::Invoke(System.UInt64)
+extern "C"  bool _IsActiveDashboardOverlay_Invoke_m2899028641 (_IsActiveDashboardOverlay_t3144660141 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetDashboardOverlaySceneProcess::Invoke(System.UInt64,System.UInt32)
+extern "C"  int32_t _SetDashboardOverlaySceneProcess_Invoke_m115664276 (_SetDashboardOverlaySceneProcess_t1462353074 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unProcessId1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetDashboardOverlaySceneProcess::Invoke(System.UInt64,System.UInt32&)
+extern "C"  int32_t _GetDashboardOverlaySceneProcess_Invoke_m926359608 (_GetDashboardOverlaySceneProcess_t876496206 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punProcessId1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVROverlay/_ShowDashboard::Invoke(System.String)
+extern "C"  void _ShowDashboard_Invoke_m3063387343 (_ShowDashboard_t4127025320 * __this, String_t* ___pchOverlayToShow0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVROverlay/_GetPrimaryDashboardDevice::Invoke()
+extern "C"  uint32_t _GetPrimaryDashboardDevice_Invoke_m1183102931 (_GetPrimaryDashboardDevice_t812432855 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_ShowKeyboard::Invoke(System.Int32,System.Int32,System.String,System.UInt32,System.String,System.Boolean,System.UInt64)
+extern "C"  int32_t _ShowKeyboard_Invoke_m3058070664 (_ShowKeyboard_t3095606223 * __this, int32_t ___eInputMode0, int32_t ___eLineInputMode1, String_t* ___pchDescription2, uint32_t ___unCharMax3, String_t* ___pchExistingText4, bool ___bUseMinimalMode5, uint64_t ___uUserValue6, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_ShowKeyboardForOverlay::Invoke(System.UInt64,System.Int32,System.Int32,System.String,System.UInt32,System.String,System.Boolean,System.UInt64)
+extern "C"  int32_t _ShowKeyboardForOverlay_Invoke_m3628630814 (_ShowKeyboardForOverlay_t3006565844 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eInputMode1, int32_t ___eLineInputMode2, String_t* ___pchDescription3, uint32_t ___unCharMax4, String_t* ___pchExistingText5, bool ___bUseMinimalMode6, uint64_t ___uUserValue7, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVROverlay/_GetKeyboardText::Invoke(System.Text.StringBuilder,System.UInt32)
+extern "C"  uint32_t _GetKeyboardText_Invoke_m883285111 (_GetKeyboardText_t91815223 * __this, StringBuilder_t1221177846 * ___pchText0, uint32_t ___cchText1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVROverlay/_HideKeyboard::Invoke()
+extern "C"  void _HideKeyboard_Invoke_m1849642691 (_HideKeyboard_t3483797360 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVROverlay/_SetKeyboardTransformAbsolute::Invoke(Valve.VR.ETrackingUniverseOrigin,Valve.VR.HmdMatrix34_t&)
+extern "C"  void _SetKeyboardTransformAbsolute_Invoke_m2703238449 (_SetKeyboardTransformAbsolute_t443079689 * __this, int32_t ___eTrackingOrigin0, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToKeyboardTransform1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVROverlay/_SetKeyboardPositionForOverlay::Invoke(System.UInt64,Valve.VR.HmdRect2_t)
+extern "C"  void _SetKeyboardPositionForOverlay_Invoke_m24978526 (_SetKeyboardPositionForOverlay_t3695826360 * __this, uint64_t ___ulOverlayHandle0, HmdRect2_t_t1656020282  ___avoidRect1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRRenderModelError Valve.VR.IVRRenderModels/_LoadRenderModel_Async::Invoke(System.String,System.IntPtr&)
+extern "C"  int32_t _LoadRenderModel_Async_Invoke_m2270859425 (_LoadRenderModel_Async_t3622270247 * __this, String_t* ___pchRenderModelName0, IntPtr_t* ___ppRenderModel1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRRenderModels/_FreeRenderModel::Invoke(System.IntPtr)
+extern "C"  void _FreeRenderModel_Invoke_m647691801 (_FreeRenderModel_t2139843464 * __this, IntPtr_t ___pRenderModel0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRRenderModelError Valve.VR.IVRRenderModels/_LoadTexture_Async::Invoke(System.Int32,System.IntPtr&)
+extern "C"  int32_t _LoadTexture_Async_Invoke_m403241538 (_LoadTexture_Async_t1786536393 * __this, int32_t ___textureId0, IntPtr_t* ___ppTexture1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRRenderModels/_FreeTexture::Invoke(System.IntPtr)
+extern "C"  void _FreeTexture_Invoke_m4122395959 (_FreeTexture_t4051202214 * __this, IntPtr_t ___pTexture0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRRenderModelError Valve.VR.IVRRenderModels/_LoadTextureD3D11_Async::Invoke(System.Int32,System.IntPtr,System.IntPtr&)
+extern "C"  int32_t _LoadTextureD3D11_Async_Invoke_m1272349681 (_LoadTextureD3D11_Async_t2681806282 * __this, int32_t ___textureId0, IntPtr_t ___pD3D11Device1, IntPtr_t* ___ppD3D11Texture2D2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRRenderModelError Valve.VR.IVRRenderModels/_LoadIntoTextureD3D11_Async::Invoke(System.Int32,System.IntPtr)
+extern "C"  int32_t _LoadIntoTextureD3D11_Async_Invoke_m179797833 (_LoadIntoTextureD3D11_Async_t3518850916 * __this, int32_t ___textureId0, IntPtr_t ___pDstTexture1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRRenderModels/_FreeTextureD3D11::Invoke(System.IntPtr)
+extern "C"  void _FreeTextureD3D11_Invoke_m3491407152 (_FreeTextureD3D11_t2385986941 * __this, IntPtr_t ___pD3D11Texture2D0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRRenderModels/_GetRenderModelName::Invoke(System.UInt32,System.Text.StringBuilder,System.UInt32)
+extern "C"  uint32_t _GetRenderModelName_Invoke_m737357213 (_GetRenderModelName_t4149685257 * __this, uint32_t ___unRenderModelIndex0, StringBuilder_t1221177846 * ___pchRenderModelName1, uint32_t ___unRenderModelNameLen2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRRenderModels/_GetRenderModelCount::Invoke()
+extern "C"  uint32_t _GetRenderModelCount_Invoke_m2583358193 (_GetRenderModelCount_t3364784497 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRRenderModels/_GetComponentCount::Invoke(System.String)
+extern "C"  uint32_t _GetComponentCount_Invoke_m1262259273 (_GetComponentCount_t763371255 * __this, String_t* ___pchRenderModelName0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRRenderModels/_GetComponentName::Invoke(System.String,System.UInt32,System.Text.StringBuilder,System.UInt32)
+extern "C"  uint32_t _GetComponentName_Invoke_m1403401233 (_GetComponentName_t3462998887 * __this, String_t* ___pchRenderModelName0, uint32_t ___unComponentIndex1, StringBuilder_t1221177846 * ___pchComponentName2, uint32_t ___unComponentNameLen3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt64 Valve.VR.IVRRenderModels/_GetComponentButtonMask::Invoke(System.String,System.String)
+extern "C"  uint64_t _GetComponentButtonMask_Invoke_m2737362209 (_GetComponentButtonMask_t1474657094 * __this, String_t* ___pchRenderModelName0, String_t* ___pchComponentName1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRRenderModels/_GetComponentRenderModelName::Invoke(System.String,System.String,System.Text.StringBuilder,System.UInt32)
+extern "C"  uint32_t _GetComponentRenderModelName_Invoke_m863374892 (_GetComponentRenderModelName_t2860930600 * __this, String_t* ___pchRenderModelName0, String_t* ___pchComponentName1, StringBuilder_t1221177846 * ___pchComponentRenderModelName2, uint32_t ___unComponentRenderModelNameLen3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRRenderModels/_GetComponentState::Invoke(System.String,System.String,Valve.VR.VRControllerState_t&,Valve.VR.RenderModel_ControllerMode_State_t&,Valve.VR.RenderModel_ComponentState_t&)
+extern "C"  bool _GetComponentState_Invoke_m3166181389 (_GetComponentState_t742926735 * __this, String_t* ___pchRenderModelName0, String_t* ___pchComponentName1, VRControllerState_t_t2504874220 * ___pControllerState2, RenderModel_ControllerMode_State_t_t1298199406 * ___pState3, RenderModel_ComponentState_t_t2032012879 * ___pComponentState4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRRenderModels/_RenderModelHasComponent::Invoke(System.String,System.String)
+extern "C"  bool _RenderModelHasComponent_Invoke_m3355715484 (_RenderModelHasComponent_t1969881317 * __this, String_t* ___pchRenderModelName0, String_t* ___pchComponentName1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRRenderModels/_GetRenderModelThumbnailURL::Invoke(System.String,System.Text.StringBuilder,System.UInt32,Valve.VR.EVRRenderModelError&)
+extern "C"  uint32_t _GetRenderModelThumbnailURL_Invoke_m2900098077 (_GetRenderModelThumbnailURL_t3954674309 * __this, String_t* ___pchRenderModelName0, StringBuilder_t1221177846 * ___pchThumbnailURL1, uint32_t ___unThumbnailURLLen2, int32_t* ___peError3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRRenderModels/_GetRenderModelOriginalPath::Invoke(System.String,System.Text.StringBuilder,System.UInt32,Valve.VR.EVRRenderModelError&)
+extern "C"  uint32_t _GetRenderModelOriginalPath_Invoke_m1583659080 (_GetRenderModelOriginalPath_t4216085620 * __this, String_t* ___pchRenderModelName0, StringBuilder_t1221177846 * ___pchOriginalPath1, uint32_t ___unOriginalPathLen2, int32_t* ___peError3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.IntPtr Valve.VR.IVRRenderModels/_GetRenderModelErrorNameFromEnum::Invoke(Valve.VR.EVRRenderModelError)
+extern "C"  IntPtr_t _GetRenderModelErrorNameFromEnum_Invoke_m3807359218 (_GetRenderModelErrorNameFromEnum_t298277168 * __this, int32_t ___error0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRResources/_LoadSharedResource::Invoke(System.String,System.String,System.UInt32)
+extern "C"  uint32_t _LoadSharedResource_Invoke_m517248631 (_LoadSharedResource_t4289483331 * __this, String_t* ___pchResourceName0, String_t* ___pchBuffer1, uint32_t ___unBufferLen2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRResources/_GetResourceFullPath::Invoke(System.String,System.String,System.String,System.UInt32)
+extern "C"  uint32_t _GetResourceFullPath_Invoke_m256735288 (_GetResourceFullPath_t915790394 * __this, String_t* ___pchResourceName0, String_t* ___pchResourceTypeDirectory1, String_t* ___pchPathBuffer2, uint32_t ___unBufferLen3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRScreenshotError Valve.VR.IVRScreenshots/_RequestScreenshot::Invoke(System.UInt32&,Valve.VR.EVRScreenshotType,System.String,System.String)
+extern "C"  int32_t _RequestScreenshot_Invoke_m3568008551 (_RequestScreenshot_t1956857133 * __this, uint32_t* ___pOutScreenshotHandle0, int32_t ___type1, String_t* ___pchPreviewFilename2, String_t* ___pchVRFilename3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRScreenshotError Valve.VR.IVRScreenshots/_HookScreenshot::Invoke(Valve.VR.EVRScreenshotType[],System.Int32)
+extern "C"  int32_t _HookScreenshot_Invoke_m3679320638 (_HookScreenshot_t2804207343 * __this, EVRScreenshotTypeU5BU5D_t2594501106* ___pSupportedTypes0, int32_t ___numTypes1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRScreenshotType Valve.VR.IVRScreenshots/_GetScreenshotPropertyType::Invoke(System.UInt32,Valve.VR.EVRScreenshotError&)
+extern "C"  int32_t _GetScreenshotPropertyType_Invoke_m3657182003 (_GetScreenshotPropertyType_t3028991757 * __this, uint32_t ___screenshotHandle0, int32_t* ___pError1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRScreenshots/_GetScreenshotPropertyFilename::Invoke(System.UInt32,Valve.VR.EVRScreenshotPropertyFilenames,System.Text.StringBuilder,System.UInt32,Valve.VR.EVRScreenshotError&)
+extern "C"  uint32_t _GetScreenshotPropertyFilename_Invoke_m967838911 (_GetScreenshotPropertyFilename_t1122176780 * __this, uint32_t ___screenshotHandle0, int32_t ___filenameType1, StringBuilder_t1221177846 * ___pchFilename2, uint32_t ___cchFilename3, int32_t* ___pError4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRScreenshotError Valve.VR.IVRScreenshots/_UpdateScreenshotProgress::Invoke(System.UInt32,System.Single)
+extern "C"  int32_t _UpdateScreenshotProgress_Invoke_m2005405966 (_UpdateScreenshotProgress_t2161609358 * __this, uint32_t ___screenshotHandle0, float ___flProgress1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRScreenshotError Valve.VR.IVRScreenshots/_TakeStereoScreenshot::Invoke(System.UInt32&,System.String,System.String)
+extern "C"  int32_t _TakeStereoScreenshot_Invoke_m2154497474 (_TakeStereoScreenshot_t3387995749 * __this, uint32_t* ___pOutScreenshotHandle0, String_t* ___pchPreviewFilename1, String_t* ___pchVRFilename2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRScreenshotError Valve.VR.IVRScreenshots/_SubmitScreenshot::Invoke(System.UInt32,Valve.VR.EVRScreenshotType,System.String,System.String)
+extern "C"  int32_t _SubmitScreenshot_Invoke_m3479137308 (_SubmitScreenshot_t3156929320 * __this, uint32_t ___screenshotHandle0, int32_t ___type1, String_t* ___pchSourcePreviewFilename2, String_t* ___pchSourceVRFilename3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.IntPtr Valve.VR.IVRSettings/_GetSettingsErrorNameFromEnum::Invoke(Valve.VR.EVRSettingsError)
+extern "C"  IntPtr_t _GetSettingsErrorNameFromEnum_Invoke_m3700239817 (_GetSettingsErrorNameFromEnum_t293614055 * __this, int32_t ___eError0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRSettings/_Sync::Invoke(System.Boolean,Valve.VR.EVRSettingsError&)
+extern "C"  bool _Sync_Invoke_m2349166307 (_Sync_t2978470277 * __this, bool ___bForce0, int32_t* ___peError1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRSettings/_GetBool::Invoke(System.String,System.String,System.Boolean,Valve.VR.EVRSettingsError&)
+extern "C"  bool _GetBool_Invoke_m1555658786 (_GetBool_t1034551410 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, bool ___bDefaultValue2, int32_t* ___peError3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSettings/_SetBool::Invoke(System.String,System.String,System.Boolean,Valve.VR.EVRSettingsError&)
+extern "C"  void _SetBool_Invoke_m655959096 (_SetBool_t1033875974 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, bool ___bValue2, int32_t* ___peError3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 Valve.VR.IVRSettings/_GetInt32::Invoke(System.String,System.String,System.Int32,Valve.VR.EVRSettingsError&)
+extern "C"  int32_t _GetInt32_Invoke_m2290014706 (_GetInt32_t3538756002 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, int32_t ___nDefaultValue2, int32_t* ___peError3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSettings/_SetInt32::Invoke(System.String,System.String,System.Int32,Valve.VR.EVRSettingsError&)
+extern "C"  void _SetInt32_Invoke_m1265113624 (_SetInt32_t3538080526 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, int32_t ___nValue2, int32_t* ___peError3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single Valve.VR.IVRSettings/_GetFloat::Invoke(System.String,System.String,System.Single,Valve.VR.EVRSettingsError&)
+extern "C"  float _GetFloat_Invoke_m394721458 (_GetFloat_t3725422668 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, float ___flDefaultValue2, int32_t* ___peError3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSettings/_SetFloat::Invoke(System.String,System.String,System.Single,Valve.VR.EVRSettingsError&)
+extern "C"  void _SetFloat_Invoke_m2641243740 (_SetFloat_t3724747224 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, float ___flValue2, int32_t* ___peError3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSettings/_GetString::Invoke(System.String,System.String,System.Text.StringBuilder,System.UInt32,System.String,Valve.VR.EVRSettingsError&)
+extern "C"  void _GetString_Invoke_m2275492678 (_GetString_t1816180801 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, StringBuilder_t1221177846 * ___pchValue2, uint32_t ___unValueLen3, String_t* ___pchDefaultValue4, int32_t* ___peError5, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSettings/_SetString::Invoke(System.String,System.String,System.String,Valve.VR.EVRSettingsError&)
+extern "C"  void _SetString_Invoke_m3835923282 (_SetString_t1793856309 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, String_t* ___pchValue2, int32_t* ___peError3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSettings/_RemoveSection::Invoke(System.String,Valve.VR.EVRSettingsError&)
+extern "C"  void _RemoveSection_Invoke_m1423450968 (_RemoveSection_t1493649321 * __this, String_t* ___pchSection0, int32_t* ___peError1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSettings/_RemoveKeyInSection::Invoke(System.String,System.String,Valve.VR.EVRSettingsError&)
+extern "C"  void _RemoveKeyInSection_Invoke_m3069298772 (_RemoveKeyInSection_t1836506429 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, int32_t* ___peError2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSystem/_GetRecommendedRenderTargetSize::Invoke(System.UInt32&,System.UInt32&)
+extern "C"  void _GetRecommendedRenderTargetSize_Invoke_m966588502 (_GetRecommendedRenderTargetSize_t4195542627 * __this, uint32_t* ___pnWidth0, uint32_t* ___pnHeight1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.HmdMatrix44_t Valve.VR.IVRSystem/_GetProjectionMatrix::Invoke(Valve.VR.EVREye,System.Single,System.Single,Valve.VR.EGraphicsAPIConvention)
+extern "C"  HmdMatrix44_t_t664273159  _GetProjectionMatrix_Invoke_m1053398920 (_GetProjectionMatrix_t2621141914 * __this, int32_t ___eEye0, float ___fNearZ1, float ___fFarZ2, int32_t ___eProjType3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSystem/_GetProjectionRaw::Invoke(Valve.VR.EVREye,System.Single&,System.Single&,System.Single&,System.Single&)
+extern "C"  void _GetProjectionRaw_Invoke_m2123826138 (_GetProjectionRaw_t3426995441 * __this, int32_t ___eEye0, float* ___pfLeft1, float* ___pfRight2, float* ___pfTop3, float* ___pfBottom4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.DistortionCoordinates_t Valve.VR.IVRSystem/_ComputeDistortion::Invoke(Valve.VR.EVREye,System.Single,System.Single)
+extern "C"  DistortionCoordinates_t_t2253454723  _ComputeDistortion_Invoke_m2654930161 (_ComputeDistortion_t3576284924 * __this, int32_t ___eEye0, float ___fU1, float ___fV2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.HmdMatrix34_t Valve.VR.IVRSystem/_GetEyeToHeadTransform::Invoke(Valve.VR.EVREye)
+extern "C"  HmdMatrix34_t_t664273062  _GetEyeToHeadTransform_Invoke_m1466484146 (_GetEyeToHeadTransform_t3057184772 * __this, int32_t ___eEye0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRSystem/_GetTimeSinceLastVsync::Invoke(System.Single&,System.UInt64&)
+extern "C"  bool _GetTimeSinceLastVsync_Invoke_m919489365 (_GetTimeSinceLastVsync_t1215702688 * __this, float* ___pfSecondsSinceLastVsync0, uint64_t* ___pulFrameCounter1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 Valve.VR.IVRSystem/_GetD3D9AdapterIndex::Invoke()
+extern "C"  int32_t _GetD3D9AdapterIndex_Invoke_m719574642 (_GetD3D9AdapterIndex_t4234979703 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSystem/_GetDXGIOutputInfo::Invoke(System.Int32&)
+extern "C"  void _GetDXGIOutputInfo_Invoke_m1105593999 (_GetDXGIOutputInfo_t1897151767 * __this, int32_t* ___pnAdapterIndex0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRSystem/_IsDisplayOnDesktop::Invoke()
+extern "C"  bool _IsDisplayOnDesktop_Invoke_m2406991080 (_IsDisplayOnDesktop_t2551312917 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRSystem/_SetDisplayVisibility::Invoke(System.Boolean)
+extern "C"  bool _SetDisplayVisibility_Invoke_m3501241790 (_SetDisplayVisibility_t3986281708 * __this, bool ___bIsVisibleOnDesktop0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSystem/_GetDeviceToAbsoluteTrackingPose::Invoke(Valve.VR.ETrackingUniverseOrigin,System.Single,Valve.VR.TrackedDevicePose_t[],System.UInt32)
+extern "C"  void _GetDeviceToAbsoluteTrackingPose_Invoke_m1024276137 (_GetDeviceToAbsoluteTrackingPose_t1432625068 * __this, int32_t ___eOrigin0, float ___fPredictedSecondsToPhotonsFromNow1, TrackedDevicePose_tU5BU5D_t2897272049* ___pTrackedDevicePoseArray2, uint32_t ___unTrackedDevicePoseArrayCount3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSystem/_ResetSeatedZeroPose::Invoke()
+extern "C"  void _ResetSeatedZeroPose_Invoke_m1699166889 (_ResetSeatedZeroPose_t3471614486 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.HmdMatrix34_t Valve.VR.IVRSystem/_GetSeatedZeroPoseToStandingAbsoluteTrackingPose::Invoke()
+extern "C"  HmdMatrix34_t_t664273062  _GetSeatedZeroPoseToStandingAbsoluteTrackingPose_Invoke_m790511217 (_GetSeatedZeroPoseToStandingAbsoluteTrackingPose_t102610835 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.HmdMatrix34_t Valve.VR.IVRSystem/_GetRawZeroPoseToStandingAbsoluteTrackingPose::Invoke()
+extern "C"  HmdMatrix34_t_t664273062  _GetRawZeroPoseToStandingAbsoluteTrackingPose_Invoke_m1710766583 (_GetRawZeroPoseToStandingAbsoluteTrackingPose_t1986385273 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRSystem/_GetSortedTrackedDeviceIndicesOfClass::Invoke(Valve.VR.ETrackedDeviceClass,System.UInt32[],System.UInt32,System.UInt32)
+extern "C"  uint32_t _GetSortedTrackedDeviceIndicesOfClass_Invoke_m1972207342 (_GetSortedTrackedDeviceIndicesOfClass_t3492202929 * __this, int32_t ___eTrackedDeviceClass0, UInt32U5BU5D_t59386216* ___punTrackedDeviceIndexArray1, uint32_t ___unTrackedDeviceIndexArrayCount2, uint32_t ___unRelativeToTrackedDeviceIndex3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EDeviceActivityLevel Valve.VR.IVRSystem/_GetTrackedDeviceActivityLevel::Invoke(System.UInt32)
+extern "C"  int32_t _GetTrackedDeviceActivityLevel_Invoke_m1963616583 (_GetTrackedDeviceActivityLevel_t212130385 * __this, uint32_t ___unDeviceId0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSystem/_ApplyTransform::Invoke(Valve.VR.TrackedDevicePose_t&,Valve.VR.TrackedDevicePose_t&,Valve.VR.HmdMatrix34_t&)
+extern "C"  void _ApplyTransform_Invoke_m847725745 (_ApplyTransform_t1439808290 * __this, TrackedDevicePose_t_t1668551120 * ___pOutputPose0, TrackedDevicePose_t_t1668551120 * ___pTrackedDevicePose1, HmdMatrix34_t_t664273062 * ___pTransform2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRSystem/_GetTrackedDeviceIndexForControllerRole::Invoke(Valve.VR.ETrackedControllerRole)
+extern "C"  uint32_t _GetTrackedDeviceIndexForControllerRole_Invoke_m176976398 (_GetTrackedDeviceIndexForControllerRole_t3232960147 * __this, int32_t ___unDeviceType0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.ETrackedControllerRole Valve.VR.IVRSystem/_GetControllerRoleForTrackedDeviceIndex::Invoke(System.UInt32)
+extern "C"  int32_t _GetControllerRoleForTrackedDeviceIndex_Invoke_m3556644340 (_GetControllerRoleForTrackedDeviceIndex_t1728202579 * __this, uint32_t ___unDeviceIndex0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.ETrackedDeviceClass Valve.VR.IVRSystem/_GetTrackedDeviceClass::Invoke(System.UInt32)
+extern "C"  int32_t _GetTrackedDeviceClass_Invoke_m4065964317 (_GetTrackedDeviceClass_t1455580370 * __this, uint32_t ___unDeviceIndex0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRSystem/_IsTrackedDeviceConnected::Invoke(System.UInt32)
+extern "C"  bool _IsTrackedDeviceConnected_Invoke_m4201182380 (_IsTrackedDeviceConnected_t459208129 * __this, uint32_t ___unDeviceIndex0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRSystem/_GetBoolTrackedDeviceProperty::Invoke(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+extern "C"  bool _GetBoolTrackedDeviceProperty_Invoke_m3076620384 (_GetBoolTrackedDeviceProperty_t2236257287 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single Valve.VR.IVRSystem/_GetFloatTrackedDeviceProperty::Invoke(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+extern "C"  float _GetFloatTrackedDeviceProperty_Invoke_m1452065394 (_GetFloatTrackedDeviceProperty_t1406950913 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 Valve.VR.IVRSystem/_GetInt32TrackedDeviceProperty::Invoke(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+extern "C"  int32_t _GetInt32TrackedDeviceProperty_Invoke_m1839589496 (_GetInt32TrackedDeviceProperty_t2396289227 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt64 Valve.VR.IVRSystem/_GetUint64TrackedDeviceProperty::Invoke(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+extern "C"  uint64_t _GetUint64TrackedDeviceProperty_Invoke_m4096777656 (_GetUint64TrackedDeviceProperty_t537540785 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.HmdMatrix34_t Valve.VR.IVRSystem/_GetMatrix34TrackedDeviceProperty::Invoke(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+extern "C"  HmdMatrix34_t_t664273062  _GetMatrix34TrackedDeviceProperty_Invoke_m1637542869 (_GetMatrix34TrackedDeviceProperty_t3426445457 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRSystem/_GetStringTrackedDeviceProperty::Invoke(System.UInt32,Valve.VR.ETrackedDeviceProperty,System.Text.StringBuilder,System.UInt32,Valve.VR.ETrackedPropertyError&)
+extern "C"  uint32_t _GetStringTrackedDeviceProperty_Invoke_m2680724536 (_GetStringTrackedDeviceProperty_t87797800 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, StringBuilder_t1221177846 * ___pchValue2, uint32_t ___unBufferSize3, int32_t* ___pError4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.IntPtr Valve.VR.IVRSystem/_GetPropErrorNameFromEnum::Invoke(Valve.VR.ETrackedPropertyError)
+extern "C"  IntPtr_t _GetPropErrorNameFromEnum_Invoke_m17366593 (_GetPropErrorNameFromEnum_t1193025139 * __this, int32_t ___error0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRSystem/_PollNextEvent::Invoke(Valve.VR.VREvent_t&,System.UInt32)
+extern "C"  bool _PollNextEvent_Invoke_m3919902722 (_PollNextEvent_t3908295690 * __this, VREvent_t_t3405266389 * ___pEvent0, uint32_t ___uncbVREvent1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRSystem/_PollNextEventWithPose::Invoke(Valve.VR.ETrackingUniverseOrigin,Valve.VR.VREvent_t&,System.UInt32,Valve.VR.TrackedDevicePose_t&)
+extern "C"  bool _PollNextEventWithPose_Invoke_m913111222 (_PollNextEventWithPose_t2759121141 * __this, int32_t ___eOrigin0, VREvent_t_t3405266389 * ___pEvent1, uint32_t ___uncbVREvent2, TrackedDevicePose_t_t1668551120 * ___pTrackedDevicePose3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.IntPtr Valve.VR.IVRSystem/_GetEventTypeNameFromEnum::Invoke(Valve.VR.EVREventType)
+extern "C"  IntPtr_t _GetEventTypeNameFromEnum_Invoke_m1389034017 (_GetEventTypeNameFromEnum_t1950138544 * __this, int32_t ___eType0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.HiddenAreaMesh_t Valve.VR.IVRSystem/_GetHiddenAreaMesh::Invoke(Valve.VR.EVREye)
+extern "C"  HiddenAreaMesh_t_t3319190843  _GetHiddenAreaMesh_Invoke_m796412883 (_GetHiddenAreaMesh_t1813422502 * __this, int32_t ___eEye0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRSystem/_GetControllerState::Invoke(System.UInt32,Valve.VR.VRControllerState_t&)
+extern "C"  bool _GetControllerState_Invoke_m1248338520 (_GetControllerState_t3891090487 * __this, uint32_t ___unControllerDeviceIndex0, VRControllerState_t_t2504874220 * ___pControllerState1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRSystem/_GetControllerStateWithPose::Invoke(Valve.VR.ETrackingUniverseOrigin,System.UInt32,Valve.VR.VRControllerState_t&,Valve.VR.TrackedDevicePose_t&)
+extern "C"  bool _GetControllerStateWithPose_Invoke_m3615205982 (_GetControllerStateWithPose_t4079915850 * __this, int32_t ___eOrigin0, uint32_t ___unControllerDeviceIndex1, VRControllerState_t_t2504874220 * ___pControllerState2, TrackedDevicePose_t_t1668551120 * ___pTrackedDevicePose3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSystem/_TriggerHapticPulse::Invoke(System.UInt32,System.UInt32,System.Char)
+extern "C"  void _TriggerHapticPulse_Invoke_m1441651912 (_TriggerHapticPulse_t158863722 * __this, uint32_t ___unControllerDeviceIndex0, uint32_t ___unAxisId1, Il2CppChar ___usDurationMicroSec2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.IntPtr Valve.VR.IVRSystem/_GetButtonIdNameFromEnum::Invoke(Valve.VR.EVRButtonId)
+extern "C"  IntPtr_t _GetButtonIdNameFromEnum_Invoke_m1526772457 (_GetButtonIdNameFromEnum_t195009473 * __this, int32_t ___eButtonId0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.IntPtr Valve.VR.IVRSystem/_GetControllerAxisTypeNameFromEnum::Invoke(Valve.VR.EVRControllerAxisType)
+extern "C"  IntPtr_t _GetControllerAxisTypeNameFromEnum_Invoke_m866337217 (_GetControllerAxisTypeNameFromEnum_t3568402941 * __this, int32_t ___eAxisType0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRSystem/_CaptureInputFocus::Invoke()
+extern "C"  bool _CaptureInputFocus_Invoke_m2419560511 (_CaptureInputFocus_t2994096092 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSystem/_ReleaseInputFocus::Invoke()
+extern "C"  void _ReleaseInputFocus_Invoke_m915621514 (_ReleaseInputFocus_t580725753 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRSystem/_IsInputFocusCapturedByAnotherProcess::Invoke()
+extern "C"  bool _IsInputFocusCapturedByAnotherProcess_Invoke_m3070085970 (_IsInputFocusCapturedByAnotherProcess_t84136089 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRSystem/_DriverDebugRequest::Invoke(System.UInt32,System.String,System.String,System.UInt32)
+extern "C"  uint32_t _DriverDebugRequest_Invoke_m147586078 (_DriverDebugRequest_t4049208724 * __this, uint32_t ___unDeviceIndex0, String_t* ___pchRequest1, String_t* ___pchResponseBuffer2, uint32_t ___unResponseBufferSize3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRFirmwareError Valve.VR.IVRSystem/_PerformFirmwareUpdate::Invoke(System.UInt32)
+extern "C"  int32_t _PerformFirmwareUpdate_Invoke_m2901585111 (_PerformFirmwareUpdate_t673402879 * __this, uint32_t ___unDeviceIndex0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSystem/_AcknowledgeQuit_Exiting::Invoke()
+extern "C"  void _AcknowledgeQuit_Exiting_Invoke_m3634457859 (_AcknowledgeQuit_Exiting_t1109677234 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRSystem/_AcknowledgeQuit_UserPrompt::Invoke()
+extern "C"  void _AcknowledgeQuit_UserPrompt_Invoke_m1258190362 (_AcknowledgeQuit_UserPrompt_t90686541 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.IntPtr Valve.VR.IVRTrackedCamera/_GetCameraErrorNameFromEnum::Invoke(Valve.VR.EVRTrackedCameraError)
+extern "C"  IntPtr_t _GetCameraErrorNameFromEnum_Invoke_m541081109 (_GetCameraErrorNameFromEnum_t1661571561 * __this, int32_t ___eCameraError0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRTrackedCameraError Valve.VR.IVRTrackedCamera/_HasCamera::Invoke(System.UInt32,System.Boolean&)
+extern "C"  int32_t _HasCamera_Invoke_m224720948 (_HasCamera_t2352646991 * __this, uint32_t ___nDeviceIndex0, bool* ___pHasCamera1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRTrackedCameraError Valve.VR.IVRTrackedCamera/_GetCameraFrameSize::Invoke(System.UInt32,Valve.VR.EVRTrackedCameraFrameType,System.UInt32&,System.UInt32&,System.UInt32&)
+extern "C"  int32_t _GetCameraFrameSize_Invoke_m428221848 (_GetCameraFrameSize_t1973698407 * __this, uint32_t ___nDeviceIndex0, int32_t ___eFrameType1, uint32_t* ___pnWidth2, uint32_t* ___pnHeight3, uint32_t* ___pnFrameBufferSize4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRTrackedCameraError Valve.VR.IVRTrackedCamera/_GetCameraIntrinisics::Invoke(System.UInt32,Valve.VR.EVRTrackedCameraFrameType,Valve.VR.HmdVector2_t&,Valve.VR.HmdVector2_t&)
+extern "C"  int32_t _GetCameraIntrinisics_Invoke_m608914111 (_GetCameraIntrinisics_t1277836306 * __this, uint32_t ___nDeviceIndex0, int32_t ___eFrameType1, HmdVector2_t_t2255225135 * ___pFocalLength2, HmdVector2_t_t2255225135 * ___pCenter3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRTrackedCameraError Valve.VR.IVRTrackedCamera/_GetCameraProjection::Invoke(System.UInt32,Valve.VR.EVRTrackedCameraFrameType,System.Single,System.Single,Valve.VR.HmdMatrix44_t&)
+extern "C"  int32_t _GetCameraProjection_Invoke_m4039129286 (_GetCameraProjection_t2867851566 * __this, uint32_t ___nDeviceIndex0, int32_t ___eFrameType1, float ___flZNear2, float ___flZFar3, HmdMatrix44_t_t664273159 * ___pProjection4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRTrackedCameraError Valve.VR.IVRTrackedCamera/_AcquireVideoStreamingService::Invoke(System.UInt32,System.UInt64&)
+extern "C"  int32_t _AcquireVideoStreamingService_Invoke_m2576863563 (_AcquireVideoStreamingService_t1559262216 * __this, uint32_t ___nDeviceIndex0, uint64_t* ___pHandle1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRTrackedCameraError Valve.VR.IVRTrackedCamera/_ReleaseVideoStreamingService::Invoke(System.UInt64)
+extern "C"  int32_t _ReleaseVideoStreamingService_Invoke_m1302486742 (_ReleaseVideoStreamingService_t1473645041 * __this, uint64_t ___hTrackedCamera0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRTrackedCameraError Valve.VR.IVRTrackedCamera/_GetVideoStreamFrameBuffer::Invoke(System.UInt64,Valve.VR.EVRTrackedCameraFrameType,System.IntPtr,System.UInt32,Valve.VR.CameraVideoStreamFrameHeader_t&,System.UInt32)
+extern "C"  int32_t _GetVideoStreamFrameBuffer_Invoke_m789580985 (_GetVideoStreamFrameBuffer_t580267038 * __this, uint64_t ___hTrackedCamera0, int32_t ___eFrameType1, IntPtr_t ___pFrameBuffer2, uint32_t ___nFrameBufferSize3, CameraVideoStreamFrameHeader_t_t968213647 * ___pFrameHeader4, uint32_t ___nFrameHeaderSize5, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRTrackedCameraError Valve.VR.IVRTrackedCamera/_GetVideoStreamTextureSize::Invoke(System.UInt32,Valve.VR.EVRTrackedCameraFrameType,Valve.VR.VRTextureBounds_t&,System.UInt32&,System.UInt32&)
+extern "C"  int32_t _GetVideoStreamTextureSize_Invoke_m3667961335 (_GetVideoStreamTextureSize_t2646805685 * __this, uint32_t ___nDeviceIndex0, int32_t ___eFrameType1, VRTextureBounds_t_t1897807375 * ___pTextureBounds2, uint32_t* ___pnWidth3, uint32_t* ___pnHeight4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRTrackedCameraError Valve.VR.IVRTrackedCamera/_GetVideoStreamTextureD3D11::Invoke(System.UInt64,Valve.VR.EVRTrackedCameraFrameType,System.IntPtr,System.IntPtr&,Valve.VR.CameraVideoStreamFrameHeader_t&,System.UInt32)
+extern "C"  int32_t _GetVideoStreamTextureD3D11_Invoke_m4124070338 (_GetVideoStreamTextureD3D11_t1327133227 * __this, uint64_t ___hTrackedCamera0, int32_t ___eFrameType1, IntPtr_t ___pD3D11DeviceOrResource2, IntPtr_t* ___ppD3D11ShaderResourceView3, CameraVideoStreamFrameHeader_t_t968213647 * ___pFrameHeader4, uint32_t ___nFrameHeaderSize5, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRTrackedCameraError Valve.VR.IVRTrackedCamera/_GetVideoStreamTextureGL::Invoke(System.UInt64,Valve.VR.EVRTrackedCameraFrameType,System.UInt32&,Valve.VR.CameraVideoStreamFrameHeader_t&,System.UInt32)
+extern "C"  int32_t _GetVideoStreamTextureGL_Invoke_m265158750 (_GetVideoStreamTextureGL_t1897576655 * __this, uint64_t ___hTrackedCamera0, int32_t ___eFrameType1, uint32_t* ___pglTextureId2, CameraVideoStreamFrameHeader_t_t968213647 * ___pFrameHeader3, uint32_t ___nFrameHeaderSize4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRTrackedCameraError Valve.VR.IVRTrackedCamera/_ReleaseVideoStreamTextureGL::Invoke(System.UInt64,System.UInt32)
+extern "C"  int32_t _ReleaseVideoStreamTextureGL_Invoke_m198736129 (_ReleaseVideoStreamTextureGL_t3809094800 * __this, uint64_t ___hTrackedCamera0, uint32_t ___glTextureId1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void AR3DOFCameraManager::.ctor()
+extern "C"  void AR3DOFCameraManager__ctor_m2150279366 (AR3DOFCameraManager_t2152865733 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void AR3DOFCameraManager::Start()
+extern "C"  void AR3DOFCameraManager_Start_m3126774506 (AR3DOFCameraManager_t2152865733 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (AR3DOFCameraManager_Start_m3126774506_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARKitSessionConfiguration_t318899795  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Application_set_targetFrameRate_m2941880625(NULL /*static, unused*/, ((int32_t)60), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_t1130867170 * L_0 = UnityARSessionNativeInterface_GetARSessionNativeInterface_m3174488657(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_m_session_3(L_0);
+		Initobj (ARKitSessionConfiguration_t318899795_il2cpp_TypeInfo_var, (&V_0));
+		(&V_0)->set_alignment_0(0);
+		(&V_0)->set_getPointCloudData_1((bool)1);
+		(&V_0)->set_enableLightEstimation_2((bool)1);
+		UnityARSessionNativeInterface_t1130867170 * L_1 = __this->get_m_session_3();
+		ARKitSessionConfiguration_t318899795  L_2 = V_0;
+		NullCheck(L_1);
+		UnityARSessionNativeInterface_RunWithConfig_m2478060541(L_1, L_2, /*hidden argument*/NULL);
+		Camera_t189460977 * L_3 = __this->get_m_camera_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_4 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_3, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_4)
+		{
+			goto IL_005a;
+		}
+	}
+	{
+		Camera_t189460977 * L_5 = Camera_get_main_m475173995(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_m_camera_2(L_5);
+	}
+
+IL_005a:
+	{
+		return;
+	}
+}
+// System.Void AR3DOFCameraManager::SetCamera(UnityEngine.Camera)
+extern "C"  void AR3DOFCameraManager_SetCamera_m946604403 (AR3DOFCameraManager_t2152865733 * __this, Camera_t189460977 * ___newCamera0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (AR3DOFCameraManager_SetCamera_m946604403_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	UnityARVideo_t2351297253 * V_0 = NULL;
+	{
+		Camera_t189460977 * L_0 = __this->get_m_camera_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0040;
+		}
+	}
+	{
+		Camera_t189460977 * L_2 = __this->get_m_camera_2();
+		NullCheck(L_2);
+		GameObject_t1756533147 * L_3 = Component_get_gameObject_m3105766835(L_2, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		UnityARVideo_t2351297253 * L_4 = GameObject_GetComponent_TisUnityARVideo_t2351297253_m2230129522(L_3, /*hidden argument*/GameObject_GetComponent_TisUnityARVideo_t2351297253_m2230129522_MethodInfo_var);
+		V_0 = L_4;
+		UnityARVideo_t2351297253 * L_5 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_6 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_5, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_6)
+		{
+			goto IL_0040;
+		}
+	}
+	{
+		UnityARVideo_t2351297253 * L_7 = V_0;
+		NullCheck(L_7);
+		Material_t193706927 * L_8 = L_7->get_m_ClearMaterial_2();
+		__this->set_savedClearMaterial_4(L_8);
+		UnityARVideo_t2351297253 * L_9 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_Destroy_m4145850038(NULL /*static, unused*/, L_9, /*hidden argument*/NULL);
+	}
+
+IL_0040:
+	{
+		Camera_t189460977 * L_10 = ___newCamera0;
+		AR3DOFCameraManager_SetupNewCamera_m439842942(__this, L_10, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void AR3DOFCameraManager::SetupNewCamera(UnityEngine.Camera)
+extern "C"  void AR3DOFCameraManager_SetupNewCamera_m439842942 (AR3DOFCameraManager_t2152865733 * __this, Camera_t189460977 * ___newCamera0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (AR3DOFCameraManager_SetupNewCamera_m439842942_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	UnityARVideo_t2351297253 * V_0 = NULL;
+	{
+		Camera_t189460977 * L_0 = ___newCamera0;
+		__this->set_m_camera_2(L_0);
+		Camera_t189460977 * L_1 = __this->get_m_camera_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_2 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_1, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_0064;
+		}
+	}
+	{
+		Camera_t189460977 * L_3 = __this->get_m_camera_2();
+		NullCheck(L_3);
+		GameObject_t1756533147 * L_4 = Component_get_gameObject_m3105766835(L_3, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		UnityARVideo_t2351297253 * L_5 = GameObject_GetComponent_TisUnityARVideo_t2351297253_m2230129522(L_4, /*hidden argument*/GameObject_GetComponent_TisUnityARVideo_t2351297253_m2230129522_MethodInfo_var);
+		V_0 = L_5;
+		UnityARVideo_t2351297253 * L_6 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_7 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_6, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_7)
+		{
+			goto IL_0047;
+		}
+	}
+	{
+		UnityARVideo_t2351297253 * L_8 = V_0;
+		NullCheck(L_8);
+		Material_t193706927 * L_9 = L_8->get_m_ClearMaterial_2();
+		__this->set_savedClearMaterial_4(L_9);
+		UnityARVideo_t2351297253 * L_10 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_Destroy_m4145850038(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
+	}
+
+IL_0047:
+	{
+		Camera_t189460977 * L_11 = __this->get_m_camera_2();
+		NullCheck(L_11);
+		GameObject_t1756533147 * L_12 = Component_get_gameObject_m3105766835(L_11, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		UnityARVideo_t2351297253 * L_13 = GameObject_AddComponent_TisUnityARVideo_t2351297253_m1329128087(L_12, /*hidden argument*/GameObject_AddComponent_TisUnityARVideo_t2351297253_m1329128087_MethodInfo_var);
+		V_0 = L_13;
+		UnityARVideo_t2351297253 * L_14 = V_0;
+		Material_t193706927 * L_15 = __this->get_savedClearMaterial_4();
+		NullCheck(L_14);
+		L_14->set_m_ClearMaterial_2(L_15);
+	}
+
+IL_0064:
+	{
+		return;
+	}
+}
+// System.Void AR3DOFCameraManager::Update()
+extern "C"  void AR3DOFCameraManager_Update_m2410279539 (AR3DOFCameraManager_t2152865733 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (AR3DOFCameraManager_Update_m2410279539_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Matrix4x4_t2933234003  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Camera_t189460977 * L_0 = __this->get_m_camera_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_005f;
+		}
+	}
+	{
+		UnityARSessionNativeInterface_t1130867170 * L_2 = __this->get_m_session_3();
+		NullCheck(L_2);
+		Matrix4x4_t2933234003  L_3 = UnityARSessionNativeInterface_GetCameraPose_m3046824030(L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		Camera_t189460977 * L_4 = __this->get_m_camera_2();
+		NullCheck(L_4);
+		Transform_t3275118058 * L_5 = Component_get_transform_m2697483695(L_4, /*hidden argument*/NULL);
+		Matrix4x4_t2933234003  L_6 = V_0;
+		Vector3_t2243707580  L_7 = UnityARMatrixOps_GetPosition_m1153858439(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Transform_set_localPosition_m1026930133(L_5, L_7, /*hidden argument*/NULL);
+		Camera_t189460977 * L_8 = __this->get_m_camera_2();
+		NullCheck(L_8);
+		Transform_t3275118058 * L_9 = Component_get_transform_m2697483695(L_8, /*hidden argument*/NULL);
+		Matrix4x4_t2933234003  L_10 = V_0;
+		Quaternion_t4030073918  L_11 = UnityARMatrixOps_GetRotation_m1002641986(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		Transform_set_localRotation_m2055111962(L_9, L_11, /*hidden argument*/NULL);
+		Camera_t189460977 * L_12 = __this->get_m_camera_2();
+		UnityARSessionNativeInterface_t1130867170 * L_13 = __this->get_m_session_3();
+		NullCheck(L_13);
+		Matrix4x4_t2933234003  L_14 = UnityARSessionNativeInterface_GetCameraProjection_m3168017698(L_13, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		Camera_set_projectionMatrix_m2059836755(L_12, L_14, /*hidden argument*/NULL);
+	}
+
+IL_005f:
+	{
+		return;
+	}
+}
+// System.Void DontDestroyOnLoad::.ctor()
+extern "C"  void DontDestroyOnLoad__ctor_m986497013 (DontDestroyOnLoad_t3235789354 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void DontDestroyOnLoad::Start()
+extern "C"  void DontDestroyOnLoad_Start_m34112045 (DontDestroyOnLoad_t3235789354 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (DontDestroyOnLoad_Start_m34112045_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		GameObject_t1756533147 * L_0 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_DontDestroyOnLoad_m2330762974(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void DontDestroyOnLoad::Update()
+extern "C"  void DontDestroyOnLoad_Update_m780726090 (DontDestroyOnLoad_t3235789354 * __this, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Void PointCloudParticleExample::.ctor()
+extern "C"  void PointCloudParticleExample__ctor_m3827552698 (PointCloudParticleExample_t986756623 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_particleSize_4((1.0f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void PointCloudParticleExample::Start()
+extern "C"  void PointCloudParticleExample_Start_m1963896970 (PointCloudParticleExample_t986756623 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PointCloudParticleExample_Start_m1963896970_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IntPtr_t L_0;
+		L_0.set_m_value_0((void*)(void*)PointCloudParticleExample_ARFrameUpdated_m2750070680_MethodInfo_var);
+		ARFrameUpdate_t496507918 * L_1 = (ARFrameUpdate_t496507918 *)il2cpp_codegen_object_new(ARFrameUpdate_t496507918_il2cpp_TypeInfo_var);
+		ARFrameUpdate__ctor_m1399217559(L_1, __this, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_add_ARFrameUpdatedEvent_m2850773202(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		ParticleSystem_t3394631041 * L_2 = __this->get_pointCloudParticlePrefab_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		ParticleSystem_t3394631041 * L_3 = Object_Instantiate_TisParticleSystem_t3394631041_m4293040502(NULL /*static, unused*/, L_2, /*hidden argument*/Object_Instantiate_TisParticleSystem_t3394631041_m4293040502_MethodInfo_var);
+		__this->set_currentPS_7(L_3);
+		__this->set_frameUpdated_6((bool)0);
+		return;
+	}
+}
+// System.Void PointCloudParticleExample::ARFrameUpdated(UnityEngine.XR.iOS.UnityARCamera)
+extern "C"  void PointCloudParticleExample_ARFrameUpdated_m2750070680 (PointCloudParticleExample_t986756623 * __this, UnityARCamera_t4198559457  ___camera0, const MethodInfo* method)
+{
+	{
+		Vector3U5BU5D_t1172311765* L_0 = (&___camera0)->get_pointCloudData_4();
+		__this->set_m_PointCloudData_5(L_0);
+		__this->set_frameUpdated_6((bool)1);
+		return;
+	}
+}
+// System.Void PointCloudParticleExample::Update()
+extern "C"  void PointCloudParticleExample_Update_m2434219493 (PointCloudParticleExample_t986756623 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PointCloudParticleExample_Update_m2434219493_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	ParticleU5BU5D_t574222242* V_1 = NULL;
+	int32_t V_2 = 0;
+	Vector3_t2243707580  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	Vector3U5BU5D_t1172311765* V_4 = NULL;
+	int32_t V_5 = 0;
+	ParticleU5BU5D_t574222242* V_6 = NULL;
+	{
+		bool L_0 = __this->get_frameUpdated_6();
+		if (!L_0)
+		{
+			goto IL_00fa;
+		}
+	}
+	{
+		Vector3U5BU5D_t1172311765* L_1 = __this->get_m_PointCloudData_5();
+		if (!L_1)
+		{
+			goto IL_00cb;
+		}
+	}
+	{
+		Vector3U5BU5D_t1172311765* L_2 = __this->get_m_PointCloudData_5();
+		NullCheck(L_2);
+		if ((((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_2)->max_length))))) <= ((int32_t)0)))
+		{
+			goto IL_00cb;
+		}
+	}
+	{
+		Vector3U5BU5D_t1172311765* L_3 = __this->get_m_PointCloudData_5();
+		NullCheck(L_3);
+		int32_t L_4 = __this->get_maxPointsToShow_3();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		int32_t L_5 = Mathf_Min_m2906823867(NULL /*static, unused*/, (((int32_t)((int32_t)(((Il2CppArray *)L_3)->max_length)))), L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		V_1 = ((ParticleU5BU5D_t574222242*)SZArrayNew(ParticleU5BU5D_t574222242_il2cpp_TypeInfo_var, (uint32_t)L_6));
+		V_2 = 0;
+		Vector3U5BU5D_t1172311765* L_7 = __this->get_m_PointCloudData_5();
+		V_4 = L_7;
+		V_5 = 0;
+		goto IL_00ae;
+	}
+
+IL_0051:
+	{
+		Vector3U5BU5D_t1172311765* L_8 = V_4;
+		int32_t L_9 = V_5;
+		NullCheck(L_8);
+		V_3 = (*(Vector3_t2243707580 *)((L_8)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_9))));
+		ParticleU5BU5D_t574222242* L_10 = V_1;
+		int32_t L_11 = V_2;
+		NullCheck(L_10);
+		Vector3_t2243707580  L_12 = V_3;
+		Particle_set_position_m3680513126(((L_10)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_11))), L_12, /*hidden argument*/NULL);
+		ParticleU5BU5D_t574222242* L_13 = V_1;
+		int32_t L_14 = V_2;
+		NullCheck(L_13);
+		Color_t2020392075  L_15;
+		memset(&L_15, 0, sizeof(L_15));
+		Color__ctor_m3811852957(&L_15, (1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
+		Color32_t874517518  L_16 = Color32_op_Implicit_m624191464(NULL /*static, unused*/, L_15, /*hidden argument*/NULL);
+		Particle_set_startColor_m3936512348(((L_13)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_14))), L_16, /*hidden argument*/NULL);
+		ParticleU5BU5D_t574222242* L_17 = V_1;
+		int32_t L_18 = V_2;
+		NullCheck(L_17);
+		float L_19 = __this->get_particleSize_4();
+		Particle_set_startSize_m2457836830(((L_17)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_18))), L_19, /*hidden argument*/NULL);
+		int32_t L_20 = V_2;
+		V_2 = ((int32_t)((int32_t)L_20+(int32_t)1));
+		int32_t L_21 = V_5;
+		V_5 = ((int32_t)((int32_t)L_21+(int32_t)1));
+	}
+
+IL_00ae:
+	{
+		int32_t L_22 = V_5;
+		Vector3U5BU5D_t1172311765* L_23 = V_4;
+		NullCheck(L_23);
+		if ((((int32_t)L_22) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_23)->max_length)))))))
+		{
+			goto IL_0051;
+		}
+	}
+	{
+		ParticleSystem_t3394631041 * L_24 = __this->get_currentPS_7();
+		ParticleU5BU5D_t574222242* L_25 = V_1;
+		int32_t L_26 = V_0;
+		NullCheck(L_24);
+		ParticleSystem_SetParticles_m3035584975(L_24, L_25, L_26, /*hidden argument*/NULL);
+		goto IL_00f3;
+	}
+
+IL_00cb:
+	{
+		V_6 = ((ParticleU5BU5D_t574222242*)SZArrayNew(ParticleU5BU5D_t574222242_il2cpp_TypeInfo_var, (uint32_t)1));
+		ParticleU5BU5D_t574222242* L_27 = V_6;
+		NullCheck(L_27);
+		Particle_set_startSize_m2457836830(((L_27)->GetAddressAt(static_cast<il2cpp_array_size_t>(0))), (0.0f), /*hidden argument*/NULL);
+		ParticleSystem_t3394631041 * L_28 = __this->get_currentPS_7();
+		ParticleU5BU5D_t574222242* L_29 = V_6;
+		NullCheck(L_28);
+		ParticleSystem_SetParticles_m3035584975(L_28, L_29, 1, /*hidden argument*/NULL);
+	}
+
+IL_00f3:
+	{
+		__this->set_frameUpdated_6((bool)0);
+	}
+
+IL_00fa:
+	{
+		return;
+	}
+}
+// System.Void UnityARCameraManager::.ctor()
+extern "C"  void UnityARCameraManager__ctor_m3319264183 (UnityARCameraManager_t2138856896 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityARCameraManager::Start()
+extern "C"  void UnityARCameraManager_Start_m1258756459 (UnityARCameraManager_t2138856896 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARCameraManager_Start_m1258756459_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARKitWorldTackingSessionConfiguration_t1821734930  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Application_set_targetFrameRate_m2941880625(NULL /*static, unused*/, ((int32_t)60), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_t1130867170 * L_0 = UnityARSessionNativeInterface_GetARSessionNativeInterface_m3174488657(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_m_session_3(L_0);
+		Initobj (ARKitWorldTackingSessionConfiguration_t1821734930_il2cpp_TypeInfo_var, (&V_0));
+		(&V_0)->set_planeDetection_1(1);
+		(&V_0)->set_alignment_0(0);
+		(&V_0)->set_getPointCloudData_2((bool)1);
+		(&V_0)->set_enableLightEstimation_3((bool)1);
+		UnityARSessionNativeInterface_t1130867170 * L_1 = __this->get_m_session_3();
+		ARKitWorldTackingSessionConfiguration_t1821734930  L_2 = V_0;
+		NullCheck(L_1);
+		UnityARSessionNativeInterface_RunWithConfig_m3195925270(L_1, L_2, /*hidden argument*/NULL);
+		Camera_t189460977 * L_3 = __this->get_m_camera_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_4 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_3, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_4)
+		{
+			goto IL_0062;
+		}
+	}
+	{
+		Camera_t189460977 * L_5 = Camera_get_main_m475173995(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_m_camera_2(L_5);
+	}
+
+IL_0062:
+	{
+		return;
+	}
+}
+// System.Void UnityARCameraManager::SetCamera(UnityEngine.Camera)
+extern "C"  void UnityARCameraManager_SetCamera_m4250956606 (UnityARCameraManager_t2138856896 * __this, Camera_t189460977 * ___newCamera0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARCameraManager_SetCamera_m4250956606_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	UnityARVideo_t2351297253 * V_0 = NULL;
+	{
+		Camera_t189460977 * L_0 = __this->get_m_camera_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0040;
+		}
+	}
+	{
+		Camera_t189460977 * L_2 = __this->get_m_camera_2();
+		NullCheck(L_2);
+		GameObject_t1756533147 * L_3 = Component_get_gameObject_m3105766835(L_2, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		UnityARVideo_t2351297253 * L_4 = GameObject_GetComponent_TisUnityARVideo_t2351297253_m2230129522(L_3, /*hidden argument*/GameObject_GetComponent_TisUnityARVideo_t2351297253_m2230129522_MethodInfo_var);
+		V_0 = L_4;
+		UnityARVideo_t2351297253 * L_5 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_6 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_5, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_6)
+		{
+			goto IL_0040;
+		}
+	}
+	{
+		UnityARVideo_t2351297253 * L_7 = V_0;
+		NullCheck(L_7);
+		Material_t193706927 * L_8 = L_7->get_m_ClearMaterial_2();
+		__this->set_savedClearMaterial_4(L_8);
+		UnityARVideo_t2351297253 * L_9 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_Destroy_m4145850038(NULL /*static, unused*/, L_9, /*hidden argument*/NULL);
+	}
+
+IL_0040:
+	{
+		Camera_t189460977 * L_10 = ___newCamera0;
+		UnityARCameraManager_SetupNewCamera_m2358778511(__this, L_10, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityARCameraManager::SetupNewCamera(UnityEngine.Camera)
+extern "C"  void UnityARCameraManager_SetupNewCamera_m2358778511 (UnityARCameraManager_t2138856896 * __this, Camera_t189460977 * ___newCamera0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARCameraManager_SetupNewCamera_m2358778511_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	UnityARVideo_t2351297253 * V_0 = NULL;
+	{
+		Camera_t189460977 * L_0 = ___newCamera0;
+		__this->set_m_camera_2(L_0);
+		Camera_t189460977 * L_1 = __this->get_m_camera_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_2 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_1, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_0064;
+		}
+	}
+	{
+		Camera_t189460977 * L_3 = __this->get_m_camera_2();
+		NullCheck(L_3);
+		GameObject_t1756533147 * L_4 = Component_get_gameObject_m3105766835(L_3, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		UnityARVideo_t2351297253 * L_5 = GameObject_GetComponent_TisUnityARVideo_t2351297253_m2230129522(L_4, /*hidden argument*/GameObject_GetComponent_TisUnityARVideo_t2351297253_m2230129522_MethodInfo_var);
+		V_0 = L_5;
+		UnityARVideo_t2351297253 * L_6 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_7 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_6, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_7)
+		{
+			goto IL_0047;
+		}
+	}
+	{
+		UnityARVideo_t2351297253 * L_8 = V_0;
+		NullCheck(L_8);
+		Material_t193706927 * L_9 = L_8->get_m_ClearMaterial_2();
+		__this->set_savedClearMaterial_4(L_9);
+		UnityARVideo_t2351297253 * L_10 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_Destroy_m4145850038(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
+	}
+
+IL_0047:
+	{
+		Camera_t189460977 * L_11 = __this->get_m_camera_2();
+		NullCheck(L_11);
+		GameObject_t1756533147 * L_12 = Component_get_gameObject_m3105766835(L_11, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		UnityARVideo_t2351297253 * L_13 = GameObject_AddComponent_TisUnityARVideo_t2351297253_m1329128087(L_12, /*hidden argument*/GameObject_AddComponent_TisUnityARVideo_t2351297253_m1329128087_MethodInfo_var);
+		V_0 = L_13;
+		UnityARVideo_t2351297253 * L_14 = V_0;
+		Material_t193706927 * L_15 = __this->get_savedClearMaterial_4();
+		NullCheck(L_14);
+		L_14->set_m_ClearMaterial_2(L_15);
+	}
+
+IL_0064:
+	{
+		return;
+	}
+}
+// System.Void UnityARCameraManager::Update()
+extern "C"  void UnityARCameraManager_Update_m4265169368 (UnityARCameraManager_t2138856896 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARCameraManager_Update_m4265169368_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Matrix4x4_t2933234003  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Camera_t189460977 * L_0 = __this->get_m_camera_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_005f;
+		}
+	}
+	{
+		UnityARSessionNativeInterface_t1130867170 * L_2 = __this->get_m_session_3();
+		NullCheck(L_2);
+		Matrix4x4_t2933234003  L_3 = UnityARSessionNativeInterface_GetCameraPose_m3046824030(L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		Camera_t189460977 * L_4 = __this->get_m_camera_2();
+		NullCheck(L_4);
+		Transform_t3275118058 * L_5 = Component_get_transform_m2697483695(L_4, /*hidden argument*/NULL);
+		Matrix4x4_t2933234003  L_6 = V_0;
+		Vector3_t2243707580  L_7 = UnityARMatrixOps_GetPosition_m1153858439(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Transform_set_localPosition_m1026930133(L_5, L_7, /*hidden argument*/NULL);
+		Camera_t189460977 * L_8 = __this->get_m_camera_2();
+		NullCheck(L_8);
+		Transform_t3275118058 * L_9 = Component_get_transform_m2697483695(L_8, /*hidden argument*/NULL);
+		Matrix4x4_t2933234003  L_10 = V_0;
+		Quaternion_t4030073918  L_11 = UnityARMatrixOps_GetRotation_m1002641986(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		Transform_set_localRotation_m2055111962(L_9, L_11, /*hidden argument*/NULL);
+		Camera_t189460977 * L_12 = __this->get_m_camera_2();
+		UnityARSessionNativeInterface_t1130867170 * L_13 = __this->get_m_session_3();
+		NullCheck(L_13);
+		Matrix4x4_t2933234003  L_14 = UnityARSessionNativeInterface_GetCameraProjection_m3168017698(L_13, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		Camera_set_projectionMatrix_m2059836755(L_12, L_14, /*hidden argument*/NULL);
+	}
+
+IL_005f:
+	{
+		return;
+	}
+}
+// System.Void UnityARCameraNearFar::.ctor()
+extern "C"  void UnityARCameraNearFar__ctor_m3044833845 (UnityARCameraNearFar_t519802600 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityARCameraNearFar::Start()
+extern "C"  void UnityARCameraNearFar_Start_m3303427069 (UnityARCameraNearFar_t519802600 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARCameraNearFar_Start_m3303427069_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Camera_t189460977 * L_0 = Component_GetComponent_TisCamera_t189460977_m3276577584(__this, /*hidden argument*/Component_GetComponent_TisCamera_t189460977_m3276577584_MethodInfo_var);
+		__this->set_attachedCamera_2(L_0);
+		UnityARCameraNearFar_UpdateCameraClipPlanes_m887086422(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityARCameraNearFar::UpdateCameraClipPlanes()
+extern "C"  void UnityARCameraNearFar_UpdateCameraClipPlanes_m887086422 (UnityARCameraNearFar_t519802600 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARCameraNearFar_UpdateCameraClipPlanes_m887086422_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Camera_t189460977 * L_0 = __this->get_attachedCamera_2();
+		NullCheck(L_0);
+		float L_1 = Camera_get_nearClipPlane_m3536967407(L_0, /*hidden argument*/NULL);
+		__this->set_currentNearZ_3(L_1);
+		Camera_t189460977 * L_2 = __this->get_attachedCamera_2();
+		NullCheck(L_2);
+		float L_3 = Camera_get_farClipPlane_m3137713566(L_2, /*hidden argument*/NULL);
+		__this->set_currentFarZ_4(L_3);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_t1130867170 * L_4 = UnityARSessionNativeInterface_GetARSessionNativeInterface_m3174488657(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_5 = __this->get_currentNearZ_3();
+		float L_6 = __this->get_currentFarZ_4();
+		NullCheck(L_4);
+		UnityARSessionNativeInterface_SetCameraClipPlanes_m149558303(L_4, L_5, L_6, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityARCameraNearFar::Update()
+extern "C"  void UnityARCameraNearFar_Update_m1832280956 (UnityARCameraNearFar_t519802600 * __this, const MethodInfo* method)
+{
+	{
+		float L_0 = __this->get_currentNearZ_3();
+		Camera_t189460977 * L_1 = __this->get_attachedCamera_2();
+		NullCheck(L_1);
+		float L_2 = Camera_get_nearClipPlane_m3536967407(L_1, /*hidden argument*/NULL);
+		if ((!(((float)L_0) == ((float)L_2))))
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		float L_3 = __this->get_currentFarZ_4();
+		Camera_t189460977 * L_4 = __this->get_attachedCamera_2();
+		NullCheck(L_4);
+		float L_5 = Camera_get_farClipPlane_m3137713566(L_4, /*hidden argument*/NULL);
+		if ((((float)L_3) == ((float)L_5)))
+		{
+			goto IL_0032;
+		}
+	}
+
+IL_002c:
+	{
+		UnityARCameraNearFar_UpdateCameraClipPlanes_m887086422(__this, /*hidden argument*/NULL);
+	}
+
+IL_0032:
+	{
+		return;
+	}
+}
+// Conversion methods for marshalling of: UnityEngine.XR.iOS.ARAnchor
+extern "C" void ARAnchor_t1161832412_marshal_pinvoke(const ARAnchor_t1161832412& unmarshaled, ARAnchor_t1161832412_marshaled_pinvoke& marshaled)
+{
+	marshaled.___identifier_0 = il2cpp_codegen_marshal_string(unmarshaled.get_identifier_0());
+	marshaled.___transform_1 = unmarshaled.get_transform_1();
+}
+extern "C" void ARAnchor_t1161832412_marshal_pinvoke_back(const ARAnchor_t1161832412_marshaled_pinvoke& marshaled, ARAnchor_t1161832412& unmarshaled)
+{
+	unmarshaled.set_identifier_0(il2cpp_codegen_marshal_string_result(marshaled.___identifier_0));
+	Matrix4x4_t2933234003  unmarshaled_transform_temp_1;
+	memset(&unmarshaled_transform_temp_1, 0, sizeof(unmarshaled_transform_temp_1));
+	unmarshaled_transform_temp_1 = marshaled.___transform_1;
+	unmarshaled.set_transform_1(unmarshaled_transform_temp_1);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.XR.iOS.ARAnchor
+extern "C" void ARAnchor_t1161832412_marshal_pinvoke_cleanup(ARAnchor_t1161832412_marshaled_pinvoke& marshaled)
+{
+	il2cpp_codegen_marshal_free(marshaled.___identifier_0);
+	marshaled.___identifier_0 = NULL;
+}
+// Conversion methods for marshalling of: UnityEngine.XR.iOS.ARAnchor
+extern "C" void ARAnchor_t1161832412_marshal_com(const ARAnchor_t1161832412& unmarshaled, ARAnchor_t1161832412_marshaled_com& marshaled)
+{
+	marshaled.___identifier_0 = il2cpp_codegen_marshal_bstring(unmarshaled.get_identifier_0());
+	marshaled.___transform_1 = unmarshaled.get_transform_1();
+}
+extern "C" void ARAnchor_t1161832412_marshal_com_back(const ARAnchor_t1161832412_marshaled_com& marshaled, ARAnchor_t1161832412& unmarshaled)
+{
+	unmarshaled.set_identifier_0(il2cpp_codegen_marshal_bstring_result(marshaled.___identifier_0));
+	Matrix4x4_t2933234003  unmarshaled_transform_temp_1;
+	memset(&unmarshaled_transform_temp_1, 0, sizeof(unmarshaled_transform_temp_1));
+	unmarshaled_transform_temp_1 = marshaled.___transform_1;
+	unmarshaled.set_transform_1(unmarshaled_transform_temp_1);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.XR.iOS.ARAnchor
+extern "C" void ARAnchor_t1161832412_marshal_com_cleanup(ARAnchor_t1161832412_marshaled_com& marshaled)
+{
+	il2cpp_codegen_marshal_free_bstring(marshaled.___identifier_0);
+	marshaled.___identifier_0 = NULL;
+}
+// Conversion methods for marshalling of: UnityEngine.XR.iOS.ARHitTestResult
+extern "C" void ARHitTestResult_t3275513025_marshal_pinvoke(const ARHitTestResult_t3275513025& unmarshaled, ARHitTestResult_t3275513025_marshaled_pinvoke& marshaled)
+{
+	marshaled.___type_0 = unmarshaled.get_type_0();
+	marshaled.___distance_1 = unmarshaled.get_distance_1();
+	marshaled.___localTransform_2 = unmarshaled.get_localTransform_2();
+	marshaled.___worldTransform_3 = unmarshaled.get_worldTransform_3();
+	marshaled.___anchorIdentifier_4 = il2cpp_codegen_marshal_string(unmarshaled.get_anchorIdentifier_4());
+	marshaled.___isValid_5 = static_cast<int32_t>(unmarshaled.get_isValid_5());
+}
+extern "C" void ARHitTestResult_t3275513025_marshal_pinvoke_back(const ARHitTestResult_t3275513025_marshaled_pinvoke& marshaled, ARHitTestResult_t3275513025& unmarshaled)
+{
+	int64_t unmarshaled_type_temp_0 = 0;
+	unmarshaled_type_temp_0 = marshaled.___type_0;
+	unmarshaled.set_type_0(unmarshaled_type_temp_0);
+	double unmarshaled_distance_temp_1 = 0.0;
+	unmarshaled_distance_temp_1 = marshaled.___distance_1;
+	unmarshaled.set_distance_1(unmarshaled_distance_temp_1);
+	Matrix4x4_t2933234003  unmarshaled_localTransform_temp_2;
+	memset(&unmarshaled_localTransform_temp_2, 0, sizeof(unmarshaled_localTransform_temp_2));
+	unmarshaled_localTransform_temp_2 = marshaled.___localTransform_2;
+	unmarshaled.set_localTransform_2(unmarshaled_localTransform_temp_2);
+	Matrix4x4_t2933234003  unmarshaled_worldTransform_temp_3;
+	memset(&unmarshaled_worldTransform_temp_3, 0, sizeof(unmarshaled_worldTransform_temp_3));
+	unmarshaled_worldTransform_temp_3 = marshaled.___worldTransform_3;
+	unmarshaled.set_worldTransform_3(unmarshaled_worldTransform_temp_3);
+	unmarshaled.set_anchorIdentifier_4(il2cpp_codegen_marshal_string_result(marshaled.___anchorIdentifier_4));
+	bool unmarshaled_isValid_temp_5 = false;
+	unmarshaled_isValid_temp_5 = static_cast<bool>(marshaled.___isValid_5);
+	unmarshaled.set_isValid_5(unmarshaled_isValid_temp_5);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.XR.iOS.ARHitTestResult
+extern "C" void ARHitTestResult_t3275513025_marshal_pinvoke_cleanup(ARHitTestResult_t3275513025_marshaled_pinvoke& marshaled)
+{
+	il2cpp_codegen_marshal_free(marshaled.___anchorIdentifier_4);
+	marshaled.___anchorIdentifier_4 = NULL;
+}
+// Conversion methods for marshalling of: UnityEngine.XR.iOS.ARHitTestResult
+extern "C" void ARHitTestResult_t3275513025_marshal_com(const ARHitTestResult_t3275513025& unmarshaled, ARHitTestResult_t3275513025_marshaled_com& marshaled)
+{
+	marshaled.___type_0 = unmarshaled.get_type_0();
+	marshaled.___distance_1 = unmarshaled.get_distance_1();
+	marshaled.___localTransform_2 = unmarshaled.get_localTransform_2();
+	marshaled.___worldTransform_3 = unmarshaled.get_worldTransform_3();
+	marshaled.___anchorIdentifier_4 = il2cpp_codegen_marshal_bstring(unmarshaled.get_anchorIdentifier_4());
+	marshaled.___isValid_5 = static_cast<int32_t>(unmarshaled.get_isValid_5());
+}
+extern "C" void ARHitTestResult_t3275513025_marshal_com_back(const ARHitTestResult_t3275513025_marshaled_com& marshaled, ARHitTestResult_t3275513025& unmarshaled)
+{
+	int64_t unmarshaled_type_temp_0 = 0;
+	unmarshaled_type_temp_0 = marshaled.___type_0;
+	unmarshaled.set_type_0(unmarshaled_type_temp_0);
+	double unmarshaled_distance_temp_1 = 0.0;
+	unmarshaled_distance_temp_1 = marshaled.___distance_1;
+	unmarshaled.set_distance_1(unmarshaled_distance_temp_1);
+	Matrix4x4_t2933234003  unmarshaled_localTransform_temp_2;
+	memset(&unmarshaled_localTransform_temp_2, 0, sizeof(unmarshaled_localTransform_temp_2));
+	unmarshaled_localTransform_temp_2 = marshaled.___localTransform_2;
+	unmarshaled.set_localTransform_2(unmarshaled_localTransform_temp_2);
+	Matrix4x4_t2933234003  unmarshaled_worldTransform_temp_3;
+	memset(&unmarshaled_worldTransform_temp_3, 0, sizeof(unmarshaled_worldTransform_temp_3));
+	unmarshaled_worldTransform_temp_3 = marshaled.___worldTransform_3;
+	unmarshaled.set_worldTransform_3(unmarshaled_worldTransform_temp_3);
+	unmarshaled.set_anchorIdentifier_4(il2cpp_codegen_marshal_bstring_result(marshaled.___anchorIdentifier_4));
+	bool unmarshaled_isValid_temp_5 = false;
+	unmarshaled_isValid_temp_5 = static_cast<bool>(marshaled.___isValid_5);
+	unmarshaled.set_isValid_5(unmarshaled_isValid_temp_5);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.XR.iOS.ARHitTestResult
+extern "C" void ARHitTestResult_t3275513025_marshal_com_cleanup(ARHitTestResult_t3275513025_marshaled_com& marshaled)
+{
+	il2cpp_codegen_marshal_free_bstring(marshaled.___anchorIdentifier_4);
+	marshaled.___anchorIdentifier_4 = NULL;
+}
+// Conversion methods for marshalling of: UnityEngine.XR.iOS.ARKitSessionConfiguration
+extern "C" void ARKitSessionConfiguration_t318899795_marshal_pinvoke(const ARKitSessionConfiguration_t318899795& unmarshaled, ARKitSessionConfiguration_t318899795_marshaled_pinvoke& marshaled)
+{
+	marshaled.___alignment_0 = unmarshaled.get_alignment_0();
+	marshaled.___getPointCloudData_1 = static_cast<int32_t>(unmarshaled.get_getPointCloudData_1());
+	marshaled.___enableLightEstimation_2 = static_cast<int32_t>(unmarshaled.get_enableLightEstimation_2());
+}
+extern "C" void ARKitSessionConfiguration_t318899795_marshal_pinvoke_back(const ARKitSessionConfiguration_t318899795_marshaled_pinvoke& marshaled, ARKitSessionConfiguration_t318899795& unmarshaled)
+{
+	int32_t unmarshaled_alignment_temp_0 = 0;
+	unmarshaled_alignment_temp_0 = marshaled.___alignment_0;
+	unmarshaled.set_alignment_0(unmarshaled_alignment_temp_0);
+	bool unmarshaled_getPointCloudData_temp_1 = false;
+	unmarshaled_getPointCloudData_temp_1 = static_cast<bool>(marshaled.___getPointCloudData_1);
+	unmarshaled.set_getPointCloudData_1(unmarshaled_getPointCloudData_temp_1);
+	bool unmarshaled_enableLightEstimation_temp_2 = false;
+	unmarshaled_enableLightEstimation_temp_2 = static_cast<bool>(marshaled.___enableLightEstimation_2);
+	unmarshaled.set_enableLightEstimation_2(unmarshaled_enableLightEstimation_temp_2);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.XR.iOS.ARKitSessionConfiguration
+extern "C" void ARKitSessionConfiguration_t318899795_marshal_pinvoke_cleanup(ARKitSessionConfiguration_t318899795_marshaled_pinvoke& marshaled)
+{
+}
+// Conversion methods for marshalling of: UnityEngine.XR.iOS.ARKitSessionConfiguration
+extern "C" void ARKitSessionConfiguration_t318899795_marshal_com(const ARKitSessionConfiguration_t318899795& unmarshaled, ARKitSessionConfiguration_t318899795_marshaled_com& marshaled)
+{
+	marshaled.___alignment_0 = unmarshaled.get_alignment_0();
+	marshaled.___getPointCloudData_1 = static_cast<int32_t>(unmarshaled.get_getPointCloudData_1());
+	marshaled.___enableLightEstimation_2 = static_cast<int32_t>(unmarshaled.get_enableLightEstimation_2());
+}
+extern "C" void ARKitSessionConfiguration_t318899795_marshal_com_back(const ARKitSessionConfiguration_t318899795_marshaled_com& marshaled, ARKitSessionConfiguration_t318899795& unmarshaled)
+{
+	int32_t unmarshaled_alignment_temp_0 = 0;
+	unmarshaled_alignment_temp_0 = marshaled.___alignment_0;
+	unmarshaled.set_alignment_0(unmarshaled_alignment_temp_0);
+	bool unmarshaled_getPointCloudData_temp_1 = false;
+	unmarshaled_getPointCloudData_temp_1 = static_cast<bool>(marshaled.___getPointCloudData_1);
+	unmarshaled.set_getPointCloudData_1(unmarshaled_getPointCloudData_temp_1);
+	bool unmarshaled_enableLightEstimation_temp_2 = false;
+	unmarshaled_enableLightEstimation_temp_2 = static_cast<bool>(marshaled.___enableLightEstimation_2);
+	unmarshaled.set_enableLightEstimation_2(unmarshaled_enableLightEstimation_temp_2);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.XR.iOS.ARKitSessionConfiguration
+extern "C" void ARKitSessionConfiguration_t318899795_marshal_com_cleanup(ARKitSessionConfiguration_t318899795_marshaled_com& marshaled)
+{
+}
+// System.Void UnityEngine.XR.iOS.ARKitSessionConfiguration::.ctor(UnityEngine.XR.iOS.UnityARAlignment,System.Boolean,System.Boolean)
+extern "C"  void ARKitSessionConfiguration__ctor_m3221520625 (ARKitSessionConfiguration_t318899795 * __this, int32_t ___alignment0, bool ___getPointCloudData1, bool ___enableLightEstimation2, const MethodInfo* method)
+{
+	{
+		bool L_0 = ___getPointCloudData1;
+		__this->set_getPointCloudData_1(L_0);
+		int32_t L_1 = ___alignment0;
+		__this->set_alignment_0(L_1);
+		bool L_2 = ___enableLightEstimation2;
+		__this->set_enableLightEstimation_2(L_2);
+		return;
+	}
+}
+extern "C"  void ARKitSessionConfiguration__ctor_m3221520625_AdjustorThunk (Il2CppObject * __this, int32_t ___alignment0, bool ___getPointCloudData1, bool ___enableLightEstimation2, const MethodInfo* method)
+{
+	ARKitSessionConfiguration_t318899795 * _thisAdjusted = reinterpret_cast<ARKitSessionConfiguration_t318899795 *>(__this + 1);
+	ARKitSessionConfiguration__ctor_m3221520625(_thisAdjusted, ___alignment0, ___getPointCloudData1, ___enableLightEstimation2, method);
+}
+// System.Boolean UnityEngine.XR.iOS.ARKitSessionConfiguration::get_IsSupported()
+extern "C"  bool ARKitSessionConfiguration_get_IsSupported_m919877731 (ARKitSessionConfiguration_t318899795 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = ARKitSessionConfiguration_IsARKitSessionConfigurationSupported_m3959947945(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return L_0;
+	}
+}
+extern "C"  bool ARKitSessionConfiguration_get_IsSupported_m919877731_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	ARKitSessionConfiguration_t318899795 * _thisAdjusted = reinterpret_cast<ARKitSessionConfiguration_t318899795 *>(__this + 1);
+	return ARKitSessionConfiguration_get_IsSupported_m919877731(_thisAdjusted, method);
+}
+// System.Void UnityEngine.XR.iOS.ARKitSessionConfiguration::set_IsSupported(System.Boolean)
+extern "C"  void ARKitSessionConfiguration_set_IsSupported_m138323976 (ARKitSessionConfiguration_t318899795 * __this, bool ___value0, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+extern "C"  void ARKitSessionConfiguration_set_IsSupported_m138323976_AdjustorThunk (Il2CppObject * __this, bool ___value0, const MethodInfo* method)
+{
+	ARKitSessionConfiguration_t318899795 * _thisAdjusted = reinterpret_cast<ARKitSessionConfiguration_t318899795 *>(__this + 1);
+	ARKitSessionConfiguration_set_IsSupported_m138323976(_thisAdjusted, ___value0, method);
+}
+extern "C" int32_t DEFAULT_CALL IsARKitSessionConfigurationSupported();
+// System.Boolean UnityEngine.XR.iOS.ARKitSessionConfiguration::IsARKitSessionConfigurationSupported()
+extern "C"  bool ARKitSessionConfiguration_IsARKitSessionConfigurationSupported_m3959947945 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(IsARKitSessionConfigurationSupported)();
+
+	return static_cast<bool>(returnValue);
+}
+// Conversion methods for marshalling of: UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration
+extern "C" void ARKitWorldTackingSessionConfiguration_t1821734930_marshal_pinvoke(const ARKitWorldTackingSessionConfiguration_t1821734930& unmarshaled, ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_pinvoke& marshaled)
+{
+	marshaled.___alignment_0 = unmarshaled.get_alignment_0();
+	marshaled.___planeDetection_1 = unmarshaled.get_planeDetection_1();
+	marshaled.___getPointCloudData_2 = static_cast<int32_t>(unmarshaled.get_getPointCloudData_2());
+	marshaled.___enableLightEstimation_3 = static_cast<int32_t>(unmarshaled.get_enableLightEstimation_3());
+}
+extern "C" void ARKitWorldTackingSessionConfiguration_t1821734930_marshal_pinvoke_back(const ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_pinvoke& marshaled, ARKitWorldTackingSessionConfiguration_t1821734930& unmarshaled)
+{
+	int32_t unmarshaled_alignment_temp_0 = 0;
+	unmarshaled_alignment_temp_0 = marshaled.___alignment_0;
+	unmarshaled.set_alignment_0(unmarshaled_alignment_temp_0);
+	int32_t unmarshaled_planeDetection_temp_1 = 0;
+	unmarshaled_planeDetection_temp_1 = marshaled.___planeDetection_1;
+	unmarshaled.set_planeDetection_1(unmarshaled_planeDetection_temp_1);
+	bool unmarshaled_getPointCloudData_temp_2 = false;
+	unmarshaled_getPointCloudData_temp_2 = static_cast<bool>(marshaled.___getPointCloudData_2);
+	unmarshaled.set_getPointCloudData_2(unmarshaled_getPointCloudData_temp_2);
+	bool unmarshaled_enableLightEstimation_temp_3 = false;
+	unmarshaled_enableLightEstimation_temp_3 = static_cast<bool>(marshaled.___enableLightEstimation_3);
+	unmarshaled.set_enableLightEstimation_3(unmarshaled_enableLightEstimation_temp_3);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration
+extern "C" void ARKitWorldTackingSessionConfiguration_t1821734930_marshal_pinvoke_cleanup(ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_pinvoke& marshaled)
+{
+}
+// Conversion methods for marshalling of: UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration
+extern "C" void ARKitWorldTackingSessionConfiguration_t1821734930_marshal_com(const ARKitWorldTackingSessionConfiguration_t1821734930& unmarshaled, ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_com& marshaled)
+{
+	marshaled.___alignment_0 = unmarshaled.get_alignment_0();
+	marshaled.___planeDetection_1 = unmarshaled.get_planeDetection_1();
+	marshaled.___getPointCloudData_2 = static_cast<int32_t>(unmarshaled.get_getPointCloudData_2());
+	marshaled.___enableLightEstimation_3 = static_cast<int32_t>(unmarshaled.get_enableLightEstimation_3());
+}
+extern "C" void ARKitWorldTackingSessionConfiguration_t1821734930_marshal_com_back(const ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_com& marshaled, ARKitWorldTackingSessionConfiguration_t1821734930& unmarshaled)
+{
+	int32_t unmarshaled_alignment_temp_0 = 0;
+	unmarshaled_alignment_temp_0 = marshaled.___alignment_0;
+	unmarshaled.set_alignment_0(unmarshaled_alignment_temp_0);
+	int32_t unmarshaled_planeDetection_temp_1 = 0;
+	unmarshaled_planeDetection_temp_1 = marshaled.___planeDetection_1;
+	unmarshaled.set_planeDetection_1(unmarshaled_planeDetection_temp_1);
+	bool unmarshaled_getPointCloudData_temp_2 = false;
+	unmarshaled_getPointCloudData_temp_2 = static_cast<bool>(marshaled.___getPointCloudData_2);
+	unmarshaled.set_getPointCloudData_2(unmarshaled_getPointCloudData_temp_2);
+	bool unmarshaled_enableLightEstimation_temp_3 = false;
+	unmarshaled_enableLightEstimation_temp_3 = static_cast<bool>(marshaled.___enableLightEstimation_3);
+	unmarshaled.set_enableLightEstimation_3(unmarshaled_enableLightEstimation_temp_3);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration
+extern "C" void ARKitWorldTackingSessionConfiguration_t1821734930_marshal_com_cleanup(ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_com& marshaled)
+{
+}
+// System.Void UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration::.ctor(UnityEngine.XR.iOS.UnityARAlignment,UnityEngine.XR.iOS.UnityARPlaneDetection,System.Boolean,System.Boolean)
+extern "C"  void ARKitWorldTackingSessionConfiguration__ctor_m4281543687 (ARKitWorldTackingSessionConfiguration_t1821734930 * __this, int32_t ___alignment0, int32_t ___planeDetection1, bool ___getPointCloudData2, bool ___enableLightEstimation3, const MethodInfo* method)
+{
+	{
+		bool L_0 = ___getPointCloudData2;
+		__this->set_getPointCloudData_2(L_0);
+		int32_t L_1 = ___alignment0;
+		__this->set_alignment_0(L_1);
+		int32_t L_2 = ___planeDetection1;
+		__this->set_planeDetection_1(L_2);
+		bool L_3 = ___enableLightEstimation3;
+		__this->set_enableLightEstimation_3(L_3);
+		return;
+	}
+}
+extern "C"  void ARKitWorldTackingSessionConfiguration__ctor_m4281543687_AdjustorThunk (Il2CppObject * __this, int32_t ___alignment0, int32_t ___planeDetection1, bool ___getPointCloudData2, bool ___enableLightEstimation3, const MethodInfo* method)
+{
+	ARKitWorldTackingSessionConfiguration_t1821734930 * _thisAdjusted = reinterpret_cast<ARKitWorldTackingSessionConfiguration_t1821734930 *>(__this + 1);
+	ARKitWorldTackingSessionConfiguration__ctor_m4281543687(_thisAdjusted, ___alignment0, ___planeDetection1, ___getPointCloudData2, ___enableLightEstimation3, method);
+}
+// System.Boolean UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration::get_IsSupported()
+extern "C"  bool ARKitWorldTackingSessionConfiguration_get_IsSupported_m3789991538 (ARKitWorldTackingSessionConfiguration_t1821734930 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = ARKitWorldTackingSessionConfiguration_IsARKitWorldTrackingSessionConfigurationSupported_m34846127(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return L_0;
+	}
+}
+extern "C"  bool ARKitWorldTackingSessionConfiguration_get_IsSupported_m3789991538_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	ARKitWorldTackingSessionConfiguration_t1821734930 * _thisAdjusted = reinterpret_cast<ARKitWorldTackingSessionConfiguration_t1821734930 *>(__this + 1);
+	return ARKitWorldTackingSessionConfiguration_get_IsSupported_m3789991538(_thisAdjusted, method);
+}
+// System.Void UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration::set_IsSupported(System.Boolean)
+extern "C"  void ARKitWorldTackingSessionConfiguration_set_IsSupported_m46319519 (ARKitWorldTackingSessionConfiguration_t1821734930 * __this, bool ___value0, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+extern "C"  void ARKitWorldTackingSessionConfiguration_set_IsSupported_m46319519_AdjustorThunk (Il2CppObject * __this, bool ___value0, const MethodInfo* method)
+{
+	ARKitWorldTackingSessionConfiguration_t1821734930 * _thisAdjusted = reinterpret_cast<ARKitWorldTackingSessionConfiguration_t1821734930 *>(__this + 1);
+	ARKitWorldTackingSessionConfiguration_set_IsSupported_m46319519(_thisAdjusted, ___value0, method);
+}
+extern "C" int32_t DEFAULT_CALL IsARKitWorldTrackingSessionConfigurationSupported();
+// System.Boolean UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration::IsARKitWorldTrackingSessionConfigurationSupported()
+extern "C"  bool ARKitWorldTackingSessionConfiguration_IsARKitWorldTrackingSessionConfigurationSupported_m34846127 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(IsARKitWorldTrackingSessionConfigurationSupported)();
+
+	return static_cast<bool>(returnValue);
+}
+// Conversion methods for marshalling of: UnityEngine.XR.iOS.ARPlaneAnchor
+extern "C" void ARPlaneAnchor_t1439520888_marshal_pinvoke(const ARPlaneAnchor_t1439520888& unmarshaled, ARPlaneAnchor_t1439520888_marshaled_pinvoke& marshaled)
+{
+	marshaled.___identifier_0 = il2cpp_codegen_marshal_string(unmarshaled.get_identifier_0());
+	marshaled.___transform_1 = unmarshaled.get_transform_1();
+	marshaled.___alignment_2 = unmarshaled.get_alignment_2();
+	marshaled.___center_3 = unmarshaled.get_center_3();
+	marshaled.___extent_4 = unmarshaled.get_extent_4();
+}
+extern "C" void ARPlaneAnchor_t1439520888_marshal_pinvoke_back(const ARPlaneAnchor_t1439520888_marshaled_pinvoke& marshaled, ARPlaneAnchor_t1439520888& unmarshaled)
+{
+	unmarshaled.set_identifier_0(il2cpp_codegen_marshal_string_result(marshaled.___identifier_0));
+	Matrix4x4_t2933234003  unmarshaled_transform_temp_1;
+	memset(&unmarshaled_transform_temp_1, 0, sizeof(unmarshaled_transform_temp_1));
+	unmarshaled_transform_temp_1 = marshaled.___transform_1;
+	unmarshaled.set_transform_1(unmarshaled_transform_temp_1);
+	int64_t unmarshaled_alignment_temp_2 = 0;
+	unmarshaled_alignment_temp_2 = marshaled.___alignment_2;
+	unmarshaled.set_alignment_2(unmarshaled_alignment_temp_2);
+	Vector3_t2243707580  unmarshaled_center_temp_3;
+	memset(&unmarshaled_center_temp_3, 0, sizeof(unmarshaled_center_temp_3));
+	unmarshaled_center_temp_3 = marshaled.___center_3;
+	unmarshaled.set_center_3(unmarshaled_center_temp_3);
+	Vector3_t2243707580  unmarshaled_extent_temp_4;
+	memset(&unmarshaled_extent_temp_4, 0, sizeof(unmarshaled_extent_temp_4));
+	unmarshaled_extent_temp_4 = marshaled.___extent_4;
+	unmarshaled.set_extent_4(unmarshaled_extent_temp_4);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.XR.iOS.ARPlaneAnchor
+extern "C" void ARPlaneAnchor_t1439520888_marshal_pinvoke_cleanup(ARPlaneAnchor_t1439520888_marshaled_pinvoke& marshaled)
+{
+	il2cpp_codegen_marshal_free(marshaled.___identifier_0);
+	marshaled.___identifier_0 = NULL;
+}
+// Conversion methods for marshalling of: UnityEngine.XR.iOS.ARPlaneAnchor
+extern "C" void ARPlaneAnchor_t1439520888_marshal_com(const ARPlaneAnchor_t1439520888& unmarshaled, ARPlaneAnchor_t1439520888_marshaled_com& marshaled)
+{
+	marshaled.___identifier_0 = il2cpp_codegen_marshal_bstring(unmarshaled.get_identifier_0());
+	marshaled.___transform_1 = unmarshaled.get_transform_1();
+	marshaled.___alignment_2 = unmarshaled.get_alignment_2();
+	marshaled.___center_3 = unmarshaled.get_center_3();
+	marshaled.___extent_4 = unmarshaled.get_extent_4();
+}
+extern "C" void ARPlaneAnchor_t1439520888_marshal_com_back(const ARPlaneAnchor_t1439520888_marshaled_com& marshaled, ARPlaneAnchor_t1439520888& unmarshaled)
+{
+	unmarshaled.set_identifier_0(il2cpp_codegen_marshal_bstring_result(marshaled.___identifier_0));
+	Matrix4x4_t2933234003  unmarshaled_transform_temp_1;
+	memset(&unmarshaled_transform_temp_1, 0, sizeof(unmarshaled_transform_temp_1));
+	unmarshaled_transform_temp_1 = marshaled.___transform_1;
+	unmarshaled.set_transform_1(unmarshaled_transform_temp_1);
+	int64_t unmarshaled_alignment_temp_2 = 0;
+	unmarshaled_alignment_temp_2 = marshaled.___alignment_2;
+	unmarshaled.set_alignment_2(unmarshaled_alignment_temp_2);
+	Vector3_t2243707580  unmarshaled_center_temp_3;
+	memset(&unmarshaled_center_temp_3, 0, sizeof(unmarshaled_center_temp_3));
+	unmarshaled_center_temp_3 = marshaled.___center_3;
+	unmarshaled.set_center_3(unmarshaled_center_temp_3);
+	Vector3_t2243707580  unmarshaled_extent_temp_4;
+	memset(&unmarshaled_extent_temp_4, 0, sizeof(unmarshaled_extent_temp_4));
+	unmarshaled_extent_temp_4 = marshaled.___extent_4;
+	unmarshaled.set_extent_4(unmarshaled_extent_temp_4);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.XR.iOS.ARPlaneAnchor
+extern "C" void ARPlaneAnchor_t1439520888_marshal_com_cleanup(ARPlaneAnchor_t1439520888_marshaled_com& marshaled)
+{
+	il2cpp_codegen_marshal_free_bstring(marshaled.___identifier_0);
+	marshaled.___identifier_0 = NULL;
+}
+// System.Void UnityEngine.XR.iOS.ARPlaneAnchorGameObject::.ctor()
+extern "C"  void ARPlaneAnchorGameObject__ctor_m3751462836 (ARPlaneAnchorGameObject_t2305225887 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARAnchorManager::.ctor()
+extern "C"  void UnityARAnchorManager__ctor_m1861900703 (UnityARAnchorManager_t1086564192 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARAnchorManager__ctor_m1861900703_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		Dictionary_2_t4220005149 * L_0 = (Dictionary_2_t4220005149 *)il2cpp_codegen_object_new(Dictionary_2_t4220005149_il2cpp_TypeInfo_var);
+		Dictionary_2__ctor_m1722416527(L_0, /*hidden argument*/Dictionary_2__ctor_m1722416527_MethodInfo_var);
+		__this->set_planeAnchorMap_0(L_0);
+		IntPtr_t L_1;
+		L_1.set_m_value_0((void*)(void*)UnityARAnchorManager_AddAnchor_m2816330223_MethodInfo_var);
+		ARAnchorAdded_t2646854145 * L_2 = (ARAnchorAdded_t2646854145 *)il2cpp_codegen_object_new(ARAnchorAdded_t2646854145_il2cpp_TypeInfo_var);
+		ARAnchorAdded__ctor_m3844186700(L_2, __this, L_1, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_add_ARAnchorAddedEvent_m658032036(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		IntPtr_t L_3;
+		L_3.set_m_value_0((void*)(void*)UnityARAnchorManager_UpdateAnchor_m4142154447_MethodInfo_var);
+		ARAnchorUpdated_t3886071158 * L_4 = (ARAnchorUpdated_t3886071158 *)il2cpp_codegen_object_new(ARAnchorUpdated_t3886071158_il2cpp_TypeInfo_var);
+		ARAnchorUpdated__ctor_m1158457407(L_4, __this, L_3, /*hidden argument*/NULL);
+		UnityARSessionNativeInterface_add_ARAnchorUpdatedEvent_m1485763364(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		IntPtr_t L_5;
+		L_5.set_m_value_0((void*)(void*)UnityARAnchorManager_RemoveAnchor_m2109073956_MethodInfo_var);
+		ARAnchorRemoved_t142665927 * L_6 = (ARAnchorRemoved_t142665927 *)il2cpp_codegen_object_new(ARAnchorRemoved_t142665927_il2cpp_TypeInfo_var);
+		ARAnchorRemoved__ctor_m535635486(L_6, __this, L_5, /*hidden argument*/NULL);
+		UnityARSessionNativeInterface_add_ARAnchorRemovedEvent_m2970646020(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARAnchorManager::AddAnchor(UnityEngine.XR.iOS.ARPlaneAnchor)
+extern "C"  void UnityARAnchorManager_AddAnchor_m2816330223 (UnityARAnchorManager_t1086564192 * __this, ARPlaneAnchor_t1439520888  ___arPlaneAnchor0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARAnchorManager_AddAnchor_m2816330223_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	GameObject_t1756533147 * V_0 = NULL;
+	ARPlaneAnchorGameObject_t2305225887 * V_1 = NULL;
+	{
+		ARPlaneAnchor_t1439520888  L_0 = ___arPlaneAnchor0;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARUtility_t3608388148_il2cpp_TypeInfo_var);
+		GameObject_t1756533147 * L_1 = UnityARUtility_CreatePlaneInScene_m836370693(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		GameObject_t1756533147 * L_2 = V_0;
+		NullCheck(L_2);
+		GameObject_AddComponent_TisDontDestroyOnLoad_t3235789354_m4215585572(L_2, /*hidden argument*/GameObject_AddComponent_TisDontDestroyOnLoad_t3235789354_m4215585572_MethodInfo_var);
+		ARPlaneAnchorGameObject_t2305225887 * L_3 = (ARPlaneAnchorGameObject_t2305225887 *)il2cpp_codegen_object_new(ARPlaneAnchorGameObject_t2305225887_il2cpp_TypeInfo_var);
+		ARPlaneAnchorGameObject__ctor_m3751462836(L_3, /*hidden argument*/NULL);
+		V_1 = L_3;
+		ARPlaneAnchorGameObject_t2305225887 * L_4 = V_1;
+		ARPlaneAnchor_t1439520888  L_5 = ___arPlaneAnchor0;
+		NullCheck(L_4);
+		L_4->set_planeAnchor_1(L_5);
+		ARPlaneAnchorGameObject_t2305225887 * L_6 = V_1;
+		GameObject_t1756533147 * L_7 = V_0;
+		NullCheck(L_6);
+		L_6->set_gameObject_0(L_7);
+		Dictionary_2_t4220005149 * L_8 = __this->get_planeAnchorMap_0();
+		String_t* L_9 = (&___arPlaneAnchor0)->get_identifier_0();
+		ARPlaneAnchorGameObject_t2305225887 * L_10 = V_1;
+		NullCheck(L_8);
+		Dictionary_2_Add_m2748008583(L_8, L_9, L_10, /*hidden argument*/Dictionary_2_Add_m2748008583_MethodInfo_var);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARAnchorManager::RemoveAnchor(UnityEngine.XR.iOS.ARPlaneAnchor)
+extern "C"  void UnityARAnchorManager_RemoveAnchor_m2109073956 (UnityARAnchorManager_t1086564192 * __this, ARPlaneAnchor_t1439520888  ___arPlaneAnchor0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARAnchorManager_RemoveAnchor_m2109073956_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARPlaneAnchorGameObject_t2305225887 * V_0 = NULL;
+	{
+		Dictionary_2_t4220005149 * L_0 = __this->get_planeAnchorMap_0();
+		String_t* L_1 = (&___arPlaneAnchor0)->get_identifier_0();
+		NullCheck(L_0);
+		bool L_2 = Dictionary_2_ContainsKey_m9048208(L_0, L_1, /*hidden argument*/Dictionary_2_ContainsKey_m9048208_MethodInfo_var);
+		if (!L_2)
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		Dictionary_2_t4220005149 * L_3 = __this->get_planeAnchorMap_0();
+		String_t* L_4 = (&___arPlaneAnchor0)->get_identifier_0();
+		NullCheck(L_3);
+		ARPlaneAnchorGameObject_t2305225887 * L_5 = Dictionary_2_get_Item_m4111408485(L_3, L_4, /*hidden argument*/Dictionary_2_get_Item_m4111408485_MethodInfo_var);
+		V_0 = L_5;
+		ARPlaneAnchorGameObject_t2305225887 * L_6 = V_0;
+		NullCheck(L_6);
+		GameObject_t1756533147 * L_7 = L_6->get_gameObject_0();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_Destroy_m4145850038(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
+		Dictionary_2_t4220005149 * L_8 = __this->get_planeAnchorMap_0();
+		String_t* L_9 = (&___arPlaneAnchor0)->get_identifier_0();
+		NullCheck(L_8);
+		Dictionary_2_Remove_m2895225056(L_8, L_9, /*hidden argument*/Dictionary_2_Remove_m2895225056_MethodInfo_var);
+	}
+
+IL_0048:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARAnchorManager::UpdateAnchor(UnityEngine.XR.iOS.ARPlaneAnchor)
+extern "C"  void UnityARAnchorManager_UpdateAnchor_m4142154447 (UnityARAnchorManager_t1086564192 * __this, ARPlaneAnchor_t1439520888  ___arPlaneAnchor0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARAnchorManager_UpdateAnchor_m4142154447_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARPlaneAnchorGameObject_t2305225887 * V_0 = NULL;
+	{
+		Dictionary_2_t4220005149 * L_0 = __this->get_planeAnchorMap_0();
+		String_t* L_1 = (&___arPlaneAnchor0)->get_identifier_0();
+		NullCheck(L_0);
+		bool L_2 = Dictionary_2_ContainsKey_m9048208(L_0, L_1, /*hidden argument*/Dictionary_2_ContainsKey_m9048208_MethodInfo_var);
+		if (!L_2)
+		{
+			goto IL_0051;
+		}
+	}
+	{
+		Dictionary_2_t4220005149 * L_3 = __this->get_planeAnchorMap_0();
+		String_t* L_4 = (&___arPlaneAnchor0)->get_identifier_0();
+		NullCheck(L_3);
+		ARPlaneAnchorGameObject_t2305225887 * L_5 = Dictionary_2_get_Item_m4111408485(L_3, L_4, /*hidden argument*/Dictionary_2_get_Item_m4111408485_MethodInfo_var);
+		V_0 = L_5;
+		ARPlaneAnchorGameObject_t2305225887 * L_6 = V_0;
+		NullCheck(L_6);
+		GameObject_t1756533147 * L_7 = L_6->get_gameObject_0();
+		ARPlaneAnchor_t1439520888  L_8 = ___arPlaneAnchor0;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARUtility_t3608388148_il2cpp_TypeInfo_var);
+		UnityARUtility_UpdatePlaneWithAnchorTransform_m639257622(NULL /*static, unused*/, L_7, L_8, /*hidden argument*/NULL);
+		ARPlaneAnchorGameObject_t2305225887 * L_9 = V_0;
+		ARPlaneAnchor_t1439520888  L_10 = ___arPlaneAnchor0;
+		NullCheck(L_9);
+		L_9->set_planeAnchor_1(L_10);
+		Dictionary_2_t4220005149 * L_11 = __this->get_planeAnchorMap_0();
+		String_t* L_12 = (&___arPlaneAnchor0)->get_identifier_0();
+		ARPlaneAnchorGameObject_t2305225887 * L_13 = V_0;
+		NullCheck(L_11);
+		Dictionary_2_set_Item_m3140527944(L_11, L_12, L_13, /*hidden argument*/Dictionary_2_set_Item_m3140527944_MethodInfo_var);
+	}
+
+IL_0051:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARAnchorManager::Destroy()
+extern "C"  void UnityARAnchorManager_Destroy_m1751028949 (UnityARAnchorManager_t1086564192 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARAnchorManager_Destroy_m1751028949_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARPlaneAnchorGameObject_t2305225887 * V_0 = NULL;
+	Enumerator_t1209076693  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		List_1_t1674347019 * L_0 = UnityARAnchorManager_GetCurrentPlaneAnchors_m642073964(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Enumerator_t1209076693  L_1 = List_1_GetEnumerator_m4260200565(L_0, /*hidden argument*/List_1_GetEnumerator_m4260200565_MethodInfo_var);
+		V_1 = L_1;
+	}
+
+IL_000c:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_0024;
+		}
+
+IL_0011:
+		{
+			ARPlaneAnchorGameObject_t2305225887 * L_2 = Enumerator_get_Current_m1081001953((&V_1), /*hidden argument*/Enumerator_get_Current_m1081001953_MethodInfo_var);
+			V_0 = L_2;
+			ARPlaneAnchorGameObject_t2305225887 * L_3 = V_0;
+			NullCheck(L_3);
+			GameObject_t1756533147 * L_4 = L_3->get_gameObject_0();
+			IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+			Object_Destroy_m4145850038(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		}
+
+IL_0024:
+		{
+			bool L_5 = Enumerator_MoveNext_m3579574253((&V_1), /*hidden argument*/Enumerator_MoveNext_m3579574253_MethodInfo_var);
+			if (L_5)
+			{
+				goto IL_0011;
+			}
+		}
+
+IL_0030:
+		{
+			IL2CPP_LEAVE(0x43, FINALLY_0035);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_0035;
+	}
+
+FINALLY_0035:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m113660709((&V_1), /*hidden argument*/Enumerator_Dispose_m113660709_MethodInfo_var);
+		IL2CPP_END_FINALLY(53)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(53)
+	{
+		IL2CPP_JUMP_TBL(0x43, IL_0043)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_0043:
+	{
+		Dictionary_2_t4220005149 * L_6 = __this->get_planeAnchorMap_0();
+		NullCheck(L_6);
+		Dictionary_2_Clear_m797095524(L_6, /*hidden argument*/Dictionary_2_Clear_m797095524_MethodInfo_var);
+		return;
+	}
+}
+// System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARPlaneAnchorGameObject> UnityEngine.XR.iOS.UnityARAnchorManager::GetCurrentPlaneAnchors()
+extern "C"  List_1_t1674347019 * UnityARAnchorManager_GetCurrentPlaneAnchors_m642073964 (UnityARAnchorManager_t1086564192 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARAnchorManager_GetCurrentPlaneAnchors_m642073964_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Dictionary_2_t4220005149 * L_0 = __this->get_planeAnchorMap_0();
+		NullCheck(L_0);
+		ValueCollection_t2923064992 * L_1 = Dictionary_2_get_Values_m586969881(L_0, /*hidden argument*/Dictionary_2_get_Values_m586969881_MethodInfo_var);
+		List_1_t1674347019 * L_2 = Enumerable_ToList_TisARPlaneAnchorGameObject_t2305225887_m3769884394(NULL /*static, unused*/, L_1, /*hidden argument*/Enumerable_ToList_TisARPlaneAnchorGameObject_t2305225887_m3769884394_MethodInfo_var);
+		return L_2;
+	}
+}
+// Conversion methods for marshalling of: UnityEngine.XR.iOS.UnityARCamera
+extern "C" void UnityARCamera_t4198559457_marshal_pinvoke(const UnityARCamera_t4198559457& unmarshaled, UnityARCamera_t4198559457_marshaled_pinvoke& marshaled)
+{
+	Il2CppCodeGenException* ___pointCloudData_4Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'pointCloudData' of type 'UnityARCamera'.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___pointCloudData_4Exception);
+}
+extern "C" void UnityARCamera_t4198559457_marshal_pinvoke_back(const UnityARCamera_t4198559457_marshaled_pinvoke& marshaled, UnityARCamera_t4198559457& unmarshaled)
+{
+	Il2CppCodeGenException* ___pointCloudData_4Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'pointCloudData' of type 'UnityARCamera'.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___pointCloudData_4Exception);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.XR.iOS.UnityARCamera
+extern "C" void UnityARCamera_t4198559457_marshal_pinvoke_cleanup(UnityARCamera_t4198559457_marshaled_pinvoke& marshaled)
+{
+}
+// Conversion methods for marshalling of: UnityEngine.XR.iOS.UnityARCamera
+extern "C" void UnityARCamera_t4198559457_marshal_com(const UnityARCamera_t4198559457& unmarshaled, UnityARCamera_t4198559457_marshaled_com& marshaled)
+{
+	Il2CppCodeGenException* ___pointCloudData_4Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'pointCloudData' of type 'UnityARCamera'.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___pointCloudData_4Exception);
+}
+extern "C" void UnityARCamera_t4198559457_marshal_com_back(const UnityARCamera_t4198559457_marshaled_com& marshaled, UnityARCamera_t4198559457& unmarshaled)
+{
+	Il2CppCodeGenException* ___pointCloudData_4Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'pointCloudData' of type 'UnityARCamera'.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___pointCloudData_4Exception);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.XR.iOS.UnityARCamera
+extern "C" void UnityARCamera_t4198559457_marshal_com_cleanup(UnityARCamera_t4198559457_marshaled_com& marshaled)
+{
+}
+// System.Void UnityEngine.XR.iOS.UnityARGeneratePlane::.ctor()
+extern "C"  void UnityARGeneratePlane__ctor_m691174942 (UnityARGeneratePlane_t3368998101 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARGeneratePlane::Start()
+extern "C"  void UnityARGeneratePlane_Start_m2009009798 (UnityARGeneratePlane_t3368998101 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARGeneratePlane_Start_m2009009798_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		UnityARAnchorManager_t1086564192 * L_0 = (UnityARAnchorManager_t1086564192 *)il2cpp_codegen_object_new(UnityARAnchorManager_t1086564192_il2cpp_TypeInfo_var);
+		UnityARAnchorManager__ctor_m1861900703(L_0, /*hidden argument*/NULL);
+		__this->set_unityARAnchorManager_3(L_0);
+		GameObject_t1756533147 * L_1 = __this->get_planePrefab_2();
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARUtility_t3608388148_il2cpp_TypeInfo_var);
+		UnityARUtility_InitializePlanePrefab_m2887188869(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARGeneratePlane::OnDestroy()
+extern "C"  void UnityARGeneratePlane_OnDestroy_m3739140111 (UnityARGeneratePlane_t3368998101 * __this, const MethodInfo* method)
+{
+	{
+		UnityARAnchorManager_t1086564192 * L_0 = __this->get_unityARAnchorManager_3();
+		NullCheck(L_0);
+		UnityARAnchorManager_Destroy_m1751028949(L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARGeneratePlane::OnGUI()
+extern "C"  void UnityARGeneratePlane_OnGUI_m3343046494 (UnityARGeneratePlane_t3368998101 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARGeneratePlane_OnGUI_m3343046494_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_t1674347019 * V_0 = NULL;
+	{
+		UnityARAnchorManager_t1086564192 * L_0 = __this->get_unityARAnchorManager_3();
+		NullCheck(L_0);
+		List_1_t1674347019 * L_1 = UnityARAnchorManager_GetCurrentPlaneAnchors_m642073964(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		List_1_t1674347019 * L_2 = V_0;
+		NullCheck(L_2);
+		int32_t L_3 = List_1_get_Count_m1714425968(L_2, /*hidden argument*/List_1_get_Count_m1714425968_MethodInfo_var);
+		if ((((int32_t)L_3) < ((int32_t)1)))
+		{
+			goto IL_0018;
+		}
+	}
+
+IL_0018:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARHitTestExample::.ctor()
+extern "C"  void UnityARHitTestExample__ctor_m737431788 (UnityARHitTestExample_t146867607 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean UnityEngine.XR.iOS.UnityARHitTestExample::HitTestWithResultType(UnityEngine.XR.iOS.ARPoint,UnityEngine.XR.iOS.ARHitTestResultType)
+extern "C"  bool UnityARHitTestExample_HitTestWithResultType_m996939112 (UnityARHitTestExample_t146867607 * __this, ARPoint_t3436811567  ___point0, int64_t ___resultTypes1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARHitTestExample_HitTestWithResultType_m996939112_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_t2644634157 * V_0 = NULL;
+	ARHitTestResult_t3275513025  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Enumerator_t2179363831  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	Vector3_t2243707580  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	Vector3_t2243707580  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	Vector3_t2243707580  V_5;
+	memset(&V_5, 0, sizeof(V_5));
+	bool V_6 = false;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_t1130867170 * L_0 = UnityARSessionNativeInterface_GetARSessionNativeInterface_m3174488657(NULL /*static, unused*/, /*hidden argument*/NULL);
+		ARPoint_t3436811567  L_1 = ___point0;
+		int64_t L_2 = ___resultTypes1;
+		NullCheck(L_0);
+		List_1_t2644634157 * L_3 = UnityARSessionNativeInterface_HitTest_m388588674(L_0, L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		List_1_t2644634157 * L_4 = V_0;
+		NullCheck(L_4);
+		int32_t L_5 = List_1_get_Count_m1598304542(L_4, /*hidden argument*/List_1_get_Count_m1598304542_MethodInfo_var);
+		if ((((int32_t)L_5) <= ((int32_t)0)))
+		{
+			goto IL_00e5;
+		}
+	}
+	{
+		List_1_t2644634157 * L_6 = V_0;
+		NullCheck(L_6);
+		Enumerator_t2179363831  L_7 = List_1_GetEnumerator_m2885046859(L_6, /*hidden argument*/List_1_GetEnumerator_m2885046859_MethodInfo_var);
+		V_2 = L_7;
+	}
+
+IL_0020:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_00c6;
+		}
+
+IL_0025:
+		{
+			ARHitTestResult_t3275513025  L_8 = Enumerator_get_Current_m2775711191((&V_2), /*hidden argument*/Enumerator_get_Current_m2775711191_MethodInfo_var);
+			V_1 = L_8;
+			IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+			Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral1415053652, /*hidden argument*/NULL);
+			Transform_t3275118058 * L_9 = __this->get_m_HitTransform_2();
+			Matrix4x4_t2933234003  L_10 = (&V_1)->get_worldTransform_3();
+			Vector3_t2243707580  L_11 = UnityARMatrixOps_GetPosition_m1153858439(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
+			NullCheck(L_9);
+			Transform_set_position_m2469242620(L_9, L_11, /*hidden argument*/NULL);
+			Transform_t3275118058 * L_12 = __this->get_m_HitTransform_2();
+			Matrix4x4_t2933234003  L_13 = (&V_1)->get_worldTransform_3();
+			Quaternion_t4030073918  L_14 = UnityARMatrixOps_GetRotation_m1002641986(NULL /*static, unused*/, L_13, /*hidden argument*/NULL);
+			NullCheck(L_12);
+			Transform_set_rotation_m3411284563(L_12, L_14, /*hidden argument*/NULL);
+			Transform_t3275118058 * L_15 = __this->get_m_HitTransform_2();
+			NullCheck(L_15);
+			Vector3_t2243707580  L_16 = Transform_get_position_m1104419803(L_15, /*hidden argument*/NULL);
+			V_3 = L_16;
+			float L_17 = (&V_3)->get_x_1();
+			float L_18 = L_17;
+			Il2CppObject * L_19 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_18);
+			Transform_t3275118058 * L_20 = __this->get_m_HitTransform_2();
+			NullCheck(L_20);
+			Vector3_t2243707580  L_21 = Transform_get_position_m1104419803(L_20, /*hidden argument*/NULL);
+			V_4 = L_21;
+			float L_22 = (&V_4)->get_y_2();
+			float L_23 = L_22;
+			Il2CppObject * L_24 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_23);
+			Transform_t3275118058 * L_25 = __this->get_m_HitTransform_2();
+			NullCheck(L_25);
+			Vector3_t2243707580  L_26 = Transform_get_position_m1104419803(L_25, /*hidden argument*/NULL);
+			V_5 = L_26;
+			float L_27 = (&V_5)->get_z_3();
+			float L_28 = L_27;
+			Il2CppObject * L_29 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_28);
+			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+			String_t* L_30 = String_Format_m4262916296(NULL /*static, unused*/, _stringLiteral1537444060, L_19, L_24, L_29, /*hidden argument*/NULL);
+			Debug_Log_m920475918(NULL /*static, unused*/, L_30, /*hidden argument*/NULL);
+			V_6 = (bool)1;
+			IL2CPP_LEAVE(0xE7, FINALLY_00d7);
+		}
+
+IL_00c6:
+		{
+			bool L_31 = Enumerator_MoveNext_m3661301011((&V_2), /*hidden argument*/Enumerator_MoveNext_m3661301011_MethodInfo_var);
+			if (L_31)
+			{
+				goto IL_0025;
+			}
+		}
+
+IL_00d2:
+		{
+			IL2CPP_LEAVE(0xE5, FINALLY_00d7);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_00d7;
+	}
+
+FINALLY_00d7:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m3109677227((&V_2), /*hidden argument*/Enumerator_Dispose_m3109677227_MethodInfo_var);
+		IL2CPP_END_FINALLY(215)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(215)
+	{
+		IL2CPP_JUMP_TBL(0xE7, IL_00e7)
+		IL2CPP_JUMP_TBL(0xE5, IL_00e5)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_00e5:
+	{
+		return (bool)0;
+	}
+
+IL_00e7:
+	{
+		bool L_32 = V_6;
+		return L_32;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARHitTestExample::Update()
+extern "C"  void UnityARHitTestExample_Update_m1266118659 (UnityARHitTestExample_t146867607 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARHitTestExample_Update_m1266118659_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Touch_t407273883  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	ARPoint_t3436811567  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	ARPoint_t3436811567  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	ARHitTestResultTypeU5BU5D_t1303085420* V_4 = NULL;
+	int64_t V_5 = 0;
+	ARHitTestResultTypeU5BU5D_t1303085420* V_6 = NULL;
+	int32_t V_7 = 0;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		int32_t L_0 = Input_get_touchCount_m2050827666(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_0) <= ((int32_t)0)))
+		{
+			goto IL_00b4;
+		}
+	}
+	{
+		Transform_t3275118058 * L_1 = __this->get_m_HitTransform_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_2 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_1, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_00b4;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		Touch_t407273883  L_3 = Input_GetTouch_m1463942798(NULL /*static, unused*/, 0, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = Touch_get_phase_m196706494((&V_0), /*hidden argument*/NULL);
+		if (L_4)
+		{
+			goto IL_00b4;
+		}
+	}
+	{
+		Camera_t189460977 * L_5 = Camera_get_main_m475173995(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_6 = Touch_get_position_m2079703643((&V_0), /*hidden argument*/NULL);
+		Vector3_t2243707580  L_7 = Vector2_op_Implicit_m176791411(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Vector3_t2243707580  L_8 = Camera_ScreenToViewportPoint_m2666228286(L_5, L_7, /*hidden argument*/NULL);
+		V_1 = L_8;
+		Initobj (ARPoint_t3436811567_il2cpp_TypeInfo_var, (&V_3));
+		float L_9 = (&V_1)->get_x_1();
+		(&V_3)->set_x_0((((double)((double)L_9))));
+		float L_10 = (&V_1)->get_y_2();
+		(&V_3)->set_y_1((((double)((double)L_10))));
+		ARPoint_t3436811567  L_11 = V_3;
+		V_2 = L_11;
+		ARHitTestResultTypeU5BU5D_t1303085420* L_12 = ((ARHitTestResultTypeU5BU5D_t1303085420*)SZArrayNew(ARHitTestResultTypeU5BU5D_t1303085420_il2cpp_TypeInfo_var, (uint32_t)3));
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_12, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305142____U24fieldU2D8E7629AD5AF686202B8CB7C014505C432FFE31E6_0_FieldInfo_var), /*hidden argument*/NULL);
+		V_4 = L_12;
+		ARHitTestResultTypeU5BU5D_t1303085420* L_13 = V_4;
+		V_6 = L_13;
+		V_7 = 0;
+		goto IL_00a9;
+	}
+
+IL_008d:
+	{
+		ARHitTestResultTypeU5BU5D_t1303085420* L_14 = V_6;
+		int32_t L_15 = V_7;
+		NullCheck(L_14);
+		int32_t L_16 = L_15;
+		int64_t L_17 = (L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_16));
+		V_5 = L_17;
+		ARPoint_t3436811567  L_18 = V_2;
+		int64_t L_19 = V_5;
+		bool L_20 = UnityARHitTestExample_HitTestWithResultType_m996939112(__this, L_18, L_19, /*hidden argument*/NULL);
+		if (!L_20)
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		return;
+	}
+
+IL_00a3:
+	{
+		int32_t L_21 = V_7;
+		V_7 = ((int32_t)((int32_t)L_21+(int32_t)1));
+	}
+
+IL_00a9:
+	{
+		int32_t L_22 = V_7;
+		ARHitTestResultTypeU5BU5D_t1303085420* L_23 = V_6;
+		NullCheck(L_23);
+		if ((((int32_t)L_22) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_23)->max_length)))))))
+		{
+			goto IL_008d;
+		}
+	}
+
+IL_00b4:
+	{
+		return;
+	}
+}
+// Conversion methods for marshalling of: UnityEngine.XR.iOS.UnityARHitTestResult
+extern "C" void UnityARHitTestResult_t4129824344_marshal_pinvoke(const UnityARHitTestResult_t4129824344& unmarshaled, UnityARHitTestResult_t4129824344_marshaled_pinvoke& marshaled)
+{
+	marshaled.___type_0 = unmarshaled.get_type_0();
+	marshaled.___distance_1 = unmarshaled.get_distance_1();
+	marshaled.___localTransform_2 = unmarshaled.get_localTransform_2();
+	marshaled.___worldTransform_3 = unmarshaled.get_worldTransform_3();
+	marshaled.___anchor_4 = reinterpret_cast<intptr_t>((unmarshaled.get_anchor_4()).get_m_value_0());
+	marshaled.___isValid_5 = static_cast<int32_t>(unmarshaled.get_isValid_5());
+}
+extern "C" void UnityARHitTestResult_t4129824344_marshal_pinvoke_back(const UnityARHitTestResult_t4129824344_marshaled_pinvoke& marshaled, UnityARHitTestResult_t4129824344& unmarshaled)
+{
+	int64_t unmarshaled_type_temp_0 = 0;
+	unmarshaled_type_temp_0 = marshaled.___type_0;
+	unmarshaled.set_type_0(unmarshaled_type_temp_0);
+	double unmarshaled_distance_temp_1 = 0.0;
+	unmarshaled_distance_temp_1 = marshaled.___distance_1;
+	unmarshaled.set_distance_1(unmarshaled_distance_temp_1);
+	Matrix4x4_t2933234003  unmarshaled_localTransform_temp_2;
+	memset(&unmarshaled_localTransform_temp_2, 0, sizeof(unmarshaled_localTransform_temp_2));
+	unmarshaled_localTransform_temp_2 = marshaled.___localTransform_2;
+	unmarshaled.set_localTransform_2(unmarshaled_localTransform_temp_2);
+	Matrix4x4_t2933234003  unmarshaled_worldTransform_temp_3;
+	memset(&unmarshaled_worldTransform_temp_3, 0, sizeof(unmarshaled_worldTransform_temp_3));
+	unmarshaled_worldTransform_temp_3 = marshaled.___worldTransform_3;
+	unmarshaled.set_worldTransform_3(unmarshaled_worldTransform_temp_3);
+	IntPtr_t unmarshaled_anchor_temp_4;
+	memset(&unmarshaled_anchor_temp_4, 0, sizeof(unmarshaled_anchor_temp_4));
+	IntPtr_t unmarshaled_anchor_temp_4_temp;
+	unmarshaled_anchor_temp_4_temp.set_m_value_0(reinterpret_cast<void*>((intptr_t)(marshaled.___anchor_4)));
+	unmarshaled_anchor_temp_4 = unmarshaled_anchor_temp_4_temp;
+	unmarshaled.set_anchor_4(unmarshaled_anchor_temp_4);
+	bool unmarshaled_isValid_temp_5 = false;
+	unmarshaled_isValid_temp_5 = static_cast<bool>(marshaled.___isValid_5);
+	unmarshaled.set_isValid_5(unmarshaled_isValid_temp_5);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.XR.iOS.UnityARHitTestResult
+extern "C" void UnityARHitTestResult_t4129824344_marshal_pinvoke_cleanup(UnityARHitTestResult_t4129824344_marshaled_pinvoke& marshaled)
+{
+}
+// Conversion methods for marshalling of: UnityEngine.XR.iOS.UnityARHitTestResult
+extern "C" void UnityARHitTestResult_t4129824344_marshal_com(const UnityARHitTestResult_t4129824344& unmarshaled, UnityARHitTestResult_t4129824344_marshaled_com& marshaled)
+{
+	marshaled.___type_0 = unmarshaled.get_type_0();
+	marshaled.___distance_1 = unmarshaled.get_distance_1();
+	marshaled.___localTransform_2 = unmarshaled.get_localTransform_2();
+	marshaled.___worldTransform_3 = unmarshaled.get_worldTransform_3();
+	marshaled.___anchor_4 = reinterpret_cast<intptr_t>((unmarshaled.get_anchor_4()).get_m_value_0());
+	marshaled.___isValid_5 = static_cast<int32_t>(unmarshaled.get_isValid_5());
+}
+extern "C" void UnityARHitTestResult_t4129824344_marshal_com_back(const UnityARHitTestResult_t4129824344_marshaled_com& marshaled, UnityARHitTestResult_t4129824344& unmarshaled)
+{
+	int64_t unmarshaled_type_temp_0 = 0;
+	unmarshaled_type_temp_0 = marshaled.___type_0;
+	unmarshaled.set_type_0(unmarshaled_type_temp_0);
+	double unmarshaled_distance_temp_1 = 0.0;
+	unmarshaled_distance_temp_1 = marshaled.___distance_1;
+	unmarshaled.set_distance_1(unmarshaled_distance_temp_1);
+	Matrix4x4_t2933234003  unmarshaled_localTransform_temp_2;
+	memset(&unmarshaled_localTransform_temp_2, 0, sizeof(unmarshaled_localTransform_temp_2));
+	unmarshaled_localTransform_temp_2 = marshaled.___localTransform_2;
+	unmarshaled.set_localTransform_2(unmarshaled_localTransform_temp_2);
+	Matrix4x4_t2933234003  unmarshaled_worldTransform_temp_3;
+	memset(&unmarshaled_worldTransform_temp_3, 0, sizeof(unmarshaled_worldTransform_temp_3));
+	unmarshaled_worldTransform_temp_3 = marshaled.___worldTransform_3;
+	unmarshaled.set_worldTransform_3(unmarshaled_worldTransform_temp_3);
+	IntPtr_t unmarshaled_anchor_temp_4;
+	memset(&unmarshaled_anchor_temp_4, 0, sizeof(unmarshaled_anchor_temp_4));
+	IntPtr_t unmarshaled_anchor_temp_4_temp;
+	unmarshaled_anchor_temp_4_temp.set_m_value_0(reinterpret_cast<void*>((intptr_t)(marshaled.___anchor_4)));
+	unmarshaled_anchor_temp_4 = unmarshaled_anchor_temp_4_temp;
+	unmarshaled.set_anchor_4(unmarshaled_anchor_temp_4);
+	bool unmarshaled_isValid_temp_5 = false;
+	unmarshaled_isValid_temp_5 = static_cast<bool>(marshaled.___isValid_5);
+	unmarshaled.set_isValid_5(unmarshaled_isValid_temp_5);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.XR.iOS.UnityARHitTestResult
+extern "C" void UnityARHitTestResult_t4129824344_marshal_com_cleanup(UnityARHitTestResult_t4129824344_marshaled_com& marshaled)
+{
+}
+// System.Void UnityEngine.XR.iOS.UnityARKitControl::.ctor()
+extern "C"  void UnityARKitControl__ctor_m1699713484 (UnityARKitControl_t1698990409 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARKitControl__ctor_m1699713484_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		__this->set_runOptions_2(((UnityARSessionRunOptionU5BU5D_t3114965901*)SZArrayNew(UnityARSessionRunOptionU5BU5D_t3114965901_il2cpp_TypeInfo_var, (uint32_t)4)));
+		__this->set_alignmentOptions_3(((UnityARAlignmentU5BU5D_t218994990*)SZArrayNew(UnityARAlignmentU5BU5D_t218994990_il2cpp_TypeInfo_var, (uint32_t)3)));
+		__this->set_planeOptions_4(((UnityARPlaneDetectionU5BU5D_t191549612*)SZArrayNew(UnityARPlaneDetectionU5BU5D_t191549612_il2cpp_TypeInfo_var, (uint32_t)4)));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARKitControl::Start()
+extern "C"  void UnityARKitControl_Start_m620031836 (UnityARKitControl_t1698990409 * __this, const MethodInfo* method)
+{
+	{
+		UnityARSessionRunOptionU5BU5D_t3114965901* L_0 = __this->get_runOptions_2();
+		NullCheck(L_0);
+		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)3);
+		UnityARSessionRunOptionU5BU5D_t3114965901* L_1 = __this->get_runOptions_2();
+		NullCheck(L_1);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)1);
+		UnityARSessionRunOptionU5BU5D_t3114965901* L_2 = __this->get_runOptions_2();
+		NullCheck(L_2);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)2);
+		UnityARSessionRunOptionU5BU5D_t3114965901* L_3 = __this->get_runOptions_2();
+		NullCheck(L_3);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(3), (int32_t)0);
+		UnityARAlignmentU5BU5D_t218994990* L_4 = __this->get_alignmentOptions_3();
+		NullCheck(L_4);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)2);
+		UnityARAlignmentU5BU5D_t218994990* L_5 = __this->get_alignmentOptions_3();
+		NullCheck(L_5);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)0);
+		UnityARAlignmentU5BU5D_t218994990* L_6 = __this->get_alignmentOptions_3();
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)1);
+		UnityARPlaneDetectionU5BU5D_t191549612* L_7 = __this->get_planeOptions_4();
+		NullCheck(L_7);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)1);
+		UnityARPlaneDetectionU5BU5D_t191549612* L_8 = __this->get_planeOptions_4();
+		NullCheck(L_8);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)0);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARKitControl::Update()
+extern "C"  void UnityARKitControl_Update_m2500411141 (UnityARKitControl_t1698990409 * __this, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARKitControl::OnGUI()
+extern "C"  void UnityARKitControl_OnGUI_m4075060656 (UnityARKitControl_t1698990409 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARKitControl_OnGUI_m4075060656_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARKitWorldTackingSessionConfiguration_t1821734930  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	ARKitSessionConfiguration_t318899795  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	String_t* V_2 = NULL;
+	String_t* V_3 = NULL;
+	String_t* V_4 = NULL;
+	String_t* G_B13_0 = NULL;
+	String_t* G_B20_0 = NULL;
+	String_t* G_B29_0 = NULL;
+	{
+		Rect_t3681755626  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Rect__ctor_m1220545469(&L_0, (100.0f), (100.0f), (200.0f), (50.0f), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+		bool L_1 = GUI_Button_m3054448581(NULL /*static, unused*/, L_0, _stringLiteral3833953726, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0032;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_t1130867170 * L_2 = UnityARSessionNativeInterface_GetARSessionNativeInterface_m3174488657(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		UnityARSessionNativeInterface_Pause_m2220930613(L_2, /*hidden argument*/NULL);
+	}
+
+IL_0032:
+	{
+		Rect_t3681755626  L_3;
+		memset(&L_3, 0, sizeof(L_3));
+		Rect__ctor_m1220545469(&L_3, (300.0f), (100.0f), (200.0f), (50.0f), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+		bool L_4 = GUI_Button_m3054448581(NULL /*static, unused*/, L_3, _stringLiteral2858758002, /*hidden argument*/NULL);
+		if (!L_4)
+		{
+			goto IL_0095;
+		}
+	}
+	{
+		UnityARAlignmentU5BU5D_t218994990* L_5 = __this->get_alignmentOptions_3();
+		int32_t L_6 = __this->get_currentAlignmentIndex_6();
+		NullCheck(L_5);
+		int32_t L_7 = L_6;
+		int32_t L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
+		UnityARPlaneDetectionU5BU5D_t191549612* L_9 = __this->get_planeOptions_4();
+		int32_t L_10 = __this->get_currentPlaneIndex_7();
+		NullCheck(L_9);
+		int32_t L_11 = L_10;
+		int32_t L_12 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_11));
+		ARKitWorldTackingSessionConfiguration__ctor_m4281543687((&V_0), L_8, L_12, (bool)0, (bool)0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_t1130867170 * L_13 = UnityARSessionNativeInterface_GetARSessionNativeInterface_m3174488657(NULL /*static, unused*/, /*hidden argument*/NULL);
+		ARKitWorldTackingSessionConfiguration_t1821734930  L_14 = V_0;
+		UnityARSessionRunOptionU5BU5D_t3114965901* L_15 = __this->get_runOptions_2();
+		int32_t L_16 = __this->get_currentOptionIndex_5();
+		NullCheck(L_15);
+		int32_t L_17 = L_16;
+		int32_t L_18 = (L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_17));
+		NullCheck(L_13);
+		UnityARSessionNativeInterface_RunWithConfigAndOptions_m375276821(L_13, L_14, L_18, /*hidden argument*/NULL);
+	}
+
+IL_0095:
+	{
+		Rect_t3681755626  L_19;
+		memset(&L_19, 0, sizeof(L_19));
+		Rect__ctor_m1220545469(&L_19, (100.0f), (300.0f), (200.0f), (100.0f), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+		bool L_20 = GUI_Button_m3054448581(NULL /*static, unused*/, L_19, _stringLiteral2341529191, /*hidden argument*/NULL);
+		if (!L_20)
+		{
+			goto IL_00de;
+		}
+	}
+	{
+		UnityARAlignmentU5BU5D_t218994990* L_21 = __this->get_alignmentOptions_3();
+		int32_t L_22 = __this->get_currentAlignmentIndex_6();
+		NullCheck(L_21);
+		int32_t L_23 = L_22;
+		int32_t L_24 = (L_21)->GetAt(static_cast<il2cpp_array_size_t>(L_23));
+		ARKitSessionConfiguration__ctor_m3221520625((&V_1), L_24, (bool)1, (bool)1, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_t1130867170 * L_25 = UnityARSessionNativeInterface_GetARSessionNativeInterface_m3174488657(NULL /*static, unused*/, /*hidden argument*/NULL);
+		ARKitSessionConfiguration_t318899795  L_26 = V_1;
+		NullCheck(L_25);
+		UnityARSessionNativeInterface_RunWithConfig_m2478060541(L_25, L_26, /*hidden argument*/NULL);
+	}
+
+IL_00de:
+	{
+		int32_t L_27 = __this->get_currentOptionIndex_5();
+		if (L_27)
+		{
+			goto IL_00f3;
+		}
+	}
+	{
+		G_B13_0 = _stringLiteral1743625051;
+		goto IL_0124;
+	}
+
+IL_00f3:
+	{
+		int32_t L_28 = __this->get_currentOptionIndex_5();
+		if ((!(((uint32_t)L_28) == ((uint32_t)1))))
+		{
+			goto IL_0109;
+		}
+	}
+	{
+		G_B13_0 = _stringLiteral1174079095;
+		goto IL_0124;
+	}
+
+IL_0109:
+	{
+		int32_t L_29 = __this->get_currentOptionIndex_5();
+		if ((!(((uint32_t)L_29) == ((uint32_t)2))))
+		{
+			goto IL_011f;
+		}
+	}
+	{
+		G_B13_0 = _stringLiteral2724865136;
+		goto IL_0124;
+	}
+
+IL_011f:
+	{
+		G_B13_0 = _stringLiteral1414246128;
+	}
+
+IL_0124:
+	{
+		V_2 = G_B13_0;
+		Rect_t3681755626  L_30;
+		memset(&L_30, 0, sizeof(L_30));
+		Rect__ctor_m1220545469(&L_30, (100.0f), (200.0f), (150.0f), (50.0f), /*hidden argument*/NULL);
+		String_t* L_31 = V_2;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_32 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral1301536196, L_31, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+		bool L_33 = GUI_Button_m3054448581(NULL /*static, unused*/, L_30, L_32, /*hidden argument*/NULL);
+		if (!L_33)
+		{
+			goto IL_0163;
+		}
+	}
+	{
+		int32_t L_34 = __this->get_currentOptionIndex_5();
+		__this->set_currentOptionIndex_5(((int32_t)((int32_t)((int32_t)((int32_t)L_34+(int32_t)1))%(int32_t)4)));
+	}
+
+IL_0163:
+	{
+		int32_t L_35 = __this->get_currentAlignmentIndex_6();
+		if (L_35)
+		{
+			goto IL_0178;
+		}
+	}
+	{
+		G_B20_0 = _stringLiteral3675648761;
+		goto IL_0193;
+	}
+
+IL_0178:
+	{
+		int32_t L_36 = __this->get_currentAlignmentIndex_6();
+		if ((!(((uint32_t)L_36) == ((uint32_t)1))))
+		{
+			goto IL_018e;
+		}
+	}
+	{
+		G_B20_0 = _stringLiteral3025722940;
+		goto IL_0193;
+	}
+
+IL_018e:
+	{
+		G_B20_0 = _stringLiteral3575497429;
+	}
+
+IL_0193:
+	{
+		V_3 = G_B20_0;
+		Rect_t3681755626  L_37;
+		memset(&L_37, 0, sizeof(L_37));
+		Rect__ctor_m1220545469(&L_37, (300.0f), (200.0f), (150.0f), (50.0f), /*hidden argument*/NULL);
+		String_t* L_38 = V_3;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_39 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral4059134932, L_38, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+		bool L_40 = GUI_Button_m3054448581(NULL /*static, unused*/, L_37, L_39, /*hidden argument*/NULL);
+		if (!L_40)
+		{
+			goto IL_01d2;
+		}
+	}
+	{
+		int32_t L_41 = __this->get_currentAlignmentIndex_6();
+		__this->set_currentAlignmentIndex_6(((int32_t)((int32_t)((int32_t)((int32_t)L_41+(int32_t)1))%(int32_t)3)));
+	}
+
+IL_01d2:
+	{
+		int32_t L_42 = __this->get_currentPlaneIndex_7();
+		if (L_42)
+		{
+			goto IL_01e7;
+		}
+	}
+	{
+		G_B29_0 = _stringLiteral2529991261;
+		goto IL_0218;
+	}
+
+IL_01e7:
+	{
+		int32_t L_43 = __this->get_currentPlaneIndex_7();
+		if ((!(((uint32_t)L_43) == ((uint32_t)1))))
+		{
+			goto IL_01fd;
+		}
+	}
+	{
+		G_B29_0 = _stringLiteral855845486;
+		goto IL_0218;
+	}
+
+IL_01fd:
+	{
+		int32_t L_44 = __this->get_currentPlaneIndex_7();
+		if ((!(((uint32_t)L_44) == ((uint32_t)2))))
+		{
+			goto IL_0213;
+		}
+	}
+	{
+		G_B29_0 = _stringLiteral1635882288;
+		goto IL_0218;
+	}
+
+IL_0213:
+	{
+		G_B29_0 = _stringLiteral1414246128;
+	}
+
+IL_0218:
+	{
+		V_4 = G_B29_0;
+		Rect_t3681755626  L_45;
+		memset(&L_45, 0, sizeof(L_45));
+		Rect__ctor_m1220545469(&L_45, (500.0f), (200.0f), (150.0f), (50.0f), /*hidden argument*/NULL);
+		String_t* L_46 = V_4;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_47 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral3168505747, L_46, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+		bool L_48 = GUI_Button_m3054448581(NULL /*static, unused*/, L_45, L_47, /*hidden argument*/NULL);
+		if (!L_48)
+		{
+			goto IL_0259;
+		}
+	}
+	{
+		int32_t L_49 = __this->get_currentPlaneIndex_7();
+		__this->set_currentPlaneIndex_7(((int32_t)((int32_t)((int32_t)((int32_t)L_49+(int32_t)1))%(int32_t)4)));
+	}
+
+IL_0259:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARMatrixOps::.ctor()
+extern "C"  void UnityARMatrixOps__ctor_m4029735674 (UnityARMatrixOps_t4039665643 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// UnityEngine.Vector3 UnityEngine.XR.iOS.UnityARMatrixOps::GetPosition(UnityEngine.Matrix4x4)
+extern "C"  Vector3_t2243707580  UnityARMatrixOps_GetPosition_m1153858439 (Il2CppObject * __this /* static, unused */, Matrix4x4_t2933234003  ___matrix0, const MethodInfo* method)
+{
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Vector4_t2243707581  L_0 = Matrix4x4_GetColumn_m1367096730((&___matrix0), 3, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_1 = Vector4_op_Implicit_m1902992875(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		float L_2 = (&V_0)->get_z_3();
+		(&V_0)->set_z_3(((-L_2)));
+		Vector3_t2243707580  L_3 = V_0;
+		return L_3;
+	}
+}
+// UnityEngine.Quaternion UnityEngine.XR.iOS.UnityARMatrixOps::GetRotation(UnityEngine.Matrix4x4)
+extern "C"  Quaternion_t4030073918  UnityARMatrixOps_GetRotation_m1002641986 (Il2CppObject * __this /* static, unused */, Matrix4x4_t2933234003  ___matrix0, const MethodInfo* method)
+{
+	Quaternion_t4030073918  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Matrix4x4_t2933234003  L_0 = ___matrix0;
+		Quaternion_t4030073918  L_1 = UnityARMatrixOps_QuaternionFromMatrix_m1686577287(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		float L_2 = (&V_0)->get_z_2();
+		(&V_0)->set_z_2(((-L_2)));
+		float L_3 = (&V_0)->get_w_3();
+		(&V_0)->set_w_3(((-L_3)));
+		Quaternion_t4030073918  L_4 = V_0;
+		return L_4;
+	}
+}
+// UnityEngine.Quaternion UnityEngine.XR.iOS.UnityARMatrixOps::QuaternionFromMatrix(UnityEngine.Matrix4x4)
+extern "C"  Quaternion_t4030073918  UnityARMatrixOps_QuaternionFromMatrix_m1686577287 (Il2CppObject * __this /* static, unused */, Matrix4x4_t2933234003  ___m0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARMatrixOps_QuaternionFromMatrix_m1686577287_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Quaternion_t4030073918  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Initobj (Quaternion_t4030073918_il2cpp_TypeInfo_var, (&V_0));
+		float L_0 = Matrix4x4_get_Item_m312280350((&___m0), 0, 0, /*hidden argument*/NULL);
+		float L_1 = Matrix4x4_get_Item_m312280350((&___m0), 1, 1, /*hidden argument*/NULL);
+		float L_2 = Matrix4x4_get_Item_m312280350((&___m0), 2, 2, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_3 = Mathf_Max_m2564622569(NULL /*static, unused*/, (0.0f), ((float)((float)((float)((float)((float)((float)(1.0f)+(float)L_0))+(float)L_1))+(float)L_2)), /*hidden argument*/NULL);
+		float L_4 = sqrtf(L_3);
+		(&V_0)->set_w_3(((float)((float)L_4/(float)(2.0f))));
+		float L_5 = Matrix4x4_get_Item_m312280350((&___m0), 0, 0, /*hidden argument*/NULL);
+		float L_6 = Matrix4x4_get_Item_m312280350((&___m0), 1, 1, /*hidden argument*/NULL);
+		float L_7 = Matrix4x4_get_Item_m312280350((&___m0), 2, 2, /*hidden argument*/NULL);
+		float L_8 = Mathf_Max_m2564622569(NULL /*static, unused*/, (0.0f), ((float)((float)((float)((float)((float)((float)(1.0f)+(float)L_5))-(float)L_6))-(float)L_7)), /*hidden argument*/NULL);
+		float L_9 = sqrtf(L_8);
+		(&V_0)->set_x_0(((float)((float)L_9/(float)(2.0f))));
+		float L_10 = Matrix4x4_get_Item_m312280350((&___m0), 0, 0, /*hidden argument*/NULL);
+		float L_11 = Matrix4x4_get_Item_m312280350((&___m0), 1, 1, /*hidden argument*/NULL);
+		float L_12 = Matrix4x4_get_Item_m312280350((&___m0), 2, 2, /*hidden argument*/NULL);
+		float L_13 = Mathf_Max_m2564622569(NULL /*static, unused*/, (0.0f), ((float)((float)((float)((float)((float)((float)(1.0f)-(float)L_10))+(float)L_11))-(float)L_12)), /*hidden argument*/NULL);
+		float L_14 = sqrtf(L_13);
+		(&V_0)->set_y_1(((float)((float)L_14/(float)(2.0f))));
+		float L_15 = Matrix4x4_get_Item_m312280350((&___m0), 0, 0, /*hidden argument*/NULL);
+		float L_16 = Matrix4x4_get_Item_m312280350((&___m0), 1, 1, /*hidden argument*/NULL);
+		float L_17 = Matrix4x4_get_Item_m312280350((&___m0), 2, 2, /*hidden argument*/NULL);
+		float L_18 = Mathf_Max_m2564622569(NULL /*static, unused*/, (0.0f), ((float)((float)((float)((float)((float)((float)(1.0f)-(float)L_15))-(float)L_16))+(float)L_17)), /*hidden argument*/NULL);
+		float L_19 = sqrtf(L_18);
+		(&V_0)->set_z_2(((float)((float)L_19/(float)(2.0f))));
+		Quaternion_t4030073918 * L_20 = (&V_0);
+		float L_21 = L_20->get_x_0();
+		float L_22 = (&V_0)->get_x_0();
+		float L_23 = Matrix4x4_get_Item_m312280350((&___m0), 2, 1, /*hidden argument*/NULL);
+		float L_24 = Matrix4x4_get_Item_m312280350((&___m0), 1, 2, /*hidden argument*/NULL);
+		float L_25 = Mathf_Sign_m2039143327(NULL /*static, unused*/, ((float)((float)L_22*(float)((float)((float)L_23-(float)L_24)))), /*hidden argument*/NULL);
+		L_20->set_x_0(((float)((float)L_21*(float)L_25)));
+		Quaternion_t4030073918 * L_26 = (&V_0);
+		float L_27 = L_26->get_y_1();
+		float L_28 = (&V_0)->get_y_1();
+		float L_29 = Matrix4x4_get_Item_m312280350((&___m0), 0, 2, /*hidden argument*/NULL);
+		float L_30 = Matrix4x4_get_Item_m312280350((&___m0), 2, 0, /*hidden argument*/NULL);
+		float L_31 = Mathf_Sign_m2039143327(NULL /*static, unused*/, ((float)((float)L_28*(float)((float)((float)L_29-(float)L_30)))), /*hidden argument*/NULL);
+		L_26->set_y_1(((float)((float)L_27*(float)L_31)));
+		Quaternion_t4030073918 * L_32 = (&V_0);
+		float L_33 = L_32->get_z_2();
+		float L_34 = (&V_0)->get_z_2();
+		float L_35 = Matrix4x4_get_Item_m312280350((&___m0), 1, 0, /*hidden argument*/NULL);
+		float L_36 = Matrix4x4_get_Item_m312280350((&___m0), 0, 1, /*hidden argument*/NULL);
+		float L_37 = Mathf_Sign_m2039143327(NULL /*static, unused*/, ((float)((float)L_34*(float)((float)((float)L_35-(float)L_36)))), /*hidden argument*/NULL);
+		L_32->set_z_2(((float)((float)L_33*(float)L_37)));
+		Quaternion_t4030073918  L_38 = V_0;
+		return L_38;
+	}
+}
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_UnityARSessionNativeInterface__frame_update_m127370(internal_UnityARCamera_t2580192745  ___camera0)
+{
+	il2cpp_native_wrapper_vm_thread_attacher _vmThreadHelper;
+
+	// Managed method invocation
+	UnityARSessionNativeInterface__frame_update_m127370(NULL, ___camera0, NULL);
+
+}
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_UnityARSessionNativeInterface__anchor_added_m3584567327(UnityARAnchorData_t2901866349  ___anchor0)
+{
+	il2cpp_native_wrapper_vm_thread_attacher _vmThreadHelper;
+
+	// Managed method invocation
+	UnityARSessionNativeInterface__anchor_added_m3584567327(NULL, ___anchor0, NULL);
+
+}
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_UnityARSessionNativeInterface__anchor_updated_m1970308864(UnityARAnchorData_t2901866349  ___anchor0)
+{
+	il2cpp_native_wrapper_vm_thread_attacher _vmThreadHelper;
+
+	// Managed method invocation
+	UnityARSessionNativeInterface__anchor_updated_m1970308864(NULL, ___anchor0, NULL);
+
+}
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_UnityARSessionNativeInterface__anchor_removed_m4240378233(UnityARAnchorData_t2901866349  ___anchor0)
+{
+	il2cpp_native_wrapper_vm_thread_attacher _vmThreadHelper;
+
+	// Managed method invocation
+	UnityARSessionNativeInterface__anchor_removed_m4240378233(NULL, ___anchor0, NULL);
+
+}
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_UnityARSessionNativeInterface__ar_session_failed_m2515310284(char* ___error0)
+{
+	il2cpp_native_wrapper_vm_thread_attacher _vmThreadHelper;
+
+	// Marshaling of parameter '___error0' to managed representation
+	String_t* ____error0_unmarshaled = NULL;
+	____error0_unmarshaled = il2cpp_codegen_marshal_string_result(___error0);
+
+	// Managed method invocation
+	UnityARSessionNativeInterface__ar_session_failed_m2515310284(NULL, ____error0_unmarshaled, NULL);
+
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::.ctor()
+extern "C"  void UnityARSessionNativeInterface__ctor_m2294513111 (UnityARSessionNativeInterface_t1130867170 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface__ctor_m2294513111_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	UnityARSessionNativeInterface_t1130867170 * G_B2_0 = NULL;
+	UnityARSessionNativeInterface_t1130867170 * G_B1_0 = NULL;
+	internal_ARFrameUpdate_t3296518558 * G_B4_0 = NULL;
+	UnityARSessionNativeInterface_t1130867170 * G_B4_1 = NULL;
+	internal_ARFrameUpdate_t3296518558 * G_B3_0 = NULL;
+	UnityARSessionNativeInterface_t1130867170 * G_B3_1 = NULL;
+	internal_ARAnchorAdded_t1622117597 * G_B6_0 = NULL;
+	internal_ARFrameUpdate_t3296518558 * G_B6_1 = NULL;
+	UnityARSessionNativeInterface_t1130867170 * G_B6_2 = NULL;
+	internal_ARAnchorAdded_t1622117597 * G_B5_0 = NULL;
+	internal_ARFrameUpdate_t3296518558 * G_B5_1 = NULL;
+	UnityARSessionNativeInterface_t1130867170 * G_B5_2 = NULL;
+	internal_ARAnchorUpdated_t3705772742 * G_B8_0 = NULL;
+	internal_ARAnchorAdded_t1622117597 * G_B8_1 = NULL;
+	internal_ARFrameUpdate_t3296518558 * G_B8_2 = NULL;
+	UnityARSessionNativeInterface_t1130867170 * G_B8_3 = NULL;
+	internal_ARAnchorUpdated_t3705772742 * G_B7_0 = NULL;
+	internal_ARAnchorAdded_t1622117597 * G_B7_1 = NULL;
+	internal_ARFrameUpdate_t3296518558 * G_B7_2 = NULL;
+	UnityARSessionNativeInterface_t1130867170 * G_B7_3 = NULL;
+	internal_ARAnchorRemoved_t3189755211 * G_B10_0 = NULL;
+	internal_ARAnchorUpdated_t3705772742 * G_B10_1 = NULL;
+	internal_ARAnchorAdded_t1622117597 * G_B10_2 = NULL;
+	internal_ARFrameUpdate_t3296518558 * G_B10_3 = NULL;
+	UnityARSessionNativeInterface_t1130867170 * G_B10_4 = NULL;
+	internal_ARAnchorRemoved_t3189755211 * G_B9_0 = NULL;
+	internal_ARAnchorUpdated_t3705772742 * G_B9_1 = NULL;
+	internal_ARAnchorAdded_t1622117597 * G_B9_2 = NULL;
+	internal_ARFrameUpdate_t3296518558 * G_B9_3 = NULL;
+	UnityARSessionNativeInterface_t1130867170 * G_B9_4 = NULL;
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		internal_ARFrameUpdate_t3296518558 * L_0 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache0_8();
+		G_B1_0 = __this;
+		if (L_0)
+		{
+			G_B2_0 = __this;
+			goto IL_001f;
+		}
+	}
+	{
+		IntPtr_t L_1;
+		L_1.set_m_value_0((void*)(void*)UnityARSessionNativeInterface__frame_update_m127370_MethodInfo_var);
+		internal_ARFrameUpdate_t3296518558 * L_2 = (internal_ARFrameUpdate_t3296518558 *)il2cpp_codegen_object_new(internal_ARFrameUpdate_t3296518558_il2cpp_TypeInfo_var);
+		internal_ARFrameUpdate__ctor_m36448827(L_2, NULL, L_1, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->set_U3CU3Ef__mgU24cache0_8(L_2);
+		G_B2_0 = G_B1_0;
+	}
+
+IL_001f:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		internal_ARFrameUpdate_t3296518558 * L_3 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache0_8();
+		internal_ARAnchorAdded_t1622117597 * L_4 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache1_9();
+		G_B3_0 = L_3;
+		G_B3_1 = G_B2_0;
+		if (L_4)
+		{
+			G_B4_0 = L_3;
+			G_B4_1 = G_B2_0;
+			goto IL_003c;
+		}
+	}
+	{
+		IntPtr_t L_5;
+		L_5.set_m_value_0((void*)(void*)UnityARSessionNativeInterface__anchor_added_m3584567327_MethodInfo_var);
+		internal_ARAnchorAdded_t1622117597 * L_6 = (internal_ARAnchorAdded_t1622117597 *)il2cpp_codegen_object_new(internal_ARAnchorAdded_t1622117597_il2cpp_TypeInfo_var);
+		internal_ARAnchorAdded__ctor_m875644652(L_6, NULL, L_5, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->set_U3CU3Ef__mgU24cache1_9(L_6);
+		G_B4_0 = G_B3_0;
+		G_B4_1 = G_B3_1;
+	}
+
+IL_003c:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		internal_ARAnchorAdded_t1622117597 * L_7 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache1_9();
+		internal_ARAnchorUpdated_t3705772742 * L_8 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache2_10();
+		G_B5_0 = L_7;
+		G_B5_1 = G_B4_0;
+		G_B5_2 = G_B4_1;
+		if (L_8)
+		{
+			G_B6_0 = L_7;
+			G_B6_1 = G_B4_0;
+			G_B6_2 = G_B4_1;
+			goto IL_0059;
+		}
+	}
+	{
+		IntPtr_t L_9;
+		L_9.set_m_value_0((void*)(void*)UnityARSessionNativeInterface__anchor_updated_m1970308864_MethodInfo_var);
+		internal_ARAnchorUpdated_t3705772742 * L_10 = (internal_ARAnchorUpdated_t3705772742 *)il2cpp_codegen_object_new(internal_ARAnchorUpdated_t3705772742_il2cpp_TypeInfo_var);
+		internal_ARAnchorUpdated__ctor_m2904213987(L_10, NULL, L_9, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->set_U3CU3Ef__mgU24cache2_10(L_10);
+		G_B6_0 = G_B5_0;
+		G_B6_1 = G_B5_1;
+		G_B6_2 = G_B5_2;
+	}
+
+IL_0059:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		internal_ARAnchorUpdated_t3705772742 * L_11 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache2_10();
+		internal_ARAnchorRemoved_t3189755211 * L_12 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache3_11();
+		G_B7_0 = L_11;
+		G_B7_1 = G_B6_0;
+		G_B7_2 = G_B6_1;
+		G_B7_3 = G_B6_2;
+		if (L_12)
+		{
+			G_B8_0 = L_11;
+			G_B8_1 = G_B6_0;
+			G_B8_2 = G_B6_1;
+			G_B8_3 = G_B6_2;
+			goto IL_0076;
+		}
+	}
+	{
+		IntPtr_t L_13;
+		L_13.set_m_value_0((void*)(void*)UnityARSessionNativeInterface__anchor_removed_m4240378233_MethodInfo_var);
+		internal_ARAnchorRemoved_t3189755211 * L_14 = (internal_ARAnchorRemoved_t3189755211 *)il2cpp_codegen_object_new(internal_ARAnchorRemoved_t3189755211_il2cpp_TypeInfo_var);
+		internal_ARAnchorRemoved__ctor_m2856503254(L_14, NULL, L_13, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->set_U3CU3Ef__mgU24cache3_11(L_14);
+		G_B8_0 = G_B7_0;
+		G_B8_1 = G_B7_1;
+		G_B8_2 = G_B7_2;
+		G_B8_3 = G_B7_3;
+	}
+
+IL_0076:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		internal_ARAnchorRemoved_t3189755211 * L_15 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache3_11();
+		ARSessionFailed_t872580813 * L_16 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache4_12();
+		G_B9_0 = L_15;
+		G_B9_1 = G_B8_0;
+		G_B9_2 = G_B8_1;
+		G_B9_3 = G_B8_2;
+		G_B9_4 = G_B8_3;
+		if (L_16)
+		{
+			G_B10_0 = L_15;
+			G_B10_1 = G_B8_0;
+			G_B10_2 = G_B8_1;
+			G_B10_3 = G_B8_2;
+			G_B10_4 = G_B8_3;
+			goto IL_0093;
+		}
+	}
+	{
+		IntPtr_t L_17;
+		L_17.set_m_value_0((void*)(void*)UnityARSessionNativeInterface__ar_session_failed_m2515310284_MethodInfo_var);
+		ARSessionFailed_t872580813 * L_18 = (ARSessionFailed_t872580813 *)il2cpp_codegen_object_new(ARSessionFailed_t872580813_il2cpp_TypeInfo_var);
+		ARSessionFailed__ctor_m3600321544(L_18, NULL, L_17, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->set_U3CU3Ef__mgU24cache4_12(L_18);
+		G_B10_0 = G_B9_0;
+		G_B10_1 = G_B9_1;
+		G_B10_2 = G_B9_2;
+		G_B10_3 = G_B9_3;
+		G_B10_4 = G_B9_4;
+	}
+
+IL_0093:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARSessionFailed_t872580813 * L_19 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache4_12();
+		IntPtr_t L_20 = UnityARSessionNativeInterface_unity_CreateNativeARSession_m1019965107(NULL /*static, unused*/, G_B10_3, G_B10_2, G_B10_1, G_B10_0, L_19, /*hidden argument*/NULL);
+		NullCheck(G_B10_4);
+		G_B10_4->set_m_NativeARSession_5(L_20);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::add_ARFrameUpdatedEvent(UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARFrameUpdate)
+extern "C"  void UnityARSessionNativeInterface_add_ARFrameUpdatedEvent_m2850773202 (Il2CppObject * __this /* static, unused */, ARFrameUpdate_t496507918 * ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_add_ARFrameUpdatedEvent_m2850773202_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARFrameUpdate_t496507918 * V_0 = NULL;
+	ARFrameUpdate_t496507918 * V_1 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARFrameUpdate_t496507918 * L_0 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARFrameUpdatedEvent_0();
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		ARFrameUpdate_t496507918 * L_1 = V_0;
+		V_1 = L_1;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARFrameUpdate_t496507918 * L_2 = V_1;
+		ARFrameUpdate_t496507918 * L_3 = ___value0;
+		Delegate_t3022476291 * L_4 = Delegate_Combine_m3791207084(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+		ARFrameUpdate_t496507918 * L_5 = V_0;
+		ARFrameUpdate_t496507918 * L_6 = InterlockedCompareExchangeImpl<ARFrameUpdate_t496507918 *>((((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_ARFrameUpdatedEvent_0()), ((ARFrameUpdate_t496507918 *)CastclassSealed(L_4, ARFrameUpdate_t496507918_il2cpp_TypeInfo_var)), L_5);
+		V_0 = L_6;
+		ARFrameUpdate_t496507918 * L_7 = V_0;
+		ARFrameUpdate_t496507918 * L_8 = V_1;
+		if ((!(((Il2CppObject*)(ARFrameUpdate_t496507918 *)L_7) == ((Il2CppObject*)(ARFrameUpdate_t496507918 *)L_8))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::remove_ARFrameUpdatedEvent(UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARFrameUpdate)
+extern "C"  void UnityARSessionNativeInterface_remove_ARFrameUpdatedEvent_m415315455 (Il2CppObject * __this /* static, unused */, ARFrameUpdate_t496507918 * ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_remove_ARFrameUpdatedEvent_m415315455_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARFrameUpdate_t496507918 * V_0 = NULL;
+	ARFrameUpdate_t496507918 * V_1 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARFrameUpdate_t496507918 * L_0 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARFrameUpdatedEvent_0();
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		ARFrameUpdate_t496507918 * L_1 = V_0;
+		V_1 = L_1;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARFrameUpdate_t496507918 * L_2 = V_1;
+		ARFrameUpdate_t496507918 * L_3 = ___value0;
+		Delegate_t3022476291 * L_4 = Delegate_Remove_m2626518725(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+		ARFrameUpdate_t496507918 * L_5 = V_0;
+		ARFrameUpdate_t496507918 * L_6 = InterlockedCompareExchangeImpl<ARFrameUpdate_t496507918 *>((((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_ARFrameUpdatedEvent_0()), ((ARFrameUpdate_t496507918 *)CastclassSealed(L_4, ARFrameUpdate_t496507918_il2cpp_TypeInfo_var)), L_5);
+		V_0 = L_6;
+		ARFrameUpdate_t496507918 * L_7 = V_0;
+		ARFrameUpdate_t496507918 * L_8 = V_1;
+		if ((!(((Il2CppObject*)(ARFrameUpdate_t496507918 *)L_7) == ((Il2CppObject*)(ARFrameUpdate_t496507918 *)L_8))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::add_ARAnchorAddedEvent(UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorAdded)
+extern "C"  void UnityARSessionNativeInterface_add_ARAnchorAddedEvent_m658032036 (Il2CppObject * __this /* static, unused */, ARAnchorAdded_t2646854145 * ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_add_ARAnchorAddedEvent_m658032036_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARAnchorAdded_t2646854145 * V_0 = NULL;
+	ARAnchorAdded_t2646854145 * V_1 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARAnchorAdded_t2646854145 * L_0 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARAnchorAddedEvent_1();
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		ARAnchorAdded_t2646854145 * L_1 = V_0;
+		V_1 = L_1;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARAnchorAdded_t2646854145 * L_2 = V_1;
+		ARAnchorAdded_t2646854145 * L_3 = ___value0;
+		Delegate_t3022476291 * L_4 = Delegate_Combine_m3791207084(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+		ARAnchorAdded_t2646854145 * L_5 = V_0;
+		ARAnchorAdded_t2646854145 * L_6 = InterlockedCompareExchangeImpl<ARAnchorAdded_t2646854145 *>((((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_ARAnchorAddedEvent_1()), ((ARAnchorAdded_t2646854145 *)CastclassSealed(L_4, ARAnchorAdded_t2646854145_il2cpp_TypeInfo_var)), L_5);
+		V_0 = L_6;
+		ARAnchorAdded_t2646854145 * L_7 = V_0;
+		ARAnchorAdded_t2646854145 * L_8 = V_1;
+		if ((!(((Il2CppObject*)(ARAnchorAdded_t2646854145 *)L_7) == ((Il2CppObject*)(ARAnchorAdded_t2646854145 *)L_8))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::remove_ARAnchorAddedEvent(UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorAdded)
+extern "C"  void UnityARSessionNativeInterface_remove_ARAnchorAddedEvent_m1622386471 (Il2CppObject * __this /* static, unused */, ARAnchorAdded_t2646854145 * ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_remove_ARAnchorAddedEvent_m1622386471_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARAnchorAdded_t2646854145 * V_0 = NULL;
+	ARAnchorAdded_t2646854145 * V_1 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARAnchorAdded_t2646854145 * L_0 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARAnchorAddedEvent_1();
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		ARAnchorAdded_t2646854145 * L_1 = V_0;
+		V_1 = L_1;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARAnchorAdded_t2646854145 * L_2 = V_1;
+		ARAnchorAdded_t2646854145 * L_3 = ___value0;
+		Delegate_t3022476291 * L_4 = Delegate_Remove_m2626518725(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+		ARAnchorAdded_t2646854145 * L_5 = V_0;
+		ARAnchorAdded_t2646854145 * L_6 = InterlockedCompareExchangeImpl<ARAnchorAdded_t2646854145 *>((((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_ARAnchorAddedEvent_1()), ((ARAnchorAdded_t2646854145 *)CastclassSealed(L_4, ARAnchorAdded_t2646854145_il2cpp_TypeInfo_var)), L_5);
+		V_0 = L_6;
+		ARAnchorAdded_t2646854145 * L_7 = V_0;
+		ARAnchorAdded_t2646854145 * L_8 = V_1;
+		if ((!(((Il2CppObject*)(ARAnchorAdded_t2646854145 *)L_7) == ((Il2CppObject*)(ARAnchorAdded_t2646854145 *)L_8))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::add_ARAnchorUpdatedEvent(UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorUpdated)
+extern "C"  void UnityARSessionNativeInterface_add_ARAnchorUpdatedEvent_m1485763364 (Il2CppObject * __this /* static, unused */, ARAnchorUpdated_t3886071158 * ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_add_ARAnchorUpdatedEvent_m1485763364_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARAnchorUpdated_t3886071158 * V_0 = NULL;
+	ARAnchorUpdated_t3886071158 * V_1 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARAnchorUpdated_t3886071158 * L_0 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARAnchorUpdatedEvent_2();
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		ARAnchorUpdated_t3886071158 * L_1 = V_0;
+		V_1 = L_1;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARAnchorUpdated_t3886071158 * L_2 = V_1;
+		ARAnchorUpdated_t3886071158 * L_3 = ___value0;
+		Delegate_t3022476291 * L_4 = Delegate_Combine_m3791207084(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+		ARAnchorUpdated_t3886071158 * L_5 = V_0;
+		ARAnchorUpdated_t3886071158 * L_6 = InterlockedCompareExchangeImpl<ARAnchorUpdated_t3886071158 *>((((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_ARAnchorUpdatedEvent_2()), ((ARAnchorUpdated_t3886071158 *)CastclassSealed(L_4, ARAnchorUpdated_t3886071158_il2cpp_TypeInfo_var)), L_5);
+		V_0 = L_6;
+		ARAnchorUpdated_t3886071158 * L_7 = V_0;
+		ARAnchorUpdated_t3886071158 * L_8 = V_1;
+		if ((!(((Il2CppObject*)(ARAnchorUpdated_t3886071158 *)L_7) == ((Il2CppObject*)(ARAnchorUpdated_t3886071158 *)L_8))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::remove_ARAnchorUpdatedEvent(UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorUpdated)
+extern "C"  void UnityARSessionNativeInterface_remove_ARAnchorUpdatedEvent_m2137207143 (Il2CppObject * __this /* static, unused */, ARAnchorUpdated_t3886071158 * ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_remove_ARAnchorUpdatedEvent_m2137207143_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARAnchorUpdated_t3886071158 * V_0 = NULL;
+	ARAnchorUpdated_t3886071158 * V_1 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARAnchorUpdated_t3886071158 * L_0 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARAnchorUpdatedEvent_2();
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		ARAnchorUpdated_t3886071158 * L_1 = V_0;
+		V_1 = L_1;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARAnchorUpdated_t3886071158 * L_2 = V_1;
+		ARAnchorUpdated_t3886071158 * L_3 = ___value0;
+		Delegate_t3022476291 * L_4 = Delegate_Remove_m2626518725(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+		ARAnchorUpdated_t3886071158 * L_5 = V_0;
+		ARAnchorUpdated_t3886071158 * L_6 = InterlockedCompareExchangeImpl<ARAnchorUpdated_t3886071158 *>((((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_ARAnchorUpdatedEvent_2()), ((ARAnchorUpdated_t3886071158 *)CastclassSealed(L_4, ARAnchorUpdated_t3886071158_il2cpp_TypeInfo_var)), L_5);
+		V_0 = L_6;
+		ARAnchorUpdated_t3886071158 * L_7 = V_0;
+		ARAnchorUpdated_t3886071158 * L_8 = V_1;
+		if ((!(((Il2CppObject*)(ARAnchorUpdated_t3886071158 *)L_7) == ((Il2CppObject*)(ARAnchorUpdated_t3886071158 *)L_8))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::add_ARAnchorRemovedEvent(UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorRemoved)
+extern "C"  void UnityARSessionNativeInterface_add_ARAnchorRemovedEvent_m2970646020 (Il2CppObject * __this /* static, unused */, ARAnchorRemoved_t142665927 * ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_add_ARAnchorRemovedEvent_m2970646020_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARAnchorRemoved_t142665927 * V_0 = NULL;
+	ARAnchorRemoved_t142665927 * V_1 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARAnchorRemoved_t142665927 * L_0 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARAnchorRemovedEvent_3();
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		ARAnchorRemoved_t142665927 * L_1 = V_0;
+		V_1 = L_1;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARAnchorRemoved_t142665927 * L_2 = V_1;
+		ARAnchorRemoved_t142665927 * L_3 = ___value0;
+		Delegate_t3022476291 * L_4 = Delegate_Combine_m3791207084(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+		ARAnchorRemoved_t142665927 * L_5 = V_0;
+		ARAnchorRemoved_t142665927 * L_6 = InterlockedCompareExchangeImpl<ARAnchorRemoved_t142665927 *>((((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_ARAnchorRemovedEvent_3()), ((ARAnchorRemoved_t142665927 *)CastclassSealed(L_4, ARAnchorRemoved_t142665927_il2cpp_TypeInfo_var)), L_5);
+		V_0 = L_6;
+		ARAnchorRemoved_t142665927 * L_7 = V_0;
+		ARAnchorRemoved_t142665927 * L_8 = V_1;
+		if ((!(((Il2CppObject*)(ARAnchorRemoved_t142665927 *)L_7) == ((Il2CppObject*)(ARAnchorRemoved_t142665927 *)L_8))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::remove_ARAnchorRemovedEvent(UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorRemoved)
+extern "C"  void UnityARSessionNativeInterface_remove_ARAnchorRemovedEvent_m1176445575 (Il2CppObject * __this /* static, unused */, ARAnchorRemoved_t142665927 * ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_remove_ARAnchorRemovedEvent_m1176445575_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARAnchorRemoved_t142665927 * V_0 = NULL;
+	ARAnchorRemoved_t142665927 * V_1 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARAnchorRemoved_t142665927 * L_0 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARAnchorRemovedEvent_3();
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		ARAnchorRemoved_t142665927 * L_1 = V_0;
+		V_1 = L_1;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARAnchorRemoved_t142665927 * L_2 = V_1;
+		ARAnchorRemoved_t142665927 * L_3 = ___value0;
+		Delegate_t3022476291 * L_4 = Delegate_Remove_m2626518725(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+		ARAnchorRemoved_t142665927 * L_5 = V_0;
+		ARAnchorRemoved_t142665927 * L_6 = InterlockedCompareExchangeImpl<ARAnchorRemoved_t142665927 *>((((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_ARAnchorRemovedEvent_3()), ((ARAnchorRemoved_t142665927 *)CastclassSealed(L_4, ARAnchorRemoved_t142665927_il2cpp_TypeInfo_var)), L_5);
+		V_0 = L_6;
+		ARAnchorRemoved_t142665927 * L_7 = V_0;
+		ARAnchorRemoved_t142665927 * L_8 = V_1;
+		if ((!(((Il2CppObject*)(ARAnchorRemoved_t142665927 *)L_7) == ((Il2CppObject*)(ARAnchorRemoved_t142665927 *)L_8))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::add_ARSessionFailedEvent(UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARSessionFailed)
+extern "C"  void UnityARSessionNativeInterface_add_ARSessionFailedEvent_m1972153860 (Il2CppObject * __this /* static, unused */, ARSessionFailed_t872580813 * ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_add_ARSessionFailedEvent_m1972153860_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARSessionFailed_t872580813 * V_0 = NULL;
+	ARSessionFailed_t872580813 * V_1 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARSessionFailed_t872580813 * L_0 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARSessionFailedEvent_4();
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		ARSessionFailed_t872580813 * L_1 = V_0;
+		V_1 = L_1;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARSessionFailed_t872580813 * L_2 = V_1;
+		ARSessionFailed_t872580813 * L_3 = ___value0;
+		Delegate_t3022476291 * L_4 = Delegate_Combine_m3791207084(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+		ARSessionFailed_t872580813 * L_5 = V_0;
+		ARSessionFailed_t872580813 * L_6 = InterlockedCompareExchangeImpl<ARSessionFailed_t872580813 *>((((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_ARSessionFailedEvent_4()), ((ARSessionFailed_t872580813 *)CastclassSealed(L_4, ARSessionFailed_t872580813_il2cpp_TypeInfo_var)), L_5);
+		V_0 = L_6;
+		ARSessionFailed_t872580813 * L_7 = V_0;
+		ARSessionFailed_t872580813 * L_8 = V_1;
+		if ((!(((Il2CppObject*)(ARSessionFailed_t872580813 *)L_7) == ((Il2CppObject*)(ARSessionFailed_t872580813 *)L_8))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::remove_ARSessionFailedEvent(UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARSessionFailed)
+extern "C"  void UnityARSessionNativeInterface_remove_ARSessionFailedEvent_m2378491719 (Il2CppObject * __this /* static, unused */, ARSessionFailed_t872580813 * ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_remove_ARSessionFailedEvent_m2378491719_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARSessionFailed_t872580813 * V_0 = NULL;
+	ARSessionFailed_t872580813 * V_1 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARSessionFailed_t872580813 * L_0 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARSessionFailedEvent_4();
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		ARSessionFailed_t872580813 * L_1 = V_0;
+		V_1 = L_1;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARSessionFailed_t872580813 * L_2 = V_1;
+		ARSessionFailed_t872580813 * L_3 = ___value0;
+		Delegate_t3022476291 * L_4 = Delegate_Remove_m2626518725(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+		ARSessionFailed_t872580813 * L_5 = V_0;
+		ARSessionFailed_t872580813 * L_6 = InterlockedCompareExchangeImpl<ARSessionFailed_t872580813 *>((((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_ARSessionFailedEvent_4()), ((ARSessionFailed_t872580813 *)CastclassSealed(L_4, ARSessionFailed_t872580813_il2cpp_TypeInfo_var)), L_5);
+		V_0 = L_6;
+		ARSessionFailed_t872580813 * L_7 = V_0;
+		ARSessionFailed_t872580813 * L_8 = V_1;
+		if ((!(((Il2CppObject*)(ARSessionFailed_t872580813 *)L_7) == ((Il2CppObject*)(ARSessionFailed_t872580813 *)L_8))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+extern "C" intptr_t DEFAULT_CALL unity_CreateNativeARSession(Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer);
+// System.IntPtr UnityEngine.XR.iOS.UnityARSessionNativeInterface::unity_CreateNativeARSession(UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARFrameUpdate,UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorAdded,UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorUpdated,UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorRemoved,UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARSessionFailed)
+extern "C"  IntPtr_t UnityARSessionNativeInterface_unity_CreateNativeARSession_m1019965107 (Il2CppObject * __this /* static, unused */, internal_ARFrameUpdate_t3296518558 * ___frameUpdate0, internal_ARAnchorAdded_t1622117597 * ___anchorAdded1, internal_ARAnchorUpdated_t3705772742 * ___anchorUpdated2, internal_ARAnchorRemoved_t3189755211 * ___anchorRemoved3, ARSessionFailed_t872580813 * ___sessionFailed4, const MethodInfo* method)
+{
+	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer);
+
+	// Marshaling of parameter '___frameUpdate0' to native representation
+	Il2CppMethodPointer ____frameUpdate0_marshaled = NULL;
+	____frameUpdate0_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(___frameUpdate0));
+
+	// Marshaling of parameter '___anchorAdded1' to native representation
+	Il2CppMethodPointer ____anchorAdded1_marshaled = NULL;
+	____anchorAdded1_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(___anchorAdded1));
+
+	// Marshaling of parameter '___anchorUpdated2' to native representation
+	Il2CppMethodPointer ____anchorUpdated2_marshaled = NULL;
+	____anchorUpdated2_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(___anchorUpdated2));
+
+	// Marshaling of parameter '___anchorRemoved3' to native representation
+	Il2CppMethodPointer ____anchorRemoved3_marshaled = NULL;
+	____anchorRemoved3_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(___anchorRemoved3));
+
+	// Marshaling of parameter '___sessionFailed4' to native representation
+	Il2CppMethodPointer ____sessionFailed4_marshaled = NULL;
+	____sessionFailed4_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(___sessionFailed4));
+
+	// Native function invocation
+	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(unity_CreateNativeARSession)(____frameUpdate0_marshaled, ____anchorAdded1_marshaled, ____anchorUpdated2_marshaled, ____anchorRemoved3_marshaled, ____sessionFailed4_marshaled);
+
+	// Marshaling of return value back from native representation
+	IntPtr_t _returnValue_unmarshaled;
+	_returnValue_unmarshaled.set_m_value_0(reinterpret_cast<void*>((intptr_t)(returnValue)));
+
+	return _returnValue_unmarshaled;
+}
+extern "C" void DEFAULT_CALL StartWorldTrackingSession(intptr_t, ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_pinvoke);
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::StartWorldTrackingSession(System.IntPtr,UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration)
+extern "C"  void UnityARSessionNativeInterface_StartWorldTrackingSession_m3140261726 (Il2CppObject * __this /* static, unused */, IntPtr_t ___nativeSession0, ARKitWorldTackingSessionConfiguration_t1821734930  ___configuration1, const MethodInfo* method)
+{
+
+
+	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t, ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_pinvoke);
+
+	// Marshaling of parameter '___configuration1' to native representation
+	ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_pinvoke ____configuration1_marshaled = {};
+	ARKitWorldTackingSessionConfiguration_t1821734930_marshal_pinvoke(___configuration1, ____configuration1_marshaled);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(StartWorldTrackingSession)(reinterpret_cast<intptr_t>((___nativeSession0).get_m_value_0()), ____configuration1_marshaled);
+
+	// Marshaling cleanup of parameter '___configuration1' native representation
+	ARKitWorldTackingSessionConfiguration_t1821734930_marshal_pinvoke_cleanup(____configuration1_marshaled);
+
+}
+extern "C" void DEFAULT_CALL StartWorldTrackingSessionWithOptions(intptr_t, ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_pinvoke, int32_t);
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::StartWorldTrackingSessionWithOptions(System.IntPtr,UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration,UnityEngine.XR.iOS.UnityARSessionRunOption)
+extern "C"  void UnityARSessionNativeInterface_StartWorldTrackingSessionWithOptions_m3150342870 (Il2CppObject * __this /* static, unused */, IntPtr_t ___nativeSession0, ARKitWorldTackingSessionConfiguration_t1821734930  ___configuration1, int32_t ___runOptions2, const MethodInfo* method)
+{
+
+
+	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t, ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_pinvoke, int32_t);
+
+	// Marshaling of parameter '___configuration1' to native representation
+	ARKitWorldTackingSessionConfiguration_t1821734930_marshaled_pinvoke ____configuration1_marshaled = {};
+	ARKitWorldTackingSessionConfiguration_t1821734930_marshal_pinvoke(___configuration1, ____configuration1_marshaled);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(StartWorldTrackingSessionWithOptions)(reinterpret_cast<intptr_t>((___nativeSession0).get_m_value_0()), ____configuration1_marshaled, ___runOptions2);
+
+	// Marshaling cleanup of parameter '___configuration1' native representation
+	ARKitWorldTackingSessionConfiguration_t1821734930_marshal_pinvoke_cleanup(____configuration1_marshaled);
+
+}
+extern "C" void DEFAULT_CALL StartSession(intptr_t, ARKitSessionConfiguration_t318899795_marshaled_pinvoke);
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::StartSession(System.IntPtr,UnityEngine.XR.iOS.ARKitSessionConfiguration)
+extern "C"  void UnityARSessionNativeInterface_StartSession_m227007524 (Il2CppObject * __this /* static, unused */, IntPtr_t ___nativeSession0, ARKitSessionConfiguration_t318899795  ___configuration1, const MethodInfo* method)
+{
+
+
+	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t, ARKitSessionConfiguration_t318899795_marshaled_pinvoke);
+
+	// Marshaling of parameter '___configuration1' to native representation
+	ARKitSessionConfiguration_t318899795_marshaled_pinvoke ____configuration1_marshaled = {};
+	ARKitSessionConfiguration_t318899795_marshal_pinvoke(___configuration1, ____configuration1_marshaled);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(StartSession)(reinterpret_cast<intptr_t>((___nativeSession0).get_m_value_0()), ____configuration1_marshaled);
+
+	// Marshaling cleanup of parameter '___configuration1' native representation
+	ARKitSessionConfiguration_t318899795_marshal_pinvoke_cleanup(____configuration1_marshaled);
+
+}
+extern "C" void DEFAULT_CALL StartSessionWithOptions(intptr_t, ARKitSessionConfiguration_t318899795_marshaled_pinvoke, int32_t);
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::StartSessionWithOptions(System.IntPtr,UnityEngine.XR.iOS.ARKitSessionConfiguration,UnityEngine.XR.iOS.UnityARSessionRunOption)
+extern "C"  void UnityARSessionNativeInterface_StartSessionWithOptions_m1815473114 (Il2CppObject * __this /* static, unused */, IntPtr_t ___nativeSession0, ARKitSessionConfiguration_t318899795  ___configuration1, int32_t ___runOptions2, const MethodInfo* method)
+{
+
+
+	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t, ARKitSessionConfiguration_t318899795_marshaled_pinvoke, int32_t);
+
+	// Marshaling of parameter '___configuration1' to native representation
+	ARKitSessionConfiguration_t318899795_marshaled_pinvoke ____configuration1_marshaled = {};
+	ARKitSessionConfiguration_t318899795_marshal_pinvoke(___configuration1, ____configuration1_marshaled);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(StartSessionWithOptions)(reinterpret_cast<intptr_t>((___nativeSession0).get_m_value_0()), ____configuration1_marshaled, ___runOptions2);
+
+	// Marshaling cleanup of parameter '___configuration1' native representation
+	ARKitSessionConfiguration_t318899795_marshal_pinvoke_cleanup(____configuration1_marshaled);
+
+}
+extern "C" void DEFAULT_CALL PauseSession(intptr_t);
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::PauseSession(System.IntPtr)
+extern "C"  void UnityARSessionNativeInterface_PauseSession_m2717865525 (Il2CppObject * __this /* static, unused */, IntPtr_t ___nativeSession0, const MethodInfo* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(PauseSession)(reinterpret_cast<intptr_t>((___nativeSession0).get_m_value_0()));
+
+}
+extern "C" int32_t DEFAULT_CALL HitTest(intptr_t, ARPoint_t3436811567 , int64_t);
+// System.Int32 UnityEngine.XR.iOS.UnityARSessionNativeInterface::HitTest(System.IntPtr,UnityEngine.XR.iOS.ARPoint,UnityEngine.XR.iOS.ARHitTestResultType)
+extern "C"  int32_t UnityARSessionNativeInterface_HitTest_m1115034644 (Il2CppObject * __this /* static, unused */, IntPtr_t ___nativeSession0, ARPoint_t3436811567  ___point1, int64_t ___types2, const MethodInfo* method)
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, ARPoint_t3436811567 , int64_t);
+
+	// Native function invocation
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(HitTest)(reinterpret_cast<intptr_t>((___nativeSession0).get_m_value_0()), ___point1, ___types2);
+
+	return returnValue;
+}
+extern "C" UnityARHitTestResult_t4129824344_marshaled_pinvoke DEFAULT_CALL GetLastHitTestResult(int32_t);
+// UnityEngine.XR.iOS.UnityARHitTestResult UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetLastHitTestResult(System.Int32)
+extern "C"  UnityARHitTestResult_t4129824344  UnityARSessionNativeInterface_GetLastHitTestResult_m1489387413 (Il2CppObject * __this /* static, unused */, int32_t ___index0, const MethodInfo* method)
+{
+
+
+	typedef UnityARHitTestResult_t4129824344_marshaled_pinvoke (DEFAULT_CALL *PInvokeFunc) (int32_t);
+
+	// Native function invocation
+	UnityARHitTestResult_t4129824344_marshaled_pinvoke returnValue = reinterpret_cast<PInvokeFunc>(GetLastHitTestResult)(___index0);
+
+	// Marshaling of return value back from native representation
+	UnityARHitTestResult_t4129824344  _returnValue_unmarshaled;
+	memset(&_returnValue_unmarshaled, 0, sizeof(_returnValue_unmarshaled));
+	UnityARHitTestResult_t4129824344_marshal_pinvoke_back(returnValue, _returnValue_unmarshaled);
+
+	// Marshaling cleanup of return value native representation
+	UnityARHitTestResult_t4129824344_marshal_pinvoke_cleanup(returnValue);
+
+	return _returnValue_unmarshaled;
+}
+extern "C" ARTextureHandles_t3764914833  DEFAULT_CALL GetVideoTextureHandles();
+// UnityEngine.XR.iOS.ARTextureHandles UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetVideoTextureHandles()
+extern "C"  ARTextureHandles_t3764914833  UnityARSessionNativeInterface_GetVideoTextureHandles_m4073538006 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef ARTextureHandles_t3764914833  (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	ARTextureHandles_t3764914833  returnValue = reinterpret_cast<PInvokeFunc>(GetVideoTextureHandles)();
+
+	return returnValue;
+}
+extern "C" float DEFAULT_CALL GetAmbientIntensity();
+// System.Single UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetAmbientIntensity()
+extern "C"  float UnityARSessionNativeInterface_GetAmbientIntensity_m3132982210 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef float (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	float returnValue = reinterpret_cast<PInvokeFunc>(GetAmbientIntensity)();
+
+	return returnValue;
+}
+extern "C" int32_t DEFAULT_CALL GetTrackingQuality();
+// System.Int32 UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetTrackingQuality()
+extern "C"  int32_t UnityARSessionNativeInterface_GetTrackingQuality_m3473680033 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(GetTrackingQuality)();
+
+	return returnValue;
+}
+extern "C" float DEFAULT_CALL GetYUVTexCoordScale();
+// System.Single UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetYUVTexCoordScale()
+extern "C"  float UnityARSessionNativeInterface_GetYUVTexCoordScale_m671637809 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef float (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	float returnValue = reinterpret_cast<PInvokeFunc>(GetYUVTexCoordScale)();
+
+	return returnValue;
+}
+extern "C" int32_t DEFAULT_CALL GetARPointCloud(intptr_t*, uint32_t*);
+// System.Boolean UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetARPointCloud(System.IntPtr&,System.UInt32&)
+extern "C"  bool UnityARSessionNativeInterface_GetARPointCloud_m2491076785 (Il2CppObject * __this /* static, unused */, IntPtr_t* ___verts0, uint32_t* ___vertLength1, const MethodInfo* method)
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t*, uint32_t*);
+
+	// Native function invocation
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(GetARPointCloud)(reinterpret_cast<intptr_t*>(___verts0), ___vertLength1);
+
+	// Marshaling of parameter '___verts0' back from native representation
+	___verts0 = reinterpret_cast<IntPtr_t*>(reinterpret_cast<intptr_t*>(___verts0));
+
+	return static_cast<bool>(returnValue);
+}
+extern "C" void DEFAULT_CALL SetCameraNearFar(float, float);
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::SetCameraNearFar(System.Single,System.Single)
+extern "C"  void UnityARSessionNativeInterface_SetCameraNearFar_m1247563277 (Il2CppObject * __this /* static, unused */, float ___nearZ0, float ___farZ1, const MethodInfo* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (float, float);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(SetCameraNearFar)(___nearZ0, ___farZ1);
+
+}
+// UnityEngine.XR.iOS.UnityARSessionNativeInterface UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetARSessionNativeInterface()
+extern "C"  UnityARSessionNativeInterface_t1130867170 * UnityARSessionNativeInterface_GetARSessionNativeInterface_m3174488657 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_GetARSessionNativeInterface_m3174488657_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_t1130867170 * L_0 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_s_UnityARSessionNativeInterface_7();
+		if (L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		UnityARSessionNativeInterface_t1130867170 * L_1 = (UnityARSessionNativeInterface_t1130867170 *)il2cpp_codegen_object_new(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface__ctor_m2294513111(L_1, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->set_s_UnityARSessionNativeInterface_7(L_1);
+	}
+
+IL_0014:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_t1130867170 * L_2 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_s_UnityARSessionNativeInterface_7();
+		return L_2;
+	}
+}
+// UnityEngine.Matrix4x4 UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetCameraPose()
+extern "C"  Matrix4x4_t2933234003  UnityARSessionNativeInterface_GetCameraPose_m3046824030 (UnityARSessionNativeInterface_t1130867170 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_GetCameraPose_m3046824030_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Matrix4x4_t2933234003  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Initobj (Matrix4x4_t2933234003_il2cpp_TypeInfo_var, (&V_0));
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARMatrix4x4_t100931615 * L_0 = (((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_s_Camera_6())->get_address_of_worldTransform_0();
+		Vector4_t2243707581  L_1 = L_0->get_column0_0();
+		Matrix4x4_SetColumn_m3120649749((&V_0), 0, L_1, /*hidden argument*/NULL);
+		UnityARMatrix4x4_t100931615 * L_2 = (((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_s_Camera_6())->get_address_of_worldTransform_0();
+		Vector4_t2243707581  L_3 = L_2->get_column1_1();
+		Matrix4x4_SetColumn_m3120649749((&V_0), 1, L_3, /*hidden argument*/NULL);
+		UnityARMatrix4x4_t100931615 * L_4 = (((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_s_Camera_6())->get_address_of_worldTransform_0();
+		Vector4_t2243707581  L_5 = L_4->get_column2_2();
+		Matrix4x4_SetColumn_m3120649749((&V_0), 2, L_5, /*hidden argument*/NULL);
+		UnityARMatrix4x4_t100931615 * L_6 = (((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_s_Camera_6())->get_address_of_worldTransform_0();
+		Vector4_t2243707581  L_7 = L_6->get_column3_3();
+		Matrix4x4_SetColumn_m3120649749((&V_0), 3, L_7, /*hidden argument*/NULL);
+		Matrix4x4_t2933234003  L_8 = V_0;
+		return L_8;
+	}
+}
+// UnityEngine.Matrix4x4 UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetCameraProjection()
+extern "C"  Matrix4x4_t2933234003  UnityARSessionNativeInterface_GetCameraProjection_m3168017698 (UnityARSessionNativeInterface_t1130867170 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_GetCameraProjection_m3168017698_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Matrix4x4_t2933234003  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Initobj (Matrix4x4_t2933234003_il2cpp_TypeInfo_var, (&V_0));
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARMatrix4x4_t100931615 * L_0 = (((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_s_Camera_6())->get_address_of_projectionMatrix_1();
+		Vector4_t2243707581  L_1 = L_0->get_column0_0();
+		Matrix4x4_SetColumn_m3120649749((&V_0), 0, L_1, /*hidden argument*/NULL);
+		UnityARMatrix4x4_t100931615 * L_2 = (((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_s_Camera_6())->get_address_of_projectionMatrix_1();
+		Vector4_t2243707581  L_3 = L_2->get_column1_1();
+		Matrix4x4_SetColumn_m3120649749((&V_0), 1, L_3, /*hidden argument*/NULL);
+		UnityARMatrix4x4_t100931615 * L_4 = (((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_s_Camera_6())->get_address_of_projectionMatrix_1();
+		Vector4_t2243707581  L_5 = L_4->get_column2_2();
+		Matrix4x4_SetColumn_m3120649749((&V_0), 2, L_5, /*hidden argument*/NULL);
+		UnityARMatrix4x4_t100931615 * L_6 = (((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_s_Camera_6())->get_address_of_projectionMatrix_1();
+		Vector4_t2243707581  L_7 = L_6->get_column3_3();
+		Matrix4x4_SetColumn_m3120649749((&V_0), 3, L_7, /*hidden argument*/NULL);
+		Matrix4x4_t2933234003  L_8 = V_0;
+		return L_8;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::SetCameraClipPlanes(System.Single,System.Single)
+extern "C"  void UnityARSessionNativeInterface_SetCameraClipPlanes_m149558303 (UnityARSessionNativeInterface_t1130867170 * __this, float ___nearZ0, float ___farZ1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_SetCameraClipPlanes_m149558303_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		float L_0 = ___nearZ0;
+		float L_1 = ___farZ1;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_SetCameraNearFar_m1247563277(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::_frame_update(UnityEngine.XR.iOS.internal_UnityARCamera)
+extern "C"  void UnityARSessionNativeInterface__frame_update_m127370 (Il2CppObject * __this /* static, unused */, internal_UnityARCamera_t2580192745  ___camera0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface__frame_update_m127370_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	UnityARCamera_t4198559457  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Initobj (UnityARCamera_t4198559457_il2cpp_TypeInfo_var, (&V_0));
+		UnityARMatrix4x4_t100931615  L_0 = (&___camera0)->get_projectionMatrix_1();
+		(&V_0)->set_projectionMatrix_1(L_0);
+		UnityARMatrix4x4_t100931615  L_1 = (&___camera0)->get_worldTransform_0();
+		(&V_0)->set_worldTransform_0(L_1);
+		int32_t L_2 = (&___camera0)->get_trackingState_2();
+		(&V_0)->set_trackingState_2(L_2);
+		int32_t L_3 = (&___camera0)->get_trackingReason_3();
+		(&V_0)->set_trackingReason_3(L_3);
+		UnityARCamera_t4198559457  L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->set_s_Camera_6(L_4);
+		uint32_t L_5 = (&___camera0)->get_getPointCloudData_4();
+		if ((!(((uint32_t)L_5) == ((uint32_t)1))))
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_UpdatePointCloudData_m2452168060(NULL /*static, unused*/, (((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_address_of_s_Camera_6()), /*hidden argument*/NULL);
+	}
+
+IL_005d:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARFrameUpdate_t496507918 * L_6 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARFrameUpdatedEvent_0();
+		if (!L_6)
+		{
+			goto IL_0076;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARFrameUpdate_t496507918 * L_7 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARFrameUpdatedEvent_0();
+		UnityARCamera_t4198559457  L_8 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_s_Camera_6();
+		NullCheck(L_7);
+		ARFrameUpdate_Invoke_m3133737564(L_7, L_8, /*hidden argument*/NULL);
+	}
+
+IL_0076:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::UpdatePointCloudData(UnityEngine.XR.iOS.UnityARCamera&)
+extern "C"  void UnityARSessionNativeInterface_UpdatePointCloudData_m2452168060 (Il2CppObject * __this /* static, unused */, UnityARCamera_t4198559457 * ___camera0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_UpdatePointCloudData_m2452168060_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	IntPtr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	uint32_t V_1 = 0;
+	bool V_2 = false;
+	SingleU5BU5D_t577127397* V_3 = NULL;
+	Vector3U5BU5D_t1172311765* V_4 = NULL;
+	int32_t V_5 = 0;
+	{
+		IntPtr_t L_0 = ((IntPtr_t_StaticFields*)IntPtr_t_il2cpp_TypeInfo_var->static_fields)->get_Zero_1();
+		V_0 = L_0;
+		V_1 = 0;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		bool L_1 = UnityARSessionNativeInterface_GetARPointCloud_m2491076785(NULL /*static, unused*/, (&V_0), (&V_1), /*hidden argument*/NULL);
+		V_2 = L_1;
+		V_3 = (SingleU5BU5D_t577127397*)NULL;
+		bool L_2 = V_2;
+		if (!L_2)
+		{
+			goto IL_00a2;
+		}
+	}
+	{
+		uint32_t L_3 = V_1;
+		V_3 = ((SingleU5BU5D_t577127397*)SZArrayNew(SingleU5BU5D_t577127397_il2cpp_TypeInfo_var, (uint32_t)(((uintptr_t)L_3))));
+		IntPtr_t L_4 = V_0;
+		SingleU5BU5D_t577127397* L_5 = V_3;
+		uint32_t L_6 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		Marshal_Copy_m2353359830(NULL /*static, unused*/, L_4, L_5, 0, L_6, /*hidden argument*/NULL);
+		uint32_t L_7 = V_1;
+		V_4 = ((Vector3U5BU5D_t1172311765*)SZArrayNew(Vector3U5BU5D_t1172311765_il2cpp_TypeInfo_var, (uint32_t)(((uintptr_t)((int32_t)((uint32_t)(int32_t)L_7/(uint32_t)(int32_t)4))))));
+		V_5 = 0;
+		goto IL_0090;
+	}
+
+IL_003e:
+	{
+		Vector3U5BU5D_t1172311765* L_8 = V_4;
+		int32_t L_9 = V_5;
+		NullCheck(L_8);
+		SingleU5BU5D_t577127397* L_10 = V_3;
+		int32_t L_11 = V_5;
+		int32_t L_12 = L_11;
+		V_5 = ((int32_t)((int32_t)L_12+(int32_t)1));
+		NullCheck(L_10);
+		int32_t L_13 = L_12;
+		float L_14 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
+		((L_8)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)((int32_t)L_9/(int32_t)4)))))->set_x_1(L_14);
+		Vector3U5BU5D_t1172311765* L_15 = V_4;
+		int32_t L_16 = V_5;
+		NullCheck(L_15);
+		SingleU5BU5D_t577127397* L_17 = V_3;
+		int32_t L_18 = V_5;
+		int32_t L_19 = L_18;
+		V_5 = ((int32_t)((int32_t)L_19+(int32_t)1));
+		NullCheck(L_17);
+		int32_t L_20 = L_19;
+		float L_21 = (L_17)->GetAt(static_cast<il2cpp_array_size_t>(L_20));
+		((L_15)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)((int32_t)L_16/(int32_t)4)))))->set_y_2(L_21);
+		Vector3U5BU5D_t1172311765* L_22 = V_4;
+		int32_t L_23 = V_5;
+		NullCheck(L_22);
+		SingleU5BU5D_t577127397* L_24 = V_3;
+		int32_t L_25 = V_5;
+		int32_t L_26 = L_25;
+		V_5 = ((int32_t)((int32_t)L_26+(int32_t)1));
+		NullCheck(L_24);
+		int32_t L_27 = L_26;
+		float L_28 = (L_24)->GetAt(static_cast<il2cpp_array_size_t>(L_27));
+		((L_22)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)((int32_t)L_23/(int32_t)4)))))->set_z_3(((-L_28)));
+		int32_t L_29 = V_5;
+		V_5 = ((int32_t)((int32_t)L_29+(int32_t)1));
+	}
+
+IL_0090:
+	{
+		int32_t L_30 = V_5;
+		uint32_t L_31 = V_1;
+		if ((((int64_t)(((int64_t)((int64_t)L_30)))) < ((int64_t)(((int64_t)((uint64_t)L_31))))))
+		{
+			goto IL_003e;
+		}
+	}
+	{
+		UnityARCamera_t4198559457 * L_32 = ___camera0;
+		Vector3U5BU5D_t1172311765* L_33 = V_4;
+		L_32->set_pointCloudData_4(L_33);
+	}
+
+IL_00a2:
+	{
+		return;
+	}
+}
+// UnityEngine.XR.iOS.ARPlaneAnchor UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetPlaneAnchorFromAnchorData(UnityEngine.XR.iOS.UnityARAnchorData)
+extern "C"  ARPlaneAnchor_t1439520888  UnityARSessionNativeInterface_GetPlaneAnchorFromAnchorData_m3105060455 (Il2CppObject * __this /* static, unused */, UnityARAnchorData_t2901866349  ___anchor0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_GetPlaneAnchorFromAnchorData_m3105060455_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARPlaneAnchor_t1439520888  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Matrix4x4_t2933234003  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		Initobj (ARPlaneAnchor_t1439520888_il2cpp_TypeInfo_var, (&V_0));
+		IntPtr_t L_0 = (&___anchor0)->get_ptrIdentifier_0();
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		String_t* L_1 = Marshal_PtrToStringAuto_m3496615756(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		(&V_0)->set_identifier_0(L_1);
+		Initobj (Matrix4x4_t2933234003_il2cpp_TypeInfo_var, (&V_1));
+		UnityARMatrix4x4_t100931615 * L_2 = (&___anchor0)->get_address_of_transform_1();
+		Vector4_t2243707581  L_3 = L_2->get_column0_0();
+		Matrix4x4_SetColumn_m3120649749((&V_1), 0, L_3, /*hidden argument*/NULL);
+		UnityARMatrix4x4_t100931615 * L_4 = (&___anchor0)->get_address_of_transform_1();
+		Vector4_t2243707581  L_5 = L_4->get_column1_1();
+		Matrix4x4_SetColumn_m3120649749((&V_1), 1, L_5, /*hidden argument*/NULL);
+		UnityARMatrix4x4_t100931615 * L_6 = (&___anchor0)->get_address_of_transform_1();
+		Vector4_t2243707581  L_7 = L_6->get_column2_2();
+		Matrix4x4_SetColumn_m3120649749((&V_1), 2, L_7, /*hidden argument*/NULL);
+		UnityARMatrix4x4_t100931615 * L_8 = (&___anchor0)->get_address_of_transform_1();
+		Vector4_t2243707581  L_9 = L_8->get_column3_3();
+		Matrix4x4_SetColumn_m3120649749((&V_1), 3, L_9, /*hidden argument*/NULL);
+		Matrix4x4_t2933234003  L_10 = V_1;
+		(&V_0)->set_transform_1(L_10);
+		int64_t L_11 = (&___anchor0)->get_alignment_2();
+		(&V_0)->set_alignment_2(L_11);
+		Vector4_t2243707581 * L_12 = (&___anchor0)->get_address_of_center_3();
+		float L_13 = L_12->get_x_1();
+		Vector4_t2243707581 * L_14 = (&___anchor0)->get_address_of_center_3();
+		float L_15 = L_14->get_y_2();
+		Vector4_t2243707581 * L_16 = (&___anchor0)->get_address_of_center_3();
+		float L_17 = L_16->get_z_3();
+		Vector3_t2243707580  L_18;
+		memset(&L_18, 0, sizeof(L_18));
+		Vector3__ctor_m2638739322(&L_18, L_13, L_15, L_17, /*hidden argument*/NULL);
+		(&V_0)->set_center_3(L_18);
+		Vector4_t2243707581 * L_19 = (&___anchor0)->get_address_of_extent_4();
+		float L_20 = L_19->get_x_1();
+		Vector4_t2243707581 * L_21 = (&___anchor0)->get_address_of_extent_4();
+		float L_22 = L_21->get_y_2();
+		Vector4_t2243707581 * L_23 = (&___anchor0)->get_address_of_extent_4();
+		float L_24 = L_23->get_z_3();
+		Vector3_t2243707580  L_25;
+		memset(&L_25, 0, sizeof(L_25));
+		Vector3__ctor_m2638739322(&L_25, L_20, L_22, L_24, /*hidden argument*/NULL);
+		(&V_0)->set_extent_4(L_25);
+		ARPlaneAnchor_t1439520888  L_26 = V_0;
+		return L_26;
+	}
+}
+// UnityEngine.XR.iOS.ARHitTestResult UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetHitTestResultFromResultData(UnityEngine.XR.iOS.UnityARHitTestResult)
+extern "C"  ARHitTestResult_t3275513025  UnityARSessionNativeInterface_GetHitTestResultFromResultData_m1356947160 (Il2CppObject * __this /* static, unused */, UnityARHitTestResult_t4129824344  ___resultData0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_GetHitTestResultFromResultData_m1356947160_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARHitTestResult_t3275513025  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Initobj (ARHitTestResult_t3275513025_il2cpp_TypeInfo_var, (&V_0));
+		int64_t L_0 = (&___resultData0)->get_type_0();
+		(&V_0)->set_type_0(L_0);
+		double L_1 = (&___resultData0)->get_distance_1();
+		(&V_0)->set_distance_1(L_1);
+		Matrix4x4_t2933234003  L_2 = (&___resultData0)->get_localTransform_2();
+		(&V_0)->set_localTransform_2(L_2);
+		Matrix4x4_t2933234003  L_3 = (&___resultData0)->get_worldTransform_3();
+		(&V_0)->set_worldTransform_3(L_3);
+		bool L_4 = (&___resultData0)->get_isValid_5();
+		(&V_0)->set_isValid_5(L_4);
+		IntPtr_t L_5 = (&___resultData0)->get_anchor_4();
+		IntPtr_t L_6 = ((IntPtr_t_StaticFields*)IntPtr_t_il2cpp_TypeInfo_var->static_fields)->get_Zero_1();
+		bool L_7 = IntPtr_op_Inequality_m3044532593(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
+		if (!L_7)
+		{
+			goto IL_0077;
+		}
+	}
+	{
+		IntPtr_t L_8 = (&___resultData0)->get_anchor_4();
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		String_t* L_9 = Marshal_PtrToStringAuto_m3496615756(NULL /*static, unused*/, L_8, /*hidden argument*/NULL);
+		(&V_0)->set_anchorIdentifier_4(L_9);
+	}
+
+IL_0077:
+	{
+		ARHitTestResult_t3275513025  L_10 = V_0;
+		return L_10;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::_anchor_added(UnityEngine.XR.iOS.UnityARAnchorData)
+extern "C"  void UnityARSessionNativeInterface__anchor_added_m3584567327 (Il2CppObject * __this /* static, unused */, UnityARAnchorData_t2901866349  ___anchor0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface__anchor_added_m3584567327_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARPlaneAnchor_t1439520888  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARAnchorAdded_t2646854145 * L_0 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARAnchorAddedEvent_1();
+		if (!L_0)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		UnityARAnchorData_t2901866349  L_1 = ___anchor0;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARPlaneAnchor_t1439520888  L_2 = UnityARSessionNativeInterface_GetPlaneAnchorFromAnchorData_m3105060455(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		ARAnchorAdded_t2646854145 * L_3 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARAnchorAddedEvent_1();
+		ARPlaneAnchor_t1439520888  L_4 = V_0;
+		NullCheck(L_3);
+		ARAnchorAdded_Invoke_m3296517664(L_3, L_4, /*hidden argument*/NULL);
+	}
+
+IL_001c:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::_anchor_updated(UnityEngine.XR.iOS.UnityARAnchorData)
+extern "C"  void UnityARSessionNativeInterface__anchor_updated_m1970308864 (Il2CppObject * __this /* static, unused */, UnityARAnchorData_t2901866349  ___anchor0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface__anchor_updated_m1970308864_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARPlaneAnchor_t1439520888  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARAnchorUpdated_t3886071158 * L_0 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARAnchorUpdatedEvent_2();
+		if (!L_0)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		UnityARAnchorData_t2901866349  L_1 = ___anchor0;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARPlaneAnchor_t1439520888  L_2 = UnityARSessionNativeInterface_GetPlaneAnchorFromAnchorData_m3105060455(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		ARAnchorUpdated_t3886071158 * L_3 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARAnchorUpdatedEvent_2();
+		ARPlaneAnchor_t1439520888  L_4 = V_0;
+		NullCheck(L_3);
+		ARAnchorUpdated_Invoke_m1018775699(L_3, L_4, /*hidden argument*/NULL);
+	}
+
+IL_001c:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::_anchor_removed(UnityEngine.XR.iOS.UnityARAnchorData)
+extern "C"  void UnityARSessionNativeInterface__anchor_removed_m4240378233 (Il2CppObject * __this /* static, unused */, UnityARAnchorData_t2901866349  ___anchor0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface__anchor_removed_m4240378233_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARPlaneAnchor_t1439520888  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARAnchorRemoved_t142665927 * L_0 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARAnchorRemovedEvent_3();
+		if (!L_0)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		UnityARAnchorData_t2901866349  L_1 = ___anchor0;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARPlaneAnchor_t1439520888  L_2 = UnityARSessionNativeInterface_GetPlaneAnchorFromAnchorData_m3105060455(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		ARAnchorRemoved_t142665927 * L_3 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARAnchorRemovedEvent_3();
+		ARPlaneAnchor_t1439520888  L_4 = V_0;
+		NullCheck(L_3);
+		ARAnchorRemoved_Invoke_m4120555414(L_3, L_4, /*hidden argument*/NULL);
+	}
+
+IL_001c:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::_ar_session_failed(System.String)
+extern "C"  void UnityARSessionNativeInterface__ar_session_failed_m2515310284 (Il2CppObject * __this /* static, unused */, String_t* ___error0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface__ar_session_failed_m2515310284_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral2733749110, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARSessionFailed_t872580813 * L_0 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARSessionFailedEvent_4();
+		if (!L_0)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARSessionFailed_t872580813 * L_1 = ((UnityARSessionNativeInterface_t1130867170_StaticFields*)UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var->static_fields)->get_ARSessionFailedEvent_4();
+		String_t* L_2 = ___error0;
+		NullCheck(L_1);
+		ARSessionFailed_Invoke_m3664045560(L_1, L_2, /*hidden argument*/NULL);
+	}
+
+IL_001f:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::RunWithConfigAndOptions(UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration,UnityEngine.XR.iOS.UnityARSessionRunOption)
+extern "C"  void UnityARSessionNativeInterface_RunWithConfigAndOptions_m375276821 (UnityARSessionNativeInterface_t1130867170 * __this, ARKitWorldTackingSessionConfiguration_t1821734930  ___config0, int32_t ___runOptions1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_RunWithConfigAndOptions_m375276821_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IntPtr_t L_0 = __this->get_m_NativeARSession_5();
+		ARKitWorldTackingSessionConfiguration_t1821734930  L_1 = ___config0;
+		int32_t L_2 = ___runOptions1;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_StartWorldTrackingSessionWithOptions_m3150342870(NULL /*static, unused*/, L_0, L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::RunWithConfig(UnityEngine.XR.iOS.ARKitWorldTackingSessionConfiguration)
+extern "C"  void UnityARSessionNativeInterface_RunWithConfig_m3195925270 (UnityARSessionNativeInterface_t1130867170 * __this, ARKitWorldTackingSessionConfiguration_t1821734930  ___config0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_RunWithConfig_m3195925270_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IntPtr_t L_0 = __this->get_m_NativeARSession_5();
+		ARKitWorldTackingSessionConfiguration_t1821734930  L_1 = ___config0;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_StartWorldTrackingSession_m3140261726(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::Run()
+extern "C"  void UnityARSessionNativeInterface_Run_m3916396736 (UnityARSessionNativeInterface_t1130867170 * __this, const MethodInfo* method)
+{
+	{
+		ARKitWorldTackingSessionConfiguration_t1821734930  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		ARKitWorldTackingSessionConfiguration__ctor_m4281543687(&L_0, 0, 1, (bool)0, (bool)0, /*hidden argument*/NULL);
+		UnityARSessionNativeInterface_RunWithConfig_m3195925270(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::RunWithConfigAndOptions(UnityEngine.XR.iOS.ARKitSessionConfiguration,UnityEngine.XR.iOS.UnityARSessionRunOption)
+extern "C"  void UnityARSessionNativeInterface_RunWithConfigAndOptions_m4179857830 (UnityARSessionNativeInterface_t1130867170 * __this, ARKitSessionConfiguration_t318899795  ___config0, int32_t ___runOptions1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_RunWithConfigAndOptions_m4179857830_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IntPtr_t L_0 = __this->get_m_NativeARSession_5();
+		ARKitSessionConfiguration_t318899795  L_1 = ___config0;
+		int32_t L_2 = ___runOptions1;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_StartSessionWithOptions_m1815473114(NULL /*static, unused*/, L_0, L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::RunWithConfig(UnityEngine.XR.iOS.ARKitSessionConfiguration)
+extern "C"  void UnityARSessionNativeInterface_RunWithConfig_m2478060541 (UnityARSessionNativeInterface_t1130867170 * __this, ARKitSessionConfiguration_t318899795  ___config0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_RunWithConfig_m2478060541_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IntPtr_t L_0 = __this->get_m_NativeARSession_5();
+		ARKitSessionConfiguration_t318899795  L_1 = ___config0;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_StartSession_m227007524(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::Pause()
+extern "C"  void UnityARSessionNativeInterface_Pause_m2220930613 (UnityARSessionNativeInterface_t1130867170 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_Pause_m2220930613_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IntPtr_t L_0 = __this->get_m_NativeARSession_5();
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_PauseSession_m2717865525(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARHitTestResult> UnityEngine.XR.iOS.UnityARSessionNativeInterface::HitTest(UnityEngine.XR.iOS.ARPoint,UnityEngine.XR.iOS.ARHitTestResultType)
+extern "C"  List_1_t2644634157 * UnityARSessionNativeInterface_HitTest_m388588674 (UnityARSessionNativeInterface_t1130867170 * __this, ARPoint_t3436811567  ___point0, int64_t ___types1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_HitTest_m388588674_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	List_1_t2644634157 * V_1 = NULL;
+	int32_t V_2 = 0;
+	UnityARHitTestResult_t4129824344  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	{
+		IntPtr_t L_0 = __this->get_m_NativeARSession_5();
+		ARPoint_t3436811567  L_1 = ___point0;
+		int64_t L_2 = ___types1;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		int32_t L_3 = UnityARSessionNativeInterface_HitTest_m1115034644(NULL /*static, unused*/, L_0, L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		int32_t L_5 = L_4;
+		Il2CppObject * L_6 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_5);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_7 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral3977806437, L_6, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
+		List_1_t2644634157 * L_8 = (List_1_t2644634157 *)il2cpp_codegen_object_new(List_1_t2644634157_il2cpp_TypeInfo_var);
+		List_1__ctor_m3856316316(L_8, /*hidden argument*/List_1__ctor_m3856316316_MethodInfo_var);
+		V_1 = L_8;
+		V_2 = 0;
+		goto IL_0047;
+	}
+
+IL_0030:
+	{
+		int32_t L_9 = V_2;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARHitTestResult_t4129824344  L_10 = UnityARSessionNativeInterface_GetLastHitTestResult_m1489387413(NULL /*static, unused*/, L_9, /*hidden argument*/NULL);
+		V_3 = L_10;
+		List_1_t2644634157 * L_11 = V_1;
+		UnityARHitTestResult_t4129824344  L_12 = V_3;
+		ARHitTestResult_t3275513025  L_13 = UnityARSessionNativeInterface_GetHitTestResultFromResultData_m1356947160(NULL /*static, unused*/, L_12, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		List_1_Add_m1918634088(L_11, L_13, /*hidden argument*/List_1_Add_m1918634088_MethodInfo_var);
+		int32_t L_14 = V_2;
+		V_2 = ((int32_t)((int32_t)L_14+(int32_t)1));
+	}
+
+IL_0047:
+	{
+		int32_t L_15 = V_2;
+		int32_t L_16 = V_0;
+		if ((((int32_t)L_15) < ((int32_t)L_16)))
+		{
+			goto IL_0030;
+		}
+	}
+	{
+		List_1_t2644634157 * L_17 = V_1;
+		return L_17;
+	}
+}
+// UnityEngine.XR.iOS.ARTextureHandles UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetARVideoTextureHandles()
+extern "C"  ARTextureHandles_t3764914833  UnityARSessionNativeInterface_GetARVideoTextureHandles_m2905358883 (UnityARSessionNativeInterface_t1130867170 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_GetARVideoTextureHandles_m2905358883_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		ARTextureHandles_t3764914833  L_0 = UnityARSessionNativeInterface_GetVideoTextureHandles_m4073538006(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return L_0;
+	}
+}
+// System.Single UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetARAmbientIntensity()
+extern "C"  float UnityARSessionNativeInterface_GetARAmbientIntensity_m3261179343 (UnityARSessionNativeInterface_t1130867170 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_GetARAmbientIntensity_m3261179343_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		float L_0 = UnityARSessionNativeInterface_GetAmbientIntensity_m3132982210(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return L_0;
+	}
+}
+// System.Int32 UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetARTrackingQuality()
+extern "C"  int32_t UnityARSessionNativeInterface_GetARTrackingQuality_m2957489224 (UnityARSessionNativeInterface_t1130867170 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_GetARTrackingQuality_m2957489224_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		int32_t L_0 = UnityARSessionNativeInterface_GetTrackingQuality_m3473680033(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return L_0;
+	}
+}
+// System.Single UnityEngine.XR.iOS.UnityARSessionNativeInterface::GetARYUVTexCoordScale()
+extern "C"  float UnityARSessionNativeInterface_GetARYUVTexCoordScale_m1823875812 (UnityARSessionNativeInterface_t1130867170 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARSessionNativeInterface_GetARYUVTexCoordScale_m1823875812_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		float L_0 = UnityARSessionNativeInterface_GetYUVTexCoordScale_m671637809(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return L_0;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface::.cctor()
+extern "C"  void UnityARSessionNativeInterface__cctor_m638256452 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+extern "C"  void DelegatePInvokeWrapper_ARAnchorAdded_t2646854145 (ARAnchorAdded_t2646854145 * __this, ARPlaneAnchor_t1439520888  ___anchorData0, const MethodInfo* method)
+{
+
+
+	typedef void (STDCALL *PInvokeFunc)(ARPlaneAnchor_t1439520888_marshaled_pinvoke);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___anchorData0' to native representation
+	ARPlaneAnchor_t1439520888_marshaled_pinvoke ____anchorData0_marshaled = {};
+	ARPlaneAnchor_t1439520888_marshal_pinvoke(___anchorData0, ____anchorData0_marshaled);
+
+	// Native function invocation
+	il2cppPInvokeFunc(____anchorData0_marshaled);
+
+	// Marshaling cleanup of parameter '___anchorData0' native representation
+	ARPlaneAnchor_t1439520888_marshal_pinvoke_cleanup(____anchorData0_marshaled);
+
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorAdded::.ctor(System.Object,System.IntPtr)
+extern "C"  void ARAnchorAdded__ctor_m3844186700 (ARAnchorAdded_t2646854145 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorAdded::Invoke(UnityEngine.XR.iOS.ARPlaneAnchor)
+extern "C"  void ARAnchorAdded_Invoke_m3296517664 (ARAnchorAdded_t2646854145 * __this, ARPlaneAnchor_t1439520888  ___anchorData0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		ARAnchorAdded_Invoke_m3296517664((ARAnchorAdded_t2646854145 *)__this->get_prev_9(),___anchorData0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, ARPlaneAnchor_t1439520888  ___anchorData0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___anchorData0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, ARPlaneAnchor_t1439520888  ___anchorData0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___anchorData0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorAdded::BeginInvoke(UnityEngine.XR.iOS.ARPlaneAnchor,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * ARAnchorAdded_BeginInvoke_m1705105833 (ARAnchorAdded_t2646854145 * __this, ARPlaneAnchor_t1439520888  ___anchorData0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ARAnchorAdded_BeginInvoke_m1705105833_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(ARPlaneAnchor_t1439520888_il2cpp_TypeInfo_var, &___anchorData0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorAdded::EndInvoke(System.IAsyncResult)
+extern "C"  void ARAnchorAdded_EndInvoke_m3547789254 (ARAnchorAdded_t2646854145 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+extern "C"  void DelegatePInvokeWrapper_ARAnchorRemoved_t142665927 (ARAnchorRemoved_t142665927 * __this, ARPlaneAnchor_t1439520888  ___anchorData0, const MethodInfo* method)
+{
+
+
+	typedef void (STDCALL *PInvokeFunc)(ARPlaneAnchor_t1439520888_marshaled_pinvoke);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___anchorData0' to native representation
+	ARPlaneAnchor_t1439520888_marshaled_pinvoke ____anchorData0_marshaled = {};
+	ARPlaneAnchor_t1439520888_marshal_pinvoke(___anchorData0, ____anchorData0_marshaled);
+
+	// Native function invocation
+	il2cppPInvokeFunc(____anchorData0_marshaled);
+
+	// Marshaling cleanup of parameter '___anchorData0' native representation
+	ARPlaneAnchor_t1439520888_marshal_pinvoke_cleanup(____anchorData0_marshaled);
+
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorRemoved::.ctor(System.Object,System.IntPtr)
+extern "C"  void ARAnchorRemoved__ctor_m535635486 (ARAnchorRemoved_t142665927 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorRemoved::Invoke(UnityEngine.XR.iOS.ARPlaneAnchor)
+extern "C"  void ARAnchorRemoved_Invoke_m4120555414 (ARAnchorRemoved_t142665927 * __this, ARPlaneAnchor_t1439520888  ___anchorData0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		ARAnchorRemoved_Invoke_m4120555414((ARAnchorRemoved_t142665927 *)__this->get_prev_9(),___anchorData0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, ARPlaneAnchor_t1439520888  ___anchorData0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___anchorData0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, ARPlaneAnchor_t1439520888  ___anchorData0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___anchorData0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorRemoved::BeginInvoke(UnityEngine.XR.iOS.ARPlaneAnchor,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * ARAnchorRemoved_BeginInvoke_m810761227 (ARAnchorRemoved_t142665927 * __this, ARPlaneAnchor_t1439520888  ___anchorData0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ARAnchorRemoved_BeginInvoke_m810761227_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(ARPlaneAnchor_t1439520888_il2cpp_TypeInfo_var, &___anchorData0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorRemoved::EndInvoke(System.IAsyncResult)
+extern "C"  void ARAnchorRemoved_EndInvoke_m341407908 (ARAnchorRemoved_t142665927 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+extern "C"  void DelegatePInvokeWrapper_ARAnchorUpdated_t3886071158 (ARAnchorUpdated_t3886071158 * __this, ARPlaneAnchor_t1439520888  ___anchorData0, const MethodInfo* method)
+{
+
+
+	typedef void (STDCALL *PInvokeFunc)(ARPlaneAnchor_t1439520888_marshaled_pinvoke);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___anchorData0' to native representation
+	ARPlaneAnchor_t1439520888_marshaled_pinvoke ____anchorData0_marshaled = {};
+	ARPlaneAnchor_t1439520888_marshal_pinvoke(___anchorData0, ____anchorData0_marshaled);
+
+	// Native function invocation
+	il2cppPInvokeFunc(____anchorData0_marshaled);
+
+	// Marshaling cleanup of parameter '___anchorData0' native representation
+	ARPlaneAnchor_t1439520888_marshal_pinvoke_cleanup(____anchorData0_marshaled);
+
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorUpdated::.ctor(System.Object,System.IntPtr)
+extern "C"  void ARAnchorUpdated__ctor_m1158457407 (ARAnchorUpdated_t3886071158 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorUpdated::Invoke(UnityEngine.XR.iOS.ARPlaneAnchor)
+extern "C"  void ARAnchorUpdated_Invoke_m1018775699 (ARAnchorUpdated_t3886071158 * __this, ARPlaneAnchor_t1439520888  ___anchorData0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		ARAnchorUpdated_Invoke_m1018775699((ARAnchorUpdated_t3886071158 *)__this->get_prev_9(),___anchorData0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, ARPlaneAnchor_t1439520888  ___anchorData0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___anchorData0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, ARPlaneAnchor_t1439520888  ___anchorData0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___anchorData0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorUpdated::BeginInvoke(UnityEngine.XR.iOS.ARPlaneAnchor,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * ARAnchorUpdated_BeginInvoke_m2718860606 (ARAnchorUpdated_t3886071158 * __this, ARPlaneAnchor_t1439520888  ___anchorData0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ARAnchorUpdated_BeginInvoke_m2718860606_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(ARPlaneAnchor_t1439520888_il2cpp_TypeInfo_var, &___anchorData0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARAnchorUpdated::EndInvoke(System.IAsyncResult)
+extern "C"  void ARAnchorUpdated_EndInvoke_m398669553 (ARAnchorUpdated_t3886071158 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARFrameUpdate::.ctor(System.Object,System.IntPtr)
+extern "C"  void ARFrameUpdate__ctor_m1399217559 (ARFrameUpdate_t496507918 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARFrameUpdate::Invoke(UnityEngine.XR.iOS.UnityARCamera)
+extern "C"  void ARFrameUpdate_Invoke_m3133737564 (ARFrameUpdate_t496507918 * __this, UnityARCamera_t4198559457  ___camera0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		ARFrameUpdate_Invoke_m3133737564((ARFrameUpdate_t496507918 *)__this->get_prev_9(),___camera0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, UnityARCamera_t4198559457  ___camera0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___camera0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, UnityARCamera_t4198559457  ___camera0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___camera0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARFrameUpdate::BeginInvoke(UnityEngine.XR.iOS.UnityARCamera,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * ARFrameUpdate_BeginInvoke_m4062970305 (ARFrameUpdate_t496507918 * __this, UnityARCamera_t4198559457  ___camera0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ARFrameUpdate_BeginInvoke_m4062970305_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(UnityARCamera_t4198559457_il2cpp_TypeInfo_var, &___camera0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARFrameUpdate::EndInvoke(System.IAsyncResult)
+extern "C"  void ARFrameUpdate_EndInvoke_m2107935669 (ARFrameUpdate_t496507918 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+extern "C"  void DelegatePInvokeWrapper_ARSessionFailed_t872580813 (ARSessionFailed_t872580813 * __this, String_t* ___error0, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)(char*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___error0' to native representation
+	char* ____error0_marshaled = NULL;
+	____error0_marshaled = il2cpp_codegen_marshal_string(___error0);
+
+	// Native function invocation
+	il2cppPInvokeFunc(____error0_marshaled);
+
+	// Marshaling cleanup of parameter '___error0' native representation
+	il2cpp_codegen_marshal_free(____error0_marshaled);
+	____error0_marshaled = NULL;
+
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARSessionFailed::.ctor(System.Object,System.IntPtr)
+extern "C"  void ARSessionFailed__ctor_m3600321544 (ARSessionFailed_t872580813 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARSessionFailed::Invoke(System.String)
+extern "C"  void ARSessionFailed_Invoke_m3664045560 (ARSessionFailed_t872580813 * __this, String_t* ___error0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		ARSessionFailed_Invoke_m3664045560((ARSessionFailed_t872580813 *)__this->get_prev_9(),___error0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, String_t* ___error0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___error0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else if (__this->get_m_target_2() != NULL || ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (void* __this, String_t* ___error0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___error0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(___error0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARSessionFailed::BeginInvoke(System.String,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * ARSessionFailed_BeginInvoke_m2937386027 (ARSessionFailed_t872580813 * __this, String_t* ___error0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	void *__d_args[2] = {0};
+	__d_args[0] = ___error0;
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/ARSessionFailed::EndInvoke(System.IAsyncResult)
+extern "C"  void ARSessionFailed_EndInvoke_m2375002614 (ARSessionFailed_t872580813 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+extern "C"  void DelegatePInvokeWrapper_internal_ARAnchorAdded_t1622117597 (internal_ARAnchorAdded_t1622117597 * __this, UnityARAnchorData_t2901866349  ___anchorData0, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)(UnityARAnchorData_t2901866349 );
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc(___anchorData0);
+
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorAdded::.ctor(System.Object,System.IntPtr)
+extern "C"  void internal_ARAnchorAdded__ctor_m875644652 (internal_ARAnchorAdded_t1622117597 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorAdded::Invoke(UnityEngine.XR.iOS.UnityARAnchorData)
+extern "C"  void internal_ARAnchorAdded_Invoke_m4273916311 (internal_ARAnchorAdded_t1622117597 * __this, UnityARAnchorData_t2901866349  ___anchorData0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		internal_ARAnchorAdded_Invoke_m4273916311((internal_ARAnchorAdded_t1622117597 *)__this->get_prev_9(),___anchorData0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, UnityARAnchorData_t2901866349  ___anchorData0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___anchorData0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, UnityARAnchorData_t2901866349  ___anchorData0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___anchorData0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorAdded::BeginInvoke(UnityEngine.XR.iOS.UnityARAnchorData,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * internal_ARAnchorAdded_BeginInvoke_m105627114 (internal_ARAnchorAdded_t1622117597 * __this, UnityARAnchorData_t2901866349  ___anchorData0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (internal_ARAnchorAdded_BeginInvoke_m105627114_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(UnityARAnchorData_t2901866349_il2cpp_TypeInfo_var, &___anchorData0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorAdded::EndInvoke(System.IAsyncResult)
+extern "C"  void internal_ARAnchorAdded_EndInvoke_m2146016718 (internal_ARAnchorAdded_t1622117597 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+extern "C"  void DelegatePInvokeWrapper_internal_ARAnchorRemoved_t3189755211 (internal_ARAnchorRemoved_t3189755211 * __this, UnityARAnchorData_t2901866349  ___anchorData0, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)(UnityARAnchorData_t2901866349 );
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc(___anchorData0);
+
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorRemoved::.ctor(System.Object,System.IntPtr)
+extern "C"  void internal_ARAnchorRemoved__ctor_m2856503254 (internal_ARAnchorRemoved_t3189755211 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorRemoved::Invoke(UnityEngine.XR.iOS.UnityARAnchorData)
+extern "C"  void internal_ARAnchorRemoved_Invoke_m3299031849 (internal_ARAnchorRemoved_t3189755211 * __this, UnityARAnchorData_t2901866349  ___anchorData0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		internal_ARAnchorRemoved_Invoke_m3299031849((internal_ARAnchorRemoved_t3189755211 *)__this->get_prev_9(),___anchorData0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, UnityARAnchorData_t2901866349  ___anchorData0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___anchorData0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, UnityARAnchorData_t2901866349  ___anchorData0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___anchorData0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorRemoved::BeginInvoke(UnityEngine.XR.iOS.UnityARAnchorData,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * internal_ARAnchorRemoved_BeginInvoke_m3654189460 (internal_ARAnchorRemoved_t3189755211 * __this, UnityARAnchorData_t2901866349  ___anchorData0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (internal_ARAnchorRemoved_BeginInvoke_m3654189460_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(UnityARAnchorData_t2901866349_il2cpp_TypeInfo_var, &___anchorData0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorRemoved::EndInvoke(System.IAsyncResult)
+extern "C"  void internal_ARAnchorRemoved_EndInvoke_m1183866612 (internal_ARAnchorRemoved_t3189755211 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+extern "C"  void DelegatePInvokeWrapper_internal_ARAnchorUpdated_t3705772742 (internal_ARAnchorUpdated_t3705772742 * __this, UnityARAnchorData_t2901866349  ___anchorData0, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)(UnityARAnchorData_t2901866349 );
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc(___anchorData0);
+
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorUpdated::.ctor(System.Object,System.IntPtr)
+extern "C"  void internal_ARAnchorUpdated__ctor_m2904213987 (internal_ARAnchorUpdated_t3705772742 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorUpdated::Invoke(UnityEngine.XR.iOS.UnityARAnchorData)
+extern "C"  void internal_ARAnchorUpdated_Invoke_m609656910 (internal_ARAnchorUpdated_t3705772742 * __this, UnityARAnchorData_t2901866349  ___anchorData0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		internal_ARAnchorUpdated_Invoke_m609656910((internal_ARAnchorUpdated_t3705772742 *)__this->get_prev_9(),___anchorData0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, UnityARAnchorData_t2901866349  ___anchorData0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___anchorData0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, UnityARAnchorData_t2901866349  ___anchorData0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___anchorData0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorUpdated::BeginInvoke(UnityEngine.XR.iOS.UnityARAnchorData,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * internal_ARAnchorUpdated_BeginInvoke_m879269121 (internal_ARAnchorUpdated_t3705772742 * __this, UnityARAnchorData_t2901866349  ___anchorData0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (internal_ARAnchorUpdated_BeginInvoke_m879269121_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(UnityARAnchorData_t2901866349_il2cpp_TypeInfo_var, &___anchorData0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARAnchorUpdated::EndInvoke(System.IAsyncResult)
+extern "C"  void internal_ARAnchorUpdated_EndInvoke_m1726786221 (internal_ARAnchorUpdated_t3705772742 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+extern "C"  void DelegatePInvokeWrapper_internal_ARFrameUpdate_t3296518558 (internal_ARFrameUpdate_t3296518558 * __this, internal_UnityARCamera_t2580192745  ___camera0, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)(internal_UnityARCamera_t2580192745 );
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc(___camera0);
+
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARFrameUpdate::.ctor(System.Object,System.IntPtr)
+extern "C"  void internal_ARFrameUpdate__ctor_m36448827 (internal_ARFrameUpdate_t3296518558 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARFrameUpdate::Invoke(UnityEngine.XR.iOS.internal_UnityARCamera)
+extern "C"  void internal_ARFrameUpdate_Invoke_m3624040046 (internal_ARFrameUpdate_t3296518558 * __this, internal_UnityARCamera_t2580192745  ___camera0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		internal_ARFrameUpdate_Invoke_m3624040046((internal_ARFrameUpdate_t3296518558 *)__this->get_prev_9(),___camera0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, internal_UnityARCamera_t2580192745  ___camera0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___camera0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, internal_UnityARCamera_t2580192745  ___camera0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___camera0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARFrameUpdate::BeginInvoke(UnityEngine.XR.iOS.internal_UnityARCamera,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * internal_ARFrameUpdate_BeginInvoke_m2703452769 (internal_ARFrameUpdate_t3296518558 * __this, internal_UnityARCamera_t2580192745  ___camera0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (internal_ARFrameUpdate_BeginInvoke_m2703452769_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(internal_UnityARCamera_t2580192745_il2cpp_TypeInfo_var, &___camera0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Void UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARFrameUpdate::EndInvoke(System.IAsyncResult)
+extern "C"  void internal_ARFrameUpdate_EndInvoke_m3230055713 (internal_ARFrameUpdate_t3296518558 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+// System.Void UnityEngine.XR.iOS.UnityARUtility::.ctor()
+extern "C"  void UnityARUtility__ctor_m783816525 (UnityARUtility_t3608388148 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARUtility::InitializePlanePrefab(UnityEngine.GameObject)
+extern "C"  void UnityARUtility_InitializePlanePrefab_m2887188869 (Il2CppObject * __this /* static, unused */, GameObject_t1756533147 * ___go0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARUtility_InitializePlanePrefab_m2887188869_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		GameObject_t1756533147 * L_0 = ___go0;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARUtility_t3608388148_il2cpp_TypeInfo_var);
+		((UnityARUtility_t3608388148_StaticFields*)UnityARUtility_t3608388148_il2cpp_TypeInfo_var->static_fields)->set_planePrefab_2(L_0);
+		return;
+	}
+}
+// UnityEngine.GameObject UnityEngine.XR.iOS.UnityARUtility::CreatePlaneInScene(UnityEngine.XR.iOS.ARPlaneAnchor)
+extern "C"  GameObject_t1756533147 * UnityARUtility_CreatePlaneInScene_m836370693 (Il2CppObject * __this /* static, unused */, ARPlaneAnchor_t1439520888  ___arPlaneAnchor0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARUtility_CreatePlaneInScene_m836370693_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	GameObject_t1756533147 * V_0 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARUtility_t3608388148_il2cpp_TypeInfo_var);
+		GameObject_t1756533147 * L_0 = ((UnityARUtility_t3608388148_StaticFields*)UnityARUtility_t3608388148_il2cpp_TypeInfo_var->static_fields)->get_planePrefab_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARUtility_t3608388148_il2cpp_TypeInfo_var);
+		GameObject_t1756533147 * L_2 = ((UnityARUtility_t3608388148_StaticFields*)UnityARUtility_t3608388148_il2cpp_TypeInfo_var->static_fields)->get_planePrefab_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		GameObject_t1756533147 * L_3 = Object_Instantiate_TisGameObject_t1756533147_m3664764861(NULL /*static, unused*/, L_2, /*hidden argument*/Object_Instantiate_TisGameObject_t1756533147_m3664764861_MethodInfo_var);
+		V_0 = L_3;
+		goto IL_0026;
+	}
+
+IL_0020:
+	{
+		GameObject_t1756533147 * L_4 = (GameObject_t1756533147 *)il2cpp_codegen_object_new(GameObject_t1756533147_il2cpp_TypeInfo_var);
+		GameObject__ctor_m498247354(L_4, /*hidden argument*/NULL);
+		V_0 = L_4;
+	}
+
+IL_0026:
+	{
+		GameObject_t1756533147 * L_5 = V_0;
+		String_t* L_6 = (&___arPlaneAnchor0)->get_identifier_0();
+		NullCheck(L_5);
+		Object_set_name_m4157836998(L_5, L_6, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_7 = V_0;
+		ARPlaneAnchor_t1439520888  L_8 = ___arPlaneAnchor0;
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARUtility_t3608388148_il2cpp_TypeInfo_var);
+		GameObject_t1756533147 * L_9 = UnityARUtility_UpdatePlaneWithAnchorTransform_m639257622(NULL /*static, unused*/, L_7, L_8, /*hidden argument*/NULL);
+		return L_9;
+	}
+}
+// UnityEngine.GameObject UnityEngine.XR.iOS.UnityARUtility::UpdatePlaneWithAnchorTransform(UnityEngine.GameObject,UnityEngine.XR.iOS.ARPlaneAnchor)
+extern "C"  GameObject_t1756533147 * UnityARUtility_UpdatePlaneWithAnchorTransform_m639257622 (Il2CppObject * __this /* static, unused */, GameObject_t1756533147 * ___plane0, ARPlaneAnchor_t1439520888  ___arPlaneAnchor1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARUtility_UpdatePlaneWithAnchorTransform_m639257622_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	MeshFilter_t3026937449 * V_0 = NULL;
+	{
+		GameObject_t1756533147 * L_0 = ___plane0;
+		NullCheck(L_0);
+		Transform_t3275118058 * L_1 = GameObject_get_transform_m909382139(L_0, /*hidden argument*/NULL);
+		Matrix4x4_t2933234003  L_2 = (&___arPlaneAnchor1)->get_transform_1();
+		Vector3_t2243707580  L_3 = UnityARMatrixOps_GetPosition_m1153858439(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Transform_set_position_m2469242620(L_1, L_3, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_4 = ___plane0;
+		NullCheck(L_4);
+		Transform_t3275118058 * L_5 = GameObject_get_transform_m909382139(L_4, /*hidden argument*/NULL);
+		Matrix4x4_t2933234003  L_6 = (&___arPlaneAnchor1)->get_transform_1();
+		Quaternion_t4030073918  L_7 = UnityARMatrixOps_GetRotation_m1002641986(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Transform_set_rotation_m3411284563(L_5, L_7, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_8 = ___plane0;
+		NullCheck(L_8);
+		MeshFilter_t3026937449 * L_9 = GameObject_GetComponentInChildren_TisMeshFilter_t3026937449_m1346841033(L_8, /*hidden argument*/GameObject_GetComponentInChildren_TisMeshFilter_t3026937449_m1346841033_MethodInfo_var);
+		V_0 = L_9;
+		MeshFilter_t3026937449 * L_10 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_11 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_10, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_11)
+		{
+			goto IL_00c6;
+		}
+	}
+	{
+		MeshFilter_t3026937449 * L_12 = V_0;
+		NullCheck(L_12);
+		GameObject_t1756533147 * L_13 = Component_get_gameObject_m3105766835(L_12, /*hidden argument*/NULL);
+		NullCheck(L_13);
+		Transform_t3275118058 * L_14 = GameObject_get_transform_m909382139(L_13, /*hidden argument*/NULL);
+		Vector3_t2243707580 * L_15 = (&___arPlaneAnchor1)->get_address_of_extent_4();
+		float L_16 = L_15->get_x_1();
+		Vector3_t2243707580 * L_17 = (&___arPlaneAnchor1)->get_address_of_extent_4();
+		float L_18 = L_17->get_y_2();
+		Vector3_t2243707580 * L_19 = (&___arPlaneAnchor1)->get_address_of_extent_4();
+		float L_20 = L_19->get_z_3();
+		Vector3_t2243707580  L_21;
+		memset(&L_21, 0, sizeof(L_21));
+		Vector3__ctor_m2638739322(&L_21, ((float)((float)L_16*(float)(0.1f))), ((float)((float)L_18*(float)(0.1f))), ((float)((float)L_20*(float)(0.1f))), /*hidden argument*/NULL);
+		NullCheck(L_14);
+		Transform_set_localScale_m2325460848(L_14, L_21, /*hidden argument*/NULL);
+		MeshFilter_t3026937449 * L_22 = V_0;
+		NullCheck(L_22);
+		GameObject_t1756533147 * L_23 = Component_get_gameObject_m3105766835(L_22, /*hidden argument*/NULL);
+		NullCheck(L_23);
+		Transform_t3275118058 * L_24 = GameObject_get_transform_m909382139(L_23, /*hidden argument*/NULL);
+		Vector3_t2243707580 * L_25 = (&___arPlaneAnchor1)->get_address_of_center_3();
+		float L_26 = L_25->get_x_1();
+		Vector3_t2243707580 * L_27 = (&___arPlaneAnchor1)->get_address_of_center_3();
+		float L_28 = L_27->get_y_2();
+		Vector3_t2243707580 * L_29 = (&___arPlaneAnchor1)->get_address_of_center_3();
+		float L_30 = L_29->get_z_3();
+		Vector3_t2243707580  L_31;
+		memset(&L_31, 0, sizeof(L_31));
+		Vector3__ctor_m2638739322(&L_31, L_26, L_28, ((-L_30)), /*hidden argument*/NULL);
+		NullCheck(L_24);
+		Transform_set_localPosition_m1026930133(L_24, L_31, /*hidden argument*/NULL);
+	}
+
+IL_00c6:
+	{
+		GameObject_t1756533147 * L_32 = ___plane0;
+		return L_32;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARUtility::.cctor()
+extern "C"  void UnityARUtility__cctor_m1506337406 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARVideo::.ctor()
+extern "C"  void UnityARVideo__ctor_m55801374 (UnityARVideo_t2351297253 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARVideo::Start()
+extern "C"  void UnityARVideo_Start_m474328190 (UnityARVideo_t2351297253 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARVideo_Start_m474328190_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_t1130867170 * L_0 = UnityARSessionNativeInterface_GetARSessionNativeInterface_m3174488657(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_m_Session_6(L_0);
+		__this->set_bCommandBufferInitialized_7((bool)0);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARVideo::InitializeCommandBuffer()
+extern "C"  void UnityARVideo_InitializeCommandBuffer_m2800566831 (UnityARVideo_t2351297253 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARVideo_InitializeCommandBuffer_m2800566831_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		CommandBuffer_t1204166949 * L_0 = (CommandBuffer_t1204166949 *)il2cpp_codegen_object_new(CommandBuffer_t1204166949_il2cpp_TypeInfo_var);
+		CommandBuffer__ctor_m3893953450(L_0, /*hidden argument*/NULL);
+		__this->set_m_VideoCommandBuffer_3(L_0);
+		CommandBuffer_t1204166949 * L_1 = __this->get_m_VideoCommandBuffer_3();
+		RenderTargetIdentifier_t772440638  L_2 = RenderTargetIdentifier_op_Implicit_m1621446097(NULL /*static, unused*/, 1, /*hidden argument*/NULL);
+		Material_t193706927 * L_3 = __this->get_m_ClearMaterial_2();
+		NullCheck(L_1);
+		CommandBuffer_Blit_m4282817560(L_1, (Texture_t2243626319 *)NULL, L_2, L_3, /*hidden argument*/NULL);
+		Camera_t189460977 * L_4 = Component_GetComponent_TisCamera_t189460977_m3276577584(__this, /*hidden argument*/Component_GetComponent_TisCamera_t189460977_m3276577584_MethodInfo_var);
+		CommandBuffer_t1204166949 * L_5 = __this->get_m_VideoCommandBuffer_3();
+		NullCheck(L_4);
+		Camera_AddCommandBuffer_m2569587168(L_4, ((int32_t)10), L_5, /*hidden argument*/NULL);
+		__this->set_bCommandBufferInitialized_7((bool)1);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARVideo::OnDestroy()
+extern "C"  void UnityARVideo_OnDestroy_m4088618451 (UnityARVideo_t2351297253 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARVideo_OnDestroy_m4088618451_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Camera_t189460977 * L_0 = Component_GetComponent_TisCamera_t189460977_m3276577584(__this, /*hidden argument*/Component_GetComponent_TisCamera_t189460977_m3276577584_MethodInfo_var);
+		CommandBuffer_t1204166949 * L_1 = __this->get_m_VideoCommandBuffer_3();
+		NullCheck(L_0);
+		Camera_RemoveCommandBuffer_m2103408695(L_0, ((int32_t)10), L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.UnityARVideo::OnPreRender()
+extern "C"  void UnityARVideo_OnPreRender_m3078128848 (UnityARVideo_t2351297253 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityARVideo_OnPreRender_m3078128848_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ARTextureHandles_t3764914833  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Resolution_t3693662728  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	int32_t V_2 = 0;
+	float V_3 = 0.0f;
+	Matrix4x4_t2933234003  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	{
+		UnityARSessionNativeInterface_t1130867170 * L_0 = __this->get_m_Session_6();
+		NullCheck(L_0);
+		ARTextureHandles_t3764914833  L_1 = UnityARSessionNativeInterface_GetARVideoTextureHandles_m2905358883(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		IntPtr_t L_2 = (&V_0)->get_textureY_0();
+		IntPtr_t L_3 = ((IntPtr_t_StaticFields*)IntPtr_t_il2cpp_TypeInfo_var->static_fields)->get_Zero_1();
+		bool L_4 = IntPtr_op_Equality_m1573482188(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+		if (L_4)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		IntPtr_t L_5 = (&V_0)->get_textureCbCr_1();
+		IntPtr_t L_6 = ((IntPtr_t_StaticFields*)IntPtr_t_il2cpp_TypeInfo_var->static_fields)->get_Zero_1();
+		bool L_7 = IntPtr_op_Equality_m1573482188(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
+		if (!L_7)
+		{
+			goto IL_0039;
+		}
+	}
+
+IL_0038:
+	{
+		return;
+	}
+
+IL_0039:
+	{
+		bool L_8 = __this->get_bCommandBufferInitialized_7();
+		if (L_8)
+		{
+			goto IL_004a;
+		}
+	}
+	{
+		UnityARVideo_InitializeCommandBuffer_m2800566831(__this, /*hidden argument*/NULL);
+	}
+
+IL_004a:
+	{
+		Resolution_t3693662728  L_9 = Screen_get_currentResolution_m2361090437(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_1 = L_9;
+		int32_t L_10 = Resolution_get_width_m1438273472((&V_1), /*hidden argument*/NULL);
+		int32_t L_11 = Resolution_get_height_m882683003((&V_1), /*hidden argument*/NULL);
+		IntPtr_t L_12 = (&V_0)->get_textureY_0();
+		Texture2D_t3542995729 * L_13 = Texture2D_CreateExternalTexture_m3402112250(NULL /*static, unused*/, L_10, L_11, ((int32_t)63), (bool)0, (bool)0, L_12, /*hidden argument*/NULL);
+		__this->set__videoTextureY_4(L_13);
+		Texture2D_t3542995729 * L_14 = __this->get__videoTextureY_4();
+		NullCheck(L_14);
+		Texture_set_filterMode_m3838996656(L_14, 1, /*hidden argument*/NULL);
+		Texture2D_t3542995729 * L_15 = __this->get__videoTextureY_4();
+		NullCheck(L_15);
+		Texture_set_wrapMode_m333956747(L_15, 0, /*hidden argument*/NULL);
+		Texture2D_t3542995729 * L_16 = __this->get__videoTextureY_4();
+		IntPtr_t L_17 = (&V_0)->get_textureY_0();
+		NullCheck(L_16);
+		Texture2D_UpdateExternalTexture_m1701322565(L_16, L_17, /*hidden argument*/NULL);
+		int32_t L_18 = Resolution_get_width_m1438273472((&V_1), /*hidden argument*/NULL);
+		int32_t L_19 = Resolution_get_height_m882683003((&V_1), /*hidden argument*/NULL);
+		IntPtr_t L_20 = (&V_0)->get_textureCbCr_1();
+		Texture2D_t3542995729 * L_21 = Texture2D_CreateExternalTexture_m3402112250(NULL /*static, unused*/, L_18, L_19, ((int32_t)62), (bool)0, (bool)0, L_20, /*hidden argument*/NULL);
+		__this->set__videoTextureCbCr_5(L_21);
+		Texture2D_t3542995729 * L_22 = __this->get__videoTextureCbCr_5();
+		NullCheck(L_22);
+		Texture_set_filterMode_m3838996656(L_22, 1, /*hidden argument*/NULL);
+		Texture2D_t3542995729 * L_23 = __this->get__videoTextureCbCr_5();
+		NullCheck(L_23);
+		Texture_set_wrapMode_m333956747(L_23, 0, /*hidden argument*/NULL);
+		Texture2D_t3542995729 * L_24 = __this->get__videoTextureCbCr_5();
+		IntPtr_t L_25 = (&V_0)->get_textureCbCr_1();
+		NullCheck(L_24);
+		Texture2D_UpdateExternalTexture_m1701322565(L_24, L_25, /*hidden argument*/NULL);
+		Material_t193706927 * L_26 = __this->get_m_ClearMaterial_2();
+		Texture2D_t3542995729 * L_27 = __this->get__videoTextureY_4();
+		NullCheck(L_26);
+		Material_SetTexture_m141095205(L_26, _stringLiteral1152424733, L_27, /*hidden argument*/NULL);
+		Material_t193706927 * L_28 = __this->get_m_ClearMaterial_2();
+		Texture2D_t3542995729 * L_29 = __this->get__videoTextureCbCr_5();
+		NullCheck(L_28);
+		Material_SetTexture_m141095205(L_28, _stringLiteral2391281062, L_29, /*hidden argument*/NULL);
+		V_2 = 0;
+		V_3 = (0.0f);
+		int32_t L_30 = Screen_get_orientation_m879255848(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_30) == ((uint32_t)1))))
+		{
+			goto IL_0138;
+		}
+	}
+	{
+		V_3 = (-90.0f);
+		V_2 = 1;
+		goto IL_0161;
+	}
+
+IL_0138:
+	{
+		int32_t L_31 = Screen_get_orientation_m879255848(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_31) == ((uint32_t)2))))
+		{
+			goto IL_0150;
+		}
+	}
+	{
+		V_3 = (90.0f);
+		V_2 = 1;
+		goto IL_0161;
+	}
+
+IL_0150:
+	{
+		int32_t L_32 = Screen_get_orientation_m879255848(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_32) == ((uint32_t)4))))
+		{
+			goto IL_0161;
+		}
+	}
+	{
+		V_3 = (-180.0f);
+	}
+
+IL_0161:
+	{
+		Vector3_t2243707580  L_33 = Vector3_get_zero_m1527993324(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_34 = V_3;
+		Quaternion_t4030073918  L_35 = Quaternion_Euler_m2887458175(NULL /*static, unused*/, (0.0f), (0.0f), L_34, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_36 = Vector3_get_one_m627547232(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Matrix4x4_t2933234003  L_37 = Matrix4x4_TRS_m1913765359(NULL /*static, unused*/, L_33, L_35, L_36, /*hidden argument*/NULL);
+		V_4 = L_37;
+		Material_t193706927 * L_38 = __this->get_m_ClearMaterial_2();
+		Matrix4x4_t2933234003  L_39 = V_4;
+		NullCheck(L_38);
+		Material_SetMatrix_m1387972957(L_38, _stringLiteral2946740916, L_39, /*hidden argument*/NULL);
+		Material_t193706927 * L_40 = __this->get_m_ClearMaterial_2();
+		UnityARSessionNativeInterface_t1130867170 * L_41 = __this->get_m_Session_6();
+		NullCheck(L_41);
+		float L_42 = UnityARSessionNativeInterface_GetARYUVTexCoordScale_m1823875812(L_41, /*hidden argument*/NULL);
+		NullCheck(L_40);
+		Material_SetFloat_m1926275467(L_40, _stringLiteral1387439463, L_42, /*hidden argument*/NULL);
+		Material_t193706927 * L_43 = __this->get_m_ClearMaterial_2();
+		int32_t L_44 = V_2;
+		NullCheck(L_43);
+		Material_SetInt_m522302436(L_43, _stringLiteral2454363760, L_44, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityPointCloudExample::.ctor()
+extern "C"  void UnityPointCloudExample__ctor_m4118737579 (UnityPointCloudExample_t3196264220 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_numPointsToShow_2(((int32_t)100));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityPointCloudExample::Start()
+extern "C"  void UnityPointCloudExample_Start_m3369543775 (UnityPointCloudExample_t3196264220 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityPointCloudExample_Start_m3369543775_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		IntPtr_t L_0;
+		L_0.set_m_value_0((void*)(void*)UnityPointCloudExample_ARFrameUpdated_m3631038593_MethodInfo_var);
+		ARFrameUpdate_t496507918 * L_1 = (ARFrameUpdate_t496507918 *)il2cpp_codegen_object_new(ARFrameUpdate_t496507918_il2cpp_TypeInfo_var);
+		ARFrameUpdate__ctor_m1399217559(L_1, __this, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_var);
+		UnityARSessionNativeInterface_add_ARFrameUpdatedEvent_m2850773202(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_2 = __this->get_PointCloudPrefab_3();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_3 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_2, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_005c;
+		}
+	}
+	{
+		List_1_t1125654279 * L_4 = (List_1_t1125654279 *)il2cpp_codegen_object_new(List_1_t1125654279_il2cpp_TypeInfo_var);
+		List_1__ctor_m704351054(L_4, /*hidden argument*/List_1__ctor_m704351054_MethodInfo_var);
+		__this->set_pointCloudObjects_4(L_4);
+		V_0 = 0;
+		goto IL_004e;
+	}
+
+IL_0034:
+	{
+		List_1_t1125654279 * L_5 = __this->get_pointCloudObjects_4();
+		GameObject_t1756533147 * L_6 = __this->get_PointCloudPrefab_3();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		GameObject_t1756533147 * L_7 = Object_Instantiate_TisGameObject_t1756533147_m3664764861(NULL /*static, unused*/, L_6, /*hidden argument*/Object_Instantiate_TisGameObject_t1756533147_m3664764861_MethodInfo_var);
+		NullCheck(L_5);
+		List_1_Add_m3441471442(L_5, L_7, /*hidden argument*/List_1_Add_m3441471442_MethodInfo_var);
+		int32_t L_8 = V_0;
+		V_0 = ((int32_t)((int32_t)L_8+(int32_t)1));
+	}
+
+IL_004e:
+	{
+		int32_t L_9 = V_0;
+		uint32_t L_10 = __this->get_numPointsToShow_2();
+		if ((((int64_t)(((int64_t)((int64_t)L_9)))) < ((int64_t)(((int64_t)((uint64_t)L_10))))))
+		{
+			goto IL_0034;
+		}
+	}
+
+IL_005c:
+	{
+		return;
+	}
+}
+// System.Void UnityPointCloudExample::ARFrameUpdated(UnityEngine.XR.iOS.UnityARCamera)
+extern "C"  void UnityPointCloudExample_ARFrameUpdated_m3631038593 (UnityPointCloudExample_t3196264220 * __this, UnityARCamera_t4198559457  ___camera0, const MethodInfo* method)
+{
+	{
+		Vector3U5BU5D_t1172311765* L_0 = (&___camera0)->get_pointCloudData_4();
+		__this->set_m_PointCloudData_5(L_0);
+		return;
+	}
+}
+// System.Void UnityPointCloudExample::Update()
+extern "C"  void UnityPointCloudExample_Update_m1416789468 (UnityPointCloudExample_t3196264220 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityPointCloudExample_Update_m1416789468_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Vector4_t2243707581  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	GameObject_t1756533147 * V_2 = NULL;
+	{
+		GameObject_t1756533147 * L_0 = __this->get_PointCloudPrefab_3();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_008c;
+		}
+	}
+	{
+		Vector3U5BU5D_t1172311765* L_2 = __this->get_m_PointCloudData_5();
+		if (!L_2)
+		{
+			goto IL_008c;
+		}
+	}
+	{
+		V_0 = 0;
+		goto IL_0070;
+	}
+
+IL_0023:
+	{
+		Vector3U5BU5D_t1172311765* L_3 = __this->get_m_PointCloudData_5();
+		int32_t L_4 = V_0;
+		NullCheck(L_3);
+		Vector4_t2243707581  L_5 = Vector4_op_Implicit_m1059320239(NULL /*static, unused*/, (*(Vector3_t2243707580 *)((L_3)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4)))), /*hidden argument*/NULL);
+		V_1 = L_5;
+		List_1_t1125654279 * L_6 = __this->get_pointCloudObjects_4();
+		int32_t L_7 = V_0;
+		NullCheck(L_6);
+		GameObject_t1756533147 * L_8 = List_1_get_Item_m939767277(L_6, L_7, /*hidden argument*/List_1_get_Item_m939767277_MethodInfo_var);
+		V_2 = L_8;
+		GameObject_t1756533147 * L_9 = V_2;
+		NullCheck(L_9);
+		Transform_t3275118058 * L_10 = GameObject_get_transform_m909382139(L_9, /*hidden argument*/NULL);
+		float L_11 = (&V_1)->get_x_1();
+		float L_12 = (&V_1)->get_y_2();
+		float L_13 = (&V_1)->get_z_3();
+		Vector3_t2243707580  L_14;
+		memset(&L_14, 0, sizeof(L_14));
+		Vector3__ctor_m2638739322(&L_14, L_11, L_12, L_13, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		Transform_set_position_m2469242620(L_10, L_14, /*hidden argument*/NULL);
+		int32_t L_15 = V_0;
+		V_0 = ((int32_t)((int32_t)L_15+(int32_t)1));
+	}
+
+IL_0070:
+	{
+		int32_t L_16 = V_0;
+		Vector3U5BU5D_t1172311765* L_17 = __this->get_m_PointCloudData_5();
+		NullCheck(L_17);
+		uint32_t L_18 = __this->get_numPointsToShow_2();
+		int64_t L_19 = Math_Min_m301707792(NULL /*static, unused*/, (((int64_t)((int64_t)(((int32_t)((int32_t)(((Il2CppArray *)L_17)->max_length))))))), (((int64_t)((uint64_t)L_18))), /*hidden argument*/NULL);
+		if ((((int64_t)(((int64_t)((int64_t)L_16)))) < ((int64_t)L_19)))
+		{
+			goto IL_0023;
+		}
+	}
+
+IL_008c:
+	{
+		return;
+	}
+}
+// System.Void Valve.VR.CVRApplications::.ctor(System.IntPtr)
+extern "C"  void CVRApplications__ctor_m1774603165 (CVRApplications_t1900926488 * __this, IntPtr_t ___pInterface0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRApplications__ctor_m1774603165_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		IntPtr_t L_0 = ___pInterface0;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IVRApplications_t2340401530_0_0_0_var), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		Il2CppObject * L_2 = Marshal_PtrToStructure_m673412918(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_FnTable_0(((*(IVRApplications_t2340401530 *)((IVRApplications_t2340401530 *)UnBox(L_2, IVRApplications_t2340401530_il2cpp_TypeInfo_var)))));
+		return;
+	}
+}
+// Valve.VR.EVRApplicationError Valve.VR.CVRApplications::AddApplicationManifest(System.String,System.Boolean)
+extern "C"  int32_t CVRApplications_AddApplicationManifest_m3851528934 (CVRApplications_t1900926488 * __this, String_t* ___pchApplicationManifestFullPath0, bool ___bTemporary1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_AddApplicationManifest_t767630098 * L_1 = L_0->get_AddApplicationManifest_0();
+		String_t* L_2 = ___pchApplicationManifestFullPath0;
+		bool L_3 = ___bTemporary1;
+		NullCheck(L_1);
+		int32_t L_4 = _AddApplicationManifest_Invoke_m2422742202(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVRApplicationError Valve.VR.CVRApplications::RemoveApplicationManifest(System.String)
+extern "C"  int32_t CVRApplications_RemoveApplicationManifest_m2520293440 (CVRApplications_t1900926488 * __this, String_t* ___pchApplicationManifestFullPath0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_RemoveApplicationManifest_t1836596693 * L_1 = L_0->get_RemoveApplicationManifest_1();
+		String_t* L_2 = ___pchApplicationManifestFullPath0;
+		NullCheck(L_1);
+		int32_t L_3 = _RemoveApplicationManifest_Invoke_m153687176(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Boolean Valve.VR.CVRApplications::IsApplicationInstalled(System.String)
+extern "C"  bool CVRApplications_IsApplicationInstalled_m1917587789 (CVRApplications_t1900926488 * __this, String_t* ___pchAppKey0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_IsApplicationInstalled_t2595723848 * L_1 = L_0->get_IsApplicationInstalled_2();
+		String_t* L_2 = ___pchAppKey0;
+		NullCheck(L_1);
+		bool L_3 = _IsApplicationInstalled_Invoke_m2884939707(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
+// System.UInt32 Valve.VR.CVRApplications::GetApplicationCount()
+extern "C"  uint32_t CVRApplications_GetApplicationCount_m2095740439 (CVRApplications_t1900926488 * __this, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_GetApplicationCount_t2482336573 * L_1 = L_0->get_GetApplicationCount_3();
+		NullCheck(L_1);
+		uint32_t L_2 = _GetApplicationCount_Invoke_m2394266345(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		uint32_t L_3 = V_0;
+		return L_3;
+	}
+}
+// Valve.VR.EVRApplicationError Valve.VR.CVRApplications::GetApplicationKeyByIndex(System.UInt32,System.String,System.UInt32)
+extern "C"  int32_t CVRApplications_GetApplicationKeyByIndex_m3512081035 (CVRApplications_t1900926488 * __this, uint32_t ___unApplicationIndex0, String_t* ___pchAppKeyBuffer1, uint32_t ___unAppKeyBufferLen2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_GetApplicationKeyByIndex_t2366899296 * L_1 = L_0->get_GetApplicationKeyByIndex_4();
+		uint32_t L_2 = ___unApplicationIndex0;
+		String_t* L_3 = ___pchAppKeyBuffer1;
+		uint32_t L_4 = ___unAppKeyBufferLen2;
+		NullCheck(L_1);
+		int32_t L_5 = _GetApplicationKeyByIndex_Invoke_m1187617545(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVRApplicationError Valve.VR.CVRApplications::GetApplicationKeyByProcessId(System.UInt32,System.String,System.UInt32)
+extern "C"  int32_t CVRApplications_GetApplicationKeyByProcessId_m2333480563 (CVRApplications_t1900926488 * __this, uint32_t ___unProcessId0, String_t* ___pchAppKeyBuffer1, uint32_t ___unAppKeyBufferLen2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_GetApplicationKeyByProcessId_t114599352 * L_1 = L_0->get_GetApplicationKeyByProcessId_5();
+		uint32_t L_2 = ___unProcessId0;
+		String_t* L_3 = ___pchAppKeyBuffer1;
+		uint32_t L_4 = ___unAppKeyBufferLen2;
+		NullCheck(L_1);
+		int32_t L_5 = _GetApplicationKeyByProcessId_Invoke_m1865835985(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVRApplicationError Valve.VR.CVRApplications::LaunchApplication(System.String)
+extern "C"  int32_t CVRApplications_LaunchApplication_m1048599972 (CVRApplications_t1900926488 * __this, String_t* ___pchAppKey0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_LaunchApplication_t851978817 * L_1 = L_0->get_LaunchApplication_6();
+		String_t* L_2 = ___pchAppKey0;
+		NullCheck(L_1);
+		int32_t L_3 = _LaunchApplication_Invoke_m822862864(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// Valve.VR.EVRApplicationError Valve.VR.CVRApplications::LaunchTemplateApplication(System.String,System.String,Valve.VR.AppOverrideKeys_t[])
+extern "C"  int32_t CVRApplications_LaunchTemplateApplication_m79995958 (CVRApplications_t1900926488 * __this, String_t* ___pchTemplateAppKey0, String_t* ___pchNewAppKey1, AppOverrideKeys_tU5BU5D_t3538561671* ___pKeys2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_LaunchTemplateApplication_t1486019733 * L_1 = L_0->get_LaunchTemplateApplication_7();
+		String_t* L_2 = ___pchTemplateAppKey0;
+		String_t* L_3 = ___pchNewAppKey1;
+		AppOverrideKeys_tU5BU5D_t3538561671* L_4 = ___pKeys2;
+		AppOverrideKeys_tU5BU5D_t3538561671* L_5 = ___pKeys2;
+		NullCheck(L_5);
+		NullCheck(L_1);
+		int32_t L_6 = _LaunchTemplateApplication_Invoke_m3081139642(L_1, L_2, L_3, L_4, (((int32_t)((int32_t)(((Il2CppArray *)L_5)->max_length)))), /*hidden argument*/NULL);
+		V_0 = L_6;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// Valve.VR.EVRApplicationError Valve.VR.CVRApplications::LaunchApplicationFromMimeType(System.String,System.String)
+extern "C"  int32_t CVRApplications_LaunchApplicationFromMimeType_m1939551404 (CVRApplications_t1900926488 * __this, String_t* ___pchMimeType0, String_t* ___pchArgs1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_LaunchApplicationFromMimeType_t1201572535 * L_1 = L_0->get_LaunchApplicationFromMimeType_8();
+		String_t* L_2 = ___pchMimeType0;
+		String_t* L_3 = ___pchArgs1;
+		NullCheck(L_1);
+		int32_t L_4 = _LaunchApplicationFromMimeType_Invoke_m2128706100(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVRApplicationError Valve.VR.CVRApplications::LaunchDashboardOverlay(System.String)
+extern "C"  int32_t CVRApplications_LaunchDashboardOverlay_m3440266320 (CVRApplications_t1900926488 * __this, String_t* ___pchAppKey0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_LaunchDashboardOverlay_t3582840745 * L_1 = L_0->get_LaunchDashboardOverlay_9();
+		String_t* L_2 = ___pchAppKey0;
+		NullCheck(L_1);
+		int32_t L_3 = _LaunchDashboardOverlay_Invoke_m1028479868(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Boolean Valve.VR.CVRApplications::CancelApplicationLaunch(System.String)
+extern "C"  bool CVRApplications_CancelApplicationLaunch_m385042298 (CVRApplications_t1900926488 * __this, String_t* ___pchAppKey0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_CancelApplicationLaunch_t2074441983 * L_1 = L_0->get_CancelApplicationLaunch_10();
+		String_t* L_2 = ___pchAppKey0;
+		NullCheck(L_1);
+		bool L_3 = _CancelApplicationLaunch_Invoke_m523516994(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
+// Valve.VR.EVRApplicationError Valve.VR.CVRApplications::IdentifyApplication(System.UInt32,System.String)
+extern "C"  int32_t CVRApplications_IdentifyApplication_m3255097643 (CVRApplications_t1900926488 * __this, uint32_t ___unProcessId0, String_t* ___pchAppKey1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_IdentifyApplication_t1775622238 * L_1 = L_0->get_IdentifyApplication_11();
+		uint32_t L_2 = ___unProcessId0;
+		String_t* L_3 = ___pchAppKey1;
+		NullCheck(L_1);
+		int32_t L_4 = _IdentifyApplication_Invoke_m1616142617(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// System.UInt32 Valve.VR.CVRApplications::GetApplicationProcessId(System.String)
+extern "C"  uint32_t CVRApplications_GetApplicationProcessId_m115551222 (CVRApplications_t1900926488 * __this, String_t* ___pchAppKey0, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_GetApplicationProcessId_t1419106538 * L_1 = L_0->get_GetApplicationProcessId_12();
+		String_t* L_2 = ___pchAppKey0;
+		NullCheck(L_1);
+		uint32_t L_3 = _GetApplicationProcessId_Invoke_m3590099626(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		uint32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// System.String Valve.VR.CVRApplications::GetApplicationsErrorNameFromEnum(Valve.VR.EVRApplicationError)
+extern "C"  String_t* CVRApplications_GetApplicationsErrorNameFromEnum_m3719283618 (CVRApplications_t1900926488 * __this, int32_t ___error0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRApplications_GetApplicationsErrorNameFromEnum_m3719283618_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	IntPtr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_GetApplicationsErrorNameFromEnum_t3031121943 * L_1 = L_0->get_GetApplicationsErrorNameFromEnum_13();
+		int32_t L_2 = ___error0;
+		NullCheck(L_1);
+		IntPtr_t L_3 = _GetApplicationsErrorNameFromEnum_Invoke_m4148924174(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		IntPtr_t L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		String_t* L_5 = Marshal_PtrToStringAnsi_m2970070000(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// System.UInt32 Valve.VR.CVRApplications::GetApplicationPropertyString(System.String,Valve.VR.EVRApplicationProperty,System.String,System.UInt32,Valve.VR.EVRApplicationError&)
+extern "C"  uint32_t CVRApplications_GetApplicationPropertyString_m148806691 (CVRApplications_t1900926488 * __this, String_t* ___pchAppKey0, int32_t ___eProperty1, String_t* ___pchPropertyValueBuffer2, uint32_t ___unPropertyValueBufferLen3, int32_t* ___peError4, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_GetApplicationPropertyString_t2585650982 * L_1 = L_0->get_GetApplicationPropertyString_14();
+		String_t* L_2 = ___pchAppKey0;
+		int32_t L_3 = ___eProperty1;
+		String_t* L_4 = ___pchPropertyValueBuffer2;
+		uint32_t L_5 = ___unPropertyValueBufferLen3;
+		int32_t* L_6 = ___peError4;
+		NullCheck(L_1);
+		uint32_t L_7 = _GetApplicationPropertyString_Invoke_m2200586629(L_1, L_2, L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		uint32_t L_8 = V_0;
+		return L_8;
+	}
+}
+// System.Boolean Valve.VR.CVRApplications::GetApplicationPropertyBool(System.String,Valve.VR.EVRApplicationProperty,Valve.VR.EVRApplicationError&)
+extern "C"  bool CVRApplications_GetApplicationPropertyBool_m4194316337 (CVRApplications_t1900926488 * __this, String_t* ___pchAppKey0, int32_t ___eProperty1, int32_t* ___peError2, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_GetApplicationPropertyBool_t3564886007 * L_1 = L_0->get_GetApplicationPropertyBool_15();
+		String_t* L_2 = ___pchAppKey0;
+		int32_t L_3 = ___eProperty1;
+		int32_t* L_4 = ___peError2;
+		NullCheck(L_1);
+		bool L_5 = _GetApplicationPropertyBool_Invoke_m3127965027(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		bool L_6 = V_0;
+		return L_6;
+	}
+}
+// System.UInt64 Valve.VR.CVRApplications::GetApplicationPropertyUint64(System.String,Valve.VR.EVRApplicationProperty,Valve.VR.EVRApplicationError&)
+extern "C"  uint64_t CVRApplications_GetApplicationPropertyUint64_m375480327 (CVRApplications_t1900926488 * __this, String_t* ___pchAppKey0, int32_t ___eProperty1, int32_t* ___peError2, const MethodInfo* method)
+{
+	uint64_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_GetApplicationPropertyUint64_t3532011289 * L_1 = L_0->get_GetApplicationPropertyUint64_16();
+		String_t* L_2 = ___pchAppKey0;
+		int32_t L_3 = ___eProperty1;
+		int32_t* L_4 = ___peError2;
+		NullCheck(L_1);
+		uint64_t L_5 = _GetApplicationPropertyUint64_Invoke_m3249089845(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		uint64_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVRApplicationError Valve.VR.CVRApplications::SetApplicationAutoLaunch(System.String,System.Boolean)
+extern "C"  int32_t CVRApplications_SetApplicationAutoLaunch_m3631355110 (CVRApplications_t1900926488 * __this, String_t* ___pchAppKey0, bool ___bAutoLaunch1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_SetApplicationAutoLaunch_t1014802842 * L_1 = L_0->get_SetApplicationAutoLaunch_17();
+		String_t* L_2 = ___pchAppKey0;
+		bool L_3 = ___bAutoLaunch1;
+		NullCheck(L_1);
+		int32_t L_4 = _SetApplicationAutoLaunch_Invoke_m2763083762(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Boolean Valve.VR.CVRApplications::GetApplicationAutoLaunch(System.String)
+extern "C"  bool CVRApplications_GetApplicationAutoLaunch_m911534043 (CVRApplications_t1900926488 * __this, String_t* ___pchAppKey0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_GetApplicationAutoLaunch_t253949742 * L_1 = L_0->get_GetApplicationAutoLaunch_18();
+		String_t* L_2 = ___pchAppKey0;
+		NullCheck(L_1);
+		bool L_3 = _GetApplicationAutoLaunch_Invoke_m1614090009(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
+// Valve.VR.EVRApplicationError Valve.VR.CVRApplications::SetDefaultApplicationForMimeType(System.String,System.String)
+extern "C"  int32_t CVRApplications_SetDefaultApplicationForMimeType_m1292354851 (CVRApplications_t1900926488 * __this, String_t* ___pchAppKey0, String_t* ___pchMimeType1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_SetDefaultApplicationForMimeType_t2776386992 * L_1 = L_0->get_SetDefaultApplicationForMimeType_19();
+		String_t* L_2 = ___pchAppKey0;
+		String_t* L_3 = ___pchMimeType1;
+		NullCheck(L_1);
+		int32_t L_4 = _SetDefaultApplicationForMimeType_Invoke_m2254813949(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Boolean Valve.VR.CVRApplications::GetDefaultApplicationForMimeType(System.String,System.String,System.UInt32)
+extern "C"  bool CVRApplications_GetDefaultApplicationForMimeType_m490204059 (CVRApplications_t1900926488 * __this, String_t* ___pchMimeType0, String_t* ___pchAppKeyBuffer1, uint32_t ___unAppKeyBufferLen2, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_GetDefaultApplicationForMimeType_t1319680284 * L_1 = L_0->get_GetDefaultApplicationForMimeType_20();
+		String_t* L_2 = ___pchMimeType0;
+		String_t* L_3 = ___pchAppKeyBuffer1;
+		uint32_t L_4 = ___unAppKeyBufferLen2;
+		NullCheck(L_1);
+		bool L_5 = _GetDefaultApplicationForMimeType_Invoke_m1677376673(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		bool L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Boolean Valve.VR.CVRApplications::GetApplicationSupportedMimeTypes(System.String,System.String,System.UInt32)
+extern "C"  bool CVRApplications_GetApplicationSupportedMimeTypes_m244453764 (CVRApplications_t1900926488 * __this, String_t* ___pchAppKey0, String_t* ___pchMimeTypesBuffer1, uint32_t ___unMimeTypesBuffer2, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_GetApplicationSupportedMimeTypes_t1223733271 * L_1 = L_0->get_GetApplicationSupportedMimeTypes_21();
+		String_t* L_2 = ___pchAppKey0;
+		String_t* L_3 = ___pchMimeTypesBuffer1;
+		uint32_t L_4 = ___unMimeTypesBuffer2;
+		NullCheck(L_1);
+		bool L_5 = _GetApplicationSupportedMimeTypes_Invoke_m2937740032(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		bool L_6 = V_0;
+		return L_6;
+	}
+}
+// System.UInt32 Valve.VR.CVRApplications::GetApplicationsThatSupportMimeType(System.String,System.String,System.UInt32)
+extern "C"  uint32_t CVRApplications_GetApplicationsThatSupportMimeType_m1538437993 (CVRApplications_t1900926488 * __this, String_t* ___pchMimeType0, String_t* ___pchAppKeysThatSupportBuffer1, uint32_t ___unAppKeysThatSupportBuffer2, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_GetApplicationsThatSupportMimeType_t1260006687 * L_1 = L_0->get_GetApplicationsThatSupportMimeType_22();
+		String_t* L_2 = ___pchMimeType0;
+		String_t* L_3 = ___pchAppKeysThatSupportBuffer1;
+		uint32_t L_4 = ___unAppKeysThatSupportBuffer2;
+		NullCheck(L_1);
+		uint32_t L_5 = _GetApplicationsThatSupportMimeType_Invoke_m2305023951(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		uint32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// System.UInt32 Valve.VR.CVRApplications::GetApplicationLaunchArguments(System.UInt32,System.String,System.UInt32)
+extern "C"  uint32_t CVRApplications_GetApplicationLaunchArguments_m2996241223 (CVRApplications_t1900926488 * __this, uint32_t ___unHandle0, String_t* ___pchArgs1, uint32_t ___unArgs2, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_GetApplicationLaunchArguments_t3777004763 * L_1 = L_0->get_GetApplicationLaunchArguments_23();
+		uint32_t L_2 = ___unHandle0;
+		String_t* L_3 = ___pchArgs1;
+		uint32_t L_4 = ___unArgs2;
+		NullCheck(L_1);
+		uint32_t L_5 = _GetApplicationLaunchArguments_Invoke_m1934431357(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		uint32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVRApplicationError Valve.VR.CVRApplications::GetStartingApplication(System.String,System.UInt32)
+extern "C"  int32_t CVRApplications_GetStartingApplication_m4293332729 (CVRApplications_t1900926488 * __this, String_t* ___pchAppKeyBuffer0, uint32_t ___unAppKeyBufferLen1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_GetStartingApplication_t4154880362 * L_1 = L_0->get_GetStartingApplication_24();
+		String_t* L_2 = ___pchAppKeyBuffer0;
+		uint32_t L_3 = ___unAppKeyBufferLen1;
+		NullCheck(L_1);
+		int32_t L_4 = _GetStartingApplication_Invoke_m568069351(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVRApplicationTransitionState Valve.VR.CVRApplications::GetTransitionState()
+extern "C"  int32_t CVRApplications_GetTransitionState_m1905452925 (CVRApplications_t1900926488 * __this, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_GetTransitionState_t623155336 * L_1 = L_0->get_GetTransitionState_25();
+		NullCheck(L_1);
+		int32_t L_2 = _GetTransitionState_Invoke_m3148559519(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		int32_t L_3 = V_0;
+		return L_3;
+	}
+}
+// Valve.VR.EVRApplicationError Valve.VR.CVRApplications::PerformApplicationPrelaunchCheck(System.String)
+extern "C"  int32_t CVRApplications_PerformApplicationPrelaunchCheck_m1386813292 (CVRApplications_t1900926488 * __this, String_t* ___pchAppKey0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_PerformApplicationPrelaunchCheck_t1375004597 * L_1 = L_0->get_PerformApplicationPrelaunchCheck_26();
+		String_t* L_2 = ___pchAppKey0;
+		NullCheck(L_1);
+		int32_t L_3 = _PerformApplicationPrelaunchCheck_Invoke_m1304885540(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// System.String Valve.VR.CVRApplications::GetApplicationsTransitionStateNameFromEnum(Valve.VR.EVRApplicationTransitionState)
+extern "C"  String_t* CVRApplications_GetApplicationsTransitionStateNameFromEnum_m1983201314 (CVRApplications_t1900926488 * __this, int32_t ___state0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRApplications_GetApplicationsTransitionStateNameFromEnum_m1983201314_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	IntPtr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_GetApplicationsTransitionStateNameFromEnum_t1807962071 * L_1 = L_0->get_GetApplicationsTransitionStateNameFromEnum_27();
+		int32_t L_2 = ___state0;
+		NullCheck(L_1);
+		IntPtr_t L_3 = _GetApplicationsTransitionStateNameFromEnum_Invoke_m2152223118(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		IntPtr_t L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		String_t* L_5 = Marshal_PtrToStringAnsi_m2970070000(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// System.Boolean Valve.VR.CVRApplications::IsQuitUserPromptRequested()
+extern "C"  bool CVRApplications_IsQuitUserPromptRequested_m403818605 (CVRApplications_t1900926488 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_IsQuitUserPromptRequested_t1816118422 * L_1 = L_0->get_IsQuitUserPromptRequested_28();
+		NullCheck(L_1);
+		bool L_2 = _IsQuitUserPromptRequested_Invoke_m1401672415(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+// Valve.VR.EVRApplicationError Valve.VR.CVRApplications::LaunchInternalProcess(System.String,System.String,System.String)
+extern "C"  int32_t CVRApplications_LaunchInternalProcess_m3449997520 (CVRApplications_t1900926488 * __this, String_t* ___pchBinaryPath0, String_t* ___pchArguments1, String_t* ___pchWorkingDirectory2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRApplications_t2340401530 * L_0 = __this->get_address_of_FnTable_0();
+		_LaunchInternalProcess_t1067354359 * L_1 = L_0->get_LaunchInternalProcess_29();
+		String_t* L_2 = ___pchBinaryPath0;
+		String_t* L_3 = ___pchArguments1;
+		String_t* L_4 = ___pchWorkingDirectory2;
+		NullCheck(L_1);
+		int32_t L_5 = _LaunchInternalProcess_Invoke_m1016917496(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Void Valve.VR.CVRChaperone::.ctor(System.IntPtr)
+extern "C"  void CVRChaperone__ctor_m3741866013 (CVRChaperone_t441701222 * __this, IntPtr_t ___pInterface0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRChaperone__ctor_m3741866013_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		IntPtr_t L_0 = ___pInterface0;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IVRChaperone_t1398180532_0_0_0_var), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		Il2CppObject * L_2 = Marshal_PtrToStructure_m673412918(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_FnTable_0(((*(IVRChaperone_t1398180532 *)((IVRChaperone_t1398180532 *)UnBox(L_2, IVRChaperone_t1398180532_il2cpp_TypeInfo_var)))));
+		return;
+	}
+}
+// Valve.VR.ChaperoneCalibrationState Valve.VR.CVRChaperone::GetCalibrationState()
+extern "C"  int32_t CVRChaperone_GetCalibrationState_m2678531339 (CVRChaperone_t441701222 * __this, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRChaperone_t1398180532 * L_0 = __this->get_address_of_FnTable_0();
+		_GetCalibrationState_t2974007097 * L_1 = L_0->get_GetCalibrationState_0();
+		NullCheck(L_1);
+		int32_t L_2 = _GetCalibrationState_Invoke_m1518983505(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		int32_t L_3 = V_0;
+		return L_3;
+	}
+}
+// System.Boolean Valve.VR.CVRChaperone::GetPlayAreaSize(System.Single&,System.Single&)
+extern "C"  bool CVRChaperone_GetPlayAreaSize_m1535198783 (CVRChaperone_t441701222 * __this, float* ___pSizeX0, float* ___pSizeZ1, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		float* L_0 = ___pSizeX0;
+		*((float*)(L_0)) = (float)(0.0f);
+		float* L_1 = ___pSizeZ1;
+		*((float*)(L_1)) = (float)(0.0f);
+		IVRChaperone_t1398180532 * L_2 = __this->get_address_of_FnTable_0();
+		_GetPlayAreaSize_t2872887692 * L_3 = L_2->get_GetPlayAreaSize_1();
+		float* L_4 = ___pSizeX0;
+		float* L_5 = ___pSizeZ1;
+		NullCheck(L_3);
+		bool L_6 = _GetPlayAreaSize_Invoke_m3427245401(L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		bool L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Boolean Valve.VR.CVRChaperone::GetPlayAreaRect(Valve.VR.HmdQuad_t&)
+extern "C"  bool CVRChaperone_GetPlayAreaRect_m2431141099 (CVRChaperone_t441701222 * __this, HmdQuad_t_t2172573705 * ___rect0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRChaperone_t1398180532 * L_0 = __this->get_address_of_FnTable_0();
+		_GetPlayAreaRect_t2644523155 * L_1 = L_0->get_GetPlayAreaRect_2();
+		HmdQuad_t_t2172573705 * L_2 = ___rect0;
+		NullCheck(L_1);
+		bool L_3 = _GetPlayAreaRect_Invoke_m2030558589(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Void Valve.VR.CVRChaperone::ReloadInfo()
+extern "C"  void CVRChaperone_ReloadInfo_m833612458 (CVRChaperone_t441701222 * __this, const MethodInfo* method)
+{
+	{
+		IVRChaperone_t1398180532 * L_0 = __this->get_address_of_FnTable_0();
+		_ReloadInfo_t2817167257 * L_1 = L_0->get_ReloadInfo_3();
+		NullCheck(L_1);
+		_ReloadInfo_Invoke_m1078069866(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRChaperone::SetSceneColor(Valve.VR.HmdColor_t)
+extern "C"  void CVRChaperone_SetSceneColor_m1593083421 (CVRChaperone_t441701222 * __this, HmdColor_t_t1780554589  ___color0, const MethodInfo* method)
+{
+	{
+		IVRChaperone_t1398180532 * L_0 = __this->get_address_of_FnTable_0();
+		_SetSceneColor_t792692487 * L_1 = L_0->get_SetSceneColor_4();
+		HmdColor_t_t1780554589  L_2 = ___color0;
+		NullCheck(L_1);
+		_SetSceneColor_Invoke_m628775247(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRChaperone::GetBoundsColor(Valve.VR.HmdColor_t&,System.Int32,System.Single,Valve.VR.HmdColor_t&)
+extern "C"  void CVRChaperone_GetBoundsColor_m3678913573 (CVRChaperone_t441701222 * __this, HmdColor_t_t1780554589 * ___pOutputColorArray0, int32_t ___nNumOutputColors1, float ___flCollisionBoundsFadeDistance2, HmdColor_t_t1780554589 * ___pOutputCameraColor3, const MethodInfo* method)
+{
+	{
+		IVRChaperone_t1398180532 * L_0 = __this->get_address_of_FnTable_0();
+		_GetBoundsColor_t3705523218 * L_1 = L_0->get_GetBoundsColor_5();
+		HmdColor_t_t1780554589 * L_2 = ___pOutputColorArray0;
+		int32_t L_3 = ___nNumOutputColors1;
+		float L_4 = ___flCollisionBoundsFadeDistance2;
+		HmdColor_t_t1780554589 * L_5 = ___pOutputCameraColor3;
+		NullCheck(L_1);
+		_GetBoundsColor_Invoke_m2231361291(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean Valve.VR.CVRChaperone::AreBoundsVisible()
+extern "C"  bool CVRChaperone_AreBoundsVisible_m2224805270 (CVRChaperone_t441701222 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRChaperone_t1398180532 * L_0 = __this->get_address_of_FnTable_0();
+		_AreBoundsVisible_t1424518499 * L_1 = L_0->get_AreBoundsVisible_6();
+		NullCheck(L_1);
+		bool L_2 = _AreBoundsVisible_Invoke_m4161594330(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+// System.Void Valve.VR.CVRChaperone::ForceBoundsVisible(System.Boolean)
+extern "C"  void CVRChaperone_ForceBoundsVisible_m3011810466 (CVRChaperone_t441701222 * __this, bool ___bForce0, const MethodInfo* method)
+{
+	{
+		IVRChaperone_t1398180532 * L_0 = __this->get_address_of_FnTable_0();
+		_ForceBoundsVisible_t936994906 * L_1 = L_0->get_ForceBoundsVisible_7();
+		bool L_2 = ___bForce0;
+		NullCheck(L_1);
+		_ForceBoundsVisible_Invoke_m847835362(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRChaperoneSetup::.ctor(System.IntPtr)
+extern "C"  void CVRChaperoneSetup__ctor_m2077442986 (CVRChaperoneSetup_t1611144107 * __this, IntPtr_t ___pInterface0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRChaperoneSetup__ctor_m2077442986_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		IntPtr_t L_0 = ___pInterface0;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IVRChaperoneSetup_t32382285_0_0_0_var), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		Il2CppObject * L_2 = Marshal_PtrToStructure_m673412918(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_FnTable_0(((*(IVRChaperoneSetup_t32382285 *)((IVRChaperoneSetup_t32382285 *)UnBox(L_2, IVRChaperoneSetup_t32382285_il2cpp_TypeInfo_var)))));
+		return;
+	}
+}
+// System.Boolean Valve.VR.CVRChaperoneSetup::CommitWorkingCopy(Valve.VR.EChaperoneConfigFile)
+extern "C"  bool CVRChaperoneSetup_CommitWorkingCopy_m3689773301 (CVRChaperoneSetup_t1611144107 * __this, int32_t ___configFile0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_CommitWorkingCopy_t206435796 * L_1 = L_0->get_CommitWorkingCopy_0();
+		int32_t L_2 = ___configFile0;
+		NullCheck(L_1);
+		bool L_3 = _CommitWorkingCopy_Invoke_m3534127175(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Void Valve.VR.CVRChaperoneSetup::RevertWorkingCopy()
+extern "C"  void CVRChaperoneSetup_RevertWorkingCopy_m1215899212 (CVRChaperoneSetup_t1611144107 * __this, const MethodInfo* method)
+{
+	{
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_RevertWorkingCopy_t3249028635 * L_1 = L_0->get_RevertWorkingCopy_1();
+		NullCheck(L_1);
+		_RevertWorkingCopy_Invoke_m4250629548(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean Valve.VR.CVRChaperoneSetup::GetWorkingPlayAreaSize(System.Single&,System.Single&)
+extern "C"  bool CVRChaperoneSetup_GetWorkingPlayAreaSize_m1479684781 (CVRChaperoneSetup_t1611144107 * __this, float* ___pSizeX0, float* ___pSizeZ1, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		float* L_0 = ___pSizeX0;
+		*((float*)(L_0)) = (float)(0.0f);
+		float* L_1 = ___pSizeZ1;
+		*((float*)(L_1)) = (float)(0.0f);
+		IVRChaperoneSetup_t32382285 * L_2 = __this->get_address_of_FnTable_0();
+		_GetWorkingPlayAreaSize_t1540358174 * L_3 = L_2->get_GetWorkingPlayAreaSize_2();
+		float* L_4 = ___pSizeX0;
+		float* L_5 = ___pSizeZ1;
+		NullCheck(L_3);
+		bool L_6 = _GetWorkingPlayAreaSize_Invoke_m2933383319(L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		bool L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Boolean Valve.VR.CVRChaperoneSetup::GetWorkingPlayAreaRect(Valve.VR.HmdQuad_t&)
+extern "C"  bool CVRChaperoneSetup_GetWorkingPlayAreaRect_m473884977 (CVRChaperoneSetup_t1611144107 * __this, HmdQuad_t_t2172573705 * ___rect0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_GetWorkingPlayAreaRect_t478315365 * L_1 = L_0->get_GetWorkingPlayAreaRect_3();
+		HmdQuad_t_t2172573705 * L_2 = ___rect0;
+		NullCheck(L_1);
+		bool L_3 = _GetWorkingPlayAreaRect_Invoke_m2746508275(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Boolean Valve.VR.CVRChaperoneSetup::GetWorkingCollisionBoundsInfo(Valve.VR.HmdQuad_t[]&)
+extern "C"  bool CVRChaperoneSetup_GetWorkingCollisionBoundsInfo_m2764007537 (CVRChaperoneSetup_t1611144107 * __this, HmdQuad_tU5BU5D_t16941492** ___pQuadsBuffer0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRChaperoneSetup_GetWorkingCollisionBoundsInfo_m2764007537_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	uint32_t V_0 = 0;
+	bool V_1 = false;
+	{
+		V_0 = 0;
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_GetWorkingCollisionBoundsInfo_t1852222363 * L_1 = L_0->get_GetWorkingCollisionBoundsInfo_4();
+		NullCheck(L_1);
+		bool L_2 = _GetWorkingCollisionBoundsInfo_Invoke_m3552170387(L_1, (HmdQuad_tU5BU5D_t16941492*)(HmdQuad_tU5BU5D_t16941492*)NULL, (&V_0), /*hidden argument*/NULL);
+		V_1 = L_2;
+		HmdQuad_tU5BU5D_t16941492** L_3 = ___pQuadsBuffer0;
+		uint32_t L_4 = V_0;
+		*((Il2CppObject **)(L_3)) = (Il2CppObject *)((HmdQuad_tU5BU5D_t16941492*)SZArrayNew(HmdQuad_tU5BU5D_t16941492_il2cpp_TypeInfo_var, (uint32_t)(((uintptr_t)L_4))));
+		Il2CppCodeGenWriteBarrier((Il2CppObject **)(L_3), (Il2CppObject *)((HmdQuad_tU5BU5D_t16941492*)SZArrayNew(HmdQuad_tU5BU5D_t16941492_il2cpp_TypeInfo_var, (uint32_t)(((uintptr_t)L_4)))));
+		IVRChaperoneSetup_t32382285 * L_5 = __this->get_address_of_FnTable_0();
+		_GetWorkingCollisionBoundsInfo_t1852222363 * L_6 = L_5->get_GetWorkingCollisionBoundsInfo_4();
+		HmdQuad_tU5BU5D_t16941492** L_7 = ___pQuadsBuffer0;
+		NullCheck(L_6);
+		bool L_8 = _GetWorkingCollisionBoundsInfo_Invoke_m3552170387(L_6, (*((HmdQuad_tU5BU5D_t16941492**)L_7)), (&V_0), /*hidden argument*/NULL);
+		V_1 = L_8;
+		bool L_9 = V_1;
+		return L_9;
+	}
+}
+// System.Boolean Valve.VR.CVRChaperoneSetup::GetLiveCollisionBoundsInfo(Valve.VR.HmdQuad_t[]&)
+extern "C"  bool CVRChaperoneSetup_GetLiveCollisionBoundsInfo_m1609126366 (CVRChaperoneSetup_t1611144107 * __this, HmdQuad_tU5BU5D_t16941492** ___pQuadsBuffer0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRChaperoneSetup_GetLiveCollisionBoundsInfo_m1609126366_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	uint32_t V_0 = 0;
+	bool V_1 = false;
+	{
+		V_0 = 0;
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_GetLiveCollisionBoundsInfo_t1921386472 * L_1 = L_0->get_GetLiveCollisionBoundsInfo_5();
+		NullCheck(L_1);
+		bool L_2 = _GetLiveCollisionBoundsInfo_Invoke_m1510173410(L_1, (HmdQuad_tU5BU5D_t16941492*)(HmdQuad_tU5BU5D_t16941492*)NULL, (&V_0), /*hidden argument*/NULL);
+		V_1 = L_2;
+		HmdQuad_tU5BU5D_t16941492** L_3 = ___pQuadsBuffer0;
+		uint32_t L_4 = V_0;
+		*((Il2CppObject **)(L_3)) = (Il2CppObject *)((HmdQuad_tU5BU5D_t16941492*)SZArrayNew(HmdQuad_tU5BU5D_t16941492_il2cpp_TypeInfo_var, (uint32_t)(((uintptr_t)L_4))));
+		Il2CppCodeGenWriteBarrier((Il2CppObject **)(L_3), (Il2CppObject *)((HmdQuad_tU5BU5D_t16941492*)SZArrayNew(HmdQuad_tU5BU5D_t16941492_il2cpp_TypeInfo_var, (uint32_t)(((uintptr_t)L_4)))));
+		IVRChaperoneSetup_t32382285 * L_5 = __this->get_address_of_FnTable_0();
+		_GetLiveCollisionBoundsInfo_t1921386472 * L_6 = L_5->get_GetLiveCollisionBoundsInfo_5();
+		HmdQuad_tU5BU5D_t16941492** L_7 = ___pQuadsBuffer0;
+		NullCheck(L_6);
+		bool L_8 = _GetLiveCollisionBoundsInfo_Invoke_m1510173410(L_6, (*((HmdQuad_tU5BU5D_t16941492**)L_7)), (&V_0), /*hidden argument*/NULL);
+		V_1 = L_8;
+		bool L_9 = V_1;
+		return L_9;
+	}
+}
+// System.Boolean Valve.VR.CVRChaperoneSetup::GetWorkingSeatedZeroPoseToRawTrackingPose(Valve.VR.HmdMatrix34_t&)
+extern "C"  bool CVRChaperoneSetup_GetWorkingSeatedZeroPoseToRawTrackingPose_m1456959471 (CVRChaperoneSetup_t1611144107 * __this, HmdMatrix34_t_t664273062 * ___pmatSeatedZeroPoseToRawTrackingPose0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_GetWorkingSeatedZeroPoseToRawTrackingPose_t459969004 * L_1 = L_0->get_GetWorkingSeatedZeroPoseToRawTrackingPose_6();
+		HmdMatrix34_t_t664273062 * L_2 = ___pmatSeatedZeroPoseToRawTrackingPose0;
+		NullCheck(L_1);
+		bool L_3 = _GetWorkingSeatedZeroPoseToRawTrackingPose_Invoke_m4258469005(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Boolean Valve.VR.CVRChaperoneSetup::GetWorkingStandingZeroPoseToRawTrackingPose(Valve.VR.HmdMatrix34_t&)
+extern "C"  bool CVRChaperoneSetup_GetWorkingStandingZeroPoseToRawTrackingPose_m3404864481 (CVRChaperoneSetup_t1611144107 * __this, HmdMatrix34_t_t664273062 * ___pmatStandingZeroPoseToRawTrackingPose0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_GetWorkingStandingZeroPoseToRawTrackingPose_t2605213384 * L_1 = L_0->get_GetWorkingStandingZeroPoseToRawTrackingPose_7();
+		HmdMatrix34_t_t664273062 * L_2 = ___pmatStandingZeroPoseToRawTrackingPose0;
+		NullCheck(L_1);
+		bool L_3 = _GetWorkingStandingZeroPoseToRawTrackingPose_Invoke_m3396334787(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Void Valve.VR.CVRChaperoneSetup::SetWorkingPlayAreaSize(System.Single,System.Single)
+extern "C"  void CVRChaperoneSetup_SetWorkingPlayAreaSize_m975037529 (CVRChaperoneSetup_t1611144107 * __this, float ___sizeX0, float ___sizeZ1, const MethodInfo* method)
+{
+	{
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_SetWorkingPlayAreaSize_t2887667762 * L_1 = L_0->get_SetWorkingPlayAreaSize_8();
+		float L_2 = ___sizeX0;
+		float L_3 = ___sizeZ1;
+		NullCheck(L_1);
+		_SetWorkingPlayAreaSize_Invoke_m2852459575(L_1, L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRChaperoneSetup::SetWorkingCollisionBoundsInfo(Valve.VR.HmdQuad_t[])
+extern "C"  void CVRChaperoneSetup_SetWorkingCollisionBoundsInfo_m317416003 (CVRChaperoneSetup_t1611144107 * __this, HmdQuad_tU5BU5D_t16941492* ___pQuadsBuffer0, const MethodInfo* method)
+{
+	{
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_SetWorkingCollisionBoundsInfo_t3486256295 * L_1 = L_0->get_SetWorkingCollisionBoundsInfo_9();
+		HmdQuad_tU5BU5D_t16941492* L_2 = ___pQuadsBuffer0;
+		HmdQuad_tU5BU5D_t16941492* L_3 = ___pQuadsBuffer0;
+		NullCheck(L_3);
+		NullCheck(L_1);
+		_SetWorkingCollisionBoundsInfo_Invoke_m3651496841(L_1, L_2, (((int32_t)((int32_t)(((Il2CppArray *)L_3)->max_length)))), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRChaperoneSetup::SetWorkingSeatedZeroPoseToRawTrackingPose(Valve.VR.HmdMatrix34_t&)
+extern "C"  void CVRChaperoneSetup_SetWorkingSeatedZeroPoseToRawTrackingPose_m1944018955 (CVRChaperoneSetup_t1611144107 * __this, HmdMatrix34_t_t664273062 * ___pMatSeatedZeroPoseToRawTrackingPose0, const MethodInfo* method)
+{
+	{
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_SetWorkingSeatedZeroPoseToRawTrackingPose_t1261944056 * L_1 = L_0->get_SetWorkingSeatedZeroPoseToRawTrackingPose_10();
+		HmdMatrix34_t_t664273062 * L_2 = ___pMatSeatedZeroPoseToRawTrackingPose0;
+		NullCheck(L_1);
+		_SetWorkingSeatedZeroPoseToRawTrackingPose_Invoke_m652443345(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRChaperoneSetup::SetWorkingStandingZeroPoseToRawTrackingPose(Valve.VR.HmdMatrix34_t&)
+extern "C"  void CVRChaperoneSetup_SetWorkingStandingZeroPoseToRawTrackingPose_m757008981 (CVRChaperoneSetup_t1611144107 * __this, HmdMatrix34_t_t664273062 * ___pMatStandingZeroPoseToRawTrackingPose0, const MethodInfo* method)
+{
+	{
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_SetWorkingStandingZeroPoseToRawTrackingPose_t1528237404 * L_1 = L_0->get_SetWorkingStandingZeroPoseToRawTrackingPose_11();
+		HmdMatrix34_t_t664273062 * L_2 = ___pMatStandingZeroPoseToRawTrackingPose0;
+		NullCheck(L_1);
+		_SetWorkingStandingZeroPoseToRawTrackingPose_Invoke_m919192911(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRChaperoneSetup::ReloadFromDisk(Valve.VR.EChaperoneConfigFile)
+extern "C"  void CVRChaperoneSetup_ReloadFromDisk_m4276960412 (CVRChaperoneSetup_t1611144107 * __this, int32_t ___configFile0, const MethodInfo* method)
+{
+	{
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_ReloadFromDisk_t2889659875 * L_1 = L_0->get_ReloadFromDisk_12();
+		int32_t L_2 = ___configFile0;
+		NullCheck(L_1);
+		_ReloadFromDisk_Invoke_m3439736384(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean Valve.VR.CVRChaperoneSetup::GetLiveSeatedZeroPoseToRawTrackingPose(Valve.VR.HmdMatrix34_t&)
+extern "C"  bool CVRChaperoneSetup_GetLiveSeatedZeroPoseToRawTrackingPose_m3918509480 (CVRChaperoneSetup_t1611144107 * __this, HmdMatrix34_t_t664273062 * ___pmatSeatedZeroPoseToRawTrackingPose0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_GetLiveSeatedZeroPoseToRawTrackingPose_t1524066641 * L_1 = L_0->get_GetLiveSeatedZeroPoseToRawTrackingPose_13();
+		HmdMatrix34_t_t664273062 * L_2 = ___pmatSeatedZeroPoseToRawTrackingPose0;
+		NullCheck(L_1);
+		bool L_3 = _GetLiveSeatedZeroPoseToRawTrackingPose_Invoke_m1169884652(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Void Valve.VR.CVRChaperoneSetup::SetWorkingCollisionBoundsTagsInfo(System.Byte[])
+extern "C"  void CVRChaperoneSetup_SetWorkingCollisionBoundsTagsInfo_m3314719440 (CVRChaperoneSetup_t1611144107 * __this, ByteU5BU5D_t3397334013* ___pTagsBuffer0, const MethodInfo* method)
+{
+	{
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_SetWorkingCollisionBoundsTagsInfo_t2916654968 * L_1 = L_0->get_SetWorkingCollisionBoundsTagsInfo_14();
+		ByteU5BU5D_t3397334013* L_2 = ___pTagsBuffer0;
+		ByteU5BU5D_t3397334013* L_3 = ___pTagsBuffer0;
+		NullCheck(L_3);
+		NullCheck(L_1);
+		_SetWorkingCollisionBoundsTagsInfo_Invoke_m307342636(L_1, L_2, (((int32_t)((int32_t)(((Il2CppArray *)L_3)->max_length)))), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean Valve.VR.CVRChaperoneSetup::GetLiveCollisionBoundsTagsInfo(System.Byte[]&)
+extern "C"  bool CVRChaperoneSetup_GetLiveCollisionBoundsTagsInfo_m3983711033 (CVRChaperoneSetup_t1611144107 * __this, ByteU5BU5D_t3397334013** ___pTagsBuffer0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRChaperoneSetup_GetLiveCollisionBoundsTagsInfo_m3983711033_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	uint32_t V_0 = 0;
+	bool V_1 = false;
+	{
+		V_0 = 0;
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_GetLiveCollisionBoundsTagsInfo_t229051089 * L_1 = L_0->get_GetLiveCollisionBoundsTagsInfo_15();
+		NullCheck(L_1);
+		bool L_2 = _GetLiveCollisionBoundsTagsInfo_Invoke_m3250012919(L_1, (ByteU5BU5D_t3397334013*)(ByteU5BU5D_t3397334013*)NULL, (&V_0), /*hidden argument*/NULL);
+		V_1 = L_2;
+		ByteU5BU5D_t3397334013** L_3 = ___pTagsBuffer0;
+		uint32_t L_4 = V_0;
+		*((Il2CppObject **)(L_3)) = (Il2CppObject *)((ByteU5BU5D_t3397334013*)SZArrayNew(ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var, (uint32_t)(((uintptr_t)L_4))));
+		Il2CppCodeGenWriteBarrier((Il2CppObject **)(L_3), (Il2CppObject *)((ByteU5BU5D_t3397334013*)SZArrayNew(ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var, (uint32_t)(((uintptr_t)L_4)))));
+		IVRChaperoneSetup_t32382285 * L_5 = __this->get_address_of_FnTable_0();
+		_GetLiveCollisionBoundsTagsInfo_t229051089 * L_6 = L_5->get_GetLiveCollisionBoundsTagsInfo_15();
+		ByteU5BU5D_t3397334013** L_7 = ___pTagsBuffer0;
+		NullCheck(L_6);
+		bool L_8 = _GetLiveCollisionBoundsTagsInfo_Invoke_m3250012919(L_6, (*((ByteU5BU5D_t3397334013**)L_7)), (&V_0), /*hidden argument*/NULL);
+		V_1 = L_8;
+		bool L_9 = V_1;
+		return L_9;
+	}
+}
+// System.Boolean Valve.VR.CVRChaperoneSetup::SetWorkingPhysicalBoundsInfo(Valve.VR.HmdQuad_t[])
+extern "C"  bool CVRChaperoneSetup_SetWorkingPhysicalBoundsInfo_m1786820946 (CVRChaperoneSetup_t1611144107 * __this, HmdQuad_tU5BU5D_t16941492* ___pQuadsBuffer0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_SetWorkingPhysicalBoundsInfo_t2516501904 * L_1 = L_0->get_SetWorkingPhysicalBoundsInfo_16();
+		HmdQuad_tU5BU5D_t16941492* L_2 = ___pQuadsBuffer0;
+		HmdQuad_tU5BU5D_t16941492* L_3 = ___pQuadsBuffer0;
+		NullCheck(L_3);
+		NullCheck(L_1);
+		bool L_4 = _SetWorkingPhysicalBoundsInfo_Invoke_m2893976514(L_1, L_2, (((int32_t)((int32_t)(((Il2CppArray *)L_3)->max_length)))), /*hidden argument*/NULL);
+		V_0 = L_4;
+		bool L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Boolean Valve.VR.CVRChaperoneSetup::GetLivePhysicalBoundsInfo(Valve.VR.HmdQuad_t[]&)
+extern "C"  bool CVRChaperoneSetup_GetLivePhysicalBoundsInfo_m3889880429 (CVRChaperoneSetup_t1611144107 * __this, HmdQuad_tU5BU5D_t16941492** ___pQuadsBuffer0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRChaperoneSetup_GetLivePhysicalBoundsInfo_m3889880429_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	uint32_t V_0 = 0;
+	bool V_1 = false;
+	{
+		V_0 = 0;
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_GetLivePhysicalBoundsInfo_t2316140367 * L_1 = L_0->get_GetLivePhysicalBoundsInfo_17();
+		NullCheck(L_1);
+		bool L_2 = _GetLivePhysicalBoundsInfo_Invoke_m1353833955(L_1, (HmdQuad_tU5BU5D_t16941492*)(HmdQuad_tU5BU5D_t16941492*)NULL, (&V_0), /*hidden argument*/NULL);
+		V_1 = L_2;
+		HmdQuad_tU5BU5D_t16941492** L_3 = ___pQuadsBuffer0;
+		uint32_t L_4 = V_0;
+		*((Il2CppObject **)(L_3)) = (Il2CppObject *)((HmdQuad_tU5BU5D_t16941492*)SZArrayNew(HmdQuad_tU5BU5D_t16941492_il2cpp_TypeInfo_var, (uint32_t)(((uintptr_t)L_4))));
+		Il2CppCodeGenWriteBarrier((Il2CppObject **)(L_3), (Il2CppObject *)((HmdQuad_tU5BU5D_t16941492*)SZArrayNew(HmdQuad_tU5BU5D_t16941492_il2cpp_TypeInfo_var, (uint32_t)(((uintptr_t)L_4)))));
+		IVRChaperoneSetup_t32382285 * L_5 = __this->get_address_of_FnTable_0();
+		_GetLivePhysicalBoundsInfo_t2316140367 * L_6 = L_5->get_GetLivePhysicalBoundsInfo_17();
+		HmdQuad_tU5BU5D_t16941492** L_7 = ___pQuadsBuffer0;
+		NullCheck(L_6);
+		bool L_8 = _GetLivePhysicalBoundsInfo_Invoke_m1353833955(L_6, (*((HmdQuad_tU5BU5D_t16941492**)L_7)), (&V_0), /*hidden argument*/NULL);
+		V_1 = L_8;
+		bool L_9 = V_1;
+		return L_9;
+	}
+}
+// System.Boolean Valve.VR.CVRChaperoneSetup::ExportLiveToBuffer(System.Text.StringBuilder,System.UInt32&)
+extern "C"  bool CVRChaperoneSetup_ExportLiveToBuffer_m3013640355 (CVRChaperoneSetup_t1611144107 * __this, StringBuilder_t1221177846 * ___pBuffer0, uint32_t* ___pnBufferLength1, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		uint32_t* L_0 = ___pnBufferLength1;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		IVRChaperoneSetup_t32382285 * L_1 = __this->get_address_of_FnTable_0();
+		_ExportLiveToBuffer_t945638768 * L_2 = L_1->get_ExportLiveToBuffer_18();
+		StringBuilder_t1221177846 * L_3 = ___pBuffer0;
+		uint32_t* L_4 = ___pnBufferLength1;
+		NullCheck(L_2);
+		bool L_5 = _ExportLiveToBuffer_Invoke_m3346566773(L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		bool L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Boolean Valve.VR.CVRChaperoneSetup::ImportFromBufferToWorking(System.String,System.UInt32)
+extern "C"  bool CVRChaperoneSetup_ImportFromBufferToWorking_m2134561251 (CVRChaperoneSetup_t1611144107 * __this, String_t* ___pBuffer0, uint32_t ___nImportFlags1, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRChaperoneSetup_t32382285 * L_0 = __this->get_address_of_FnTable_0();
+		_ImportFromBufferToWorking_t3167195336 * L_1 = L_0->get_ImportFromBufferToWorking_19();
+		String_t* L_2 = ___pBuffer0;
+		uint32_t L_3 = ___nImportFlags1;
+		NullCheck(L_1);
+		bool L_4 = _ImportFromBufferToWorking_Invoke_m1497184785(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		bool L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::.ctor(System.IntPtr)
+extern "C"  void CVRCompositor__ctor_m1752469357 (CVRCompositor_t197946050 * __this, IntPtr_t ___pInterface0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRCompositor__ctor_m1752469357_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		IntPtr_t L_0 = ___pInterface0;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IVRCompositor_t4206274356_0_0_0_var), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		Il2CppObject * L_2 = Marshal_PtrToStructure_m673412918(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_FnTable_0(((*(IVRCompositor_t4206274356 *)((IVRCompositor_t4206274356 *)UnBox(L_2, IVRCompositor_t4206274356_il2cpp_TypeInfo_var)))));
+		return;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::SetTrackingSpace(Valve.VR.ETrackingUniverseOrigin)
+extern "C"  void CVRCompositor_SetTrackingSpace_m846788397 (CVRCompositor_t197946050 * __this, int32_t ___eOrigin0, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_SetTrackingSpace_t3662949163 * L_1 = L_0->get_SetTrackingSpace_0();
+		int32_t L_2 = ___eOrigin0;
+		NullCheck(L_1);
+		_SetTrackingSpace_Invoke_m3137227179(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// Valve.VR.ETrackingUniverseOrigin Valve.VR.CVRCompositor::GetTrackingSpace()
+extern "C"  int32_t CVRCompositor_GetTrackingSpace_m1775071918 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_GetTrackingSpace_t10051991 * L_1 = L_0->get_GetTrackingSpace_1();
+		NullCheck(L_1);
+		int32_t L_2 = _GetTrackingSpace_Invoke_m1545227602(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		int32_t L_3 = V_0;
+		return L_3;
+	}
+}
+// Valve.VR.EVRCompositorError Valve.VR.CVRCompositor::WaitGetPoses(Valve.VR.TrackedDevicePose_t[],Valve.VR.TrackedDevicePose_t[])
+extern "C"  int32_t CVRCompositor_WaitGetPoses_m1728294875 (CVRCompositor_t197946050 * __this, TrackedDevicePose_tU5BU5D_t2897272049* ___pRenderPoseArray0, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_WaitGetPoses_t4192584901 * L_1 = L_0->get_WaitGetPoses_2();
+		TrackedDevicePose_tU5BU5D_t2897272049* L_2 = ___pRenderPoseArray0;
+		TrackedDevicePose_tU5BU5D_t2897272049* L_3 = ___pRenderPoseArray0;
+		NullCheck(L_3);
+		TrackedDevicePose_tU5BU5D_t2897272049* L_4 = ___pGamePoseArray1;
+		TrackedDevicePose_tU5BU5D_t2897272049* L_5 = ___pGamePoseArray1;
+		NullCheck(L_5);
+		NullCheck(L_1);
+		int32_t L_6 = _WaitGetPoses_Invoke_m2327106977(L_1, L_2, (((int32_t)((int32_t)(((Il2CppArray *)L_3)->max_length)))), L_4, (((int32_t)((int32_t)(((Il2CppArray *)L_5)->max_length)))), /*hidden argument*/NULL);
+		V_0 = L_6;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// Valve.VR.EVRCompositorError Valve.VR.CVRCompositor::GetLastPoses(Valve.VR.TrackedDevicePose_t[],Valve.VR.TrackedDevicePose_t[])
+extern "C"  int32_t CVRCompositor_GetLastPoses_m860445556 (CVRCompositor_t197946050 * __this, TrackedDevicePose_tU5BU5D_t2897272049* ___pRenderPoseArray0, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_GetLastPoses_t2717021868 * L_1 = L_0->get_GetLastPoses_3();
+		TrackedDevicePose_tU5BU5D_t2897272049* L_2 = ___pRenderPoseArray0;
+		TrackedDevicePose_tU5BU5D_t2897272049* L_3 = ___pRenderPoseArray0;
+		NullCheck(L_3);
+		TrackedDevicePose_tU5BU5D_t2897272049* L_4 = ___pGamePoseArray1;
+		TrackedDevicePose_tU5BU5D_t2897272049* L_5 = ___pGamePoseArray1;
+		NullCheck(L_5);
+		NullCheck(L_1);
+		int32_t L_6 = _GetLastPoses_Invoke_m2385192740(L_1, L_2, (((int32_t)((int32_t)(((Il2CppArray *)L_3)->max_length)))), L_4, (((int32_t)((int32_t)(((Il2CppArray *)L_5)->max_length)))), /*hidden argument*/NULL);
+		V_0 = L_6;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// Valve.VR.EVRCompositorError Valve.VR.CVRCompositor::GetLastPoseForTrackedDeviceIndex(System.UInt32,Valve.VR.TrackedDevicePose_t&,Valve.VR.TrackedDevicePose_t&)
+extern "C"  int32_t CVRCompositor_GetLastPoseForTrackedDeviceIndex_m1915799918 (CVRCompositor_t197946050 * __this, uint32_t ___unDeviceIndex0, TrackedDevicePose_t_t1668551120 * ___pOutputPose1, TrackedDevicePose_t_t1668551120 * ___pOutputGamePose2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_GetLastPoseForTrackedDeviceIndex_t3158332482 * L_1 = L_0->get_GetLastPoseForTrackedDeviceIndex_4();
+		uint32_t L_2 = ___unDeviceIndex0;
+		TrackedDevicePose_t_t1668551120 * L_3 = ___pOutputPose1;
+		TrackedDevicePose_t_t1668551120 * L_4 = ___pOutputGamePose2;
+		NullCheck(L_1);
+		int32_t L_5 = _GetLastPoseForTrackedDeviceIndex_Invoke_m1418981610(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVRCompositorError Valve.VR.CVRCompositor::Submit(Valve.VR.EVREye,Valve.VR.Texture_t&,Valve.VR.VRTextureBounds_t&,Valve.VR.EVRSubmitFlags)
+extern "C"  int32_t CVRCompositor_Submit_m1652814251 (CVRCompositor_t197946050 * __this, int32_t ___eEye0, Texture_t_t3277130850 * ___pTexture1, VRTextureBounds_t_t1897807375 * ___pBounds2, int32_t ___nSubmitFlags3, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_Submit_t938257482 * L_1 = L_0->get_Submit_5();
+		int32_t L_2 = ___eEye0;
+		Texture_t_t3277130850 * L_3 = ___pTexture1;
+		VRTextureBounds_t_t1897807375 * L_4 = ___pBounds2;
+		int32_t L_5 = ___nSubmitFlags3;
+		NullCheck(L_1);
+		int32_t L_6 = _Submit_Invoke_m2753319157(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::ClearLastSubmittedFrame()
+extern "C"  void CVRCompositor_ClearLastSubmittedFrame_m2272135564 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_ClearLastSubmittedFrame_t32198265 * L_1 = L_0->get_ClearLastSubmittedFrame_6();
+		NullCheck(L_1);
+		_ClearLastSubmittedFrame_Invoke_m2034262060(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::PostPresentHandoff()
+extern "C"  void CVRCompositor_PostPresentHandoff_m369349662 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_PostPresentHandoff_t4129629097 * L_1 = L_0->get_PostPresentHandoff_7();
+		NullCheck(L_1);
+		_PostPresentHandoff_Invoke_m1462502494(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean Valve.VR.CVRCompositor::GetFrameTiming(Valve.VR.Compositor_FrameTiming&,System.UInt32)
+extern "C"  bool CVRCompositor_GetFrameTiming_m3842192605 (CVRCompositor_t197946050 * __this, Compositor_FrameTiming_t2839634313 * ___pTiming0, uint32_t ___unFramesAgo1, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_GetFrameTiming_t1729400753 * L_1 = L_0->get_GetFrameTiming_8();
+		Compositor_FrameTiming_t2839634313 * L_2 = ___pTiming0;
+		uint32_t L_3 = ___unFramesAgo1;
+		NullCheck(L_1);
+		bool L_4 = _GetFrameTiming_Invoke_m1617804867(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		bool L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Single Valve.VR.CVRCompositor::GetFrameTimeRemaining()
+extern "C"  float CVRCompositor_GetFrameTimeRemaining_m149086527 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	float V_0 = 0.0f;
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_GetFrameTimeRemaining_t2433513766 * L_1 = L_0->get_GetFrameTimeRemaining_9();
+		NullCheck(L_1);
+		float L_2 = _GetFrameTimeRemaining_Invoke_m684205209(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		float L_3 = V_0;
+		return L_3;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::GetCumulativeStats(Valve.VR.Compositor_CumulativeStats&,System.UInt32)
+extern "C"  void CVRCompositor_GetCumulativeStats_m922371533 (CVRCompositor_t197946050 * __this, Compositor_CumulativeStats_t450065686 * ___pStats0, uint32_t ___nStatsSizeInBytes1, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_GetCumulativeStats_t1488691712 * L_1 = L_0->get_GetCumulativeStats_10();
+		Compositor_CumulativeStats_t450065686 * L_2 = ___pStats0;
+		uint32_t L_3 = ___nStatsSizeInBytes1;
+		NullCheck(L_1);
+		_GetCumulativeStats_Invoke_m908221563(L_1, L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::FadeToColor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean)
+extern "C"  void CVRCompositor_FadeToColor_m1037930733 (CVRCompositor_t197946050 * __this, float ___fSeconds0, float ___fRed1, float ___fGreen2, float ___fBlue3, float ___fAlpha4, bool ___bBackground5, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_FadeToColor_t4129572280 * L_1 = L_0->get_FadeToColor_11();
+		float L_2 = ___fSeconds0;
+		float L_3 = ___fRed1;
+		float L_4 = ___fGreen2;
+		float L_5 = ___fBlue3;
+		float L_6 = ___fAlpha4;
+		bool L_7 = ___bBackground5;
+		NullCheck(L_1);
+		_FadeToColor_Invoke_m1707546963(L_1, L_2, L_3, L_4, L_5, L_6, L_7, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::FadeGrid(System.Single,System.Boolean)
+extern "C"  void CVRCompositor_FadeGrid_m331855435 (CVRCompositor_t197946050 * __this, float ___fSeconds0, bool ___bFadeIn1, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_FadeGrid_t1389933364 * L_1 = L_0->get_FadeGrid_12();
+		float L_2 = ___fSeconds0;
+		bool L_3 = ___bFadeIn1;
+		NullCheck(L_1);
+		_FadeGrid_Invoke_m1600058929(L_1, L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// Valve.VR.EVRCompositorError Valve.VR.CVRCompositor::SetSkyboxOverride(Valve.VR.Texture_t[])
+extern "C"  int32_t CVRCompositor_SetSkyboxOverride_m3308197962 (CVRCompositor_t197946050 * __this, Texture_tU5BU5D_t3142294487* ___pTextures0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_SetSkyboxOverride_t2590693784 * L_1 = L_0->get_SetSkyboxOverride_13();
+		Texture_tU5BU5D_t3142294487* L_2 = ___pTextures0;
+		Texture_tU5BU5D_t3142294487* L_3 = ___pTextures0;
+		NullCheck(L_3);
+		NullCheck(L_1);
+		int32_t L_4 = _SetSkyboxOverride_Invoke_m972135954(L_1, L_2, (((int32_t)((int32_t)(((Il2CppArray *)L_3)->max_length)))), /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::ClearSkyboxOverride()
+extern "C"  void CVRCompositor_ClearSkyboxOverride_m2908041920 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_ClearSkyboxOverride_t745528287 * L_1 = L_0->get_ClearSkyboxOverride_14();
+		NullCheck(L_1);
+		_ClearSkyboxOverride_Invoke_m2007627024(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::CompositorBringToFront()
+extern "C"  void CVRCompositor_CompositorBringToFront_m215631430 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_CompositorBringToFront_t2294069769 * L_1 = L_0->get_CompositorBringToFront_15();
+		NullCheck(L_1);
+		_CompositorBringToFront_Invoke_m152996310(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::CompositorGoToBack()
+extern "C"  void CVRCompositor_CompositorGoToBack_m3104932870 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_CompositorGoToBack_t2760466547 * L_1 = L_0->get_CompositorGoToBack_16();
+		NullCheck(L_1);
+		_CompositorGoToBack_Invoke_m3046813586(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::CompositorQuit()
+extern "C"  void CVRCompositor_CompositorQuit_m1580506403 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_CompositorQuit_t2273085604 * L_1 = L_0->get_CompositorQuit_17();
+		NullCheck(L_1);
+		_CompositorQuit_Invoke_m2878417369(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean Valve.VR.CVRCompositor::IsFullscreen()
+extern "C"  bool CVRCompositor_IsFullscreen_m999171228 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_IsFullscreen_t988890383 * L_1 = L_0->get_IsFullscreen_18();
+		NullCheck(L_1);
+		bool L_2 = _IsFullscreen_Invoke_m2652831224(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+// System.UInt32 Valve.VR.CVRCompositor::GetCurrentSceneFocusProcess()
+extern "C"  uint32_t CVRCompositor_GetCurrentSceneFocusProcess_m4267405246 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_GetCurrentSceneFocusProcess_t1910270748 * L_1 = L_0->get_GetCurrentSceneFocusProcess_19();
+		NullCheck(L_1);
+		uint32_t L_2 = _GetCurrentSceneFocusProcess_Invoke_m2120928094(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		uint32_t L_3 = V_0;
+		return L_3;
+	}
+}
+// System.UInt32 Valve.VR.CVRCompositor::GetLastFrameRenderer()
+extern "C"  uint32_t CVRCompositor_GetLastFrameRenderer_m675513464 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_GetLastFrameRenderer_t1990293024 * L_1 = L_0->get_GetLastFrameRenderer_20();
+		NullCheck(L_1);
+		uint32_t L_2 = _GetLastFrameRenderer_Invoke_m2095669348(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		uint32_t L_3 = V_0;
+		return L_3;
+	}
+}
+// System.Boolean Valve.VR.CVRCompositor::CanRenderScene()
+extern "C"  bool CVRCompositor_CanRenderScene_m2353246767 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_CanRenderScene_t808393456 * L_1 = L_0->get_CanRenderScene_21();
+		NullCheck(L_1);
+		bool L_2 = _CanRenderScene_Invoke_m87773421(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::ShowMirrorWindow()
+extern "C"  void CVRCompositor_ShowMirrorWindow_m2149276869 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_ShowMirrorWindow_t1161105516 * L_1 = L_0->get_ShowMirrorWindow_22();
+		NullCheck(L_1);
+		_ShowMirrorWindow_Invoke_m2009350019(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::HideMirrorWindow()
+extern "C"  void CVRCompositor_HideMirrorWindow_m1169575956 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_HideMirrorWindow_t396471547 * L_1 = L_0->get_HideMirrorWindow_23();
+		NullCheck(L_1);
+		_HideMirrorWindow_Invoke_m1669625672(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean Valve.VR.CVRCompositor::IsMirrorWindowVisible()
+extern "C"  bool CVRCompositor_IsMirrorWindowVisible_m2596070546 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_IsMirrorWindowVisible_t410903031 * L_1 = L_0->get_IsMirrorWindowVisible_24();
+		NullCheck(L_1);
+		bool L_2 = _IsMirrorWindowVisible_Invoke_m3980407510(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::CompositorDumpImages()
+extern "C"  void CVRCompositor_CompositorDumpImages_m3146184574 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_CompositorDumpImages_t3462826167 * L_1 = L_0->get_CompositorDumpImages_25();
+		NullCheck(L_1);
+		_CompositorDumpImages_Invoke_m1581105358(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean Valve.VR.CVRCompositor::ShouldAppRenderWithLowResources()
+extern "C"  bool CVRCompositor_ShouldAppRenderWithLowResources_m2906905836 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_ShouldAppRenderWithLowResources_t1834060663 * L_1 = L_0->get_ShouldAppRenderWithLowResources_26();
+		NullCheck(L_1);
+		bool L_2 = _ShouldAppRenderWithLowResources_Invoke_m2038857956(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::ForceInterleavedReprojectionOn(System.Boolean)
+extern "C"  void CVRCompositor_ForceInterleavedReprojectionOn_m173500053 (CVRCompositor_t197946050 * __this, bool ___bOverride0, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_ForceInterleavedReprojectionOn_t78695371 * L_1 = L_0->get_ForceInterleavedReprojectionOn_27();
+		bool L_2 = ___bOverride0;
+		NullCheck(L_1);
+		_ForceInterleavedReprojectionOn_Invoke_m749806639(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::ForceReconnectProcess()
+extern "C"  void CVRCompositor_ForceReconnectProcess_m2174400178 (CVRCompositor_t197946050 * __this, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_ForceReconnectProcess_t3057442189 * L_1 = L_0->get_ForceReconnectProcess_28();
+		NullCheck(L_1);
+		_ForceReconnectProcess_Invoke_m3457011270(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::SuspendRendering(System.Boolean)
+extern "C"  void CVRCompositor_SuspendRendering_m2138396722 (CVRCompositor_t197946050 * __this, bool ___bSuspend0, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_SuspendRendering_t3440691638 * L_1 = L_0->get_SuspendRendering_29();
+		bool L_2 = ___bSuspend0;
+		NullCheck(L_1);
+		_SuspendRendering_Invoke_m671586310(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// Valve.VR.EVRCompositorError Valve.VR.CVRCompositor::GetMirrorTextureD3D11(Valve.VR.EVREye,System.IntPtr,System.IntPtr&)
+extern "C"  int32_t CVRCompositor_GetMirrorTextureD3D11_m3196120905 (CVRCompositor_t197946050 * __this, int32_t ___eEye0, IntPtr_t ___pD3D11DeviceOrResource1, IntPtr_t* ___ppD3D11ShaderResourceView2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_GetMirrorTextureD3D11_t2322134645 * L_1 = L_0->get_GetMirrorTextureD3D11_30();
+		int32_t L_2 = ___eEye0;
+		IntPtr_t L_3 = ___pD3D11DeviceOrResource1;
+		IntPtr_t* L_4 = ___ppD3D11ShaderResourceView2;
+		NullCheck(L_1);
+		int32_t L_5 = _GetMirrorTextureD3D11_Invoke_m3834115999(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVRCompositorError Valve.VR.CVRCompositor::GetMirrorTextureGL(Valve.VR.EVREye,System.UInt32&,System.IntPtr)
+extern "C"  int32_t CVRCompositor_GetMirrorTextureGL_m4097432579 (CVRCompositor_t197946050 * __this, int32_t ___eEye0, uint32_t* ___pglTextureId1, IntPtr_t ___pglSharedTextureHandle2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint32_t* L_0 = ___pglTextureId1;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		IVRCompositor_t4206274356 * L_1 = __this->get_address_of_FnTable_0();
+		_GetMirrorTextureGL_t3071699813 * L_2 = L_1->get_GetMirrorTextureGL_31();
+		int32_t L_3 = ___eEye0;
+		uint32_t* L_4 = ___pglTextureId1;
+		IntPtr_t L_5 = ___pglSharedTextureHandle2;
+		NullCheck(L_2);
+		int32_t L_6 = _GetMirrorTextureGL_Invoke_m3525787541(L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Boolean Valve.VR.CVRCompositor::ReleaseSharedGLTexture(System.UInt32,System.IntPtr)
+extern "C"  bool CVRCompositor_ReleaseSharedGLTexture_m3334400549 (CVRCompositor_t197946050 * __this, uint32_t ___glTextureId0, IntPtr_t ___glSharedTextureHandle1, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_ReleaseSharedGLTexture_t3443550108 * L_1 = L_0->get_ReleaseSharedGLTexture_32();
+		uint32_t L_2 = ___glTextureId0;
+		IntPtr_t L_3 = ___glSharedTextureHandle1;
+		NullCheck(L_1);
+		bool L_4 = _ReleaseSharedGLTexture_Invoke_m3769607891(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		bool L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::LockGLSharedTextureForAccess(System.IntPtr)
+extern "C"  void CVRCompositor_LockGLSharedTextureForAccess_m508899472 (CVRCompositor_t197946050 * __this, IntPtr_t ___glSharedTextureHandle0, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_LockGLSharedTextureForAccess_t2180462479 * L_1 = L_0->get_LockGLSharedTextureForAccess_33();
+		IntPtr_t L_2 = ___glSharedTextureHandle0;
+		NullCheck(L_1);
+		_LockGLSharedTextureForAccess_Invoke_m2614208588(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRCompositor::UnlockGLSharedTextureForAccess(System.IntPtr)
+extern "C"  void CVRCompositor_UnlockGLSharedTextureForAccess_m2303708863 (CVRCompositor_t197946050 * __this, IntPtr_t ___glSharedTextureHandle0, const MethodInfo* method)
+{
+	{
+		IVRCompositor_t4206274356 * L_0 = __this->get_address_of_FnTable_0();
+		_UnlockGLSharedTextureForAccess_t320290112 * L_1 = L_0->get_UnlockGLSharedTextureForAccess_34();
+		IntPtr_t L_2 = ___glSharedTextureHandle0;
+		NullCheck(L_1);
+		_UnlockGLSharedTextureForAccess_Invoke_m299833625(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRExtendedDisplay::.ctor(System.IntPtr)
+extern "C"  void CVRExtendedDisplay__ctor_m1913531285 (CVRExtendedDisplay_t1925229748 * __this, IntPtr_t ___pInterface0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRExtendedDisplay__ctor_m1913531285_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		IntPtr_t L_0 = ___pInterface0;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IVRExtendedDisplay_t2045258050_0_0_0_var), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		Il2CppObject * L_2 = Marshal_PtrToStructure_m673412918(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_FnTable_0(((*(IVRExtendedDisplay_t2045258050 *)((IVRExtendedDisplay_t2045258050 *)UnBox(L_2, IVRExtendedDisplay_t2045258050_il2cpp_TypeInfo_var)))));
+		return;
+	}
+}
+// System.Void Valve.VR.CVRExtendedDisplay::GetWindowBounds(System.Int32&,System.Int32&,System.UInt32&,System.UInt32&)
+extern "C"  void CVRExtendedDisplay_GetWindowBounds_m860198870 (CVRExtendedDisplay_t1925229748 * __this, int32_t* ___pnX0, int32_t* ___pnY1, uint32_t* ___pnWidth2, uint32_t* ___pnHeight3, const MethodInfo* method)
+{
+	{
+		int32_t* L_0 = ___pnX0;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		int32_t* L_1 = ___pnY1;
+		*((int32_t*)(L_1)) = (int32_t)0;
+		uint32_t* L_2 = ___pnWidth2;
+		*((int32_t*)(L_2)) = (int32_t)0;
+		uint32_t* L_3 = ___pnHeight3;
+		*((int32_t*)(L_3)) = (int32_t)0;
+		IVRExtendedDisplay_t2045258050 * L_4 = __this->get_address_of_FnTable_0();
+		_GetWindowBounds_t2171929041 * L_5 = L_4->get_GetWindowBounds_0();
+		int32_t* L_6 = ___pnX0;
+		int32_t* L_7 = ___pnY1;
+		uint32_t* L_8 = ___pnWidth2;
+		uint32_t* L_9 = ___pnHeight3;
+		NullCheck(L_5);
+		_GetWindowBounds_Invoke_m804669702(L_5, L_6, L_7, L_8, L_9, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRExtendedDisplay::GetEyeOutputViewport(Valve.VR.EVREye,System.UInt32&,System.UInt32&,System.UInt32&,System.UInt32&)
+extern "C"  void CVRExtendedDisplay_GetEyeOutputViewport_m1817373871 (CVRExtendedDisplay_t1925229748 * __this, int32_t ___eEye0, uint32_t* ___pnX1, uint32_t* ___pnY2, uint32_t* ___pnWidth3, uint32_t* ___pnHeight4, const MethodInfo* method)
+{
+	{
+		uint32_t* L_0 = ___pnX1;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		uint32_t* L_1 = ___pnY2;
+		*((int32_t*)(L_1)) = (int32_t)0;
+		uint32_t* L_2 = ___pnWidth3;
+		*((int32_t*)(L_2)) = (int32_t)0;
+		uint32_t* L_3 = ___pnHeight4;
+		*((int32_t*)(L_3)) = (int32_t)0;
+		IVRExtendedDisplay_t2045258050 * L_4 = __this->get_address_of_FnTable_0();
+		_GetEyeOutputViewport_t693377854 * L_5 = L_4->get_GetEyeOutputViewport_1();
+		int32_t L_6 = ___eEye0;
+		uint32_t* L_7 = ___pnX1;
+		uint32_t* L_8 = ___pnY2;
+		uint32_t* L_9 = ___pnWidth3;
+		uint32_t* L_10 = ___pnHeight4;
+		NullCheck(L_5);
+		_GetEyeOutputViewport_Invoke_m1552877621(L_5, L_6, L_7, L_8, L_9, L_10, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRExtendedDisplay::GetDXGIOutputInfo(System.Int32&,System.Int32&)
+extern "C"  void CVRExtendedDisplay_GetDXGIOutputInfo_m1137550058 (CVRExtendedDisplay_t1925229748 * __this, int32_t* ___pnAdapterIndex0, int32_t* ___pnAdapterOutputIndex1, const MethodInfo* method)
+{
+	{
+		int32_t* L_0 = ___pnAdapterIndex0;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		int32_t* L_1 = ___pnAdapterOutputIndex1;
+		*((int32_t*)(L_1)) = (int32_t)0;
+		IVRExtendedDisplay_t2045258050 * L_2 = __this->get_address_of_FnTable_0();
+		_GetDXGIOutputInfo_t2084284319 * L_3 = L_2->get_GetDXGIOutputInfo_2();
+		int32_t* L_4 = ___pnAdapterIndex0;
+		int32_t* L_5 = ___pnAdapterOutputIndex1;
+		NullCheck(L_3);
+		_GetDXGIOutputInfo_Invoke_m1550215398(L_3, L_4, L_5, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRNotifications::.ctor(System.IntPtr)
+extern "C"  void CVRNotifications__ctor_m4233505504 (CVRNotifications_t523754935 * __this, IntPtr_t ___pInterface0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRNotifications__ctor_m4233505504_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		IntPtr_t L_0 = ___pInterface0;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IVRNotifications_t3935579733_0_0_0_var), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		Il2CppObject * L_2 = Marshal_PtrToStructure_m673412918(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_FnTable_0(((*(IVRNotifications_t3935579733 *)((IVRNotifications_t3935579733 *)UnBox(L_2, IVRNotifications_t3935579733_il2cpp_TypeInfo_var)))));
+		return;
+	}
+}
+// Valve.VR.EVRNotificationError Valve.VR.CVRNotifications::CreateNotification(System.UInt64,System.UInt64,Valve.VR.EVRNotificationType,System.String,Valve.VR.EVRNotificationStyle,Valve.VR.NotificationBitmap_t&,System.UInt32&)
+extern "C"  int32_t CVRNotifications_CreateNotification_m854395472 (CVRNotifications_t523754935 * __this, uint64_t ___ulOverlayHandle0, uint64_t ___ulUserValue1, int32_t ___type2, String_t* ___pchText3, int32_t ___style4, NotificationBitmap_t_t1973232283 * ___pImage5, uint32_t* ___pNotificationId6, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint32_t* L_0 = ___pNotificationId6;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		IVRNotifications_t3935579733 * L_1 = __this->get_address_of_FnTable_0();
+		_CreateNotification_t1905156422 * L_2 = L_1->get_CreateNotification_0();
+		uint64_t L_3 = ___ulOverlayHandle0;
+		uint64_t L_4 = ___ulUserValue1;
+		int32_t L_5 = ___type2;
+		String_t* L_6 = ___pchText3;
+		int32_t L_7 = ___style4;
+		NotificationBitmap_t_t1973232283 * L_8 = ___pImage5;
+		uint32_t* L_9 = ___pNotificationId6;
+		NullCheck(L_2);
+		int32_t L_10 = _CreateNotification_Invoke_m3478891056(L_2, L_3, L_4, L_5, L_6, L_7, L_8, L_9, /*hidden argument*/NULL);
+		V_0 = L_10;
+		int32_t L_11 = V_0;
+		return L_11;
+	}
+}
+// Valve.VR.EVRNotificationError Valve.VR.CVRNotifications::RemoveNotification(System.UInt32)
+extern "C"  int32_t CVRNotifications_RemoveNotification_m1967367966 (CVRNotifications_t523754935 * __this, uint32_t ___notificationId0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRNotifications_t3935579733 * L_0 = __this->get_address_of_FnTable_0();
+		_RemoveNotification_t3701790586 * L_1 = L_0->get_RemoveNotification_1();
+		uint32_t L_2 = ___notificationId0;
+		NullCheck(L_1);
+		int32_t L_3 = _RemoveNotification_Invoke_m2612105650(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Void Valve.VR.CVROverlay::.ctor(System.IntPtr)
+extern "C"  void CVROverlay__ctor_m3113828660 (CVROverlay_t3377499315 * __this, IntPtr_t ___pInterface0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVROverlay__ctor_m3113828660_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		IntPtr_t L_0 = ___pInterface0;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IVROverlay_t3446109889_0_0_0_var), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		Il2CppObject * L_2 = Marshal_PtrToStructure_m673412918(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_FnTable_0(((*(IVROverlay_t3446109889 *)((IVROverlay_t3446109889 *)UnBox(L_2, IVROverlay_t3446109889_il2cpp_TypeInfo_var)))));
+		return;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::FindOverlay(System.String,System.UInt64&)
+extern "C"  int32_t CVROverlay_FindOverlay_m1854208528 (CVROverlay_t3377499315 * __this, String_t* ___pchOverlayKey0, uint64_t* ___pOverlayHandle1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint64_t* L_0 = ___pOverlayHandle1;
+		*((int64_t*)(L_0)) = (int64_t)(((int64_t)((int64_t)0)));
+		IVROverlay_t3446109889 * L_1 = __this->get_address_of_FnTable_0();
+		_FindOverlay_t1862706542 * L_2 = L_1->get_FindOverlay_0();
+		String_t* L_3 = ___pchOverlayKey0;
+		uint64_t* L_4 = ___pOverlayHandle1;
+		NullCheck(L_2);
+		int32_t L_5 = _FindOverlay_Invoke_m1857532504(L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::CreateOverlay(System.String,System.String,System.UInt64&)
+extern "C"  int32_t CVROverlay_CreateOverlay_m1836582259 (CVROverlay_t3377499315 * __this, String_t* ___pchOverlayKey0, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pOverlayHandle2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint64_t* L_0 = ___pOverlayHandle2;
+		*((int64_t*)(L_0)) = (int64_t)(((int64_t)((int64_t)0)));
+		IVROverlay_t3446109889 * L_1 = __this->get_address_of_FnTable_0();
+		_CreateOverlay_t4211228331 * L_2 = L_1->get_CreateOverlay_1();
+		String_t* L_3 = ___pchOverlayKey0;
+		String_t* L_4 = ___pchOverlayFriendlyName1;
+		uint64_t* L_5 = ___pOverlayHandle2;
+		NullCheck(L_2);
+		int32_t L_6 = _CreateOverlay_Invoke_m371834953(L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::DestroyOverlay(System.UInt64)
+extern "C"  int32_t CVROverlay_DestroyOverlay_m1806030271 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_DestroyOverlay_t1020329117 * L_1 = L_0->get_DestroyOverlay_2();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		NullCheck(L_1);
+		int32_t L_3 = _DestroyOverlay_Invoke_m898282617(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetHighQualityOverlay(System.UInt64)
+extern "C"  int32_t CVROverlay_SetHighQualityOverlay_m100588962 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetHighQualityOverlay_t4225758140 * L_1 = L_0->get_SetHighQualityOverlay_3();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		NullCheck(L_1);
+		int32_t L_3 = _SetHighQualityOverlay_Invoke_m4265083322(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// System.UInt64 Valve.VR.CVROverlay::GetHighQualityOverlay()
+extern "C"  uint64_t CVROverlay_GetHighQualityOverlay_m349863023 (CVROverlay_t3377499315 * __this, const MethodInfo* method)
+{
+	uint64_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_GetHighQualityOverlay_t362587296 * L_1 = L_0->get_GetHighQualityOverlay_4();
+		NullCheck(L_1);
+		uint64_t L_2 = _GetHighQualityOverlay_Invoke_m3919269457(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		uint64_t L_3 = V_0;
+		return L_3;
+	}
+}
+// System.UInt32 Valve.VR.CVROverlay::GetOverlayKey(System.UInt64,System.Text.StringBuilder,System.UInt32,Valve.VR.EVROverlayError&)
+extern "C"  uint32_t CVROverlay_GetOverlayKey_m47954862 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, StringBuilder_t1221177846 * ___pchValue1, uint32_t ___unBufferSize2, int32_t* ___pError3, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_GetOverlayKey_t1341267772 * L_1 = L_0->get_GetOverlayKey_5();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		StringBuilder_t1221177846 * L_3 = ___pchValue1;
+		uint32_t L_4 = ___unBufferSize2;
+		int32_t* L_5 = ___pError3;
+		NullCheck(L_1);
+		uint32_t L_6 = _GetOverlayKey_Invoke_m2950777966(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		uint32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// System.UInt32 Valve.VR.CVROverlay::GetOverlayName(System.UInt64,System.Text.StringBuilder,System.UInt32,Valve.VR.EVROverlayError&)
+extern "C"  uint32_t CVROverlay_GetOverlayName_m1154188806 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, StringBuilder_t1221177846 * ___pchValue1, uint32_t ___unBufferSize2, int32_t* ___pError3, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_GetOverlayName_t221395366 * L_1 = L_0->get_GetOverlayName_6();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		StringBuilder_t1221177846 * L_3 = ___pchValue1;
+		uint32_t L_4 = ___unBufferSize2;
+		int32_t* L_5 = ___pError3;
+		NullCheck(L_1);
+		uint32_t L_6 = _GetOverlayName_Invoke_m1434428818(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		uint32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayImageData(System.UInt64,System.IntPtr,System.UInt32,System.UInt32&,System.UInt32&)
+extern "C"  int32_t CVROverlay_GetOverlayImageData_m846004144 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pvBuffer1, uint32_t ___unBufferSize2, uint32_t* ___punWidth3, uint32_t* ___punHeight4, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint32_t* L_0 = ___punWidth3;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		uint32_t* L_1 = ___punHeight4;
+		*((int32_t*)(L_1)) = (int32_t)0;
+		IVROverlay_t3446109889 * L_2 = __this->get_address_of_FnTable_0();
+		_GetOverlayImageData_t836541042 * L_3 = L_2->get_GetOverlayImageData_7();
+		uint64_t L_4 = ___ulOverlayHandle0;
+		IntPtr_t L_5 = ___pvBuffer1;
+		uint32_t L_6 = ___unBufferSize2;
+		uint32_t* L_7 = ___punWidth3;
+		uint32_t* L_8 = ___punHeight4;
+		NullCheck(L_3);
+		int32_t L_9 = _GetOverlayImageData_Invoke_m2105959032(L_3, L_4, L_5, L_6, L_7, L_8, /*hidden argument*/NULL);
+		V_0 = L_9;
+		int32_t L_10 = V_0;
+		return L_10;
+	}
+}
+// System.String Valve.VR.CVROverlay::GetOverlayErrorNameFromEnum(Valve.VR.EVROverlayError)
+extern "C"  String_t* CVROverlay_GetOverlayErrorNameFromEnum_m3770237022 (CVROverlay_t3377499315 * __this, int32_t ___error0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVROverlay_GetOverlayErrorNameFromEnum_m3770237022_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	IntPtr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_GetOverlayErrorNameFromEnum_t3535846231 * L_1 = L_0->get_GetOverlayErrorNameFromEnum_8();
+		int32_t L_2 = ___error0;
+		NullCheck(L_1);
+		IntPtr_t L_3 = _GetOverlayErrorNameFromEnum_Invoke_m2290417798(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		IntPtr_t L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		String_t* L_5 = Marshal_PtrToStringAnsi_m2970070000(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayRenderingPid(System.UInt64,System.UInt32)
+extern "C"  int32_t CVROverlay_SetOverlayRenderingPid_m221051962 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unPID1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayRenderingPid_t1970553664 * L_1 = L_0->get_SetOverlayRenderingPid_9();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		uint32_t L_3 = ___unPID1;
+		NullCheck(L_1);
+		int32_t L_4 = _SetOverlayRenderingPid_Invoke_m1551784166(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// System.UInt32 Valve.VR.CVROverlay::GetOverlayRenderingPid(System.UInt64)
+extern "C"  uint32_t CVROverlay_GetOverlayRenderingPid_m2262227863 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_GetOverlayRenderingPid_t1470043428 * L_1 = L_0->get_GetOverlayRenderingPid_10();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		NullCheck(L_1);
+		uint32_t L_3 = _GetOverlayRenderingPid_Invoke_m4066627961(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		uint32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayFlag(System.UInt64,Valve.VR.VROverlayFlags,System.Boolean)
+extern "C"  int32_t CVROverlay_SetOverlayFlag_m1711217533 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eOverlayFlag1, bool ___bEnabled2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayFlag_t1900166033 * L_1 = L_0->get_SetOverlayFlag_11();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		int32_t L_3 = ___eOverlayFlag1;
+		bool L_4 = ___bEnabled2;
+		NullCheck(L_1);
+		int32_t L_5 = _SetOverlayFlag_Invoke_m2769435287(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayFlag(System.UInt64,Valve.VR.VROverlayFlags,System.Boolean&)
+extern "C"  int32_t CVROverlay_GetOverlayFlag_m3846518575 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eOverlayFlag1, bool* ___pbEnabled2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		bool* L_0 = ___pbEnabled2;
+		*((int8_t*)(L_0)) = (int8_t)0;
+		IVROverlay_t3446109889 * L_1 = __this->get_address_of_FnTable_0();
+		_GetOverlayFlag_t3676293589 * L_2 = L_1->get_GetOverlayFlag_12();
+		uint64_t L_3 = ___ulOverlayHandle0;
+		int32_t L_4 = ___eOverlayFlag1;
+		bool* L_5 = ___pbEnabled2;
+		NullCheck(L_2);
+		int32_t L_6 = _GetOverlayFlag_Invoke_m2613417877(L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayColor(System.UInt64,System.Single,System.Single,System.Single)
+extern "C"  int32_t CVROverlay_SetOverlayColor_m538975279 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, float ___fRed1, float ___fGreen2, float ___fBlue3, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayColor_t2804573176 * L_1 = L_0->get_SetOverlayColor_13();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		float L_3 = ___fRed1;
+		float L_4 = ___fGreen2;
+		float L_5 = ___fBlue3;
+		NullCheck(L_1);
+		int32_t L_6 = _SetOverlayColor_Invoke_m1549057657(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayColor(System.UInt64,System.Single&,System.Single&,System.Single&)
+extern "C"  int32_t CVROverlay_GetOverlayColor_m1367911097 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, float* ___pfRed1, float* ___pfGreen2, float* ___pfBlue3, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		float* L_0 = ___pfRed1;
+		*((float*)(L_0)) = (float)(0.0f);
+		float* L_1 = ___pfGreen2;
+		*((float*)(L_1)) = (float)(0.0f);
+		float* L_2 = ___pfBlue3;
+		*((float*)(L_2)) = (float)(0.0f);
+		IVROverlay_t3446109889 * L_3 = __this->get_address_of_FnTable_0();
+		_GetOverlayColor_t2379424348 * L_4 = L_3->get_GetOverlayColor_14();
+		uint64_t L_5 = ___ulOverlayHandle0;
+		float* L_6 = ___pfRed1;
+		float* L_7 = ___pfGreen2;
+		float* L_8 = ___pfBlue3;
+		NullCheck(L_4);
+		int32_t L_9 = _GetOverlayColor_Invoke_m3788412323(L_4, L_5, L_6, L_7, L_8, /*hidden argument*/NULL);
+		V_0 = L_9;
+		int32_t L_10 = V_0;
+		return L_10;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayAlpha(System.UInt64,System.Single)
+extern "C"  int32_t CVROverlay_SetOverlayAlpha_m4023629120 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, float ___fAlpha1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayAlpha_t2092887413 * L_1 = L_0->get_SetOverlayAlpha_15();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		float L_3 = ___fAlpha1;
+		NullCheck(L_1);
+		int32_t L_4 = _SetOverlayAlpha_Invoke_m1349081608(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayAlpha(System.UInt64,System.Single&)
+extern "C"  int32_t CVROverlay_GetOverlayAlpha_m1437056232 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, float* ___pfAlpha1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		float* L_0 = ___pfAlpha1;
+		*((float*)(L_0)) = (float)(0.0f);
+		IVROverlay_t3446109889 * L_1 = __this->get_address_of_FnTable_0();
+		_GetOverlayAlpha_t2185592753 * L_2 = L_1->get_GetOverlayAlpha_16();
+		uint64_t L_3 = ___ulOverlayHandle0;
+		float* L_4 = ___pfAlpha1;
+		NullCheck(L_2);
+		int32_t L_5 = _GetOverlayAlpha_Invoke_m1834655296(L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayTexelAspect(System.UInt64,System.Single)
+extern "C"  int32_t CVROverlay_SetOverlayTexelAspect_m4084689572 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, float ___fTexelAspect1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayTexelAspect_t460846625 * L_1 = L_0->get_SetOverlayTexelAspect_17();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		float L_3 = ___fTexelAspect1;
+		NullCheck(L_1);
+		int32_t L_4 = _SetOverlayTexelAspect_Invoke_m800057472(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayTexelAspect(System.UInt64,System.Single&)
+extern "C"  int32_t CVROverlay_GetOverlayTexelAspect_m3271778536 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, float* ___pfTexelAspect1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		float* L_0 = ___pfTexelAspect1;
+		*((float*)(L_0)) = (float)(0.0f);
+		IVROverlay_t3446109889 * L_1 = __this->get_address_of_FnTable_0();
+		_GetOverlayTexelAspect_t1835744573 * L_2 = L_1->get_GetOverlayTexelAspect_18();
+		uint64_t L_3 = ___ulOverlayHandle0;
+		float* L_4 = ___pfTexelAspect1;
+		NullCheck(L_2);
+		int32_t L_5 = _GetOverlayTexelAspect_Invoke_m2693602540(L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlaySortOrder(System.UInt64,System.UInt32)
+extern "C"  int32_t CVROverlay_SetOverlaySortOrder_m2082525039 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unSortOrder1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlaySortOrder_t3099711365 * L_1 = L_0->get_SetOverlaySortOrder_19();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		uint32_t L_3 = ___unSortOrder1;
+		NullCheck(L_1);
+		int32_t L_4 = _SetOverlaySortOrder_Invoke_m3384139201(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlaySortOrder(System.UInt64,System.UInt32&)
+extern "C"  int32_t CVROverlay_GetOverlaySortOrder_m2985249689 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punSortOrder1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint32_t* L_0 = ___punSortOrder1;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		IVROverlay_t3446109889 * L_1 = __this->get_address_of_FnTable_0();
+		_GetOverlaySortOrder_t376620481 * L_2 = L_1->get_GetOverlaySortOrder_20();
+		uint64_t L_3 = ___ulOverlayHandle0;
+		uint32_t* L_4 = ___punSortOrder1;
+		NullCheck(L_2);
+		int32_t L_5 = _GetOverlaySortOrder_Invoke_m2634989799(L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayWidthInMeters(System.UInt64,System.Single)
+extern "C"  int32_t CVROverlay_SetOverlayWidthInMeters_m2325838055 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, float ___fWidthInMeters1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayWidthInMeters_t3047220066 * L_1 = L_0->get_SetOverlayWidthInMeters_21();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		float L_3 = ___fWidthInMeters1;
+		NullCheck(L_1);
+		int32_t L_4 = _SetOverlayWidthInMeters_Invoke_m1782438045(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayWidthInMeters(System.UInt64,System.Single&)
+extern "C"  int32_t CVROverlay_GetOverlayWidthInMeters_m4267204901 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, float* ___pfWidthInMeters1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		float* L_0 = ___pfWidthInMeters1;
+		*((float*)(L_0)) = (float)(0.0f);
+		IVROverlay_t3446109889 * L_1 = __this->get_address_of_FnTable_0();
+		_GetOverlayWidthInMeters_t2815542566 * L_2 = L_1->get_GetOverlayWidthInMeters_22();
+		uint64_t L_3 = ___ulOverlayHandle0;
+		float* L_4 = ___pfWidthInMeters1;
+		NullCheck(L_2);
+		int32_t L_5 = _GetOverlayWidthInMeters_Invoke_m2030291983(L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayAutoCurveDistanceRangeInMeters(System.UInt64,System.Single,System.Single)
+extern "C"  int32_t CVROverlay_SetOverlayAutoCurveDistanceRangeInMeters_m734721672 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, float ___fMinDistanceInMeters1, float ___fMaxDistanceInMeters2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayAutoCurveDistanceRangeInMeters_t1475163830 * L_1 = L_0->get_SetOverlayAutoCurveDistanceRangeInMeters_23();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		float L_3 = ___fMinDistanceInMeters1;
+		float L_4 = ___fMaxDistanceInMeters2;
+		NullCheck(L_1);
+		int32_t L_5 = _SetOverlayAutoCurveDistanceRangeInMeters_Invoke_m2045797120(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayAutoCurveDistanceRangeInMeters(System.UInt64,System.Single&,System.Single&)
+extern "C"  int32_t CVROverlay_GetOverlayAutoCurveDistanceRangeInMeters_m3055883566 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, float* ___pfMinDistanceInMeters1, float* ___pfMaxDistanceInMeters2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		float* L_0 = ___pfMinDistanceInMeters1;
+		*((float*)(L_0)) = (float)(0.0f);
+		float* L_1 = ___pfMaxDistanceInMeters2;
+		*((float*)(L_1)) = (float)(0.0f);
+		IVROverlay_t3446109889 * L_2 = __this->get_address_of_FnTable_0();
+		_GetOverlayAutoCurveDistanceRangeInMeters_t4193138162 * L_3 = L_2->get_GetOverlayAutoCurveDistanceRangeInMeters_24();
+		uint64_t L_4 = ___ulOverlayHandle0;
+		float* L_5 = ___pfMinDistanceInMeters1;
+		float* L_6 = ___pfMaxDistanceInMeters2;
+		NullCheck(L_3);
+		int32_t L_7 = _GetOverlayAutoCurveDistanceRangeInMeters_Invoke_m2285000342(L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		int32_t L_8 = V_0;
+		return L_8;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayTextureColorSpace(System.UInt64,Valve.VR.EColorSpace)
+extern "C"  int32_t CVROverlay_SetOverlayTextureColorSpace_m3515493777 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTextureColorSpace1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayTextureColorSpace_t1399555963 * L_1 = L_0->get_SetOverlayTextureColorSpace_25();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		int32_t L_3 = ___eTextureColorSpace1;
+		NullCheck(L_1);
+		int32_t L_4 = _SetOverlayTextureColorSpace_Invoke_m1296924107(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayTextureColorSpace(System.UInt64,Valve.VR.EColorSpace&)
+extern "C"  int32_t CVROverlay_GetOverlayTextureColorSpace_m3885288379 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTextureColorSpace1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_GetOverlayTextureColorSpace_t2119049239 * L_1 = L_0->get_GetOverlayTextureColorSpace_26();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		int32_t* L_3 = ___peTextureColorSpace1;
+		NullCheck(L_1);
+		int32_t L_4 = _GetOverlayTextureColorSpace_Invoke_m2501969805(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayTextureBounds(System.UInt64,Valve.VR.VRTextureBounds_t&)
+extern "C"  int32_t CVROverlay_SetOverlayTextureBounds_m79966680 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayTextureBounds_t1179269927 * L_1 = L_0->get_SetOverlayTextureBounds_27();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		VRTextureBounds_t_t1897807375 * L_3 = ___pOverlayTextureBounds1;
+		NullCheck(L_1);
+		int32_t L_4 = _SetOverlayTextureBounds_Invoke_m224047540(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayTextureBounds(System.UInt64,Valve.VR.VRTextureBounds_t&)
+extern "C"  int32_t CVROverlay_GetOverlayTextureBounds_m4265080292 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_GetOverlayTextureBounds_t3680071147 * L_1 = L_0->get_GetOverlayTextureBounds_28();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		VRTextureBounds_t_t1897807375 * L_3 = ___pOverlayTextureBounds1;
+		NullCheck(L_1);
+		int32_t L_4 = _GetOverlayTextureBounds_Invoke_m1165346240(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayTransformType(System.UInt64,Valve.VR.VROverlayTransformType&)
+extern "C"  int32_t CVROverlay_GetOverlayTransformType_m3452402555 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTransformType1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_GetOverlayTransformType_t1493074241 * L_1 = L_0->get_GetOverlayTransformType_29();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		int32_t* L_3 = ___peTransformType1;
+		NullCheck(L_1);
+		int32_t L_4 = _GetOverlayTransformType_Invoke_m2129491701(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayTransformAbsolute(System.UInt64,Valve.VR.ETrackingUniverseOrigin,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t CVROverlay_SetOverlayTransformAbsolute_m2883023163 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTrackingOrigin1, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayTransformAbsolute_t2100297354 * L_1 = L_0->get_SetOverlayTransformAbsolute_30();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		int32_t L_3 = ___eTrackingOrigin1;
+		HmdMatrix34_t_t664273062 * L_4 = ___pmatTrackingOriginToOverlayTransform2;
+		NullCheck(L_1);
+		int32_t L_5 = _SetOverlayTransformAbsolute_Invoke_m1535134225(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayTransformAbsolute(System.UInt64,Valve.VR.ETrackingUniverseOrigin&,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t CVROverlay_GetOverlayTransformAbsolute_m2341053341 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTrackingOrigin1, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_GetOverlayTransformAbsolute_t2557918150 * L_1 = L_0->get_GetOverlayTransformAbsolute_31();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		int32_t* L_3 = ___peTrackingOrigin1;
+		HmdMatrix34_t_t664273062 * L_4 = ___pmatTrackingOriginToOverlayTransform2;
+		NullCheck(L_1);
+		int32_t L_5 = _GetOverlayTransformAbsolute_Invoke_m3953185979(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayTransformTrackedDeviceRelative(System.UInt64,System.UInt32,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t CVROverlay_SetOverlayTransformTrackedDeviceRelative_m1726643885 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unTrackedDevice1, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayTransformTrackedDeviceRelative_t579082695 * L_1 = L_0->get_SetOverlayTransformTrackedDeviceRelative_32();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		uint32_t L_3 = ___unTrackedDevice1;
+		HmdMatrix34_t_t664273062 * L_4 = ___pmatTrackedDeviceToOverlayTransform2;
+		NullCheck(L_1);
+		int32_t L_5 = _SetOverlayTransformTrackedDeviceRelative_Invoke_m4082931255(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayTransformTrackedDeviceRelative(System.UInt64,System.UInt32&,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t CVROverlay_GetOverlayTransformTrackedDeviceRelative_m1552393143 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punTrackedDevice1, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint32_t* L_0 = ___punTrackedDevice1;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		IVROverlay_t3446109889 * L_1 = __this->get_address_of_FnTable_0();
+		_GetOverlayTransformTrackedDeviceRelative_t893699371 * L_2 = L_1->get_GetOverlayTransformTrackedDeviceRelative_33();
+		uint64_t L_3 = ___ulOverlayHandle0;
+		uint32_t* L_4 = ___punTrackedDevice1;
+		HmdMatrix34_t_t664273062 * L_5 = ___pmatTrackedDeviceToOverlayTransform2;
+		NullCheck(L_2);
+		int32_t L_6 = _GetOverlayTransformTrackedDeviceRelative_Invoke_m3390332185(L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayTransformTrackedDeviceComponent(System.UInt64,System.UInt32,System.String)
+extern "C"  int32_t CVROverlay_SetOverlayTransformTrackedDeviceComponent_m3040106698 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unDeviceIndex1, String_t* ___pchComponentName2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayTransformTrackedDeviceComponent_t1749665136 * L_1 = L_0->get_SetOverlayTransformTrackedDeviceComponent_34();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		uint32_t L_3 = ___unDeviceIndex1;
+		String_t* L_4 = ___pchComponentName2;
+		NullCheck(L_1);
+		int32_t L_5 = _SetOverlayTransformTrackedDeviceComponent_Invoke_m1215847030(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayTransformTrackedDeviceComponent(System.UInt64,System.UInt32&,System.String,System.UInt32)
+extern "C"  int32_t CVROverlay_GetOverlayTransformTrackedDeviceComponent_m2290360934 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punDeviceIndex1, String_t* ___pchComponentName2, uint32_t ___unComponentNameSize3, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint32_t* L_0 = ___punDeviceIndex1;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		IVROverlay_t3446109889 * L_1 = __this->get_address_of_FnTable_0();
+		_GetOverlayTransformTrackedDeviceComponent_t3256239660 * L_2 = L_1->get_GetOverlayTransformTrackedDeviceComponent_35();
+		uint64_t L_3 = ___ulOverlayHandle0;
+		uint32_t* L_4 = ___punDeviceIndex1;
+		String_t* L_5 = ___pchComponentName2;
+		uint32_t L_6 = ___unComponentNameSize3;
+		NullCheck(L_2);
+		int32_t L_7 = _GetOverlayTransformTrackedDeviceComponent_Invoke_m2603987950(L_2, L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		int32_t L_8 = V_0;
+		return L_8;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::ShowOverlay(System.UInt64)
+extern "C"  int32_t CVROverlay_ShowOverlay_m2478360466 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_ShowOverlay_t733914692 * L_1 = L_0->get_ShowOverlay_36();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		NullCheck(L_1);
+		int32_t L_3 = _ShowOverlay_Invoke_m1766232374(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::HideOverlay(System.UInt64)
+extern "C"  int32_t CVROverlay_HideOverlay_m1096498445 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_HideOverlay_t2737366627 * L_1 = L_0->get_HideOverlay_37();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		NullCheck(L_1);
+		int32_t L_3 = _HideOverlay_Invoke_m1671076155(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Boolean Valve.VR.CVROverlay::IsOverlayVisible(System.UInt64)
+extern "C"  bool CVROverlay_IsOverlayVisible_m3048300293 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_IsOverlayVisible_t1564696099 * L_1 = L_0->get_IsOverlayVisible_38();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		NullCheck(L_1);
+		bool L_3 = _IsOverlayVisible_Invoke_m1960522219(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetTransformForOverlayCoordinates(System.UInt64,Valve.VR.ETrackingUniverseOrigin,Valve.VR.HmdVector2_t,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t CVROverlay_GetTransformForOverlayCoordinates_m765806039 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTrackingOrigin1, HmdVector2_t_t2255225135  ___coordinatesInOverlay2, HmdMatrix34_t_t664273062 * ___pmatTransform3, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_GetTransformForOverlayCoordinates_t2483359939 * L_1 = L_0->get_GetTransformForOverlayCoordinates_39();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		int32_t L_3 = ___eTrackingOrigin1;
+		HmdVector2_t_t2255225135  L_4 = ___coordinatesInOverlay2;
+		HmdMatrix34_t_t664273062 * L_5 = ___pmatTransform3;
+		NullCheck(L_1);
+		int32_t L_6 = _GetTransformForOverlayCoordinates_Invoke_m1768155201(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Boolean Valve.VR.CVROverlay::PollNextOverlayEvent(System.UInt64,Valve.VR.VREvent_t&,System.UInt32)
+extern "C"  bool CVROverlay_PollNextOverlayEvent_m3313005602 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, VREvent_t_t3405266389 * ___pEvent1, uint32_t ___uncbVREvent2, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_PollNextOverlayEvent_t131678587 * L_1 = L_0->get_PollNextOverlayEvent_40();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		VREvent_t_t3405266389 * L_3 = ___pEvent1;
+		uint32_t L_4 = ___uncbVREvent2;
+		NullCheck(L_1);
+		bool L_5 = _PollNextOverlayEvent_Invoke_m323202474(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		bool L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayInputMethod(System.UInt64,Valve.VR.VROverlayInputMethod&)
+extern "C"  int32_t CVROverlay_GetOverlayInputMethod_m4087246427 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peInputMethod1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_GetOverlayInputMethod_t3217580654 * L_1 = L_0->get_GetOverlayInputMethod_41();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		int32_t* L_3 = ___peInputMethod1;
+		NullCheck(L_1);
+		int32_t L_4 = _GetOverlayInputMethod_Invoke_m3078952085(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayInputMethod(System.UInt64,Valve.VR.VROverlayInputMethod)
+extern "C"  int32_t CVROverlay_SetOverlayInputMethod_m3415109229 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eInputMethod1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayInputMethod_t3575042602 * L_1 = L_0->get_SetOverlayInputMethod_42();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		int32_t L_3 = ___eInputMethod1;
+		NullCheck(L_1);
+		int32_t L_4 = _SetOverlayInputMethod_Invoke_m3806261779(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayMouseScale(System.UInt64,Valve.VR.HmdVector2_t&)
+extern "C"  int32_t CVROverlay_GetOverlayMouseScale_m626367089 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, HmdVector2_t_t2255225135 * ___pvecMouseScale1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_GetOverlayMouseScale_t2826364086 * L_1 = L_0->get_GetOverlayMouseScale_43();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		HmdVector2_t_t2255225135 * L_3 = ___pvecMouseScale1;
+		NullCheck(L_1);
+		int32_t L_4 = _GetOverlayMouseScale_Invoke_m1554314519(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayMouseScale(System.UInt64,Valve.VR.HmdVector2_t&)
+extern "C"  int32_t CVROverlay_SetOverlayMouseScale_m3784937853 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, HmdVector2_t_t2255225135 * ___pvecMouseScale1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayMouseScale_t2624726138 * L_1 = L_0->get_SetOverlayMouseScale_44();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		HmdVector2_t_t2255225135 * L_3 = ___pvecMouseScale1;
+		NullCheck(L_1);
+		int32_t L_4 = _SetOverlayMouseScale_Invoke_m1643569667(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Boolean Valve.VR.CVROverlay::ComputeOverlayIntersection(System.UInt64,Valve.VR.VROverlayIntersectionParams_t&,Valve.VR.VROverlayIntersectionResults_t&)
+extern "C"  bool CVROverlay_ComputeOverlayIntersection_m1042730723 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, VROverlayIntersectionParams_t_t3201480230 * ___pParams1, VROverlayIntersectionResults_t_t2886517940 * ___pResults2, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_ComputeOverlayIntersection_t1141587151 * L_1 = L_0->get_ComputeOverlayIntersection_45();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		VROverlayIntersectionParams_t_t3201480230 * L_3 = ___pParams1;
+		VROverlayIntersectionResults_t_t2886517940 * L_4 = ___pResults2;
+		NullCheck(L_1);
+		bool L_5 = _ComputeOverlayIntersection_Invoke_m1110770673(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		bool L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Boolean Valve.VR.CVROverlay::HandleControllerOverlayInteractionAsMouse(System.UInt64,System.UInt32)
+extern "C"  bool CVROverlay_HandleControllerOverlayInteractionAsMouse_m62921332 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unControllerDeviceIndex1, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_HandleControllerOverlayInteractionAsMouse_t2899449918 * L_1 = L_0->get_HandleControllerOverlayInteractionAsMouse_46();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		uint32_t L_3 = ___unControllerDeviceIndex1;
+		NullCheck(L_1);
+		bool L_4 = _HandleControllerOverlayInteractionAsMouse_Invoke_m1657897616(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		bool L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Boolean Valve.VR.CVROverlay::IsHoverTargetOverlay(System.UInt64)
+extern "C"  bool CVROverlay_IsHoverTargetOverlay_m3772526546 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_IsHoverTargetOverlay_t4101716668 * L_1 = L_0->get_IsHoverTargetOverlay_47();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		NullCheck(L_1);
+		bool L_3 = _IsHoverTargetOverlay_Invoke_m3152412494(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
+// System.UInt64 Valve.VR.CVROverlay::GetGamepadFocusOverlay()
+extern "C"  uint64_t CVROverlay_GetGamepadFocusOverlay_m2731689651 (CVROverlay_t3377499315 * __this, const MethodInfo* method)
+{
+	uint64_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_GetGamepadFocusOverlay_t300021750 * L_1 = L_0->get_GetGamepadFocusOverlay_48();
+		NullCheck(L_1);
+		uint64_t L_2 = _GetGamepadFocusOverlay_Invoke_m2014588917(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		uint64_t L_3 = V_0;
+		return L_3;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetGamepadFocusOverlay(System.UInt64)
+extern "C"  int32_t CVROverlay_SetGamepadFocusOverlay_m1741839140 (CVROverlay_t3377499315 * __this, uint64_t ___ulNewFocusOverlay0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetGamepadFocusOverlay_t2763810618 * L_1 = L_0->get_SetGamepadFocusOverlay_49();
+		uint64_t L_2 = ___ulNewFocusOverlay0;
+		NullCheck(L_1);
+		int32_t L_3 = _SetGamepadFocusOverlay_Invoke_m1830831244(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayNeighbor(Valve.VR.EOverlayDirection,System.UInt64,System.UInt64)
+extern "C"  int32_t CVROverlay_SetOverlayNeighbor_m3539871868 (CVROverlay_t3377499315 * __this, int32_t ___eDirection0, uint64_t ___ulFrom1, uint64_t ___ulTo2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayNeighbor_t1117963895 * L_1 = L_0->get_SetOverlayNeighbor_50();
+		int32_t L_2 = ___eDirection0;
+		uint64_t L_3 = ___ulFrom1;
+		uint64_t L_4 = ___ulTo2;
+		NullCheck(L_1);
+		int32_t L_5 = _SetOverlayNeighbor_Invoke_m1418526992(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::MoveGamepadFocusToNeighbor(Valve.VR.EOverlayDirection,System.UInt64)
+extern "C"  int32_t CVROverlay_MoveGamepadFocusToNeighbor_m2771489708 (CVROverlay_t3377499315 * __this, int32_t ___eDirection0, uint64_t ___ulFrom1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_MoveGamepadFocusToNeighbor_t2016645278 * L_1 = L_0->get_MoveGamepadFocusToNeighbor_51();
+		int32_t L_2 = ___eDirection0;
+		uint64_t L_3 = ___ulFrom1;
+		NullCheck(L_1);
+		int32_t L_4 = _MoveGamepadFocusToNeighbor_Invoke_m973931588(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayTexture(System.UInt64,Valve.VR.Texture_t&)
+extern "C"  int32_t CVROverlay_SetOverlayTexture_m4274111622 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, Texture_t_t3277130850 * ___pTexture1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayTexture_t2238656700 * L_1 = L_0->get_SetOverlayTexture_52();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		Texture_t_t3277130850 * L_3 = ___pTexture1;
+		NullCheck(L_1);
+		int32_t L_4 = _SetOverlayTexture_Invoke_m3543005210(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::ClearOverlayTexture(System.UInt64)
+extern "C"  int32_t CVROverlay_ClearOverlayTexture_m2591245691 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_ClearOverlayTexture_t2610332521 * L_1 = L_0->get_ClearOverlayTexture_53();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		NullCheck(L_1);
+		int32_t L_3 = _ClearOverlayTexture_Invoke_m1311382489(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayRaw(System.UInt64,System.IntPtr,System.UInt32,System.UInt32,System.UInt32)
+extern "C"  int32_t CVROverlay_SetOverlayRaw_m2365569137 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pvBuffer1, uint32_t ___unWidth2, uint32_t ___unHeight3, uint32_t ___unDepth4, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayRaw_t3268606321 * L_1 = L_0->get_SetOverlayRaw_54();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		IntPtr_t L_3 = ___pvBuffer1;
+		uint32_t L_4 = ___unWidth2;
+		uint32_t L_5 = ___unHeight3;
+		uint32_t L_6 = ___unDepth4;
+		NullCheck(L_1);
+		int32_t L_7 = _SetOverlayRaw_Invoke_m1372004499(L_1, L_2, L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		int32_t L_8 = V_0;
+		return L_8;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetOverlayFromFile(System.UInt64,System.String)
+extern "C"  int32_t CVROverlay_SetOverlayFromFile_m605645837 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, String_t* ___pchFilePath1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetOverlayFromFile_t598184189 * L_1 = L_0->get_SetOverlayFromFile_55();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		String_t* L_3 = ___pchFilePath1;
+		NullCheck(L_1);
+		int32_t L_4 = _SetOverlayFromFile_Invoke_m3103035007(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayTexture(System.UInt64,System.IntPtr&,System.IntPtr,System.UInt32&,System.UInt32&,System.UInt32&,Valve.VR.EGraphicsAPIConvention&,Valve.VR.EColorSpace&)
+extern "C"  int32_t CVROverlay_GetOverlayTexture_m2762789143 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t* ___pNativeTextureHandle1, IntPtr_t ___pNativeTextureRef2, uint32_t* ___pWidth3, uint32_t* ___pHeight4, uint32_t* ___pNativeFormat5, int32_t* ___pAPI6, int32_t* ___pColorSpace7, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint32_t* L_0 = ___pWidth3;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		uint32_t* L_1 = ___pHeight4;
+		*((int32_t*)(L_1)) = (int32_t)0;
+		uint32_t* L_2 = ___pNativeFormat5;
+		*((int32_t*)(L_2)) = (int32_t)0;
+		IVROverlay_t3446109889 * L_3 = __this->get_address_of_FnTable_0();
+		_GetOverlayTexture_t897552288 * L_4 = L_3->get_GetOverlayTexture_56();
+		uint64_t L_5 = ___ulOverlayHandle0;
+		IntPtr_t* L_6 = ___pNativeTextureHandle1;
+		IntPtr_t L_7 = ___pNativeTextureRef2;
+		uint32_t* L_8 = ___pWidth3;
+		uint32_t* L_9 = ___pHeight4;
+		uint32_t* L_10 = ___pNativeFormat5;
+		int32_t* L_11 = ___pAPI6;
+		int32_t* L_12 = ___pColorSpace7;
+		NullCheck(L_4);
+		int32_t L_13 = _GetOverlayTexture_Invoke_m316321481(L_4, L_5, L_6, L_7, L_8, L_9, L_10, L_11, L_12, /*hidden argument*/NULL);
+		V_0 = L_13;
+		int32_t L_14 = V_0;
+		return L_14;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::ReleaseNativeOverlayHandle(System.UInt64,System.IntPtr)
+extern "C"  int32_t CVROverlay_ReleaseNativeOverlayHandle_m4186946221 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pNativeTextureHandle1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_ReleaseNativeOverlayHandle_t2842744417 * L_1 = L_0->get_ReleaseNativeOverlayHandle_57();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		IntPtr_t L_3 = ___pNativeTextureHandle1;
+		NullCheck(L_1);
+		int32_t L_4 = _ReleaseNativeOverlayHandle_Invoke_m377416379(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetOverlayTextureSize(System.UInt64,System.UInt32&,System.UInt32&)
+extern "C"  int32_t CVROverlay_GetOverlayTextureSize_m2344357961 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___pWidth1, uint32_t* ___pHeight2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint32_t* L_0 = ___pWidth1;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		uint32_t* L_1 = ___pHeight2;
+		*((int32_t*)(L_1)) = (int32_t)0;
+		IVROverlay_t3446109889 * L_2 = __this->get_address_of_FnTable_0();
+		_GetOverlayTextureSize_t1288689867 * L_3 = L_2->get_GetOverlayTextureSize_58();
+		uint64_t L_4 = ___ulOverlayHandle0;
+		uint32_t* L_5 = ___pWidth1;
+		uint32_t* L_6 = ___pHeight2;
+		NullCheck(L_3);
+		int32_t L_7 = _GetOverlayTextureSize_Invoke_m3617082459(L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		int32_t L_8 = V_0;
+		return L_8;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::CreateDashboardOverlay(System.String,System.String,System.UInt64&,System.UInt64&)
+extern "C"  int32_t CVROverlay_CreateDashboardOverlay_m2401241858 (CVROverlay_t3377499315 * __this, String_t* ___pchOverlayKey0, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pMainHandle2, uint64_t* ___pThumbnailHandle3, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint64_t* L_0 = ___pMainHandle2;
+		*((int64_t*)(L_0)) = (int64_t)(((int64_t)((int64_t)0)));
+		uint64_t* L_1 = ___pThumbnailHandle3;
+		*((int64_t*)(L_1)) = (int64_t)(((int64_t)((int64_t)0)));
+		IVROverlay_t3446109889 * L_2 = __this->get_address_of_FnTable_0();
+		_CreateDashboardOverlay_t637199691 * L_3 = L_2->get_CreateDashboardOverlay_59();
+		String_t* L_4 = ___pchOverlayKey0;
+		String_t* L_5 = ___pchOverlayFriendlyName1;
+		uint64_t* L_6 = ___pMainHandle2;
+		uint64_t* L_7 = ___pThumbnailHandle3;
+		NullCheck(L_3);
+		int32_t L_8 = _CreateDashboardOverlay_Invoke_m1458939786(L_3, L_4, L_5, L_6, L_7, /*hidden argument*/NULL);
+		V_0 = L_8;
+		int32_t L_9 = V_0;
+		return L_9;
+	}
+}
+// System.Boolean Valve.VR.CVROverlay::IsDashboardVisible()
+extern "C"  bool CVROverlay_IsDashboardVisible_m2194941968 (CVROverlay_t3377499315 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_IsDashboardVisible_t2020287181 * L_1 = L_0->get_IsDashboardVisible_60();
+		NullCheck(L_1);
+		bool L_2 = _IsDashboardVisible_Invoke_m2954394420(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+// System.Boolean Valve.VR.CVROverlay::IsActiveDashboardOverlay(System.UInt64)
+extern "C"  bool CVROverlay_IsActiveDashboardOverlay_m6800791 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_IsActiveDashboardOverlay_t3144660141 * L_1 = L_0->get_IsActiveDashboardOverlay_61();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		NullCheck(L_1);
+		bool L_3 = _IsActiveDashboardOverlay_Invoke_m2899028641(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::SetDashboardOverlaySceneProcess(System.UInt64,System.UInt32)
+extern "C"  int32_t CVROverlay_SetDashboardOverlaySceneProcess_m1100441656 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unProcessId1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetDashboardOverlaySceneProcess_t1462353074 * L_1 = L_0->get_SetDashboardOverlaySceneProcess_62();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		uint32_t L_3 = ___unProcessId1;
+		NullCheck(L_1);
+		int32_t L_4 = _SetDashboardOverlaySceneProcess_Invoke_m115664276(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::GetDashboardOverlaySceneProcess(System.UInt64,System.UInt32&)
+extern "C"  int32_t CVROverlay_GetDashboardOverlaySceneProcess_m3260151668 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punProcessId1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint32_t* L_0 = ___punProcessId1;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		IVROverlay_t3446109889 * L_1 = __this->get_address_of_FnTable_0();
+		_GetDashboardOverlaySceneProcess_t876496206 * L_2 = L_1->get_GetDashboardOverlaySceneProcess_63();
+		uint64_t L_3 = ___ulOverlayHandle0;
+		uint32_t* L_4 = ___punProcessId1;
+		NullCheck(L_2);
+		int32_t L_5 = _GetDashboardOverlaySceneProcess_Invoke_m926359608(L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Void Valve.VR.CVROverlay::ShowDashboard(System.String)
+extern "C"  void CVROverlay_ShowDashboard_m24283661 (CVROverlay_t3377499315 * __this, String_t* ___pchOverlayToShow0, const MethodInfo* method)
+{
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_ShowDashboard_t4127025320 * L_1 = L_0->get_ShowDashboard_64();
+		String_t* L_2 = ___pchOverlayToShow0;
+		NullCheck(L_1);
+		_ShowDashboard_Invoke_m3063387343(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.UInt32 Valve.VR.CVROverlay::GetPrimaryDashboardDevice()
+extern "C"  uint32_t CVROverlay_GetPrimaryDashboardDevice_m254602369 (CVROverlay_t3377499315 * __this, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_GetPrimaryDashboardDevice_t812432855 * L_1 = L_0->get_GetPrimaryDashboardDevice_65();
+		NullCheck(L_1);
+		uint32_t L_2 = _GetPrimaryDashboardDevice_Invoke_m1183102931(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		uint32_t L_3 = V_0;
+		return L_3;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::ShowKeyboard(System.Int32,System.Int32,System.String,System.UInt32,System.String,System.Boolean,System.UInt64)
+extern "C"  int32_t CVROverlay_ShowKeyboard_m1809243788 (CVROverlay_t3377499315 * __this, int32_t ___eInputMode0, int32_t ___eLineInputMode1, String_t* ___pchDescription2, uint32_t ___unCharMax3, String_t* ___pchExistingText4, bool ___bUseMinimalMode5, uint64_t ___uUserValue6, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_ShowKeyboard_t3095606223 * L_1 = L_0->get_ShowKeyboard_66();
+		int32_t L_2 = ___eInputMode0;
+		int32_t L_3 = ___eLineInputMode1;
+		String_t* L_4 = ___pchDescription2;
+		uint32_t L_5 = ___unCharMax3;
+		String_t* L_6 = ___pchExistingText4;
+		bool L_7 = ___bUseMinimalMode5;
+		uint64_t L_8 = ___uUserValue6;
+		NullCheck(L_1);
+		int32_t L_9 = _ShowKeyboard_Invoke_m3058070664(L_1, L_2, L_3, L_4, L_5, L_6, L_7, L_8, /*hidden argument*/NULL);
+		V_0 = L_9;
+		int32_t L_10 = V_0;
+		return L_10;
+	}
+}
+// Valve.VR.EVROverlayError Valve.VR.CVROverlay::ShowKeyboardForOverlay(System.UInt64,System.Int32,System.Int32,System.String,System.UInt32,System.String,System.Boolean,System.UInt64)
+extern "C"  int32_t CVROverlay_ShowKeyboardForOverlay_m221830966 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eInputMode1, int32_t ___eLineInputMode2, String_t* ___pchDescription3, uint32_t ___unCharMax4, String_t* ___pchExistingText5, bool ___bUseMinimalMode6, uint64_t ___uUserValue7, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_ShowKeyboardForOverlay_t3006565844 * L_1 = L_0->get_ShowKeyboardForOverlay_67();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		int32_t L_3 = ___eInputMode1;
+		int32_t L_4 = ___eLineInputMode2;
+		String_t* L_5 = ___pchDescription3;
+		uint32_t L_6 = ___unCharMax4;
+		String_t* L_7 = ___pchExistingText5;
+		bool L_8 = ___bUseMinimalMode6;
+		uint64_t L_9 = ___uUserValue7;
+		NullCheck(L_1);
+		int32_t L_10 = _ShowKeyboardForOverlay_Invoke_m3628630814(L_1, L_2, L_3, L_4, L_5, L_6, L_7, L_8, L_9, /*hidden argument*/NULL);
+		V_0 = L_10;
+		int32_t L_11 = V_0;
+		return L_11;
+	}
+}
+// System.UInt32 Valve.VR.CVROverlay::GetKeyboardText(System.Text.StringBuilder,System.UInt32)
+extern "C"  uint32_t CVROverlay_GetKeyboardText_m385842865 (CVROverlay_t3377499315 * __this, StringBuilder_t1221177846 * ___pchText0, uint32_t ___cchText1, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_GetKeyboardText_t91815223 * L_1 = L_0->get_GetKeyboardText_68();
+		StringBuilder_t1221177846 * L_2 = ___pchText0;
+		uint32_t L_3 = ___cchText1;
+		NullCheck(L_1);
+		uint32_t L_4 = _GetKeyboardText_Invoke_m883285111(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		uint32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Void Valve.VR.CVROverlay::HideKeyboard()
+extern "C"  void CVROverlay_HideKeyboard_m3832091197 (CVROverlay_t3377499315 * __this, const MethodInfo* method)
+{
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_HideKeyboard_t3483797360 * L_1 = L_0->get_HideKeyboard_69();
+		NullCheck(L_1);
+		_HideKeyboard_Invoke_m1849642691(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVROverlay::SetKeyboardTransformAbsolute(Valve.VR.ETrackingUniverseOrigin,Valve.VR.HmdMatrix34_t&)
+extern "C"  void CVROverlay_SetKeyboardTransformAbsolute_m3766262999 (CVROverlay_t3377499315 * __this, int32_t ___eTrackingOrigin0, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToKeyboardTransform1, const MethodInfo* method)
+{
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetKeyboardTransformAbsolute_t443079689 * L_1 = L_0->get_SetKeyboardTransformAbsolute_70();
+		int32_t L_2 = ___eTrackingOrigin0;
+		HmdMatrix34_t_t664273062 * L_3 = ___pmatTrackingOriginToKeyboardTransform1;
+		NullCheck(L_1);
+		_SetKeyboardTransformAbsolute_Invoke_m2703238449(L_1, L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVROverlay::SetKeyboardPositionForOverlay(System.UInt64,Valve.VR.HmdRect2_t)
+extern "C"  void CVROverlay_SetKeyboardPositionForOverlay_m2918550634 (CVROverlay_t3377499315 * __this, uint64_t ___ulOverlayHandle0, HmdRect2_t_t1656020282  ___avoidRect1, const MethodInfo* method)
+{
+	{
+		IVROverlay_t3446109889 * L_0 = __this->get_address_of_FnTable_0();
+		_SetKeyboardPositionForOverlay_t3695826360 * L_1 = L_0->get_SetKeyboardPositionForOverlay_71();
+		uint64_t L_2 = ___ulOverlayHandle0;
+		HmdRect2_t_t1656020282  L_3 = ___avoidRect1;
+		NullCheck(L_1);
+		_SetKeyboardPositionForOverlay_Invoke_m24978526(L_1, L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRRenderModels::.ctor(System.IntPtr)
+extern "C"  void CVRRenderModels__ctor_m1096384136 (CVRRenderModels_t2019937239 * __this, IntPtr_t ___pInterface0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRRenderModels__ctor_m1096384136_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		IntPtr_t L_0 = ___pInterface0;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IVRRenderModels_t3420796425_0_0_0_var), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		Il2CppObject * L_2 = Marshal_PtrToStructure_m673412918(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_FnTable_0(((*(IVRRenderModels_t3420796425 *)((IVRRenderModels_t3420796425 *)UnBox(L_2, IVRRenderModels_t3420796425_il2cpp_TypeInfo_var)))));
+		return;
+	}
+}
+// Valve.VR.EVRRenderModelError Valve.VR.CVRRenderModels::LoadRenderModel_Async(System.String,System.IntPtr&)
+extern "C"  int32_t CVRRenderModels_LoadRenderModel_Async_m3420752239 (CVRRenderModels_t2019937239 * __this, String_t* ___pchRenderModelName0, IntPtr_t* ___ppRenderModel1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_LoadRenderModel_Async_t3622270247 * L_1 = L_0->get_LoadRenderModel_Async_0();
+		String_t* L_2 = ___pchRenderModelName0;
+		IntPtr_t* L_3 = ___ppRenderModel1;
+		NullCheck(L_1);
+		int32_t L_4 = _LoadRenderModel_Async_Invoke_m2270859425(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Void Valve.VR.CVRRenderModels::FreeRenderModel(System.IntPtr)
+extern "C"  void CVRRenderModels_FreeRenderModel_m1739580643 (CVRRenderModels_t2019937239 * __this, IntPtr_t ___pRenderModel0, const MethodInfo* method)
+{
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_FreeRenderModel_t2139843464 * L_1 = L_0->get_FreeRenderModel_1();
+		IntPtr_t L_2 = ___pRenderModel0;
+		NullCheck(L_1);
+		_FreeRenderModel_Invoke_m647691801(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// Valve.VR.EVRRenderModelError Valve.VR.CVRRenderModels::LoadTexture_Async(System.Int32,System.IntPtr&)
+extern "C"  int32_t CVRRenderModels_LoadTexture_Async_m2204904394 (CVRRenderModels_t2019937239 * __this, int32_t ___textureId0, IntPtr_t* ___ppTexture1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_LoadTexture_Async_t1786536393 * L_1 = L_0->get_LoadTexture_Async_2();
+		int32_t L_2 = ___textureId0;
+		IntPtr_t* L_3 = ___ppTexture1;
+		NullCheck(L_1);
+		int32_t L_4 = _LoadTexture_Async_Invoke_m403241538(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Void Valve.VR.CVRRenderModels::FreeTexture(System.IntPtr)
+extern "C"  void CVRRenderModels_FreeTexture_m4243930241 (CVRRenderModels_t2019937239 * __this, IntPtr_t ___pTexture0, const MethodInfo* method)
+{
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_FreeTexture_t4051202214 * L_1 = L_0->get_FreeTexture_3();
+		IntPtr_t L_2 = ___pTexture0;
+		NullCheck(L_1);
+		_FreeTexture_Invoke_m4122395959(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// Valve.VR.EVRRenderModelError Valve.VR.CVRRenderModels::LoadTextureD3D11_Async(System.Int32,System.IntPtr,System.IntPtr&)
+extern "C"  int32_t CVRRenderModels_LoadTextureD3D11_Async_m3595711195 (CVRRenderModels_t2019937239 * __this, int32_t ___textureId0, IntPtr_t ___pD3D11Device1, IntPtr_t* ___ppD3D11Texture2D2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_LoadTextureD3D11_Async_t2681806282 * L_1 = L_0->get_LoadTextureD3D11_Async_4();
+		int32_t L_2 = ___textureId0;
+		IntPtr_t L_3 = ___pD3D11Device1;
+		IntPtr_t* L_4 = ___ppD3D11Texture2D2;
+		NullCheck(L_1);
+		int32_t L_5 = _LoadTextureD3D11_Async_Invoke_m1272349681(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVRRenderModelError Valve.VR.CVRRenderModels::LoadIntoTextureD3D11_Async(System.Int32,System.IntPtr)
+extern "C"  int32_t CVRRenderModels_LoadIntoTextureD3D11_Async_m2167361231 (CVRRenderModels_t2019937239 * __this, int32_t ___textureId0, IntPtr_t ___pDstTexture1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_LoadIntoTextureD3D11_Async_t3518850916 * L_1 = L_0->get_LoadIntoTextureD3D11_Async_5();
+		int32_t L_2 = ___textureId0;
+		IntPtr_t L_3 = ___pDstTexture1;
+		NullCheck(L_1);
+		int32_t L_4 = _LoadIntoTextureD3D11_Async_Invoke_m179797833(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Void Valve.VR.CVRRenderModels::FreeTextureD3D11(System.IntPtr)
+extern "C"  void CVRRenderModels_FreeTextureD3D11_m3349760684 (CVRRenderModels_t2019937239 * __this, IntPtr_t ___pD3D11Texture2D0, const MethodInfo* method)
+{
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_FreeTextureD3D11_t2385986941 * L_1 = L_0->get_FreeTextureD3D11_6();
+		IntPtr_t L_2 = ___pD3D11Texture2D0;
+		NullCheck(L_1);
+		_FreeTextureD3D11_Invoke_m3491407152(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.UInt32 Valve.VR.CVRRenderModels::GetRenderModelName(System.UInt32,System.Text.StringBuilder,System.UInt32)
+extern "C"  uint32_t CVRRenderModels_GetRenderModelName_m2650870919 (CVRRenderModels_t2019937239 * __this, uint32_t ___unRenderModelIndex0, StringBuilder_t1221177846 * ___pchRenderModelName1, uint32_t ___unRenderModelNameLen2, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_GetRenderModelName_t4149685257 * L_1 = L_0->get_GetRenderModelName_7();
+		uint32_t L_2 = ___unRenderModelIndex0;
+		StringBuilder_t1221177846 * L_3 = ___pchRenderModelName1;
+		uint32_t L_4 = ___unRenderModelNameLen2;
+		NullCheck(L_1);
+		uint32_t L_5 = _GetRenderModelName_Invoke_m737357213(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		uint32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// System.UInt32 Valve.VR.CVRRenderModels::GetRenderModelCount()
+extern "C"  uint32_t CVRRenderModels_GetRenderModelCount_m1743420483 (CVRRenderModels_t2019937239 * __this, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_GetRenderModelCount_t3364784497 * L_1 = L_0->get_GetRenderModelCount_8();
+		NullCheck(L_1);
+		uint32_t L_2 = _GetRenderModelCount_Invoke_m2583358193(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		uint32_t L_3 = V_0;
+		return L_3;
+	}
+}
+// System.UInt32 Valve.VR.CVRRenderModels::GetComponentCount(System.String)
+extern "C"  uint32_t CVRRenderModels_GetComponentCount_m2224498703 (CVRRenderModels_t2019937239 * __this, String_t* ___pchRenderModelName0, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_GetComponentCount_t763371255 * L_1 = L_0->get_GetComponentCount_9();
+		String_t* L_2 = ___pchRenderModelName0;
+		NullCheck(L_1);
+		uint32_t L_3 = _GetComponentCount_Invoke_m1262259273(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		uint32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// System.UInt32 Valve.VR.CVRRenderModels::GetComponentName(System.String,System.UInt32,System.Text.StringBuilder,System.UInt32)
+extern "C"  uint32_t CVRRenderModels_GetComponentName_m2676786579 (CVRRenderModels_t2019937239 * __this, String_t* ___pchRenderModelName0, uint32_t ___unComponentIndex1, StringBuilder_t1221177846 * ___pchComponentName2, uint32_t ___unComponentNameLen3, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_GetComponentName_t3462998887 * L_1 = L_0->get_GetComponentName_10();
+		String_t* L_2 = ___pchRenderModelName0;
+		uint32_t L_3 = ___unComponentIndex1;
+		StringBuilder_t1221177846 * L_4 = ___pchComponentName2;
+		uint32_t L_5 = ___unComponentNameLen3;
+		NullCheck(L_1);
+		uint32_t L_6 = _GetComponentName_Invoke_m1403401233(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		uint32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// System.UInt64 Valve.VR.CVRRenderModels::GetComponentButtonMask(System.String,System.String)
+extern "C"  uint64_t CVRRenderModels_GetComponentButtonMask_m1060922235 (CVRRenderModels_t2019937239 * __this, String_t* ___pchRenderModelName0, String_t* ___pchComponentName1, const MethodInfo* method)
+{
+	uint64_t V_0 = 0;
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_GetComponentButtonMask_t1474657094 * L_1 = L_0->get_GetComponentButtonMask_11();
+		String_t* L_2 = ___pchRenderModelName0;
+		String_t* L_3 = ___pchComponentName1;
+		NullCheck(L_1);
+		uint64_t L_4 = _GetComponentButtonMask_Invoke_m2737362209(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		uint64_t L_5 = V_0;
+		return L_5;
+	}
+}
+// System.UInt32 Valve.VR.CVRRenderModels::GetComponentRenderModelName(System.String,System.String,System.Text.StringBuilder,System.UInt32)
+extern "C"  uint32_t CVRRenderModels_GetComponentRenderModelName_m1626900716 (CVRRenderModels_t2019937239 * __this, String_t* ___pchRenderModelName0, String_t* ___pchComponentName1, StringBuilder_t1221177846 * ___pchComponentRenderModelName2, uint32_t ___unComponentRenderModelNameLen3, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_GetComponentRenderModelName_t2860930600 * L_1 = L_0->get_GetComponentRenderModelName_12();
+		String_t* L_2 = ___pchRenderModelName0;
+		String_t* L_3 = ___pchComponentName1;
+		StringBuilder_t1221177846 * L_4 = ___pchComponentRenderModelName2;
+		uint32_t L_5 = ___unComponentRenderModelNameLen3;
+		NullCheck(L_1);
+		uint32_t L_6 = _GetComponentRenderModelName_Invoke_m863374892(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		uint32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Boolean Valve.VR.CVRRenderModels::GetComponentState(System.String,System.String,Valve.VR.VRControllerState_t&,Valve.VR.RenderModel_ControllerMode_State_t&,Valve.VR.RenderModel_ComponentState_t&)
+extern "C"  bool CVRRenderModels_GetComponentState_m1709272023 (CVRRenderModels_t2019937239 * __this, String_t* ___pchRenderModelName0, String_t* ___pchComponentName1, VRControllerState_t_t2504874220 * ___pControllerState2, RenderModel_ControllerMode_State_t_t1298199406 * ___pState3, RenderModel_ComponentState_t_t2032012879 * ___pComponentState4, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_GetComponentState_t742926735 * L_1 = L_0->get_GetComponentState_13();
+		String_t* L_2 = ___pchRenderModelName0;
+		String_t* L_3 = ___pchComponentName1;
+		VRControllerState_t_t2504874220 * L_4 = ___pControllerState2;
+		RenderModel_ControllerMode_State_t_t1298199406 * L_5 = ___pState3;
+		RenderModel_ComponentState_t_t2032012879 * L_6 = ___pComponentState4;
+		NullCheck(L_1);
+		bool L_7 = _GetComponentState_Invoke_m3166181389(L_1, L_2, L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		bool L_8 = V_0;
+		return L_8;
+	}
+}
+// System.Boolean Valve.VR.CVRRenderModels::RenderModelHasComponent(System.String,System.String)
+extern "C"  bool CVRRenderModels_RenderModelHasComponent_m2992070628 (CVRRenderModels_t2019937239 * __this, String_t* ___pchRenderModelName0, String_t* ___pchComponentName1, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_RenderModelHasComponent_t1969881317 * L_1 = L_0->get_RenderModelHasComponent_14();
+		String_t* L_2 = ___pchRenderModelName0;
+		String_t* L_3 = ___pchComponentName1;
+		NullCheck(L_1);
+		bool L_4 = _RenderModelHasComponent_Invoke_m3355715484(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		bool L_5 = V_0;
+		return L_5;
+	}
+}
+// System.UInt32 Valve.VR.CVRRenderModels::GetRenderModelThumbnailURL(System.String,System.Text.StringBuilder,System.UInt32,Valve.VR.EVRRenderModelError&)
+extern "C"  uint32_t CVRRenderModels_GetRenderModelThumbnailURL_m211339783 (CVRRenderModels_t2019937239 * __this, String_t* ___pchRenderModelName0, StringBuilder_t1221177846 * ___pchThumbnailURL1, uint32_t ___unThumbnailURLLen2, int32_t* ___peError3, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_GetRenderModelThumbnailURL_t3954674309 * L_1 = L_0->get_GetRenderModelThumbnailURL_15();
+		String_t* L_2 = ___pchRenderModelName0;
+		StringBuilder_t1221177846 * L_3 = ___pchThumbnailURL1;
+		uint32_t L_4 = ___unThumbnailURLLen2;
+		int32_t* L_5 = ___peError3;
+		NullCheck(L_1);
+		uint32_t L_6 = _GetRenderModelThumbnailURL_Invoke_m2900098077(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		uint32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// System.UInt32 Valve.VR.CVRRenderModels::GetRenderModelOriginalPath(System.String,System.Text.StringBuilder,System.UInt32,Valve.VR.EVRRenderModelError&)
+extern "C"  uint32_t CVRRenderModels_GetRenderModelOriginalPath_m868420428 (CVRRenderModels_t2019937239 * __this, String_t* ___pchRenderModelName0, StringBuilder_t1221177846 * ___pchOriginalPath1, uint32_t ___unOriginalPathLen2, int32_t* ___peError3, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_GetRenderModelOriginalPath_t4216085620 * L_1 = L_0->get_GetRenderModelOriginalPath_16();
+		String_t* L_2 = ___pchRenderModelName0;
+		StringBuilder_t1221177846 * L_3 = ___pchOriginalPath1;
+		uint32_t L_4 = ___unOriginalPathLen2;
+		int32_t* L_5 = ___peError3;
+		NullCheck(L_1);
+		uint32_t L_6 = _GetRenderModelOriginalPath_Invoke_m1583659080(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		uint32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// System.String Valve.VR.CVRRenderModels::GetRenderModelErrorNameFromEnum(Valve.VR.EVRRenderModelError)
+extern "C"  String_t* CVRRenderModels_GetRenderModelErrorNameFromEnum_m546332738 (CVRRenderModels_t2019937239 * __this, int32_t ___error0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRRenderModels_GetRenderModelErrorNameFromEnum_m546332738_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	IntPtr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVRRenderModels_t3420796425 * L_0 = __this->get_address_of_FnTable_0();
+		_GetRenderModelErrorNameFromEnum_t298277168 * L_1 = L_0->get_GetRenderModelErrorNameFromEnum_17();
+		int32_t L_2 = ___error0;
+		NullCheck(L_1);
+		IntPtr_t L_3 = _GetRenderModelErrorNameFromEnum_Invoke_m3807359218(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		IntPtr_t L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		String_t* L_5 = Marshal_PtrToStringAnsi_m2970070000(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// System.Void Valve.VR.CVRResources::.ctor(System.IntPtr)
+extern "C"  void CVRResources__ctor_m4121947409 (CVRResources_t2875708384 * __this, IntPtr_t ___pInterface0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRResources__ctor_m4121947409_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		IntPtr_t L_0 = ___pInterface0;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IVRResources_t1092978558_0_0_0_var), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		Il2CppObject * L_2 = Marshal_PtrToStructure_m673412918(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_FnTable_0(((*(IVRResources_t1092978558 *)((IVRResources_t1092978558 *)UnBox(L_2, IVRResources_t1092978558_il2cpp_TypeInfo_var)))));
+		return;
+	}
+}
+// System.UInt32 Valve.VR.CVRResources::LoadSharedResource(System.String,System.String,System.UInt32)
+extern "C"  uint32_t CVRResources_LoadSharedResource_m2868333233 (CVRResources_t2875708384 * __this, String_t* ___pchResourceName0, String_t* ___pchBuffer1, uint32_t ___unBufferLen2, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRResources_t1092978558 * L_0 = __this->get_address_of_FnTable_0();
+		_LoadSharedResource_t4289483331 * L_1 = L_0->get_LoadSharedResource_0();
+		String_t* L_2 = ___pchResourceName0;
+		String_t* L_3 = ___pchBuffer1;
+		uint32_t L_4 = ___unBufferLen2;
+		NullCheck(L_1);
+		uint32_t L_5 = _LoadSharedResource_Invoke_m517248631(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		uint32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// System.UInt32 Valve.VR.CVRResources::GetResourceFullPath(System.String,System.String,System.String,System.UInt32)
+extern "C"  uint32_t CVRResources_GetResourceFullPath_m3144905660 (CVRResources_t2875708384 * __this, String_t* ___pchResourceName0, String_t* ___pchResourceTypeDirectory1, String_t* ___pchPathBuffer2, uint32_t ___unBufferLen3, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRResources_t1092978558 * L_0 = __this->get_address_of_FnTable_0();
+		_GetResourceFullPath_t915790394 * L_1 = L_0->get_GetResourceFullPath_1();
+		String_t* L_2 = ___pchResourceName0;
+		String_t* L_3 = ___pchResourceTypeDirectory1;
+		String_t* L_4 = ___pchPathBuffer2;
+		uint32_t L_5 = ___unBufferLen3;
+		NullCheck(L_1);
+		uint32_t L_6 = _GetResourceFullPath_Invoke_m256735288(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		uint32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Void Valve.VR.CVRScreenshots::.ctor(System.IntPtr)
+extern "C"  void CVRScreenshots__ctor_m3359672019 (CVRScreenshots_t3241040508 * __this, IntPtr_t ___pInterface0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRScreenshots__ctor_m3359672019_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		IntPtr_t L_0 = ___pInterface0;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IVRScreenshots_t1006836234_0_0_0_var), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		Il2CppObject * L_2 = Marshal_PtrToStructure_m673412918(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_FnTable_0(((*(IVRScreenshots_t1006836234 *)((IVRScreenshots_t1006836234 *)UnBox(L_2, IVRScreenshots_t1006836234_il2cpp_TypeInfo_var)))));
+		return;
+	}
+}
+// Valve.VR.EVRScreenshotError Valve.VR.CVRScreenshots::RequestScreenshot(System.UInt32&,Valve.VR.EVRScreenshotType,System.String,System.String)
+extern "C"  int32_t CVRScreenshots_RequestScreenshot_m319338341 (CVRScreenshots_t3241040508 * __this, uint32_t* ___pOutScreenshotHandle0, int32_t ___type1, String_t* ___pchPreviewFilename2, String_t* ___pchVRFilename3, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint32_t* L_0 = ___pOutScreenshotHandle0;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		IVRScreenshots_t1006836234 * L_1 = __this->get_address_of_FnTable_0();
+		_RequestScreenshot_t1956857133 * L_2 = L_1->get_RequestScreenshot_0();
+		uint32_t* L_3 = ___pOutScreenshotHandle0;
+		int32_t L_4 = ___type1;
+		String_t* L_5 = ___pchPreviewFilename2;
+		String_t* L_6 = ___pchVRFilename3;
+		NullCheck(L_2);
+		int32_t L_7 = _RequestScreenshot_Invoke_m3568008551(L_2, L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		int32_t L_8 = V_0;
+		return L_8;
+	}
+}
+// Valve.VR.EVRScreenshotError Valve.VR.CVRScreenshots::HookScreenshot(Valve.VR.EVRScreenshotType[])
+extern "C"  int32_t CVRScreenshots_HookScreenshot_m2718871267 (CVRScreenshots_t3241040508 * __this, EVRScreenshotTypeU5BU5D_t2594501106* ___pSupportedTypes0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRScreenshots_t1006836234 * L_0 = __this->get_address_of_FnTable_0();
+		_HookScreenshot_t2804207343 * L_1 = L_0->get_HookScreenshot_1();
+		EVRScreenshotTypeU5BU5D_t2594501106* L_2 = ___pSupportedTypes0;
+		EVRScreenshotTypeU5BU5D_t2594501106* L_3 = ___pSupportedTypes0;
+		NullCheck(L_3);
+		NullCheck(L_1);
+		int32_t L_4 = _HookScreenshot_Invoke_m3679320638(L_1, L_2, (((int32_t)((int32_t)(((Il2CppArray *)L_3)->max_length)))), /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVRScreenshotType Valve.VR.CVRScreenshots::GetScreenshotPropertyType(System.UInt32,Valve.VR.EVRScreenshotError&)
+extern "C"  int32_t CVRScreenshots_GetScreenshotPropertyType_m3032744669 (CVRScreenshots_t3241040508 * __this, uint32_t ___screenshotHandle0, int32_t* ___pError1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRScreenshots_t1006836234 * L_0 = __this->get_address_of_FnTable_0();
+		_GetScreenshotPropertyType_t3028991757 * L_1 = L_0->get_GetScreenshotPropertyType_2();
+		uint32_t L_2 = ___screenshotHandle0;
+		int32_t* L_3 = ___pError1;
+		NullCheck(L_1);
+		int32_t L_4 = _GetScreenshotPropertyType_Invoke_m3657182003(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// System.UInt32 Valve.VR.CVRScreenshots::GetScreenshotPropertyFilename(System.UInt32,Valve.VR.EVRScreenshotPropertyFilenames,System.Text.StringBuilder,System.UInt32,Valve.VR.EVRScreenshotError&)
+extern "C"  uint32_t CVRScreenshots_GetScreenshotPropertyFilename_m3945300453 (CVRScreenshots_t3241040508 * __this, uint32_t ___screenshotHandle0, int32_t ___filenameType1, StringBuilder_t1221177846 * ___pchFilename2, uint32_t ___cchFilename3, int32_t* ___pError4, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRScreenshots_t1006836234 * L_0 = __this->get_address_of_FnTable_0();
+		_GetScreenshotPropertyFilename_t1122176780 * L_1 = L_0->get_GetScreenshotPropertyFilename_3();
+		uint32_t L_2 = ___screenshotHandle0;
+		int32_t L_3 = ___filenameType1;
+		StringBuilder_t1221177846 * L_4 = ___pchFilename2;
+		uint32_t L_5 = ___cchFilename3;
+		int32_t* L_6 = ___pError4;
+		NullCheck(L_1);
+		uint32_t L_7 = _GetScreenshotPropertyFilename_Invoke_m967838911(L_1, L_2, L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		uint32_t L_8 = V_0;
+		return L_8;
+	}
+}
+// Valve.VR.EVRScreenshotError Valve.VR.CVRScreenshots::UpdateScreenshotProgress(System.UInt32,System.Single)
+extern "C"  int32_t CVRScreenshots_UpdateScreenshotProgress_m4049945614 (CVRScreenshots_t3241040508 * __this, uint32_t ___screenshotHandle0, float ___flProgress1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRScreenshots_t1006836234 * L_0 = __this->get_address_of_FnTable_0();
+		_UpdateScreenshotProgress_t2161609358 * L_1 = L_0->get_UpdateScreenshotProgress_4();
+		uint32_t L_2 = ___screenshotHandle0;
+		float L_3 = ___flProgress1;
+		NullCheck(L_1);
+		int32_t L_4 = _UpdateScreenshotProgress_Invoke_m2005405966(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+// Valve.VR.EVRScreenshotError Valve.VR.CVRScreenshots::TakeStereoScreenshot(System.UInt32&,System.String,System.String)
+extern "C"  int32_t CVRScreenshots_TakeStereoScreenshot_m2253028306 (CVRScreenshots_t3241040508 * __this, uint32_t* ___pOutScreenshotHandle0, String_t* ___pchPreviewFilename1, String_t* ___pchVRFilename2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint32_t* L_0 = ___pOutScreenshotHandle0;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		IVRScreenshots_t1006836234 * L_1 = __this->get_address_of_FnTable_0();
+		_TakeStereoScreenshot_t3387995749 * L_2 = L_1->get_TakeStereoScreenshot_5();
+		uint32_t* L_3 = ___pOutScreenshotHandle0;
+		String_t* L_4 = ___pchPreviewFilename1;
+		String_t* L_5 = ___pchVRFilename2;
+		NullCheck(L_2);
+		int32_t L_6 = _TakeStereoScreenshot_Invoke_m2154497474(L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// Valve.VR.EVRScreenshotError Valve.VR.CVRScreenshots::SubmitScreenshot(System.UInt32,Valve.VR.EVRScreenshotType,System.String,System.String)
+extern "C"  int32_t CVRScreenshots_SubmitScreenshot_m3363223708 (CVRScreenshots_t3241040508 * __this, uint32_t ___screenshotHandle0, int32_t ___type1, String_t* ___pchSourcePreviewFilename2, String_t* ___pchSourceVRFilename3, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRScreenshots_t1006836234 * L_0 = __this->get_address_of_FnTable_0();
+		_SubmitScreenshot_t3156929320 * L_1 = L_0->get_SubmitScreenshot_6();
+		uint32_t L_2 = ___screenshotHandle0;
+		int32_t L_3 = ___type1;
+		String_t* L_4 = ___pchSourcePreviewFilename2;
+		String_t* L_5 = ___pchSourceVRFilename3;
+		NullCheck(L_1);
+		int32_t L_6 = _SubmitScreenshot_Invoke_m3479137308(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Void Valve.VR.CVRSettings::.ctor(System.IntPtr)
+extern "C"  void CVRSettings__ctor_m1895556761 (CVRSettings_t3592067458 * __this, IntPtr_t ___pInterface0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSettings__ctor_m1895556761_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		IntPtr_t L_0 = ___pInterface0;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IVRSettings_t254931744_0_0_0_var), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		Il2CppObject * L_2 = Marshal_PtrToStructure_m673412918(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_FnTable_0(((*(IVRSettings_t254931744 *)((IVRSettings_t254931744 *)UnBox(L_2, IVRSettings_t254931744_il2cpp_TypeInfo_var)))));
+		return;
+	}
+}
+// System.String Valve.VR.CVRSettings::GetSettingsErrorNameFromEnum(Valve.VR.EVRSettingsError)
+extern "C"  String_t* CVRSettings_GetSettingsErrorNameFromEnum_m1438150551 (CVRSettings_t3592067458 * __this, int32_t ___eError0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSettings_GetSettingsErrorNameFromEnum_m1438150551_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	IntPtr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVRSettings_t254931744 * L_0 = __this->get_address_of_FnTable_0();
+		_GetSettingsErrorNameFromEnum_t293614055 * L_1 = L_0->get_GetSettingsErrorNameFromEnum_0();
+		int32_t L_2 = ___eError0;
+		NullCheck(L_1);
+		IntPtr_t L_3 = _GetSettingsErrorNameFromEnum_Invoke_m3700239817(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		IntPtr_t L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		String_t* L_5 = Marshal_PtrToStringAnsi_m2970070000(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// System.Boolean Valve.VR.CVRSettings::Sync(System.Boolean,Valve.VR.EVRSettingsError&)
+extern "C"  bool CVRSettings_Sync_m4041918489 (CVRSettings_t3592067458 * __this, bool ___bForce0, int32_t* ___peError1, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRSettings_t254931744 * L_0 = __this->get_address_of_FnTable_0();
+		_Sync_t2978470277 * L_1 = L_0->get_Sync_1();
+		bool L_2 = ___bForce0;
+		int32_t* L_3 = ___peError1;
+		NullCheck(L_1);
+		bool L_4 = _Sync_Invoke_m2349166307(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		bool L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Boolean Valve.VR.CVRSettings::GetBool(System.String,System.String,System.Boolean,Valve.VR.EVRSettingsError&)
+extern "C"  bool CVRSettings_GetBool_m4118529406 (CVRSettings_t3592067458 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, bool ___bDefaultValue2, int32_t* ___peError3, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRSettings_t254931744 * L_0 = __this->get_address_of_FnTable_0();
+		_GetBool_t1034551410 * L_1 = L_0->get_GetBool_2();
+		String_t* L_2 = ___pchSection0;
+		String_t* L_3 = ___pchSettingsKey1;
+		bool L_4 = ___bDefaultValue2;
+		int32_t* L_5 = ___peError3;
+		NullCheck(L_1);
+		bool L_6 = _GetBool_Invoke_m1555658786(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		bool L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Void Valve.VR.CVRSettings::SetBool(System.String,System.String,System.Boolean,Valve.VR.EVRSettingsError&)
+extern "C"  void CVRSettings_SetBool_m2416059976 (CVRSettings_t3592067458 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, bool ___bValue2, int32_t* ___peError3, const MethodInfo* method)
+{
+	{
+		IVRSettings_t254931744 * L_0 = __this->get_address_of_FnTable_0();
+		_SetBool_t1033875974 * L_1 = L_0->get_SetBool_3();
+		String_t* L_2 = ___pchSection0;
+		String_t* L_3 = ___pchSettingsKey1;
+		bool L_4 = ___bValue2;
+		int32_t* L_5 = ___peError3;
+		NullCheck(L_1);
+		_SetBool_Invoke_m655959096(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Int32 Valve.VR.CVRSettings::GetInt32(System.String,System.String,System.Int32,Valve.VR.EVRSettingsError&)
+extern "C"  int32_t CVRSettings_GetInt32_m2887041610 (CVRSettings_t3592067458 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, int32_t ___nDefaultValue2, int32_t* ___peError3, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRSettings_t254931744 * L_0 = __this->get_address_of_FnTable_0();
+		_GetInt32_t3538756002 * L_1 = L_0->get_GetInt32_4();
+		String_t* L_2 = ___pchSection0;
+		String_t* L_3 = ___pchSettingsKey1;
+		int32_t L_4 = ___nDefaultValue2;
+		int32_t* L_5 = ___peError3;
+		NullCheck(L_1);
+		int32_t L_6 = _GetInt32_Invoke_m2290014706(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Void Valve.VR.CVRSettings::SetInt32(System.String,System.String,System.Int32,Valve.VR.EVRSettingsError&)
+extern "C"  void CVRSettings_SetInt32_m3288782648 (CVRSettings_t3592067458 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, int32_t ___nValue2, int32_t* ___peError3, const MethodInfo* method)
+{
+	{
+		IVRSettings_t254931744 * L_0 = __this->get_address_of_FnTable_0();
+		_SetInt32_t3538080526 * L_1 = L_0->get_SetInt32_5();
+		String_t* L_2 = ___pchSection0;
+		String_t* L_3 = ___pchSettingsKey1;
+		int32_t L_4 = ___nValue2;
+		int32_t* L_5 = ___peError3;
+		NullCheck(L_1);
+		_SetInt32_Invoke_m1265113624(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Single Valve.VR.CVRSettings::GetFloat(System.String,System.String,System.Single,Valve.VR.EVRSettingsError&)
+extern "C"  float CVRSettings_GetFloat_m3994393806 (CVRSettings_t3592067458 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, float ___flDefaultValue2, int32_t* ___peError3, const MethodInfo* method)
+{
+	float V_0 = 0.0f;
+	{
+		IVRSettings_t254931744 * L_0 = __this->get_address_of_FnTable_0();
+		_GetFloat_t3725422668 * L_1 = L_0->get_GetFloat_6();
+		String_t* L_2 = ___pchSection0;
+		String_t* L_3 = ___pchSettingsKey1;
+		float L_4 = ___flDefaultValue2;
+		int32_t* L_5 = ___peError3;
+		NullCheck(L_1);
+		float L_6 = _GetFloat_Invoke_m394721458(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		float L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Void Valve.VR.CVRSettings::SetFloat(System.String,System.String,System.Single,Valve.VR.EVRSettingsError&)
+extern "C"  void CVRSettings_SetFloat_m2982333976 (CVRSettings_t3592067458 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, float ___flValue2, int32_t* ___peError3, const MethodInfo* method)
+{
+	{
+		IVRSettings_t254931744 * L_0 = __this->get_address_of_FnTable_0();
+		_SetFloat_t3724747224 * L_1 = L_0->get_SetFloat_7();
+		String_t* L_2 = ___pchSection0;
+		String_t* L_3 = ___pchSettingsKey1;
+		float L_4 = ___flValue2;
+		int32_t* L_5 = ___peError3;
+		NullCheck(L_1);
+		_SetFloat_Invoke_m2641243740(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRSettings::GetString(System.String,System.String,System.Text.StringBuilder,System.UInt32,System.String,Valve.VR.EVRSettingsError&)
+extern "C"  void CVRSettings_GetString_m2723269666 (CVRSettings_t3592067458 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, StringBuilder_t1221177846 * ___pchValue2, uint32_t ___unValueLen3, String_t* ___pchDefaultValue4, int32_t* ___peError5, const MethodInfo* method)
+{
+	{
+		IVRSettings_t254931744 * L_0 = __this->get_address_of_FnTable_0();
+		_GetString_t1816180801 * L_1 = L_0->get_GetString_8();
+		String_t* L_2 = ___pchSection0;
+		String_t* L_3 = ___pchSettingsKey1;
+		StringBuilder_t1221177846 * L_4 = ___pchValue2;
+		uint32_t L_5 = ___unValueLen3;
+		String_t* L_6 = ___pchDefaultValue4;
+		int32_t* L_7 = ___peError5;
+		NullCheck(L_1);
+		_GetString_Invoke_m2275492678(L_1, L_2, L_3, L_4, L_5, L_6, L_7, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRSettings::SetString(System.String,System.String,System.String,Valve.VR.EVRSettingsError&)
+extern "C"  void CVRSettings_SetString_m807164350 (CVRSettings_t3592067458 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, String_t* ___pchValue2, int32_t* ___peError3, const MethodInfo* method)
+{
+	{
+		IVRSettings_t254931744 * L_0 = __this->get_address_of_FnTable_0();
+		_SetString_t1793856309 * L_1 = L_0->get_SetString_9();
+		String_t* L_2 = ___pchSection0;
+		String_t* L_3 = ___pchSettingsKey1;
+		String_t* L_4 = ___pchValue2;
+		int32_t* L_5 = ___peError3;
+		NullCheck(L_1);
+		_SetString_Invoke_m3835923282(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRSettings::RemoveSection(System.String,Valve.VR.EVRSettingsError&)
+extern "C"  void CVRSettings_RemoveSection_m3474010556 (CVRSettings_t3592067458 * __this, String_t* ___pchSection0, int32_t* ___peError1, const MethodInfo* method)
+{
+	{
+		IVRSettings_t254931744 * L_0 = __this->get_address_of_FnTable_0();
+		_RemoveSection_t1493649321 * L_1 = L_0->get_RemoveSection_10();
+		String_t* L_2 = ___pchSection0;
+		int32_t* L_3 = ___peError1;
+		NullCheck(L_1);
+		_RemoveSection_Invoke_m1423450968(L_1, L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRSettings::RemoveKeyInSection(System.String,System.String,Valve.VR.EVRSettingsError&)
+extern "C"  void CVRSettings_RemoveKeyInSection_m2545771328 (CVRSettings_t3592067458 * __this, String_t* ___pchSection0, String_t* ___pchSettingsKey1, int32_t* ___peError2, const MethodInfo* method)
+{
+	{
+		IVRSettings_t254931744 * L_0 = __this->get_address_of_FnTable_0();
+		_RemoveKeyInSection_t1836506429 * L_1 = L_0->get_RemoveKeyInSection_11();
+		String_t* L_2 = ___pchSection0;
+		String_t* L_3 = ___pchSettingsKey1;
+		int32_t* L_4 = ___peError2;
+		NullCheck(L_1);
+		_RemoveKeyInSection_Invoke_m3069298772(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRSystem::.ctor(System.IntPtr)
+extern "C"  void CVRSystem__ctor_m4120486769 (CVRSystem_t1953699154 * __this, IntPtr_t ___pInterface0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSystem__ctor_m4120486769_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		IntPtr_t L_0 = ___pInterface0;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IVRSystem_t3365196000_0_0_0_var), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		Il2CppObject * L_2 = Marshal_PtrToStructure_m673412918(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_FnTable_0(((*(IVRSystem_t3365196000 *)((IVRSystem_t3365196000 *)UnBox(L_2, IVRSystem_t3365196000_il2cpp_TypeInfo_var)))));
+		return;
+	}
+}
+// System.Void Valve.VR.CVRSystem::GetRecommendedRenderTargetSize(System.UInt32&,System.UInt32&)
+extern "C"  void CVRSystem_GetRecommendedRenderTargetSize_m1318799354 (CVRSystem_t1953699154 * __this, uint32_t* ___pnWidth0, uint32_t* ___pnHeight1, const MethodInfo* method)
+{
+	{
+		uint32_t* L_0 = ___pnWidth0;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		uint32_t* L_1 = ___pnHeight1;
+		*((int32_t*)(L_1)) = (int32_t)0;
+		IVRSystem_t3365196000 * L_2 = __this->get_address_of_FnTable_0();
+		_GetRecommendedRenderTargetSize_t4195542627 * L_3 = L_2->get_GetRecommendedRenderTargetSize_0();
+		uint32_t* L_4 = ___pnWidth0;
+		uint32_t* L_5 = ___pnHeight1;
+		NullCheck(L_3);
+		_GetRecommendedRenderTargetSize_Invoke_m966588502(L_3, L_4, L_5, /*hidden argument*/NULL);
+		return;
+	}
+}
+// Valve.VR.HmdMatrix44_t Valve.VR.CVRSystem::GetProjectionMatrix(Valve.VR.EVREye,System.Single,System.Single,Valve.VR.EGraphicsAPIConvention)
+extern "C"  HmdMatrix44_t_t664273159  CVRSystem_GetProjectionMatrix_m3563217132 (CVRSystem_t1953699154 * __this, int32_t ___eEye0, float ___fNearZ1, float ___fFarZ2, int32_t ___eProjType3, const MethodInfo* method)
+{
+	HmdMatrix44_t_t664273159  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetProjectionMatrix_t2621141914 * L_1 = L_0->get_GetProjectionMatrix_1();
+		int32_t L_2 = ___eEye0;
+		float L_3 = ___fNearZ1;
+		float L_4 = ___fFarZ2;
+		int32_t L_5 = ___eProjType3;
+		NullCheck(L_1);
+		HmdMatrix44_t_t664273159  L_6 = _GetProjectionMatrix_Invoke_m1053398920(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		HmdMatrix44_t_t664273159  L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Void Valve.VR.CVRSystem::GetProjectionRaw(Valve.VR.EVREye,System.Single&,System.Single&,System.Single&,System.Single&)
+extern "C"  void CVRSystem_GetProjectionRaw_m628910906 (CVRSystem_t1953699154 * __this, int32_t ___eEye0, float* ___pfLeft1, float* ___pfRight2, float* ___pfTop3, float* ___pfBottom4, const MethodInfo* method)
+{
+	{
+		float* L_0 = ___pfLeft1;
+		*((float*)(L_0)) = (float)(0.0f);
+		float* L_1 = ___pfRight2;
+		*((float*)(L_1)) = (float)(0.0f);
+		float* L_2 = ___pfTop3;
+		*((float*)(L_2)) = (float)(0.0f);
+		float* L_3 = ___pfBottom4;
+		*((float*)(L_3)) = (float)(0.0f);
+		IVRSystem_t3365196000 * L_4 = __this->get_address_of_FnTable_0();
+		_GetProjectionRaw_t3426995441 * L_5 = L_4->get_GetProjectionRaw_2();
+		int32_t L_6 = ___eEye0;
+		float* L_7 = ___pfLeft1;
+		float* L_8 = ___pfRight2;
+		float* L_9 = ___pfTop3;
+		float* L_10 = ___pfBottom4;
+		NullCheck(L_5);
+		_GetProjectionRaw_Invoke_m2123826138(L_5, L_6, L_7, L_8, L_9, L_10, /*hidden argument*/NULL);
+		return;
+	}
+}
+// Valve.VR.DistortionCoordinates_t Valve.VR.CVRSystem::ComputeDistortion(Valve.VR.EVREye,System.Single,System.Single)
+extern "C"  DistortionCoordinates_t_t2253454723  CVRSystem_ComputeDistortion_m2480196555 (CVRSystem_t1953699154 * __this, int32_t ___eEye0, float ___fU1, float ___fV2, const MethodInfo* method)
+{
+	DistortionCoordinates_t_t2253454723  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_ComputeDistortion_t3576284924 * L_1 = L_0->get_ComputeDistortion_3();
+		int32_t L_2 = ___eEye0;
+		float L_3 = ___fU1;
+		float L_4 = ___fV2;
+		NullCheck(L_1);
+		DistortionCoordinates_t_t2253454723  L_5 = _ComputeDistortion_Invoke_m2654930161(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		DistortionCoordinates_t_t2253454723  L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.HmdMatrix34_t Valve.VR.CVRSystem::GetEyeToHeadTransform(Valve.VR.EVREye)
+extern "C"  HmdMatrix34_t_t664273062  CVRSystem_GetEyeToHeadTransform_m3083920074 (CVRSystem_t1953699154 * __this, int32_t ___eEye0, const MethodInfo* method)
+{
+	HmdMatrix34_t_t664273062  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetEyeToHeadTransform_t3057184772 * L_1 = L_0->get_GetEyeToHeadTransform_4();
+		int32_t L_2 = ___eEye0;
+		NullCheck(L_1);
+		HmdMatrix34_t_t664273062  L_3 = _GetEyeToHeadTransform_Invoke_m1466484146(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		HmdMatrix34_t_t664273062  L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::GetTimeSinceLastVsync(System.Single&,System.UInt64&)
+extern "C"  bool CVRSystem_GetTimeSinceLastVsync_m4036117927 (CVRSystem_t1953699154 * __this, float* ___pfSecondsSinceLastVsync0, uint64_t* ___pulFrameCounter1, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		float* L_0 = ___pfSecondsSinceLastVsync0;
+		*((float*)(L_0)) = (float)(0.0f);
+		uint64_t* L_1 = ___pulFrameCounter1;
+		*((int64_t*)(L_1)) = (int64_t)(((int64_t)((int64_t)0)));
+		IVRSystem_t3365196000 * L_2 = __this->get_address_of_FnTable_0();
+		_GetTimeSinceLastVsync_t1215702688 * L_3 = L_2->get_GetTimeSinceLastVsync_5();
+		float* L_4 = ___pfSecondsSinceLastVsync0;
+		uint64_t* L_5 = ___pulFrameCounter1;
+		NullCheck(L_3);
+		bool L_6 = _GetTimeSinceLastVsync_Invoke_m919489365(L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		bool L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Int32 Valve.VR.CVRSystem::GetD3D9AdapterIndex()
+extern "C"  int32_t CVRSystem_GetD3D9AdapterIndex_m1929509814 (CVRSystem_t1953699154 * __this, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetD3D9AdapterIndex_t4234979703 * L_1 = L_0->get_GetD3D9AdapterIndex_6();
+		NullCheck(L_1);
+		int32_t L_2 = _GetD3D9AdapterIndex_Invoke_m719574642(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		int32_t L_3 = V_0;
+		return L_3;
+	}
+}
+// System.Void Valve.VR.CVRSystem::GetDXGIOutputInfo(System.Int32&)
+extern "C"  void CVRSystem_GetDXGIOutputInfo_m2027804245 (CVRSystem_t1953699154 * __this, int32_t* ___pnAdapterIndex0, const MethodInfo* method)
+{
+	{
+		int32_t* L_0 = ___pnAdapterIndex0;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		IVRSystem_t3365196000 * L_1 = __this->get_address_of_FnTable_0();
+		_GetDXGIOutputInfo_t1897151767 * L_2 = L_1->get_GetDXGIOutputInfo_7();
+		int32_t* L_3 = ___pnAdapterIndex0;
+		NullCheck(L_2);
+		_GetDXGIOutputInfo_Invoke_m1105593999(L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::IsDisplayOnDesktop()
+extern "C"  bool CVRSystem_IsDisplayOnDesktop_m1138454368 (CVRSystem_t1953699154 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_IsDisplayOnDesktop_t2551312917 * L_1 = L_0->get_IsDisplayOnDesktop_8();
+		NullCheck(L_1);
+		bool L_2 = _IsDisplayOnDesktop_Invoke_m2406991080(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::SetDisplayVisibility(System.Boolean)
+extern "C"  bool CVRSystem_SetDisplayVisibility_m1889410314 (CVRSystem_t1953699154 * __this, bool ___bIsVisibleOnDesktop0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_SetDisplayVisibility_t3986281708 * L_1 = L_0->get_SetDisplayVisibility_9();
+		bool L_2 = ___bIsVisibleOnDesktop0;
+		NullCheck(L_1);
+		bool L_3 = _SetDisplayVisibility_Invoke_m3501241790(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Void Valve.VR.CVRSystem::GetDeviceToAbsoluteTrackingPose(Valve.VR.ETrackingUniverseOrigin,System.Single,Valve.VR.TrackedDevicePose_t[])
+extern "C"  void CVRSystem_GetDeviceToAbsoluteTrackingPose_m1394733251 (CVRSystem_t1953699154 * __this, int32_t ___eOrigin0, float ___fPredictedSecondsToPhotonsFromNow1, TrackedDevicePose_tU5BU5D_t2897272049* ___pTrackedDevicePoseArray2, const MethodInfo* method)
+{
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetDeviceToAbsoluteTrackingPose_t1432625068 * L_1 = L_0->get_GetDeviceToAbsoluteTrackingPose_10();
+		int32_t L_2 = ___eOrigin0;
+		float L_3 = ___fPredictedSecondsToPhotonsFromNow1;
+		TrackedDevicePose_tU5BU5D_t2897272049* L_4 = ___pTrackedDevicePoseArray2;
+		TrackedDevicePose_tU5BU5D_t2897272049* L_5 = ___pTrackedDevicePoseArray2;
+		NullCheck(L_5);
+		NullCheck(L_1);
+		_GetDeviceToAbsoluteTrackingPose_Invoke_m1024276137(L_1, L_2, L_3, L_4, (((int32_t)((int32_t)(((Il2CppArray *)L_5)->max_length)))), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRSystem::ResetSeatedZeroPose()
+extern "C"  void CVRSystem_ResetSeatedZeroPose_m564518083 (CVRSystem_t1953699154 * __this, const MethodInfo* method)
+{
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_ResetSeatedZeroPose_t3471614486 * L_1 = L_0->get_ResetSeatedZeroPose_11();
+		NullCheck(L_1);
+		_ResetSeatedZeroPose_Invoke_m1699166889(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// Valve.VR.HmdMatrix34_t Valve.VR.CVRSystem::GetSeatedZeroPoseToStandingAbsoluteTrackingPose()
+extern "C"  HmdMatrix34_t_t664273062  CVRSystem_GetSeatedZeroPoseToStandingAbsoluteTrackingPose_m622816239 (CVRSystem_t1953699154 * __this, const MethodInfo* method)
+{
+	HmdMatrix34_t_t664273062  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetSeatedZeroPoseToStandingAbsoluteTrackingPose_t102610835 * L_1 = L_0->get_GetSeatedZeroPoseToStandingAbsoluteTrackingPose_12();
+		NullCheck(L_1);
+		HmdMatrix34_t_t664273062  L_2 = _GetSeatedZeroPoseToStandingAbsoluteTrackingPose_Invoke_m790511217(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		HmdMatrix34_t_t664273062  L_3 = V_0;
+		return L_3;
+	}
+}
+// Valve.VR.HmdMatrix34_t Valve.VR.CVRSystem::GetRawZeroPoseToStandingAbsoluteTrackingPose()
+extern "C"  HmdMatrix34_t_t664273062  CVRSystem_GetRawZeroPoseToStandingAbsoluteTrackingPose_m2470703845 (CVRSystem_t1953699154 * __this, const MethodInfo* method)
+{
+	HmdMatrix34_t_t664273062  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetRawZeroPoseToStandingAbsoluteTrackingPose_t1986385273 * L_1 = L_0->get_GetRawZeroPoseToStandingAbsoluteTrackingPose_13();
+		NullCheck(L_1);
+		HmdMatrix34_t_t664273062  L_2 = _GetRawZeroPoseToStandingAbsoluteTrackingPose_Invoke_m1710766583(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		HmdMatrix34_t_t664273062  L_3 = V_0;
+		return L_3;
+	}
+}
+// System.UInt32 Valve.VR.CVRSystem::GetSortedTrackedDeviceIndicesOfClass(Valve.VR.ETrackedDeviceClass,System.UInt32[],System.UInt32)
+extern "C"  uint32_t CVRSystem_GetSortedTrackedDeviceIndicesOfClass_m2204700238 (CVRSystem_t1953699154 * __this, int32_t ___eTrackedDeviceClass0, UInt32U5BU5D_t59386216* ___punTrackedDeviceIndexArray1, uint32_t ___unRelativeToTrackedDeviceIndex2, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetSortedTrackedDeviceIndicesOfClass_t3492202929 * L_1 = L_0->get_GetSortedTrackedDeviceIndicesOfClass_14();
+		int32_t L_2 = ___eTrackedDeviceClass0;
+		UInt32U5BU5D_t59386216* L_3 = ___punTrackedDeviceIndexArray1;
+		UInt32U5BU5D_t59386216* L_4 = ___punTrackedDeviceIndexArray1;
+		NullCheck(L_4);
+		uint32_t L_5 = ___unRelativeToTrackedDeviceIndex2;
+		NullCheck(L_1);
+		uint32_t L_6 = _GetSortedTrackedDeviceIndicesOfClass_Invoke_m1972207342(L_1, L_2, L_3, (((int32_t)((int32_t)(((Il2CppArray *)L_4)->max_length)))), L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		uint32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// Valve.VR.EDeviceActivityLevel Valve.VR.CVRSystem::GetTrackedDeviceActivityLevel(System.UInt32)
+extern "C"  int32_t CVRSystem_GetTrackedDeviceActivityLevel_m670441993 (CVRSystem_t1953699154 * __this, uint32_t ___unDeviceId0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetTrackedDeviceActivityLevel_t212130385 * L_1 = L_0->get_GetTrackedDeviceActivityLevel_15();
+		uint32_t L_2 = ___unDeviceId0;
+		NullCheck(L_1);
+		int32_t L_3 = _GetTrackedDeviceActivityLevel_Invoke_m1963616583(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Void Valve.VR.CVRSystem::ApplyTransform(Valve.VR.TrackedDevicePose_t&,Valve.VR.TrackedDevicePose_t&,Valve.VR.HmdMatrix34_t&)
+extern "C"  void CVRSystem_ApplyTransform_m1457793515 (CVRSystem_t1953699154 * __this, TrackedDevicePose_t_t1668551120 * ___pOutputPose0, TrackedDevicePose_t_t1668551120 * ___pTrackedDevicePose1, HmdMatrix34_t_t664273062 * ___pTransform2, const MethodInfo* method)
+{
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_ApplyTransform_t1439808290 * L_1 = L_0->get_ApplyTransform_16();
+		TrackedDevicePose_t_t1668551120 * L_2 = ___pOutputPose0;
+		TrackedDevicePose_t_t1668551120 * L_3 = ___pTrackedDevicePose1;
+		HmdMatrix34_t_t664273062 * L_4 = ___pTransform2;
+		NullCheck(L_1);
+		_ApplyTransform_Invoke_m847725745(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.UInt32 Valve.VR.CVRSystem::GetTrackedDeviceIndexForControllerRole(Valve.VR.ETrackedControllerRole)
+extern "C"  uint32_t CVRSystem_GetTrackedDeviceIndexForControllerRole_m3935654002 (CVRSystem_t1953699154 * __this, int32_t ___unDeviceType0, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetTrackedDeviceIndexForControllerRole_t3232960147 * L_1 = L_0->get_GetTrackedDeviceIndexForControllerRole_17();
+		int32_t L_2 = ___unDeviceType0;
+		NullCheck(L_1);
+		uint32_t L_3 = _GetTrackedDeviceIndexForControllerRole_Invoke_m176976398(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		uint32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// Valve.VR.ETrackedControllerRole Valve.VR.CVRSystem::GetControllerRoleForTrackedDeviceIndex(System.UInt32)
+extern "C"  int32_t CVRSystem_GetControllerRoleForTrackedDeviceIndex_m3003568032 (CVRSystem_t1953699154 * __this, uint32_t ___unDeviceIndex0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetControllerRoleForTrackedDeviceIndex_t1728202579 * L_1 = L_0->get_GetControllerRoleForTrackedDeviceIndex_18();
+		uint32_t L_2 = ___unDeviceIndex0;
+		NullCheck(L_1);
+		int32_t L_3 = _GetControllerRoleForTrackedDeviceIndex_Invoke_m3556644340(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// Valve.VR.ETrackedDeviceClass Valve.VR.CVRSystem::GetTrackedDeviceClass(System.UInt32)
+extern "C"  int32_t CVRSystem_GetTrackedDeviceClass_m241095955 (CVRSystem_t1953699154 * __this, uint32_t ___unDeviceIndex0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetTrackedDeviceClass_t1455580370 * L_1 = L_0->get_GetTrackedDeviceClass_19();
+		uint32_t L_2 = ___unDeviceIndex0;
+		NullCheck(L_1);
+		int32_t L_3 = _GetTrackedDeviceClass_Invoke_m4065964317(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::IsTrackedDeviceConnected(System.UInt32)
+extern "C"  bool CVRSystem_IsTrackedDeviceConnected_m482170164 (CVRSystem_t1953699154 * __this, uint32_t ___unDeviceIndex0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_IsTrackedDeviceConnected_t459208129 * L_1 = L_0->get_IsTrackedDeviceConnected_20();
+		uint32_t L_2 = ___unDeviceIndex0;
+		NullCheck(L_1);
+		bool L_3 = _IsTrackedDeviceConnected_Invoke_m4201182380(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::GetBoolTrackedDeviceProperty(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+extern "C"  bool CVRSystem_GetBoolTrackedDeviceProperty_m4170119580 (CVRSystem_t1953699154 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetBoolTrackedDeviceProperty_t2236257287 * L_1 = L_0->get_GetBoolTrackedDeviceProperty_21();
+		uint32_t L_2 = ___unDeviceIndex0;
+		int32_t L_3 = ___prop1;
+		int32_t* L_4 = ___pError2;
+		NullCheck(L_1);
+		bool L_5 = _GetBoolTrackedDeviceProperty_Invoke_m3076620384(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		bool L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Single Valve.VR.CVRSystem::GetFloatTrackedDeviceProperty(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+extern "C"  float CVRSystem_GetFloatTrackedDeviceProperty_m1121881346 (CVRSystem_t1953699154 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const MethodInfo* method)
+{
+	float V_0 = 0.0f;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetFloatTrackedDeviceProperty_t1406950913 * L_1 = L_0->get_GetFloatTrackedDeviceProperty_22();
+		uint32_t L_2 = ___unDeviceIndex0;
+		int32_t L_3 = ___prop1;
+		int32_t* L_4 = ___pError2;
+		NullCheck(L_1);
+		float L_5 = _GetFloatTrackedDeviceProperty_Invoke_m1452065394(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		float L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Int32 Valve.VR.CVRSystem::GetInt32TrackedDeviceProperty(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+extern "C"  int32_t CVRSystem_GetInt32TrackedDeviceProperty_m4118258672 (CVRSystem_t1953699154 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetInt32TrackedDeviceProperty_t2396289227 * L_1 = L_0->get_GetInt32TrackedDeviceProperty_23();
+		uint32_t L_2 = ___unDeviceIndex0;
+		int32_t L_3 = ___prop1;
+		int32_t* L_4 = ___pError2;
+		NullCheck(L_1);
+		int32_t L_5 = _GetInt32TrackedDeviceProperty_Invoke_m1839589496(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// System.UInt64 Valve.VR.CVRSystem::GetUint64TrackedDeviceProperty(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+extern "C"  uint64_t CVRSystem_GetUint64TrackedDeviceProperty_m3085551384 (CVRSystem_t1953699154 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const MethodInfo* method)
+{
+	uint64_t V_0 = 0;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetUint64TrackedDeviceProperty_t537540785 * L_1 = L_0->get_GetUint64TrackedDeviceProperty_24();
+		uint32_t L_2 = ___unDeviceIndex0;
+		int32_t L_3 = ___prop1;
+		int32_t* L_4 = ___pError2;
+		NullCheck(L_1);
+		uint64_t L_5 = _GetUint64TrackedDeviceProperty_Invoke_m4096777656(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		uint64_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.HmdMatrix34_t Valve.VR.CVRSystem::GetMatrix34TrackedDeviceProperty(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+extern "C"  HmdMatrix34_t_t664273062  CVRSystem_GetMatrix34TrackedDeviceProperty_m3408240831 (CVRSystem_t1953699154 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const MethodInfo* method)
+{
+	HmdMatrix34_t_t664273062  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetMatrix34TrackedDeviceProperty_t3426445457 * L_1 = L_0->get_GetMatrix34TrackedDeviceProperty_25();
+		uint32_t L_2 = ___unDeviceIndex0;
+		int32_t L_3 = ___prop1;
+		int32_t* L_4 = ___pError2;
+		NullCheck(L_1);
+		HmdMatrix34_t_t664273062  L_5 = _GetMatrix34TrackedDeviceProperty_Invoke_m1637542869(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		HmdMatrix34_t_t664273062  L_6 = V_0;
+		return L_6;
+	}
+}
+// System.UInt32 Valve.VR.CVRSystem::GetStringTrackedDeviceProperty(System.UInt32,Valve.VR.ETrackedDeviceProperty,System.Text.StringBuilder,System.UInt32,Valve.VR.ETrackedPropertyError&)
+extern "C"  uint32_t CVRSystem_GetStringTrackedDeviceProperty_m153820796 (CVRSystem_t1953699154 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, StringBuilder_t1221177846 * ___pchValue2, uint32_t ___unBufferSize3, int32_t* ___pError4, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetStringTrackedDeviceProperty_t87797800 * L_1 = L_0->get_GetStringTrackedDeviceProperty_26();
+		uint32_t L_2 = ___unDeviceIndex0;
+		int32_t L_3 = ___prop1;
+		StringBuilder_t1221177846 * L_4 = ___pchValue2;
+		uint32_t L_5 = ___unBufferSize3;
+		int32_t* L_6 = ___pError4;
+		NullCheck(L_1);
+		uint32_t L_7 = _GetStringTrackedDeviceProperty_Invoke_m2680724536(L_1, L_2, L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		uint32_t L_8 = V_0;
+		return L_8;
+	}
+}
+// System.String Valve.VR.CVRSystem::GetPropErrorNameFromEnum(Valve.VR.ETrackedPropertyError)
+extern "C"  String_t* CVRSystem_GetPropErrorNameFromEnum_m610771491 (CVRSystem_t1953699154 * __this, int32_t ___error0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSystem_GetPropErrorNameFromEnum_m610771491_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	IntPtr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetPropErrorNameFromEnum_t1193025139 * L_1 = L_0->get_GetPropErrorNameFromEnum_27();
+		int32_t L_2 = ___error0;
+		NullCheck(L_1);
+		IntPtr_t L_3 = _GetPropErrorNameFromEnum_Invoke_m17366593(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		IntPtr_t L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		String_t* L_5 = Marshal_PtrToStringAnsi_m2970070000(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::PollNextEvent(Valve.VR.VREvent_t&,System.UInt32)
+extern "C"  bool CVRSystem_PollNextEvent_m175596206 (CVRSystem_t1953699154 * __this, VREvent_t_t3405266389 * ___pEvent0, uint32_t ___uncbVREvent1, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_PollNextEvent_t3908295690 * L_1 = L_0->get_PollNextEvent_28();
+		VREvent_t_t3405266389 * L_2 = ___pEvent0;
+		uint32_t L_3 = ___uncbVREvent1;
+		NullCheck(L_1);
+		bool L_4 = _PollNextEvent_Invoke_m3919902722(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		bool L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::PollNextEventWithPose(Valve.VR.ETrackingUniverseOrigin,Valve.VR.VREvent_t&,System.UInt32,Valve.VR.TrackedDevicePose_t&)
+extern "C"  bool CVRSystem_PollNextEventWithPose_m4268542954 (CVRSystem_t1953699154 * __this, int32_t ___eOrigin0, VREvent_t_t3405266389 * ___pEvent1, uint32_t ___uncbVREvent2, TrackedDevicePose_t_t1668551120 * ___pTrackedDevicePose3, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_PollNextEventWithPose_t2759121141 * L_1 = L_0->get_PollNextEventWithPose_29();
+		int32_t L_2 = ___eOrigin0;
+		VREvent_t_t3405266389 * L_3 = ___pEvent1;
+		uint32_t L_4 = ___uncbVREvent2;
+		TrackedDevicePose_t_t1668551120 * L_5 = ___pTrackedDevicePose3;
+		NullCheck(L_1);
+		bool L_6 = _PollNextEventWithPose_Invoke_m913111222(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		bool L_7 = V_0;
+		return L_7;
+	}
+}
+// System.String Valve.VR.CVRSystem::GetEventTypeNameFromEnum(Valve.VR.EVREventType)
+extern "C"  String_t* CVRSystem_GetEventTypeNameFromEnum_m2885419343 (CVRSystem_t1953699154 * __this, int32_t ___eType0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSystem_GetEventTypeNameFromEnum_m2885419343_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	IntPtr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetEventTypeNameFromEnum_t1950138544 * L_1 = L_0->get_GetEventTypeNameFromEnum_30();
+		int32_t L_2 = ___eType0;
+		NullCheck(L_1);
+		IntPtr_t L_3 = _GetEventTypeNameFromEnum_Invoke_m1389034017(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		IntPtr_t L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		String_t* L_5 = Marshal_PtrToStringAnsi_m2970070000(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// Valve.VR.HiddenAreaMesh_t Valve.VR.CVRSystem::GetHiddenAreaMesh(Valve.VR.EVREye)
+extern "C"  HiddenAreaMesh_t_t3319190843  CVRSystem_GetHiddenAreaMesh_m2981396573 (CVRSystem_t1953699154 * __this, int32_t ___eEye0, const MethodInfo* method)
+{
+	HiddenAreaMesh_t_t3319190843  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetHiddenAreaMesh_t1813422502 * L_1 = L_0->get_GetHiddenAreaMesh_31();
+		int32_t L_2 = ___eEye0;
+		NullCheck(L_1);
+		HiddenAreaMesh_t_t3319190843  L_3 = _GetHiddenAreaMesh_Invoke_m796412883(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		HiddenAreaMesh_t_t3319190843  L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::GetControllerState(System.UInt32,Valve.VR.VRControllerState_t&)
+extern "C"  bool CVRSystem_GetControllerState_m1419890400 (CVRSystem_t1953699154 * __this, uint32_t ___unControllerDeviceIndex0, VRControllerState_t_t2504874220 * ___pControllerState1, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetControllerState_t3891090487 * L_1 = L_0->get_GetControllerState_32();
+		uint32_t L_2 = ___unControllerDeviceIndex0;
+		VRControllerState_t_t2504874220 * L_3 = ___pControllerState1;
+		NullCheck(L_1);
+		bool L_4 = _GetControllerState_Invoke_m1248338520(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		bool L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::GetControllerStateWithPose(Valve.VR.ETrackingUniverseOrigin,System.UInt32,Valve.VR.VRControllerState_t&,Valve.VR.TrackedDevicePose_t&)
+extern "C"  bool CVRSystem_GetControllerStateWithPose_m1299878122 (CVRSystem_t1953699154 * __this, int32_t ___eOrigin0, uint32_t ___unControllerDeviceIndex1, VRControllerState_t_t2504874220 * ___pControllerState2, TrackedDevicePose_t_t1668551120 * ___pTrackedDevicePose3, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetControllerStateWithPose_t4079915850 * L_1 = L_0->get_GetControllerStateWithPose_33();
+		int32_t L_2 = ___eOrigin0;
+		uint32_t L_3 = ___unControllerDeviceIndex1;
+		VRControllerState_t_t2504874220 * L_4 = ___pControllerState2;
+		TrackedDevicePose_t_t1668551120 * L_5 = ___pTrackedDevicePose3;
+		NullCheck(L_1);
+		bool L_6 = _GetControllerStateWithPose_Invoke_m3615205982(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		bool L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Void Valve.VR.CVRSystem::TriggerHapticPulse(System.UInt32,System.UInt32,System.Char)
+extern "C"  void CVRSystem_TriggerHapticPulse_m95152028 (CVRSystem_t1953699154 * __this, uint32_t ___unControllerDeviceIndex0, uint32_t ___unAxisId1, Il2CppChar ___usDurationMicroSec2, const MethodInfo* method)
+{
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_TriggerHapticPulse_t158863722 * L_1 = L_0->get_TriggerHapticPulse_34();
+		uint32_t L_2 = ___unControllerDeviceIndex0;
+		uint32_t L_3 = ___unAxisId1;
+		Il2CppChar L_4 = ___usDurationMicroSec2;
+		NullCheck(L_1);
+		_TriggerHapticPulse_Invoke_m1441651912(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String Valve.VR.CVRSystem::GetButtonIdNameFromEnum(Valve.VR.EVRButtonId)
+extern "C"  String_t* CVRSystem_GetButtonIdNameFromEnum_m3649813943 (CVRSystem_t1953699154 * __this, int32_t ___eButtonId0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSystem_GetButtonIdNameFromEnum_m3649813943_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	IntPtr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetButtonIdNameFromEnum_t195009473 * L_1 = L_0->get_GetButtonIdNameFromEnum_35();
+		int32_t L_2 = ___eButtonId0;
+		NullCheck(L_1);
+		IntPtr_t L_3 = _GetButtonIdNameFromEnum_Invoke_m1526772457(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		IntPtr_t L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		String_t* L_5 = Marshal_PtrToStringAnsi_m2970070000(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// System.String Valve.VR.CVRSystem::GetControllerAxisTypeNameFromEnum(Valve.VR.EVRControllerAxisType)
+extern "C"  String_t* CVRSystem_GetControllerAxisTypeNameFromEnum_m956801871 (CVRSystem_t1953699154 * __this, int32_t ___eAxisType0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSystem_GetControllerAxisTypeNameFromEnum_m956801871_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	IntPtr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_GetControllerAxisTypeNameFromEnum_t3568402941 * L_1 = L_0->get_GetControllerAxisTypeNameFromEnum_36();
+		int32_t L_2 = ___eAxisType0;
+		NullCheck(L_1);
+		IntPtr_t L_3 = _GetControllerAxisTypeNameFromEnum_Invoke_m866337217(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		IntPtr_t L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		String_t* L_5 = Marshal_PtrToStringAnsi_m2970070000(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::CaptureInputFocus()
+extern "C"  bool CVRSystem_CaptureInputFocus_m3939190405 (CVRSystem_t1953699154 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_CaptureInputFocus_t2994096092 * L_1 = L_0->get_CaptureInputFocus_37();
+		NullCheck(L_1);
+		bool L_2 = _CaptureInputFocus_Invoke_m2419560511(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+// System.Void Valve.VR.CVRSystem::ReleaseInputFocus()
+extern "C"  void CVRSystem_ReleaseInputFocus_m2825303466 (CVRSystem_t1953699154 * __this, const MethodInfo* method)
+{
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_ReleaseInputFocus_t580725753 * L_1 = L_0->get_ReleaseInputFocus_38();
+		NullCheck(L_1);
+		_ReleaseInputFocus_Invoke_m915621514(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::IsInputFocusCapturedByAnotherProcess()
+extern "C"  bool CVRSystem_IsInputFocusCapturedByAnotherProcess_m2504492678 (CVRSystem_t1953699154 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_IsInputFocusCapturedByAnotherProcess_t84136089 * L_1 = L_0->get_IsInputFocusCapturedByAnotherProcess_39();
+		NullCheck(L_1);
+		bool L_2 = _IsInputFocusCapturedByAnotherProcess_Invoke_m3070085970(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+// System.UInt32 Valve.VR.CVRSystem::DriverDebugRequest(System.UInt32,System.String,System.String,System.UInt32)
+extern "C"  uint32_t CVRSystem_DriverDebugRequest_m2133849058 (CVRSystem_t1953699154 * __this, uint32_t ___unDeviceIndex0, String_t* ___pchRequest1, String_t* ___pchResponseBuffer2, uint32_t ___unResponseBufferSize3, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_DriverDebugRequest_t4049208724 * L_1 = L_0->get_DriverDebugRequest_40();
+		uint32_t L_2 = ___unDeviceIndex0;
+		String_t* L_3 = ___pchRequest1;
+		String_t* L_4 = ___pchResponseBuffer2;
+		uint32_t L_5 = ___unResponseBufferSize3;
+		NullCheck(L_1);
+		uint32_t L_6 = _DriverDebugRequest_Invoke_m147586078(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		uint32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// Valve.VR.EVRFirmwareError Valve.VR.CVRSystem::PerformFirmwareUpdate(System.UInt32)
+extern "C"  int32_t CVRSystem_PerformFirmwareUpdate_m1917219553 (CVRSystem_t1953699154 * __this, uint32_t ___unDeviceIndex0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_PerformFirmwareUpdate_t673402879 * L_1 = L_0->get_PerformFirmwareUpdate_41();
+		uint32_t L_2 = ___unDeviceIndex0;
+		NullCheck(L_1);
+		int32_t L_3 = _PerformFirmwareUpdate_Invoke_m2901585111(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Void Valve.VR.CVRSystem::AcknowledgeQuit_Exiting()
+extern "C"  void CVRSystem_AcknowledgeQuit_Exiting_m1535506281 (CVRSystem_t1953699154 * __this, const MethodInfo* method)
+{
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_AcknowledgeQuit_Exiting_t1109677234 * L_1 = L_0->get_AcknowledgeQuit_Exiting_42();
+		NullCheck(L_1);
+		_AcknowledgeQuit_Exiting_Invoke_m3634457859(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRSystem::AcknowledgeQuit_UserPrompt()
+extern "C"  void CVRSystem_AcknowledgeQuit_UserPrompt_m1742226426 (CVRSystem_t1953699154 * __this, const MethodInfo* method)
+{
+	{
+		IVRSystem_t3365196000 * L_0 = __this->get_address_of_FnTable_0();
+		_AcknowledgeQuit_UserPrompt_t90686541 * L_1 = L_0->get_AcknowledgeQuit_UserPrompt_43();
+		NullCheck(L_1);
+		_AcknowledgeQuit_UserPrompt_Invoke_m1258190362(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Valve.VR.CVRTrackedCamera::.ctor(System.IntPtr)
+extern "C"  void CVRTrackedCamera__ctor_m2799805971 (CVRTrackedCamera_t2050215972 * __this, IntPtr_t ___pInterface0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRTrackedCamera__ctor_m2799805971_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		IntPtr_t L_0 = ___pInterface0;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IVRTrackedCamera_t2005230018_0_0_0_var), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		Il2CppObject * L_2 = Marshal_PtrToStructure_m673412918(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_FnTable_0(((*(IVRTrackedCamera_t2005230018 *)((IVRTrackedCamera_t2005230018 *)UnBox(L_2, IVRTrackedCamera_t2005230018_il2cpp_TypeInfo_var)))));
+		return;
+	}
+}
+// System.String Valve.VR.CVRTrackedCamera::GetCameraErrorNameFromEnum(Valve.VR.EVRTrackedCameraError)
+extern "C"  String_t* CVRTrackedCamera_GetCameraErrorNameFromEnum_m1339151371 (CVRTrackedCamera_t2050215972 * __this, int32_t ___eCameraError0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRTrackedCamera_GetCameraErrorNameFromEnum_m1339151371_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	IntPtr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IVRTrackedCamera_t2005230018 * L_0 = __this->get_address_of_FnTable_0();
+		_GetCameraErrorNameFromEnum_t1661571561 * L_1 = L_0->get_GetCameraErrorNameFromEnum_0();
+		int32_t L_2 = ___eCameraError0;
+		NullCheck(L_1);
+		IntPtr_t L_3 = _GetCameraErrorNameFromEnum_Invoke_m541081109(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		IntPtr_t L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		String_t* L_5 = Marshal_PtrToStringAnsi_m2970070000(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::HasCamera(System.UInt32,System.Boolean&)
+extern "C"  int32_t CVRTrackedCamera_HasCamera_m1598230108 (CVRTrackedCamera_t2050215972 * __this, uint32_t ___nDeviceIndex0, bool* ___pHasCamera1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		bool* L_0 = ___pHasCamera1;
+		*((int8_t*)(L_0)) = (int8_t)0;
+		IVRTrackedCamera_t2005230018 * L_1 = __this->get_address_of_FnTable_0();
+		_HasCamera_t2352646991 * L_2 = L_1->get_HasCamera_1();
+		uint32_t L_3 = ___nDeviceIndex0;
+		bool* L_4 = ___pHasCamera1;
+		NullCheck(L_2);
+		int32_t L_5 = _HasCamera_Invoke_m224720948(L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::GetCameraFrameSize(System.UInt32,Valve.VR.EVRTrackedCameraFrameType,System.UInt32&,System.UInt32&,System.UInt32&)
+extern "C"  int32_t CVRTrackedCamera_GetCameraFrameSize_m3194523280 (CVRTrackedCamera_t2050215972 * __this, uint32_t ___nDeviceIndex0, int32_t ___eFrameType1, uint32_t* ___pnWidth2, uint32_t* ___pnHeight3, uint32_t* ___pnFrameBufferSize4, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint32_t* L_0 = ___pnWidth2;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		uint32_t* L_1 = ___pnHeight3;
+		*((int32_t*)(L_1)) = (int32_t)0;
+		uint32_t* L_2 = ___pnFrameBufferSize4;
+		*((int32_t*)(L_2)) = (int32_t)0;
+		IVRTrackedCamera_t2005230018 * L_3 = __this->get_address_of_FnTable_0();
+		_GetCameraFrameSize_t1973698407 * L_4 = L_3->get_GetCameraFrameSize_2();
+		uint32_t L_5 = ___nDeviceIndex0;
+		int32_t L_6 = ___eFrameType1;
+		uint32_t* L_7 = ___pnWidth2;
+		uint32_t* L_8 = ___pnHeight3;
+		uint32_t* L_9 = ___pnFrameBufferSize4;
+		NullCheck(L_4);
+		int32_t L_10 = _GetCameraFrameSize_Invoke_m428221848(L_4, L_5, L_6, L_7, L_8, L_9, /*hidden argument*/NULL);
+		V_0 = L_10;
+		int32_t L_11 = V_0;
+		return L_11;
+	}
+}
+// Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::GetCameraIntrinisics(System.UInt32,Valve.VR.EVRTrackedCameraFrameType,Valve.VR.HmdVector2_t&,Valve.VR.HmdVector2_t&)
+extern "C"  int32_t CVRTrackedCamera_GetCameraIntrinisics_m1037840281 (CVRTrackedCamera_t2050215972 * __this, uint32_t ___nDeviceIndex0, int32_t ___eFrameType1, HmdVector2_t_t2255225135 * ___pFocalLength2, HmdVector2_t_t2255225135 * ___pCenter3, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRTrackedCamera_t2005230018 * L_0 = __this->get_address_of_FnTable_0();
+		_GetCameraIntrinisics_t1277836306 * L_1 = L_0->get_GetCameraIntrinisics_3();
+		uint32_t L_2 = ___nDeviceIndex0;
+		int32_t L_3 = ___eFrameType1;
+		HmdVector2_t_t2255225135 * L_4 = ___pFocalLength2;
+		HmdVector2_t_t2255225135 * L_5 = ___pCenter3;
+		NullCheck(L_1);
+		int32_t L_6 = _GetCameraIntrinisics_Invoke_m608914111(L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::GetCameraProjection(System.UInt32,Valve.VR.EVRTrackedCameraFrameType,System.Single,System.Single,Valve.VR.HmdMatrix44_t&)
+extern "C"  int32_t CVRTrackedCamera_GetCameraProjection_m1971393198 (CVRTrackedCamera_t2050215972 * __this, uint32_t ___nDeviceIndex0, int32_t ___eFrameType1, float ___flZNear2, float ___flZFar3, HmdMatrix44_t_t664273159 * ___pProjection4, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRTrackedCamera_t2005230018 * L_0 = __this->get_address_of_FnTable_0();
+		_GetCameraProjection_t2867851566 * L_1 = L_0->get_GetCameraProjection_4();
+		uint32_t L_2 = ___nDeviceIndex0;
+		int32_t L_3 = ___eFrameType1;
+		float L_4 = ___flZNear2;
+		float L_5 = ___flZFar3;
+		HmdMatrix44_t_t664273159 * L_6 = ___pProjection4;
+		NullCheck(L_1);
+		int32_t L_7 = _GetCameraProjection_Invoke_m4039129286(L_1, L_2, L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		int32_t L_8 = V_0;
+		return L_8;
+	}
+}
+// Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::AcquireVideoStreamingService(System.UInt32,System.UInt64&)
+extern "C"  int32_t CVRTrackedCamera_AcquireVideoStreamingService_m665590069 (CVRTrackedCamera_t2050215972 * __this, uint32_t ___nDeviceIndex0, uint64_t* ___pHandle1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint64_t* L_0 = ___pHandle1;
+		*((int64_t*)(L_0)) = (int64_t)(((int64_t)((int64_t)0)));
+		IVRTrackedCamera_t2005230018 * L_1 = __this->get_address_of_FnTable_0();
+		_AcquireVideoStreamingService_t1559262216 * L_2 = L_1->get_AcquireVideoStreamingService_5();
+		uint32_t L_3 = ___nDeviceIndex0;
+		uint64_t* L_4 = ___pHandle1;
+		NullCheck(L_2);
+		int32_t L_5 = _AcquireVideoStreamingService_Invoke_m2576863563(L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::ReleaseVideoStreamingService(System.UInt64)
+extern "C"  int32_t CVRTrackedCamera_ReleaseVideoStreamingService_m3616057442 (CVRTrackedCamera_t2050215972 * __this, uint64_t ___hTrackedCamera0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRTrackedCamera_t2005230018 * L_0 = __this->get_address_of_FnTable_0();
+		_ReleaseVideoStreamingService_t1473645041 * L_1 = L_0->get_ReleaseVideoStreamingService_6();
+		uint64_t L_2 = ___hTrackedCamera0;
+		NullCheck(L_1);
+		int32_t L_3 = _ReleaseVideoStreamingService_Invoke_m1302486742(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::GetVideoStreamFrameBuffer(System.UInt64,Valve.VR.EVRTrackedCameraFrameType,System.IntPtr,System.UInt32,Valve.VR.CameraVideoStreamFrameHeader_t&,System.UInt32)
+extern "C"  int32_t CVRTrackedCamera_GetVideoStreamFrameBuffer_m3726207179 (CVRTrackedCamera_t2050215972 * __this, uint64_t ___hTrackedCamera0, int32_t ___eFrameType1, IntPtr_t ___pFrameBuffer2, uint32_t ___nFrameBufferSize3, CameraVideoStreamFrameHeader_t_t968213647 * ___pFrameHeader4, uint32_t ___nFrameHeaderSize5, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRTrackedCamera_t2005230018 * L_0 = __this->get_address_of_FnTable_0();
+		_GetVideoStreamFrameBuffer_t580267038 * L_1 = L_0->get_GetVideoStreamFrameBuffer_7();
+		uint64_t L_2 = ___hTrackedCamera0;
+		int32_t L_3 = ___eFrameType1;
+		IntPtr_t L_4 = ___pFrameBuffer2;
+		uint32_t L_5 = ___nFrameBufferSize3;
+		CameraVideoStreamFrameHeader_t_t968213647 * L_6 = ___pFrameHeader4;
+		uint32_t L_7 = ___nFrameHeaderSize5;
+		NullCheck(L_1);
+		int32_t L_8 = _GetVideoStreamFrameBuffer_Invoke_m789580985(L_1, L_2, L_3, L_4, L_5, L_6, L_7, /*hidden argument*/NULL);
+		V_0 = L_8;
+		int32_t L_9 = V_0;
+		return L_9;
+	}
+}
+// Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::GetVideoStreamTextureSize(System.UInt32,Valve.VR.EVRTrackedCameraFrameType,Valve.VR.VRTextureBounds_t&,System.UInt32&,System.UInt32&)
+extern "C"  int32_t CVRTrackedCamera_GetVideoStreamTextureSize_m776013005 (CVRTrackedCamera_t2050215972 * __this, uint32_t ___nDeviceIndex0, int32_t ___eFrameType1, VRTextureBounds_t_t1897807375 * ___pTextureBounds2, uint32_t* ___pnWidth3, uint32_t* ___pnHeight4, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint32_t* L_0 = ___pnWidth3;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		uint32_t* L_1 = ___pnHeight4;
+		*((int32_t*)(L_1)) = (int32_t)0;
+		IVRTrackedCamera_t2005230018 * L_2 = __this->get_address_of_FnTable_0();
+		_GetVideoStreamTextureSize_t2646805685 * L_3 = L_2->get_GetVideoStreamTextureSize_8();
+		uint32_t L_4 = ___nDeviceIndex0;
+		int32_t L_5 = ___eFrameType1;
+		VRTextureBounds_t_t1897807375 * L_6 = ___pTextureBounds2;
+		uint32_t* L_7 = ___pnWidth3;
+		uint32_t* L_8 = ___pnHeight4;
+		NullCheck(L_3);
+		int32_t L_9 = _GetVideoStreamTextureSize_Invoke_m3667961335(L_3, L_4, L_5, L_6, L_7, L_8, /*hidden argument*/NULL);
+		V_0 = L_9;
+		int32_t L_10 = V_0;
+		return L_10;
+	}
+}
+// Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::GetVideoStreamTextureD3D11(System.UInt64,Valve.VR.EVRTrackedCameraFrameType,System.IntPtr,System.IntPtr&,Valve.VR.CameraVideoStreamFrameHeader_t&,System.UInt32)
+extern "C"  int32_t CVRTrackedCamera_GetVideoStreamTextureD3D11_m3387969434 (CVRTrackedCamera_t2050215972 * __this, uint64_t ___hTrackedCamera0, int32_t ___eFrameType1, IntPtr_t ___pD3D11DeviceOrResource2, IntPtr_t* ___ppD3D11ShaderResourceView3, CameraVideoStreamFrameHeader_t_t968213647 * ___pFrameHeader4, uint32_t ___nFrameHeaderSize5, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRTrackedCamera_t2005230018 * L_0 = __this->get_address_of_FnTable_0();
+		_GetVideoStreamTextureD3D11_t1327133227 * L_1 = L_0->get_GetVideoStreamTextureD3D11_9();
+		uint64_t L_2 = ___hTrackedCamera0;
+		int32_t L_3 = ___eFrameType1;
+		IntPtr_t L_4 = ___pD3D11DeviceOrResource2;
+		IntPtr_t* L_5 = ___ppD3D11ShaderResourceView3;
+		CameraVideoStreamFrameHeader_t_t968213647 * L_6 = ___pFrameHeader4;
+		uint32_t L_7 = ___nFrameHeaderSize5;
+		NullCheck(L_1);
+		int32_t L_8 = _GetVideoStreamTextureD3D11_Invoke_m4124070338(L_1, L_2, L_3, L_4, L_5, L_6, L_7, /*hidden argument*/NULL);
+		V_0 = L_8;
+		int32_t L_9 = V_0;
+		return L_9;
+	}
+}
+// Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::GetVideoStreamTextureGL(System.UInt64,Valve.VR.EVRTrackedCameraFrameType,System.UInt32&,Valve.VR.CameraVideoStreamFrameHeader_t&,System.UInt32)
+extern "C"  int32_t CVRTrackedCamera_GetVideoStreamTextureGL_m1017448362 (CVRTrackedCamera_t2050215972 * __this, uint64_t ___hTrackedCamera0, int32_t ___eFrameType1, uint32_t* ___pglTextureId2, CameraVideoStreamFrameHeader_t_t968213647 * ___pFrameHeader3, uint32_t ___nFrameHeaderSize4, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		uint32_t* L_0 = ___pglTextureId2;
+		*((int32_t*)(L_0)) = (int32_t)0;
+		IVRTrackedCamera_t2005230018 * L_1 = __this->get_address_of_FnTable_0();
+		_GetVideoStreamTextureGL_t1897576655 * L_2 = L_1->get_GetVideoStreamTextureGL_10();
+		uint64_t L_3 = ___hTrackedCamera0;
+		int32_t L_4 = ___eFrameType1;
+		uint32_t* L_5 = ___pglTextureId2;
+		CameraVideoStreamFrameHeader_t_t968213647 * L_6 = ___pFrameHeader3;
+		uint32_t L_7 = ___nFrameHeaderSize4;
+		NullCheck(L_2);
+		int32_t L_8 = _GetVideoStreamTextureGL_Invoke_m265158750(L_2, L_3, L_4, L_5, L_6, L_7, /*hidden argument*/NULL);
+		V_0 = L_8;
+		int32_t L_9 = V_0;
+		return L_9;
+	}
+}
+// Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::ReleaseVideoStreamTextureGL(System.UInt64,System.UInt32)
+extern "C"  int32_t CVRTrackedCamera_ReleaseVideoStreamTextureGL_m3967203367 (CVRTrackedCamera_t2050215972 * __this, uint64_t ___hTrackedCamera0, uint32_t ___glTextureId1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		IVRTrackedCamera_t2005230018 * L_0 = __this->get_address_of_FnTable_0();
+		_ReleaseVideoStreamTextureGL_t3809094800 * L_1 = L_0->get_ReleaseVideoStreamTextureGL_11();
+		uint64_t L_2 = ___hTrackedCamera0;
+		uint32_t L_3 = ___glTextureId1;
+		NullCheck(L_1);
+		int32_t L_4 = _ReleaseVideoStreamTextureGL_Invoke_m198736129(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		return L_5;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif

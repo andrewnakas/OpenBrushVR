@@ -1,0 +1,7023 @@
+﻿#include "il2cpp-config.h"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+#include <cstring>
+#include <string.h>
+#include <stdio.h>
+#include <cmath>
+#include <limits>
+#include <assert.h>
+
+#include "class-internals.h"
+#include "codegen/il2cpp-codegen.h"
+#include "mscorlib_System_Array3829468939.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit1488691712.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_Compositor_C450065686.h"
+#include "mscorlib_System_Object2689449295.h"
+#include "mscorlib_System_IntPtr2504060609.h"
+#include "mscorlib_System_Void1841601450.h"
+#include "mscorlib_System_UInt322149682021.h"
+#include "mscorlib_System_AsyncCallback163412349.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit1910270748.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit2433513766.h"
+#include "mscorlib_System_Single2076509932.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit1729400753.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_Compositor_2839634313.h"
+#include "mscorlib_System_Boolean3825574718.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit1990293024.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit3158332482.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_TrackedDevi1668551120.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRComposit3948578210.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit2717021868.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit2322134645.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVREye3088716538.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit3071699813.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRCompositor10051991.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_ETrackingUn1464400093.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposito396471547.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposito988890383.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposito410903031.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit2180462479.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit4129629097.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit3443550108.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit2590693784.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_Texture_t3277130850.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit3662949163.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit1834060663.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit1161105516.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposito938257482.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_VRTextureBo1897807375.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRSubmitFl2736259668.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit3440691638.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposito320290112.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRComposit4192584901.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRExtended2045258050.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRExtended2171929041.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRExtendedD693377854.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRExtended2084284319.h"
+#include "mscorlib_System_Int322071877448.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRNotifica3935579733.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRNotifica1905156422.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVRNotifica3701790586.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRNotificat408717238.h"
+#include "mscorlib_System_String2029220233.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRNotifica1858720717.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_Notificatio1973232283.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVRNotifica1058814108.h"
+#include "mscorlib_System_UInt642909196914.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay3446109889.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1862706542.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_4211228331.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1020329117.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_4225758140.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__362587296.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1341267772.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__221395366.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__836541042.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3535846231.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1970553664.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1470043428.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1900166033.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3676293589.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2804573176.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2379424348.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2092887413.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2185592753.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__460846625.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1835744573.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3099711365.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__376620481.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3047220066.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2815542566.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1475163830.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_4193138162.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1399555963.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2119049239.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1179269927.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3680071147.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1493074241.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2100297354.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2557918150.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__579082695.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__893699371.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1749665136.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3256239660.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__733914692.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2737366627.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1564696099.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2483359939.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__131678587.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3217580654.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3575042602.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2826364086.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2624726138.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1141587151.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2899449918.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_4101716668.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__300021750.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2763810618.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1117963895.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2016645278.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2238656700.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2610332521.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3268606321.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__598184189.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__897552288.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2842744417.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1288689867.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__637199691.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_2020287181.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3144660141.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_1462353074.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__876496206.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_4127025320.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__812432855.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3095606223.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3006565844.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__G91815223.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3483797360.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay__443079689.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_IVROverlay_3695826360.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EVROverlayE3464864153.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_VROverlayIn3201480230.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_VROverlayIn2886517940.h"
+#include "mscorlib_System_Text_StringBuilder1221177846.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_VROverlayFl2344570851.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_VROverlayIn3830649193.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_HmdVector2_2255225135.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EGraphicsAP1794133197.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EColorSpace2848861630.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_HmdMatrix34_664273062.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_VROverlayTr3148689642.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_EOverlayDir2759670492.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_VREvent_t3405266389.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_Valve_VR_HmdRect2_t1656020282.h"
+
+// Valve.VR.IVRCompositor/_GetCumulativeStats
+struct _GetCumulativeStats_t1488691712;
+// System.Object
+struct Il2CppObject;
+// System.IAsyncResult
+struct IAsyncResult_t1999651008;
+// System.AsyncCallback
+struct AsyncCallback_t163412349;
+// Valve.VR.IVRCompositor/_GetCurrentSceneFocusProcess
+struct _GetCurrentSceneFocusProcess_t1910270748;
+// Valve.VR.IVRCompositor/_GetFrameTimeRemaining
+struct _GetFrameTimeRemaining_t2433513766;
+// Valve.VR.IVRCompositor/_GetFrameTiming
+struct _GetFrameTiming_t1729400753;
+// Valve.VR.IVRCompositor/_GetLastFrameRenderer
+struct _GetLastFrameRenderer_t1990293024;
+// Valve.VR.IVRCompositor/_GetLastPoseForTrackedDeviceIndex
+struct _GetLastPoseForTrackedDeviceIndex_t3158332482;
+// Valve.VR.IVRCompositor/_GetLastPoses
+struct _GetLastPoses_t2717021868;
+// Valve.VR.TrackedDevicePose_t[]
+struct TrackedDevicePose_tU5BU5D_t2897272049;
+// Valve.VR.IVRCompositor/_GetMirrorTextureD3D11
+struct _GetMirrorTextureD3D11_t2322134645;
+// Valve.VR.IVRCompositor/_GetMirrorTextureGL
+struct _GetMirrorTextureGL_t3071699813;
+// Valve.VR.IVRCompositor/_GetTrackingSpace
+struct _GetTrackingSpace_t10051991;
+// Valve.VR.IVRCompositor/_HideMirrorWindow
+struct _HideMirrorWindow_t396471547;
+// Valve.VR.IVRCompositor/_IsFullscreen
+struct _IsFullscreen_t988890383;
+// Valve.VR.IVRCompositor/_IsMirrorWindowVisible
+struct _IsMirrorWindowVisible_t410903031;
+// Valve.VR.IVRCompositor/_LockGLSharedTextureForAccess
+struct _LockGLSharedTextureForAccess_t2180462479;
+// Valve.VR.IVRCompositor/_PostPresentHandoff
+struct _PostPresentHandoff_t4129629097;
+// Valve.VR.IVRCompositor/_ReleaseSharedGLTexture
+struct _ReleaseSharedGLTexture_t3443550108;
+// Valve.VR.IVRCompositor/_SetSkyboxOverride
+struct _SetSkyboxOverride_t2590693784;
+// Valve.VR.Texture_t[]
+struct Texture_tU5BU5D_t3142294487;
+// Valve.VR.IVRCompositor/_SetTrackingSpace
+struct _SetTrackingSpace_t3662949163;
+// Valve.VR.IVRCompositor/_ShouldAppRenderWithLowResources
+struct _ShouldAppRenderWithLowResources_t1834060663;
+// Valve.VR.IVRCompositor/_ShowMirrorWindow
+struct _ShowMirrorWindow_t1161105516;
+// Valve.VR.IVRCompositor/_Submit
+struct _Submit_t938257482;
+// Valve.VR.IVRCompositor/_SuspendRendering
+struct _SuspendRendering_t3440691638;
+// Valve.VR.IVRCompositor/_UnlockGLSharedTextureForAccess
+struct _UnlockGLSharedTextureForAccess_t320290112;
+// Valve.VR.IVRCompositor/_WaitGetPoses
+struct _WaitGetPoses_t4192584901;
+// Valve.VR.IVRExtendedDisplay/_GetDXGIOutputInfo
+struct _GetDXGIOutputInfo_t2084284319;
+// Valve.VR.IVRExtendedDisplay/_GetEyeOutputViewport
+struct _GetEyeOutputViewport_t693377854;
+// Valve.VR.IVRExtendedDisplay/_GetWindowBounds
+struct _GetWindowBounds_t2171929041;
+// Valve.VR.IVRNotifications/_CreateNotification
+struct _CreateNotification_t1905156422;
+// System.String
+struct String_t;
+// Valve.VR.IVRNotifications/_RemoveNotification
+struct _RemoveNotification_t3701790586;
+// Valve.VR.IVROverlay/_ClearOverlayTexture
+struct _ClearOverlayTexture_t2610332521;
+// Valve.VR.IVROverlay/_ComputeOverlayIntersection
+struct _ComputeOverlayIntersection_t1141587151;
+// Valve.VR.IVROverlay/_CreateDashboardOverlay
+struct _CreateDashboardOverlay_t637199691;
+// Valve.VR.IVROverlay/_CreateOverlay
+struct _CreateOverlay_t4211228331;
+// Valve.VR.IVROverlay/_DestroyOverlay
+struct _DestroyOverlay_t1020329117;
+// Valve.VR.IVROverlay/_FindOverlay
+struct _FindOverlay_t1862706542;
+// Valve.VR.IVROverlay/_GetDashboardOverlaySceneProcess
+struct _GetDashboardOverlaySceneProcess_t876496206;
+// Valve.VR.IVROverlay/_GetGamepadFocusOverlay
+struct _GetGamepadFocusOverlay_t300021750;
+// Valve.VR.IVROverlay/_GetHighQualityOverlay
+struct _GetHighQualityOverlay_t362587296;
+// Valve.VR.IVROverlay/_GetKeyboardText
+struct _GetKeyboardText_t91815223;
+// System.Text.StringBuilder
+struct StringBuilder_t1221177846;
+// Valve.VR.IVROverlay/_GetOverlayAlpha
+struct _GetOverlayAlpha_t2185592753;
+// Valve.VR.IVROverlay/_GetOverlayAutoCurveDistanceRangeInMeters
+struct _GetOverlayAutoCurveDistanceRangeInMeters_t4193138162;
+// Valve.VR.IVROverlay/_GetOverlayColor
+struct _GetOverlayColor_t2379424348;
+// Valve.VR.IVROverlay/_GetOverlayErrorNameFromEnum
+struct _GetOverlayErrorNameFromEnum_t3535846231;
+// Valve.VR.IVROverlay/_GetOverlayFlag
+struct _GetOverlayFlag_t3676293589;
+// Valve.VR.IVROverlay/_GetOverlayImageData
+struct _GetOverlayImageData_t836541042;
+// Valve.VR.IVROverlay/_GetOverlayInputMethod
+struct _GetOverlayInputMethod_t3217580654;
+// Valve.VR.IVROverlay/_GetOverlayKey
+struct _GetOverlayKey_t1341267772;
+// Valve.VR.IVROverlay/_GetOverlayMouseScale
+struct _GetOverlayMouseScale_t2826364086;
+// Valve.VR.IVROverlay/_GetOverlayName
+struct _GetOverlayName_t221395366;
+// Valve.VR.IVROverlay/_GetOverlayRenderingPid
+struct _GetOverlayRenderingPid_t1470043428;
+// Valve.VR.IVROverlay/_GetOverlaySortOrder
+struct _GetOverlaySortOrder_t376620481;
+// Valve.VR.IVROverlay/_GetOverlayTexelAspect
+struct _GetOverlayTexelAspect_t1835744573;
+// Valve.VR.IVROverlay/_GetOverlayTexture
+struct _GetOverlayTexture_t897552288;
+// Valve.VR.IVROverlay/_GetOverlayTextureBounds
+struct _GetOverlayTextureBounds_t3680071147;
+// Valve.VR.IVROverlay/_GetOverlayTextureColorSpace
+struct _GetOverlayTextureColorSpace_t2119049239;
+// Valve.VR.IVROverlay/_GetOverlayTextureSize
+struct _GetOverlayTextureSize_t1288689867;
+// Valve.VR.IVROverlay/_GetOverlayTransformAbsolute
+struct _GetOverlayTransformAbsolute_t2557918150;
+// Valve.VR.IVROverlay/_GetOverlayTransformTrackedDeviceComponent
+struct _GetOverlayTransformTrackedDeviceComponent_t3256239660;
+// Valve.VR.IVROverlay/_GetOverlayTransformTrackedDeviceRelative
+struct _GetOverlayTransformTrackedDeviceRelative_t893699371;
+// Valve.VR.IVROverlay/_GetOverlayTransformType
+struct _GetOverlayTransformType_t1493074241;
+// Valve.VR.IVROverlay/_GetOverlayWidthInMeters
+struct _GetOverlayWidthInMeters_t2815542566;
+// Valve.VR.IVROverlay/_GetPrimaryDashboardDevice
+struct _GetPrimaryDashboardDevice_t812432855;
+// Valve.VR.IVROverlay/_GetTransformForOverlayCoordinates
+struct _GetTransformForOverlayCoordinates_t2483359939;
+// Valve.VR.IVROverlay/_HandleControllerOverlayInteractionAsMouse
+struct _HandleControllerOverlayInteractionAsMouse_t2899449918;
+// Valve.VR.IVROverlay/_HideKeyboard
+struct _HideKeyboard_t3483797360;
+// Valve.VR.IVROverlay/_HideOverlay
+struct _HideOverlay_t2737366627;
+// Valve.VR.IVROverlay/_IsActiveDashboardOverlay
+struct _IsActiveDashboardOverlay_t3144660141;
+// Valve.VR.IVROverlay/_IsDashboardVisible
+struct _IsDashboardVisible_t2020287181;
+// Valve.VR.IVROverlay/_IsHoverTargetOverlay
+struct _IsHoverTargetOverlay_t4101716668;
+// Valve.VR.IVROverlay/_IsOverlayVisible
+struct _IsOverlayVisible_t1564696099;
+// Valve.VR.IVROverlay/_MoveGamepadFocusToNeighbor
+struct _MoveGamepadFocusToNeighbor_t2016645278;
+// Valve.VR.IVROverlay/_PollNextOverlayEvent
+struct _PollNextOverlayEvent_t131678587;
+// Valve.VR.IVROverlay/_ReleaseNativeOverlayHandle
+struct _ReleaseNativeOverlayHandle_t2842744417;
+// Valve.VR.IVROverlay/_SetDashboardOverlaySceneProcess
+struct _SetDashboardOverlaySceneProcess_t1462353074;
+// Valve.VR.IVROverlay/_SetGamepadFocusOverlay
+struct _SetGamepadFocusOverlay_t2763810618;
+// Valve.VR.IVROverlay/_SetHighQualityOverlay
+struct _SetHighQualityOverlay_t4225758140;
+// Valve.VR.IVROverlay/_SetKeyboardPositionForOverlay
+struct _SetKeyboardPositionForOverlay_t3695826360;
+// Valve.VR.IVROverlay/_SetKeyboardTransformAbsolute
+struct _SetKeyboardTransformAbsolute_t443079689;
+// Valve.VR.IVROverlay/_SetOverlayAlpha
+struct _SetOverlayAlpha_t2092887413;
+// Valve.VR.IVROverlay/_SetOverlayAutoCurveDistanceRangeInMeters
+struct _SetOverlayAutoCurveDistanceRangeInMeters_t1475163830;
+// Valve.VR.IVROverlay/_SetOverlayColor
+struct _SetOverlayColor_t2804573176;
+// Valve.VR.IVROverlay/_SetOverlayFlag
+struct _SetOverlayFlag_t1900166033;
+// Valve.VR.IVROverlay/_SetOverlayFromFile
+struct _SetOverlayFromFile_t598184189;
+// Valve.VR.IVROverlay/_SetOverlayInputMethod
+struct _SetOverlayInputMethod_t3575042602;
+// Valve.VR.IVROverlay/_SetOverlayMouseScale
+struct _SetOverlayMouseScale_t2624726138;
+// Valve.VR.IVROverlay/_SetOverlayNeighbor
+struct _SetOverlayNeighbor_t1117963895;
+// Valve.VR.IVROverlay/_SetOverlayRaw
+struct _SetOverlayRaw_t3268606321;
+// Valve.VR.IVROverlay/_SetOverlayRenderingPid
+struct _SetOverlayRenderingPid_t1970553664;
+// Valve.VR.IVROverlay/_SetOverlaySortOrder
+struct _SetOverlaySortOrder_t3099711365;
+// Valve.VR.IVROverlay/_SetOverlayTexelAspect
+struct _SetOverlayTexelAspect_t460846625;
+// Valve.VR.IVROverlay/_SetOverlayTexture
+struct _SetOverlayTexture_t2238656700;
+// Valve.VR.IVROverlay/_SetOverlayTextureBounds
+struct _SetOverlayTextureBounds_t1179269927;
+// Valve.VR.IVROverlay/_SetOverlayTextureColorSpace
+struct _SetOverlayTextureColorSpace_t1399555963;
+// Valve.VR.IVROverlay/_SetOverlayTransformAbsolute
+struct _SetOverlayTransformAbsolute_t2100297354;
+// Valve.VR.IVROverlay/_SetOverlayTransformTrackedDeviceComponent
+struct _SetOverlayTransformTrackedDeviceComponent_t1749665136;
+// Valve.VR.IVROverlay/_SetOverlayTransformTrackedDeviceRelative
+struct _SetOverlayTransformTrackedDeviceRelative_t579082695;
+// Valve.VR.IVROverlay/_SetOverlayWidthInMeters
+struct _SetOverlayWidthInMeters_t3047220066;
+extern Il2CppClass* Compositor_CumulativeStats_t450065686_il2cpp_TypeInfo_var;
+extern Il2CppClass* UInt32_t2149682021_il2cpp_TypeInfo_var;
+extern const uint32_t _GetCumulativeStats_BeginInvoke_m3037769734_MetadataUsageId;
+extern Il2CppClass* Compositor_FrameTiming_t2839634313_il2cpp_TypeInfo_var;
+extern const uint32_t _GetFrameTiming_BeginInvoke_m2026346784_MetadataUsageId;
+extern Il2CppClass* TrackedDevicePose_t_t1668551120_il2cpp_TypeInfo_var;
+extern const uint32_t _GetLastPoseForTrackedDeviceIndex_BeginInvoke_m104609342_MetadataUsageId;
+extern const uint32_t _GetLastPoses_BeginInvoke_m4264476664_MetadataUsageId;
+extern Il2CppClass* EVREye_t3088716538_il2cpp_TypeInfo_var;
+extern Il2CppClass* IntPtr_t_il2cpp_TypeInfo_var;
+extern const uint32_t _GetMirrorTextureD3D11_BeginInvoke_m2649647267_MetadataUsageId;
+extern const uint32_t _GetMirrorTextureGL_BeginInvoke_m184112877_MetadataUsageId;
+extern const uint32_t _LockGLSharedTextureForAccess_BeginInvoke_m2496035105_MetadataUsageId;
+extern const uint32_t _ReleaseSharedGLTexture_BeginInvoke_m366517228_MetadataUsageId;
+extern const uint32_t _SetSkyboxOverride_BeginInvoke_m3190206144_MetadataUsageId;
+extern Il2CppClass* ETrackingUniverseOrigin_t1464400093_il2cpp_TypeInfo_var;
+extern const uint32_t _SetTrackingSpace_BeginInvoke_m2711246532_MetadataUsageId;
+extern Il2CppClass* Texture_t_t3277130850_il2cpp_TypeInfo_var;
+extern Il2CppClass* VRTextureBounds_t_t1897807375_il2cpp_TypeInfo_var;
+extern Il2CppClass* EVRSubmitFlags_t2736259668_il2cpp_TypeInfo_var;
+extern const uint32_t _Submit_BeginInvoke_m2771037729_MetadataUsageId;
+extern Il2CppClass* Boolean_t3825574718_il2cpp_TypeInfo_var;
+extern const uint32_t _SuspendRendering_BeginInvoke_m63960113_MetadataUsageId;
+extern const uint32_t _UnlockGLSharedTextureForAccess_BeginInvoke_m3737554936_MetadataUsageId;
+extern const uint32_t _WaitGetPoses_BeginInvoke_m3320629517_MetadataUsageId;
+extern Il2CppClass* _GetWindowBounds_t2171929041_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetEyeOutputViewport_t693377854_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetDXGIOutputInfo_t2084284319_il2cpp_TypeInfo_var;
+extern const uint32_t IVRExtendedDisplay_t2045258050_pinvoke_FromNativeMethodDefinition_MetadataUsageId;
+extern const uint32_t IVRExtendedDisplay_t2045258050_com_FromNativeMethodDefinition_MetadataUsageId;
+extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
+extern const uint32_t _GetDXGIOutputInfo_BeginInvoke_m3068059499_MetadataUsageId;
+extern const uint32_t _GetEyeOutputViewport_BeginInvoke_m70844300_MetadataUsageId;
+extern const uint32_t _GetWindowBounds_BeginInvoke_m43741297_MetadataUsageId;
+extern Il2CppClass* _CreateNotification_t1905156422_il2cpp_TypeInfo_var;
+extern Il2CppClass* _RemoveNotification_t3701790586_il2cpp_TypeInfo_var;
+extern const uint32_t IVRNotifications_t3935579733_pinvoke_FromNativeMethodDefinition_MetadataUsageId;
+extern const uint32_t IVRNotifications_t3935579733_com_FromNativeMethodDefinition_MetadataUsageId;
+extern Il2CppClass* UInt64_t2909196914_il2cpp_TypeInfo_var;
+extern Il2CppClass* EVRNotificationType_t408717238_il2cpp_TypeInfo_var;
+extern Il2CppClass* EVRNotificationStyle_t1858720717_il2cpp_TypeInfo_var;
+extern Il2CppClass* NotificationBitmap_t_t1973232283_il2cpp_TypeInfo_var;
+extern const uint32_t _CreateNotification_BeginInvoke_m2947699052_MetadataUsageId;
+extern const uint32_t _RemoveNotification_BeginInvoke_m2451677010_MetadataUsageId;
+extern Il2CppClass* _FindOverlay_t1862706542_il2cpp_TypeInfo_var;
+extern Il2CppClass* _CreateOverlay_t4211228331_il2cpp_TypeInfo_var;
+extern Il2CppClass* _DestroyOverlay_t1020329117_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetHighQualityOverlay_t4225758140_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetHighQualityOverlay_t362587296_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayKey_t1341267772_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayName_t221395366_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayImageData_t836541042_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayErrorNameFromEnum_t3535846231_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayRenderingPid_t1970553664_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayRenderingPid_t1470043428_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayFlag_t1900166033_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayFlag_t3676293589_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayColor_t2804573176_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayColor_t2379424348_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayAlpha_t2092887413_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayAlpha_t2185592753_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayTexelAspect_t460846625_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayTexelAspect_t1835744573_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlaySortOrder_t3099711365_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlaySortOrder_t376620481_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayWidthInMeters_t3047220066_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayWidthInMeters_t2815542566_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayAutoCurveDistanceRangeInMeters_t1475163830_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayAutoCurveDistanceRangeInMeters_t4193138162_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayTextureColorSpace_t1399555963_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayTextureColorSpace_t2119049239_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayTextureBounds_t1179269927_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayTextureBounds_t3680071147_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayTransformType_t1493074241_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayTransformAbsolute_t2100297354_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayTransformAbsolute_t2557918150_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayTransformTrackedDeviceRelative_t579082695_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayTransformTrackedDeviceRelative_t893699371_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayTransformTrackedDeviceComponent_t1749665136_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayTransformTrackedDeviceComponent_t3256239660_il2cpp_TypeInfo_var;
+extern Il2CppClass* _ShowOverlay_t733914692_il2cpp_TypeInfo_var;
+extern Il2CppClass* _HideOverlay_t2737366627_il2cpp_TypeInfo_var;
+extern Il2CppClass* _IsOverlayVisible_t1564696099_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetTransformForOverlayCoordinates_t2483359939_il2cpp_TypeInfo_var;
+extern Il2CppClass* _PollNextOverlayEvent_t131678587_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayInputMethod_t3217580654_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayInputMethod_t3575042602_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayMouseScale_t2826364086_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayMouseScale_t2624726138_il2cpp_TypeInfo_var;
+extern Il2CppClass* _ComputeOverlayIntersection_t1141587151_il2cpp_TypeInfo_var;
+extern Il2CppClass* _HandleControllerOverlayInteractionAsMouse_t2899449918_il2cpp_TypeInfo_var;
+extern Il2CppClass* _IsHoverTargetOverlay_t4101716668_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetGamepadFocusOverlay_t300021750_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetGamepadFocusOverlay_t2763810618_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayNeighbor_t1117963895_il2cpp_TypeInfo_var;
+extern Il2CppClass* _MoveGamepadFocusToNeighbor_t2016645278_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayTexture_t2238656700_il2cpp_TypeInfo_var;
+extern Il2CppClass* _ClearOverlayTexture_t2610332521_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayRaw_t3268606321_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetOverlayFromFile_t598184189_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayTexture_t897552288_il2cpp_TypeInfo_var;
+extern Il2CppClass* _ReleaseNativeOverlayHandle_t2842744417_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetOverlayTextureSize_t1288689867_il2cpp_TypeInfo_var;
+extern Il2CppClass* _CreateDashboardOverlay_t637199691_il2cpp_TypeInfo_var;
+extern Il2CppClass* _IsDashboardVisible_t2020287181_il2cpp_TypeInfo_var;
+extern Il2CppClass* _IsActiveDashboardOverlay_t3144660141_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetDashboardOverlaySceneProcess_t1462353074_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetDashboardOverlaySceneProcess_t876496206_il2cpp_TypeInfo_var;
+extern Il2CppClass* _ShowDashboard_t4127025320_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetPrimaryDashboardDevice_t812432855_il2cpp_TypeInfo_var;
+extern Il2CppClass* _ShowKeyboard_t3095606223_il2cpp_TypeInfo_var;
+extern Il2CppClass* _ShowKeyboardForOverlay_t3006565844_il2cpp_TypeInfo_var;
+extern Il2CppClass* _GetKeyboardText_t91815223_il2cpp_TypeInfo_var;
+extern Il2CppClass* _HideKeyboard_t3483797360_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetKeyboardTransformAbsolute_t443079689_il2cpp_TypeInfo_var;
+extern Il2CppClass* _SetKeyboardPositionForOverlay_t3695826360_il2cpp_TypeInfo_var;
+extern const uint32_t IVROverlay_t3446109889_pinvoke_FromNativeMethodDefinition_MetadataUsageId;
+extern const uint32_t IVROverlay_t3446109889_com_FromNativeMethodDefinition_MetadataUsageId;
+extern const uint32_t _ClearOverlayTexture_BeginInvoke_m4124360504_MetadataUsageId;
+extern Il2CppClass* VROverlayIntersectionParams_t_t3201480230_il2cpp_TypeInfo_var;
+extern Il2CppClass* VROverlayIntersectionResults_t_t2886517940_il2cpp_TypeInfo_var;
+extern const uint32_t _ComputeOverlayIntersection_BeginInvoke_m1218509186_MetadataUsageId;
+extern const uint32_t _CreateDashboardOverlay_BeginInvoke_m4199974051_MetadataUsageId;
+extern const uint32_t _CreateOverlay_BeginInvoke_m2308161414_MetadataUsageId;
+extern const uint32_t _DestroyOverlay_BeginInvoke_m323403662_MetadataUsageId;
+extern const uint32_t _FindOverlay_BeginInvoke_m3066402601_MetadataUsageId;
+extern const uint32_t _GetDashboardOverlaySceneProcess_BeginInvoke_m3874007737_MetadataUsageId;
+extern const uint32_t _GetKeyboardText_BeginInvoke_m653992927_MetadataUsageId;
+extern Il2CppClass* Single_t2076509932_il2cpp_TypeInfo_var;
+extern const uint32_t _GetOverlayAlpha_BeginInvoke_m4036679817_MetadataUsageId;
+extern const uint32_t _GetOverlayAutoCurveDistanceRangeInMeters_BeginInvoke_m2247688717_MetadataUsageId;
+extern const uint32_t _GetOverlayColor_BeginInvoke_m2486339604_MetadataUsageId;
+extern Il2CppClass* EVROverlayError_t3464864153_il2cpp_TypeInfo_var;
+extern const uint32_t _GetOverlayErrorNameFromEnum_BeginInvoke_m966367142_MetadataUsageId;
+extern Il2CppClass* VROverlayFlags_t2344570851_il2cpp_TypeInfo_var;
+extern const uint32_t _GetOverlayFlag_BeginInvoke_m3786687000_MetadataUsageId;
+extern const uint32_t _GetOverlayImageData_BeginInvoke_m2891982391_MetadataUsageId;
+extern Il2CppClass* VROverlayInputMethod_t3830649193_il2cpp_TypeInfo_var;
+extern const uint32_t _GetOverlayInputMethod_BeginInvoke_m1748189674_MetadataUsageId;
+extern const uint32_t _GetOverlayKey_BeginInvoke_m471687784_MetadataUsageId;
+extern Il2CppClass* HmdVector2_t_t2255225135_il2cpp_TypeInfo_var;
+extern const uint32_t _GetOverlayMouseScale_BeginInvoke_m3251213160_MetadataUsageId;
+extern const uint32_t _GetOverlayName_BeginInvoke_m2187340306_MetadataUsageId;
+extern const uint32_t _GetOverlayRenderingPid_BeginInvoke_m1414488949_MetadataUsageId;
+extern const uint32_t _GetOverlaySortOrder_BeginInvoke_m2654472962_MetadataUsageId;
+extern const uint32_t _GetOverlayTexelAspect_BeginInvoke_m2985222969_MetadataUsageId;
+extern Il2CppClass* EGraphicsAPIConvention_t1794133197_il2cpp_TypeInfo_var;
+extern Il2CppClass* EColorSpace_t2848861630_il2cpp_TypeInfo_var;
+extern const uint32_t _GetOverlayTexture_BeginInvoke_m2073749992_MetadataUsageId;
+extern const uint32_t _GetOverlayTextureBounds_BeginInvoke_m2970592351_MetadataUsageId;
+extern const uint32_t _GetOverlayTextureColorSpace_BeginInvoke_m839242494_MetadataUsageId;
+extern const uint32_t _GetOverlayTextureSize_BeginInvoke_m180461536_MetadataUsageId;
+extern Il2CppClass* HmdMatrix34_t_t664273062_il2cpp_TypeInfo_var;
+extern const uint32_t _GetOverlayTransformAbsolute_BeginInvoke_m1275379472_MetadataUsageId;
+extern const uint32_t _GetOverlayTransformTrackedDeviceComponent_BeginInvoke_m3234130871_MetadataUsageId;
+extern const uint32_t _GetOverlayTransformTrackedDeviceRelative_BeginInvoke_m2491013592_MetadataUsageId;
+extern Il2CppClass* VROverlayTransformType_t3148689642_il2cpp_TypeInfo_var;
+extern const uint32_t _GetOverlayTransformType_BeginInvoke_m271017448_MetadataUsageId;
+extern const uint32_t _GetOverlayWidthInMeters_BeginInvoke_m4032395736_MetadataUsageId;
+extern const uint32_t _GetTransformForOverlayCoordinates_BeginInvoke_m2354587788_MetadataUsageId;
+extern const uint32_t _HandleControllerOverlayInteractionAsMouse_BeginInvoke_m3853095579_MetadataUsageId;
+extern const uint32_t _HideOverlay_BeginInvoke_m3363659846_MetadataUsageId;
+extern const uint32_t _IsActiveDashboardOverlay_BeginInvoke_m2499569926_MetadataUsageId;
+extern const uint32_t _IsHoverTargetOverlay_BeginInvoke_m4035258661_MetadataUsageId;
+extern const uint32_t _IsOverlayVisible_BeginInvoke_m543084126_MetadataUsageId;
+extern Il2CppClass* EOverlayDirection_t2759670492_il2cpp_TypeInfo_var;
+extern const uint32_t _MoveGamepadFocusToNeighbor_BeginInvoke_m236948375_MetadataUsageId;
+extern Il2CppClass* VREvent_t_t3405266389_il2cpp_TypeInfo_var;
+extern const uint32_t _PollNextOverlayEvent_BeginInvoke_m3824140209_MetadataUsageId;
+extern const uint32_t _ReleaseNativeOverlayHandle_BeginInvoke_m2710129620_MetadataUsageId;
+extern const uint32_t _SetDashboardOverlaySceneProcess_BeginInvoke_m2526512167_MetadataUsageId;
+extern const uint32_t _SetGamepadFocusOverlay_BeginInvoke_m2034066197_MetadataUsageId;
+extern const uint32_t _SetHighQualityOverlay_BeginInvoke_m3035481125_MetadataUsageId;
+extern Il2CppClass* HmdRect2_t_t1656020282_il2cpp_TypeInfo_var;
+extern const uint32_t _SetKeyboardPositionForOverlay_BeginInvoke_m3068464333_MetadataUsageId;
+extern const uint32_t _SetKeyboardTransformAbsolute_BeginInvoke_m633232752_MetadataUsageId;
+extern const uint32_t _SetOverlayAlpha_BeginInvoke_m3102860923_MetadataUsageId;
+extern const uint32_t _SetOverlayAutoCurveDistanceRangeInMeters_BeginInvoke_m3963968441_MetadataUsageId;
+extern const uint32_t _SetOverlayColor_BeginInvoke_m2698545726_MetadataUsageId;
+extern const uint32_t _SetOverlayFlag_BeginInvoke_m3481058368_MetadataUsageId;
+extern const uint32_t _SetOverlayFromFile_BeginInvoke_m1259997958_MetadataUsageId;
+extern const uint32_t _SetOverlayInputMethod_BeginInvoke_m1040282430_MetadataUsageId;
+extern const uint32_t _SetOverlayMouseScale_BeginInvoke_m1988642692_MetadataUsageId;
+extern const uint32_t _SetOverlayNeighbor_BeginInvoke_m2568839933_MetadataUsageId;
+extern const uint32_t _SetOverlayRaw_BeginInvoke_m3728091660_MetadataUsageId;
+extern const uint32_t _SetOverlayRenderingPid_BeginInvoke_m3399668009_MetadataUsageId;
+extern const uint32_t _SetOverlaySortOrder_BeginInvoke_m522240202_MetadataUsageId;
+extern const uint32_t _SetOverlayTexelAspect_BeginInvoke_m119089551_MetadataUsageId;
+extern const uint32_t _SetOverlayTexture_BeginInvoke_m2512968807_MetadataUsageId;
+extern const uint32_t _SetOverlayTextureBounds_BeginInvoke_m1716068379_MetadataUsageId;
+extern const uint32_t _SetOverlayTextureColorSpace_BeginInvoke_m4190866510_MetadataUsageId;
+extern const uint32_t _SetOverlayTransformAbsolute_BeginInvoke_m1515702444_MetadataUsageId;
+extern const uint32_t _SetOverlayTransformTrackedDeviceComponent_BeginInvoke_m2159929953_MetadataUsageId;
+extern const uint32_t _SetOverlayTransformTrackedDeviceRelative_BeginInvoke_m1153129968_MetadataUsageId;
+extern const uint32_t _SetOverlayWidthInMeters_BeginInvoke_m2619253616_MetadataUsageId;
+
+// Valve.VR.TrackedDevicePose_t[]
+struct TrackedDevicePose_tU5BU5D_t2897272049  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) TrackedDevicePose_t_t1668551120  m_Items[1];
+
+public:
+	inline TrackedDevicePose_t_t1668551120  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline TrackedDevicePose_t_t1668551120 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, TrackedDevicePose_t_t1668551120  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline TrackedDevicePose_t_t1668551120  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline TrackedDevicePose_t_t1668551120 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, TrackedDevicePose_t_t1668551120  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// Valve.VR.Texture_t[]
+struct Texture_tU5BU5D_t3142294487  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Texture_t_t3277130850  m_Items[1];
+
+public:
+	inline Texture_t_t3277130850  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Texture_t_t3277130850 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Texture_t_t3277130850  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Texture_t_t3277130850  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Texture_t_t3277130850 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Texture_t_t3277130850  value)
+	{
+		m_Items[index] = value;
+	}
+};
+
+
+
+// System.Void Valve.VR.IVRCompositor/_GetCumulativeStats::Invoke(Valve.VR.Compositor_CumulativeStats&,System.UInt32)
+extern "C"  void _GetCumulativeStats_Invoke_m908221563 (_GetCumulativeStats_t1488691712 * __this, Compositor_CumulativeStats_t450065686 * ___pStats0, uint32_t ___nStatsSizeInBytes1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRCompositor/_GetCurrentSceneFocusProcess::Invoke()
+extern "C"  uint32_t _GetCurrentSceneFocusProcess_Invoke_m2120928094 (_GetCurrentSceneFocusProcess_t1910270748 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single Valve.VR.IVRCompositor/_GetFrameTimeRemaining::Invoke()
+extern "C"  float _GetFrameTimeRemaining_Invoke_m684205209 (_GetFrameTimeRemaining_t2433513766 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRCompositor/_GetFrameTiming::Invoke(Valve.VR.Compositor_FrameTiming&,System.UInt32)
+extern "C"  bool _GetFrameTiming_Invoke_m1617804867 (_GetFrameTiming_t1729400753 * __this, Compositor_FrameTiming_t2839634313 * ___pTiming0, uint32_t ___unFramesAgo1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVRCompositor/_GetLastFrameRenderer::Invoke()
+extern "C"  uint32_t _GetLastFrameRenderer_Invoke_m2095669348 (_GetLastFrameRenderer_t1990293024 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_GetLastPoseForTrackedDeviceIndex::Invoke(System.UInt32,Valve.VR.TrackedDevicePose_t&,Valve.VR.TrackedDevicePose_t&)
+extern "C"  int32_t _GetLastPoseForTrackedDeviceIndex_Invoke_m1418981610 (_GetLastPoseForTrackedDeviceIndex_t3158332482 * __this, uint32_t ___unDeviceIndex0, TrackedDevicePose_t_t1668551120 * ___pOutputPose1, TrackedDevicePose_t_t1668551120 * ___pOutputGamePose2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_GetLastPoses::Invoke(Valve.VR.TrackedDevicePose_t[],System.UInt32,Valve.VR.TrackedDevicePose_t[],System.UInt32)
+extern "C"  int32_t _GetLastPoses_Invoke_m2385192740 (_GetLastPoses_t2717021868 * __this, TrackedDevicePose_tU5BU5D_t2897272049* ___pRenderPoseArray0, uint32_t ___unRenderPoseArrayCount1, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray2, uint32_t ___unGamePoseArrayCount3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_GetMirrorTextureD3D11::Invoke(Valve.VR.EVREye,System.IntPtr,System.IntPtr&)
+extern "C"  int32_t _GetMirrorTextureD3D11_Invoke_m3834115999 (_GetMirrorTextureD3D11_t2322134645 * __this, int32_t ___eEye0, IntPtr_t ___pD3D11DeviceOrResource1, IntPtr_t* ___ppD3D11ShaderResourceView2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_GetMirrorTextureGL::Invoke(Valve.VR.EVREye,System.UInt32&,System.IntPtr)
+extern "C"  int32_t _GetMirrorTextureGL_Invoke_m3525787541 (_GetMirrorTextureGL_t3071699813 * __this, int32_t ___eEye0, uint32_t* ___pglTextureId1, IntPtr_t ___pglSharedTextureHandle2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.ETrackingUniverseOrigin Valve.VR.IVRCompositor/_GetTrackingSpace::Invoke()
+extern "C"  int32_t _GetTrackingSpace_Invoke_m1545227602 (_GetTrackingSpace_t10051991 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_HideMirrorWindow::Invoke()
+extern "C"  void _HideMirrorWindow_Invoke_m1669625672 (_HideMirrorWindow_t396471547 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRCompositor/_IsFullscreen::Invoke()
+extern "C"  bool _IsFullscreen_Invoke_m2652831224 (_IsFullscreen_t988890383 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRCompositor/_IsMirrorWindowVisible::Invoke()
+extern "C"  bool _IsMirrorWindowVisible_Invoke_m3980407510 (_IsMirrorWindowVisible_t410903031 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_LockGLSharedTextureForAccess::Invoke(System.IntPtr)
+extern "C"  void _LockGLSharedTextureForAccess_Invoke_m2614208588 (_LockGLSharedTextureForAccess_t2180462479 * __this, IntPtr_t ___glSharedTextureHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_PostPresentHandoff::Invoke()
+extern "C"  void _PostPresentHandoff_Invoke_m1462502494 (_PostPresentHandoff_t4129629097 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRCompositor/_ReleaseSharedGLTexture::Invoke(System.UInt32,System.IntPtr)
+extern "C"  bool _ReleaseSharedGLTexture_Invoke_m3769607891 (_ReleaseSharedGLTexture_t3443550108 * __this, uint32_t ___glTextureId0, IntPtr_t ___glSharedTextureHandle1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_SetSkyboxOverride::Invoke(Valve.VR.Texture_t[],System.UInt32)
+extern "C"  int32_t _SetSkyboxOverride_Invoke_m972135954 (_SetSkyboxOverride_t2590693784 * __this, Texture_tU5BU5D_t3142294487* ___pTextures0, uint32_t ___unTextureCount1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_SetTrackingSpace::Invoke(Valve.VR.ETrackingUniverseOrigin)
+extern "C"  void _SetTrackingSpace_Invoke_m3137227179 (_SetTrackingSpace_t3662949163 * __this, int32_t ___eOrigin0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVRCompositor/_ShouldAppRenderWithLowResources::Invoke()
+extern "C"  bool _ShouldAppRenderWithLowResources_Invoke_m2038857956 (_ShouldAppRenderWithLowResources_t1834060663 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_ShowMirrorWindow::Invoke()
+extern "C"  void _ShowMirrorWindow_Invoke_m2009350019 (_ShowMirrorWindow_t1161105516 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_Submit::Invoke(Valve.VR.EVREye,Valve.VR.Texture_t&,Valve.VR.VRTextureBounds_t&,Valve.VR.EVRSubmitFlags)
+extern "C"  int32_t _Submit_Invoke_m2753319157 (_Submit_t938257482 * __this, int32_t ___eEye0, Texture_t_t3277130850 * ___pTexture1, VRTextureBounds_t_t1897807375 * ___pBounds2, int32_t ___nSubmitFlags3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_SuspendRendering::Invoke(System.Boolean)
+extern "C"  void _SuspendRendering_Invoke_m671586310 (_SuspendRendering_t3440691638 * __this, bool ___bSuspend0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRCompositor/_UnlockGLSharedTextureForAccess::Invoke(System.IntPtr)
+extern "C"  void _UnlockGLSharedTextureForAccess_Invoke_m299833625 (_UnlockGLSharedTextureForAccess_t320290112 * __this, IntPtr_t ___glSharedTextureHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_WaitGetPoses::Invoke(Valve.VR.TrackedDevicePose_t[],System.UInt32,Valve.VR.TrackedDevicePose_t[],System.UInt32)
+extern "C"  int32_t _WaitGetPoses_Invoke_m2327106977 (_WaitGetPoses_t4192584901 * __this, TrackedDevicePose_tU5BU5D_t2897272049* ___pRenderPoseArray0, uint32_t ___unRenderPoseArrayCount1, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray2, uint32_t ___unGamePoseArrayCount3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRExtendedDisplay/_GetDXGIOutputInfo::Invoke(System.Int32&,System.Int32&)
+extern "C"  void _GetDXGIOutputInfo_Invoke_m1550215398 (_GetDXGIOutputInfo_t2084284319 * __this, int32_t* ___pnAdapterIndex0, int32_t* ___pnAdapterOutputIndex1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRExtendedDisplay/_GetEyeOutputViewport::Invoke(Valve.VR.EVREye,System.UInt32&,System.UInt32&,System.UInt32&,System.UInt32&)
+extern "C"  void _GetEyeOutputViewport_Invoke_m1552877621 (_GetEyeOutputViewport_t693377854 * __this, int32_t ___eEye0, uint32_t* ___pnX1, uint32_t* ___pnY2, uint32_t* ___pnWidth3, uint32_t* ___pnHeight4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVRExtendedDisplay/_GetWindowBounds::Invoke(System.Int32&,System.Int32&,System.UInt32&,System.UInt32&)
+extern "C"  void _GetWindowBounds_Invoke_m804669702 (_GetWindowBounds_t2171929041 * __this, int32_t* ___pnX0, int32_t* ___pnY1, uint32_t* ___pnWidth2, uint32_t* ___pnHeight3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRNotificationError Valve.VR.IVRNotifications/_CreateNotification::Invoke(System.UInt64,System.UInt64,Valve.VR.EVRNotificationType,System.String,Valve.VR.EVRNotificationStyle,Valve.VR.NotificationBitmap_t&,System.UInt32&)
+extern "C"  int32_t _CreateNotification_Invoke_m3478891056 (_CreateNotification_t1905156422 * __this, uint64_t ___ulOverlayHandle0, uint64_t ___ulUserValue1, int32_t ___type2, String_t* ___pchText3, int32_t ___style4, NotificationBitmap_t_t1973232283 * ___pImage5, uint32_t* ___pNotificationId6, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVRNotificationError Valve.VR.IVRNotifications/_RemoveNotification::Invoke(System.UInt32)
+extern "C"  int32_t _RemoveNotification_Invoke_m2612105650 (_RemoveNotification_t3701790586 * __this, uint32_t ___notificationId0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_ClearOverlayTexture::Invoke(System.UInt64)
+extern "C"  int32_t _ClearOverlayTexture_Invoke_m1311382489 (_ClearOverlayTexture_t2610332521 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVROverlay/_ComputeOverlayIntersection::Invoke(System.UInt64,Valve.VR.VROverlayIntersectionParams_t&,Valve.VR.VROverlayIntersectionResults_t&)
+extern "C"  bool _ComputeOverlayIntersection_Invoke_m1110770673 (_ComputeOverlayIntersection_t1141587151 * __this, uint64_t ___ulOverlayHandle0, VROverlayIntersectionParams_t_t3201480230 * ___pParams1, VROverlayIntersectionResults_t_t2886517940 * ___pResults2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_CreateDashboardOverlay::Invoke(System.String,System.String,System.UInt64&,System.UInt64&)
+extern "C"  int32_t _CreateDashboardOverlay_Invoke_m1458939786 (_CreateDashboardOverlay_t637199691 * __this, String_t* ___pchOverlayKey0, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pMainHandle2, uint64_t* ___pThumbnailHandle3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_CreateOverlay::Invoke(System.String,System.String,System.UInt64&)
+extern "C"  int32_t _CreateOverlay_Invoke_m371834953 (_CreateOverlay_t4211228331 * __this, String_t* ___pchOverlayKey0, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pOverlayHandle2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_DestroyOverlay::Invoke(System.UInt64)
+extern "C"  int32_t _DestroyOverlay_Invoke_m898282617 (_DestroyOverlay_t1020329117 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_FindOverlay::Invoke(System.String,System.UInt64&)
+extern "C"  int32_t _FindOverlay_Invoke_m1857532504 (_FindOverlay_t1862706542 * __this, String_t* ___pchOverlayKey0, uint64_t* ___pOverlayHandle1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetDashboardOverlaySceneProcess::Invoke(System.UInt64,System.UInt32&)
+extern "C"  int32_t _GetDashboardOverlaySceneProcess_Invoke_m926359608 (_GetDashboardOverlaySceneProcess_t876496206 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punProcessId1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt64 Valve.VR.IVROverlay/_GetGamepadFocusOverlay::Invoke()
+extern "C"  uint64_t _GetGamepadFocusOverlay_Invoke_m2014588917 (_GetGamepadFocusOverlay_t300021750 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt64 Valve.VR.IVROverlay/_GetHighQualityOverlay::Invoke()
+extern "C"  uint64_t _GetHighQualityOverlay_Invoke_m3919269457 (_GetHighQualityOverlay_t362587296 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVROverlay/_GetKeyboardText::Invoke(System.Text.StringBuilder,System.UInt32)
+extern "C"  uint32_t _GetKeyboardText_Invoke_m883285111 (_GetKeyboardText_t91815223 * __this, StringBuilder_t1221177846 * ___pchText0, uint32_t ___cchText1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayAlpha::Invoke(System.UInt64,System.Single&)
+extern "C"  int32_t _GetOverlayAlpha_Invoke_m1834655296 (_GetOverlayAlpha_t2185592753 * __this, uint64_t ___ulOverlayHandle0, float* ___pfAlpha1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayAutoCurveDistanceRangeInMeters::Invoke(System.UInt64,System.Single&,System.Single&)
+extern "C"  int32_t _GetOverlayAutoCurveDistanceRangeInMeters_Invoke_m2285000342 (_GetOverlayAutoCurveDistanceRangeInMeters_t4193138162 * __this, uint64_t ___ulOverlayHandle0, float* ___pfMinDistanceInMeters1, float* ___pfMaxDistanceInMeters2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayColor::Invoke(System.UInt64,System.Single&,System.Single&,System.Single&)
+extern "C"  int32_t _GetOverlayColor_Invoke_m3788412323 (_GetOverlayColor_t2379424348 * __this, uint64_t ___ulOverlayHandle0, float* ___pfRed1, float* ___pfGreen2, float* ___pfBlue3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.IntPtr Valve.VR.IVROverlay/_GetOverlayErrorNameFromEnum::Invoke(Valve.VR.EVROverlayError)
+extern "C"  IntPtr_t _GetOverlayErrorNameFromEnum_Invoke_m2290417798 (_GetOverlayErrorNameFromEnum_t3535846231 * __this, int32_t ___error0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayFlag::Invoke(System.UInt64,Valve.VR.VROverlayFlags,System.Boolean&)
+extern "C"  int32_t _GetOverlayFlag_Invoke_m2613417877 (_GetOverlayFlag_t3676293589 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eOverlayFlag1, bool* ___pbEnabled2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayImageData::Invoke(System.UInt64,System.IntPtr,System.UInt32,System.UInt32&,System.UInt32&)
+extern "C"  int32_t _GetOverlayImageData_Invoke_m2105959032 (_GetOverlayImageData_t836541042 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pvBuffer1, uint32_t ___unBufferSize2, uint32_t* ___punWidth3, uint32_t* ___punHeight4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayInputMethod::Invoke(System.UInt64,Valve.VR.VROverlayInputMethod&)
+extern "C"  int32_t _GetOverlayInputMethod_Invoke_m3078952085 (_GetOverlayInputMethod_t3217580654 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peInputMethod1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVROverlay/_GetOverlayKey::Invoke(System.UInt64,System.Text.StringBuilder,System.UInt32,Valve.VR.EVROverlayError&)
+extern "C"  uint32_t _GetOverlayKey_Invoke_m2950777966 (_GetOverlayKey_t1341267772 * __this, uint64_t ___ulOverlayHandle0, StringBuilder_t1221177846 * ___pchValue1, uint32_t ___unBufferSize2, int32_t* ___pError3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayMouseScale::Invoke(System.UInt64,Valve.VR.HmdVector2_t&)
+extern "C"  int32_t _GetOverlayMouseScale_Invoke_m1554314519 (_GetOverlayMouseScale_t2826364086 * __this, uint64_t ___ulOverlayHandle0, HmdVector2_t_t2255225135 * ___pvecMouseScale1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVROverlay/_GetOverlayName::Invoke(System.UInt64,System.Text.StringBuilder,System.UInt32,Valve.VR.EVROverlayError&)
+extern "C"  uint32_t _GetOverlayName_Invoke_m1434428818 (_GetOverlayName_t221395366 * __this, uint64_t ___ulOverlayHandle0, StringBuilder_t1221177846 * ___pchValue1, uint32_t ___unBufferSize2, int32_t* ___pError3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVROverlay/_GetOverlayRenderingPid::Invoke(System.UInt64)
+extern "C"  uint32_t _GetOverlayRenderingPid_Invoke_m4066627961 (_GetOverlayRenderingPid_t1470043428 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlaySortOrder::Invoke(System.UInt64,System.UInt32&)
+extern "C"  int32_t _GetOverlaySortOrder_Invoke_m2634989799 (_GetOverlaySortOrder_t376620481 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punSortOrder1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTexelAspect::Invoke(System.UInt64,System.Single&)
+extern "C"  int32_t _GetOverlayTexelAspect_Invoke_m2693602540 (_GetOverlayTexelAspect_t1835744573 * __this, uint64_t ___ulOverlayHandle0, float* ___pfTexelAspect1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTexture::Invoke(System.UInt64,System.IntPtr&,System.IntPtr,System.UInt32&,System.UInt32&,System.UInt32&,Valve.VR.EGraphicsAPIConvention&,Valve.VR.EColorSpace&)
+extern "C"  int32_t _GetOverlayTexture_Invoke_m316321481 (_GetOverlayTexture_t897552288 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t* ___pNativeTextureHandle1, IntPtr_t ___pNativeTextureRef2, uint32_t* ___pWidth3, uint32_t* ___pHeight4, uint32_t* ___pNativeFormat5, int32_t* ___pAPI6, int32_t* ___pColorSpace7, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTextureBounds::Invoke(System.UInt64,Valve.VR.VRTextureBounds_t&)
+extern "C"  int32_t _GetOverlayTextureBounds_Invoke_m1165346240 (_GetOverlayTextureBounds_t3680071147 * __this, uint64_t ___ulOverlayHandle0, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTextureColorSpace::Invoke(System.UInt64,Valve.VR.EColorSpace&)
+extern "C"  int32_t _GetOverlayTextureColorSpace_Invoke_m2501969805 (_GetOverlayTextureColorSpace_t2119049239 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTextureColorSpace1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTextureSize::Invoke(System.UInt64,System.UInt32&,System.UInt32&)
+extern "C"  int32_t _GetOverlayTextureSize_Invoke_m3617082459 (_GetOverlayTextureSize_t1288689867 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___pWidth1, uint32_t* ___pHeight2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTransformAbsolute::Invoke(System.UInt64,Valve.VR.ETrackingUniverseOrigin&,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t _GetOverlayTransformAbsolute_Invoke_m3953185979 (_GetOverlayTransformAbsolute_t2557918150 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTrackingOrigin1, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTransformTrackedDeviceComponent::Invoke(System.UInt64,System.UInt32&,System.String,System.UInt32)
+extern "C"  int32_t _GetOverlayTransformTrackedDeviceComponent_Invoke_m2603987950 (_GetOverlayTransformTrackedDeviceComponent_t3256239660 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punDeviceIndex1, String_t* ___pchComponentName2, uint32_t ___unComponentNameSize3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTransformTrackedDeviceRelative::Invoke(System.UInt64,System.UInt32&,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t _GetOverlayTransformTrackedDeviceRelative_Invoke_m3390332185 (_GetOverlayTransformTrackedDeviceRelative_t893699371 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punTrackedDevice1, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTransformType::Invoke(System.UInt64,Valve.VR.VROverlayTransformType&)
+extern "C"  int32_t _GetOverlayTransformType_Invoke_m2129491701 (_GetOverlayTransformType_t1493074241 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTransformType1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayWidthInMeters::Invoke(System.UInt64,System.Single&)
+extern "C"  int32_t _GetOverlayWidthInMeters_Invoke_m2030291983 (_GetOverlayWidthInMeters_t2815542566 * __this, uint64_t ___ulOverlayHandle0, float* ___pfWidthInMeters1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 Valve.VR.IVROverlay/_GetPrimaryDashboardDevice::Invoke()
+extern "C"  uint32_t _GetPrimaryDashboardDevice_Invoke_m1183102931 (_GetPrimaryDashboardDevice_t812432855 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetTransformForOverlayCoordinates::Invoke(System.UInt64,Valve.VR.ETrackingUniverseOrigin,Valve.VR.HmdVector2_t,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t _GetTransformForOverlayCoordinates_Invoke_m1768155201 (_GetTransformForOverlayCoordinates_t2483359939 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTrackingOrigin1, HmdVector2_t_t2255225135  ___coordinatesInOverlay2, HmdMatrix34_t_t664273062 * ___pmatTransform3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVROverlay/_HandleControllerOverlayInteractionAsMouse::Invoke(System.UInt64,System.UInt32)
+extern "C"  bool _HandleControllerOverlayInteractionAsMouse_Invoke_m1657897616 (_HandleControllerOverlayInteractionAsMouse_t2899449918 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unControllerDeviceIndex1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVROverlay/_HideKeyboard::Invoke()
+extern "C"  void _HideKeyboard_Invoke_m1849642691 (_HideKeyboard_t3483797360 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_HideOverlay::Invoke(System.UInt64)
+extern "C"  int32_t _HideOverlay_Invoke_m1671076155 (_HideOverlay_t2737366627 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVROverlay/_IsActiveDashboardOverlay::Invoke(System.UInt64)
+extern "C"  bool _IsActiveDashboardOverlay_Invoke_m2899028641 (_IsActiveDashboardOverlay_t3144660141 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVROverlay/_IsDashboardVisible::Invoke()
+extern "C"  bool _IsDashboardVisible_Invoke_m2954394420 (_IsDashboardVisible_t2020287181 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVROverlay/_IsHoverTargetOverlay::Invoke(System.UInt64)
+extern "C"  bool _IsHoverTargetOverlay_Invoke_m3152412494 (_IsHoverTargetOverlay_t4101716668 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVROverlay/_IsOverlayVisible::Invoke(System.UInt64)
+extern "C"  bool _IsOverlayVisible_Invoke_m1960522219 (_IsOverlayVisible_t1564696099 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_MoveGamepadFocusToNeighbor::Invoke(Valve.VR.EOverlayDirection,System.UInt64)
+extern "C"  int32_t _MoveGamepadFocusToNeighbor_Invoke_m973931588 (_MoveGamepadFocusToNeighbor_t2016645278 * __this, int32_t ___eDirection0, uint64_t ___ulFrom1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Valve.VR.IVROverlay/_PollNextOverlayEvent::Invoke(System.UInt64,Valve.VR.VREvent_t&,System.UInt32)
+extern "C"  bool _PollNextOverlayEvent_Invoke_m323202474 (_PollNextOverlayEvent_t131678587 * __this, uint64_t ___ulOverlayHandle0, VREvent_t_t3405266389 * ___pEvent1, uint32_t ___uncbVREvent2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_ReleaseNativeOverlayHandle::Invoke(System.UInt64,System.IntPtr)
+extern "C"  int32_t _ReleaseNativeOverlayHandle_Invoke_m377416379 (_ReleaseNativeOverlayHandle_t2842744417 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pNativeTextureHandle1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetDashboardOverlaySceneProcess::Invoke(System.UInt64,System.UInt32)
+extern "C"  int32_t _SetDashboardOverlaySceneProcess_Invoke_m115664276 (_SetDashboardOverlaySceneProcess_t1462353074 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unProcessId1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetGamepadFocusOverlay::Invoke(System.UInt64)
+extern "C"  int32_t _SetGamepadFocusOverlay_Invoke_m1830831244 (_SetGamepadFocusOverlay_t2763810618 * __this, uint64_t ___ulNewFocusOverlay0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetHighQualityOverlay::Invoke(System.UInt64)
+extern "C"  int32_t _SetHighQualityOverlay_Invoke_m4265083322 (_SetHighQualityOverlay_t4225758140 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVROverlay/_SetKeyboardPositionForOverlay::Invoke(System.UInt64,Valve.VR.HmdRect2_t)
+extern "C"  void _SetKeyboardPositionForOverlay_Invoke_m24978526 (_SetKeyboardPositionForOverlay_t3695826360 * __this, uint64_t ___ulOverlayHandle0, HmdRect2_t_t1656020282  ___avoidRect1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Valve.VR.IVROverlay/_SetKeyboardTransformAbsolute::Invoke(Valve.VR.ETrackingUniverseOrigin,Valve.VR.HmdMatrix34_t&)
+extern "C"  void _SetKeyboardTransformAbsolute_Invoke_m2703238449 (_SetKeyboardTransformAbsolute_t443079689 * __this, int32_t ___eTrackingOrigin0, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToKeyboardTransform1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayAlpha::Invoke(System.UInt64,System.Single)
+extern "C"  int32_t _SetOverlayAlpha_Invoke_m1349081608 (_SetOverlayAlpha_t2092887413 * __this, uint64_t ___ulOverlayHandle0, float ___fAlpha1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayAutoCurveDistanceRangeInMeters::Invoke(System.UInt64,System.Single,System.Single)
+extern "C"  int32_t _SetOverlayAutoCurveDistanceRangeInMeters_Invoke_m2045797120 (_SetOverlayAutoCurveDistanceRangeInMeters_t1475163830 * __this, uint64_t ___ulOverlayHandle0, float ___fMinDistanceInMeters1, float ___fMaxDistanceInMeters2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayColor::Invoke(System.UInt64,System.Single,System.Single,System.Single)
+extern "C"  int32_t _SetOverlayColor_Invoke_m1549057657 (_SetOverlayColor_t2804573176 * __this, uint64_t ___ulOverlayHandle0, float ___fRed1, float ___fGreen2, float ___fBlue3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayFlag::Invoke(System.UInt64,Valve.VR.VROverlayFlags,System.Boolean)
+extern "C"  int32_t _SetOverlayFlag_Invoke_m2769435287 (_SetOverlayFlag_t1900166033 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eOverlayFlag1, bool ___bEnabled2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayFromFile::Invoke(System.UInt64,System.String)
+extern "C"  int32_t _SetOverlayFromFile_Invoke_m3103035007 (_SetOverlayFromFile_t598184189 * __this, uint64_t ___ulOverlayHandle0, String_t* ___pchFilePath1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayInputMethod::Invoke(System.UInt64,Valve.VR.VROverlayInputMethod)
+extern "C"  int32_t _SetOverlayInputMethod_Invoke_m3806261779 (_SetOverlayInputMethod_t3575042602 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eInputMethod1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayMouseScale::Invoke(System.UInt64,Valve.VR.HmdVector2_t&)
+extern "C"  int32_t _SetOverlayMouseScale_Invoke_m1643569667 (_SetOverlayMouseScale_t2624726138 * __this, uint64_t ___ulOverlayHandle0, HmdVector2_t_t2255225135 * ___pvecMouseScale1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayNeighbor::Invoke(Valve.VR.EOverlayDirection,System.UInt64,System.UInt64)
+extern "C"  int32_t _SetOverlayNeighbor_Invoke_m1418526992 (_SetOverlayNeighbor_t1117963895 * __this, int32_t ___eDirection0, uint64_t ___ulFrom1, uint64_t ___ulTo2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayRaw::Invoke(System.UInt64,System.IntPtr,System.UInt32,System.UInt32,System.UInt32)
+extern "C"  int32_t _SetOverlayRaw_Invoke_m1372004499 (_SetOverlayRaw_t3268606321 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pvBuffer1, uint32_t ___unWidth2, uint32_t ___unHeight3, uint32_t ___unDepth4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayRenderingPid::Invoke(System.UInt64,System.UInt32)
+extern "C"  int32_t _SetOverlayRenderingPid_Invoke_m1551784166 (_SetOverlayRenderingPid_t1970553664 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unPID1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlaySortOrder::Invoke(System.UInt64,System.UInt32)
+extern "C"  int32_t _SetOverlaySortOrder_Invoke_m3384139201 (_SetOverlaySortOrder_t3099711365 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unSortOrder1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTexelAspect::Invoke(System.UInt64,System.Single)
+extern "C"  int32_t _SetOverlayTexelAspect_Invoke_m800057472 (_SetOverlayTexelAspect_t460846625 * __this, uint64_t ___ulOverlayHandle0, float ___fTexelAspect1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTexture::Invoke(System.UInt64,Valve.VR.Texture_t&)
+extern "C"  int32_t _SetOverlayTexture_Invoke_m3543005210 (_SetOverlayTexture_t2238656700 * __this, uint64_t ___ulOverlayHandle0, Texture_t_t3277130850 * ___pTexture1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTextureBounds::Invoke(System.UInt64,Valve.VR.VRTextureBounds_t&)
+extern "C"  int32_t _SetOverlayTextureBounds_Invoke_m224047540 (_SetOverlayTextureBounds_t1179269927 * __this, uint64_t ___ulOverlayHandle0, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTextureColorSpace::Invoke(System.UInt64,Valve.VR.EColorSpace)
+extern "C"  int32_t _SetOverlayTextureColorSpace_Invoke_m1296924107 (_SetOverlayTextureColorSpace_t1399555963 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTextureColorSpace1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTransformAbsolute::Invoke(System.UInt64,Valve.VR.ETrackingUniverseOrigin,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t _SetOverlayTransformAbsolute_Invoke_m1535134225 (_SetOverlayTransformAbsolute_t2100297354 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTrackingOrigin1, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTransformTrackedDeviceComponent::Invoke(System.UInt64,System.UInt32,System.String)
+extern "C"  int32_t _SetOverlayTransformTrackedDeviceComponent_Invoke_m1215847030 (_SetOverlayTransformTrackedDeviceComponent_t1749665136 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unDeviceIndex1, String_t* ___pchComponentName2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTransformTrackedDeviceRelative::Invoke(System.UInt64,System.UInt32,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t _SetOverlayTransformTrackedDeviceRelative_Invoke_m4082931255 (_SetOverlayTransformTrackedDeviceRelative_t579082695 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unTrackedDevice1, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayWidthInMeters::Invoke(System.UInt64,System.Single)
+extern "C"  int32_t _SetOverlayWidthInMeters_Invoke_m1782438045 (_SetOverlayWidthInMeters_t3047220066 * __this, uint64_t ___ulOverlayHandle0, float ___fWidthInMeters1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+extern "C"  void DelegatePInvokeWrapper__GetCumulativeStats_t1488691712 (_GetCumulativeStats_t1488691712 * __this, Compositor_CumulativeStats_t450065686 * ___pStats0, uint32_t ___nStatsSizeInBytes1, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)(Compositor_CumulativeStats_t450065686 *, uint32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc(___pStats0, ___nStatsSizeInBytes1);
+
+}
+// System.Void Valve.VR.IVRCompositor/_GetCumulativeStats::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetCumulativeStats__ctor_m3029274435 (_GetCumulativeStats_t1488691712 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void Valve.VR.IVRCompositor/_GetCumulativeStats::Invoke(Valve.VR.Compositor_CumulativeStats&,System.UInt32)
+extern "C"  void _GetCumulativeStats_Invoke_m908221563 (_GetCumulativeStats_t1488691712 * __this, Compositor_CumulativeStats_t450065686 * ___pStats0, uint32_t ___nStatsSizeInBytes1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetCumulativeStats_Invoke_m908221563((_GetCumulativeStats_t1488691712 *)__this->get_prev_9(),___pStats0, ___nStatsSizeInBytes1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, Compositor_CumulativeStats_t450065686 * ___pStats0, uint32_t ___nStatsSizeInBytes1, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___pStats0, ___nStatsSizeInBytes1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, Compositor_CumulativeStats_t450065686 * ___pStats0, uint32_t ___nStatsSizeInBytes1, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___pStats0, ___nStatsSizeInBytes1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_GetCumulativeStats::BeginInvoke(Valve.VR.Compositor_CumulativeStats&,System.UInt32,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetCumulativeStats_BeginInvoke_m3037769734 (_GetCumulativeStats_t1488691712 * __this, Compositor_CumulativeStats_t450065686 * ___pStats0, uint32_t ___nStatsSizeInBytes1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetCumulativeStats_BeginInvoke_m3037769734_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(Compositor_CumulativeStats_t450065686_il2cpp_TypeInfo_var, &(*___pStats0));
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___nStatsSizeInBytes1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// System.Void Valve.VR.IVRCompositor/_GetCumulativeStats::EndInvoke(Valve.VR.Compositor_CumulativeStats&,System.IAsyncResult)
+extern "C"  void _GetCumulativeStats_EndInvoke_m2944679029 (_GetCumulativeStats_t1488691712 * __this, Compositor_CumulativeStats_t450065686 * ___pStats0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pStats0,
+	};
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+}
+extern "C"  uint32_t DelegatePInvokeWrapper__GetCurrentSceneFocusProcess_t1910270748 (_GetCurrentSceneFocusProcess_t1910270748 * __this, const MethodInfo* method)
+{
+	typedef uint32_t (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	uint32_t returnValue = il2cppPInvokeFunc();
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVRCompositor/_GetCurrentSceneFocusProcess::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetCurrentSceneFocusProcess__ctor_m1678893267 (_GetCurrentSceneFocusProcess_t1910270748 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.UInt32 Valve.VR.IVRCompositor/_GetCurrentSceneFocusProcess::Invoke()
+extern "C"  uint32_t _GetCurrentSceneFocusProcess_Invoke_m2120928094 (_GetCurrentSceneFocusProcess_t1910270748 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetCurrentSceneFocusProcess_Invoke_m2120928094((_GetCurrentSceneFocusProcess_t1910270748 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef uint32_t (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef uint32_t (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_GetCurrentSceneFocusProcess::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetCurrentSceneFocusProcess_BeginInvoke_m3472410216 (_GetCurrentSceneFocusProcess_t1910270748 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.UInt32 Valve.VR.IVRCompositor/_GetCurrentSceneFocusProcess::EndInvoke(System.IAsyncResult)
+extern "C"  uint32_t _GetCurrentSceneFocusProcess_EndInvoke_m2968155718 (_GetCurrentSceneFocusProcess_t1910270748 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(uint32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  float DelegatePInvokeWrapper__GetFrameTimeRemaining_t2433513766 (_GetFrameTimeRemaining_t2433513766 * __this, const MethodInfo* method)
+{
+	typedef float (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	float returnValue = il2cppPInvokeFunc();
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVRCompositor/_GetFrameTimeRemaining::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetFrameTimeRemaining__ctor_m1077831267 (_GetFrameTimeRemaining_t2433513766 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Single Valve.VR.IVRCompositor/_GetFrameTimeRemaining::Invoke()
+extern "C"  float _GetFrameTimeRemaining_Invoke_m684205209 (_GetFrameTimeRemaining_t2433513766 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetFrameTimeRemaining_Invoke_m684205209((_GetFrameTimeRemaining_t2433513766 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef float (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef float (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_GetFrameTimeRemaining::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetFrameTimeRemaining_BeginInvoke_m2328519014 (_GetFrameTimeRemaining_t2433513766 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.Single Valve.VR.IVRCompositor/_GetFrameTimeRemaining::EndInvoke(System.IAsyncResult)
+extern "C"  float _GetFrameTimeRemaining_EndInvoke_m3121271479 (_GetFrameTimeRemaining_t2433513766 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(float*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  bool DelegatePInvokeWrapper__GetFrameTiming_t1729400753 (_GetFrameTiming_t1729400753 * __this, Compositor_FrameTiming_t2839634313 * ___pTiming0, uint32_t ___unFramesAgo1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(Compositor_FrameTiming_t2839634313 *, uint32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___pTiming0, ___unFramesAgo1);
+
+	return static_cast<bool>(returnValue);
+}
+// System.Void Valve.VR.IVRCompositor/_GetFrameTiming::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetFrameTiming__ctor_m4287280538 (_GetFrameTiming_t1729400753 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Boolean Valve.VR.IVRCompositor/_GetFrameTiming::Invoke(Valve.VR.Compositor_FrameTiming&,System.UInt32)
+extern "C"  bool _GetFrameTiming_Invoke_m1617804867 (_GetFrameTiming_t1729400753 * __this, Compositor_FrameTiming_t2839634313 * ___pTiming0, uint32_t ___unFramesAgo1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetFrameTiming_Invoke_m1617804867((_GetFrameTiming_t1729400753 *)__this->get_prev_9(),___pTiming0, ___unFramesAgo1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef bool (*FunctionPointerType) (Il2CppObject *, void* __this, Compositor_FrameTiming_t2839634313 * ___pTiming0, uint32_t ___unFramesAgo1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___pTiming0, ___unFramesAgo1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef bool (*FunctionPointerType) (void* __this, Compositor_FrameTiming_t2839634313 * ___pTiming0, uint32_t ___unFramesAgo1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___pTiming0, ___unFramesAgo1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_GetFrameTiming::BeginInvoke(Valve.VR.Compositor_FrameTiming&,System.UInt32,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetFrameTiming_BeginInvoke_m2026346784 (_GetFrameTiming_t1729400753 * __this, Compositor_FrameTiming_t2839634313 * ___pTiming0, uint32_t ___unFramesAgo1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetFrameTiming_BeginInvoke_m2026346784_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(Compositor_FrameTiming_t2839634313_il2cpp_TypeInfo_var, &(*___pTiming0));
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unFramesAgo1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// System.Boolean Valve.VR.IVRCompositor/_GetFrameTiming::EndInvoke(Valve.VR.Compositor_FrameTiming&,System.IAsyncResult)
+extern "C"  bool _GetFrameTiming_EndInvoke_m683075681 (_GetFrameTiming_t1729400753 * __this, Compositor_FrameTiming_t2839634313 * ___pTiming0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pTiming0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(bool*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  uint32_t DelegatePInvokeWrapper__GetLastFrameRenderer_t1990293024 (_GetLastFrameRenderer_t1990293024 * __this, const MethodInfo* method)
+{
+	typedef uint32_t (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	uint32_t returnValue = il2cppPInvokeFunc();
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVRCompositor/_GetLastFrameRenderer::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetLastFrameRenderer__ctor_m1975382365 (_GetLastFrameRenderer_t1990293024 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.UInt32 Valve.VR.IVRCompositor/_GetLastFrameRenderer::Invoke()
+extern "C"  uint32_t _GetLastFrameRenderer_Invoke_m2095669348 (_GetLastFrameRenderer_t1990293024 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetLastFrameRenderer_Invoke_m2095669348((_GetLastFrameRenderer_t1990293024 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef uint32_t (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef uint32_t (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_GetLastFrameRenderer::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetLastFrameRenderer_BeginInvoke_m952782628 (_GetLastFrameRenderer_t1990293024 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.UInt32 Valve.VR.IVRCompositor/_GetLastFrameRenderer::EndInvoke(System.IAsyncResult)
+extern "C"  uint32_t _GetLastFrameRenderer_EndInvoke_m1751868308 (_GetLastFrameRenderer_t1990293024 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(uint32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetLastPoseForTrackedDeviceIndex_t3158332482 (_GetLastPoseForTrackedDeviceIndex_t3158332482 * __this, uint32_t ___unDeviceIndex0, TrackedDevicePose_t_t1668551120 * ___pOutputPose1, TrackedDevicePose_t_t1668551120 * ___pOutputGamePose2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint32_t, TrackedDevicePose_t_t1668551120 *, TrackedDevicePose_t_t1668551120 *);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___unDeviceIndex0, ___pOutputPose1, ___pOutputGamePose2);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVRCompositor/_GetLastPoseForTrackedDeviceIndex::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetLastPoseForTrackedDeviceIndex__ctor_m1941311587 (_GetLastPoseForTrackedDeviceIndex_t3158332482 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_GetLastPoseForTrackedDeviceIndex::Invoke(System.UInt32,Valve.VR.TrackedDevicePose_t&,Valve.VR.TrackedDevicePose_t&)
+extern "C"  int32_t _GetLastPoseForTrackedDeviceIndex_Invoke_m1418981610 (_GetLastPoseForTrackedDeviceIndex_t3158332482 * __this, uint32_t ___unDeviceIndex0, TrackedDevicePose_t_t1668551120 * ___pOutputPose1, TrackedDevicePose_t_t1668551120 * ___pOutputGamePose2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetLastPoseForTrackedDeviceIndex_Invoke_m1418981610((_GetLastPoseForTrackedDeviceIndex_t3158332482 *)__this->get_prev_9(),___unDeviceIndex0, ___pOutputPose1, ___pOutputGamePose2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint32_t ___unDeviceIndex0, TrackedDevicePose_t_t1668551120 * ___pOutputPose1, TrackedDevicePose_t_t1668551120 * ___pOutputGamePose2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___unDeviceIndex0, ___pOutputPose1, ___pOutputGamePose2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint32_t ___unDeviceIndex0, TrackedDevicePose_t_t1668551120 * ___pOutputPose1, TrackedDevicePose_t_t1668551120 * ___pOutputGamePose2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___unDeviceIndex0, ___pOutputPose1, ___pOutputGamePose2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_GetLastPoseForTrackedDeviceIndex::BeginInvoke(System.UInt32,Valve.VR.TrackedDevicePose_t&,Valve.VR.TrackedDevicePose_t&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetLastPoseForTrackedDeviceIndex_BeginInvoke_m104609342 (_GetLastPoseForTrackedDeviceIndex_t3158332482 * __this, uint32_t ___unDeviceIndex0, TrackedDevicePose_t_t1668551120 * ___pOutputPose1, TrackedDevicePose_t_t1668551120 * ___pOutputGamePose2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetLastPoseForTrackedDeviceIndex_BeginInvoke_m104609342_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unDeviceIndex0);
+	__d_args[1] = Box(TrackedDevicePose_t_t1668551120_il2cpp_TypeInfo_var, &(*___pOutputPose1));
+	__d_args[2] = Box(TrackedDevicePose_t_t1668551120_il2cpp_TypeInfo_var, &(*___pOutputGamePose2));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_GetLastPoseForTrackedDeviceIndex::EndInvoke(Valve.VR.TrackedDevicePose_t&,Valve.VR.TrackedDevicePose_t&,System.IAsyncResult)
+extern "C"  int32_t _GetLastPoseForTrackedDeviceIndex_EndInvoke_m1815089624 (_GetLastPoseForTrackedDeviceIndex_t3158332482 * __this, TrackedDevicePose_t_t1668551120 * ___pOutputPose0, TrackedDevicePose_t_t1668551120 * ___pOutputGamePose1, Il2CppObject * ___result2, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pOutputPose0,
+	___pOutputGamePose1,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result2, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetLastPoses_t2717021868 (_GetLastPoses_t2717021868 * __this, TrackedDevicePose_tU5BU5D_t2897272049* ___pRenderPoseArray0, uint32_t ___unRenderPoseArrayCount1, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray2, uint32_t ___unGamePoseArrayCount3, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(TrackedDevicePose_t_t1668551120 *, uint32_t, TrackedDevicePose_t_t1668551120 *, uint32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___pRenderPoseArray0' to native representation
+	TrackedDevicePose_t_t1668551120 * ____pRenderPoseArray0_marshaled = NULL;
+	if (___pRenderPoseArray0 != NULL)
+	{
+		____pRenderPoseArray0_marshaled = reinterpret_cast<TrackedDevicePose_t_t1668551120 *>((___pRenderPoseArray0)->GetAddressAtUnchecked(0));
+	}
+
+	// Marshaling of parameter '___pGamePoseArray2' to native representation
+	TrackedDevicePose_t_t1668551120 * ____pGamePoseArray2_marshaled = NULL;
+	if (___pGamePoseArray2 != NULL)
+	{
+		____pGamePoseArray2_marshaled = reinterpret_cast<TrackedDevicePose_t_t1668551120 *>((___pGamePoseArray2)->GetAddressAtUnchecked(0));
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(____pRenderPoseArray0_marshaled, ___unRenderPoseArrayCount1, ____pGamePoseArray2_marshaled, ___unGamePoseArrayCount3);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVRCompositor/_GetLastPoses::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetLastPoses__ctor_m1398835847 (_GetLastPoses_t2717021868 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_GetLastPoses::Invoke(Valve.VR.TrackedDevicePose_t[],System.UInt32,Valve.VR.TrackedDevicePose_t[],System.UInt32)
+extern "C"  int32_t _GetLastPoses_Invoke_m2385192740 (_GetLastPoses_t2717021868 * __this, TrackedDevicePose_tU5BU5D_t2897272049* ___pRenderPoseArray0, uint32_t ___unRenderPoseArrayCount1, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray2, uint32_t ___unGamePoseArrayCount3, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetLastPoses_Invoke_m2385192740((_GetLastPoses_t2717021868 *)__this->get_prev_9(),___pRenderPoseArray0, ___unRenderPoseArrayCount1, ___pGamePoseArray2, ___unGamePoseArrayCount3, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, TrackedDevicePose_tU5BU5D_t2897272049* ___pRenderPoseArray0, uint32_t ___unRenderPoseArrayCount1, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray2, uint32_t ___unGamePoseArrayCount3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___pRenderPoseArray0, ___unRenderPoseArrayCount1, ___pGamePoseArray2, ___unGamePoseArrayCount3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else if (__this->get_m_target_2() != NULL || ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, TrackedDevicePose_tU5BU5D_t2897272049* ___pRenderPoseArray0, uint32_t ___unRenderPoseArrayCount1, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray2, uint32_t ___unGamePoseArrayCount3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___pRenderPoseArray0, ___unRenderPoseArrayCount1, ___pGamePoseArray2, ___unGamePoseArrayCount3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint32_t ___unRenderPoseArrayCount1, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray2, uint32_t ___unGamePoseArrayCount3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(___pRenderPoseArray0, ___unRenderPoseArrayCount1, ___pGamePoseArray2, ___unGamePoseArrayCount3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_GetLastPoses::BeginInvoke(Valve.VR.TrackedDevicePose_t[],System.UInt32,Valve.VR.TrackedDevicePose_t[],System.UInt32,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetLastPoses_BeginInvoke_m4264476664 (_GetLastPoses_t2717021868 * __this, TrackedDevicePose_tU5BU5D_t2897272049* ___pRenderPoseArray0, uint32_t ___unRenderPoseArrayCount1, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray2, uint32_t ___unGamePoseArrayCount3, AsyncCallback_t163412349 * ___callback4, Il2CppObject * ___object5, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetLastPoses_BeginInvoke_m4264476664_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[5] = {0};
+	__d_args[0] = ___pRenderPoseArray0;
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unRenderPoseArrayCount1);
+	__d_args[2] = ___pGamePoseArray2;
+	__d_args[3] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unGamePoseArrayCount3);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback4, (Il2CppObject*)___object5);
+}
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_GetLastPoses::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _GetLastPoses_EndInvoke_m3279154754 (_GetLastPoses_t2717021868 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetMirrorTextureD3D11_t2322134645 (_GetMirrorTextureD3D11_t2322134645 * __this, int32_t ___eEye0, IntPtr_t ___pD3D11DeviceOrResource1, IntPtr_t* ___ppD3D11ShaderResourceView2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(int32_t, intptr_t, intptr_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___eEye0, reinterpret_cast<intptr_t>((___pD3D11DeviceOrResource1).get_m_value_0()), reinterpret_cast<intptr_t*>(___ppD3D11ShaderResourceView2));
+
+	// Marshaling of parameter '___ppD3D11ShaderResourceView2' back from native representation
+	___ppD3D11ShaderResourceView2 = reinterpret_cast<IntPtr_t*>(reinterpret_cast<intptr_t*>(___ppD3D11ShaderResourceView2));
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVRCompositor/_GetMirrorTextureD3D11::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetMirrorTextureD3D11__ctor_m862406362 (_GetMirrorTextureD3D11_t2322134645 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_GetMirrorTextureD3D11::Invoke(Valve.VR.EVREye,System.IntPtr,System.IntPtr&)
+extern "C"  int32_t _GetMirrorTextureD3D11_Invoke_m3834115999 (_GetMirrorTextureD3D11_t2322134645 * __this, int32_t ___eEye0, IntPtr_t ___pD3D11DeviceOrResource1, IntPtr_t* ___ppD3D11ShaderResourceView2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetMirrorTextureD3D11_Invoke_m3834115999((_GetMirrorTextureD3D11_t2322134645 *)__this->get_prev_9(),___eEye0, ___pD3D11DeviceOrResource1, ___ppD3D11ShaderResourceView2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, int32_t ___eEye0, IntPtr_t ___pD3D11DeviceOrResource1, IntPtr_t* ___ppD3D11ShaderResourceView2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___eEye0, ___pD3D11DeviceOrResource1, ___ppD3D11ShaderResourceView2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, int32_t ___eEye0, IntPtr_t ___pD3D11DeviceOrResource1, IntPtr_t* ___ppD3D11ShaderResourceView2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___eEye0, ___pD3D11DeviceOrResource1, ___ppD3D11ShaderResourceView2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_GetMirrorTextureD3D11::BeginInvoke(Valve.VR.EVREye,System.IntPtr,System.IntPtr&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetMirrorTextureD3D11_BeginInvoke_m2649647267 (_GetMirrorTextureD3D11_t2322134645 * __this, int32_t ___eEye0, IntPtr_t ___pD3D11DeviceOrResource1, IntPtr_t* ___ppD3D11ShaderResourceView2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetMirrorTextureD3D11_BeginInvoke_m2649647267_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = Box(EVREye_t3088716538_il2cpp_TypeInfo_var, &___eEye0);
+	__d_args[1] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___pD3D11DeviceOrResource1);
+	__d_args[2] = Box(IntPtr_t_il2cpp_TypeInfo_var, &(*___ppD3D11ShaderResourceView2));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_GetMirrorTextureD3D11::EndInvoke(System.IntPtr&,System.IAsyncResult)
+extern "C"  int32_t _GetMirrorTextureD3D11_EndInvoke_m3752083151 (_GetMirrorTextureD3D11_t2322134645 * __this, IntPtr_t* ___ppD3D11ShaderResourceView0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___ppD3D11ShaderResourceView0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetMirrorTextureGL_t3071699813 (_GetMirrorTextureGL_t3071699813 * __this, int32_t ___eEye0, uint32_t* ___pglTextureId1, IntPtr_t ___pglSharedTextureHandle2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(int32_t, uint32_t*, intptr_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___eEye0, ___pglTextureId1, reinterpret_cast<intptr_t>((___pglSharedTextureHandle2).get_m_value_0()));
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVRCompositor/_GetMirrorTextureGL::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetMirrorTextureGL__ctor_m1731500008 (_GetMirrorTextureGL_t3071699813 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_GetMirrorTextureGL::Invoke(Valve.VR.EVREye,System.UInt32&,System.IntPtr)
+extern "C"  int32_t _GetMirrorTextureGL_Invoke_m3525787541 (_GetMirrorTextureGL_t3071699813 * __this, int32_t ___eEye0, uint32_t* ___pglTextureId1, IntPtr_t ___pglSharedTextureHandle2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetMirrorTextureGL_Invoke_m3525787541((_GetMirrorTextureGL_t3071699813 *)__this->get_prev_9(),___eEye0, ___pglTextureId1, ___pglSharedTextureHandle2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, int32_t ___eEye0, uint32_t* ___pglTextureId1, IntPtr_t ___pglSharedTextureHandle2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___eEye0, ___pglTextureId1, ___pglSharedTextureHandle2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, int32_t ___eEye0, uint32_t* ___pglTextureId1, IntPtr_t ___pglSharedTextureHandle2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___eEye0, ___pglTextureId1, ___pglSharedTextureHandle2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_GetMirrorTextureGL::BeginInvoke(Valve.VR.EVREye,System.UInt32&,System.IntPtr,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetMirrorTextureGL_BeginInvoke_m184112877 (_GetMirrorTextureGL_t3071699813 * __this, int32_t ___eEye0, uint32_t* ___pglTextureId1, IntPtr_t ___pglSharedTextureHandle2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetMirrorTextureGL_BeginInvoke_m184112877_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = Box(EVREye_t3088716538_il2cpp_TypeInfo_var, &___eEye0);
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___pglTextureId1));
+	__d_args[2] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___pglSharedTextureHandle2);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_GetMirrorTextureGL::EndInvoke(System.UInt32&,System.IAsyncResult)
+extern "C"  int32_t _GetMirrorTextureGL_EndInvoke_m675927669 (_GetMirrorTextureGL_t3071699813 * __this, uint32_t* ___pglTextureId0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pglTextureId0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetTrackingSpace_t10051991 (_GetTrackingSpace_t10051991 * __this, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc();
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVRCompositor/_GetTrackingSpace::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetTrackingSpace__ctor_m3494099052 (_GetTrackingSpace_t10051991 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.ETrackingUniverseOrigin Valve.VR.IVRCompositor/_GetTrackingSpace::Invoke()
+extern "C"  int32_t _GetTrackingSpace_Invoke_m1545227602 (_GetTrackingSpace_t10051991 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetTrackingSpace_Invoke_m1545227602((_GetTrackingSpace_t10051991 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_GetTrackingSpace::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetTrackingSpace_BeginInvoke_m3504248647 (_GetTrackingSpace_t10051991 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// Valve.VR.ETrackingUniverseOrigin Valve.VR.IVRCompositor/_GetTrackingSpace::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _GetTrackingSpace_EndInvoke_m2763027134 (_GetTrackingSpace_t10051991 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  void DelegatePInvokeWrapper__HideMirrorWindow_t396471547 (_HideMirrorWindow_t396471547 * __this, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc();
+
+}
+// System.Void Valve.VR.IVRCompositor/_HideMirrorWindow::.ctor(System.Object,System.IntPtr)
+extern "C"  void _HideMirrorWindow__ctor_m1630376586 (_HideMirrorWindow_t396471547 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void Valve.VR.IVRCompositor/_HideMirrorWindow::Invoke()
+extern "C"  void _HideMirrorWindow_Invoke_m1669625672 (_HideMirrorWindow_t396471547 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_HideMirrorWindow_Invoke_m1669625672((_HideMirrorWindow_t396471547 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_HideMirrorWindow::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _HideMirrorWindow_BeginInvoke_m2404419987 (_HideMirrorWindow_t396471547 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.Void Valve.VR.IVRCompositor/_HideMirrorWindow::EndInvoke(System.IAsyncResult)
+extern "C"  void _HideMirrorWindow_EndInvoke_m1696067028 (_HideMirrorWindow_t396471547 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+extern "C"  bool DelegatePInvokeWrapper__IsFullscreen_t988890383 (_IsFullscreen_t988890383 * __this, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc();
+
+	return static_cast<bool>(returnValue);
+}
+// System.Void Valve.VR.IVRCompositor/_IsFullscreen::.ctor(System.Object,System.IntPtr)
+extern "C"  void _IsFullscreen__ctor_m2534859156 (_IsFullscreen_t988890383 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Boolean Valve.VR.IVRCompositor/_IsFullscreen::Invoke()
+extern "C"  bool _IsFullscreen_Invoke_m2652831224 (_IsFullscreen_t988890383 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_IsFullscreen_Invoke_m2652831224((_IsFullscreen_t988890383 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef bool (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef bool (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_IsFullscreen::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _IsFullscreen_BeginInvoke_m953180879 (_IsFullscreen_t988890383 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.Boolean Valve.VR.IVRCompositor/_IsFullscreen::EndInvoke(System.IAsyncResult)
+extern "C"  bool _IsFullscreen_EndInvoke_m1658196652 (_IsFullscreen_t988890383 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(bool*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  bool DelegatePInvokeWrapper__IsMirrorWindowVisible_t410903031 (_IsMirrorWindowVisible_t410903031 * __this, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc();
+
+	return static_cast<bool>(returnValue);
+}
+// System.Void Valve.VR.IVRCompositor/_IsMirrorWindowVisible::.ctor(System.Object,System.IntPtr)
+extern "C"  void _IsMirrorWindowVisible__ctor_m1481155474 (_IsMirrorWindowVisible_t410903031 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Boolean Valve.VR.IVRCompositor/_IsMirrorWindowVisible::Invoke()
+extern "C"  bool _IsMirrorWindowVisible_Invoke_m3980407510 (_IsMirrorWindowVisible_t410903031 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_IsMirrorWindowVisible_Invoke_m3980407510((_IsMirrorWindowVisible_t410903031 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef bool (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef bool (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_IsMirrorWindowVisible::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _IsMirrorWindowVisible_BeginInvoke_m538856939 (_IsMirrorWindowVisible_t410903031 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.Boolean Valve.VR.IVRCompositor/_IsMirrorWindowVisible::EndInvoke(System.IAsyncResult)
+extern "C"  bool _IsMirrorWindowVisible_EndInvoke_m1978897154 (_IsMirrorWindowVisible_t410903031 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(bool*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  void DelegatePInvokeWrapper__LockGLSharedTextureForAccess_t2180462479 (_LockGLSharedTextureForAccess_t2180462479 * __this, IntPtr_t ___glSharedTextureHandle0, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)(intptr_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc(reinterpret_cast<intptr_t>((___glSharedTextureHandle0).get_m_value_0()));
+
+}
+// System.Void Valve.VR.IVRCompositor/_LockGLSharedTextureForAccess::.ctor(System.Object,System.IntPtr)
+extern "C"  void _LockGLSharedTextureForAccess__ctor_m3471354740 (_LockGLSharedTextureForAccess_t2180462479 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void Valve.VR.IVRCompositor/_LockGLSharedTextureForAccess::Invoke(System.IntPtr)
+extern "C"  void _LockGLSharedTextureForAccess_Invoke_m2614208588 (_LockGLSharedTextureForAccess_t2180462479 * __this, IntPtr_t ___glSharedTextureHandle0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_LockGLSharedTextureForAccess_Invoke_m2614208588((_LockGLSharedTextureForAccess_t2180462479 *)__this->get_prev_9(),___glSharedTextureHandle0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, IntPtr_t ___glSharedTextureHandle0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___glSharedTextureHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, IntPtr_t ___glSharedTextureHandle0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___glSharedTextureHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_LockGLSharedTextureForAccess::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _LockGLSharedTextureForAccess_BeginInvoke_m2496035105 (_LockGLSharedTextureForAccess_t2180462479 * __this, IntPtr_t ___glSharedTextureHandle0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_LockGLSharedTextureForAccess_BeginInvoke_m2496035105_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___glSharedTextureHandle0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Void Valve.VR.IVRCompositor/_LockGLSharedTextureForAccess::EndInvoke(System.IAsyncResult)
+extern "C"  void _LockGLSharedTextureForAccess_EndInvoke_m589776146 (_LockGLSharedTextureForAccess_t2180462479 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+extern "C"  void DelegatePInvokeWrapper__PostPresentHandoff_t4129629097 (_PostPresentHandoff_t4129629097 * __this, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc();
+
+}
+// System.Void Valve.VR.IVRCompositor/_PostPresentHandoff::.ctor(System.Object,System.IntPtr)
+extern "C"  void _PostPresentHandoff__ctor_m1826336084 (_PostPresentHandoff_t4129629097 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void Valve.VR.IVRCompositor/_PostPresentHandoff::Invoke()
+extern "C"  void _PostPresentHandoff_Invoke_m1462502494 (_PostPresentHandoff_t4129629097 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_PostPresentHandoff_Invoke_m1462502494((_PostPresentHandoff_t4129629097 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_PostPresentHandoff::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _PostPresentHandoff_BeginInvoke_m561526585 (_PostPresentHandoff_t4129629097 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.Void Valve.VR.IVRCompositor/_PostPresentHandoff::EndInvoke(System.IAsyncResult)
+extern "C"  void _PostPresentHandoff_EndInvoke_m2721875962 (_PostPresentHandoff_t4129629097 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+extern "C"  bool DelegatePInvokeWrapper__ReleaseSharedGLTexture_t3443550108 (_ReleaseSharedGLTexture_t3443550108 * __this, uint32_t ___glTextureId0, IntPtr_t ___glSharedTextureHandle1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint32_t, intptr_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___glTextureId0, reinterpret_cast<intptr_t>((___glSharedTextureHandle1).get_m_value_0()));
+
+	return static_cast<bool>(returnValue);
+}
+// System.Void Valve.VR.IVRCompositor/_ReleaseSharedGLTexture::.ctor(System.Object,System.IntPtr)
+extern "C"  void _ReleaseSharedGLTexture__ctor_m876531625 (_ReleaseSharedGLTexture_t3443550108 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Boolean Valve.VR.IVRCompositor/_ReleaseSharedGLTexture::Invoke(System.UInt32,System.IntPtr)
+extern "C"  bool _ReleaseSharedGLTexture_Invoke_m3769607891 (_ReleaseSharedGLTexture_t3443550108 * __this, uint32_t ___glTextureId0, IntPtr_t ___glSharedTextureHandle1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_ReleaseSharedGLTexture_Invoke_m3769607891((_ReleaseSharedGLTexture_t3443550108 *)__this->get_prev_9(),___glTextureId0, ___glSharedTextureHandle1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef bool (*FunctionPointerType) (Il2CppObject *, void* __this, uint32_t ___glTextureId0, IntPtr_t ___glSharedTextureHandle1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___glTextureId0, ___glSharedTextureHandle1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef bool (*FunctionPointerType) (void* __this, uint32_t ___glTextureId0, IntPtr_t ___glSharedTextureHandle1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___glTextureId0, ___glSharedTextureHandle1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_ReleaseSharedGLTexture::BeginInvoke(System.UInt32,System.IntPtr,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _ReleaseSharedGLTexture_BeginInvoke_m366517228 (_ReleaseSharedGLTexture_t3443550108 * __this, uint32_t ___glTextureId0, IntPtr_t ___glSharedTextureHandle1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_ReleaseSharedGLTexture_BeginInvoke_m366517228_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___glTextureId0);
+	__d_args[1] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___glSharedTextureHandle1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// System.Boolean Valve.VR.IVRCompositor/_ReleaseSharedGLTexture::EndInvoke(System.IAsyncResult)
+extern "C"  bool _ReleaseSharedGLTexture_EndInvoke_m515417643 (_ReleaseSharedGLTexture_t3443550108 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(bool*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetSkyboxOverride_t2590693784 (_SetSkyboxOverride_t2590693784 * __this, Texture_tU5BU5D_t3142294487* ___pTextures0, uint32_t ___unTextureCount1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(Texture_t_t3277130850 *, uint32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___pTextures0' to native representation
+	Texture_t_t3277130850 * ____pTextures0_marshaled = NULL;
+	if (___pTextures0 != NULL)
+	{
+		____pTextures0_marshaled = reinterpret_cast<Texture_t_t3277130850 *>((___pTextures0)->GetAddressAtUnchecked(0));
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(____pTextures0_marshaled, ___unTextureCount1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVRCompositor/_SetSkyboxOverride::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetSkyboxOverride__ctor_m3131809551 (_SetSkyboxOverride_t2590693784 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_SetSkyboxOverride::Invoke(Valve.VR.Texture_t[],System.UInt32)
+extern "C"  int32_t _SetSkyboxOverride_Invoke_m972135954 (_SetSkyboxOverride_t2590693784 * __this, Texture_tU5BU5D_t3142294487* ___pTextures0, uint32_t ___unTextureCount1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetSkyboxOverride_Invoke_m972135954((_SetSkyboxOverride_t2590693784 *)__this->get_prev_9(),___pTextures0, ___unTextureCount1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, Texture_tU5BU5D_t3142294487* ___pTextures0, uint32_t ___unTextureCount1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___pTextures0, ___unTextureCount1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else if (__this->get_m_target_2() != NULL || ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, Texture_tU5BU5D_t3142294487* ___pTextures0, uint32_t ___unTextureCount1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___pTextures0, ___unTextureCount1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint32_t ___unTextureCount1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(___pTextures0, ___unTextureCount1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_SetSkyboxOverride::BeginInvoke(Valve.VR.Texture_t[],System.UInt32,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetSkyboxOverride_BeginInvoke_m3190206144 (_SetSkyboxOverride_t2590693784 * __this, Texture_tU5BU5D_t3142294487* ___pTextures0, uint32_t ___unTextureCount1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetSkyboxOverride_BeginInvoke_m3190206144_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = ___pTextures0;
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unTextureCount1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_SetSkyboxOverride::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetSkyboxOverride_EndInvoke_m4014112276 (_SetSkyboxOverride_t2590693784 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  void DelegatePInvokeWrapper__SetTrackingSpace_t3662949163 (_SetTrackingSpace_t3662949163 * __this, int32_t ___eOrigin0, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)(int32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc(___eOrigin0);
+
+}
+// System.Void Valve.VR.IVRCompositor/_SetTrackingSpace::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetTrackingSpace__ctor_m60238848 (_SetTrackingSpace_t3662949163 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void Valve.VR.IVRCompositor/_SetTrackingSpace::Invoke(Valve.VR.ETrackingUniverseOrigin)
+extern "C"  void _SetTrackingSpace_Invoke_m3137227179 (_SetTrackingSpace_t3662949163 * __this, int32_t ___eOrigin0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetTrackingSpace_Invoke_m3137227179((_SetTrackingSpace_t3662949163 *)__this->get_prev_9(),___eOrigin0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, int32_t ___eOrigin0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___eOrigin0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, int32_t ___eOrigin0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___eOrigin0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_SetTrackingSpace::BeginInvoke(Valve.VR.ETrackingUniverseOrigin,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetTrackingSpace_BeginInvoke_m2711246532 (_SetTrackingSpace_t3662949163 * __this, int32_t ___eOrigin0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetTrackingSpace_BeginInvoke_m2711246532_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(ETrackingUniverseOrigin_t1464400093_il2cpp_TypeInfo_var, &___eOrigin0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Void Valve.VR.IVRCompositor/_SetTrackingSpace::EndInvoke(System.IAsyncResult)
+extern "C"  void _SetTrackingSpace_EndInvoke_m2288387570 (_SetTrackingSpace_t3662949163 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+extern "C"  bool DelegatePInvokeWrapper__ShouldAppRenderWithLowResources_t1834060663 (_ShouldAppRenderWithLowResources_t1834060663 * __this, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc();
+
+	return static_cast<bool>(returnValue);
+}
+// System.Void Valve.VR.IVRCompositor/_ShouldAppRenderWithLowResources::.ctor(System.Object,System.IntPtr)
+extern "C"  void _ShouldAppRenderWithLowResources__ctor_m3109554424 (_ShouldAppRenderWithLowResources_t1834060663 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Boolean Valve.VR.IVRCompositor/_ShouldAppRenderWithLowResources::Invoke()
+extern "C"  bool _ShouldAppRenderWithLowResources_Invoke_m2038857956 (_ShouldAppRenderWithLowResources_t1834060663 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_ShouldAppRenderWithLowResources_Invoke_m2038857956((_ShouldAppRenderWithLowResources_t1834060663 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef bool (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef bool (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_ShouldAppRenderWithLowResources::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _ShouldAppRenderWithLowResources_BeginInvoke_m1088391283 (_ShouldAppRenderWithLowResources_t1834060663 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.Boolean Valve.VR.IVRCompositor/_ShouldAppRenderWithLowResources::EndInvoke(System.IAsyncResult)
+extern "C"  bool _ShouldAppRenderWithLowResources_EndInvoke_m3674680948 (_ShouldAppRenderWithLowResources_t1834060663 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(bool*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  void DelegatePInvokeWrapper__ShowMirrorWindow_t1161105516 (_ShowMirrorWindow_t1161105516 * __this, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc();
+
+}
+// System.Void Valve.VR.IVRCompositor/_ShowMirrorWindow::.ctor(System.Object,System.IntPtr)
+extern "C"  void _ShowMirrorWindow__ctor_m2708226351 (_ShowMirrorWindow_t1161105516 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void Valve.VR.IVRCompositor/_ShowMirrorWindow::Invoke()
+extern "C"  void _ShowMirrorWindow_Invoke_m2009350019 (_ShowMirrorWindow_t1161105516 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_ShowMirrorWindow_Invoke_m2009350019((_ShowMirrorWindow_t1161105516 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_ShowMirrorWindow::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _ShowMirrorWindow_BeginInvoke_m3882276344 (_ShowMirrorWindow_t1161105516 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.Void Valve.VR.IVRCompositor/_ShowMirrorWindow::EndInvoke(System.IAsyncResult)
+extern "C"  void _ShowMirrorWindow_EndInvoke_m4184825657 (_ShowMirrorWindow_t1161105516 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__Submit_t938257482 (_Submit_t938257482 * __this, int32_t ___eEye0, Texture_t_t3277130850 * ___pTexture1, VRTextureBounds_t_t1897807375 * ___pBounds2, int32_t ___nSubmitFlags3, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(int32_t, Texture_t_t3277130850 *, VRTextureBounds_t_t1897807375 *, int32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___eEye0, ___pTexture1, ___pBounds2, ___nSubmitFlags3);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVRCompositor/_Submit::.ctor(System.Object,System.IntPtr)
+extern "C"  void _Submit__ctor_m1158945937 (_Submit_t938257482 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_Submit::Invoke(Valve.VR.EVREye,Valve.VR.Texture_t&,Valve.VR.VRTextureBounds_t&,Valve.VR.EVRSubmitFlags)
+extern "C"  int32_t _Submit_Invoke_m2753319157 (_Submit_t938257482 * __this, int32_t ___eEye0, Texture_t_t3277130850 * ___pTexture1, VRTextureBounds_t_t1897807375 * ___pBounds2, int32_t ___nSubmitFlags3, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_Submit_Invoke_m2753319157((_Submit_t938257482 *)__this->get_prev_9(),___eEye0, ___pTexture1, ___pBounds2, ___nSubmitFlags3, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, int32_t ___eEye0, Texture_t_t3277130850 * ___pTexture1, VRTextureBounds_t_t1897807375 * ___pBounds2, int32_t ___nSubmitFlags3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___eEye0, ___pTexture1, ___pBounds2, ___nSubmitFlags3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, int32_t ___eEye0, Texture_t_t3277130850 * ___pTexture1, VRTextureBounds_t_t1897807375 * ___pBounds2, int32_t ___nSubmitFlags3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___eEye0, ___pTexture1, ___pBounds2, ___nSubmitFlags3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_Submit::BeginInvoke(Valve.VR.EVREye,Valve.VR.Texture_t&,Valve.VR.VRTextureBounds_t&,Valve.VR.EVRSubmitFlags,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _Submit_BeginInvoke_m2771037729 (_Submit_t938257482 * __this, int32_t ___eEye0, Texture_t_t3277130850 * ___pTexture1, VRTextureBounds_t_t1897807375 * ___pBounds2, int32_t ___nSubmitFlags3, AsyncCallback_t163412349 * ___callback4, Il2CppObject * ___object5, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_Submit_BeginInvoke_m2771037729_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[5] = {0};
+	__d_args[0] = Box(EVREye_t3088716538_il2cpp_TypeInfo_var, &___eEye0);
+	__d_args[1] = Box(Texture_t_t3277130850_il2cpp_TypeInfo_var, &(*___pTexture1));
+	__d_args[2] = Box(VRTextureBounds_t_t1897807375_il2cpp_TypeInfo_var, &(*___pBounds2));
+	__d_args[3] = Box(EVRSubmitFlags_t2736259668_il2cpp_TypeInfo_var, &___nSubmitFlags3);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback4, (Il2CppObject*)___object5);
+}
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_Submit::EndInvoke(Valve.VR.Texture_t&,Valve.VR.VRTextureBounds_t&,System.IAsyncResult)
+extern "C"  int32_t _Submit_EndInvoke_m3065949625 (_Submit_t938257482 * __this, Texture_t_t3277130850 * ___pTexture0, VRTextureBounds_t_t1897807375 * ___pBounds1, Il2CppObject * ___result2, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pTexture0,
+	___pBounds1,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result2, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  void DelegatePInvokeWrapper__SuspendRendering_t3440691638 (_SuspendRendering_t3440691638 * __this, bool ___bSuspend0, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)(int32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc(static_cast<int32_t>(___bSuspend0));
+
+}
+// System.Void Valve.VR.IVRCompositor/_SuspendRendering::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SuspendRendering__ctor_m238993309 (_SuspendRendering_t3440691638 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void Valve.VR.IVRCompositor/_SuspendRendering::Invoke(System.Boolean)
+extern "C"  void _SuspendRendering_Invoke_m671586310 (_SuspendRendering_t3440691638 * __this, bool ___bSuspend0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SuspendRendering_Invoke_m671586310((_SuspendRendering_t3440691638 *)__this->get_prev_9(),___bSuspend0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, bool ___bSuspend0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___bSuspend0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, bool ___bSuspend0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___bSuspend0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_SuspendRendering::BeginInvoke(System.Boolean,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SuspendRendering_BeginInvoke_m63960113 (_SuspendRendering_t3440691638 * __this, bool ___bSuspend0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SuspendRendering_BeginInvoke_m63960113_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(Boolean_t3825574718_il2cpp_TypeInfo_var, &___bSuspend0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Void Valve.VR.IVRCompositor/_SuspendRendering::EndInvoke(System.IAsyncResult)
+extern "C"  void _SuspendRendering_EndInvoke_m243590059 (_SuspendRendering_t3440691638 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+extern "C"  void DelegatePInvokeWrapper__UnlockGLSharedTextureForAccess_t320290112 (_UnlockGLSharedTextureForAccess_t320290112 * __this, IntPtr_t ___glSharedTextureHandle0, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)(intptr_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc(reinterpret_cast<intptr_t>((___glSharedTextureHandle0).get_m_value_0()));
+
+}
+// System.Void Valve.VR.IVRCompositor/_UnlockGLSharedTextureForAccess::.ctor(System.Object,System.IntPtr)
+extern "C"  void _UnlockGLSharedTextureForAccess__ctor_m2597972283 (_UnlockGLSharedTextureForAccess_t320290112 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void Valve.VR.IVRCompositor/_UnlockGLSharedTextureForAccess::Invoke(System.IntPtr)
+extern "C"  void _UnlockGLSharedTextureForAccess_Invoke_m299833625 (_UnlockGLSharedTextureForAccess_t320290112 * __this, IntPtr_t ___glSharedTextureHandle0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_UnlockGLSharedTextureForAccess_Invoke_m299833625((_UnlockGLSharedTextureForAccess_t320290112 *)__this->get_prev_9(),___glSharedTextureHandle0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, IntPtr_t ___glSharedTextureHandle0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___glSharedTextureHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, IntPtr_t ___glSharedTextureHandle0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___glSharedTextureHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_UnlockGLSharedTextureForAccess::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _UnlockGLSharedTextureForAccess_BeginInvoke_m3737554936 (_UnlockGLSharedTextureForAccess_t320290112 * __this, IntPtr_t ___glSharedTextureHandle0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_UnlockGLSharedTextureForAccess_BeginInvoke_m3737554936_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___glSharedTextureHandle0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Void Valve.VR.IVRCompositor/_UnlockGLSharedTextureForAccess::EndInvoke(System.IAsyncResult)
+extern "C"  void _UnlockGLSharedTextureForAccess_EndInvoke_m3124746329 (_UnlockGLSharedTextureForAccess_t320290112 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__WaitGetPoses_t4192584901 (_WaitGetPoses_t4192584901 * __this, TrackedDevicePose_tU5BU5D_t2897272049* ___pRenderPoseArray0, uint32_t ___unRenderPoseArrayCount1, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray2, uint32_t ___unGamePoseArrayCount3, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(TrackedDevicePose_t_t1668551120 *, uint32_t, TrackedDevicePose_t_t1668551120 *, uint32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___pRenderPoseArray0' to native representation
+	TrackedDevicePose_t_t1668551120 * ____pRenderPoseArray0_marshaled = NULL;
+	if (___pRenderPoseArray0 != NULL)
+	{
+		____pRenderPoseArray0_marshaled = reinterpret_cast<TrackedDevicePose_t_t1668551120 *>((___pRenderPoseArray0)->GetAddressAtUnchecked(0));
+	}
+
+	// Marshaling of parameter '___pGamePoseArray2' to native representation
+	TrackedDevicePose_t_t1668551120 * ____pGamePoseArray2_marshaled = NULL;
+	if (___pGamePoseArray2 != NULL)
+	{
+		____pGamePoseArray2_marshaled = reinterpret_cast<TrackedDevicePose_t_t1668551120 *>((___pGamePoseArray2)->GetAddressAtUnchecked(0));
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(____pRenderPoseArray0_marshaled, ___unRenderPoseArrayCount1, ____pGamePoseArray2_marshaled, ___unGamePoseArrayCount3);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVRCompositor/_WaitGetPoses::.ctor(System.Object,System.IntPtr)
+extern "C"  void _WaitGetPoses__ctor_m3701528862 (_WaitGetPoses_t4192584901 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_WaitGetPoses::Invoke(Valve.VR.TrackedDevicePose_t[],System.UInt32,Valve.VR.TrackedDevicePose_t[],System.UInt32)
+extern "C"  int32_t _WaitGetPoses_Invoke_m2327106977 (_WaitGetPoses_t4192584901 * __this, TrackedDevicePose_tU5BU5D_t2897272049* ___pRenderPoseArray0, uint32_t ___unRenderPoseArrayCount1, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray2, uint32_t ___unGamePoseArrayCount3, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_WaitGetPoses_Invoke_m2327106977((_WaitGetPoses_t4192584901 *)__this->get_prev_9(),___pRenderPoseArray0, ___unRenderPoseArrayCount1, ___pGamePoseArray2, ___unGamePoseArrayCount3, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, TrackedDevicePose_tU5BU5D_t2897272049* ___pRenderPoseArray0, uint32_t ___unRenderPoseArrayCount1, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray2, uint32_t ___unGamePoseArrayCount3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___pRenderPoseArray0, ___unRenderPoseArrayCount1, ___pGamePoseArray2, ___unGamePoseArrayCount3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else if (__this->get_m_target_2() != NULL || ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, TrackedDevicePose_tU5BU5D_t2897272049* ___pRenderPoseArray0, uint32_t ___unRenderPoseArrayCount1, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray2, uint32_t ___unGamePoseArrayCount3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___pRenderPoseArray0, ___unRenderPoseArrayCount1, ___pGamePoseArray2, ___unGamePoseArrayCount3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint32_t ___unRenderPoseArrayCount1, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray2, uint32_t ___unGamePoseArrayCount3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(___pRenderPoseArray0, ___unRenderPoseArrayCount1, ___pGamePoseArray2, ___unGamePoseArrayCount3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRCompositor/_WaitGetPoses::BeginInvoke(Valve.VR.TrackedDevicePose_t[],System.UInt32,Valve.VR.TrackedDevicePose_t[],System.UInt32,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _WaitGetPoses_BeginInvoke_m3320629517 (_WaitGetPoses_t4192584901 * __this, TrackedDevicePose_tU5BU5D_t2897272049* ___pRenderPoseArray0, uint32_t ___unRenderPoseArrayCount1, TrackedDevicePose_tU5BU5D_t2897272049* ___pGamePoseArray2, uint32_t ___unGamePoseArrayCount3, AsyncCallback_t163412349 * ___callback4, Il2CppObject * ___object5, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_WaitGetPoses_BeginInvoke_m3320629517_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[5] = {0};
+	__d_args[0] = ___pRenderPoseArray0;
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unRenderPoseArrayCount1);
+	__d_args[2] = ___pGamePoseArray2;
+	__d_args[3] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unGamePoseArrayCount3);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback4, (Il2CppObject*)___object5);
+}
+// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor/_WaitGetPoses::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _WaitGetPoses_EndInvoke_m511328299 (_WaitGetPoses_t4192584901 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+// Conversion methods for marshalling of: Valve.VR.IVRExtendedDisplay
+extern "C" void IVRExtendedDisplay_t2045258050_marshal_pinvoke(const IVRExtendedDisplay_t2045258050& unmarshaled, IVRExtendedDisplay_t2045258050_marshaled_pinvoke& marshaled)
+{
+	marshaled.___GetWindowBounds_0 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetWindowBounds_0()));
+	marshaled.___GetEyeOutputViewport_1 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetEyeOutputViewport_1()));
+	marshaled.___GetDXGIOutputInfo_2 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetDXGIOutputInfo_2()));
+}
+extern "C" void IVRExtendedDisplay_t2045258050_marshal_pinvoke_back(const IVRExtendedDisplay_t2045258050_marshaled_pinvoke& marshaled, IVRExtendedDisplay_t2045258050& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVRExtendedDisplay_t2045258050_pinvoke_FromNativeMethodDefinition_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	unmarshaled.set_GetWindowBounds_0(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetWindowBounds_t2171929041>(marshaled.___GetWindowBounds_0, _GetWindowBounds_t2171929041_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetEyeOutputViewport_1(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetEyeOutputViewport_t693377854>(marshaled.___GetEyeOutputViewport_1, _GetEyeOutputViewport_t693377854_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetDXGIOutputInfo_2(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetDXGIOutputInfo_t2084284319>(marshaled.___GetDXGIOutputInfo_2, _GetDXGIOutputInfo_t2084284319_il2cpp_TypeInfo_var));
+}
+// Conversion method for clean up from marshalling of: Valve.VR.IVRExtendedDisplay
+extern "C" void IVRExtendedDisplay_t2045258050_marshal_pinvoke_cleanup(IVRExtendedDisplay_t2045258050_marshaled_pinvoke& marshaled)
+{
+}
+// Conversion methods for marshalling of: Valve.VR.IVRExtendedDisplay
+extern "C" void IVRExtendedDisplay_t2045258050_marshal_com(const IVRExtendedDisplay_t2045258050& unmarshaled, IVRExtendedDisplay_t2045258050_marshaled_com& marshaled)
+{
+	marshaled.___GetWindowBounds_0 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetWindowBounds_0()));
+	marshaled.___GetEyeOutputViewport_1 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetEyeOutputViewport_1()));
+	marshaled.___GetDXGIOutputInfo_2 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetDXGIOutputInfo_2()));
+}
+extern "C" void IVRExtendedDisplay_t2045258050_marshal_com_back(const IVRExtendedDisplay_t2045258050_marshaled_com& marshaled, IVRExtendedDisplay_t2045258050& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVRExtendedDisplay_t2045258050_com_FromNativeMethodDefinition_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	unmarshaled.set_GetWindowBounds_0(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetWindowBounds_t2171929041>(marshaled.___GetWindowBounds_0, _GetWindowBounds_t2171929041_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetEyeOutputViewport_1(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetEyeOutputViewport_t693377854>(marshaled.___GetEyeOutputViewport_1, _GetEyeOutputViewport_t693377854_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetDXGIOutputInfo_2(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetDXGIOutputInfo_t2084284319>(marshaled.___GetDXGIOutputInfo_2, _GetDXGIOutputInfo_t2084284319_il2cpp_TypeInfo_var));
+}
+// Conversion method for clean up from marshalling of: Valve.VR.IVRExtendedDisplay
+extern "C" void IVRExtendedDisplay_t2045258050_marshal_com_cleanup(IVRExtendedDisplay_t2045258050_marshaled_com& marshaled)
+{
+}
+extern "C"  void DelegatePInvokeWrapper__GetDXGIOutputInfo_t2084284319 (_GetDXGIOutputInfo_t2084284319 * __this, int32_t* ___pnAdapterIndex0, int32_t* ___pnAdapterOutputIndex1, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)(int32_t*, int32_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc(___pnAdapterIndex0, ___pnAdapterOutputIndex1);
+
+}
+// System.Void Valve.VR.IVRExtendedDisplay/_GetDXGIOutputInfo::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetDXGIOutputInfo__ctor_m604876006 (_GetDXGIOutputInfo_t2084284319 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void Valve.VR.IVRExtendedDisplay/_GetDXGIOutputInfo::Invoke(System.Int32&,System.Int32&)
+extern "C"  void _GetDXGIOutputInfo_Invoke_m1550215398 (_GetDXGIOutputInfo_t2084284319 * __this, int32_t* ___pnAdapterIndex0, int32_t* ___pnAdapterOutputIndex1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetDXGIOutputInfo_Invoke_m1550215398((_GetDXGIOutputInfo_t2084284319 *)__this->get_prev_9(),___pnAdapterIndex0, ___pnAdapterOutputIndex1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, int32_t* ___pnAdapterIndex0, int32_t* ___pnAdapterOutputIndex1, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___pnAdapterIndex0, ___pnAdapterOutputIndex1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, int32_t* ___pnAdapterIndex0, int32_t* ___pnAdapterOutputIndex1, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___pnAdapterIndex0, ___pnAdapterOutputIndex1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRExtendedDisplay/_GetDXGIOutputInfo::BeginInvoke(System.Int32&,System.Int32&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetDXGIOutputInfo_BeginInvoke_m3068059499 (_GetDXGIOutputInfo_t2084284319 * __this, int32_t* ___pnAdapterIndex0, int32_t* ___pnAdapterOutputIndex1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetDXGIOutputInfo_BeginInvoke_m3068059499_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &(*___pnAdapterIndex0));
+	__d_args[1] = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &(*___pnAdapterOutputIndex1));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// System.Void Valve.VR.IVRExtendedDisplay/_GetDXGIOutputInfo::EndInvoke(System.Int32&,System.Int32&,System.IAsyncResult)
+extern "C"  void _GetDXGIOutputInfo_EndInvoke_m3223856844 (_GetDXGIOutputInfo_t2084284319 * __this, int32_t* ___pnAdapterIndex0, int32_t* ___pnAdapterOutputIndex1, Il2CppObject * ___result2, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pnAdapterIndex0,
+	___pnAdapterOutputIndex1,
+	};
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result2, ___out_args);
+}
+extern "C"  void DelegatePInvokeWrapper__GetEyeOutputViewport_t693377854 (_GetEyeOutputViewport_t693377854 * __this, int32_t ___eEye0, uint32_t* ___pnX1, uint32_t* ___pnY2, uint32_t* ___pnWidth3, uint32_t* ___pnHeight4, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)(int32_t, uint32_t*, uint32_t*, uint32_t*, uint32_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc(___eEye0, ___pnX1, ___pnY2, ___pnWidth3, ___pnHeight4);
+
+}
+// System.Void Valve.VR.IVRExtendedDisplay/_GetEyeOutputViewport::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetEyeOutputViewport__ctor_m463770121 (_GetEyeOutputViewport_t693377854 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void Valve.VR.IVRExtendedDisplay/_GetEyeOutputViewport::Invoke(Valve.VR.EVREye,System.UInt32&,System.UInt32&,System.UInt32&,System.UInt32&)
+extern "C"  void _GetEyeOutputViewport_Invoke_m1552877621 (_GetEyeOutputViewport_t693377854 * __this, int32_t ___eEye0, uint32_t* ___pnX1, uint32_t* ___pnY2, uint32_t* ___pnWidth3, uint32_t* ___pnHeight4, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetEyeOutputViewport_Invoke_m1552877621((_GetEyeOutputViewport_t693377854 *)__this->get_prev_9(),___eEye0, ___pnX1, ___pnY2, ___pnWidth3, ___pnHeight4, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, int32_t ___eEye0, uint32_t* ___pnX1, uint32_t* ___pnY2, uint32_t* ___pnWidth3, uint32_t* ___pnHeight4, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___eEye0, ___pnX1, ___pnY2, ___pnWidth3, ___pnHeight4,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, int32_t ___eEye0, uint32_t* ___pnX1, uint32_t* ___pnY2, uint32_t* ___pnWidth3, uint32_t* ___pnHeight4, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___eEye0, ___pnX1, ___pnY2, ___pnWidth3, ___pnHeight4,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRExtendedDisplay/_GetEyeOutputViewport::BeginInvoke(Valve.VR.EVREye,System.UInt32&,System.UInt32&,System.UInt32&,System.UInt32&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetEyeOutputViewport_BeginInvoke_m70844300 (_GetEyeOutputViewport_t693377854 * __this, int32_t ___eEye0, uint32_t* ___pnX1, uint32_t* ___pnY2, uint32_t* ___pnWidth3, uint32_t* ___pnHeight4, AsyncCallback_t163412349 * ___callback5, Il2CppObject * ___object6, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetEyeOutputViewport_BeginInvoke_m70844300_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[6] = {0};
+	__d_args[0] = Box(EVREye_t3088716538_il2cpp_TypeInfo_var, &___eEye0);
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___pnX1));
+	__d_args[2] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___pnY2));
+	__d_args[3] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___pnWidth3));
+	__d_args[4] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___pnHeight4));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback5, (Il2CppObject*)___object6);
+}
+// System.Void Valve.VR.IVRExtendedDisplay/_GetEyeOutputViewport::EndInvoke(System.UInt32&,System.UInt32&,System.UInt32&,System.UInt32&,System.IAsyncResult)
+extern "C"  void _GetEyeOutputViewport_EndInvoke_m2647354603 (_GetEyeOutputViewport_t693377854 * __this, uint32_t* ___pnX0, uint32_t* ___pnY1, uint32_t* ___pnWidth2, uint32_t* ___pnHeight3, Il2CppObject * ___result4, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pnX0,
+	___pnY1,
+	___pnWidth2,
+	___pnHeight3,
+	};
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result4, ___out_args);
+}
+extern "C"  void DelegatePInvokeWrapper__GetWindowBounds_t2171929041 (_GetWindowBounds_t2171929041 * __this, int32_t* ___pnX0, int32_t* ___pnY1, uint32_t* ___pnWidth2, uint32_t* ___pnHeight3, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)(int32_t*, int32_t*, uint32_t*, uint32_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc(___pnX0, ___pnY1, ___pnWidth2, ___pnHeight3);
+
+}
+// System.Void Valve.VR.IVRExtendedDisplay/_GetWindowBounds::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetWindowBounds__ctor_m1488399890 (_GetWindowBounds_t2171929041 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void Valve.VR.IVRExtendedDisplay/_GetWindowBounds::Invoke(System.Int32&,System.Int32&,System.UInt32&,System.UInt32&)
+extern "C"  void _GetWindowBounds_Invoke_m804669702 (_GetWindowBounds_t2171929041 * __this, int32_t* ___pnX0, int32_t* ___pnY1, uint32_t* ___pnWidth2, uint32_t* ___pnHeight3, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetWindowBounds_Invoke_m804669702((_GetWindowBounds_t2171929041 *)__this->get_prev_9(),___pnX0, ___pnY1, ___pnWidth2, ___pnHeight3, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, int32_t* ___pnX0, int32_t* ___pnY1, uint32_t* ___pnWidth2, uint32_t* ___pnHeight3, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___pnX0, ___pnY1, ___pnWidth2, ___pnHeight3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, int32_t* ___pnX0, int32_t* ___pnY1, uint32_t* ___pnWidth2, uint32_t* ___pnHeight3, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___pnX0, ___pnY1, ___pnWidth2, ___pnHeight3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRExtendedDisplay/_GetWindowBounds::BeginInvoke(System.Int32&,System.Int32&,System.UInt32&,System.UInt32&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetWindowBounds_BeginInvoke_m43741297 (_GetWindowBounds_t2171929041 * __this, int32_t* ___pnX0, int32_t* ___pnY1, uint32_t* ___pnWidth2, uint32_t* ___pnHeight3, AsyncCallback_t163412349 * ___callback4, Il2CppObject * ___object5, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetWindowBounds_BeginInvoke_m43741297_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[5] = {0};
+	__d_args[0] = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &(*___pnX0));
+	__d_args[1] = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &(*___pnY1));
+	__d_args[2] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___pnWidth2));
+	__d_args[3] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___pnHeight3));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback4, (Il2CppObject*)___object5);
+}
+// System.Void Valve.VR.IVRExtendedDisplay/_GetWindowBounds::EndInvoke(System.Int32&,System.Int32&,System.UInt32&,System.UInt32&,System.IAsyncResult)
+extern "C"  void _GetWindowBounds_EndInvoke_m1380411440 (_GetWindowBounds_t2171929041 * __this, int32_t* ___pnX0, int32_t* ___pnY1, uint32_t* ___pnWidth2, uint32_t* ___pnHeight3, Il2CppObject * ___result4, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pnX0,
+	___pnY1,
+	___pnWidth2,
+	___pnHeight3,
+	};
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result4, ___out_args);
+}
+// Conversion methods for marshalling of: Valve.VR.IVRNotifications
+extern "C" void IVRNotifications_t3935579733_marshal_pinvoke(const IVRNotifications_t3935579733& unmarshaled, IVRNotifications_t3935579733_marshaled_pinvoke& marshaled)
+{
+	marshaled.___CreateNotification_0 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_CreateNotification_0()));
+	marshaled.___RemoveNotification_1 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_RemoveNotification_1()));
+}
+extern "C" void IVRNotifications_t3935579733_marshal_pinvoke_back(const IVRNotifications_t3935579733_marshaled_pinvoke& marshaled, IVRNotifications_t3935579733& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVRNotifications_t3935579733_pinvoke_FromNativeMethodDefinition_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	unmarshaled.set_CreateNotification_0(il2cpp_codegen_marshal_function_ptr_to_delegate<_CreateNotification_t1905156422>(marshaled.___CreateNotification_0, _CreateNotification_t1905156422_il2cpp_TypeInfo_var));
+	unmarshaled.set_RemoveNotification_1(il2cpp_codegen_marshal_function_ptr_to_delegate<_RemoveNotification_t3701790586>(marshaled.___RemoveNotification_1, _RemoveNotification_t3701790586_il2cpp_TypeInfo_var));
+}
+// Conversion method for clean up from marshalling of: Valve.VR.IVRNotifications
+extern "C" void IVRNotifications_t3935579733_marshal_pinvoke_cleanup(IVRNotifications_t3935579733_marshaled_pinvoke& marshaled)
+{
+}
+// Conversion methods for marshalling of: Valve.VR.IVRNotifications
+extern "C" void IVRNotifications_t3935579733_marshal_com(const IVRNotifications_t3935579733& unmarshaled, IVRNotifications_t3935579733_marshaled_com& marshaled)
+{
+	marshaled.___CreateNotification_0 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_CreateNotification_0()));
+	marshaled.___RemoveNotification_1 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_RemoveNotification_1()));
+}
+extern "C" void IVRNotifications_t3935579733_marshal_com_back(const IVRNotifications_t3935579733_marshaled_com& marshaled, IVRNotifications_t3935579733& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVRNotifications_t3935579733_com_FromNativeMethodDefinition_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	unmarshaled.set_CreateNotification_0(il2cpp_codegen_marshal_function_ptr_to_delegate<_CreateNotification_t1905156422>(marshaled.___CreateNotification_0, _CreateNotification_t1905156422_il2cpp_TypeInfo_var));
+	unmarshaled.set_RemoveNotification_1(il2cpp_codegen_marshal_function_ptr_to_delegate<_RemoveNotification_t3701790586>(marshaled.___RemoveNotification_1, _RemoveNotification_t3701790586_il2cpp_TypeInfo_var));
+}
+// Conversion method for clean up from marshalling of: Valve.VR.IVRNotifications
+extern "C" void IVRNotifications_t3935579733_marshal_com_cleanup(IVRNotifications_t3935579733_marshaled_com& marshaled)
+{
+}
+extern "C"  int32_t DelegatePInvokeWrapper__CreateNotification_t1905156422 (_CreateNotification_t1905156422 * __this, uint64_t ___ulOverlayHandle0, uint64_t ___ulUserValue1, int32_t ___type2, String_t* ___pchText3, int32_t ___style4, NotificationBitmap_t_t1973232283 * ___pImage5, uint32_t* ___pNotificationId6, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, uint64_t, int32_t, char*, int32_t, NotificationBitmap_t_t1973232283 *, uint32_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___pchText3' to native representation
+	char* ____pchText3_marshaled = NULL;
+	____pchText3_marshaled = il2cpp_codegen_marshal_string(___pchText3);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___ulUserValue1, ___type2, ____pchText3_marshaled, ___style4, ___pImage5, ___pNotificationId6);
+
+	// Marshaling cleanup of parameter '___pchText3' native representation
+	il2cpp_codegen_marshal_free(____pchText3_marshaled);
+	____pchText3_marshaled = NULL;
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVRNotifications/_CreateNotification::.ctor(System.Object,System.IntPtr)
+extern "C"  void _CreateNotification__ctor_m3941570371 (_CreateNotification_t1905156422 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVRNotificationError Valve.VR.IVRNotifications/_CreateNotification::Invoke(System.UInt64,System.UInt64,Valve.VR.EVRNotificationType,System.String,Valve.VR.EVRNotificationStyle,Valve.VR.NotificationBitmap_t&,System.UInt32&)
+extern "C"  int32_t _CreateNotification_Invoke_m3478891056 (_CreateNotification_t1905156422 * __this, uint64_t ___ulOverlayHandle0, uint64_t ___ulUserValue1, int32_t ___type2, String_t* ___pchText3, int32_t ___style4, NotificationBitmap_t_t1973232283 * ___pImage5, uint32_t* ___pNotificationId6, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_CreateNotification_Invoke_m3478891056((_CreateNotification_t1905156422 *)__this->get_prev_9(),___ulOverlayHandle0, ___ulUserValue1, ___type2, ___pchText3, ___style4, ___pImage5, ___pNotificationId6, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, uint64_t ___ulUserValue1, int32_t ___type2, String_t* ___pchText3, int32_t ___style4, NotificationBitmap_t_t1973232283 * ___pImage5, uint32_t* ___pNotificationId6, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___ulUserValue1, ___type2, ___pchText3, ___style4, ___pImage5, ___pNotificationId6,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, uint64_t ___ulUserValue1, int32_t ___type2, String_t* ___pchText3, int32_t ___style4, NotificationBitmap_t_t1973232283 * ___pImage5, uint32_t* ___pNotificationId6, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___ulUserValue1, ___type2, ___pchText3, ___style4, ___pImage5, ___pNotificationId6,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRNotifications/_CreateNotification::BeginInvoke(System.UInt64,System.UInt64,Valve.VR.EVRNotificationType,System.String,Valve.VR.EVRNotificationStyle,Valve.VR.NotificationBitmap_t&,System.UInt32&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _CreateNotification_BeginInvoke_m2947699052 (_CreateNotification_t1905156422 * __this, uint64_t ___ulOverlayHandle0, uint64_t ___ulUserValue1, int32_t ___type2, String_t* ___pchText3, int32_t ___style4, NotificationBitmap_t_t1973232283 * ___pImage5, uint32_t* ___pNotificationId6, AsyncCallback_t163412349 * ___callback7, Il2CppObject * ___object8, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_CreateNotification_BeginInvoke_m2947699052_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[8] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulUserValue1);
+	__d_args[2] = Box(EVRNotificationType_t408717238_il2cpp_TypeInfo_var, &___type2);
+	__d_args[3] = ___pchText3;
+	__d_args[4] = Box(EVRNotificationStyle_t1858720717_il2cpp_TypeInfo_var, &___style4);
+	__d_args[5] = Box(NotificationBitmap_t_t1973232283_il2cpp_TypeInfo_var, &(*___pImage5));
+	__d_args[6] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___pNotificationId6));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback7, (Il2CppObject*)___object8);
+}
+// Valve.VR.EVRNotificationError Valve.VR.IVRNotifications/_CreateNotification::EndInvoke(Valve.VR.NotificationBitmap_t&,System.UInt32&,System.IAsyncResult)
+extern "C"  int32_t _CreateNotification_EndInvoke_m3272671767 (_CreateNotification_t1905156422 * __this, NotificationBitmap_t_t1973232283 * ___pImage0, uint32_t* ___pNotificationId1, Il2CppObject * ___result2, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pImage0,
+	___pNotificationId1,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result2, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__RemoveNotification_t3701790586 (_RemoveNotification_t3701790586 * __this, uint32_t ___notificationId0, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___notificationId0);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVRNotifications/_RemoveNotification::.ctor(System.Object,System.IntPtr)
+extern "C"  void _RemoveNotification__ctor_m2619130173 (_RemoveNotification_t3701790586 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVRNotificationError Valve.VR.IVRNotifications/_RemoveNotification::Invoke(System.UInt32)
+extern "C"  int32_t _RemoveNotification_Invoke_m2612105650 (_RemoveNotification_t3701790586 * __this, uint32_t ___notificationId0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_RemoveNotification_Invoke_m2612105650((_RemoveNotification_t3701790586 *)__this->get_prev_9(),___notificationId0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint32_t ___notificationId0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___notificationId0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint32_t ___notificationId0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___notificationId0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVRNotifications/_RemoveNotification::BeginInvoke(System.UInt32,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _RemoveNotification_BeginInvoke_m2451677010 (_RemoveNotification_t3701790586 * __this, uint32_t ___notificationId0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_RemoveNotification_BeginInvoke_m2451677010_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___notificationId0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// Valve.VR.EVRNotificationError Valve.VR.IVRNotifications/_RemoveNotification::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _RemoveNotification_EndInvoke_m2527760948 (_RemoveNotification_t3701790586 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+// Conversion methods for marshalling of: Valve.VR.IVROverlay
+extern "C" void IVROverlay_t3446109889_marshal_pinvoke(const IVROverlay_t3446109889& unmarshaled, IVROverlay_t3446109889_marshaled_pinvoke& marshaled)
+{
+	marshaled.___FindOverlay_0 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_FindOverlay_0()));
+	marshaled.___CreateOverlay_1 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_CreateOverlay_1()));
+	marshaled.___DestroyOverlay_2 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_DestroyOverlay_2()));
+	marshaled.___SetHighQualityOverlay_3 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetHighQualityOverlay_3()));
+	marshaled.___GetHighQualityOverlay_4 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetHighQualityOverlay_4()));
+	marshaled.___GetOverlayKey_5 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayKey_5()));
+	marshaled.___GetOverlayName_6 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayName_6()));
+	marshaled.___GetOverlayImageData_7 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayImageData_7()));
+	marshaled.___GetOverlayErrorNameFromEnum_8 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayErrorNameFromEnum_8()));
+	marshaled.___SetOverlayRenderingPid_9 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayRenderingPid_9()));
+	marshaled.___GetOverlayRenderingPid_10 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayRenderingPid_10()));
+	marshaled.___SetOverlayFlag_11 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayFlag_11()));
+	marshaled.___GetOverlayFlag_12 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayFlag_12()));
+	marshaled.___SetOverlayColor_13 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayColor_13()));
+	marshaled.___GetOverlayColor_14 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayColor_14()));
+	marshaled.___SetOverlayAlpha_15 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayAlpha_15()));
+	marshaled.___GetOverlayAlpha_16 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayAlpha_16()));
+	marshaled.___SetOverlayTexelAspect_17 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayTexelAspect_17()));
+	marshaled.___GetOverlayTexelAspect_18 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTexelAspect_18()));
+	marshaled.___SetOverlaySortOrder_19 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlaySortOrder_19()));
+	marshaled.___GetOverlaySortOrder_20 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlaySortOrder_20()));
+	marshaled.___SetOverlayWidthInMeters_21 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayWidthInMeters_21()));
+	marshaled.___GetOverlayWidthInMeters_22 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayWidthInMeters_22()));
+	marshaled.___SetOverlayAutoCurveDistanceRangeInMeters_23 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayAutoCurveDistanceRangeInMeters_23()));
+	marshaled.___GetOverlayAutoCurveDistanceRangeInMeters_24 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayAutoCurveDistanceRangeInMeters_24()));
+	marshaled.___SetOverlayTextureColorSpace_25 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayTextureColorSpace_25()));
+	marshaled.___GetOverlayTextureColorSpace_26 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTextureColorSpace_26()));
+	marshaled.___SetOverlayTextureBounds_27 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayTextureBounds_27()));
+	marshaled.___GetOverlayTextureBounds_28 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTextureBounds_28()));
+	marshaled.___GetOverlayTransformType_29 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTransformType_29()));
+	marshaled.___SetOverlayTransformAbsolute_30 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayTransformAbsolute_30()));
+	marshaled.___GetOverlayTransformAbsolute_31 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTransformAbsolute_31()));
+	marshaled.___SetOverlayTransformTrackedDeviceRelative_32 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayTransformTrackedDeviceRelative_32()));
+	marshaled.___GetOverlayTransformTrackedDeviceRelative_33 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTransformTrackedDeviceRelative_33()));
+	marshaled.___SetOverlayTransformTrackedDeviceComponent_34 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayTransformTrackedDeviceComponent_34()));
+	marshaled.___GetOverlayTransformTrackedDeviceComponent_35 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTransformTrackedDeviceComponent_35()));
+	marshaled.___ShowOverlay_36 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_ShowOverlay_36()));
+	marshaled.___HideOverlay_37 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_HideOverlay_37()));
+	marshaled.___IsOverlayVisible_38 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_IsOverlayVisible_38()));
+	marshaled.___GetTransformForOverlayCoordinates_39 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetTransformForOverlayCoordinates_39()));
+	marshaled.___PollNextOverlayEvent_40 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_PollNextOverlayEvent_40()));
+	marshaled.___GetOverlayInputMethod_41 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayInputMethod_41()));
+	marshaled.___SetOverlayInputMethod_42 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayInputMethod_42()));
+	marshaled.___GetOverlayMouseScale_43 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayMouseScale_43()));
+	marshaled.___SetOverlayMouseScale_44 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayMouseScale_44()));
+	marshaled.___ComputeOverlayIntersection_45 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_ComputeOverlayIntersection_45()));
+	marshaled.___HandleControllerOverlayInteractionAsMouse_46 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_HandleControllerOverlayInteractionAsMouse_46()));
+	marshaled.___IsHoverTargetOverlay_47 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_IsHoverTargetOverlay_47()));
+	marshaled.___GetGamepadFocusOverlay_48 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetGamepadFocusOverlay_48()));
+	marshaled.___SetGamepadFocusOverlay_49 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetGamepadFocusOverlay_49()));
+	marshaled.___SetOverlayNeighbor_50 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayNeighbor_50()));
+	marshaled.___MoveGamepadFocusToNeighbor_51 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_MoveGamepadFocusToNeighbor_51()));
+	marshaled.___SetOverlayTexture_52 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayTexture_52()));
+	marshaled.___ClearOverlayTexture_53 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_ClearOverlayTexture_53()));
+	marshaled.___SetOverlayRaw_54 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayRaw_54()));
+	marshaled.___SetOverlayFromFile_55 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayFromFile_55()));
+	marshaled.___GetOverlayTexture_56 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTexture_56()));
+	marshaled.___ReleaseNativeOverlayHandle_57 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_ReleaseNativeOverlayHandle_57()));
+	marshaled.___GetOverlayTextureSize_58 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTextureSize_58()));
+	marshaled.___CreateDashboardOverlay_59 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_CreateDashboardOverlay_59()));
+	marshaled.___IsDashboardVisible_60 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_IsDashboardVisible_60()));
+	marshaled.___IsActiveDashboardOverlay_61 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_IsActiveDashboardOverlay_61()));
+	marshaled.___SetDashboardOverlaySceneProcess_62 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetDashboardOverlaySceneProcess_62()));
+	marshaled.___GetDashboardOverlaySceneProcess_63 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetDashboardOverlaySceneProcess_63()));
+	marshaled.___ShowDashboard_64 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_ShowDashboard_64()));
+	marshaled.___GetPrimaryDashboardDevice_65 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetPrimaryDashboardDevice_65()));
+	marshaled.___ShowKeyboard_66 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_ShowKeyboard_66()));
+	marshaled.___ShowKeyboardForOverlay_67 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_ShowKeyboardForOverlay_67()));
+	marshaled.___GetKeyboardText_68 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetKeyboardText_68()));
+	marshaled.___HideKeyboard_69 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_HideKeyboard_69()));
+	marshaled.___SetKeyboardTransformAbsolute_70 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetKeyboardTransformAbsolute_70()));
+	marshaled.___SetKeyboardPositionForOverlay_71 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetKeyboardPositionForOverlay_71()));
+}
+extern "C" void IVROverlay_t3446109889_marshal_pinvoke_back(const IVROverlay_t3446109889_marshaled_pinvoke& marshaled, IVROverlay_t3446109889& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVROverlay_t3446109889_pinvoke_FromNativeMethodDefinition_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	unmarshaled.set_FindOverlay_0(il2cpp_codegen_marshal_function_ptr_to_delegate<_FindOverlay_t1862706542>(marshaled.___FindOverlay_0, _FindOverlay_t1862706542_il2cpp_TypeInfo_var));
+	unmarshaled.set_CreateOverlay_1(il2cpp_codegen_marshal_function_ptr_to_delegate<_CreateOverlay_t4211228331>(marshaled.___CreateOverlay_1, _CreateOverlay_t4211228331_il2cpp_TypeInfo_var));
+	unmarshaled.set_DestroyOverlay_2(il2cpp_codegen_marshal_function_ptr_to_delegate<_DestroyOverlay_t1020329117>(marshaled.___DestroyOverlay_2, _DestroyOverlay_t1020329117_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetHighQualityOverlay_3(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetHighQualityOverlay_t4225758140>(marshaled.___SetHighQualityOverlay_3, _SetHighQualityOverlay_t4225758140_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetHighQualityOverlay_4(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetHighQualityOverlay_t362587296>(marshaled.___GetHighQualityOverlay_4, _GetHighQualityOverlay_t362587296_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayKey_5(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayKey_t1341267772>(marshaled.___GetOverlayKey_5, _GetOverlayKey_t1341267772_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayName_6(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayName_t221395366>(marshaled.___GetOverlayName_6, _GetOverlayName_t221395366_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayImageData_7(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayImageData_t836541042>(marshaled.___GetOverlayImageData_7, _GetOverlayImageData_t836541042_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayErrorNameFromEnum_8(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayErrorNameFromEnum_t3535846231>(marshaled.___GetOverlayErrorNameFromEnum_8, _GetOverlayErrorNameFromEnum_t3535846231_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayRenderingPid_9(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayRenderingPid_t1970553664>(marshaled.___SetOverlayRenderingPid_9, _SetOverlayRenderingPid_t1970553664_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayRenderingPid_10(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayRenderingPid_t1470043428>(marshaled.___GetOverlayRenderingPid_10, _GetOverlayRenderingPid_t1470043428_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayFlag_11(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayFlag_t1900166033>(marshaled.___SetOverlayFlag_11, _SetOverlayFlag_t1900166033_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayFlag_12(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayFlag_t3676293589>(marshaled.___GetOverlayFlag_12, _GetOverlayFlag_t3676293589_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayColor_13(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayColor_t2804573176>(marshaled.___SetOverlayColor_13, _SetOverlayColor_t2804573176_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayColor_14(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayColor_t2379424348>(marshaled.___GetOverlayColor_14, _GetOverlayColor_t2379424348_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayAlpha_15(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayAlpha_t2092887413>(marshaled.___SetOverlayAlpha_15, _SetOverlayAlpha_t2092887413_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayAlpha_16(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayAlpha_t2185592753>(marshaled.___GetOverlayAlpha_16, _GetOverlayAlpha_t2185592753_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayTexelAspect_17(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayTexelAspect_t460846625>(marshaled.___SetOverlayTexelAspect_17, _SetOverlayTexelAspect_t460846625_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTexelAspect_18(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTexelAspect_t1835744573>(marshaled.___GetOverlayTexelAspect_18, _GetOverlayTexelAspect_t1835744573_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlaySortOrder_19(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlaySortOrder_t3099711365>(marshaled.___SetOverlaySortOrder_19, _SetOverlaySortOrder_t3099711365_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlaySortOrder_20(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlaySortOrder_t376620481>(marshaled.___GetOverlaySortOrder_20, _GetOverlaySortOrder_t376620481_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayWidthInMeters_21(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayWidthInMeters_t3047220066>(marshaled.___SetOverlayWidthInMeters_21, _SetOverlayWidthInMeters_t3047220066_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayWidthInMeters_22(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayWidthInMeters_t2815542566>(marshaled.___GetOverlayWidthInMeters_22, _GetOverlayWidthInMeters_t2815542566_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayAutoCurveDistanceRangeInMeters_23(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayAutoCurveDistanceRangeInMeters_t1475163830>(marshaled.___SetOverlayAutoCurveDistanceRangeInMeters_23, _SetOverlayAutoCurveDistanceRangeInMeters_t1475163830_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayAutoCurveDistanceRangeInMeters_24(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayAutoCurveDistanceRangeInMeters_t4193138162>(marshaled.___GetOverlayAutoCurveDistanceRangeInMeters_24, _GetOverlayAutoCurveDistanceRangeInMeters_t4193138162_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayTextureColorSpace_25(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayTextureColorSpace_t1399555963>(marshaled.___SetOverlayTextureColorSpace_25, _SetOverlayTextureColorSpace_t1399555963_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTextureColorSpace_26(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTextureColorSpace_t2119049239>(marshaled.___GetOverlayTextureColorSpace_26, _GetOverlayTextureColorSpace_t2119049239_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayTextureBounds_27(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayTextureBounds_t1179269927>(marshaled.___SetOverlayTextureBounds_27, _SetOverlayTextureBounds_t1179269927_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTextureBounds_28(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTextureBounds_t3680071147>(marshaled.___GetOverlayTextureBounds_28, _GetOverlayTextureBounds_t3680071147_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTransformType_29(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTransformType_t1493074241>(marshaled.___GetOverlayTransformType_29, _GetOverlayTransformType_t1493074241_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayTransformAbsolute_30(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayTransformAbsolute_t2100297354>(marshaled.___SetOverlayTransformAbsolute_30, _SetOverlayTransformAbsolute_t2100297354_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTransformAbsolute_31(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTransformAbsolute_t2557918150>(marshaled.___GetOverlayTransformAbsolute_31, _GetOverlayTransformAbsolute_t2557918150_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayTransformTrackedDeviceRelative_32(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayTransformTrackedDeviceRelative_t579082695>(marshaled.___SetOverlayTransformTrackedDeviceRelative_32, _SetOverlayTransformTrackedDeviceRelative_t579082695_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTransformTrackedDeviceRelative_33(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTransformTrackedDeviceRelative_t893699371>(marshaled.___GetOverlayTransformTrackedDeviceRelative_33, _GetOverlayTransformTrackedDeviceRelative_t893699371_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayTransformTrackedDeviceComponent_34(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayTransformTrackedDeviceComponent_t1749665136>(marshaled.___SetOverlayTransformTrackedDeviceComponent_34, _SetOverlayTransformTrackedDeviceComponent_t1749665136_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTransformTrackedDeviceComponent_35(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTransformTrackedDeviceComponent_t3256239660>(marshaled.___GetOverlayTransformTrackedDeviceComponent_35, _GetOverlayTransformTrackedDeviceComponent_t3256239660_il2cpp_TypeInfo_var));
+	unmarshaled.set_ShowOverlay_36(il2cpp_codegen_marshal_function_ptr_to_delegate<_ShowOverlay_t733914692>(marshaled.___ShowOverlay_36, _ShowOverlay_t733914692_il2cpp_TypeInfo_var));
+	unmarshaled.set_HideOverlay_37(il2cpp_codegen_marshal_function_ptr_to_delegate<_HideOverlay_t2737366627>(marshaled.___HideOverlay_37, _HideOverlay_t2737366627_il2cpp_TypeInfo_var));
+	unmarshaled.set_IsOverlayVisible_38(il2cpp_codegen_marshal_function_ptr_to_delegate<_IsOverlayVisible_t1564696099>(marshaled.___IsOverlayVisible_38, _IsOverlayVisible_t1564696099_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetTransformForOverlayCoordinates_39(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetTransformForOverlayCoordinates_t2483359939>(marshaled.___GetTransformForOverlayCoordinates_39, _GetTransformForOverlayCoordinates_t2483359939_il2cpp_TypeInfo_var));
+	unmarshaled.set_PollNextOverlayEvent_40(il2cpp_codegen_marshal_function_ptr_to_delegate<_PollNextOverlayEvent_t131678587>(marshaled.___PollNextOverlayEvent_40, _PollNextOverlayEvent_t131678587_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayInputMethod_41(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayInputMethod_t3217580654>(marshaled.___GetOverlayInputMethod_41, _GetOverlayInputMethod_t3217580654_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayInputMethod_42(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayInputMethod_t3575042602>(marshaled.___SetOverlayInputMethod_42, _SetOverlayInputMethod_t3575042602_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayMouseScale_43(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayMouseScale_t2826364086>(marshaled.___GetOverlayMouseScale_43, _GetOverlayMouseScale_t2826364086_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayMouseScale_44(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayMouseScale_t2624726138>(marshaled.___SetOverlayMouseScale_44, _SetOverlayMouseScale_t2624726138_il2cpp_TypeInfo_var));
+	unmarshaled.set_ComputeOverlayIntersection_45(il2cpp_codegen_marshal_function_ptr_to_delegate<_ComputeOverlayIntersection_t1141587151>(marshaled.___ComputeOverlayIntersection_45, _ComputeOverlayIntersection_t1141587151_il2cpp_TypeInfo_var));
+	unmarshaled.set_HandleControllerOverlayInteractionAsMouse_46(il2cpp_codegen_marshal_function_ptr_to_delegate<_HandleControllerOverlayInteractionAsMouse_t2899449918>(marshaled.___HandleControllerOverlayInteractionAsMouse_46, _HandleControllerOverlayInteractionAsMouse_t2899449918_il2cpp_TypeInfo_var));
+	unmarshaled.set_IsHoverTargetOverlay_47(il2cpp_codegen_marshal_function_ptr_to_delegate<_IsHoverTargetOverlay_t4101716668>(marshaled.___IsHoverTargetOverlay_47, _IsHoverTargetOverlay_t4101716668_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetGamepadFocusOverlay_48(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetGamepadFocusOverlay_t300021750>(marshaled.___GetGamepadFocusOverlay_48, _GetGamepadFocusOverlay_t300021750_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetGamepadFocusOverlay_49(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetGamepadFocusOverlay_t2763810618>(marshaled.___SetGamepadFocusOverlay_49, _SetGamepadFocusOverlay_t2763810618_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayNeighbor_50(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayNeighbor_t1117963895>(marshaled.___SetOverlayNeighbor_50, _SetOverlayNeighbor_t1117963895_il2cpp_TypeInfo_var));
+	unmarshaled.set_MoveGamepadFocusToNeighbor_51(il2cpp_codegen_marshal_function_ptr_to_delegate<_MoveGamepadFocusToNeighbor_t2016645278>(marshaled.___MoveGamepadFocusToNeighbor_51, _MoveGamepadFocusToNeighbor_t2016645278_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayTexture_52(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayTexture_t2238656700>(marshaled.___SetOverlayTexture_52, _SetOverlayTexture_t2238656700_il2cpp_TypeInfo_var));
+	unmarshaled.set_ClearOverlayTexture_53(il2cpp_codegen_marshal_function_ptr_to_delegate<_ClearOverlayTexture_t2610332521>(marshaled.___ClearOverlayTexture_53, _ClearOverlayTexture_t2610332521_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayRaw_54(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayRaw_t3268606321>(marshaled.___SetOverlayRaw_54, _SetOverlayRaw_t3268606321_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayFromFile_55(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayFromFile_t598184189>(marshaled.___SetOverlayFromFile_55, _SetOverlayFromFile_t598184189_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTexture_56(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTexture_t897552288>(marshaled.___GetOverlayTexture_56, _GetOverlayTexture_t897552288_il2cpp_TypeInfo_var));
+	unmarshaled.set_ReleaseNativeOverlayHandle_57(il2cpp_codegen_marshal_function_ptr_to_delegate<_ReleaseNativeOverlayHandle_t2842744417>(marshaled.___ReleaseNativeOverlayHandle_57, _ReleaseNativeOverlayHandle_t2842744417_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTextureSize_58(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTextureSize_t1288689867>(marshaled.___GetOverlayTextureSize_58, _GetOverlayTextureSize_t1288689867_il2cpp_TypeInfo_var));
+	unmarshaled.set_CreateDashboardOverlay_59(il2cpp_codegen_marshal_function_ptr_to_delegate<_CreateDashboardOverlay_t637199691>(marshaled.___CreateDashboardOverlay_59, _CreateDashboardOverlay_t637199691_il2cpp_TypeInfo_var));
+	unmarshaled.set_IsDashboardVisible_60(il2cpp_codegen_marshal_function_ptr_to_delegate<_IsDashboardVisible_t2020287181>(marshaled.___IsDashboardVisible_60, _IsDashboardVisible_t2020287181_il2cpp_TypeInfo_var));
+	unmarshaled.set_IsActiveDashboardOverlay_61(il2cpp_codegen_marshal_function_ptr_to_delegate<_IsActiveDashboardOverlay_t3144660141>(marshaled.___IsActiveDashboardOverlay_61, _IsActiveDashboardOverlay_t3144660141_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetDashboardOverlaySceneProcess_62(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetDashboardOverlaySceneProcess_t1462353074>(marshaled.___SetDashboardOverlaySceneProcess_62, _SetDashboardOverlaySceneProcess_t1462353074_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetDashboardOverlaySceneProcess_63(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetDashboardOverlaySceneProcess_t876496206>(marshaled.___GetDashboardOverlaySceneProcess_63, _GetDashboardOverlaySceneProcess_t876496206_il2cpp_TypeInfo_var));
+	unmarshaled.set_ShowDashboard_64(il2cpp_codegen_marshal_function_ptr_to_delegate<_ShowDashboard_t4127025320>(marshaled.___ShowDashboard_64, _ShowDashboard_t4127025320_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetPrimaryDashboardDevice_65(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetPrimaryDashboardDevice_t812432855>(marshaled.___GetPrimaryDashboardDevice_65, _GetPrimaryDashboardDevice_t812432855_il2cpp_TypeInfo_var));
+	unmarshaled.set_ShowKeyboard_66(il2cpp_codegen_marshal_function_ptr_to_delegate<_ShowKeyboard_t3095606223>(marshaled.___ShowKeyboard_66, _ShowKeyboard_t3095606223_il2cpp_TypeInfo_var));
+	unmarshaled.set_ShowKeyboardForOverlay_67(il2cpp_codegen_marshal_function_ptr_to_delegate<_ShowKeyboardForOverlay_t3006565844>(marshaled.___ShowKeyboardForOverlay_67, _ShowKeyboardForOverlay_t3006565844_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetKeyboardText_68(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetKeyboardText_t91815223>(marshaled.___GetKeyboardText_68, _GetKeyboardText_t91815223_il2cpp_TypeInfo_var));
+	unmarshaled.set_HideKeyboard_69(il2cpp_codegen_marshal_function_ptr_to_delegate<_HideKeyboard_t3483797360>(marshaled.___HideKeyboard_69, _HideKeyboard_t3483797360_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetKeyboardTransformAbsolute_70(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetKeyboardTransformAbsolute_t443079689>(marshaled.___SetKeyboardTransformAbsolute_70, _SetKeyboardTransformAbsolute_t443079689_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetKeyboardPositionForOverlay_71(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetKeyboardPositionForOverlay_t3695826360>(marshaled.___SetKeyboardPositionForOverlay_71, _SetKeyboardPositionForOverlay_t3695826360_il2cpp_TypeInfo_var));
+}
+// Conversion method for clean up from marshalling of: Valve.VR.IVROverlay
+extern "C" void IVROverlay_t3446109889_marshal_pinvoke_cleanup(IVROverlay_t3446109889_marshaled_pinvoke& marshaled)
+{
+}
+// Conversion methods for marshalling of: Valve.VR.IVROverlay
+extern "C" void IVROverlay_t3446109889_marshal_com(const IVROverlay_t3446109889& unmarshaled, IVROverlay_t3446109889_marshaled_com& marshaled)
+{
+	marshaled.___FindOverlay_0 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_FindOverlay_0()));
+	marshaled.___CreateOverlay_1 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_CreateOverlay_1()));
+	marshaled.___DestroyOverlay_2 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_DestroyOverlay_2()));
+	marshaled.___SetHighQualityOverlay_3 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetHighQualityOverlay_3()));
+	marshaled.___GetHighQualityOverlay_4 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetHighQualityOverlay_4()));
+	marshaled.___GetOverlayKey_5 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayKey_5()));
+	marshaled.___GetOverlayName_6 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayName_6()));
+	marshaled.___GetOverlayImageData_7 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayImageData_7()));
+	marshaled.___GetOverlayErrorNameFromEnum_8 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayErrorNameFromEnum_8()));
+	marshaled.___SetOverlayRenderingPid_9 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayRenderingPid_9()));
+	marshaled.___GetOverlayRenderingPid_10 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayRenderingPid_10()));
+	marshaled.___SetOverlayFlag_11 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayFlag_11()));
+	marshaled.___GetOverlayFlag_12 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayFlag_12()));
+	marshaled.___SetOverlayColor_13 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayColor_13()));
+	marshaled.___GetOverlayColor_14 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayColor_14()));
+	marshaled.___SetOverlayAlpha_15 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayAlpha_15()));
+	marshaled.___GetOverlayAlpha_16 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayAlpha_16()));
+	marshaled.___SetOverlayTexelAspect_17 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayTexelAspect_17()));
+	marshaled.___GetOverlayTexelAspect_18 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTexelAspect_18()));
+	marshaled.___SetOverlaySortOrder_19 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlaySortOrder_19()));
+	marshaled.___GetOverlaySortOrder_20 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlaySortOrder_20()));
+	marshaled.___SetOverlayWidthInMeters_21 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayWidthInMeters_21()));
+	marshaled.___GetOverlayWidthInMeters_22 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayWidthInMeters_22()));
+	marshaled.___SetOverlayAutoCurveDistanceRangeInMeters_23 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayAutoCurveDistanceRangeInMeters_23()));
+	marshaled.___GetOverlayAutoCurveDistanceRangeInMeters_24 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayAutoCurveDistanceRangeInMeters_24()));
+	marshaled.___SetOverlayTextureColorSpace_25 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayTextureColorSpace_25()));
+	marshaled.___GetOverlayTextureColorSpace_26 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTextureColorSpace_26()));
+	marshaled.___SetOverlayTextureBounds_27 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayTextureBounds_27()));
+	marshaled.___GetOverlayTextureBounds_28 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTextureBounds_28()));
+	marshaled.___GetOverlayTransformType_29 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTransformType_29()));
+	marshaled.___SetOverlayTransformAbsolute_30 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayTransformAbsolute_30()));
+	marshaled.___GetOverlayTransformAbsolute_31 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTransformAbsolute_31()));
+	marshaled.___SetOverlayTransformTrackedDeviceRelative_32 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayTransformTrackedDeviceRelative_32()));
+	marshaled.___GetOverlayTransformTrackedDeviceRelative_33 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTransformTrackedDeviceRelative_33()));
+	marshaled.___SetOverlayTransformTrackedDeviceComponent_34 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayTransformTrackedDeviceComponent_34()));
+	marshaled.___GetOverlayTransformTrackedDeviceComponent_35 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTransformTrackedDeviceComponent_35()));
+	marshaled.___ShowOverlay_36 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_ShowOverlay_36()));
+	marshaled.___HideOverlay_37 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_HideOverlay_37()));
+	marshaled.___IsOverlayVisible_38 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_IsOverlayVisible_38()));
+	marshaled.___GetTransformForOverlayCoordinates_39 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetTransformForOverlayCoordinates_39()));
+	marshaled.___PollNextOverlayEvent_40 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_PollNextOverlayEvent_40()));
+	marshaled.___GetOverlayInputMethod_41 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayInputMethod_41()));
+	marshaled.___SetOverlayInputMethod_42 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayInputMethod_42()));
+	marshaled.___GetOverlayMouseScale_43 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayMouseScale_43()));
+	marshaled.___SetOverlayMouseScale_44 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayMouseScale_44()));
+	marshaled.___ComputeOverlayIntersection_45 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_ComputeOverlayIntersection_45()));
+	marshaled.___HandleControllerOverlayInteractionAsMouse_46 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_HandleControllerOverlayInteractionAsMouse_46()));
+	marshaled.___IsHoverTargetOverlay_47 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_IsHoverTargetOverlay_47()));
+	marshaled.___GetGamepadFocusOverlay_48 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetGamepadFocusOverlay_48()));
+	marshaled.___SetGamepadFocusOverlay_49 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetGamepadFocusOverlay_49()));
+	marshaled.___SetOverlayNeighbor_50 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayNeighbor_50()));
+	marshaled.___MoveGamepadFocusToNeighbor_51 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_MoveGamepadFocusToNeighbor_51()));
+	marshaled.___SetOverlayTexture_52 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayTexture_52()));
+	marshaled.___ClearOverlayTexture_53 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_ClearOverlayTexture_53()));
+	marshaled.___SetOverlayRaw_54 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayRaw_54()));
+	marshaled.___SetOverlayFromFile_55 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetOverlayFromFile_55()));
+	marshaled.___GetOverlayTexture_56 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTexture_56()));
+	marshaled.___ReleaseNativeOverlayHandle_57 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_ReleaseNativeOverlayHandle_57()));
+	marshaled.___GetOverlayTextureSize_58 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetOverlayTextureSize_58()));
+	marshaled.___CreateDashboardOverlay_59 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_CreateDashboardOverlay_59()));
+	marshaled.___IsDashboardVisible_60 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_IsDashboardVisible_60()));
+	marshaled.___IsActiveDashboardOverlay_61 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_IsActiveDashboardOverlay_61()));
+	marshaled.___SetDashboardOverlaySceneProcess_62 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetDashboardOverlaySceneProcess_62()));
+	marshaled.___GetDashboardOverlaySceneProcess_63 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetDashboardOverlaySceneProcess_63()));
+	marshaled.___ShowDashboard_64 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_ShowDashboard_64()));
+	marshaled.___GetPrimaryDashboardDevice_65 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetPrimaryDashboardDevice_65()));
+	marshaled.___ShowKeyboard_66 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_ShowKeyboard_66()));
+	marshaled.___ShowKeyboardForOverlay_67 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_ShowKeyboardForOverlay_67()));
+	marshaled.___GetKeyboardText_68 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_GetKeyboardText_68()));
+	marshaled.___HideKeyboard_69 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_HideKeyboard_69()));
+	marshaled.___SetKeyboardTransformAbsolute_70 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetKeyboardTransformAbsolute_70()));
+	marshaled.___SetKeyboardPositionForOverlay_71 = il2cpp_codegen_marshal_delegate(reinterpret_cast<Il2CppCodeGenMulticastDelegate*>(unmarshaled.get_SetKeyboardPositionForOverlay_71()));
+}
+extern "C" void IVROverlay_t3446109889_marshal_com_back(const IVROverlay_t3446109889_marshaled_com& marshaled, IVROverlay_t3446109889& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVROverlay_t3446109889_com_FromNativeMethodDefinition_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	unmarshaled.set_FindOverlay_0(il2cpp_codegen_marshal_function_ptr_to_delegate<_FindOverlay_t1862706542>(marshaled.___FindOverlay_0, _FindOverlay_t1862706542_il2cpp_TypeInfo_var));
+	unmarshaled.set_CreateOverlay_1(il2cpp_codegen_marshal_function_ptr_to_delegate<_CreateOverlay_t4211228331>(marshaled.___CreateOverlay_1, _CreateOverlay_t4211228331_il2cpp_TypeInfo_var));
+	unmarshaled.set_DestroyOverlay_2(il2cpp_codegen_marshal_function_ptr_to_delegate<_DestroyOverlay_t1020329117>(marshaled.___DestroyOverlay_2, _DestroyOverlay_t1020329117_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetHighQualityOverlay_3(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetHighQualityOverlay_t4225758140>(marshaled.___SetHighQualityOverlay_3, _SetHighQualityOverlay_t4225758140_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetHighQualityOverlay_4(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetHighQualityOverlay_t362587296>(marshaled.___GetHighQualityOverlay_4, _GetHighQualityOverlay_t362587296_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayKey_5(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayKey_t1341267772>(marshaled.___GetOverlayKey_5, _GetOverlayKey_t1341267772_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayName_6(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayName_t221395366>(marshaled.___GetOverlayName_6, _GetOverlayName_t221395366_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayImageData_7(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayImageData_t836541042>(marshaled.___GetOverlayImageData_7, _GetOverlayImageData_t836541042_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayErrorNameFromEnum_8(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayErrorNameFromEnum_t3535846231>(marshaled.___GetOverlayErrorNameFromEnum_8, _GetOverlayErrorNameFromEnum_t3535846231_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayRenderingPid_9(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayRenderingPid_t1970553664>(marshaled.___SetOverlayRenderingPid_9, _SetOverlayRenderingPid_t1970553664_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayRenderingPid_10(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayRenderingPid_t1470043428>(marshaled.___GetOverlayRenderingPid_10, _GetOverlayRenderingPid_t1470043428_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayFlag_11(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayFlag_t1900166033>(marshaled.___SetOverlayFlag_11, _SetOverlayFlag_t1900166033_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayFlag_12(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayFlag_t3676293589>(marshaled.___GetOverlayFlag_12, _GetOverlayFlag_t3676293589_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayColor_13(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayColor_t2804573176>(marshaled.___SetOverlayColor_13, _SetOverlayColor_t2804573176_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayColor_14(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayColor_t2379424348>(marshaled.___GetOverlayColor_14, _GetOverlayColor_t2379424348_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayAlpha_15(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayAlpha_t2092887413>(marshaled.___SetOverlayAlpha_15, _SetOverlayAlpha_t2092887413_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayAlpha_16(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayAlpha_t2185592753>(marshaled.___GetOverlayAlpha_16, _GetOverlayAlpha_t2185592753_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayTexelAspect_17(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayTexelAspect_t460846625>(marshaled.___SetOverlayTexelAspect_17, _SetOverlayTexelAspect_t460846625_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTexelAspect_18(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTexelAspect_t1835744573>(marshaled.___GetOverlayTexelAspect_18, _GetOverlayTexelAspect_t1835744573_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlaySortOrder_19(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlaySortOrder_t3099711365>(marshaled.___SetOverlaySortOrder_19, _SetOverlaySortOrder_t3099711365_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlaySortOrder_20(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlaySortOrder_t376620481>(marshaled.___GetOverlaySortOrder_20, _GetOverlaySortOrder_t376620481_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayWidthInMeters_21(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayWidthInMeters_t3047220066>(marshaled.___SetOverlayWidthInMeters_21, _SetOverlayWidthInMeters_t3047220066_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayWidthInMeters_22(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayWidthInMeters_t2815542566>(marshaled.___GetOverlayWidthInMeters_22, _GetOverlayWidthInMeters_t2815542566_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayAutoCurveDistanceRangeInMeters_23(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayAutoCurveDistanceRangeInMeters_t1475163830>(marshaled.___SetOverlayAutoCurveDistanceRangeInMeters_23, _SetOverlayAutoCurveDistanceRangeInMeters_t1475163830_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayAutoCurveDistanceRangeInMeters_24(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayAutoCurveDistanceRangeInMeters_t4193138162>(marshaled.___GetOverlayAutoCurveDistanceRangeInMeters_24, _GetOverlayAutoCurveDistanceRangeInMeters_t4193138162_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayTextureColorSpace_25(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayTextureColorSpace_t1399555963>(marshaled.___SetOverlayTextureColorSpace_25, _SetOverlayTextureColorSpace_t1399555963_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTextureColorSpace_26(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTextureColorSpace_t2119049239>(marshaled.___GetOverlayTextureColorSpace_26, _GetOverlayTextureColorSpace_t2119049239_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayTextureBounds_27(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayTextureBounds_t1179269927>(marshaled.___SetOverlayTextureBounds_27, _SetOverlayTextureBounds_t1179269927_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTextureBounds_28(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTextureBounds_t3680071147>(marshaled.___GetOverlayTextureBounds_28, _GetOverlayTextureBounds_t3680071147_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTransformType_29(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTransformType_t1493074241>(marshaled.___GetOverlayTransformType_29, _GetOverlayTransformType_t1493074241_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayTransformAbsolute_30(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayTransformAbsolute_t2100297354>(marshaled.___SetOverlayTransformAbsolute_30, _SetOverlayTransformAbsolute_t2100297354_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTransformAbsolute_31(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTransformAbsolute_t2557918150>(marshaled.___GetOverlayTransformAbsolute_31, _GetOverlayTransformAbsolute_t2557918150_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayTransformTrackedDeviceRelative_32(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayTransformTrackedDeviceRelative_t579082695>(marshaled.___SetOverlayTransformTrackedDeviceRelative_32, _SetOverlayTransformTrackedDeviceRelative_t579082695_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTransformTrackedDeviceRelative_33(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTransformTrackedDeviceRelative_t893699371>(marshaled.___GetOverlayTransformTrackedDeviceRelative_33, _GetOverlayTransformTrackedDeviceRelative_t893699371_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayTransformTrackedDeviceComponent_34(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayTransformTrackedDeviceComponent_t1749665136>(marshaled.___SetOverlayTransformTrackedDeviceComponent_34, _SetOverlayTransformTrackedDeviceComponent_t1749665136_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTransformTrackedDeviceComponent_35(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTransformTrackedDeviceComponent_t3256239660>(marshaled.___GetOverlayTransformTrackedDeviceComponent_35, _GetOverlayTransformTrackedDeviceComponent_t3256239660_il2cpp_TypeInfo_var));
+	unmarshaled.set_ShowOverlay_36(il2cpp_codegen_marshal_function_ptr_to_delegate<_ShowOverlay_t733914692>(marshaled.___ShowOverlay_36, _ShowOverlay_t733914692_il2cpp_TypeInfo_var));
+	unmarshaled.set_HideOverlay_37(il2cpp_codegen_marshal_function_ptr_to_delegate<_HideOverlay_t2737366627>(marshaled.___HideOverlay_37, _HideOverlay_t2737366627_il2cpp_TypeInfo_var));
+	unmarshaled.set_IsOverlayVisible_38(il2cpp_codegen_marshal_function_ptr_to_delegate<_IsOverlayVisible_t1564696099>(marshaled.___IsOverlayVisible_38, _IsOverlayVisible_t1564696099_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetTransformForOverlayCoordinates_39(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetTransformForOverlayCoordinates_t2483359939>(marshaled.___GetTransformForOverlayCoordinates_39, _GetTransformForOverlayCoordinates_t2483359939_il2cpp_TypeInfo_var));
+	unmarshaled.set_PollNextOverlayEvent_40(il2cpp_codegen_marshal_function_ptr_to_delegate<_PollNextOverlayEvent_t131678587>(marshaled.___PollNextOverlayEvent_40, _PollNextOverlayEvent_t131678587_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayInputMethod_41(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayInputMethod_t3217580654>(marshaled.___GetOverlayInputMethod_41, _GetOverlayInputMethod_t3217580654_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayInputMethod_42(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayInputMethod_t3575042602>(marshaled.___SetOverlayInputMethod_42, _SetOverlayInputMethod_t3575042602_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayMouseScale_43(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayMouseScale_t2826364086>(marshaled.___GetOverlayMouseScale_43, _GetOverlayMouseScale_t2826364086_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayMouseScale_44(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayMouseScale_t2624726138>(marshaled.___SetOverlayMouseScale_44, _SetOverlayMouseScale_t2624726138_il2cpp_TypeInfo_var));
+	unmarshaled.set_ComputeOverlayIntersection_45(il2cpp_codegen_marshal_function_ptr_to_delegate<_ComputeOverlayIntersection_t1141587151>(marshaled.___ComputeOverlayIntersection_45, _ComputeOverlayIntersection_t1141587151_il2cpp_TypeInfo_var));
+	unmarshaled.set_HandleControllerOverlayInteractionAsMouse_46(il2cpp_codegen_marshal_function_ptr_to_delegate<_HandleControllerOverlayInteractionAsMouse_t2899449918>(marshaled.___HandleControllerOverlayInteractionAsMouse_46, _HandleControllerOverlayInteractionAsMouse_t2899449918_il2cpp_TypeInfo_var));
+	unmarshaled.set_IsHoverTargetOverlay_47(il2cpp_codegen_marshal_function_ptr_to_delegate<_IsHoverTargetOverlay_t4101716668>(marshaled.___IsHoverTargetOverlay_47, _IsHoverTargetOverlay_t4101716668_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetGamepadFocusOverlay_48(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetGamepadFocusOverlay_t300021750>(marshaled.___GetGamepadFocusOverlay_48, _GetGamepadFocusOverlay_t300021750_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetGamepadFocusOverlay_49(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetGamepadFocusOverlay_t2763810618>(marshaled.___SetGamepadFocusOverlay_49, _SetGamepadFocusOverlay_t2763810618_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayNeighbor_50(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayNeighbor_t1117963895>(marshaled.___SetOverlayNeighbor_50, _SetOverlayNeighbor_t1117963895_il2cpp_TypeInfo_var));
+	unmarshaled.set_MoveGamepadFocusToNeighbor_51(il2cpp_codegen_marshal_function_ptr_to_delegate<_MoveGamepadFocusToNeighbor_t2016645278>(marshaled.___MoveGamepadFocusToNeighbor_51, _MoveGamepadFocusToNeighbor_t2016645278_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayTexture_52(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayTexture_t2238656700>(marshaled.___SetOverlayTexture_52, _SetOverlayTexture_t2238656700_il2cpp_TypeInfo_var));
+	unmarshaled.set_ClearOverlayTexture_53(il2cpp_codegen_marshal_function_ptr_to_delegate<_ClearOverlayTexture_t2610332521>(marshaled.___ClearOverlayTexture_53, _ClearOverlayTexture_t2610332521_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayRaw_54(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayRaw_t3268606321>(marshaled.___SetOverlayRaw_54, _SetOverlayRaw_t3268606321_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetOverlayFromFile_55(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetOverlayFromFile_t598184189>(marshaled.___SetOverlayFromFile_55, _SetOverlayFromFile_t598184189_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTexture_56(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTexture_t897552288>(marshaled.___GetOverlayTexture_56, _GetOverlayTexture_t897552288_il2cpp_TypeInfo_var));
+	unmarshaled.set_ReleaseNativeOverlayHandle_57(il2cpp_codegen_marshal_function_ptr_to_delegate<_ReleaseNativeOverlayHandle_t2842744417>(marshaled.___ReleaseNativeOverlayHandle_57, _ReleaseNativeOverlayHandle_t2842744417_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetOverlayTextureSize_58(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetOverlayTextureSize_t1288689867>(marshaled.___GetOverlayTextureSize_58, _GetOverlayTextureSize_t1288689867_il2cpp_TypeInfo_var));
+	unmarshaled.set_CreateDashboardOverlay_59(il2cpp_codegen_marshal_function_ptr_to_delegate<_CreateDashboardOverlay_t637199691>(marshaled.___CreateDashboardOverlay_59, _CreateDashboardOverlay_t637199691_il2cpp_TypeInfo_var));
+	unmarshaled.set_IsDashboardVisible_60(il2cpp_codegen_marshal_function_ptr_to_delegate<_IsDashboardVisible_t2020287181>(marshaled.___IsDashboardVisible_60, _IsDashboardVisible_t2020287181_il2cpp_TypeInfo_var));
+	unmarshaled.set_IsActiveDashboardOverlay_61(il2cpp_codegen_marshal_function_ptr_to_delegate<_IsActiveDashboardOverlay_t3144660141>(marshaled.___IsActiveDashboardOverlay_61, _IsActiveDashboardOverlay_t3144660141_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetDashboardOverlaySceneProcess_62(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetDashboardOverlaySceneProcess_t1462353074>(marshaled.___SetDashboardOverlaySceneProcess_62, _SetDashboardOverlaySceneProcess_t1462353074_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetDashboardOverlaySceneProcess_63(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetDashboardOverlaySceneProcess_t876496206>(marshaled.___GetDashboardOverlaySceneProcess_63, _GetDashboardOverlaySceneProcess_t876496206_il2cpp_TypeInfo_var));
+	unmarshaled.set_ShowDashboard_64(il2cpp_codegen_marshal_function_ptr_to_delegate<_ShowDashboard_t4127025320>(marshaled.___ShowDashboard_64, _ShowDashboard_t4127025320_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetPrimaryDashboardDevice_65(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetPrimaryDashboardDevice_t812432855>(marshaled.___GetPrimaryDashboardDevice_65, _GetPrimaryDashboardDevice_t812432855_il2cpp_TypeInfo_var));
+	unmarshaled.set_ShowKeyboard_66(il2cpp_codegen_marshal_function_ptr_to_delegate<_ShowKeyboard_t3095606223>(marshaled.___ShowKeyboard_66, _ShowKeyboard_t3095606223_il2cpp_TypeInfo_var));
+	unmarshaled.set_ShowKeyboardForOverlay_67(il2cpp_codegen_marshal_function_ptr_to_delegate<_ShowKeyboardForOverlay_t3006565844>(marshaled.___ShowKeyboardForOverlay_67, _ShowKeyboardForOverlay_t3006565844_il2cpp_TypeInfo_var));
+	unmarshaled.set_GetKeyboardText_68(il2cpp_codegen_marshal_function_ptr_to_delegate<_GetKeyboardText_t91815223>(marshaled.___GetKeyboardText_68, _GetKeyboardText_t91815223_il2cpp_TypeInfo_var));
+	unmarshaled.set_HideKeyboard_69(il2cpp_codegen_marshal_function_ptr_to_delegate<_HideKeyboard_t3483797360>(marshaled.___HideKeyboard_69, _HideKeyboard_t3483797360_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetKeyboardTransformAbsolute_70(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetKeyboardTransformAbsolute_t443079689>(marshaled.___SetKeyboardTransformAbsolute_70, _SetKeyboardTransformAbsolute_t443079689_il2cpp_TypeInfo_var));
+	unmarshaled.set_SetKeyboardPositionForOverlay_71(il2cpp_codegen_marshal_function_ptr_to_delegate<_SetKeyboardPositionForOverlay_t3695826360>(marshaled.___SetKeyboardPositionForOverlay_71, _SetKeyboardPositionForOverlay_t3695826360_il2cpp_TypeInfo_var));
+}
+// Conversion method for clean up from marshalling of: Valve.VR.IVROverlay
+extern "C" void IVROverlay_t3446109889_marshal_com_cleanup(IVROverlay_t3446109889_marshaled_com& marshaled)
+{
+}
+extern "C"  int32_t DelegatePInvokeWrapper__ClearOverlayTexture_t2610332521 (_ClearOverlayTexture_t2610332521 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_ClearOverlayTexture::.ctor(System.Object,System.IntPtr)
+extern "C"  void _ClearOverlayTexture__ctor_m3349485154 (_ClearOverlayTexture_t2610332521 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_ClearOverlayTexture::Invoke(System.UInt64)
+extern "C"  int32_t _ClearOverlayTexture_Invoke_m1311382489 (_ClearOverlayTexture_t2610332521 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_ClearOverlayTexture_Invoke_m1311382489((_ClearOverlayTexture_t2610332521 *)__this->get_prev_9(),___ulOverlayHandle0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_ClearOverlayTexture::BeginInvoke(System.UInt64,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _ClearOverlayTexture_BeginInvoke_m4124360504 (_ClearOverlayTexture_t2610332521 * __this, uint64_t ___ulOverlayHandle0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_ClearOverlayTexture_BeginInvoke_m4124360504_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_ClearOverlayTexture::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _ClearOverlayTexture_EndInvoke_m3710240042 (_ClearOverlayTexture_t2610332521 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  bool DelegatePInvokeWrapper__ComputeOverlayIntersection_t1141587151 (_ComputeOverlayIntersection_t1141587151 * __this, uint64_t ___ulOverlayHandle0, VROverlayIntersectionParams_t_t3201480230 * ___pParams1, VROverlayIntersectionResults_t_t2886517940 * ___pResults2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, VROverlayIntersectionParams_t_t3201480230 *, VROverlayIntersectionResults_t_t2886517940 *);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___pParams1, ___pResults2);
+
+	return static_cast<bool>(returnValue);
+}
+// System.Void Valve.VR.IVROverlay/_ComputeOverlayIntersection::.ctor(System.Object,System.IntPtr)
+extern "C"  void _ComputeOverlayIntersection__ctor_m1799678576 (_ComputeOverlayIntersection_t1141587151 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Boolean Valve.VR.IVROverlay/_ComputeOverlayIntersection::Invoke(System.UInt64,Valve.VR.VROverlayIntersectionParams_t&,Valve.VR.VROverlayIntersectionResults_t&)
+extern "C"  bool _ComputeOverlayIntersection_Invoke_m1110770673 (_ComputeOverlayIntersection_t1141587151 * __this, uint64_t ___ulOverlayHandle0, VROverlayIntersectionParams_t_t3201480230 * ___pParams1, VROverlayIntersectionResults_t_t2886517940 * ___pResults2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_ComputeOverlayIntersection_Invoke_m1110770673((_ComputeOverlayIntersection_t1141587151 *)__this->get_prev_9(),___ulOverlayHandle0, ___pParams1, ___pResults2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef bool (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, VROverlayIntersectionParams_t_t3201480230 * ___pParams1, VROverlayIntersectionResults_t_t2886517940 * ___pResults2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pParams1, ___pResults2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef bool (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, VROverlayIntersectionParams_t_t3201480230 * ___pParams1, VROverlayIntersectionResults_t_t2886517940 * ___pResults2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pParams1, ___pResults2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_ComputeOverlayIntersection::BeginInvoke(System.UInt64,Valve.VR.VROverlayIntersectionParams_t&,Valve.VR.VROverlayIntersectionResults_t&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _ComputeOverlayIntersection_BeginInvoke_m1218509186 (_ComputeOverlayIntersection_t1141587151 * __this, uint64_t ___ulOverlayHandle0, VROverlayIntersectionParams_t_t3201480230 * ___pParams1, VROverlayIntersectionResults_t_t2886517940 * ___pResults2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_ComputeOverlayIntersection_BeginInvoke_m1218509186_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(VROverlayIntersectionParams_t_t3201480230_il2cpp_TypeInfo_var, &(*___pParams1));
+	__d_args[2] = Box(VROverlayIntersectionResults_t_t2886517940_il2cpp_TypeInfo_var, &(*___pResults2));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// System.Boolean Valve.VR.IVROverlay/_ComputeOverlayIntersection::EndInvoke(Valve.VR.VROverlayIntersectionParams_t&,Valve.VR.VROverlayIntersectionResults_t&,System.IAsyncResult)
+extern "C"  bool _ComputeOverlayIntersection_EndInvoke_m1862728326 (_ComputeOverlayIntersection_t1141587151 * __this, VROverlayIntersectionParams_t_t3201480230 * ___pParams0, VROverlayIntersectionResults_t_t2886517940 * ___pResults1, Il2CppObject * ___result2, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pParams0,
+	___pResults1,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result2, ___out_args);
+	return *(bool*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__CreateDashboardOverlay_t637199691 (_CreateDashboardOverlay_t637199691 * __this, String_t* ___pchOverlayKey0, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pMainHandle2, uint64_t* ___pThumbnailHandle3, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(char*, char*, uint64_t*, uint64_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___pchOverlayKey0' to native representation
+	char* ____pchOverlayKey0_marshaled = NULL;
+	____pchOverlayKey0_marshaled = il2cpp_codegen_marshal_string(___pchOverlayKey0);
+
+	// Marshaling of parameter '___pchOverlayFriendlyName1' to native representation
+	char* ____pchOverlayFriendlyName1_marshaled = NULL;
+	____pchOverlayFriendlyName1_marshaled = il2cpp_codegen_marshal_string(___pchOverlayFriendlyName1);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(____pchOverlayKey0_marshaled, ____pchOverlayFriendlyName1_marshaled, ___pMainHandle2, ___pThumbnailHandle3);
+
+	// Marshaling cleanup of parameter '___pchOverlayKey0' native representation
+	il2cpp_codegen_marshal_free(____pchOverlayKey0_marshaled);
+	____pchOverlayKey0_marshaled = NULL;
+
+	// Marshaling cleanup of parameter '___pchOverlayFriendlyName1' native representation
+	il2cpp_codegen_marshal_free(____pchOverlayFriendlyName1_marshaled);
+	____pchOverlayFriendlyName1_marshaled = NULL;
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_CreateDashboardOverlay::.ctor(System.Object,System.IntPtr)
+extern "C"  void _CreateDashboardOverlay__ctor_m3137658542 (_CreateDashboardOverlay_t637199691 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_CreateDashboardOverlay::Invoke(System.String,System.String,System.UInt64&,System.UInt64&)
+extern "C"  int32_t _CreateDashboardOverlay_Invoke_m1458939786 (_CreateDashboardOverlay_t637199691 * __this, String_t* ___pchOverlayKey0, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pMainHandle2, uint64_t* ___pThumbnailHandle3, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_CreateDashboardOverlay_Invoke_m1458939786((_CreateDashboardOverlay_t637199691 *)__this->get_prev_9(),___pchOverlayKey0, ___pchOverlayFriendlyName1, ___pMainHandle2, ___pThumbnailHandle3, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, String_t* ___pchOverlayKey0, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pMainHandle2, uint64_t* ___pThumbnailHandle3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___pchOverlayKey0, ___pchOverlayFriendlyName1, ___pMainHandle2, ___pThumbnailHandle3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else if (__this->get_m_target_2() != NULL || ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, String_t* ___pchOverlayKey0, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pMainHandle2, uint64_t* ___pThumbnailHandle3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___pchOverlayKey0, ___pchOverlayFriendlyName1, ___pMainHandle2, ___pThumbnailHandle3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pMainHandle2, uint64_t* ___pThumbnailHandle3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(___pchOverlayKey0, ___pchOverlayFriendlyName1, ___pMainHandle2, ___pThumbnailHandle3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_CreateDashboardOverlay::BeginInvoke(System.String,System.String,System.UInt64&,System.UInt64&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _CreateDashboardOverlay_BeginInvoke_m4199974051 (_CreateDashboardOverlay_t637199691 * __this, String_t* ___pchOverlayKey0, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pMainHandle2, uint64_t* ___pThumbnailHandle3, AsyncCallback_t163412349 * ___callback4, Il2CppObject * ___object5, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_CreateDashboardOverlay_BeginInvoke_m4199974051_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[5] = {0};
+	__d_args[0] = ___pchOverlayKey0;
+	__d_args[1] = ___pchOverlayFriendlyName1;
+	__d_args[2] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &(*___pMainHandle2));
+	__d_args[3] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &(*___pThumbnailHandle3));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback4, (Il2CppObject*)___object5);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_CreateDashboardOverlay::EndInvoke(System.UInt64&,System.UInt64&,System.IAsyncResult)
+extern "C"  int32_t _CreateDashboardOverlay_EndInvoke_m265579404 (_CreateDashboardOverlay_t637199691 * __this, uint64_t* ___pMainHandle0, uint64_t* ___pThumbnailHandle1, Il2CppObject * ___result2, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pMainHandle0,
+	___pThumbnailHandle1,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result2, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__CreateOverlay_t4211228331 (_CreateOverlay_t4211228331 * __this, String_t* ___pchOverlayKey0, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pOverlayHandle2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(char*, char*, uint64_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___pchOverlayKey0' to native representation
+	char* ____pchOverlayKey0_marshaled = NULL;
+	____pchOverlayKey0_marshaled = il2cpp_codegen_marshal_string(___pchOverlayKey0);
+
+	// Marshaling of parameter '___pchOverlayFriendlyName1' to native representation
+	char* ____pchOverlayFriendlyName1_marshaled = NULL;
+	____pchOverlayFriendlyName1_marshaled = il2cpp_codegen_marshal_string(___pchOverlayFriendlyName1);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(____pchOverlayKey0_marshaled, ____pchOverlayFriendlyName1_marshaled, ___pOverlayHandle2);
+
+	// Marshaling cleanup of parameter '___pchOverlayKey0' native representation
+	il2cpp_codegen_marshal_free(____pchOverlayKey0_marshaled);
+	____pchOverlayKey0_marshaled = NULL;
+
+	// Marshaling cleanup of parameter '___pchOverlayFriendlyName1' native representation
+	il2cpp_codegen_marshal_free(____pchOverlayFriendlyName1_marshaled);
+	____pchOverlayFriendlyName1_marshaled = NULL;
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_CreateOverlay::.ctor(System.Object,System.IntPtr)
+extern "C"  void _CreateOverlay__ctor_m1208349024 (_CreateOverlay_t4211228331 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_CreateOverlay::Invoke(System.String,System.String,System.UInt64&)
+extern "C"  int32_t _CreateOverlay_Invoke_m371834953 (_CreateOverlay_t4211228331 * __this, String_t* ___pchOverlayKey0, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pOverlayHandle2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_CreateOverlay_Invoke_m371834953((_CreateOverlay_t4211228331 *)__this->get_prev_9(),___pchOverlayKey0, ___pchOverlayFriendlyName1, ___pOverlayHandle2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, String_t* ___pchOverlayKey0, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pOverlayHandle2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___pchOverlayKey0, ___pchOverlayFriendlyName1, ___pOverlayHandle2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else if (__this->get_m_target_2() != NULL || ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, String_t* ___pchOverlayKey0, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pOverlayHandle2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___pchOverlayKey0, ___pchOverlayFriendlyName1, ___pOverlayHandle2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pOverlayHandle2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(___pchOverlayKey0, ___pchOverlayFriendlyName1, ___pOverlayHandle2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_CreateOverlay::BeginInvoke(System.String,System.String,System.UInt64&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _CreateOverlay_BeginInvoke_m2308161414 (_CreateOverlay_t4211228331 * __this, String_t* ___pchOverlayKey0, String_t* ___pchOverlayFriendlyName1, uint64_t* ___pOverlayHandle2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_CreateOverlay_BeginInvoke_m2308161414_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = ___pchOverlayKey0;
+	__d_args[1] = ___pchOverlayFriendlyName1;
+	__d_args[2] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &(*___pOverlayHandle2));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_CreateOverlay::EndInvoke(System.UInt64&,System.IAsyncResult)
+extern "C"  int32_t _CreateOverlay_EndInvoke_m1333391315 (_CreateOverlay_t4211228331 * __this, uint64_t* ___pOverlayHandle0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pOverlayHandle0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__DestroyOverlay_t1020329117 (_DestroyOverlay_t1020329117 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_DestroyOverlay::.ctor(System.Object,System.IntPtr)
+extern "C"  void _DestroyOverlay__ctor_m3099065652 (_DestroyOverlay_t1020329117 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_DestroyOverlay::Invoke(System.UInt64)
+extern "C"  int32_t _DestroyOverlay_Invoke_m898282617 (_DestroyOverlay_t1020329117 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_DestroyOverlay_Invoke_m898282617((_DestroyOverlay_t1020329117 *)__this->get_prev_9(),___ulOverlayHandle0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_DestroyOverlay::BeginInvoke(System.UInt64,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _DestroyOverlay_BeginInvoke_m323403662 (_DestroyOverlay_t1020329117 * __this, uint64_t ___ulOverlayHandle0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_DestroyOverlay_BeginInvoke_m323403662_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_DestroyOverlay::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _DestroyOverlay_EndInvoke_m827451572 (_DestroyOverlay_t1020329117 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__FindOverlay_t1862706542 (_FindOverlay_t1862706542 * __this, String_t* ___pchOverlayKey0, uint64_t* ___pOverlayHandle1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(char*, uint64_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___pchOverlayKey0' to native representation
+	char* ____pchOverlayKey0_marshaled = NULL;
+	____pchOverlayKey0_marshaled = il2cpp_codegen_marshal_string(___pchOverlayKey0);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(____pchOverlayKey0_marshaled, ___pOverlayHandle1);
+
+	// Marshaling cleanup of parameter '___pchOverlayKey0' native representation
+	il2cpp_codegen_marshal_free(____pchOverlayKey0_marshaled);
+	____pchOverlayKey0_marshaled = NULL;
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_FindOverlay::.ctor(System.Object,System.IntPtr)
+extern "C"  void _FindOverlay__ctor_m2816484877 (_FindOverlay_t1862706542 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_FindOverlay::Invoke(System.String,System.UInt64&)
+extern "C"  int32_t _FindOverlay_Invoke_m1857532504 (_FindOverlay_t1862706542 * __this, String_t* ___pchOverlayKey0, uint64_t* ___pOverlayHandle1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_FindOverlay_Invoke_m1857532504((_FindOverlay_t1862706542 *)__this->get_prev_9(),___pchOverlayKey0, ___pOverlayHandle1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, String_t* ___pchOverlayKey0, uint64_t* ___pOverlayHandle1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___pchOverlayKey0, ___pOverlayHandle1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else if (__this->get_m_target_2() != NULL || ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, String_t* ___pchOverlayKey0, uint64_t* ___pOverlayHandle1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___pchOverlayKey0, ___pOverlayHandle1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t* ___pOverlayHandle1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(___pchOverlayKey0, ___pOverlayHandle1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_FindOverlay::BeginInvoke(System.String,System.UInt64&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _FindOverlay_BeginInvoke_m3066402601 (_FindOverlay_t1862706542 * __this, String_t* ___pchOverlayKey0, uint64_t* ___pOverlayHandle1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_FindOverlay_BeginInvoke_m3066402601_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = ___pchOverlayKey0;
+	__d_args[1] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &(*___pOverlayHandle1));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_FindOverlay::EndInvoke(System.UInt64&,System.IAsyncResult)
+extern "C"  int32_t _FindOverlay_EndInvoke_m639100790 (_FindOverlay_t1862706542 * __this, uint64_t* ___pOverlayHandle0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pOverlayHandle0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetDashboardOverlaySceneProcess_t876496206 (_GetDashboardOverlaySceneProcess_t876496206 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punProcessId1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, uint32_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___punProcessId1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetDashboardOverlaySceneProcess::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetDashboardOverlaySceneProcess__ctor_m2301100391 (_GetDashboardOverlaySceneProcess_t876496206 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetDashboardOverlaySceneProcess::Invoke(System.UInt64,System.UInt32&)
+extern "C"  int32_t _GetDashboardOverlaySceneProcess_Invoke_m926359608 (_GetDashboardOverlaySceneProcess_t876496206 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punProcessId1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetDashboardOverlaySceneProcess_Invoke_m926359608((_GetDashboardOverlaySceneProcess_t876496206 *)__this->get_prev_9(),___ulOverlayHandle0, ___punProcessId1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punProcessId1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___punProcessId1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punProcessId1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___punProcessId1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetDashboardOverlaySceneProcess::BeginInvoke(System.UInt64,System.UInt32&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetDashboardOverlaySceneProcess_BeginInvoke_m3874007737 (_GetDashboardOverlaySceneProcess_t876496206 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punProcessId1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetDashboardOverlaySceneProcess_BeginInvoke_m3874007737_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___punProcessId1));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetDashboardOverlaySceneProcess::EndInvoke(System.UInt32&,System.IAsyncResult)
+extern "C"  int32_t _GetDashboardOverlaySceneProcess_EndInvoke_m1411271555 (_GetDashboardOverlaySceneProcess_t876496206 * __this, uint32_t* ___punProcessId0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___punProcessId0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  uint64_t DelegatePInvokeWrapper__GetGamepadFocusOverlay_t300021750 (_GetGamepadFocusOverlay_t300021750 * __this, const MethodInfo* method)
+{
+	typedef uint64_t (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	uint64_t returnValue = il2cppPInvokeFunc();
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetGamepadFocusOverlay::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetGamepadFocusOverlay__ctor_m1809467649 (_GetGamepadFocusOverlay_t300021750 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.UInt64 Valve.VR.IVROverlay/_GetGamepadFocusOverlay::Invoke()
+extern "C"  uint64_t _GetGamepadFocusOverlay_Invoke_m2014588917 (_GetGamepadFocusOverlay_t300021750 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetGamepadFocusOverlay_Invoke_m2014588917((_GetGamepadFocusOverlay_t300021750 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef uint64_t (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef uint64_t (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetGamepadFocusOverlay::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetGamepadFocusOverlay_BeginInvoke_m2316209574 (_GetGamepadFocusOverlay_t300021750 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.UInt64 Valve.VR.IVROverlay/_GetGamepadFocusOverlay::EndInvoke(System.IAsyncResult)
+extern "C"  uint64_t _GetGamepadFocusOverlay_EndInvoke_m3315304827 (_GetGamepadFocusOverlay_t300021750 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(uint64_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  uint64_t DelegatePInvokeWrapper__GetHighQualityOverlay_t362587296 (_GetHighQualityOverlay_t362587296 * __this, const MethodInfo* method)
+{
+	typedef uint64_t (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	uint64_t returnValue = il2cppPInvokeFunc();
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetHighQualityOverlay::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetHighQualityOverlay__ctor_m318060317 (_GetHighQualityOverlay_t362587296 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.UInt64 Valve.VR.IVROverlay/_GetHighQualityOverlay::Invoke()
+extern "C"  uint64_t _GetHighQualityOverlay_Invoke_m3919269457 (_GetHighQualityOverlay_t362587296 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetHighQualityOverlay_Invoke_m3919269457((_GetHighQualityOverlay_t362587296 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef uint64_t (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef uint64_t (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetHighQualityOverlay::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetHighQualityOverlay_BeginInvoke_m371179472 (_GetHighQualityOverlay_t362587296 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.UInt64 Valve.VR.IVROverlay/_GetHighQualityOverlay::EndInvoke(System.IAsyncResult)
+extern "C"  uint64_t _GetHighQualityOverlay_EndInvoke_m2663128775 (_GetHighQualityOverlay_t362587296 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(uint64_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  uint32_t DelegatePInvokeWrapper__GetKeyboardText_t91815223 (_GetKeyboardText_t91815223 * __this, StringBuilder_t1221177846 * ___pchText0, uint32_t ___cchText1, const MethodInfo* method)
+{
+	typedef uint32_t (STDCALL *PInvokeFunc)(char*, uint32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___pchText0' to native representation
+	char* ____pchText0_marshaled = NULL;
+	____pchText0_marshaled = il2cpp_codegen_marshal_string_builder(___pchText0);
+
+	// Native function invocation
+	uint32_t returnValue = il2cppPInvokeFunc(____pchText0_marshaled, ___cchText1);
+
+	// Marshaling of parameter '___pchText0' back from native representation
+	il2cpp_codegen_marshal_string_builder_result(___pchText0, ____pchText0_marshaled);
+
+	// Marshaling cleanup of parameter '___pchText0' native representation
+	il2cpp_codegen_marshal_free(____pchText0_marshaled);
+	____pchText0_marshaled = NULL;
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetKeyboardText::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetKeyboardText__ctor_m3525514886 (_GetKeyboardText_t91815223 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.UInt32 Valve.VR.IVROverlay/_GetKeyboardText::Invoke(System.Text.StringBuilder,System.UInt32)
+extern "C"  uint32_t _GetKeyboardText_Invoke_m883285111 (_GetKeyboardText_t91815223 * __this, StringBuilder_t1221177846 * ___pchText0, uint32_t ___cchText1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetKeyboardText_Invoke_m883285111((_GetKeyboardText_t91815223 *)__this->get_prev_9(),___pchText0, ___cchText1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef uint32_t (*FunctionPointerType) (Il2CppObject *, void* __this, StringBuilder_t1221177846 * ___pchText0, uint32_t ___cchText1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___pchText0, ___cchText1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else if (__this->get_m_target_2() != NULL || ___methodIsStatic)
+	{
+		typedef uint32_t (*FunctionPointerType) (void* __this, StringBuilder_t1221177846 * ___pchText0, uint32_t ___cchText1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___pchText0, ___cchText1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef uint32_t (*FunctionPointerType) (void* __this, uint32_t ___cchText1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(___pchText0, ___cchText1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetKeyboardText::BeginInvoke(System.Text.StringBuilder,System.UInt32,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetKeyboardText_BeginInvoke_m653992927 (_GetKeyboardText_t91815223 * __this, StringBuilder_t1221177846 * ___pchText0, uint32_t ___cchText1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetKeyboardText_BeginInvoke_m653992927_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = ___pchText0;
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___cchText1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// System.UInt32 Valve.VR.IVROverlay/_GetKeyboardText::EndInvoke(System.IAsyncResult)
+extern "C"  uint32_t _GetKeyboardText_EndInvoke_m2210362133 (_GetKeyboardText_t91815223 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(uint32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayAlpha_t2185592753 (_GetOverlayAlpha_t2185592753 * __this, uint64_t ___ulOverlayHandle0, float* ___pfAlpha1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, float*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___pfAlpha1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayAlpha::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayAlpha__ctor_m340936108 (_GetOverlayAlpha_t2185592753 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayAlpha::Invoke(System.UInt64,System.Single&)
+extern "C"  int32_t _GetOverlayAlpha_Invoke_m1834655296 (_GetOverlayAlpha_t2185592753 * __this, uint64_t ___ulOverlayHandle0, float* ___pfAlpha1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayAlpha_Invoke_m1834655296((_GetOverlayAlpha_t2185592753 *)__this->get_prev_9(),___ulOverlayHandle0, ___pfAlpha1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, float* ___pfAlpha1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pfAlpha1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, float* ___pfAlpha1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pfAlpha1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayAlpha::BeginInvoke(System.UInt64,System.Single&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayAlpha_BeginInvoke_m4036679817 (_GetOverlayAlpha_t2185592753 * __this, uint64_t ___ulOverlayHandle0, float* ___pfAlpha1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayAlpha_BeginInvoke_m4036679817_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(Single_t2076509932_il2cpp_TypeInfo_var, &(*___pfAlpha1));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayAlpha::EndInvoke(System.Single&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayAlpha_EndInvoke_m2935612751 (_GetOverlayAlpha_t2185592753 * __this, float* ___pfAlpha0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pfAlpha0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayAutoCurveDistanceRangeInMeters_t4193138162 (_GetOverlayAutoCurveDistanceRangeInMeters_t4193138162 * __this, uint64_t ___ulOverlayHandle0, float* ___pfMinDistanceInMeters1, float* ___pfMaxDistanceInMeters2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, float*, float*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___pfMinDistanceInMeters1, ___pfMaxDistanceInMeters2);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayAutoCurveDistanceRangeInMeters::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayAutoCurveDistanceRangeInMeters__ctor_m2281802493 (_GetOverlayAutoCurveDistanceRangeInMeters_t4193138162 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayAutoCurveDistanceRangeInMeters::Invoke(System.UInt64,System.Single&,System.Single&)
+extern "C"  int32_t _GetOverlayAutoCurveDistanceRangeInMeters_Invoke_m2285000342 (_GetOverlayAutoCurveDistanceRangeInMeters_t4193138162 * __this, uint64_t ___ulOverlayHandle0, float* ___pfMinDistanceInMeters1, float* ___pfMaxDistanceInMeters2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayAutoCurveDistanceRangeInMeters_Invoke_m2285000342((_GetOverlayAutoCurveDistanceRangeInMeters_t4193138162 *)__this->get_prev_9(),___ulOverlayHandle0, ___pfMinDistanceInMeters1, ___pfMaxDistanceInMeters2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, float* ___pfMinDistanceInMeters1, float* ___pfMaxDistanceInMeters2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pfMinDistanceInMeters1, ___pfMaxDistanceInMeters2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, float* ___pfMinDistanceInMeters1, float* ___pfMaxDistanceInMeters2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pfMinDistanceInMeters1, ___pfMaxDistanceInMeters2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayAutoCurveDistanceRangeInMeters::BeginInvoke(System.UInt64,System.Single&,System.Single&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayAutoCurveDistanceRangeInMeters_BeginInvoke_m2247688717 (_GetOverlayAutoCurveDistanceRangeInMeters_t4193138162 * __this, uint64_t ___ulOverlayHandle0, float* ___pfMinDistanceInMeters1, float* ___pfMaxDistanceInMeters2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayAutoCurveDistanceRangeInMeters_BeginInvoke_m2247688717_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(Single_t2076509932_il2cpp_TypeInfo_var, &(*___pfMinDistanceInMeters1));
+	__d_args[2] = Box(Single_t2076509932_il2cpp_TypeInfo_var, &(*___pfMaxDistanceInMeters2));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayAutoCurveDistanceRangeInMeters::EndInvoke(System.Single&,System.Single&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayAutoCurveDistanceRangeInMeters_EndInvoke_m1064122099 (_GetOverlayAutoCurveDistanceRangeInMeters_t4193138162 * __this, float* ___pfMinDistanceInMeters0, float* ___pfMaxDistanceInMeters1, Il2CppObject * ___result2, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pfMinDistanceInMeters0,
+	___pfMaxDistanceInMeters1,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result2, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayColor_t2379424348 (_GetOverlayColor_t2379424348 * __this, uint64_t ___ulOverlayHandle0, float* ___pfRed1, float* ___pfGreen2, float* ___pfBlue3, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, float*, float*, float*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___pfRed1, ___pfGreen2, ___pfBlue3);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayColor::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayColor__ctor_m1313734191 (_GetOverlayColor_t2379424348 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayColor::Invoke(System.UInt64,System.Single&,System.Single&,System.Single&)
+extern "C"  int32_t _GetOverlayColor_Invoke_m3788412323 (_GetOverlayColor_t2379424348 * __this, uint64_t ___ulOverlayHandle0, float* ___pfRed1, float* ___pfGreen2, float* ___pfBlue3, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayColor_Invoke_m3788412323((_GetOverlayColor_t2379424348 *)__this->get_prev_9(),___ulOverlayHandle0, ___pfRed1, ___pfGreen2, ___pfBlue3, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, float* ___pfRed1, float* ___pfGreen2, float* ___pfBlue3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pfRed1, ___pfGreen2, ___pfBlue3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, float* ___pfRed1, float* ___pfGreen2, float* ___pfBlue3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pfRed1, ___pfGreen2, ___pfBlue3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayColor::BeginInvoke(System.UInt64,System.Single&,System.Single&,System.Single&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayColor_BeginInvoke_m2486339604 (_GetOverlayColor_t2379424348 * __this, uint64_t ___ulOverlayHandle0, float* ___pfRed1, float* ___pfGreen2, float* ___pfBlue3, AsyncCallback_t163412349 * ___callback4, Il2CppObject * ___object5, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayColor_BeginInvoke_m2486339604_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[5] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(Single_t2076509932_il2cpp_TypeInfo_var, &(*___pfRed1));
+	__d_args[2] = Box(Single_t2076509932_il2cpp_TypeInfo_var, &(*___pfGreen2));
+	__d_args[3] = Box(Single_t2076509932_il2cpp_TypeInfo_var, &(*___pfBlue3));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback4, (Il2CppObject*)___object5);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayColor::EndInvoke(System.Single&,System.Single&,System.Single&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayColor_EndInvoke_m1994420100 (_GetOverlayColor_t2379424348 * __this, float* ___pfRed0, float* ___pfGreen1, float* ___pfBlue2, Il2CppObject * ___result3, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pfRed0,
+	___pfGreen1,
+	___pfBlue2,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result3, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  IntPtr_t DelegatePInvokeWrapper__GetOverlayErrorNameFromEnum_t3535846231 (_GetOverlayErrorNameFromEnum_t3535846231 * __this, int32_t ___error0, const MethodInfo* method)
+{
+	typedef intptr_t (STDCALL *PInvokeFunc)(int32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	intptr_t returnValue = il2cppPInvokeFunc(___error0);
+
+	// Marshaling of return value back from native representation
+	IntPtr_t _returnValue_unmarshaled;
+	_returnValue_unmarshaled.set_m_value_0(reinterpret_cast<void*>((intptr_t)(returnValue)));
+
+	return _returnValue_unmarshaled;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayErrorNameFromEnum::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayErrorNameFromEnum__ctor_m2738719852 (_GetOverlayErrorNameFromEnum_t3535846231 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.IntPtr Valve.VR.IVROverlay/_GetOverlayErrorNameFromEnum::Invoke(Valve.VR.EVROverlayError)
+extern "C"  IntPtr_t _GetOverlayErrorNameFromEnum_Invoke_m2290417798 (_GetOverlayErrorNameFromEnum_t3535846231 * __this, int32_t ___error0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayErrorNameFromEnum_Invoke_m2290417798((_GetOverlayErrorNameFromEnum_t3535846231 *)__this->get_prev_9(),___error0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef IntPtr_t (*FunctionPointerType) (Il2CppObject *, void* __this, int32_t ___error0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___error0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef IntPtr_t (*FunctionPointerType) (void* __this, int32_t ___error0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___error0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayErrorNameFromEnum::BeginInvoke(Valve.VR.EVROverlayError,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayErrorNameFromEnum_BeginInvoke_m966367142 (_GetOverlayErrorNameFromEnum_t3535846231 * __this, int32_t ___error0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayErrorNameFromEnum_BeginInvoke_m966367142_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(EVROverlayError_t3464864153_il2cpp_TypeInfo_var, &___error0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.IntPtr Valve.VR.IVROverlay/_GetOverlayErrorNameFromEnum::EndInvoke(System.IAsyncResult)
+extern "C"  IntPtr_t _GetOverlayErrorNameFromEnum_EndInvoke_m2177859195 (_GetOverlayErrorNameFromEnum_t3535846231 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(IntPtr_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayFlag_t3676293589 (_GetOverlayFlag_t3676293589 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eOverlayFlag1, bool* ___pbEnabled2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, int32_t, int32_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___pbEnabled2' to native representation
+	int32_t* ____pbEnabled2_marshaled = NULL;
+	int32_t ____pbEnabled2_marshaled_dereferenced = 0;
+	____pbEnabled2_marshaled_dereferenced = static_cast<int32_t>(*___pbEnabled2);
+	____pbEnabled2_marshaled = &____pbEnabled2_marshaled_dereferenced;
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___eOverlayFlag1, ____pbEnabled2_marshaled);
+
+	// Marshaling of parameter '___pbEnabled2' back from native representation
+	bool _____pbEnabled2_marshaled_unmarshaled_dereferenced = false;
+	_____pbEnabled2_marshaled_unmarshaled_dereferenced = static_cast<bool>(*____pbEnabled2_marshaled);
+	*___pbEnabled2 = _____pbEnabled2_marshaled_unmarshaled_dereferenced;
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayFlag::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayFlag__ctor_m3858993980 (_GetOverlayFlag_t3676293589 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayFlag::Invoke(System.UInt64,Valve.VR.VROverlayFlags,System.Boolean&)
+extern "C"  int32_t _GetOverlayFlag_Invoke_m2613417877 (_GetOverlayFlag_t3676293589 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eOverlayFlag1, bool* ___pbEnabled2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayFlag_Invoke_m2613417877((_GetOverlayFlag_t3676293589 *)__this->get_prev_9(),___ulOverlayHandle0, ___eOverlayFlag1, ___pbEnabled2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, int32_t ___eOverlayFlag1, bool* ___pbEnabled2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___eOverlayFlag1, ___pbEnabled2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, int32_t ___eOverlayFlag1, bool* ___pbEnabled2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___eOverlayFlag1, ___pbEnabled2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayFlag::BeginInvoke(System.UInt64,Valve.VR.VROverlayFlags,System.Boolean&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayFlag_BeginInvoke_m3786687000 (_GetOverlayFlag_t3676293589 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eOverlayFlag1, bool* ___pbEnabled2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayFlag_BeginInvoke_m3786687000_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(VROverlayFlags_t2344570851_il2cpp_TypeInfo_var, &___eOverlayFlag1);
+	__d_args[2] = Box(Boolean_t3825574718_il2cpp_TypeInfo_var, &(*___pbEnabled2));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayFlag::EndInvoke(System.Boolean&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayFlag_EndInvoke_m1980511597 (_GetOverlayFlag_t3676293589 * __this, bool* ___pbEnabled0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pbEnabled0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayImageData_t836541042 (_GetOverlayImageData_t836541042 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pvBuffer1, uint32_t ___unBufferSize2, uint32_t* ___punWidth3, uint32_t* ___punHeight4, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, intptr_t, uint32_t, uint32_t*, uint32_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, reinterpret_cast<intptr_t>((___pvBuffer1).get_m_value_0()), ___unBufferSize2, ___punWidth3, ___punHeight4);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayImageData::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayImageData__ctor_m1199965177 (_GetOverlayImageData_t836541042 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayImageData::Invoke(System.UInt64,System.IntPtr,System.UInt32,System.UInt32&,System.UInt32&)
+extern "C"  int32_t _GetOverlayImageData_Invoke_m2105959032 (_GetOverlayImageData_t836541042 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pvBuffer1, uint32_t ___unBufferSize2, uint32_t* ___punWidth3, uint32_t* ___punHeight4, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayImageData_Invoke_m2105959032((_GetOverlayImageData_t836541042 *)__this->get_prev_9(),___ulOverlayHandle0, ___pvBuffer1, ___unBufferSize2, ___punWidth3, ___punHeight4, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pvBuffer1, uint32_t ___unBufferSize2, uint32_t* ___punWidth3, uint32_t* ___punHeight4, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pvBuffer1, ___unBufferSize2, ___punWidth3, ___punHeight4,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pvBuffer1, uint32_t ___unBufferSize2, uint32_t* ___punWidth3, uint32_t* ___punHeight4, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pvBuffer1, ___unBufferSize2, ___punWidth3, ___punHeight4,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayImageData::BeginInvoke(System.UInt64,System.IntPtr,System.UInt32,System.UInt32&,System.UInt32&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayImageData_BeginInvoke_m2891982391 (_GetOverlayImageData_t836541042 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pvBuffer1, uint32_t ___unBufferSize2, uint32_t* ___punWidth3, uint32_t* ___punHeight4, AsyncCallback_t163412349 * ___callback5, Il2CppObject * ___object6, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayImageData_BeginInvoke_m2891982391_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[6] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___pvBuffer1);
+	__d_args[2] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unBufferSize2);
+	__d_args[3] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___punWidth3));
+	__d_args[4] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___punHeight4));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback5, (Il2CppObject*)___object6);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayImageData::EndInvoke(System.UInt32&,System.UInt32&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayImageData_EndInvoke_m2136025031 (_GetOverlayImageData_t836541042 * __this, uint32_t* ___punWidth0, uint32_t* ___punHeight1, Il2CppObject * ___result2, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___punWidth0,
+	___punHeight1,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result2, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayInputMethod_t3217580654 (_GetOverlayInputMethod_t3217580654 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peInputMethod1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, int32_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___peInputMethod1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayInputMethod::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayInputMethod__ctor_m2296951855 (_GetOverlayInputMethod_t3217580654 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayInputMethod::Invoke(System.UInt64,Valve.VR.VROverlayInputMethod&)
+extern "C"  int32_t _GetOverlayInputMethod_Invoke_m3078952085 (_GetOverlayInputMethod_t3217580654 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peInputMethod1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayInputMethod_Invoke_m3078952085((_GetOverlayInputMethod_t3217580654 *)__this->get_prev_9(),___ulOverlayHandle0, ___peInputMethod1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, int32_t* ___peInputMethod1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___peInputMethod1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, int32_t* ___peInputMethod1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___peInputMethod1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayInputMethod::BeginInvoke(System.UInt64,Valve.VR.VROverlayInputMethod&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayInputMethod_BeginInvoke_m1748189674 (_GetOverlayInputMethod_t3217580654 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peInputMethod1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayInputMethod_BeginInvoke_m1748189674_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(VROverlayInputMethod_t3830649193_il2cpp_TypeInfo_var, &(*___peInputMethod1));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayInputMethod::EndInvoke(Valve.VR.VROverlayInputMethod&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayInputMethod_EndInvoke_m510263382 (_GetOverlayInputMethod_t3217580654 * __this, int32_t* ___peInputMethod0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___peInputMethod0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  uint32_t DelegatePInvokeWrapper__GetOverlayKey_t1341267772 (_GetOverlayKey_t1341267772 * __this, uint64_t ___ulOverlayHandle0, StringBuilder_t1221177846 * ___pchValue1, uint32_t ___unBufferSize2, int32_t* ___pError3, const MethodInfo* method)
+{
+	typedef uint32_t (STDCALL *PInvokeFunc)(uint64_t, char*, uint32_t, int32_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___pchValue1' to native representation
+	char* ____pchValue1_marshaled = NULL;
+	____pchValue1_marshaled = il2cpp_codegen_marshal_string_builder(___pchValue1);
+
+	// Native function invocation
+	uint32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ____pchValue1_marshaled, ___unBufferSize2, ___pError3);
+
+	// Marshaling of parameter '___pchValue1' back from native representation
+	il2cpp_codegen_marshal_string_builder_result(___pchValue1, ____pchValue1_marshaled);
+
+	// Marshaling cleanup of parameter '___pchValue1' native representation
+	il2cpp_codegen_marshal_free(____pchValue1_marshaled);
+	____pchValue1_marshaled = NULL;
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayKey::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayKey__ctor_m2283910433 (_GetOverlayKey_t1341267772 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.UInt32 Valve.VR.IVROverlay/_GetOverlayKey::Invoke(System.UInt64,System.Text.StringBuilder,System.UInt32,Valve.VR.EVROverlayError&)
+extern "C"  uint32_t _GetOverlayKey_Invoke_m2950777966 (_GetOverlayKey_t1341267772 * __this, uint64_t ___ulOverlayHandle0, StringBuilder_t1221177846 * ___pchValue1, uint32_t ___unBufferSize2, int32_t* ___pError3, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayKey_Invoke_m2950777966((_GetOverlayKey_t1341267772 *)__this->get_prev_9(),___ulOverlayHandle0, ___pchValue1, ___unBufferSize2, ___pError3, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef uint32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, StringBuilder_t1221177846 * ___pchValue1, uint32_t ___unBufferSize2, int32_t* ___pError3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pchValue1, ___unBufferSize2, ___pError3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef uint32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, StringBuilder_t1221177846 * ___pchValue1, uint32_t ___unBufferSize2, int32_t* ___pError3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pchValue1, ___unBufferSize2, ___pError3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayKey::BeginInvoke(System.UInt64,System.Text.StringBuilder,System.UInt32,Valve.VR.EVROverlayError&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayKey_BeginInvoke_m471687784 (_GetOverlayKey_t1341267772 * __this, uint64_t ___ulOverlayHandle0, StringBuilder_t1221177846 * ___pchValue1, uint32_t ___unBufferSize2, int32_t* ___pError3, AsyncCallback_t163412349 * ___callback4, Il2CppObject * ___object5, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayKey_BeginInvoke_m471687784_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[5] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = ___pchValue1;
+	__d_args[2] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unBufferSize2);
+	__d_args[3] = Box(EVROverlayError_t3464864153_il2cpp_TypeInfo_var, &(*___pError3));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback4, (Il2CppObject*)___object5);
+}
+// System.UInt32 Valve.VR.IVROverlay/_GetOverlayKey::EndInvoke(Valve.VR.EVROverlayError&,System.IAsyncResult)
+extern "C"  uint32_t _GetOverlayKey_EndInvoke_m1627382357 (_GetOverlayKey_t1341267772 * __this, int32_t* ___pError0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pError0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(uint32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayMouseScale_t2826364086 (_GetOverlayMouseScale_t2826364086 * __this, uint64_t ___ulOverlayHandle0, HmdVector2_t_t2255225135 * ___pvecMouseScale1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, HmdVector2_t_t2255225135 *);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___pvecMouseScale1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayMouseScale::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayMouseScale__ctor_m1394172027 (_GetOverlayMouseScale_t2826364086 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayMouseScale::Invoke(System.UInt64,Valve.VR.HmdVector2_t&)
+extern "C"  int32_t _GetOverlayMouseScale_Invoke_m1554314519 (_GetOverlayMouseScale_t2826364086 * __this, uint64_t ___ulOverlayHandle0, HmdVector2_t_t2255225135 * ___pvecMouseScale1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayMouseScale_Invoke_m1554314519((_GetOverlayMouseScale_t2826364086 *)__this->get_prev_9(),___ulOverlayHandle0, ___pvecMouseScale1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, HmdVector2_t_t2255225135 * ___pvecMouseScale1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pvecMouseScale1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, HmdVector2_t_t2255225135 * ___pvecMouseScale1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pvecMouseScale1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayMouseScale::BeginInvoke(System.UInt64,Valve.VR.HmdVector2_t&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayMouseScale_BeginInvoke_m3251213160 (_GetOverlayMouseScale_t2826364086 * __this, uint64_t ___ulOverlayHandle0, HmdVector2_t_t2255225135 * ___pvecMouseScale1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayMouseScale_BeginInvoke_m3251213160_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(HmdVector2_t_t2255225135_il2cpp_TypeInfo_var, &(*___pvecMouseScale1));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayMouseScale::EndInvoke(Valve.VR.HmdVector2_t&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayMouseScale_EndInvoke_m371122324 (_GetOverlayMouseScale_t2826364086 * __this, HmdVector2_t_t2255225135 * ___pvecMouseScale0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pvecMouseScale0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  uint32_t DelegatePInvokeWrapper__GetOverlayName_t221395366 (_GetOverlayName_t221395366 * __this, uint64_t ___ulOverlayHandle0, StringBuilder_t1221177846 * ___pchValue1, uint32_t ___unBufferSize2, int32_t* ___pError3, const MethodInfo* method)
+{
+	typedef uint32_t (STDCALL *PInvokeFunc)(uint64_t, char*, uint32_t, int32_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___pchValue1' to native representation
+	char* ____pchValue1_marshaled = NULL;
+	____pchValue1_marshaled = il2cpp_codegen_marshal_string_builder(___pchValue1);
+
+	// Native function invocation
+	uint32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ____pchValue1_marshaled, ___unBufferSize2, ___pError3);
+
+	// Marshaling of parameter '___pchValue1' back from native representation
+	il2cpp_codegen_marshal_string_builder_result(___pchValue1, ____pchValue1_marshaled);
+
+	// Marshaling cleanup of parameter '___pchValue1' native representation
+	il2cpp_codegen_marshal_free(____pchValue1_marshaled);
+	____pchValue1_marshaled = NULL;
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayName::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayName__ctor_m2645109489 (_GetOverlayName_t221395366 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.UInt32 Valve.VR.IVROverlay/_GetOverlayName::Invoke(System.UInt64,System.Text.StringBuilder,System.UInt32,Valve.VR.EVROverlayError&)
+extern "C"  uint32_t _GetOverlayName_Invoke_m1434428818 (_GetOverlayName_t221395366 * __this, uint64_t ___ulOverlayHandle0, StringBuilder_t1221177846 * ___pchValue1, uint32_t ___unBufferSize2, int32_t* ___pError3, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayName_Invoke_m1434428818((_GetOverlayName_t221395366 *)__this->get_prev_9(),___ulOverlayHandle0, ___pchValue1, ___unBufferSize2, ___pError3, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef uint32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, StringBuilder_t1221177846 * ___pchValue1, uint32_t ___unBufferSize2, int32_t* ___pError3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pchValue1, ___unBufferSize2, ___pError3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef uint32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, StringBuilder_t1221177846 * ___pchValue1, uint32_t ___unBufferSize2, int32_t* ___pError3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pchValue1, ___unBufferSize2, ___pError3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayName::BeginInvoke(System.UInt64,System.Text.StringBuilder,System.UInt32,Valve.VR.EVROverlayError&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayName_BeginInvoke_m2187340306 (_GetOverlayName_t221395366 * __this, uint64_t ___ulOverlayHandle0, StringBuilder_t1221177846 * ___pchValue1, uint32_t ___unBufferSize2, int32_t* ___pError3, AsyncCallback_t163412349 * ___callback4, Il2CppObject * ___object5, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayName_BeginInvoke_m2187340306_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[5] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = ___pchValue1;
+	__d_args[2] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unBufferSize2);
+	__d_args[3] = Box(EVROverlayError_t3464864153_il2cpp_TypeInfo_var, &(*___pError3));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback4, (Il2CppObject*)___object5);
+}
+// System.UInt32 Valve.VR.IVROverlay/_GetOverlayName::EndInvoke(Valve.VR.EVROverlayError&,System.IAsyncResult)
+extern "C"  uint32_t _GetOverlayName_EndInvoke_m3483487333 (_GetOverlayName_t221395366 * __this, int32_t* ___pError0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pError0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(uint32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  uint32_t DelegatePInvokeWrapper__GetOverlayRenderingPid_t1470043428 (_GetOverlayRenderingPid_t1470043428 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	typedef uint32_t (STDCALL *PInvokeFunc)(uint64_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	uint32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayRenderingPid::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayRenderingPid__ctor_m1328567821 (_GetOverlayRenderingPid_t1470043428 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.UInt32 Valve.VR.IVROverlay/_GetOverlayRenderingPid::Invoke(System.UInt64)
+extern "C"  uint32_t _GetOverlayRenderingPid_Invoke_m4066627961 (_GetOverlayRenderingPid_t1470043428 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayRenderingPid_Invoke_m4066627961((_GetOverlayRenderingPid_t1470043428 *)__this->get_prev_9(),___ulOverlayHandle0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef uint32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef uint32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayRenderingPid::BeginInvoke(System.UInt64,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayRenderingPid_BeginInvoke_m1414488949 (_GetOverlayRenderingPid_t1470043428 * __this, uint64_t ___ulOverlayHandle0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayRenderingPid_BeginInvoke_m1414488949_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.UInt32 Valve.VR.IVROverlay/_GetOverlayRenderingPid::EndInvoke(System.IAsyncResult)
+extern "C"  uint32_t _GetOverlayRenderingPid_EndInvoke_m2390462218 (_GetOverlayRenderingPid_t1470043428 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(uint32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlaySortOrder_t376620481 (_GetOverlaySortOrder_t376620481 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punSortOrder1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, uint32_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___punSortOrder1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlaySortOrder::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlaySortOrder__ctor_m2585085900 (_GetOverlaySortOrder_t376620481 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlaySortOrder::Invoke(System.UInt64,System.UInt32&)
+extern "C"  int32_t _GetOverlaySortOrder_Invoke_m2634989799 (_GetOverlaySortOrder_t376620481 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punSortOrder1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlaySortOrder_Invoke_m2634989799((_GetOverlaySortOrder_t376620481 *)__this->get_prev_9(),___ulOverlayHandle0, ___punSortOrder1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punSortOrder1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___punSortOrder1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punSortOrder1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___punSortOrder1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlaySortOrder::BeginInvoke(System.UInt64,System.UInt32&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlaySortOrder_BeginInvoke_m2654472962 (_GetOverlaySortOrder_t376620481 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punSortOrder1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlaySortOrder_BeginInvoke_m2654472962_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___punSortOrder1));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlaySortOrder::EndInvoke(System.UInt32&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlaySortOrder_EndInvoke_m1554733290 (_GetOverlaySortOrder_t376620481 * __this, uint32_t* ___punSortOrder0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___punSortOrder0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayTexelAspect_t1835744573 (_GetOverlayTexelAspect_t1835744573 * __this, uint64_t ___ulOverlayHandle0, float* ___pfTexelAspect1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, float*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___pfTexelAspect1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayTexelAspect::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayTexelAspect__ctor_m921967048 (_GetOverlayTexelAspect_t1835744573 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTexelAspect::Invoke(System.UInt64,System.Single&)
+extern "C"  int32_t _GetOverlayTexelAspect_Invoke_m2693602540 (_GetOverlayTexelAspect_t1835744573 * __this, uint64_t ___ulOverlayHandle0, float* ___pfTexelAspect1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayTexelAspect_Invoke_m2693602540((_GetOverlayTexelAspect_t1835744573 *)__this->get_prev_9(),___ulOverlayHandle0, ___pfTexelAspect1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, float* ___pfTexelAspect1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pfTexelAspect1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, float* ___pfTexelAspect1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pfTexelAspect1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayTexelAspect::BeginInvoke(System.UInt64,System.Single&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayTexelAspect_BeginInvoke_m2985222969 (_GetOverlayTexelAspect_t1835744573 * __this, uint64_t ___ulOverlayHandle0, float* ___pfTexelAspect1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayTexelAspect_BeginInvoke_m2985222969_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(Single_t2076509932_il2cpp_TypeInfo_var, &(*___pfTexelAspect1));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTexelAspect::EndInvoke(System.Single&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayTexelAspect_EndInvoke_m1380565515 (_GetOverlayTexelAspect_t1835744573 * __this, float* ___pfTexelAspect0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pfTexelAspect0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayTexture_t897552288 (_GetOverlayTexture_t897552288 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t* ___pNativeTextureHandle1, IntPtr_t ___pNativeTextureRef2, uint32_t* ___pWidth3, uint32_t* ___pHeight4, uint32_t* ___pNativeFormat5, int32_t* ___pAPI6, int32_t* ___pColorSpace7, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, intptr_t*, intptr_t, uint32_t*, uint32_t*, uint32_t*, int32_t*, int32_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, reinterpret_cast<intptr_t*>(___pNativeTextureHandle1), reinterpret_cast<intptr_t>((___pNativeTextureRef2).get_m_value_0()), ___pWidth3, ___pHeight4, ___pNativeFormat5, ___pAPI6, ___pColorSpace7);
+
+	// Marshaling of parameter '___pNativeTextureHandle1' back from native representation
+	___pNativeTextureHandle1 = reinterpret_cast<IntPtr_t*>(reinterpret_cast<intptr_t*>(___pNativeTextureHandle1));
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayTexture::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayTexture__ctor_m4193722741 (_GetOverlayTexture_t897552288 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTexture::Invoke(System.UInt64,System.IntPtr&,System.IntPtr,System.UInt32&,System.UInt32&,System.UInt32&,Valve.VR.EGraphicsAPIConvention&,Valve.VR.EColorSpace&)
+extern "C"  int32_t _GetOverlayTexture_Invoke_m316321481 (_GetOverlayTexture_t897552288 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t* ___pNativeTextureHandle1, IntPtr_t ___pNativeTextureRef2, uint32_t* ___pWidth3, uint32_t* ___pHeight4, uint32_t* ___pNativeFormat5, int32_t* ___pAPI6, int32_t* ___pColorSpace7, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayTexture_Invoke_m316321481((_GetOverlayTexture_t897552288 *)__this->get_prev_9(),___ulOverlayHandle0, ___pNativeTextureHandle1, ___pNativeTextureRef2, ___pWidth3, ___pHeight4, ___pNativeFormat5, ___pAPI6, ___pColorSpace7, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, IntPtr_t* ___pNativeTextureHandle1, IntPtr_t ___pNativeTextureRef2, uint32_t* ___pWidth3, uint32_t* ___pHeight4, uint32_t* ___pNativeFormat5, int32_t* ___pAPI6, int32_t* ___pColorSpace7, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pNativeTextureHandle1, ___pNativeTextureRef2, ___pWidth3, ___pHeight4, ___pNativeFormat5, ___pAPI6, ___pColorSpace7,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, IntPtr_t* ___pNativeTextureHandle1, IntPtr_t ___pNativeTextureRef2, uint32_t* ___pWidth3, uint32_t* ___pHeight4, uint32_t* ___pNativeFormat5, int32_t* ___pAPI6, int32_t* ___pColorSpace7, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pNativeTextureHandle1, ___pNativeTextureRef2, ___pWidth3, ___pHeight4, ___pNativeFormat5, ___pAPI6, ___pColorSpace7,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayTexture::BeginInvoke(System.UInt64,System.IntPtr&,System.IntPtr,System.UInt32&,System.UInt32&,System.UInt32&,Valve.VR.EGraphicsAPIConvention&,Valve.VR.EColorSpace&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayTexture_BeginInvoke_m2073749992 (_GetOverlayTexture_t897552288 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t* ___pNativeTextureHandle1, IntPtr_t ___pNativeTextureRef2, uint32_t* ___pWidth3, uint32_t* ___pHeight4, uint32_t* ___pNativeFormat5, int32_t* ___pAPI6, int32_t* ___pColorSpace7, AsyncCallback_t163412349 * ___callback8, Il2CppObject * ___object9, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayTexture_BeginInvoke_m2073749992_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[9] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(IntPtr_t_il2cpp_TypeInfo_var, &(*___pNativeTextureHandle1));
+	__d_args[2] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___pNativeTextureRef2);
+	__d_args[3] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___pWidth3));
+	__d_args[4] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___pHeight4));
+	__d_args[5] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___pNativeFormat5));
+	__d_args[6] = Box(EGraphicsAPIConvention_t1794133197_il2cpp_TypeInfo_var, &(*___pAPI6));
+	__d_args[7] = Box(EColorSpace_t2848861630_il2cpp_TypeInfo_var, &(*___pColorSpace7));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback8, (Il2CppObject*)___object9);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTexture::EndInvoke(System.IntPtr&,System.UInt32&,System.UInt32&,System.UInt32&,Valve.VR.EGraphicsAPIConvention&,Valve.VR.EColorSpace&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayTexture_EndInvoke_m1242342424 (_GetOverlayTexture_t897552288 * __this, IntPtr_t* ___pNativeTextureHandle0, uint32_t* ___pWidth1, uint32_t* ___pHeight2, uint32_t* ___pNativeFormat3, int32_t* ___pAPI4, int32_t* ___pColorSpace5, Il2CppObject * ___result6, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pNativeTextureHandle0,
+	___pWidth1,
+	___pHeight2,
+	___pNativeFormat3,
+	___pAPI4,
+	___pColorSpace5,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result6, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayTextureBounds_t3680071147 (_GetOverlayTextureBounds_t3680071147 * __this, uint64_t ___ulOverlayHandle0, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, VRTextureBounds_t_t1897807375 *);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___pOverlayTextureBounds1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayTextureBounds::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayTextureBounds__ctor_m3644622922 (_GetOverlayTextureBounds_t3680071147 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTextureBounds::Invoke(System.UInt64,Valve.VR.VRTextureBounds_t&)
+extern "C"  int32_t _GetOverlayTextureBounds_Invoke_m1165346240 (_GetOverlayTextureBounds_t3680071147 * __this, uint64_t ___ulOverlayHandle0, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayTextureBounds_Invoke_m1165346240((_GetOverlayTextureBounds_t3680071147 *)__this->get_prev_9(),___ulOverlayHandle0, ___pOverlayTextureBounds1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pOverlayTextureBounds1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pOverlayTextureBounds1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayTextureBounds::BeginInvoke(System.UInt64,Valve.VR.VRTextureBounds_t&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayTextureBounds_BeginInvoke_m2970592351 (_GetOverlayTextureBounds_t3680071147 * __this, uint64_t ___ulOverlayHandle0, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayTextureBounds_BeginInvoke_m2970592351_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(VRTextureBounds_t_t1897807375_il2cpp_TypeInfo_var, &(*___pOverlayTextureBounds1));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTextureBounds::EndInvoke(Valve.VR.VRTextureBounds_t&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayTextureBounds_EndInvoke_m3947781001 (_GetOverlayTextureBounds_t3680071147 * __this, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pOverlayTextureBounds0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayTextureColorSpace_t2119049239 (_GetOverlayTextureColorSpace_t2119049239 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTextureColorSpace1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, int32_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___peTextureColorSpace1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayTextureColorSpace::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayTextureColorSpace__ctor_m1488816556 (_GetOverlayTextureColorSpace_t2119049239 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTextureColorSpace::Invoke(System.UInt64,Valve.VR.EColorSpace&)
+extern "C"  int32_t _GetOverlayTextureColorSpace_Invoke_m2501969805 (_GetOverlayTextureColorSpace_t2119049239 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTextureColorSpace1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayTextureColorSpace_Invoke_m2501969805((_GetOverlayTextureColorSpace_t2119049239 *)__this->get_prev_9(),___ulOverlayHandle0, ___peTextureColorSpace1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTextureColorSpace1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___peTextureColorSpace1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTextureColorSpace1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___peTextureColorSpace1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayTextureColorSpace::BeginInvoke(System.UInt64,Valve.VR.EColorSpace&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayTextureColorSpace_BeginInvoke_m839242494 (_GetOverlayTextureColorSpace_t2119049239 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTextureColorSpace1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayTextureColorSpace_BeginInvoke_m839242494_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(EColorSpace_t2848861630_il2cpp_TypeInfo_var, &(*___peTextureColorSpace1));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTextureColorSpace::EndInvoke(Valve.VR.EColorSpace&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayTextureColorSpace_EndInvoke_m1233089720 (_GetOverlayTextureColorSpace_t2119049239 * __this, int32_t* ___peTextureColorSpace0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___peTextureColorSpace0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayTextureSize_t1288689867 (_GetOverlayTextureSize_t1288689867 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___pWidth1, uint32_t* ___pHeight2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, uint32_t*, uint32_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___pWidth1, ___pHeight2);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayTextureSize::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayTextureSize__ctor_m2654616026 (_GetOverlayTextureSize_t1288689867 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTextureSize::Invoke(System.UInt64,System.UInt32&,System.UInt32&)
+extern "C"  int32_t _GetOverlayTextureSize_Invoke_m3617082459 (_GetOverlayTextureSize_t1288689867 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___pWidth1, uint32_t* ___pHeight2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayTextureSize_Invoke_m3617082459((_GetOverlayTextureSize_t1288689867 *)__this->get_prev_9(),___ulOverlayHandle0, ___pWidth1, ___pHeight2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, uint32_t* ___pWidth1, uint32_t* ___pHeight2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pWidth1, ___pHeight2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, uint32_t* ___pWidth1, uint32_t* ___pHeight2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pWidth1, ___pHeight2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayTextureSize::BeginInvoke(System.UInt64,System.UInt32&,System.UInt32&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayTextureSize_BeginInvoke_m180461536 (_GetOverlayTextureSize_t1288689867 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___pWidth1, uint32_t* ___pHeight2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayTextureSize_BeginInvoke_m180461536_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___pWidth1));
+	__d_args[2] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___pHeight2));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTextureSize::EndInvoke(System.UInt32&,System.UInt32&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayTextureSize_EndInvoke_m4132196026 (_GetOverlayTextureSize_t1288689867 * __this, uint32_t* ___pWidth0, uint32_t* ___pHeight1, Il2CppObject * ___result2, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pWidth0,
+	___pHeight1,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result2, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayTransformAbsolute_t2557918150 (_GetOverlayTransformAbsolute_t2557918150 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTrackingOrigin1, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, int32_t*, HmdMatrix34_t_t664273062 *);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___peTrackingOrigin1, ___pmatTrackingOriginToOverlayTransform2);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayTransformAbsolute::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayTransformAbsolute__ctor_m3004911173 (_GetOverlayTransformAbsolute_t2557918150 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTransformAbsolute::Invoke(System.UInt64,Valve.VR.ETrackingUniverseOrigin&,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t _GetOverlayTransformAbsolute_Invoke_m3953185979 (_GetOverlayTransformAbsolute_t2557918150 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTrackingOrigin1, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayTransformAbsolute_Invoke_m3953185979((_GetOverlayTransformAbsolute_t2557918150 *)__this->get_prev_9(),___ulOverlayHandle0, ___peTrackingOrigin1, ___pmatTrackingOriginToOverlayTransform2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTrackingOrigin1, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___peTrackingOrigin1, ___pmatTrackingOriginToOverlayTransform2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTrackingOrigin1, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___peTrackingOrigin1, ___pmatTrackingOriginToOverlayTransform2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayTransformAbsolute::BeginInvoke(System.UInt64,Valve.VR.ETrackingUniverseOrigin&,Valve.VR.HmdMatrix34_t&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayTransformAbsolute_BeginInvoke_m1275379472 (_GetOverlayTransformAbsolute_t2557918150 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTrackingOrigin1, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayTransformAbsolute_BeginInvoke_m1275379472_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(ETrackingUniverseOrigin_t1464400093_il2cpp_TypeInfo_var, &(*___peTrackingOrigin1));
+	__d_args[2] = Box(HmdMatrix34_t_t664273062_il2cpp_TypeInfo_var, &(*___pmatTrackingOriginToOverlayTransform2));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTransformAbsolute::EndInvoke(Valve.VR.ETrackingUniverseOrigin&,Valve.VR.HmdMatrix34_t&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayTransformAbsolute_EndInvoke_m3484875358 (_GetOverlayTransformAbsolute_t2557918150 * __this, int32_t* ___peTrackingOrigin0, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform1, Il2CppObject * ___result2, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___peTrackingOrigin0,
+	___pmatTrackingOriginToOverlayTransform1,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result2, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayTransformTrackedDeviceComponent_t3256239660 (_GetOverlayTransformTrackedDeviceComponent_t3256239660 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punDeviceIndex1, String_t* ___pchComponentName2, uint32_t ___unComponentNameSize3, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, uint32_t*, char*, uint32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___pchComponentName2' to native representation
+	char* ____pchComponentName2_marshaled = NULL;
+	____pchComponentName2_marshaled = il2cpp_codegen_marshal_string(___pchComponentName2);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___punDeviceIndex1, ____pchComponentName2_marshaled, ___unComponentNameSize3);
+
+	// Marshaling cleanup of parameter '___pchComponentName2' native representation
+	il2cpp_codegen_marshal_free(____pchComponentName2_marshaled);
+	____pchComponentName2_marshaled = NULL;
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayTransformTrackedDeviceComponent::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayTransformTrackedDeviceComponent__ctor_m2124234343 (_GetOverlayTransformTrackedDeviceComponent_t3256239660 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTransformTrackedDeviceComponent::Invoke(System.UInt64,System.UInt32&,System.String,System.UInt32)
+extern "C"  int32_t _GetOverlayTransformTrackedDeviceComponent_Invoke_m2603987950 (_GetOverlayTransformTrackedDeviceComponent_t3256239660 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punDeviceIndex1, String_t* ___pchComponentName2, uint32_t ___unComponentNameSize3, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayTransformTrackedDeviceComponent_Invoke_m2603987950((_GetOverlayTransformTrackedDeviceComponent_t3256239660 *)__this->get_prev_9(),___ulOverlayHandle0, ___punDeviceIndex1, ___pchComponentName2, ___unComponentNameSize3, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punDeviceIndex1, String_t* ___pchComponentName2, uint32_t ___unComponentNameSize3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___punDeviceIndex1, ___pchComponentName2, ___unComponentNameSize3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punDeviceIndex1, String_t* ___pchComponentName2, uint32_t ___unComponentNameSize3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___punDeviceIndex1, ___pchComponentName2, ___unComponentNameSize3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayTransformTrackedDeviceComponent::BeginInvoke(System.UInt64,System.UInt32&,System.String,System.UInt32,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayTransformTrackedDeviceComponent_BeginInvoke_m3234130871 (_GetOverlayTransformTrackedDeviceComponent_t3256239660 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punDeviceIndex1, String_t* ___pchComponentName2, uint32_t ___unComponentNameSize3, AsyncCallback_t163412349 * ___callback4, Il2CppObject * ___object5, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayTransformTrackedDeviceComponent_BeginInvoke_m3234130871_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[5] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___punDeviceIndex1));
+	__d_args[2] = ___pchComponentName2;
+	__d_args[3] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unComponentNameSize3);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback4, (Il2CppObject*)___object5);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTransformTrackedDeviceComponent::EndInvoke(System.UInt32&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayTransformTrackedDeviceComponent_EndInvoke_m1677922651 (_GetOverlayTransformTrackedDeviceComponent_t3256239660 * __this, uint32_t* ___punDeviceIndex0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___punDeviceIndex0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayTransformTrackedDeviceRelative_t893699371 (_GetOverlayTransformTrackedDeviceRelative_t893699371 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punTrackedDevice1, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, uint32_t*, HmdMatrix34_t_t664273062 *);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___punTrackedDevice1, ___pmatTrackedDeviceToOverlayTransform2);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayTransformTrackedDeviceRelative::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayTransformTrackedDeviceRelative__ctor_m2939388630 (_GetOverlayTransformTrackedDeviceRelative_t893699371 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTransformTrackedDeviceRelative::Invoke(System.UInt64,System.UInt32&,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t _GetOverlayTransformTrackedDeviceRelative_Invoke_m3390332185 (_GetOverlayTransformTrackedDeviceRelative_t893699371 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punTrackedDevice1, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayTransformTrackedDeviceRelative_Invoke_m3390332185((_GetOverlayTransformTrackedDeviceRelative_t893699371 *)__this->get_prev_9(),___ulOverlayHandle0, ___punTrackedDevice1, ___pmatTrackedDeviceToOverlayTransform2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punTrackedDevice1, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___punTrackedDevice1, ___pmatTrackedDeviceToOverlayTransform2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punTrackedDevice1, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___punTrackedDevice1, ___pmatTrackedDeviceToOverlayTransform2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayTransformTrackedDeviceRelative::BeginInvoke(System.UInt64,System.UInt32&,Valve.VR.HmdMatrix34_t&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayTransformTrackedDeviceRelative_BeginInvoke_m2491013592 (_GetOverlayTransformTrackedDeviceRelative_t893699371 * __this, uint64_t ___ulOverlayHandle0, uint32_t* ___punTrackedDevice1, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayTransformTrackedDeviceRelative_BeginInvoke_m2491013592_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &(*___punTrackedDevice1));
+	__d_args[2] = Box(HmdMatrix34_t_t664273062_il2cpp_TypeInfo_var, &(*___pmatTrackedDeviceToOverlayTransform2));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTransformTrackedDeviceRelative::EndInvoke(System.UInt32&,Valve.VR.HmdMatrix34_t&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayTransformTrackedDeviceRelative_EndInvoke_m848804188 (_GetOverlayTransformTrackedDeviceRelative_t893699371 * __this, uint32_t* ___punTrackedDevice0, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform1, Il2CppObject * ___result2, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___punTrackedDevice0,
+	___pmatTrackedDeviceToOverlayTransform1,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result2, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayTransformType_t1493074241 (_GetOverlayTransformType_t1493074241 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTransformType1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, int32_t*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___peTransformType1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayTransformType::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayTransformType__ctor_m190537548 (_GetOverlayTransformType_t1493074241 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTransformType::Invoke(System.UInt64,Valve.VR.VROverlayTransformType&)
+extern "C"  int32_t _GetOverlayTransformType_Invoke_m2129491701 (_GetOverlayTransformType_t1493074241 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTransformType1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayTransformType_Invoke_m2129491701((_GetOverlayTransformType_t1493074241 *)__this->get_prev_9(),___ulOverlayHandle0, ___peTransformType1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTransformType1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___peTransformType1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTransformType1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___peTransformType1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayTransformType::BeginInvoke(System.UInt64,Valve.VR.VROverlayTransformType&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayTransformType_BeginInvoke_m271017448 (_GetOverlayTransformType_t1493074241 * __this, uint64_t ___ulOverlayHandle0, int32_t* ___peTransformType1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayTransformType_BeginInvoke_m271017448_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(VROverlayTransformType_t3148689642_il2cpp_TypeInfo_var, &(*___peTransformType1));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayTransformType::EndInvoke(Valve.VR.VROverlayTransformType&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayTransformType_EndInvoke_m3420926584 (_GetOverlayTransformType_t1493074241 * __this, int32_t* ___peTransformType0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___peTransformType0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetOverlayWidthInMeters_t2815542566 (_GetOverlayWidthInMeters_t2815542566 * __this, uint64_t ___ulOverlayHandle0, float* ___pfWidthInMeters1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, float*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___pfWidthInMeters1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetOverlayWidthInMeters::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetOverlayWidthInMeters__ctor_m1908676311 (_GetOverlayWidthInMeters_t2815542566 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayWidthInMeters::Invoke(System.UInt64,System.Single&)
+extern "C"  int32_t _GetOverlayWidthInMeters_Invoke_m2030291983 (_GetOverlayWidthInMeters_t2815542566 * __this, uint64_t ___ulOverlayHandle0, float* ___pfWidthInMeters1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetOverlayWidthInMeters_Invoke_m2030291983((_GetOverlayWidthInMeters_t2815542566 *)__this->get_prev_9(),___ulOverlayHandle0, ___pfWidthInMeters1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, float* ___pfWidthInMeters1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pfWidthInMeters1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, float* ___pfWidthInMeters1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pfWidthInMeters1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetOverlayWidthInMeters::BeginInvoke(System.UInt64,System.Single&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetOverlayWidthInMeters_BeginInvoke_m4032395736 (_GetOverlayWidthInMeters_t2815542566 * __this, uint64_t ___ulOverlayHandle0, float* ___pfWidthInMeters1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetOverlayWidthInMeters_BeginInvoke_m4032395736_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(Single_t2076509932_il2cpp_TypeInfo_var, &(*___pfWidthInMeters1));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetOverlayWidthInMeters::EndInvoke(System.Single&,System.IAsyncResult)
+extern "C"  int32_t _GetOverlayWidthInMeters_EndInvoke_m1507650448 (_GetOverlayWidthInMeters_t2815542566 * __this, float* ___pfWidthInMeters0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pfWidthInMeters0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  uint32_t DelegatePInvokeWrapper__GetPrimaryDashboardDevice_t812432855 (_GetPrimaryDashboardDevice_t812432855 * __this, const MethodInfo* method)
+{
+	typedef uint32_t (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	uint32_t returnValue = il2cppPInvokeFunc();
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetPrimaryDashboardDevice::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetPrimaryDashboardDevice__ctor_m1972611108 (_GetPrimaryDashboardDevice_t812432855 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.UInt32 Valve.VR.IVROverlay/_GetPrimaryDashboardDevice::Invoke()
+extern "C"  uint32_t _GetPrimaryDashboardDevice_Invoke_m1183102931 (_GetPrimaryDashboardDevice_t812432855 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetPrimaryDashboardDevice_Invoke_m1183102931((_GetPrimaryDashboardDevice_t812432855 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef uint32_t (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef uint32_t (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetPrimaryDashboardDevice::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetPrimaryDashboardDevice_BeginInvoke_m431031587 (_GetPrimaryDashboardDevice_t812432855 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.UInt32 Valve.VR.IVROverlay/_GetPrimaryDashboardDevice::EndInvoke(System.IAsyncResult)
+extern "C"  uint32_t _GetPrimaryDashboardDevice_EndInvoke_m3447911749 (_GetPrimaryDashboardDevice_t812432855 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(uint32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__GetTransformForOverlayCoordinates_t2483359939 (_GetTransformForOverlayCoordinates_t2483359939 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTrackingOrigin1, HmdVector2_t_t2255225135  ___coordinatesInOverlay2, HmdMatrix34_t_t664273062 * ___pmatTransform3, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, int32_t, HmdVector2_t_t2255225135 , HmdMatrix34_t_t664273062 *);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___eTrackingOrigin1, ___coordinatesInOverlay2, ___pmatTransform3);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_GetTransformForOverlayCoordinates::.ctor(System.Object,System.IntPtr)
+extern "C"  void _GetTransformForOverlayCoordinates__ctor_m3211370024 (_GetTransformForOverlayCoordinates_t2483359939 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetTransformForOverlayCoordinates::Invoke(System.UInt64,Valve.VR.ETrackingUniverseOrigin,Valve.VR.HmdVector2_t,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t _GetTransformForOverlayCoordinates_Invoke_m1768155201 (_GetTransformForOverlayCoordinates_t2483359939 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTrackingOrigin1, HmdVector2_t_t2255225135  ___coordinatesInOverlay2, HmdMatrix34_t_t664273062 * ___pmatTransform3, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_GetTransformForOverlayCoordinates_Invoke_m1768155201((_GetTransformForOverlayCoordinates_t2483359939 *)__this->get_prev_9(),___ulOverlayHandle0, ___eTrackingOrigin1, ___coordinatesInOverlay2, ___pmatTransform3, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, int32_t ___eTrackingOrigin1, HmdVector2_t_t2255225135  ___coordinatesInOverlay2, HmdMatrix34_t_t664273062 * ___pmatTransform3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___eTrackingOrigin1, ___coordinatesInOverlay2, ___pmatTransform3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, int32_t ___eTrackingOrigin1, HmdVector2_t_t2255225135  ___coordinatesInOverlay2, HmdMatrix34_t_t664273062 * ___pmatTransform3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___eTrackingOrigin1, ___coordinatesInOverlay2, ___pmatTransform3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_GetTransformForOverlayCoordinates::BeginInvoke(System.UInt64,Valve.VR.ETrackingUniverseOrigin,Valve.VR.HmdVector2_t,Valve.VR.HmdMatrix34_t&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _GetTransformForOverlayCoordinates_BeginInvoke_m2354587788 (_GetTransformForOverlayCoordinates_t2483359939 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTrackingOrigin1, HmdVector2_t_t2255225135  ___coordinatesInOverlay2, HmdMatrix34_t_t664273062 * ___pmatTransform3, AsyncCallback_t163412349 * ___callback4, Il2CppObject * ___object5, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_GetTransformForOverlayCoordinates_BeginInvoke_m2354587788_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[5] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(ETrackingUniverseOrigin_t1464400093_il2cpp_TypeInfo_var, &___eTrackingOrigin1);
+	__d_args[2] = Box(HmdVector2_t_t2255225135_il2cpp_TypeInfo_var, &___coordinatesInOverlay2);
+	__d_args[3] = Box(HmdMatrix34_t_t664273062_il2cpp_TypeInfo_var, &(*___pmatTransform3));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback4, (Il2CppObject*)___object5);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_GetTransformForOverlayCoordinates::EndInvoke(Valve.VR.HmdMatrix34_t&,System.IAsyncResult)
+extern "C"  int32_t _GetTransformForOverlayCoordinates_EndInvoke_m1696291236 (_GetTransformForOverlayCoordinates_t2483359939 * __this, HmdMatrix34_t_t664273062 * ___pmatTransform0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pmatTransform0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  bool DelegatePInvokeWrapper__HandleControllerOverlayInteractionAsMouse_t2899449918 (_HandleControllerOverlayInteractionAsMouse_t2899449918 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unControllerDeviceIndex1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, uint32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___unControllerDeviceIndex1);
+
+	return static_cast<bool>(returnValue);
+}
+// System.Void Valve.VR.IVROverlay/_HandleControllerOverlayInteractionAsMouse::.ctor(System.Object,System.IntPtr)
+extern "C"  void _HandleControllerOverlayInteractionAsMouse__ctor_m1130354935 (_HandleControllerOverlayInteractionAsMouse_t2899449918 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Boolean Valve.VR.IVROverlay/_HandleControllerOverlayInteractionAsMouse::Invoke(System.UInt64,System.UInt32)
+extern "C"  bool _HandleControllerOverlayInteractionAsMouse_Invoke_m1657897616 (_HandleControllerOverlayInteractionAsMouse_t2899449918 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unControllerDeviceIndex1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_HandleControllerOverlayInteractionAsMouse_Invoke_m1657897616((_HandleControllerOverlayInteractionAsMouse_t2899449918 *)__this->get_prev_9(),___ulOverlayHandle0, ___unControllerDeviceIndex1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef bool (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, uint32_t ___unControllerDeviceIndex1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___unControllerDeviceIndex1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef bool (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, uint32_t ___unControllerDeviceIndex1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___unControllerDeviceIndex1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_HandleControllerOverlayInteractionAsMouse::BeginInvoke(System.UInt64,System.UInt32,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _HandleControllerOverlayInteractionAsMouse_BeginInvoke_m3853095579 (_HandleControllerOverlayInteractionAsMouse_t2899449918 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unControllerDeviceIndex1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_HandleControllerOverlayInteractionAsMouse_BeginInvoke_m3853095579_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unControllerDeviceIndex1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// System.Boolean Valve.VR.IVROverlay/_HandleControllerOverlayInteractionAsMouse::EndInvoke(System.IAsyncResult)
+extern "C"  bool _HandleControllerOverlayInteractionAsMouse_EndInvoke_m415497073 (_HandleControllerOverlayInteractionAsMouse_t2899449918 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(bool*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  void DelegatePInvokeWrapper__HideKeyboard_t3483797360 (_HideKeyboard_t3483797360 * __this, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc();
+
+}
+// System.Void Valve.VR.IVROverlay/_HideKeyboard::.ctor(System.Object,System.IntPtr)
+extern "C"  void _HideKeyboard__ctor_m974753735 (_HideKeyboard_t3483797360 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void Valve.VR.IVROverlay/_HideKeyboard::Invoke()
+extern "C"  void _HideKeyboard_Invoke_m1849642691 (_HideKeyboard_t3483797360 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_HideKeyboard_Invoke_m1849642691((_HideKeyboard_t3483797360 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_HideKeyboard::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _HideKeyboard_BeginInvoke_m292263636 (_HideKeyboard_t3483797360 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.Void Valve.VR.IVROverlay/_HideKeyboard::EndInvoke(System.IAsyncResult)
+extern "C"  void _HideKeyboard_EndInvoke_m1342341357 (_HideKeyboard_t3483797360 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__HideOverlay_t2737366627 (_HideOverlay_t2737366627 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_HideOverlay::.ctor(System.Object,System.IntPtr)
+extern "C"  void _HideOverlay__ctor_m3164889432 (_HideOverlay_t2737366627 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_HideOverlay::Invoke(System.UInt64)
+extern "C"  int32_t _HideOverlay_Invoke_m1671076155 (_HideOverlay_t2737366627 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_HideOverlay_Invoke_m1671076155((_HideOverlay_t2737366627 *)__this->get_prev_9(),___ulOverlayHandle0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_HideOverlay::BeginInvoke(System.UInt64,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _HideOverlay_BeginInvoke_m3363659846 (_HideOverlay_t2737366627 * __this, uint64_t ___ulOverlayHandle0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_HideOverlay_BeginInvoke_m3363659846_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_HideOverlay::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _HideOverlay_EndInvoke_m3513833396 (_HideOverlay_t2737366627 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  bool DelegatePInvokeWrapper__IsActiveDashboardOverlay_t3144660141 (_IsActiveDashboardOverlay_t3144660141 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0);
+
+	return static_cast<bool>(returnValue);
+}
+// System.Void Valve.VR.IVROverlay/_IsActiveDashboardOverlay::.ctor(System.Object,System.IntPtr)
+extern "C"  void _IsActiveDashboardOverlay__ctor_m1343902556 (_IsActiveDashboardOverlay_t3144660141 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Boolean Valve.VR.IVROverlay/_IsActiveDashboardOverlay::Invoke(System.UInt64)
+extern "C"  bool _IsActiveDashboardOverlay_Invoke_m2899028641 (_IsActiveDashboardOverlay_t3144660141 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_IsActiveDashboardOverlay_Invoke_m2899028641((_IsActiveDashboardOverlay_t3144660141 *)__this->get_prev_9(),___ulOverlayHandle0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef bool (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef bool (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_IsActiveDashboardOverlay::BeginInvoke(System.UInt64,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _IsActiveDashboardOverlay_BeginInvoke_m2499569926 (_IsActiveDashboardOverlay_t3144660141 * __this, uint64_t ___ulOverlayHandle0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_IsActiveDashboardOverlay_BeginInvoke_m2499569926_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Boolean Valve.VR.IVROverlay/_IsActiveDashboardOverlay::EndInvoke(System.IAsyncResult)
+extern "C"  bool _IsActiveDashboardOverlay_EndInvoke_m3654878756 (_IsActiveDashboardOverlay_t3144660141 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(bool*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  bool DelegatePInvokeWrapper__IsDashboardVisible_t2020287181 (_IsDashboardVisible_t2020287181 * __this, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc();
+
+	return static_cast<bool>(returnValue);
+}
+// System.Void Valve.VR.IVROverlay/_IsDashboardVisible::.ctor(System.Object,System.IntPtr)
+extern "C"  void _IsDashboardVisible__ctor_m2848446716 (_IsDashboardVisible_t2020287181 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Boolean Valve.VR.IVROverlay/_IsDashboardVisible::Invoke()
+extern "C"  bool _IsDashboardVisible_Invoke_m2954394420 (_IsDashboardVisible_t2020287181 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_IsDashboardVisible_Invoke_m2954394420((_IsDashboardVisible_t2020287181 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef bool (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef bool (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_IsDashboardVisible::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _IsDashboardVisible_BeginInvoke_m2249566189 (_IsDashboardVisible_t2020287181 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.Boolean Valve.VR.IVROverlay/_IsDashboardVisible::EndInvoke(System.IAsyncResult)
+extern "C"  bool _IsDashboardVisible_EndInvoke_m2902467752 (_IsDashboardVisible_t2020287181 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(bool*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  bool DelegatePInvokeWrapper__IsHoverTargetOverlay_t4101716668 (_IsHoverTargetOverlay_t4101716668 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0);
+
+	return static_cast<bool>(returnValue);
+}
+// System.Void Valve.VR.IVROverlay/_IsHoverTargetOverlay::.ctor(System.Object,System.IntPtr)
+extern "C"  void _IsHoverTargetOverlay__ctor_m1922542797 (_IsHoverTargetOverlay_t4101716668 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Boolean Valve.VR.IVROverlay/_IsHoverTargetOverlay::Invoke(System.UInt64)
+extern "C"  bool _IsHoverTargetOverlay_Invoke_m3152412494 (_IsHoverTargetOverlay_t4101716668 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_IsHoverTargetOverlay_Invoke_m3152412494((_IsHoverTargetOverlay_t4101716668 *)__this->get_prev_9(),___ulOverlayHandle0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef bool (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef bool (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_IsHoverTargetOverlay::BeginInvoke(System.UInt64,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _IsHoverTargetOverlay_BeginInvoke_m4035258661 (_IsHoverTargetOverlay_t4101716668 * __this, uint64_t ___ulOverlayHandle0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_IsHoverTargetOverlay_BeginInvoke_m4035258661_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Boolean Valve.VR.IVROverlay/_IsHoverTargetOverlay::EndInvoke(System.IAsyncResult)
+extern "C"  bool _IsHoverTargetOverlay_EndInvoke_m741118115 (_IsHoverTargetOverlay_t4101716668 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(bool*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  bool DelegatePInvokeWrapper__IsOverlayVisible_t1564696099 (_IsOverlayVisible_t1564696099 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0);
+
+	return static_cast<bool>(returnValue);
+}
+// System.Void Valve.VR.IVROverlay/_IsOverlayVisible::.ctor(System.Object,System.IntPtr)
+extern "C"  void _IsOverlayVisible__ctor_m880312612 (_IsOverlayVisible_t1564696099 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Boolean Valve.VR.IVROverlay/_IsOverlayVisible::Invoke(System.UInt64)
+extern "C"  bool _IsOverlayVisible_Invoke_m1960522219 (_IsOverlayVisible_t1564696099 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_IsOverlayVisible_Invoke_m1960522219((_IsOverlayVisible_t1564696099 *)__this->get_prev_9(),___ulOverlayHandle0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef bool (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef bool (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_IsOverlayVisible::BeginInvoke(System.UInt64,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _IsOverlayVisible_BeginInvoke_m543084126 (_IsOverlayVisible_t1564696099 * __this, uint64_t ___ulOverlayHandle0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_IsOverlayVisible_BeginInvoke_m543084126_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Boolean Valve.VR.IVROverlay/_IsOverlayVisible::EndInvoke(System.IAsyncResult)
+extern "C"  bool _IsOverlayVisible_EndInvoke_m3634249872 (_IsOverlayVisible_t1564696099 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(bool*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__MoveGamepadFocusToNeighbor_t2016645278 (_MoveGamepadFocusToNeighbor_t2016645278 * __this, int32_t ___eDirection0, uint64_t ___ulFrom1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(int32_t, uint64_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___eDirection0, ___ulFrom1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_MoveGamepadFocusToNeighbor::.ctor(System.Object,System.IntPtr)
+extern "C"  void _MoveGamepadFocusToNeighbor__ctor_m1867590153 (_MoveGamepadFocusToNeighbor_t2016645278 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_MoveGamepadFocusToNeighbor::Invoke(Valve.VR.EOverlayDirection,System.UInt64)
+extern "C"  int32_t _MoveGamepadFocusToNeighbor_Invoke_m973931588 (_MoveGamepadFocusToNeighbor_t2016645278 * __this, int32_t ___eDirection0, uint64_t ___ulFrom1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_MoveGamepadFocusToNeighbor_Invoke_m973931588((_MoveGamepadFocusToNeighbor_t2016645278 *)__this->get_prev_9(),___eDirection0, ___ulFrom1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, int32_t ___eDirection0, uint64_t ___ulFrom1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___eDirection0, ___ulFrom1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, int32_t ___eDirection0, uint64_t ___ulFrom1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___eDirection0, ___ulFrom1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_MoveGamepadFocusToNeighbor::BeginInvoke(Valve.VR.EOverlayDirection,System.UInt64,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _MoveGamepadFocusToNeighbor_BeginInvoke_m236948375 (_MoveGamepadFocusToNeighbor_t2016645278 * __this, int32_t ___eDirection0, uint64_t ___ulFrom1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_MoveGamepadFocusToNeighbor_BeginInvoke_m236948375_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(EOverlayDirection_t2759670492_il2cpp_TypeInfo_var, &___eDirection0);
+	__d_args[1] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulFrom1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_MoveGamepadFocusToNeighbor::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _MoveGamepadFocusToNeighbor_EndInvoke_m3605502839 (_MoveGamepadFocusToNeighbor_t2016645278 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  bool DelegatePInvokeWrapper__PollNextOverlayEvent_t131678587 (_PollNextOverlayEvent_t131678587 * __this, uint64_t ___ulOverlayHandle0, VREvent_t_t3405266389 * ___pEvent1, uint32_t ___uncbVREvent2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, VREvent_t_t3405266389 *, uint32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___pEvent1, ___uncbVREvent2);
+
+	return static_cast<bool>(returnValue);
+}
+// System.Void Valve.VR.IVROverlay/_PollNextOverlayEvent::.ctor(System.Object,System.IntPtr)
+extern "C"  void _PollNextOverlayEvent__ctor_m3003065462 (_PollNextOverlayEvent_t131678587 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Boolean Valve.VR.IVROverlay/_PollNextOverlayEvent::Invoke(System.UInt64,Valve.VR.VREvent_t&,System.UInt32)
+extern "C"  bool _PollNextOverlayEvent_Invoke_m323202474 (_PollNextOverlayEvent_t131678587 * __this, uint64_t ___ulOverlayHandle0, VREvent_t_t3405266389 * ___pEvent1, uint32_t ___uncbVREvent2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_PollNextOverlayEvent_Invoke_m323202474((_PollNextOverlayEvent_t131678587 *)__this->get_prev_9(),___ulOverlayHandle0, ___pEvent1, ___uncbVREvent2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef bool (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, VREvent_t_t3405266389 * ___pEvent1, uint32_t ___uncbVREvent2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pEvent1, ___uncbVREvent2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef bool (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, VREvent_t_t3405266389 * ___pEvent1, uint32_t ___uncbVREvent2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pEvent1, ___uncbVREvent2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_PollNextOverlayEvent::BeginInvoke(System.UInt64,Valve.VR.VREvent_t&,System.UInt32,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _PollNextOverlayEvent_BeginInvoke_m3824140209 (_PollNextOverlayEvent_t131678587 * __this, uint64_t ___ulOverlayHandle0, VREvent_t_t3405266389 * ___pEvent1, uint32_t ___uncbVREvent2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_PollNextOverlayEvent_BeginInvoke_m3824140209_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(VREvent_t_t3405266389_il2cpp_TypeInfo_var, &(*___pEvent1));
+	__d_args[2] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___uncbVREvent2);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// System.Boolean Valve.VR.IVROverlay/_PollNextOverlayEvent::EndInvoke(Valve.VR.VREvent_t&,System.IAsyncResult)
+extern "C"  bool _PollNextOverlayEvent_EndInvoke_m190361627 (_PollNextOverlayEvent_t131678587 * __this, VREvent_t_t3405266389 * ___pEvent0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pEvent0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(bool*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__ReleaseNativeOverlayHandle_t2842744417 (_ReleaseNativeOverlayHandle_t2842744417 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pNativeTextureHandle1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, intptr_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, reinterpret_cast<intptr_t>((___pNativeTextureHandle1).get_m_value_0()));
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_ReleaseNativeOverlayHandle::.ctor(System.Object,System.IntPtr)
+extern "C"  void _ReleaseNativeOverlayHandle__ctor_m1154234158 (_ReleaseNativeOverlayHandle_t2842744417 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_ReleaseNativeOverlayHandle::Invoke(System.UInt64,System.IntPtr)
+extern "C"  int32_t _ReleaseNativeOverlayHandle_Invoke_m377416379 (_ReleaseNativeOverlayHandle_t2842744417 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pNativeTextureHandle1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_ReleaseNativeOverlayHandle_Invoke_m377416379((_ReleaseNativeOverlayHandle_t2842744417 *)__this->get_prev_9(),___ulOverlayHandle0, ___pNativeTextureHandle1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pNativeTextureHandle1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pNativeTextureHandle1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pNativeTextureHandle1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pNativeTextureHandle1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_ReleaseNativeOverlayHandle::BeginInvoke(System.UInt64,System.IntPtr,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _ReleaseNativeOverlayHandle_BeginInvoke_m2710129620 (_ReleaseNativeOverlayHandle_t2842744417 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pNativeTextureHandle1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_ReleaseNativeOverlayHandle_BeginInvoke_m2710129620_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___pNativeTextureHandle1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_ReleaseNativeOverlayHandle::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _ReleaseNativeOverlayHandle_EndInvoke_m882392186 (_ReleaseNativeOverlayHandle_t2842744417 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetDashboardOverlaySceneProcess_t1462353074 (_SetDashboardOverlaySceneProcess_t1462353074 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unProcessId1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, uint32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___unProcessId1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetDashboardOverlaySceneProcess::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetDashboardOverlaySceneProcess__ctor_m2830179587 (_SetDashboardOverlaySceneProcess_t1462353074 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetDashboardOverlaySceneProcess::Invoke(System.UInt64,System.UInt32)
+extern "C"  int32_t _SetDashboardOverlaySceneProcess_Invoke_m115664276 (_SetDashboardOverlaySceneProcess_t1462353074 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unProcessId1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetDashboardOverlaySceneProcess_Invoke_m115664276((_SetDashboardOverlaySceneProcess_t1462353074 *)__this->get_prev_9(),___ulOverlayHandle0, ___unProcessId1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, uint32_t ___unProcessId1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___unProcessId1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, uint32_t ___unProcessId1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___unProcessId1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetDashboardOverlaySceneProcess::BeginInvoke(System.UInt64,System.UInt32,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetDashboardOverlaySceneProcess_BeginInvoke_m2526512167 (_SetDashboardOverlaySceneProcess_t1462353074 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unProcessId1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetDashboardOverlaySceneProcess_BeginInvoke_m2526512167_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unProcessId1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetDashboardOverlaySceneProcess::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetDashboardOverlaySceneProcess_EndInvoke_m2681623989 (_SetDashboardOverlaySceneProcess_t1462353074 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetGamepadFocusOverlay_t2763810618 (_SetGamepadFocusOverlay_t2763810618 * __this, uint64_t ___ulNewFocusOverlay0, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulNewFocusOverlay0);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetGamepadFocusOverlay::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetGamepadFocusOverlay__ctor_m756625437 (_SetGamepadFocusOverlay_t2763810618 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetGamepadFocusOverlay::Invoke(System.UInt64)
+extern "C"  int32_t _SetGamepadFocusOverlay_Invoke_m1830831244 (_SetGamepadFocusOverlay_t2763810618 * __this, uint64_t ___ulNewFocusOverlay0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetGamepadFocusOverlay_Invoke_m1830831244((_SetGamepadFocusOverlay_t2763810618 *)__this->get_prev_9(),___ulNewFocusOverlay0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulNewFocusOverlay0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulNewFocusOverlay0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulNewFocusOverlay0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulNewFocusOverlay0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetGamepadFocusOverlay::BeginInvoke(System.UInt64,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetGamepadFocusOverlay_BeginInvoke_m2034066197 (_SetGamepadFocusOverlay_t2763810618 * __this, uint64_t ___ulNewFocusOverlay0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetGamepadFocusOverlay_BeginInvoke_m2034066197_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulNewFocusOverlay0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetGamepadFocusOverlay::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetGamepadFocusOverlay_EndInvoke_m717888751 (_SetGamepadFocusOverlay_t2763810618 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetHighQualityOverlay_t4225758140 (_SetHighQualityOverlay_t4225758140 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetHighQualityOverlay::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetHighQualityOverlay__ctor_m4100162049 (_SetHighQualityOverlay_t4225758140 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetHighQualityOverlay::Invoke(System.UInt64)
+extern "C"  int32_t _SetHighQualityOverlay_Invoke_m4265083322 (_SetHighQualityOverlay_t4225758140 * __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetHighQualityOverlay_Invoke_m4265083322((_SetHighQualityOverlay_t4225758140 *)__this->get_prev_9(),___ulOverlayHandle0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetHighQualityOverlay::BeginInvoke(System.UInt64,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetHighQualityOverlay_BeginInvoke_m3035481125 (_SetHighQualityOverlay_t4225758140 * __this, uint64_t ___ulOverlayHandle0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetHighQualityOverlay_BeginInvoke_m3035481125_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetHighQualityOverlay::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetHighQualityOverlay_EndInvoke_m3064040027 (_SetHighQualityOverlay_t4225758140 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  void DelegatePInvokeWrapper__SetKeyboardPositionForOverlay_t3695826360 (_SetKeyboardPositionForOverlay_t3695826360 * __this, uint64_t ___ulOverlayHandle0, HmdRect2_t_t1656020282  ___avoidRect1, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)(uint64_t, HmdRect2_t_t1656020282 );
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc(___ulOverlayHandle0, ___avoidRect1);
+
+}
+// System.Void Valve.VR.IVROverlay/_SetKeyboardPositionForOverlay::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetKeyboardPositionForOverlay__ctor_m3417492621 (_SetKeyboardPositionForOverlay_t3695826360 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void Valve.VR.IVROverlay/_SetKeyboardPositionForOverlay::Invoke(System.UInt64,Valve.VR.HmdRect2_t)
+extern "C"  void _SetKeyboardPositionForOverlay_Invoke_m24978526 (_SetKeyboardPositionForOverlay_t3695826360 * __this, uint64_t ___ulOverlayHandle0, HmdRect2_t_t1656020282  ___avoidRect1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetKeyboardPositionForOverlay_Invoke_m24978526((_SetKeyboardPositionForOverlay_t3695826360 *)__this->get_prev_9(),___ulOverlayHandle0, ___avoidRect1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, HmdRect2_t_t1656020282  ___avoidRect1, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___avoidRect1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, HmdRect2_t_t1656020282  ___avoidRect1, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___avoidRect1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetKeyboardPositionForOverlay::BeginInvoke(System.UInt64,Valve.VR.HmdRect2_t,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetKeyboardPositionForOverlay_BeginInvoke_m3068464333 (_SetKeyboardPositionForOverlay_t3695826360 * __this, uint64_t ___ulOverlayHandle0, HmdRect2_t_t1656020282  ___avoidRect1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetKeyboardPositionForOverlay_BeginInvoke_m3068464333_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(HmdRect2_t_t1656020282_il2cpp_TypeInfo_var, &___avoidRect1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// System.Void Valve.VR.IVROverlay/_SetKeyboardPositionForOverlay::EndInvoke(System.IAsyncResult)
+extern "C"  void _SetKeyboardPositionForOverlay_EndInvoke_m609716079 (_SetKeyboardPositionForOverlay_t3695826360 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+extern "C"  void DelegatePInvokeWrapper__SetKeyboardTransformAbsolute_t443079689 (_SetKeyboardTransformAbsolute_t443079689 * __this, int32_t ___eTrackingOrigin0, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToKeyboardTransform1, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)(int32_t, HmdMatrix34_t_t664273062 *);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc(___eTrackingOrigin0, ___pmatTrackingOriginToKeyboardTransform1);
+
+}
+// System.Void Valve.VR.IVROverlay/_SetKeyboardTransformAbsolute::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetKeyboardTransformAbsolute__ctor_m2367614952 (_SetKeyboardTransformAbsolute_t443079689 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void Valve.VR.IVROverlay/_SetKeyboardTransformAbsolute::Invoke(Valve.VR.ETrackingUniverseOrigin,Valve.VR.HmdMatrix34_t&)
+extern "C"  void _SetKeyboardTransformAbsolute_Invoke_m2703238449 (_SetKeyboardTransformAbsolute_t443079689 * __this, int32_t ___eTrackingOrigin0, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToKeyboardTransform1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetKeyboardTransformAbsolute_Invoke_m2703238449((_SetKeyboardTransformAbsolute_t443079689 *)__this->get_prev_9(),___eTrackingOrigin0, ___pmatTrackingOriginToKeyboardTransform1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, int32_t ___eTrackingOrigin0, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToKeyboardTransform1, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___eTrackingOrigin0, ___pmatTrackingOriginToKeyboardTransform1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, int32_t ___eTrackingOrigin0, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToKeyboardTransform1, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___eTrackingOrigin0, ___pmatTrackingOriginToKeyboardTransform1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetKeyboardTransformAbsolute::BeginInvoke(Valve.VR.ETrackingUniverseOrigin,Valve.VR.HmdMatrix34_t&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetKeyboardTransformAbsolute_BeginInvoke_m633232752 (_SetKeyboardTransformAbsolute_t443079689 * __this, int32_t ___eTrackingOrigin0, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToKeyboardTransform1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetKeyboardTransformAbsolute_BeginInvoke_m633232752_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(ETrackingUniverseOrigin_t1464400093_il2cpp_TypeInfo_var, &___eTrackingOrigin0);
+	__d_args[1] = Box(HmdMatrix34_t_t664273062_il2cpp_TypeInfo_var, &(*___pmatTrackingOriginToKeyboardTransform1));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// System.Void Valve.VR.IVROverlay/_SetKeyboardTransformAbsolute::EndInvoke(Valve.VR.HmdMatrix34_t&,System.IAsyncResult)
+extern "C"  void _SetKeyboardTransformAbsolute_EndInvoke_m3515759326 (_SetKeyboardTransformAbsolute_t443079689 * __this, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToKeyboardTransform0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pmatTrackingOriginToKeyboardTransform0,
+	};
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayAlpha_t2092887413 (_SetOverlayAlpha_t2092887413 * __this, uint64_t ___ulOverlayHandle0, float ___fAlpha1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, float);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___fAlpha1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayAlpha::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayAlpha__ctor_m3791534312 (_SetOverlayAlpha_t2092887413 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayAlpha::Invoke(System.UInt64,System.Single)
+extern "C"  int32_t _SetOverlayAlpha_Invoke_m1349081608 (_SetOverlayAlpha_t2092887413 * __this, uint64_t ___ulOverlayHandle0, float ___fAlpha1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayAlpha_Invoke_m1349081608((_SetOverlayAlpha_t2092887413 *)__this->get_prev_9(),___ulOverlayHandle0, ___fAlpha1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, float ___fAlpha1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___fAlpha1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, float ___fAlpha1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___fAlpha1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayAlpha::BeginInvoke(System.UInt64,System.Single,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayAlpha_BeginInvoke_m3102860923 (_SetOverlayAlpha_t2092887413 * __this, uint64_t ___ulOverlayHandle0, float ___fAlpha1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayAlpha_BeginInvoke_m3102860923_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(Single_t2076509932_il2cpp_TypeInfo_var, &___fAlpha1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayAlpha::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetOverlayAlpha_EndInvoke_m4128932448 (_SetOverlayAlpha_t2092887413 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayAutoCurveDistanceRangeInMeters_t1475163830 (_SetOverlayAutoCurveDistanceRangeInMeters_t1475163830 * __this, uint64_t ___ulOverlayHandle0, float ___fMinDistanceInMeters1, float ___fMaxDistanceInMeters2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, float, float);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___fMinDistanceInMeters1, ___fMaxDistanceInMeters2);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayAutoCurveDistanceRangeInMeters::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayAutoCurveDistanceRangeInMeters__ctor_m1451385753 (_SetOverlayAutoCurveDistanceRangeInMeters_t1475163830 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayAutoCurveDistanceRangeInMeters::Invoke(System.UInt64,System.Single,System.Single)
+extern "C"  int32_t _SetOverlayAutoCurveDistanceRangeInMeters_Invoke_m2045797120 (_SetOverlayAutoCurveDistanceRangeInMeters_t1475163830 * __this, uint64_t ___ulOverlayHandle0, float ___fMinDistanceInMeters1, float ___fMaxDistanceInMeters2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayAutoCurveDistanceRangeInMeters_Invoke_m2045797120((_SetOverlayAutoCurveDistanceRangeInMeters_t1475163830 *)__this->get_prev_9(),___ulOverlayHandle0, ___fMinDistanceInMeters1, ___fMaxDistanceInMeters2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, float ___fMinDistanceInMeters1, float ___fMaxDistanceInMeters2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___fMinDistanceInMeters1, ___fMaxDistanceInMeters2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, float ___fMinDistanceInMeters1, float ___fMaxDistanceInMeters2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___fMinDistanceInMeters1, ___fMaxDistanceInMeters2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayAutoCurveDistanceRangeInMeters::BeginInvoke(System.UInt64,System.Single,System.Single,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayAutoCurveDistanceRangeInMeters_BeginInvoke_m3963968441 (_SetOverlayAutoCurveDistanceRangeInMeters_t1475163830 * __this, uint64_t ___ulOverlayHandle0, float ___fMinDistanceInMeters1, float ___fMaxDistanceInMeters2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayAutoCurveDistanceRangeInMeters_BeginInvoke_m3963968441_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(Single_t2076509932_il2cpp_TypeInfo_var, &___fMinDistanceInMeters1);
+	__d_args[2] = Box(Single_t2076509932_il2cpp_TypeInfo_var, &___fMaxDistanceInMeters2);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayAutoCurveDistanceRangeInMeters::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetOverlayAutoCurveDistanceRangeInMeters_EndInvoke_m1667011499 (_SetOverlayAutoCurveDistanceRangeInMeters_t1475163830 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayColor_t2804573176 (_SetOverlayColor_t2804573176 * __this, uint64_t ___ulOverlayHandle0, float ___fRed1, float ___fGreen2, float ___fBlue3, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, float, float, float);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___fRed1, ___fGreen2, ___fBlue3);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayColor::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayColor__ctor_m2607537043 (_SetOverlayColor_t2804573176 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayColor::Invoke(System.UInt64,System.Single,System.Single,System.Single)
+extern "C"  int32_t _SetOverlayColor_Invoke_m1549057657 (_SetOverlayColor_t2804573176 * __this, uint64_t ___ulOverlayHandle0, float ___fRed1, float ___fGreen2, float ___fBlue3, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayColor_Invoke_m1549057657((_SetOverlayColor_t2804573176 *)__this->get_prev_9(),___ulOverlayHandle0, ___fRed1, ___fGreen2, ___fBlue3, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, float ___fRed1, float ___fGreen2, float ___fBlue3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___fRed1, ___fGreen2, ___fBlue3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, float ___fRed1, float ___fGreen2, float ___fBlue3, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___fRed1, ___fGreen2, ___fBlue3,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayColor::BeginInvoke(System.UInt64,System.Single,System.Single,System.Single,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayColor_BeginInvoke_m2698545726 (_SetOverlayColor_t2804573176 * __this, uint64_t ___ulOverlayHandle0, float ___fRed1, float ___fGreen2, float ___fBlue3, AsyncCallback_t163412349 * ___callback4, Il2CppObject * ___object5, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayColor_BeginInvoke_m2698545726_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[5] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(Single_t2076509932_il2cpp_TypeInfo_var, &___fRed1);
+	__d_args[2] = Box(Single_t2076509932_il2cpp_TypeInfo_var, &___fGreen2);
+	__d_args[3] = Box(Single_t2076509932_il2cpp_TypeInfo_var, &___fBlue3);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback4, (Il2CppObject*)___object5);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayColor::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetOverlayColor_EndInvoke_m3660926561 (_SetOverlayColor_t2804573176 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayFlag_t1900166033 (_SetOverlayFlag_t1900166033 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eOverlayFlag1, bool ___bEnabled2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, int32_t, int32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___eOverlayFlag1, static_cast<int32_t>(___bEnabled2));
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayFlag::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayFlag__ctor_m3902786848 (_SetOverlayFlag_t1900166033 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayFlag::Invoke(System.UInt64,Valve.VR.VROverlayFlags,System.Boolean)
+extern "C"  int32_t _SetOverlayFlag_Invoke_m2769435287 (_SetOverlayFlag_t1900166033 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eOverlayFlag1, bool ___bEnabled2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayFlag_Invoke_m2769435287((_SetOverlayFlag_t1900166033 *)__this->get_prev_9(),___ulOverlayHandle0, ___eOverlayFlag1, ___bEnabled2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, int32_t ___eOverlayFlag1, bool ___bEnabled2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___eOverlayFlag1, ___bEnabled2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, int32_t ___eOverlayFlag1, bool ___bEnabled2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___eOverlayFlag1, ___bEnabled2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayFlag::BeginInvoke(System.UInt64,Valve.VR.VROverlayFlags,System.Boolean,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayFlag_BeginInvoke_m3481058368 (_SetOverlayFlag_t1900166033 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eOverlayFlag1, bool ___bEnabled2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayFlag_BeginInvoke_m3481058368_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(VROverlayFlags_t2344570851_il2cpp_TypeInfo_var, &___eOverlayFlag1);
+	__d_args[2] = Box(Boolean_t3825574718_il2cpp_TypeInfo_var, &___bEnabled2);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayFlag::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetOverlayFlag_EndInvoke_m3884131536 (_SetOverlayFlag_t1900166033 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayFromFile_t598184189 (_SetOverlayFromFile_t598184189 * __this, uint64_t ___ulOverlayHandle0, String_t* ___pchFilePath1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, char*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___pchFilePath1' to native representation
+	char* ____pchFilePath1_marshaled = NULL;
+	____pchFilePath1_marshaled = il2cpp_codegen_marshal_string(___pchFilePath1);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ____pchFilePath1_marshaled);
+
+	// Marshaling cleanup of parameter '___pchFilePath1' native representation
+	il2cpp_codegen_marshal_free(____pchFilePath1_marshaled);
+	____pchFilePath1_marshaled = NULL;
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayFromFile::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayFromFile__ctor_m2561939652 (_SetOverlayFromFile_t598184189 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayFromFile::Invoke(System.UInt64,System.String)
+extern "C"  int32_t _SetOverlayFromFile_Invoke_m3103035007 (_SetOverlayFromFile_t598184189 * __this, uint64_t ___ulOverlayHandle0, String_t* ___pchFilePath1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayFromFile_Invoke_m3103035007((_SetOverlayFromFile_t598184189 *)__this->get_prev_9(),___ulOverlayHandle0, ___pchFilePath1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, String_t* ___pchFilePath1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pchFilePath1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, String_t* ___pchFilePath1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pchFilePath1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayFromFile::BeginInvoke(System.UInt64,System.String,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayFromFile_BeginInvoke_m1259997958 (_SetOverlayFromFile_t598184189 * __this, uint64_t ___ulOverlayHandle0, String_t* ___pchFilePath1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayFromFile_BeginInvoke_m1259997958_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = ___pchFilePath1;
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayFromFile::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetOverlayFromFile_EndInvoke_m804033364 (_SetOverlayFromFile_t598184189 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayInputMethod_t3575042602 (_SetOverlayInputMethod_t3575042602 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eInputMethod1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, int32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___eInputMethod1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayInputMethod::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayInputMethod__ctor_m4265410163 (_SetOverlayInputMethod_t3575042602 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayInputMethod::Invoke(System.UInt64,Valve.VR.VROverlayInputMethod)
+extern "C"  int32_t _SetOverlayInputMethod_Invoke_m3806261779 (_SetOverlayInputMethod_t3575042602 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eInputMethod1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayInputMethod_Invoke_m3806261779((_SetOverlayInputMethod_t3575042602 *)__this->get_prev_9(),___ulOverlayHandle0, ___eInputMethod1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, int32_t ___eInputMethod1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___eInputMethod1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, int32_t ___eInputMethod1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___eInputMethod1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayInputMethod::BeginInvoke(System.UInt64,Valve.VR.VROverlayInputMethod,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayInputMethod_BeginInvoke_m1040282430 (_SetOverlayInputMethod_t3575042602 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eInputMethod1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayInputMethod_BeginInvoke_m1040282430_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(VROverlayInputMethod_t3830649193_il2cpp_TypeInfo_var, &___eInputMethod1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayInputMethod::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetOverlayInputMethod_EndInvoke_m1910999873 (_SetOverlayInputMethod_t3575042602 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayMouseScale_t2624726138 (_SetOverlayMouseScale_t2624726138 * __this, uint64_t ___ulOverlayHandle0, HmdVector2_t_t2255225135 * ___pvecMouseScale1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, HmdVector2_t_t2255225135 *);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___pvecMouseScale1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayMouseScale::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayMouseScale__ctor_m1572878359 (_SetOverlayMouseScale_t2624726138 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayMouseScale::Invoke(System.UInt64,Valve.VR.HmdVector2_t&)
+extern "C"  int32_t _SetOverlayMouseScale_Invoke_m1643569667 (_SetOverlayMouseScale_t2624726138 * __this, uint64_t ___ulOverlayHandle0, HmdVector2_t_t2255225135 * ___pvecMouseScale1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayMouseScale_Invoke_m1643569667((_SetOverlayMouseScale_t2624726138 *)__this->get_prev_9(),___ulOverlayHandle0, ___pvecMouseScale1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, HmdVector2_t_t2255225135 * ___pvecMouseScale1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pvecMouseScale1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, HmdVector2_t_t2255225135 * ___pvecMouseScale1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pvecMouseScale1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayMouseScale::BeginInvoke(System.UInt64,Valve.VR.HmdVector2_t&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayMouseScale_BeginInvoke_m1988642692 (_SetOverlayMouseScale_t2624726138 * __this, uint64_t ___ulOverlayHandle0, HmdVector2_t_t2255225135 * ___pvecMouseScale1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayMouseScale_BeginInvoke_m1988642692_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(HmdVector2_t_t2255225135_il2cpp_TypeInfo_var, &(*___pvecMouseScale1));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayMouseScale::EndInvoke(Valve.VR.HmdVector2_t&,System.IAsyncResult)
+extern "C"  int32_t _SetOverlayMouseScale_EndInvoke_m1866169864 (_SetOverlayMouseScale_t2624726138 * __this, HmdVector2_t_t2255225135 * ___pvecMouseScale0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pvecMouseScale0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayNeighbor_t1117963895 (_SetOverlayNeighbor_t1117963895 * __this, int32_t ___eDirection0, uint64_t ___ulFrom1, uint64_t ___ulTo2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(int32_t, uint64_t, uint64_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___eDirection0, ___ulFrom1, ___ulTo2);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayNeighbor::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayNeighbor__ctor_m3692884872 (_SetOverlayNeighbor_t1117963895 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayNeighbor::Invoke(Valve.VR.EOverlayDirection,System.UInt64,System.UInt64)
+extern "C"  int32_t _SetOverlayNeighbor_Invoke_m1418526992 (_SetOverlayNeighbor_t1117963895 * __this, int32_t ___eDirection0, uint64_t ___ulFrom1, uint64_t ___ulTo2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayNeighbor_Invoke_m1418526992((_SetOverlayNeighbor_t1117963895 *)__this->get_prev_9(),___eDirection0, ___ulFrom1, ___ulTo2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, int32_t ___eDirection0, uint64_t ___ulFrom1, uint64_t ___ulTo2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___eDirection0, ___ulFrom1, ___ulTo2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, int32_t ___eDirection0, uint64_t ___ulFrom1, uint64_t ___ulTo2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___eDirection0, ___ulFrom1, ___ulTo2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayNeighbor::BeginInvoke(Valve.VR.EOverlayDirection,System.UInt64,System.UInt64,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayNeighbor_BeginInvoke_m2568839933 (_SetOverlayNeighbor_t1117963895 * __this, int32_t ___eDirection0, uint64_t ___ulFrom1, uint64_t ___ulTo2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayNeighbor_BeginInvoke_m2568839933_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = Box(EOverlayDirection_t2759670492_il2cpp_TypeInfo_var, &___eDirection0);
+	__d_args[1] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulFrom1);
+	__d_args[2] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulTo2);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayNeighbor::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetOverlayNeighbor_EndInvoke_m457162524 (_SetOverlayNeighbor_t1117963895 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayRaw_t3268606321 (_SetOverlayRaw_t3268606321 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pvBuffer1, uint32_t ___unWidth2, uint32_t ___unHeight3, uint32_t ___unDepth4, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, intptr_t, uint32_t, uint32_t, uint32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, reinterpret_cast<intptr_t>((___pvBuffer1).get_m_value_0()), ___unWidth2, ___unHeight3, ___unDepth4);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayRaw::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayRaw__ctor_m920272938 (_SetOverlayRaw_t3268606321 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayRaw::Invoke(System.UInt64,System.IntPtr,System.UInt32,System.UInt32,System.UInt32)
+extern "C"  int32_t _SetOverlayRaw_Invoke_m1372004499 (_SetOverlayRaw_t3268606321 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pvBuffer1, uint32_t ___unWidth2, uint32_t ___unHeight3, uint32_t ___unDepth4, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayRaw_Invoke_m1372004499((_SetOverlayRaw_t3268606321 *)__this->get_prev_9(),___ulOverlayHandle0, ___pvBuffer1, ___unWidth2, ___unHeight3, ___unDepth4, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pvBuffer1, uint32_t ___unWidth2, uint32_t ___unHeight3, uint32_t ___unDepth4, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pvBuffer1, ___unWidth2, ___unHeight3, ___unDepth4,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pvBuffer1, uint32_t ___unWidth2, uint32_t ___unHeight3, uint32_t ___unDepth4, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pvBuffer1, ___unWidth2, ___unHeight3, ___unDepth4,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayRaw::BeginInvoke(System.UInt64,System.IntPtr,System.UInt32,System.UInt32,System.UInt32,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayRaw_BeginInvoke_m3728091660 (_SetOverlayRaw_t3268606321 * __this, uint64_t ___ulOverlayHandle0, IntPtr_t ___pvBuffer1, uint32_t ___unWidth2, uint32_t ___unHeight3, uint32_t ___unDepth4, AsyncCallback_t163412349 * ___callback5, Il2CppObject * ___object6, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayRaw_BeginInvoke_m3728091660_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[6] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___pvBuffer1);
+	__d_args[2] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unWidth2);
+	__d_args[3] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unHeight3);
+	__d_args[4] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unDepth4);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback5, (Il2CppObject*)___object6);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayRaw::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetOverlayRaw_EndInvoke_m1414481550 (_SetOverlayRaw_t3268606321 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayRenderingPid_t1970553664 (_SetOverlayRenderingPid_t1970553664 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unPID1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, uint32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___unPID1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayRenderingPid::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayRenderingPid__ctor_m1826763857 (_SetOverlayRenderingPid_t1970553664 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayRenderingPid::Invoke(System.UInt64,System.UInt32)
+extern "C"  int32_t _SetOverlayRenderingPid_Invoke_m1551784166 (_SetOverlayRenderingPid_t1970553664 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unPID1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayRenderingPid_Invoke_m1551784166((_SetOverlayRenderingPid_t1970553664 *)__this->get_prev_9(),___ulOverlayHandle0, ___unPID1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, uint32_t ___unPID1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___unPID1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, uint32_t ___unPID1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___unPID1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayRenderingPid::BeginInvoke(System.UInt64,System.UInt32,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayRenderingPid_BeginInvoke_m3399668009 (_SetOverlayRenderingPid_t1970553664 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unPID1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayRenderingPid_BeginInvoke_m3399668009_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unPID1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayRenderingPid::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetOverlayRenderingPid_EndInvoke_m2870878451 (_SetOverlayRenderingPid_t1970553664 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlaySortOrder_t3099711365 (_SetOverlaySortOrder_t3099711365 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unSortOrder1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, uint32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___unSortOrder1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlaySortOrder::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlaySortOrder__ctor_m3428310792 (_SetOverlaySortOrder_t3099711365 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlaySortOrder::Invoke(System.UInt64,System.UInt32)
+extern "C"  int32_t _SetOverlaySortOrder_Invoke_m3384139201 (_SetOverlaySortOrder_t3099711365 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unSortOrder1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlaySortOrder_Invoke_m3384139201((_SetOverlaySortOrder_t3099711365 *)__this->get_prev_9(),___ulOverlayHandle0, ___unSortOrder1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, uint32_t ___unSortOrder1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___unSortOrder1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, uint32_t ___unSortOrder1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___unSortOrder1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlaySortOrder::BeginInvoke(System.UInt64,System.UInt32,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlaySortOrder_BeginInvoke_m522240202 (_SetOverlaySortOrder_t3099711365 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unSortOrder1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlaySortOrder_BeginInvoke_m522240202_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unSortOrder1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlaySortOrder::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetOverlaySortOrder_EndInvoke_m3169871248 (_SetOverlaySortOrder_t3099711365 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayTexelAspect_t460846625 (_SetOverlayTexelAspect_t460846625 * __this, uint64_t ___ulOverlayHandle0, float ___fTexelAspect1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, float);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___fTexelAspect1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayTexelAspect::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayTexelAspect__ctor_m2970080996 (_SetOverlayTexelAspect_t460846625 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTexelAspect::Invoke(System.UInt64,System.Single)
+extern "C"  int32_t _SetOverlayTexelAspect_Invoke_m800057472 (_SetOverlayTexelAspect_t460846625 * __this, uint64_t ___ulOverlayHandle0, float ___fTexelAspect1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayTexelAspect_Invoke_m800057472((_SetOverlayTexelAspect_t460846625 *)__this->get_prev_9(),___ulOverlayHandle0, ___fTexelAspect1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, float ___fTexelAspect1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___fTexelAspect1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, float ___fTexelAspect1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___fTexelAspect1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayTexelAspect::BeginInvoke(System.UInt64,System.Single,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayTexelAspect_BeginInvoke_m119089551 (_SetOverlayTexelAspect_t460846625 * __this, uint64_t ___ulOverlayHandle0, float ___fTexelAspect1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayTexelAspect_BeginInvoke_m119089551_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(Single_t2076509932_il2cpp_TypeInfo_var, &___fTexelAspect1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTexelAspect::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetOverlayTexelAspect_EndInvoke_m2858536928 (_SetOverlayTexelAspect_t460846625 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayTexture_t2238656700 (_SetOverlayTexture_t2238656700 * __this, uint64_t ___ulOverlayHandle0, Texture_t_t3277130850 * ___pTexture1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, Texture_t_t3277130850 *);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___pTexture1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayTexture::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayTexture__ctor_m751976025 (_SetOverlayTexture_t2238656700 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTexture::Invoke(System.UInt64,Valve.VR.Texture_t&)
+extern "C"  int32_t _SetOverlayTexture_Invoke_m3543005210 (_SetOverlayTexture_t2238656700 * __this, uint64_t ___ulOverlayHandle0, Texture_t_t3277130850 * ___pTexture1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayTexture_Invoke_m3543005210((_SetOverlayTexture_t2238656700 *)__this->get_prev_9(),___ulOverlayHandle0, ___pTexture1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, Texture_t_t3277130850 * ___pTexture1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pTexture1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, Texture_t_t3277130850 * ___pTexture1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pTexture1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayTexture::BeginInvoke(System.UInt64,Valve.VR.Texture_t&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayTexture_BeginInvoke_m2512968807 (_SetOverlayTexture_t2238656700 * __this, uint64_t ___ulOverlayHandle0, Texture_t_t3277130850 * ___pTexture1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayTexture_BeginInvoke_m2512968807_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(Texture_t_t3277130850_il2cpp_TypeInfo_var, &(*___pTexture1));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTexture::EndInvoke(Valve.VR.Texture_t&,System.IAsyncResult)
+extern "C"  int32_t _SetOverlayTexture_EndInvoke_m2626189125 (_SetOverlayTexture_t2238656700 * __this, Texture_t_t3277130850 * ___pTexture0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pTexture0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayTextureBounds_t1179269927 (_SetOverlayTextureBounds_t1179269927 * __this, uint64_t ___ulOverlayHandle0, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, VRTextureBounds_t_t1897807375 *);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___pOverlayTextureBounds1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayTextureBounds::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayTextureBounds__ctor_m1561038862 (_SetOverlayTextureBounds_t1179269927 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTextureBounds::Invoke(System.UInt64,Valve.VR.VRTextureBounds_t&)
+extern "C"  int32_t _SetOverlayTextureBounds_Invoke_m224047540 (_SetOverlayTextureBounds_t1179269927 * __this, uint64_t ___ulOverlayHandle0, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayTextureBounds_Invoke_m224047540((_SetOverlayTextureBounds_t1179269927 *)__this->get_prev_9(),___ulOverlayHandle0, ___pOverlayTextureBounds1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___pOverlayTextureBounds1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___pOverlayTextureBounds1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayTextureBounds::BeginInvoke(System.UInt64,Valve.VR.VRTextureBounds_t&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayTextureBounds_BeginInvoke_m1716068379 (_SetOverlayTextureBounds_t1179269927 * __this, uint64_t ___ulOverlayHandle0, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayTextureBounds_BeginInvoke_m1716068379_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(VRTextureBounds_t_t1897807375_il2cpp_TypeInfo_var, &(*___pOverlayTextureBounds1));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTextureBounds::EndInvoke(Valve.VR.VRTextureBounds_t&,System.IAsyncResult)
+extern "C"  int32_t _SetOverlayTextureBounds_EndInvoke_m3744652573 (_SetOverlayTextureBounds_t1179269927 * __this, VRTextureBounds_t_t1897807375 * ___pOverlayTextureBounds0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pOverlayTextureBounds0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayTextureColorSpace_t1399555963 (_SetOverlayTextureColorSpace_t1399555963 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTextureColorSpace1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, int32_t);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___eTextureColorSpace1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayTextureColorSpace::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayTextureColorSpace__ctor_m4237595976 (_SetOverlayTextureColorSpace_t1399555963 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTextureColorSpace::Invoke(System.UInt64,Valve.VR.EColorSpace)
+extern "C"  int32_t _SetOverlayTextureColorSpace_Invoke_m1296924107 (_SetOverlayTextureColorSpace_t1399555963 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTextureColorSpace1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayTextureColorSpace_Invoke_m1296924107((_SetOverlayTextureColorSpace_t1399555963 *)__this->get_prev_9(),___ulOverlayHandle0, ___eTextureColorSpace1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, int32_t ___eTextureColorSpace1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___eTextureColorSpace1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, int32_t ___eTextureColorSpace1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___eTextureColorSpace1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayTextureColorSpace::BeginInvoke(System.UInt64,Valve.VR.EColorSpace,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayTextureColorSpace_BeginInvoke_m4190866510 (_SetOverlayTextureColorSpace_t1399555963 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTextureColorSpace1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayTextureColorSpace_BeginInvoke_m4190866510_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(EColorSpace_t2848861630_il2cpp_TypeInfo_var, &___eTextureColorSpace1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTextureColorSpace::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetOverlayTextureColorSpace_EndInvoke_m1559128008 (_SetOverlayTextureColorSpace_t1399555963 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayTransformAbsolute_t2100297354 (_SetOverlayTransformAbsolute_t2100297354 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTrackingOrigin1, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, int32_t, HmdMatrix34_t_t664273062 *);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___eTrackingOrigin1, ___pmatTrackingOriginToOverlayTransform2);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayTransformAbsolute::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayTransformAbsolute__ctor_m3420083841 (_SetOverlayTransformAbsolute_t2100297354 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTransformAbsolute::Invoke(System.UInt64,Valve.VR.ETrackingUniverseOrigin,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t _SetOverlayTransformAbsolute_Invoke_m1535134225 (_SetOverlayTransformAbsolute_t2100297354 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTrackingOrigin1, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayTransformAbsolute_Invoke_m1535134225((_SetOverlayTransformAbsolute_t2100297354 *)__this->get_prev_9(),___ulOverlayHandle0, ___eTrackingOrigin1, ___pmatTrackingOriginToOverlayTransform2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, int32_t ___eTrackingOrigin1, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___eTrackingOrigin1, ___pmatTrackingOriginToOverlayTransform2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, int32_t ___eTrackingOrigin1, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___eTrackingOrigin1, ___pmatTrackingOriginToOverlayTransform2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayTransformAbsolute::BeginInvoke(System.UInt64,Valve.VR.ETrackingUniverseOrigin,Valve.VR.HmdMatrix34_t&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayTransformAbsolute_BeginInvoke_m1515702444 (_SetOverlayTransformAbsolute_t2100297354 * __this, uint64_t ___ulOverlayHandle0, int32_t ___eTrackingOrigin1, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayTransformAbsolute_BeginInvoke_m1515702444_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(ETrackingUniverseOrigin_t1464400093_il2cpp_TypeInfo_var, &___eTrackingOrigin1);
+	__d_args[2] = Box(HmdMatrix34_t_t664273062_il2cpp_TypeInfo_var, &(*___pmatTrackingOriginToOverlayTransform2));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTransformAbsolute::EndInvoke(Valve.VR.HmdMatrix34_t&,System.IAsyncResult)
+extern "C"  int32_t _SetOverlayTransformAbsolute_EndInvoke_m1549261687 (_SetOverlayTransformAbsolute_t2100297354 * __this, HmdMatrix34_t_t664273062 * ___pmatTrackingOriginToOverlayTransform0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pmatTrackingOriginToOverlayTransform0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayTransformTrackedDeviceComponent_t1749665136 (_SetOverlayTransformTrackedDeviceComponent_t1749665136 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unDeviceIndex1, String_t* ___pchComponentName2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, uint32_t, char*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Marshaling of parameter '___pchComponentName2' to native representation
+	char* ____pchComponentName2_marshaled = NULL;
+	____pchComponentName2_marshaled = il2cpp_codegen_marshal_string(___pchComponentName2);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___unDeviceIndex1, ____pchComponentName2_marshaled);
+
+	// Marshaling cleanup of parameter '___pchComponentName2' native representation
+	il2cpp_codegen_marshal_free(____pchComponentName2_marshaled);
+	____pchComponentName2_marshaled = NULL;
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayTransformTrackedDeviceComponent::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayTransformTrackedDeviceComponent__ctor_m4034962211 (_SetOverlayTransformTrackedDeviceComponent_t1749665136 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTransformTrackedDeviceComponent::Invoke(System.UInt64,System.UInt32,System.String)
+extern "C"  int32_t _SetOverlayTransformTrackedDeviceComponent_Invoke_m1215847030 (_SetOverlayTransformTrackedDeviceComponent_t1749665136 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unDeviceIndex1, String_t* ___pchComponentName2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayTransformTrackedDeviceComponent_Invoke_m1215847030((_SetOverlayTransformTrackedDeviceComponent_t1749665136 *)__this->get_prev_9(),___ulOverlayHandle0, ___unDeviceIndex1, ___pchComponentName2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, uint32_t ___unDeviceIndex1, String_t* ___pchComponentName2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___unDeviceIndex1, ___pchComponentName2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, uint32_t ___unDeviceIndex1, String_t* ___pchComponentName2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___unDeviceIndex1, ___pchComponentName2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayTransformTrackedDeviceComponent::BeginInvoke(System.UInt64,System.UInt32,System.String,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayTransformTrackedDeviceComponent_BeginInvoke_m2159929953 (_SetOverlayTransformTrackedDeviceComponent_t1749665136 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unDeviceIndex1, String_t* ___pchComponentName2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayTransformTrackedDeviceComponent_BeginInvoke_m2159929953_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unDeviceIndex1);
+	__d_args[2] = ___pchComponentName2;
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTransformTrackedDeviceComponent::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetOverlayTransformTrackedDeviceComponent_EndInvoke_m3187545473 (_SetOverlayTransformTrackedDeviceComponent_t1749665136 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayTransformTrackedDeviceRelative_t579082695 (_SetOverlayTransformTrackedDeviceRelative_t579082695 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unTrackedDevice1, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform2, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, uint32_t, HmdMatrix34_t_t664273062 *);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___unTrackedDevice1, ___pmatTrackedDeviceToOverlayTransform2);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayTransformTrackedDeviceRelative::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayTransformTrackedDeviceRelative__ctor_m2335188890 (_SetOverlayTransformTrackedDeviceRelative_t579082695 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTransformTrackedDeviceRelative::Invoke(System.UInt64,System.UInt32,Valve.VR.HmdMatrix34_t&)
+extern "C"  int32_t _SetOverlayTransformTrackedDeviceRelative_Invoke_m4082931255 (_SetOverlayTransformTrackedDeviceRelative_t579082695 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unTrackedDevice1, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform2, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayTransformTrackedDeviceRelative_Invoke_m4082931255((_SetOverlayTransformTrackedDeviceRelative_t579082695 *)__this->get_prev_9(),___ulOverlayHandle0, ___unTrackedDevice1, ___pmatTrackedDeviceToOverlayTransform2, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, uint32_t ___unTrackedDevice1, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___unTrackedDevice1, ___pmatTrackedDeviceToOverlayTransform2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, uint32_t ___unTrackedDevice1, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform2, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___unTrackedDevice1, ___pmatTrackedDeviceToOverlayTransform2,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayTransformTrackedDeviceRelative::BeginInvoke(System.UInt64,System.UInt32,Valve.VR.HmdMatrix34_t&,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayTransformTrackedDeviceRelative_BeginInvoke_m1153129968 (_SetOverlayTransformTrackedDeviceRelative_t579082695 * __this, uint64_t ___ulOverlayHandle0, uint32_t ___unTrackedDevice1, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform2, AsyncCallback_t163412349 * ___callback3, Il2CppObject * ___object4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayTransformTrackedDeviceRelative_BeginInvoke_m1153129968_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[4] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &___unTrackedDevice1);
+	__d_args[2] = Box(HmdMatrix34_t_t664273062_il2cpp_TypeInfo_var, &(*___pmatTrackedDeviceToOverlayTransform2));
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback3, (Il2CppObject*)___object4);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayTransformTrackedDeviceRelative::EndInvoke(Valve.VR.HmdMatrix34_t&,System.IAsyncResult)
+extern "C"  int32_t _SetOverlayTransformTrackedDeviceRelative_EndInvoke_m3236411074 (_SetOverlayTransformTrackedDeviceRelative_t579082695 * __this, HmdMatrix34_t_t664273062 * ___pmatTrackedDeviceToOverlayTransform0, Il2CppObject * ___result1, const MethodInfo* method)
+{
+	void* ___out_args[] = {
+	___pmatTrackedDeviceToOverlayTransform0,
+	};
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+extern "C"  int32_t DelegatePInvokeWrapper__SetOverlayWidthInMeters_t3047220066 (_SetOverlayWidthInMeters_t3047220066 * __this, uint64_t ___ulOverlayHandle0, float ___fWidthInMeters1, const MethodInfo* method)
+{
+	typedef int32_t (STDCALL *PInvokeFunc)(uint64_t, float);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___ulOverlayHandle0, ___fWidthInMeters1);
+
+	return returnValue;
+}
+// System.Void Valve.VR.IVROverlay/_SetOverlayWidthInMeters::.ctor(System.Object,System.IntPtr)
+extern "C"  void _SetOverlayWidthInMeters__ctor_m3729502107 (_SetOverlayWidthInMeters_t3047220066 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayWidthInMeters::Invoke(System.UInt64,System.Single)
+extern "C"  int32_t _SetOverlayWidthInMeters_Invoke_m1782438045 (_SetOverlayWidthInMeters_t3047220066 * __this, uint64_t ___ulOverlayHandle0, float ___fWidthInMeters1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		_SetOverlayWidthInMeters_Invoke_m1782438045((_SetOverlayWidthInMeters_t3047220066 *)__this->get_prev_9(),___ulOverlayHandle0, ___fWidthInMeters1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, uint64_t ___ulOverlayHandle0, float ___fWidthInMeters1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___ulOverlayHandle0, ___fWidthInMeters1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, uint64_t ___ulOverlayHandle0, float ___fWidthInMeters1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___ulOverlayHandle0, ___fWidthInMeters1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult Valve.VR.IVROverlay/_SetOverlayWidthInMeters::BeginInvoke(System.UInt64,System.Single,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * _SetOverlayWidthInMeters_BeginInvoke_m2619253616 (_SetOverlayWidthInMeters_t3047220066 * __this, uint64_t ___ulOverlayHandle0, float ___fWidthInMeters1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (_SetOverlayWidthInMeters_BeginInvoke_m2619253616_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(UInt64_t2909196914_il2cpp_TypeInfo_var, &___ulOverlayHandle0);
+	__d_args[1] = Box(Single_t2076509932_il2cpp_TypeInfo_var, &___fWidthInMeters1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// Valve.VR.EVROverlayError Valve.VR.IVROverlay/_SetOverlayWidthInMeters::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t _SetOverlayWidthInMeters_EndInvoke_m19303357 (_SetOverlayWidthInMeters_t3047220066 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif

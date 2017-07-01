@@ -10,8 +10,11 @@ Material:
   m_Shader: {fileID: 4800000, guid: 3401c145674714574b16664dd3d232d3, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
+  disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -58,8 +61,8 @@ Material:
     - _Cy: 360
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Fx: 1051.474
-    - _Fy: 1051.474
+    - _Fx: 623.5383
+    - _Fy: 623.5383
     - _Glossiness: 0.5
     - _Height: 720
     - _K0: 0

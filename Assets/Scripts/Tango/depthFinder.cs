@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class depthFinder : MonoBehaviour {
 	public GameObject sphere;
 	public Camera cam;
-	public TangoPointCloud pc;
+	//public TangoPointCloud pc;
 	public Text nearestPoint;
 	public float pcReturn;
 	public bool depthOff;
@@ -67,7 +67,7 @@ public class depthFinder : MonoBehaviour {
 	public void findcenterPoint(){
 
 
-		pcReturn = pc.FindClosestPointGameObject (sphere.transform, 1);
+	//	pcReturn = pc.FindClosestPointGameObject (sphere.transform, 1);
 
 		//Debug.Log (pcReturn);
 		//nearestPoint.text = pcReturn.ToString ();

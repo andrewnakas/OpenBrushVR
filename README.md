@@ -1,6 +1,6 @@
 # OpenBrushVR
 VR Painting in 3d space
-Executable https://drive.google.com/file/d/0B9N6_duPonOkZUhyc1g0SzRyS1E/view?usp=sharing
+IOS Version should work, but i have not tested it that much yet.
 
 ![VRPainting](http://i.imgur.com/K8TDGh7.gif)
 

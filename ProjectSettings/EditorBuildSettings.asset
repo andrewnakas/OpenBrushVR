@@ -24,10 +24,10 @@ EditorBuildSettings:
     path: Assets/OpenBrush.unity
     guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/TangoSDK/Examples/Scenes/AugmentedReality.unity
+    path: Assets/Editor/TangoSDK/Examples/Scenes/AugmentedReality.unity
     guid: f1aab0b9b6c394f64b573456134db7ac
   - enabled: 0
-    path: Assets/TangoSDK/Examples/Scenes/PointCloud.unity
+    path: Assets/Editor/TangoSDK/Examples/Scenes/PointCloud.unity
     guid: da1e5db8a721743a2938ebcc9b514f22
   - enabled: 0
     path: Assets/OpenBrush_Tango_Augmented_Reality.unity
@@ -38,9 +38,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/OpenBrush_Tango.unity
     guid: 1f9f8c9a86260a740921edf98d36ad9a
-  - enabled: 1
+  - enabled: 0
     path: Assets/OpenBrush_Vive.unity
     guid: cc1669137c6a2284b83eed1a5bb24049
   - enabled: 0
     path: Assets/ARKIT_IOS.unity
     guid: 46c46a6f257b240409d145967ee1007a
+  - enabled: 1
+    path: Assets/ARKIT_IOSpORTRAIT.unity
+    guid: e3e172f4768f2864ebea5c06516a2b0e

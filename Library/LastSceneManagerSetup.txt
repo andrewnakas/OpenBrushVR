@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ARKIT_IOS.unity
+- path: Assets/ARKIT_IOSpORTRAIT.unity
   isLoaded: 1
   isActive: 1

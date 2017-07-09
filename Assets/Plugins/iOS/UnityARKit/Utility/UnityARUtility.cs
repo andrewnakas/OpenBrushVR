@@ -24,7 +24,7 @@ namespace UnityEngine.XR.iOS
 			}
 
 			plane.name = arPlaneAnchor.identifier;
-
+			plane.transform.SetParent ( GameObject.FindGameObjectWithTag ("Plane").transform);
 			return UpdatePlaneWithAnchorTransform(plane, arPlaneAnchor);
 
 		}

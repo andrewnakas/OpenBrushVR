@@ -1,5 +1,5 @@
 5.6.1p4:3.0.0.1
-StandaloneWindows64
+iOS
 D:/unity56release4/Editor/Data/Managed/UnityEngine.dll
 D:/unity56release4/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
 D:/unity56release4/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll

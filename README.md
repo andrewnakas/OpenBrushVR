@@ -1,17 +1,28 @@
 # OpenBrushVR
-VR Painting in 3d space
-IOS Version should work, but i have not tested it that much yet.
+Open Brush is a 3d vr/ar painting app for Vive, Tango and Iphones
 
 ![VRPainting](http://i.imgur.com/K8TDGh7.gif)
 
- I've been putting together an basic version of Tilt Brush and have been excited at what I've developed so far.
+It's still in beta stages, but is coming a long nicly and there is a clear path to shipping this to prodction for the fall.
 
 
 Check a video here.
 https://www.youtube.com/watch?v=bMpBnJkgIkg
 
-Link to project executable.
-https://drive.google.com/file/d/0B9N6_duPonOkZUhyc1g0SzRyS1E/view?usp=sharing
+Installation instructions:
+Tango and Vive should build by just switching to the required platform and running.
+
+IOS: make sure to enable application uses itunes file sharing in xcode to allow for obj exporting.
+
+
+ToDo:
+Fix openvr switching to vr supported mode constantly. 
+Add in transform Scalling
+Add in project saving/loading
+Daydream/gearvr versions. 
+Updated UI/scene files clean up.
+Multiplayer connections.
+
 
 Here are links to the prior projects I was able to build off of. Many thanks to the people who are pushing the open vr scene forward.  
 

@@ -6,7 +6,8 @@ Open Brush is a 3d vr/ar painting app for Vive, Tango and Iphones
 It's still in beta stages, but is coming a long nicly and there is a clear path to shipping this to prodction for the fall.
 
 
-Check a video here.
+Check some videos here.
+https://www.youtube.com/watch?v=c9VckGHj8uQ
 https://www.youtube.com/watch?v=bMpBnJkgIkg
 
 Installation instructions:
